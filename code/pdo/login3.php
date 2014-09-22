@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "db.php";
+require_once "pdo.php";
 
 // p' OR email = 'barb@umich.edu
 

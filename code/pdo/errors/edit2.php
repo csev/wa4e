@@ -1,5 +1,5 @@
 <?php
-require_once "db.php";
+require_once "pdo.php";
 session_start();
 
 if ( isset($_POST['name']) && isset($_POST['email']) 

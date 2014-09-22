@@ -1,5 +1,5 @@
 <?php
-require_once "db.php";
+require_once "pdo.php";
 session_start();
 
 if ( isset($_POST['delete']) && isset($_POST['id']) ) {
