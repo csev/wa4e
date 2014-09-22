@@ -1,34 +1,29 @@
 <?php
 session_start();
-$db = mysql_connect("localhost","fred", "zap") or die('Fail message');
-mysql_select_db("misc") or die("Fail message");
+require_once "pdo.php";
 
 // p' OR email = 'barb@umich.edu
 
 if ( isset($_POST['email']) && isset($_POST['password'])  ) {
-   echo("<!--\n");
-   echo("Handling POST data...\n");
-   $e = mysql_real_escape_string($_POST['email']);
-   $p = mysql_real_escape_string($_POST['password']);
+    echo("Handling POST data...\n");
 
-   $sql = "SELECT name FROM users 
-       WHERE email = '$e' 
-       AND password = '$p'";
+    $sql = "SELECT name FROM users 
+        WHERE email = :em AND password = :pw";
+    echo "<pre>\n$sql\n</pre>\n";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(array(
+        ':em' => $_POST['email'], 
+        ':pw' => $_POST['password']));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-   $result = mysql_query($sql);
-   $row = mysql_fetch_row($result);	
-   var_dump($row);
-   echo "-->\n";
+    var_dump($row);
    if ( $row === FALSE ) {
       echo "<h1>Login incorrect.</h1>\n";
       unset($_SESSION['name']);
    } else { 
       echo "<p>Login success.</p>\n";
-      $_SESSION['name'] = $row[0];
+      $_SESSION['name'] = $row['name'];
    }
-   echo "<pre>\n";
-   echo "$sql\n";
-   echo "</pre>\n";
 }
 if ( isset($_SESSION['name']) ) {
    echo('<p>Hello '.htmlentities($_SESSION['name']).'</p>'."\n");

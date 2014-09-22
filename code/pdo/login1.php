@@ -1,9 +1,8 @@
 <?php
 session_start();
-$db = mysql_connect("localhost","fred", "zap") or die('Fail message');
-mysql_select_db("misc") or die("Fail message");
+require_once "pdo.php";
 
-// p' OR email = 'barb@umich.edu
+// p' OR '1' = '1
 
 if ( isset($_POST['email']) && isset($_POST['password'])  ) {
    echo("<!--\n");
@@ -24,8 +23,10 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
        WHERE email = '$e' 
        AND password = '$p'";
 
-   $result = mysql_query($sql);
-   $row = mysql_fetch_row($result);	
+   $stmt = $pdo->prepare($sql);
+   $stmt->execute();
+   $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
    var_dump($row);
    echo "-->\n";
    if ( $row === FALSE ) {
@@ -33,7 +34,7 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
       unset($_SESSION['name']);
    } else { 
       echo "<p>Login success.</p>\n";
-      $_SESSION['name'] = $row[0];
+      $_SESSION['name'] = $row['name'];
    }
    echo "<pre>\n";
    echo "$sql\n";
