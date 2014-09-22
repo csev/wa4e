@@ -24,8 +24,7 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
        WHERE email = '$e' 
        AND password = '$p'";
 
-   $stmt = $pdo->prepare($sql);
-   $stmt->execute();
+   $stmt = $pdo->query($sql);
    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
    var_dump($row);
