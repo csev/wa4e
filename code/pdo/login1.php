@@ -10,6 +10,7 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
    $e = $_POST['email'];
    $p = $_POST['password'];
    echo("Password: $p\n");
+   // This can be removed once everyone is > PHP 5.4
    if ( get_magic_quotes_gpc() ) {
         echo("Magic quotes are on...\n");
         $e = stripslashes($e);
