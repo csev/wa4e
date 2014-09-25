@@ -3,6 +3,8 @@ require_once "pdo.php";
 
 // GET Parameter id=1
 
+if ( !isset($_GET['id']) ) die('id=1 GET parameter required');
+
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 $stmt = $pdo->prepare("SELECT * FROM users where id = :xyz");
