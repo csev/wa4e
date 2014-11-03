@@ -23,7 +23,7 @@ if ( $row === false ) {
 echo "<p>Confirm: Deleting ".htmlentities($row['name'])."</p>\n";
 
 echo('<form method="post"><input type="hidden" ');
-echo('name="id" value="'.$row['id'].'">'."\n");
+echo('name="id" value="'.htmlentities($row['id']).'">'."\n");
 echo('<input type="submit" value="Delete" name="delete">');
 echo('<a href="index.php">Cancel</a>');
 echo("\n</form>\n");

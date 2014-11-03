@@ -17,14 +17,14 @@ echo('<table border="1">'."\n");
 $stmt = $pdo->query("SELECT name, email, password, id FROM users");
 while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
     echo "<tr><td>";
-    echo($row['name']);
+    echo(htmlentities($row['name']));
     echo("</td><td>");
-    echo($row['email']);
+    echo(htmlentities($row['email']));
     echo("</td><td>");
-    echo($row['password']);
+    echo(htmlentities($row['password']));
     echo("</td><td>");
-    echo('<a href="edit.php?id='.htmlentities($row['id']).'">Edit</a> / ');
-    echo('<a href="delete.php?id='.htmlentities($row['id']).'">Delete</a>');
+    echo('<a href="edit.php?id='.$row['id'].'">Edit</a> / ');
+    echo('<a href="delete.php?id='.$row['id'].'">Delete</a>');
     echo("</td></tr>\n");
 }
 ?>

@@ -4,6 +4,8 @@ session_start();
 
 if ( isset($_POST['name']) && isset($_POST['email']) 
      && isset($_POST['password']) && isset($_POST['id']) ) {
+
+    // Data validation should go here (see add.php)
     $sql = "UPDATE users SET name = :name, 
             email = :email, password = :password
             WHERE id = :id";
@@ -32,6 +34,7 @@ $e = htmlentities($row['email']);
 $p = htmlentities($row['password']);
 $id = htmlentities($row['id']);
 
+// Flash message display would go here
 echo <<< _END
 <p>Edit User</p>
 <form method="post">
