@@ -24,6 +24,7 @@
       <input type="text" name="message" size="60"/>
       <input type="submit" value="Chat"/> 
       <input type="submit" name="reset" value="Reset"/> 
+      <a href="chatlist.php" target="_blank">chatlist.php</a>
       </p>
       </form>
       <div id="chatcontent">
