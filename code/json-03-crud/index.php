@@ -37,12 +37,17 @@ $.getJSON('getjson.php', function(data) {
         found = true;
         window.console && console.log(data[i].title);
         $("#mytab").append("<tr><td>"+htmlentities(entry.title)+'</td><td>'
-              + htmlentities(entry.plays)+'</td><td>'+htmlentities(entry.rating)+"</td><td>\n"
-              + '<a href="edit.php?id='+htmlentities(entry.id)+'">Edit</a> / '
-              + '<a href="delete.php?id='+htmlentities(entry.id)+'">Delete</a>\n</td></tr>');
+            + htmlentities(entry.plays)+'</td><td>'
+            + htmlentities(entry.rating)+"</td><td>\n"
+            + '<a href="edit.php?id='+htmlentities(entry.id)+'">'
+            + 'Edit</a> / '
+            + '<a href="delete.php?id='+htmlentities(entry.id)+'">'
+            + 'Delete</a>\n</td></tr>');
     }
-    if ( ! found ) $("#mytab").append("<tr><td>No entries found</td></tr>\n");
+    if ( ! found ) {
+        $("#mytab").append("<tr><td>No entries found</td></tr>\n");
+    }
 });
 </script>
-</head>
 <a href="add.php">Add New</a>
+<a href="viewapi.php" target="_blank">viewapi.php</a>
