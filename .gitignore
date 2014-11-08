@@ -2,6 +2,7 @@ db.php
 assn
 exams
 php-solutions
+*.zip
 
 # Object files
 *.o
