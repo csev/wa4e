@@ -3,6 +3,7 @@ assn
 exams
 php-solutions
 *.zip
+*.swp
 
 # Object files
 *.o

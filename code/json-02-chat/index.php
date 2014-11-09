@@ -1,13 +1,13 @@
 <?php
   session_start();
-  if ( isset($_POST['message']) ) {
-    if ( !isset ($_SESSION['chats']) ) $_SESSION['chats'] = Array();
-    $_SESSION['chats'] [] = array($_POST['message'], date(DATE_RFC2822));
+  if ( isset($_POST['reset']) ) {
+    $_SESSION['chats'] = Array();
     header("Location: index.php");
     return;
   }
-  if ( isset($_POST['reset']) ) {
-    $_SESSION['chats'] = Array();
+  if ( isset($_POST['message']) ) {
+    if ( !isset ($_SESSION['chats']) ) $_SESSION['chats'] = Array();
+    $_SESSION['chats'] [] = array($_POST['message'], date(DATE_RFC2822));
     header("Location: index.php");
     return;
   }
