@@ -32,7 +32,7 @@ you can play it locally with QuickTime.
 <center>
 <iframe width="480" height="390" src="http://www.youtube.com/embed/msF-XcJk3Bc" frameborder="0" allowfullscreen></iframe>
 <p>
-Download Entire Video: <a href="http://www-personal.umich.edu/~csev/courses/shared/podcasts/installing-xampp-windows.mov" target="_new">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
+Download Entire Video: <a href="http://afs.dr-chuck.com/courses/shared/podcasts/installing-xampp-windows.mov" target="_new">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
 </p>
 </center>
 <p>
@@ -193,7 +193,7 @@ you can play it locally with QuickTime using the link below.
 frameborder="0" allowfullscreen></iframe>
 <p>
 Download Entire Video: 
-<a href="http://www-personal.umich.edu/~csev/courses/shared/podcasts/fixing-php-ini-xampp-windows.mov"
+<a href="http://afs.dr-chuck.com/courses/shared/podcasts/fixing-php-ini-xampp-windows.mov"
 target="_new">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
 </p>
 </center>
