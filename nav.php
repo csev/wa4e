@@ -4,7 +4,7 @@
    function navto($arg)
    {
 	echo ('href="' . $arg . '"');
-   	if ( strpos($_ENV["REQUEST_URI"], $arg) )  echo ' class="selected" ';
+   	if ( strpos($_SERVER["REQUEST_URI"], $arg) )  echo ' class="selected" ';
    }
    ?>
 <ul class="toolbar">
