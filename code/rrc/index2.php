@@ -9,13 +9,16 @@
 This is a <a href="http://www.php-intro.com">PHP</a> 
 page. Most of it is just HTML.
 </p>
-<pre> 
+<p> 
 But in a PHP file, we can switch into PHP by
 enclosing PHP code between &lt;?php and ?>.
-As the searcer reads the PHP file, when it
-sees PHP code, it is run on the server and
-The output of that code is returned to 
+As the server reads the file, when it
+sees PHP code, it executes it and 
+the output of that code is returned to 
 your browser in place of the &lt;?php ... ?>
+</p>
+<pre>
+PHP has a "print" statement like many languages.
 
 <?php
  print "Hello world";
