@@ -1,0 +1,54 @@
+// PHP-Intro 
+::Q1:: When a browser connects to a web server, 
+what is the default TCP/IP port that is used?
+{ =80 ~25 ~22 ~8888 ~8080 } 
+
+::Q2:: When a browser connects to a web server, what 
+command is sent to retrieve a document?
+{ =GET ~RETR ~DOC ~LOAD ~POST ~PUT ~REDIRECT ~SHA1 }
+
+::Q3:: When a browser requests a file that ends in ".htm", it
+reads the file from disk and passes it through the PHP interpreter.
+{FALSE}
+
+::Q4:: Where is JavaScript executed when using an Apache-based web server 
+like the MAMP application we use in class?
+{ =In the browser ~In the database application ~in the Apache virtual machine
+~in PHP }
+
+::Q5:: What is the difference between the "alert()" and "console.log()" operations
+in JavaScript?
+{
+=alert() pauses JavaScript execution 
+~console.log() waits a line of input from the user
+~console.log() pauses JavaScript execution 
+~console.log() executed in PHP and alert() executes in the browser
+}
+
+::Q6:: Which tag indicates the start of a sequence of PHP code?
+{ =<?php ~<php> ~<script> ~<!php ~++PHP++ ~[php] }
+
+::Q7:: Which of the HTTP Headers does the browser look at to 
+decide how to display the retrieved document?
+{ =Content-type ~Display-type ~ETAG ~Location ~Format ~Content-length }
+
+::Q8:: In the Request-Response Cycle, what happens immediately after you 
+click on a link in your browser?
+{ =Send the GET request ~Contact the database server
+~Parse the returned HTML ~Clear the browser screen
+~Scan the file for PHP code }
+
+::Q9:: What does the HTML <pre> tag do?
+{ =It respects whitespace and newlines until it encounters a </pre>
+~It runs a regular expression on the paragraph text
+~It functions like a <span> tag to allow a CSS class to be applied to text
+~It it puts text up in the tab of the browser that correcponds to the page
+}
+
+::Q10::What does the PHP hash() function do?
+{ =It computes a fixed length message digest for a strinfg or text
+~It breaks a long message into many smaller messages
+~It shows "white noise" on a web page to hide sensitive text
+~It is not a PHP function at all - it only works in JavaScript
+}
+
