@@ -34,7 +34,7 @@ if ( isset($_GET['md5']) ) {
             // form the "possible" pre-hash text
             $try = $ch1.$ch2;
 
-            // Run the hash and then ceck to see if we match
+            // Run the hash and then check to see if we match
             $check = hash('md5', $try);
             if ( $check == $md5 ) {
                 $goodtext = $try;
