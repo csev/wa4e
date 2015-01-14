@@ -59,7 +59,7 @@ if ( isset($_GET['md5']) ) {
 <!-- Use the very short syntax and call htmlentities() -->
 <p>Original Text: <?= htmlentities($goodtext); ?></p>
 <form>
-<input type="text" name="md5" size="40" />
+<input type="text" name="md5" size="60" />
 <input type="submit" value="Crack MD5"/>
 </form>
 <ul>
