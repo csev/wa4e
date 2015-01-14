@@ -10,30 +10,45 @@ to determine the original two characters.</p>
 Debug Output:
 <?php
 $goodtext = "Not found";
+// If there is no parameter, this code is all skipped
 if ( isset($_GET['md5']) ) {
     $time_pre = microtime(true);
     $md5 = $_GET['md5'];
 
+    // This is our alphabet
     $txt = "abcdefghijklmnopqrstuvwxyz";
-    $found = false;
-    $show = 14;
-    for($i=0; $i<strlen($txt); $i++ ) {
-        $ch1 = $txt[$i];
-        for($j=0; $j<strlen($txt); $j++ ) {
-            $ch2 = $txt[$j];
+    $show = 15;
 
+    // Outer loop go go through the alphabet for the
+    // first position in our "possible" pre-hash
+    // text
+    for($i=0; $i<strlen($txt); $i++ ) {
+        $ch1 = $txt[$i];   // The first of two characters
+
+        // Our inner loop Not the use of new variables
+        // $j and $ch2 
+        for($j=0; $j<strlen($txt); $j++ ) {
+            $ch2 = $txt[$j];  // Our second character
+
+            // Concatenate the two characters together to 
+            // form the "possible" pre-hash text
             $try = $ch1.$ch2;
+
+            // Run the hash and then ceck to see if we match
             $check = hash('md5', $try);
             if ( $check == $md5 ) {
                 $goodtext = $try;
-                break;
+                break;   // Exit the inner loop
             }
+
+            // Debug output until $show hits 0
             if ( $show > 0 ) {
                 print "$check $try\n";
                 $show = $show - 1;
             }
         }
     }
+    // Compute ellapsed time
     $time_post = microtime(true);
     print "Ellapsed time: ";
     print $time_post-$time_pre;
@@ -41,6 +56,7 @@ if ( isset($_GET['md5']) ) {
 }
 ?>
 </pre>
+<!-- Use the very short syntax and call htmlentities() -->
 <p>Original Text: <?= htmlentities($goodtext); ?></p>
 <form>
 <input type="text" name="md5" size="40" />
@@ -48,7 +64,7 @@ if ( isset($_GET['md5']) ) {
 </form>
 <p><a href="index.php">Reset</a></p>
 <p><a href="md5.php">MD5 Encoder</a></p>
-<p><a href="makepin.php">MD5 Four Digit PIN Maker</a> (for assignment)</p>
+<p><a href="makecode.php">MD5 Code Maker</a></p>
 </body>
 </html>
 

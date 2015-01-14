@@ -1,15 +1,16 @@
 <?php
 $error = false;
 $md5 = false;
-$pin = "";
-if ( isset($_GET['pin']) ) {
-    if ( strlen($_GET['pin']) != 4 ) {
-        $error = "Input must be exactly four characters";
-    } else if ( ! is_numeric($_GET['pin'])) {
-        $error = "Input must numeric";
+$code = "";
+if ( isset($_GET['code']) ) {
+    $code = $_GET['code'];
+    if ( strlen($code) != 2 ) {
+        $error = "Input must be exactly two characters";
+    } else if ( $code[0] < "a" || $code[0] > "z" || 
+                $code[1] < "a" || $code[1] > "z" ) {
+        $error = "Input must two lower case letters";
     } else {
-        $pin = $_GET['pin'];
-        $md5 = hash('md5', $pin);
+        $md5 = hash('md5', $code);
     }
 }
 ?>
@@ -29,10 +30,10 @@ if ( $md5 !== false ) {
 }
 ?>
 <form>
-<input type="text" name="pin" value="<?= htmlentities($pin) ?>"/>
+<input type="text" name="code" value="<?= htmlentities($code) ?>"/>
 <input type="submit" value="Compute MD5 for PIN"/>
 </form>
-<p><a href="makepin.php">Reset</a></p>
+<p><a href="makecode.php">Reset</a></p>
 <p><a href="index.php">Back to Cracking</a></p>
 </body>
 </html>
