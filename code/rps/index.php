@@ -8,7 +8,9 @@ unset($_SESSION['name']);
 $salt = "XyZzy12*_";
 $stored_hash = "a8609e8d62c043243c4e201cbb342862";  // Pw is meow123
 
-$failure = false;
+// Allow a failure string to be passed in as a GET parameter
+$failure = isset($_GET['failure']) ? $_GET['failure'] : false;
+
 if ( isset($_POST['who']) && isset($_POST['pass']) ) {
     if ( strlen($_POST['who']) < 1 || strlen($_POST['pass']) < 1 ) {
         $failure = "User name and password are required";
@@ -50,4 +52,14 @@ if ( $failure !== false ) {
 <input type="text" name="pass" id="id_1723"><br/>
 <input type="submit" value="Log In">
 </form>
+<p>
+For a password hint, view source and find a password hint 
+in the HTML comments.
+<!-- Hint: The password is the four character sound a cat 
+makes (all lower case) followed by 123. -->
+</p>
+<p>
+Try to <a href="game.php">play the game</a> without
+logging in.
+</p>
 </body>
