@@ -58,8 +58,10 @@ in the HTML comments.
 <!-- Hint: The password is the four character sound a cat 
 makes (all lower case) followed by 123. -->
 </p>
-<p>
-Try to <a href="game.php">play the game</a> without
-logging in.
-</p>
+<ul>
+<li> Try to <a href="game.php">play the game</a> without
+logging in.</li>
+<li><a href="https://github.com/csev/php-intro/tree/master/code/rps"
+target="_blank">Source Code</a></li>
+<ul>
 </body>
