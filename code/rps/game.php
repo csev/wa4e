@@ -49,7 +49,8 @@ $result = check($computer, $human);
 <title>Dr. Chuck's Rock, Paper, Scissors Game</title>
 </head>
 <body>
-<h1>Welcome to Rock Paper and Scissors</h1>
+<h1>Welcome <?= htmlentities($_SESSION['name']); ?> to Rock 
+Paper and Scissors</h1>
 <form method="post">
 <select name="human">
 <option value="-1">Select</option>
