@@ -1,16 +1,15 @@
 <?php
 session_start();
 
-// If the user requested logout go back to index.php
-if ( isset($_POST['logout']) ) {
-    header('Location: index.php');
-    exit();
-}
-
 // If the user is not logged in redirect back to index.php
 // with an error
 if ( ! isset($_SESSION['name']) ) {
-    header('Location: index.php?failure=ACCESS%20DENIED');
+    die("ACCESS DENIED");
+}
+
+// If the user requested logout go back to index.php
+if ( isset($_POST['logout']) ) {
+    header('Location: index.php');
     exit();
 }
 
@@ -48,7 +47,7 @@ $result = check($computer, $human);
 <head>
 <title>Dr. Chuck's Rock, Paper, Scissors Game</title>
 </head>
-<body>
+<body style="font-family: sans-serif;">
 <h1>Welcome <?= htmlentities($_SESSION['name']); ?> to Rock 
 Paper and Scissors</h1>
 <form method="post">

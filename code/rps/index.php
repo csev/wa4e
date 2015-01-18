@@ -5,8 +5,8 @@
 session_start();
 unset($_SESSION['name']);
 
-$salt = "XyZzy12*_";
-$stored_hash = "a8609e8d62c043243c4e201cbb342862";  // Pw is meow123
+$salt = 'XyZzy12*_';
+$stored_hash = 'a8609e8d62c043243c4e201cbb342862';  // Pw is meow123
 
 // Allow a failure string to be passed in as a GET parameter
 $failure = isset($_GET['failure']) ? $_GET['failure'] : false;
