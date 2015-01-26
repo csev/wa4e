@@ -39,7 +39,7 @@ Chapter 3 - Overview of PHP
 </li>
 <li class="toplevel">
 Chapter 4 - Expressions and Control Flow in PHP
-(<a href="lectures/PHP-04-Expressions.ppt"
+(<a href="lectures/PHP-04-Expressions-Control-String.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=oek0oMq9JUo&index=11&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
