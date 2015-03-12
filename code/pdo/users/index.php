@@ -14,7 +14,7 @@ if ( isset($_SESSION['success']) ) {
     unset($_SESSION['success']);
 }
 echo('<table border="1">'."\n");
-$stmt = $pdo->query("SELECT name, email, password, id FROM users");
+$stmt = $pdo->query("SELECT name, email, password, user_id FROM users");
 while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
     echo "<tr><td>";
     echo(htmlentities($row['name']));
@@ -23,8 +23,8 @@ while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
     echo("</td><td>");
     echo(htmlentities($row['password']));
     echo("</td><td>");
-    echo('<a href="edit.php?id='.$row['id'].'">Edit</a> / ');
-    echo('<a href="delete.php?id='.$row['id'].'">Delete</a>');
+    echo('<a href="edit.php?user_id='.$row['user_id'].'">Edit</a> / ');
+    echo('<a href="delete.php?user_id='.$row['user_id'].'">Delete</a>');
     echo("</td></tr>\n");
 }
 ?>

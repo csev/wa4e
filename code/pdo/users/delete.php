@@ -2,20 +2,20 @@
 require_once "pdo.php";
 session_start();
 
-if ( isset($_POST['delete']) && isset($_POST['id']) ) {
-    $sql = "DELETE FROM users WHERE id = :zip";
+if ( isset($_POST['delete']) && isset($_POST['user_id']) ) {
+    $sql = "DELETE FROM users WHERE user_id = :zip";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(array(':zip' => $_POST['id']));
+    $stmt->execute(array(':zip' => $_POST['user_id']));
     $_SESSION['success'] = 'Record deleted';
     header( 'Location: index.php' ) ;
     return;
 }
 
-$stmt = $pdo->prepare("SELECT name, id FROM users where id = :xyz");
-$stmt->execute(array(":xyz" => $_GET['id']));
+$stmt = $pdo->prepare("SELECT name, user_id FROM users where user_id = :xyz");
+$stmt->execute(array(":xyz" => $_GET['user_id']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ( $row === false ) {
-    $_SESSION['error'] = 'Bad value for id';
+    $_SESSION['error'] = 'Bad value for user_id';
     header( 'Location: index.php' ) ;
     return;
 }
@@ -23,7 +23,7 @@ if ( $row === false ) {
 echo "<p>Confirm: Deleting ".htmlentities($row['name'])."</p>\n";
 
 echo('<form method="post"><input type="hidden" ');
-echo('name="id" value="'.htmlentities($row['id']).'">'."\n");
+echo('name="user_id" value="'.htmlentities($row['user_id']).'">'."\n");
 echo('<input type="submit" value="Delete" name="delete">');
 echo('<a href="index.php">Cancel</a>');
 echo("\n</form>\n");

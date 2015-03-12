@@ -3,28 +3,28 @@ require_once "pdo.php";
 session_start();
 
 if ( isset($_POST['name']) && isset($_POST['email']) 
-     && isset($_POST['password']) && isset($_POST['id']) ) {
+     && isset($_POST['password']) && isset($_POST['user_id']) ) {
 
     // Data validation should go here (see add.php)
     $sql = "UPDATE users SET name = :name, 
             email = :email, password = :password
-            WHERE id = :id";
+            WHERE user_id = :user_id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(
         ':name' => $_POST['name'],
         ':email' => $_POST['email'],
         ':password' => $_POST['password'],
-        ':id' => $_POST['id']));
+        ':user_id' => $_POST['user_id']));
     $_SESSION['success'] = 'Record updated';
     header( 'Location: index.php' ) ;
     return;
 }
 
-$stmt = $pdo->prepare("SELECT * FROM users where id = :xyz");
-$stmt->execute(array(":xyz" => $_GET['id']));
+$stmt = $pdo->prepare("SELECT * FROM users where user_id = :xyz");
+$stmt->execute(array(":xyz" => $_GET['user_id']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ( $row === false ) {
-    $_SESSION['error'] = 'Bad value for id';
+    $_SESSION['error'] = 'Bad value for user_id';
     header( 'Location: index.php' ) ;
     return;
 }
@@ -32,9 +32,9 @@ if ( $row === false ) {
 $n = htmlentities($row['name']);
 $e = htmlentities($row['email']);
 $p = htmlentities($row['password']);
-$id = htmlentities($row['id']);
+$user_id = htmlentities($row['user_id']);
 
-// Flash message display would go here
+// Show the use of the "here" document
 echo <<< _END
 <p>Edit User</p>
 <form method="post">
@@ -44,7 +44,7 @@ echo <<< _END
 <input type="text" name="email" value="$e"></p>
 <p>Password:
 <input type="text" name="password" value="$p"></p>
-<input type="hidden" name="id" value="$id">
+<input type="hidden" name="user_id" value="$user_id">
 <p><input type="submit" value="Update"/>
 <a href="index.php">Cancel</a></p>
 </form>
