@@ -1,9 +1,10 @@
 <p>
-<a href="#" 
-  onclick="document.getElementById('stuff').innerHTML = 'BACK';return false;">BACK</a>
-<a href="#" 
-  onclick="document.getElementById('stuff').innerHTML = 'FORTH';return false;">FORTH</a>
-</p>
-<p>
-Hello <b><span id="stuff">Stuff</span></b> there.
-</p>
+Hello <b><span id="person">Chuck</span></b> there.
+</p> 
+<script type="text/javascript">
+st = document.getElementById('person').innerHTML;
+window.console && console.log("ST = "+st);
+alert('Hi there ' + st);
+document.getElementById('person').innerHTML = 'Joseph';
+window.console && console.dir(document.getElementById('person'));
+</script>
