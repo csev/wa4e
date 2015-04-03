@@ -1,5 +1,8 @@
 <html>
 <head>
+</head>
+<body>
+<p>Howdy - Lets get a JSON list</p>
 <script type="text/javascript" src="jquery.min.js">
 </script>
 <script type="text/javascript">
@@ -12,7 +15,4 @@ $(document).ready( function () {
   }
 );
 </script>
-</head>
-<body>
-<p>Howdy - Lets get a JSON list</p>
 </body>

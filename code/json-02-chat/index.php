@@ -14,8 +14,6 @@
 ?>
 <html>
 <head>
-<script type="text/javascript" src="jquery.min.js">
-</script>
 </head>
 <body>
       <h1>Chat</h1>
@@ -30,6 +28,8 @@
       <div id="chatcontent">
           <img src="spinner.gif" alt="Loading..."/>
       </div>
+<script type="text/javascript" src="jquery.min.js">
+</script>
 <script type="text/javascript">
 function updateMsg() {
   window.console && console.log("Requesting JSON"); 

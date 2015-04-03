@@ -4,14 +4,6 @@ session_start();
 ?>
 <html>
 <head>
-<script type="text/javascript" src="jquery.min.js">
-</script>
-<script type="text/javascript">
-// Simple htmlentities leveraging JQuery
-function htmlentities(str) {
-   return $('<div/>').text(str).html();
-}
-</script>
 </head><body>
 <?php
 if ( isset($_SESSION['error']) ) {
@@ -27,6 +19,16 @@ if ( isset($_SESSION['success']) ) {
   <tbody id="mytab">
   </tbody>
 </table>
+<a href="add.php">Add New</a>
+<a href="viewapi.php" target="_blank">viewapi.php</a>
+<script type="text/javascript" src="jquery.min.js">
+</script>
+<script type="text/javascript">
+// Simple htmlentities leveraging JQuery
+function htmlentities(str) {
+   return $('<div/>').text(str).html();
+}
+</script>
 <script type="text/javascript">
 // Do this *after* the table tag is rendered
 $.getJSON('getjson.php', function(data) {
@@ -49,5 +51,3 @@ $.getJSON('getjson.php', function(data) {
     }
 });
 </script>
-<a href="add.php">Add New</a>
-<a href="viewapi.php" target="_blank">viewapi.php</a>

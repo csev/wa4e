@@ -1,7 +1,5 @@
 <html>
 <head>
-<script type="text/javascript" src="jquery.min.js">
-</script>
 </head>
 <body>
 <p id="para">Where is the spinner?
@@ -16,4 +14,6 @@
 
 <a href="#" onclick="$('#para').css('background-color', 'green');
     return false;">Green</a>
+<script type="text/javascript" src="jquery.min.js">
+</script>
 </body>

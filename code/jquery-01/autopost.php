@@ -1,7 +1,5 @@
 <html>
 <head>
-<script type="text/javascript" src="jquery.min.js">
-</script>
 </head>
 <body>
 <p>Change the contents of the text field and 
@@ -17,9 +15,10 @@ Enter or the form will get submitted.</p>
 <hr/>
 <div id="result"></div>
 <hr/>
+<script type="text/javascript" src="jquery.min.js">
+</script>
 <script type="text/javascript">
   $('#target').change(function(event) {
-	event.preventDefault();
     $('#spinner').show();
     var form = $('#target');
     var txt = form.find('input[name="one"]').val();
@@ -33,7 +32,6 @@ Enter or the form will get submitted.</p>
     ).error( function() { 
       window.console && console.log('error'); 
 	});
-	return false;
   });
 </script>
 </body>
