@@ -250,7 +250,6 @@ and use
 </p>
 <p>
 -- Dr. Chuck
-Wed Nov 12 20:46:42 EST 2014
 </p>
 </div>
 <?php include("footer.php"); ?>
