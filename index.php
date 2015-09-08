@@ -9,11 +9,26 @@
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
 </p>
-<h3>Materials</h3>
-<p>Note: During Fall Semester 2015, I am reorganizing the SI664 course and reorganizing this site
+<p><b>Note:</b> During Fall Semester 2015, I am reorganizing the SI664 course and reorganizing this site
 and its videos.  Things are going to be renumbered as I pull the SQL parts of the course to the beginning.
 As I work through the course materials, there will be old and new versions of some of the material.
 </p>
+<h3>TextBook</h3>
+<p>
+I am using an open textbook 
+<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
+target="_new">
+The Missing Link: An Introduction to Web Development and Programming
+</a>
+written by Michael Mendez 
+and published by 
+<a href="http://textbooks.opensuny.org/" target="_blank">OpenSUNY</a>.  All of the electronic copies
+of the book are free.   Print copies of the book are available on 
+<a href="http://www.amazon.com/The-Missing-Link-Introduction-Development/dp/1502447967/"
+target="_blank">Amazon</a>.
+</p>
+
+<h3>Materials</h3>
 <p>
 <ul>
 <li>The first task is to work 
@@ -26,7 +41,7 @@ Lectures and other Videos:
 PHP/MySql YouTube Channel</a>
 
 <li class="toplevel">
-Introduction
+Introduction to Dynamic Web Content
 (<a href="lectures-old/PHP-01-Intro.ppt"
     target="_blank">Slides</a>)
 </li>
@@ -36,6 +51,7 @@ Introduction to Structured Query Language (SQL)
 <br/> New:
 (<a href="lectures/SQL-01-MySQL.ppt" target="_blank">Slides</a>, 
 <a href="lectures/SQL-01-MySQL-Handout.doc" target="_blank">Handout</a>)
+(Chapters: 37, 39, 41)
 <br> Old: (<a href="lectures-old/PHP-09-MySQL.ppt"
     target="_blank">Slides</a>, 
 <a href="lectures-old/PHP-09-MySQL-Handout.doc"
@@ -52,6 +68,7 @@ Database Design
 <br/> New:
 (<a href="lectures/SQL-02-MySQL-Design.ppt" target="_blank">Slides</a>, 
 <a href="lectures/SQL-02-MySQL-Design.doc" target="_blank">Handout</a>)
+(Chapters: 38, 40, 42)
 <br/> Old: (<a href="lectures-old/PHP-13-MySQL-Design.ppt"
     target="_blank">Slides</a>, 
 YouTube:
