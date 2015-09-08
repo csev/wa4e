@@ -10,6 +10,10 @@ Hello and welcome to my site where you can work through my materials and learn P
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
 </p>
 <h3>Materials</h3>
+<p>Note: During Fall Semester 2015, I am reorganizing the SI664 course and reorganizing this site
+and its videos.  Things are going to be renumbered as I pull the SQL parts of the course to the beginning.
+As I work through the course materials, there will be old and new versions of some of the material.
+</p>
 <p>
 <ul>
 <li>The first task is to work 
@@ -20,50 +24,91 @@ creating a MySql Database, and writing a PHP program.</a>
 Lectures and other Videos: 
 <a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">
 PHP/MySql YouTube Channel</a>
+
 <li class="toplevel">
-Chapter 1 - Introduction
-(<a href="lectures/PHP-01-Intro.ppt"
+Introduction
+(<a href="lectures-old/PHP-01-Intro.ppt"
     target="_blank">Slides</a>)
 </li>
+
 <li class="toplevel">
-Chapter 2 - Setting up a Development Server on the Internet
-(<a href="lectures/PHP-02-Hosting.ppt"
+Introduction to Structured Query Language (SQL)
+<br/> New:
+(<a href="lectures/SQL-01-MySQL.ppt" target="_blank">Slides</a>, 
+<a href="lectures/SQL-01-MySQL-Handout.doc" target="_blank">Handout</a>)
+<br> Old: (<a href="lectures-old/PHP-09-MySQL.ppt"
+    target="_blank">Slides</a>, 
+<a href="lectures-old/PHP-09-MySQL-Handout.doc"
+    target="_blank">Handout</a>, 
+YouTube:
+<a href="https://www.youtube.com/watch?v=lNizVvj0vdY&index=18&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 1</a>,
+<a href="https://www.youtube.com/watch?v=-J8fH3zVkmQ&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=19"
+    target="_blank">Part 2</a>)
+</li>
+
+<li class="toplevel">
+Database Design
+<br/> New:
+(<a href="lectures/SQL-02-MySQL-Design.ppt" target="_blank">Slides</a>, 
+<a href="lectures/SQL-02-MySQL-Design.doc" target="_blank">Handout</a>)
+<br/> Old: (<a href="lectures-old/PHP-13-MySQL-Design.ppt"
+    target="_blank">Slides</a>, 
+YouTube:
+<a href="https://www.youtube.com/watch?v=U8IWOdrJk-o&index=26&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 1</a>,
+<a href="https://www.youtube.com/watch?v=Jxy8Pgc-OCo&index=27&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 2</a>,
+<a href="https://www.youtube.com/watch?v=c1W8a7TT_eE&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=28"
+    target="_blank">Part 3</a>,
+<a href="https://www.youtube.com/watch?v=5bWkPKEms5U&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=29"
+    target="_blank">Part 4</a>)
+</li>
+
+
+<li class="toplevel">
+Setting up a Development Server on the Internet
+(<a href="lectures-old/PHP-02-Hosting.ppt"
     target="_blank">Slides</a>)
 </li>
+
 <li class="toplevel">
-Chapter 3 - Overview of PHP
-(<a href="lectures/PHP-03-Overview.ppt"
+Overview of PHP
+(<a href="lectures-old/PHP-03-Overview.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=8WNHqtR2dOI&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=16"
     target="_blank">YouTube</a>)
 </li>
+
 <li class="toplevel">
-Chapter 4 - Expressions and Control Flow in PHP
-(<a href="lectures/PHP-04-Expressions-Control-String.ppt"
+Expressions and Control Flow in PHP
+(<a href="lectures-old/PHP-04-Expressions-Control-String.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=oek0oMq9JUo&index=11&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 </li>
+
 <li class="toplevel">
-Chapter 5 - PHP Arrays
-(<a href="lectures/PHP-05-Arrays.ppt"
+PHP Arrays
+(<a href="lectures-old/PHP-05-Arrays.ppt"
     target="_blank">Slides</a>, 
 <a href="code/arrays.zip"
    target="_blank">Sample Code</a>, 
 <a href="https://www.youtube.com/watch?v=hEkuyEa_lK0&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 </li>
+
 <li class="toplevel">
-Chapter 6 - PHP Functions
-(<a href="lectures/PHP-06-Functions.ppt"
+PHP Functions
+(<a href="lectures-old/PHP-06-Functions.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=wYhw5pt7Kwg&index=13&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 </li>
 
 <li class="toplevel">
-Chapter 7 - Forms and Handling POST Data
-(<a href="lectures/PHP-07-Forms.ppt"
+Forms and Handling POST Data
+(<a href="lectures-old/PHP-07-Forms.ppt"
     target="_blank">Slides</a>, 
 <a href="code/forms.zip"
    target="_blank">Sample Code</a>, 
@@ -75,34 +120,8 @@ YouTube:
 </li>
 
 <li class="toplevel">
-Chapter 8 - Sessions, Cookies, and Redirection
-(<a href="lectures/PHP-08-Sessions-Cookies-Redirect.ppt"
-    target="_blank">Slides</a>, 
-<a href="code/sessions.zip"
-   target="_blank">Sample Code</a>, 
-YouTube:
-<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 1</a>,
-<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 2</a>)
-</li>
-
-<li class="toplevel">
-Chapter 9 - Introduction to Structured Query Language (SQL)
-(<a href="lectures/PHP-09-MySQL.ppt"
-    target="_blank">Slides</a>, 
-<a href="lectures/PHP-09-MySQL-Handout.doc"
-    target="_blank">Handout</a>, 
-YouTube:
-<a href="https://www.youtube.com/watch?v=lNizVvj0vdY&index=18&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 1</a>,
-<a href="https://www.youtube.com/watch?v=-J8fH3zVkmQ&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=19"
-    target="_blank">Part 2</a>)
-</li>
-
-<li class="toplevel">
-Chapter 10 - Using SQL in PHP
-(<a href="lectures/PHP-10-MySQL-PDO.ppt"
+Using SQL in PHP
+(<a href="lectures-old/PHP-10-MySQL-PDO.ppt"
     target="_blank">Slides</a>, 
 <a href="code/pdo.zip"
    target="_blank">Sample Code</a>, 
@@ -116,12 +135,21 @@ YouTube:
 </li>
 
 <li class="toplevel">
-<i>Midterm</i>
+Sessions, Cookies, and Redirection
+(<a href="lectures-old/PHP-08-Sessions-Cookies-Redirect.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/sessions.zip"
+   target="_blank">Sample Code</a>, 
+YouTube:
+<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 1</a>,
+<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 2</a>)
 </li>
 
 <li class="toplevel">
-Chapter 11 - PHP Objects
-(<a href="lectures/PHP-11-PHP-Objects.ppt"
+PHP Objects
+(<a href="lectures-old/PHP-11-PHP-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/objects.zip"
    target="_blank">Sample Code</a>, 
@@ -129,15 +157,15 @@ Chapter 11 - PHP Objects
 </li>
 
 <li class="toplevel">
-Chapter 12 - JavaScript
-(<a href="lectures/PHP-12-JavaScript.ppt"
+JavaScript
+(<a href="lectures-old/PHP-12-JavaScript.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript.zip"
    target="_blank">Sample Code</a>, 
 <a href="https://www.youtube.com/watch?v=HPtDPZdiBUk&index=24&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)<br/>
-Chapter 12 - JavaScript Objects
-(<a href="lectures/PHP-12-JavaScript-Objects.ppt"
+JavaScript Objects
+(<a href="lectures-old/PHP-12-JavaScript-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript-objects.zip"
    target="_blank">Sample Code</a>, 
@@ -147,23 +175,8 @@ target="_blank">YouTube</a>)
 
 
 <li class="toplevel">
-Chapter 13 - Database Design
-(<a href="lectures/PHP-13-MySQL-Design.ppt"
-    target="_blank">Slides</a>, 
-YouTube:
-<a href="https://www.youtube.com/watch?v=U8IWOdrJk-o&index=26&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 1</a>,
-<a href="https://www.youtube.com/watch?v=Jxy8Pgc-OCo&index=27&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 2</a>,
-<a href="https://www.youtube.com/watch?v=c1W8a7TT_eE&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=28"
-    target="_blank">Part 3</a>,
-<a href="https://www.youtube.com/watch?v=5bWkPKEms5U&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=29"
-    target="_blank">Part 4</a>)
-</li>
-
-<li class="toplevel">
-Chapter 14 - JQuery and JSON
-(<a href="lectures/PHP-14-JQuery-JSON.ppt"
+JQuery and JSON
+(<a href="lectures-old/PHP-14-JQuery-JSON.ppt"
     target="_blank">Slides</a>, 
 Sample code: 
 <a href="code/jquery.zip"
@@ -184,8 +197,8 @@ YouTube:
 </li>
 
 <li class="toplevel">
-Chapter 15 - Advanced SQL
-(<a href="lectures/PHP-15-Advanced-SQL.ppt"
+Advanced SQL
+(<a href="lectures-old/PHP-15-Advanced-SQL.ppt"
     target="_blank">Slides</a>, 
 YouTube:
 <a href="https://www.youtube.com/watch?v=XNeVf_TXdTA&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=33"
@@ -195,8 +208,8 @@ YouTube:
 </li>
 
 <li class="toplevel">
-Chapter 16 - MySQL Transactions
-(<a href="lectures/PHP-16-MySQL-Transactions.ppt"
+MySQL Transactions
+(<a href="lectures-old/PHP-16-MySQL-Transactions.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=8xpM8pm5yIo&index=35&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
   target="_blank">YouTube</a>)
