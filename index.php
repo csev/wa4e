@@ -179,7 +179,7 @@ JQuery and JSON
 (<a href="lectures-old/PHP-14-JQuery-JSON.ppt"
     target="_blank">Slides</a>, 
 Sample code: 
-<a href="code/jquery.zip"
+<a href="code/jquery-01.zip"
    target="_blank">JQuery</a>, 
 <a href="code/json-01.zip"
    target="_blank">JSON</a>, 
