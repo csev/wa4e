@@ -93,7 +93,7 @@ Setting up a Development Server on the Internet
 
 <li class="toplevel">
 Overview of PHP
-(<a href="lectures-old/PHP-03-Overview.ppt"
+(<a href="lectures/PHP-02-Overview.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=8WNHqtR2dOI&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=16"
     target="_blank">YouTube</a>)
@@ -102,7 +102,7 @@ Overview of PHP
 
 <li class="toplevel">
 Expressions and Control Flow in PHP
-(<a href="lectures-old/PHP-04-Expressions-Control-String.ppt"
+(<a href="lectures/PHP-03-Expressions-Control-String.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=oek0oMq9JUo&index=11&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
@@ -111,7 +111,7 @@ Expressions and Control Flow in PHP
 
 <li class="toplevel">
 PHP Arrays
-(<a href="lectures-old/PHP-05-Arrays.ppt"
+(<a href="lectures/PHP-04-Arrays.ppt"
     target="_blank">Slides</a>, 
 <a href="code/arrays.zip"
    target="_blank">Sample Code</a>, 
@@ -122,7 +122,7 @@ PHP Arrays
 
 <li class="toplevel">
 PHP Functions
-(<a href="lectures-old/PHP-06-Functions.ppt"
+(<a href="lectures/PHP-05-Functions.ppt"
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=wYhw5pt7Kwg&index=13&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
