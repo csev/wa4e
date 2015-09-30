@@ -35,6 +35,8 @@ target="_blank">Amazon</a>.
 through the <a href="install.php">installation steps</a>
 including installing a text editor, installing MAMP or XAMPP (or equivalent),
 creating a MySql Database, and writing a PHP program.</a>
+(Chapter: 27)
+</li>
 <li class="toplevel">
 Lectures and other Videos: 
 <a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">
@@ -95,6 +97,7 @@ Overview of PHP
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=8WNHqtR2dOI&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=16"
     target="_blank">YouTube</a>)
+(Chapters: 27, 28, 31)
 </li>
 
 <li class="toplevel">
@@ -103,6 +106,7 @@ Expressions and Control Flow in PHP
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=oek0oMq9JUo&index=11&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
+(Chapters: 27, 28, 31)
 </li>
 
 <li class="toplevel">
@@ -113,6 +117,7 @@ PHP Arrays
    target="_blank">Sample Code</a>, 
 <a href="https://www.youtube.com/watch?v=hEkuyEa_lK0&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
+(Chapters: 27, 28, 31)
 </li>
 
 <li class="toplevel">
@@ -121,6 +126,7 @@ PHP Functions
     target="_blank">Slides</a>, 
 <a href="https://www.youtube.com/watch?v=wYhw5pt7Kwg&index=13&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
+(Chapters: 32)
 </li>
 
 <li class="toplevel">
@@ -134,6 +140,7 @@ YouTube:
     target="_blank">Part 1</a>,
 <a href="https://www.youtube.com/watch?v=8zno_C_VMUE&index=15&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 2</a>)
+(Chapters 14, 27)
 </li>
 
 <li class="toplevel">
@@ -162,6 +169,7 @@ YouTube:
     target="_blank">Part 1</a>,
 <a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 2</a>)
+(Chapter: 27)
 </li>
 
 <li class="toplevel">
@@ -171,6 +179,7 @@ PHP Objects
 <a href="code/objects.zip"
    target="_blank">Sample Code</a>, 
 <a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
+(Chapter: 33)
 </li>
 
 <li class="toplevel">
