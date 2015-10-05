@@ -131,7 +131,7 @@ PHP Functions
 
 <li class="toplevel">
 Forms and Handling POST Data
-(<a href="lectures-old/PHP-07-Forms.ppt"
+(<a href="lectures/PHP-06-Forms.ppt"
     target="_blank">Slides</a>, 
 <a href="code/forms.zip"
    target="_blank">Sample Code</a>, 
@@ -142,6 +142,21 @@ YouTube:
     target="_blank">Part 2</a>)
 (Chapters 14, 27)
 </li>
+
+<li class="toplevel">
+Sessions, Cookies, and Redirection
+(<a href="lectures/PHP-07-Sessions-Cookies-Redirect.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/sessions.zip"
+   target="_blank">Sample Code</a>, 
+YouTube:
+<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 1</a>,
+<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 2</a>)
+(Chapter: 27)
+</li>
+
 
 <li class="toplevel">
 Using SQL in PHP
@@ -156,20 +171,6 @@ YouTube:
     target="_blank">Part 2</a>,
 <a href="https://www.youtube.com/watch?v=-giRidLxtP0&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=22"
     target="_blank">Part 3</a>)
-</li>
-
-<li class="toplevel">
-Sessions, Cookies, and Redirection
-(<a href="lectures-old/PHP-08-Sessions-Cookies-Redirect.ppt"
-    target="_blank">Slides</a>, 
-<a href="code/sessions.zip"
-   target="_blank">Sample Code</a>, 
-YouTube:
-<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 1</a>,
-<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 2</a>)
-(Chapter: 27)
 </li>
 
 <li class="toplevel">
