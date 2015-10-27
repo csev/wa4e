@@ -27,7 +27,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
     }
 }
 
-// Fall through into the View 
+// Fall through into the View
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,7 +39,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <?php
 // Note triple not equals and think how badly double
 // not equals would work here...
-if ( $failure !== false ) { 
+if ( $failure !== false ) {
     // Look closely at the use of single and double quotes
     echo('<p style="color: red;">'.htmlentities($failure)."</p>\n");
 }
@@ -52,9 +52,9 @@ if ( $failure !== false ) {
 <input type="submit" value="Log In">
 </form>
 <p>
-For a password hint, view source and find a password hint 
+For a password hint, view source and find a password hint
 in the HTML comments.
-<!-- Hint: The password is the four character sound a cat 
+<!-- Hint: The password is the four character sound a cat
 makes (all lower case) followed by 123. -->
 </p>
 <ul>

@@ -18,7 +18,7 @@ if ( isset($_POST['logout']) ) {
 $names = array('Rock', 'Paper', 'Scissors');
 $human = isset($_POST["human"]) ? $_POST['human']+0 : -1;
 
-$computer = 0; // Hard code the computer to rock 
+$computer = 0; // Hard code the computer to rock
 // TODO: Make the computer be random
 // $computer = rand(0,2);
 
@@ -30,7 +30,7 @@ function check($computer, $human) {
     // TODO: Fix this
     if ( $human == 0 ) {
         return "Tie";
-    } else if ( $human == 1 ) { 
+    } else if ( $human == 1 ) {
         return "You Win";
     } else if ( $human == 2 ) {
         return "You Lose";
@@ -48,7 +48,7 @@ $result = check($computer, $human);
 <title>Dr. Chuck's Rock, Paper, Scissors Game</title>
 </head>
 <body style="font-family: sans-serif;">
-<h1>Welcome <?= htmlentities($_SESSION['name']); ?> to Rock 
+<h1>Welcome <?= htmlentities($_SESSION['name']); ?> to Rock
 Paper and Scissors</h1>
 <form method="post">
 <select name="human">
