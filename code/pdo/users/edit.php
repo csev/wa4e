@@ -33,21 +33,17 @@ $n = htmlentities($row['name']);
 $e = htmlentities($row['email']);
 $p = htmlentities($row['password']);
 $user_id = htmlentities($row['user_id']);
-
-// Show the use of the "here" document
-echo <<< _END
+?>
 <p>Edit User</p>
 <form method="post">
 <p>Name:
-<input type="text" name="name" value="$n"></p>
+<input type="text" name="name" value="<?= $n ?>"></p>
 <p>Email:
-<input type="text" name="email" value="$e"></p>
+<input type="text" name="email" value="<?= $e ?>"></p>
 <p>Password:
-<input type="text" name="password" value="$p"></p>
-<input type="hidden" name="user_id" value="$user_id">
+<input type="text" name="password" value="<?= $p ?>"></p>
+<input type="hidden" name="user_id" value="<?= $user_id ?>">
 <p><input type="submit" value="Update"/>
 <a href="index.php">Cancel</a></p>
 </form>
-_END
-?>
 

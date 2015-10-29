@@ -20,11 +20,11 @@ if ( $row === false ) {
     return;
 }
 
-echo "<p>Confirm: Deleting ".htmlentities($row['name'])."</p>\n";
-
-echo('<form method="post"><input type="hidden" ');
-echo('name="user_id" value="'.htmlentities($row['user_id']).'">'."\n");
-echo('<input type="submit" value="Delete" name="delete">');
-echo('<a href="index.php">Cancel</a>');
-echo("\n</form>\n");
 ?>
+<p>Confirm: Deleting <?= htmlentities($row['name']) ?></p>
+
+<form method="post"><input type="hidden"
+name="user_id" value="<?= $row['user_id'] ?>">
+<input type="submit" value="Delete" name="delete">
+<a href="index.php">Cancel</a>
+</form>

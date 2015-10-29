@@ -160,7 +160,7 @@ YouTube:
 
 <li class="toplevel">
 Using SQL in PHP
-(<a href="lectures-old/PHP-10-MySQL-PDO.ppt"
+(<a href="lectures/PHP-08-MySQL-PDO.ppt"
     target="_blank">Slides</a>, 
 <a href="code/pdo.zip"
    target="_blank">Sample Code</a>, 
