@@ -26,7 +26,7 @@
     $city = isset($_SESSION['city']) ? $_SESSION['city'] : '';
     $state = isset($_SESSION['state']) ? $_SESSION['state'] : '';   
     $zip = isset($_SESSION['zip']) ? $_SESSION['zip'] : '';  
- 
+
     // If we are not logged in, give the user a link to the
     // login screen.  If we are logged in, put up the 
     // edit screen.
@@ -36,13 +36,13 @@
         <p>Please enter your address:
         <form method="post">
         <p>Street: <input type="text" name="street" size="50" 
-        value="<?php echo(htmlentities($street)); ?>"></p>
+        value="<?= htmlentities($street) ?>"></p>
         <p>City: <input type="text" name="city" size="20" 
-        value="<?php echo(htmlentities($city)); ?>"></p>
+        value="<?= htmlentities($city) ?>"></p>
         <p>State: <input type="text" name="state" size="2" 
-        value="<?php echo(htmlentities($state)); ?>">
+        value="<?= htmlentities($state) ?>">
         Zip: <input type="text" name="zip" size="5" 
-        value="<?php echo(htmlentities($zip)); ?>"></p>
+        value="<?= htmlentities($zip) ?>"></p>
         <p><input type="submit" value="Update">
         <input type="button" value="Logout"
         onclick="location.href='logout.php'; return false"></p>

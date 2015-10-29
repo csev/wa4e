@@ -4,11 +4,8 @@
 <p>Guessing game...</p>
 <form method="post">
    <p><label for="guess">Input Guess</label>
-   <input type="text" name="guess" id="guess" size="40" 
-<?php
-   echo 'value="' . htmlentities($oldguess) . '"';
-?>
-   /></p>
+   <input type="text" name="guess" id="guess" 
+      size="40" value="<?= htmlentities($oldguess) ?>" /></p>
    <input type="submit"/>
 </form>
 <pre>

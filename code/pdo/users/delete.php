@@ -23,8 +23,8 @@ if ( $row === false ) {
 ?>
 <p>Confirm: Deleting <?= htmlentities($row['name']) ?></p>
 
-<form method="post"><input type="hidden"
-name="user_id" value="<?= $row['user_id'] ?>">
+<form method="post">
+<input type="hidden" name="user_id" value="<?= $row['user_id'] ?>">
 <input type="submit" value="Delete" name="delete">
 <a href="index.php">Cancel</a>
 </form>

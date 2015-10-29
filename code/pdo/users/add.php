@@ -2,7 +2,7 @@
 require_once "pdo.php";
 session_start();
 
-if ( isset($_POST['name']) && isset($_POST['email']) 
+if ( isset($_POST['name']) && isset($_POST['email'])
      && isset($_POST['password'])) {
 
     // Data validation
@@ -18,7 +18,7 @@ if ( isset($_POST['name']) && isset($_POST['email'])
         return;
     }
 
-    $sql = "INSERT INTO users (name, email, password) 
+    $sql = "INSERT INTO users (name, email, password)
               VALUES (:name, :email, :password)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(
@@ -47,4 +47,3 @@ if ( isset($_SESSION['error']) ) {
 <p><input type="submit" value="Add New"/>
 <a href="index.php">Cancel</a></p>
 </form>
-

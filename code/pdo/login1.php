@@ -10,18 +10,9 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
    $e = $_POST['email'];
    $p = $_POST['password'];
    echo("Password: $p\n");
-   // This can be removed once everyone is > PHP 5.4
-   if ( get_magic_quotes_gpc() ) {
-        echo("Magic quotes are on...\n");
-        $e = stripslashes($e);
-        $p = stripslashes($p);
-        echo("Raw Password: $p\n");
-   } else {
-        echo("Magic quotes are off...\n");
-   }
 
-   $sql = "SELECT name FROM users 
-       WHERE email = '$e' 
+   $sql = "SELECT name FROM users
+       WHERE email = '$e'
        AND password = '$p'";
 
    $stmt = $pdo->query($sql);
@@ -32,7 +23,7 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
    if ( $row === FALSE ) {
       echo "<h1>Login incorrect.</h1>\n";
       unset($_SESSION['name']);
-   } else { 
+   } else {
       echo "<p>Login success.</p>\n";
       $_SESSION['name'] = $row['name'];
    }
@@ -56,5 +47,5 @@ if ( isset($_SESSION['name']) ) {
 <a href="<?php echo($_SERVER['PHP_SELF']);?>">Refresh</a></p>
 </form>
 <p>
-Check out this 
+Check out this
 <a href="http://xkcd.com/327/" target="_blank">XKCD comic that is relevant</a>.
