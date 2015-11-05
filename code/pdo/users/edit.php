@@ -2,11 +2,11 @@
 require_once "pdo.php";
 session_start();
 
-if ( isset($_POST['name']) && isset($_POST['email']) 
+if ( isset($_POST['name']) && isset($_POST['email'])
      && isset($_POST['password']) && isset($_POST['user_id']) ) {
 
     // Data validation should go here (see add.php)
-    $sql = "UPDATE users SET name = :name, 
+    $sql = "UPDATE users SET name = :name,
             email = :email, password = :password
             WHERE user_id = :user_id";
     $stmt = $pdo->prepare($sql);
@@ -32,7 +32,6 @@ if ( $row === false ) {
 $n = htmlentities($row['name']);
 $e = htmlentities($row['email']);
 $p = htmlentities($row['password']);
-$user_id = htmlentities($row['user_id']);
 ?>
 <p>Edit User</p>
 <form method="post">
@@ -42,8 +41,7 @@ $user_id = htmlentities($row['user_id']);
 <input type="text" name="email" value="<?= $e ?>"></p>
 <p>Password:
 <input type="text" name="password" value="<?= $p ?>"></p>
-<input type="hidden" name="user_id" value="<?= $user_id ?>">
+<input type="hidden" name="user_id" value="<?= $row['user_id'] ?>">
 <p><input type="submit" value="Update"/>
 <a href="index.php">Cancel</a></p>
 </form>
-

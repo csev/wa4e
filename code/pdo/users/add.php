@@ -25,9 +25,9 @@ if ( isset($_POST['name']) && isset($_POST['email'])
         ':name' => $_POST['name'],
         ':email' => $_POST['email'],
         ':password' => $_POST['password']));
-   $_SESSION['success'] = 'Record Added';
-   header( 'Location: index.php' ) ;
-   return;
+    $_SESSION['success'] = 'Record Added';
+    header( 'Location: index.php' ) ;
+    return;
 }
 
 // Flash pattern
