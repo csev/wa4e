@@ -182,17 +182,16 @@ PHP Objects
 <a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
 (Chapter: 33)
 </li>
-
 <li class="toplevel">
 JavaScript
-(<a href="lectures-old/PHP-12-JavaScript.ppt"
+(<a href="lectures/JS-01-JavaScript.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript.zip"
    target="_blank">Sample Code</a>, 
 <a href="https://www.youtube.com/watch?v=HPtDPZdiBUk&index=24&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)<br/>
 JavaScript Objects
-(<a href="lectures-old/PHP-12-JavaScript-Objects.ppt"
+(<a href="lectures/JS-02-JavaScript-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript-objects.zip"
    target="_blank">Sample Code</a>, 
@@ -203,7 +202,7 @@ target="_blank">YouTube</a>)
 
 <li class="toplevel">
 JQuery and JSON
-(<a href="lectures-old/PHP-14-JQuery-JSON.ppt"
+(<a href="lectures/JS-03-JQuery-JSON.ppt"
     target="_blank">Slides</a>, 
 Sample code: 
 <a href="code/jquery-01.zip"
