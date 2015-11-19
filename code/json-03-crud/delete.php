@@ -27,4 +27,4 @@ echo('name="id" value="'.$row['id'].'">'."\n");
 echo('<input type="submit" value="Delete" name="delete">');
 echo('<a href="index.php">Cancel</a>');
 echo("\n</form>\n");
-?>
+

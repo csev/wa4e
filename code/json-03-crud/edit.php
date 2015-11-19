@@ -36,7 +36,6 @@ if ( $row === false ) {
 $t = htmlentities($row['title']);
 $p = htmlentities($row['plays']);
 $r = htmlentities($row['rating']);
-$id = htmlentities($row['id']);
 
 ?>
 <html><head></head><body>
@@ -45,19 +44,17 @@ if ( isset($_SESSION['error']) ) {
     echo '<p style="color:red">'.$_SESSION['error']."</p>\n";
     unset($_SESSION['error']);
 }
-
-echo <<< _END
+?>
 <p>Edit Record</p>
 <form method="post">
 <p>Title:
-<input type="text" name="title" value="$t"></p>
+<input type="text" name="title" value="<?= $t ?>"></p>
 <p>Plays:
-<input type="text" name="plays" value="$p"></p>
+<input type="text" name="plays" value="<?= $p ?>"></p>
 <p>Rating:
-<input type="text" name="rating" value="$r"></p>
-<input type="hidden" name="id" value="$id">
+<input type="text" name="rating" value="<?= $r ?>"></p>
+<input type="hidden" name="id" value="<?= $id ?>">
 <p><input type="submit" value="Update"/>
 <a href="index.php">Cancel</a></p>
 </form>
-_END
-?>
+
