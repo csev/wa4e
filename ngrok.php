@@ -25,7 +25,7 @@ http://localhost/php-intro/assn01/
 http://localhost:8080/php-intro/assn01/
 http://localhost:8888/php-intro/assn01/
 </pre>
-So even if you knew the loack IP (Internet Protocol) address of your computer, it is not possible 
+So even if you knew the local IP (Internet Protocol) address of your computer, it is not possible 
 to connect from the internet to your computer due to a gateway or firewall.
 </p>
 <p>
