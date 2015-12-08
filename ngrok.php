@@ -94,10 +94,10 @@ and in that folder, you will find a single file named <b>ngrok.exe</b>.  You
 You can put this 
 file anywhere on your computer but for now we will just execute it from the <b>Downloads</b> folder.
 Make sure your web server (XAMPP, MAMP, etc..) is up and running and then 
-open up a Command Prompt as follows:
+open up a Command Line window as follows:
 <pre>
-$ cd Downloads\ngrok_2.0.19_windows_386
-$ ./ngrok http 8080
+C:\...&gt; cd Downloads\ngrok_2.0.19_windows_386
+C:\...&gt; ngrok http 8080
 
 Tunnel Status       online                                            
 Version             2.0.19/2.0.19                                     
