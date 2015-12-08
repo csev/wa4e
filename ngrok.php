@@ -6,10 +6,11 @@
 <body style="margin: 10px">
 <div id="main">
 <h3>
-Incoming Connections from the Internet are Blocked
+Autograding using NGROK
 </h3>
 <p>
-In order to use an autograder to grade your web sites, we need to be able to access 
+In order to use an autograder to grade your web sites running on your 
+local computer, we need to be able to access 
 the web server running on your laptop or personal computer. In general, home gateways
 and most campus networks or coffee shops block incoming connections to your computer
 when you are connected to their network.  This is very much on purpose and is designed
