@@ -12,8 +12,12 @@ Setting up the MAMP PHP/MySql Environment on a Macintosh
 <p>We will install the MAMP bundled PHP/MySql system.  Installing the MAMP
 (or similar) bundle is much easier than installing all the components separately.
 </p>
-<h3>Pre-Requisite: TextWrangler</h3>
-<p>Please download and install TextWrangler from this site.  
+<h3>Pre-Requisite: Atom, TextWrangler or some other Programming Editor</h3>
+<p><b>Update:</b> We are now recommending Atom as the text editor to use:
+</p>
+<p><a href="https://atom.io/" target="_blank">https://atom.io/</a>
+</p>
+<p>Alternatively: download and install TextWrangler from this site.
 </p>
 <p><a href="http://www.barebones.com/products/TextWrangler/download.html" 
 target="_new">http://www.barebones.com/products/TextWrangler/download.html</a>

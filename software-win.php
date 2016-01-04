@@ -12,8 +12,12 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 <p>We will install the XAMPP bundled PHP/MySql system.  Installing the XAMPP
 (or similar) bundle is much easier than installing all the components separately.
 </p>
-<h3>Pre-Requisite: NotePad++</h3>
-<p>Please download and install NotePad++ from this site.  
+<h3>Pre-Requisite: Atom, NotePad++ or some other Programming Editor</h3>
+<p><b>Update:</b> We are now recommending Atom as the text editor to use:
+</p>
+<p><a href="https://atom.io/" target="_blank">https://atom.io/</a>
+</p>
+<p>Alternatively: Download and install NotePad++ from this site.  
 </p>
 <p><a href="http://notepad-plus-plus.org/"
 target="_new">http://notepad-plus-plus.org/</a>
