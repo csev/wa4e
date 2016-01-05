@@ -243,6 +243,10 @@ MySQL Transactions
 
 
 </ul>
+Here are the audio podcasts for the live lectures for the
+<a href="https://archive.org/details/201509UMSI664Podcasts" target="_blank">UMSI 664</a>
+on campus Fall 2015.
+</p>
 <h3>Copyright</h3>
 <p>
 All this material produced by Charles Severance (including audio and video) 
