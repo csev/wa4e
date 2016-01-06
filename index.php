@@ -2,7 +2,6 @@
 <head>
 <?php include("header.php"); ?>
 </head>
-<!-- Test of the auto-update -->
 <body>
 <?php include("nav.php"); ?>
 <div id="main">
@@ -43,14 +42,6 @@ Lectures and other Videos:
 <a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">
 PHP/MySql YouTube Channel</a>
 
-<li class="toplevel">
-Introduction to Dynamic Web Content
-(<a href="lectures-old/PHP-01-Intro.ppt" target="_blank">Slides</a>,
-<a href="code/rrc/index.htm" target="_blank">Code Examples</a>,
-<a href="code/rrc.zip" target="_blank">Download code</a>)
-(Chapters 1, 3, 4)
-</li>
-
 <a name="sql-intro"></a> 
 <li class="toplevel">
 Introduction to Structured Query Language (SQL)
@@ -89,6 +80,13 @@ YouTube:
     target="_blank">Part 4</a>)
 </li>
 
+<li class="toplevel">
+Introduction to Dynamic Web Content
+(<a href="lectures-old/PHP-01-Intro.ppt" target="_blank">Slides</a>,
+<a href="code/rrc/index.htm" target="_blank">Code Examples</a>,
+<a href="code/rrc.zip" target="_blank">Download code</a>)
+(Chapters 1, 3, 4)
+</li>
 
 <a name="php-intro"></a> 
 <li class="toplevel">
