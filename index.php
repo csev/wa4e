@@ -5,6 +5,7 @@
 <body>
 <?php include("nav.php"); ?>
 <div id="main">
+<iframe width="560" style="float:right; padding:5px;" height="315" src="https://www.youtube.com/embed/videoseries?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" frameborder="0" allowfullscreen></iframe>
 <p>
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
