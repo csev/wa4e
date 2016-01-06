@@ -9,8 +9,8 @@
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
 </p>
-<p><b>Note:</b> During Fall Semester 2015, I am reorganizing the SI664 course and reorganizing this site
-and its videos.  Things are going to be renumbered as I pull the SQL parts of the course to the beginning.
+<p><b>Note:</b> During Winter Semester 2015, I am reorganizing the on-campus course 
+and reorganizing this site and its videos.  
 As I work through the course materials, there will be old and new versions of some of the material.
 </p>
 <h3>TextBook</h3>
@@ -44,8 +44,10 @@ PHP/MySql YouTube Channel</a>
 
 <li class="toplevel">
 Introduction to Dynamic Web Content
-(<a href="lectures-old/PHP-01-Intro.ppt"
-    target="_blank">Slides</a>)
+(<a href="lectures-old/PHP-01-Intro.ppt" target="_blank">Slides</a>,
+<a href="code/rrc/index.htm" target="_blank">Code Examples</a>,
+<a href="code/rrc.zip" target="_blank">Download code</a>)
+(Chapters 1, 3, 4)
 </li>
 
 <a name="sql-intro"></a> 
@@ -87,12 +89,6 @@ YouTube:
 </li>
 
 
-<li class="toplevel">
-Setting up a Development Server on the Internet
-(<a href="lectures-old/PHP-02-Hosting.ppt"
-    target="_blank">Slides</a>)
-</li>
-
 <a name="php-intro"></a> 
 <li class="toplevel">
 Overview of PHP
@@ -119,7 +115,7 @@ PHP Arrays
 (<a href="lectures/PHP-04-Arrays.ppt"
     target="_blank">Slides</a>, 
 <a href="code/arrays.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=hEkuyEa_lK0&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 (Chapters: 27, 28, 31)
@@ -141,7 +137,7 @@ Forms and Handling POST Data
 (<a href="lectures/PHP-06-Forms.ppt"
     target="_blank">Slides</a>, 
 <a href="code/forms.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 YouTube:
 <a href="https://www.youtube.com/watch?v=2hA_PA_BCTY&index=14&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 1</a>,
@@ -153,10 +149,10 @@ YouTube:
 <a name="php-sql"></a> 
 <li class="toplevel">
 Using SQL in PHP
-(<a href="lectures/PHP-08-MySQL-PDO.ppt"
+(<a href="lectures/PHP-07-MySQL-PDO.ppt"
     target="_blank">Slides</a>, 
 <a href="code/pdo.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 YouTube:
 <a href="https://www.youtube.com/watch?v=OJsCXLlIHg8&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=20"
     target="_blank">Part 1</a>,
@@ -169,10 +165,10 @@ YouTube:
 <a name="php-sessions"></a> 
 <li class="toplevel">
 Sessions, Cookies, and Redirection
-(<a href="lectures/PHP-07-Sessions-Cookies-Redirect.ppt"
+(<a href="lectures/PHP-08-Sessions-Cookies-Redirect.ppt"
     target="_blank">Slides</a>, 
 <a href="code/sessions.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 YouTube:
 <a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 1</a>,
@@ -187,7 +183,7 @@ PHP Objects
 (<a href="lectures-old/PHP-11-PHP-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/objects.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
 (Chapter: 33)
 </li>
@@ -198,14 +194,14 @@ JavaScript
 (<a href="lectures/JS-01-JavaScript.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=HPtDPZdiBUk&index=24&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)<br/>
 JavaScript Objects
 (<a href="lectures/JS-02-JavaScript-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/javascript-objects.zip"
-   target="_blank">Sample Code</a>, 
+   target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=ZXhiyeP6acg&index=25&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)
 </li>
@@ -216,7 +212,7 @@ target="_blank">YouTube</a>)
 JQuery and JSON
 (<a href="lectures/JS-03-JQuery-JSON.ppt"
     target="_blank">Slides</a>, 
-Sample code: 
+Download code: 
 <a href="code/jquery-01.zip"
    target="_blank">JQuery</a>, 
 <a href="code/json-01.zip"
