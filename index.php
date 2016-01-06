@@ -2,6 +2,7 @@
 <head>
 <?php include("header.php"); ?>
 </head>
+<!-- Test of the auto-update -->
 <body>
 <?php include("nav.php"); ?>
 <div id="main">
