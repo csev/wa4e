@@ -8,10 +8,9 @@
 <p>
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
-</p>
-<p><b>Note:</b> During Winter Semester 2015, I am reorganizing the on-campus course 
-and reorganizing this site and its videos.  
-As I work through the course materials, there will be old and new versions of some of the material.
+This material is always in progress and is revised everytime I teach the course.   
+You can see all of the material and its history on 
+<a href="https://github.com/csev/php-intro" target="_blank">GitHub</a>.
 </p>
 <h3>TextBook</h3>
 <p>
@@ -27,6 +26,14 @@ of the book are free.   Print copies of the book are available on
 <a href="http://www.amazon.com/The-Missing-Link-Introduction-Development/dp/1502447967/"
 target="_blank">Amazon</a>.
 </p>
+<p>
+Video lectures can be found on my
+<a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">
+PHP/MySql YouTube Channel</a> and
+you can also listen to the audio recordings of the live lectures for 
+<a href="https://archive.org/details/201509UMSI664Podcasts" target="_blank">UMSI 664 Fall 2015</a>
+on campus.
+</p>
 
 <h3>Materials</h3>
 <p>
@@ -37,10 +44,6 @@ including installing a text editor, installing MAMP or XAMPP (or equivalent),
 creating a MySql Database, and writing a PHP program.</a>
 (Chapter: 27)
 </li>
-<li class="toplevel">
-Lectures and other Videos: 
-<a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">
-PHP/MySql YouTube Channel</a>
 
 <a name="sql-intro"></a> 
 <li class="toplevel">
@@ -252,9 +255,6 @@ MySQL Transactions
 
 
 </ul>
-Here are the audio podcasts for the live lectures for the
-<a href="https://archive.org/details/201509UMSI664Podcasts" target="_blank">UMSI 664</a>
-on campus Fall 2015.
 </p>
 <h3>Copyright</h3>
 <p>
