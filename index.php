@@ -48,6 +48,7 @@ Introduction to Dynamic Web Content
     target="_blank">Slides</a>)
 </li>
 
+<a name="sql-intro"></a> 
 <li class="toplevel">
 Introduction to Structured Query Language (SQL)
 <br/> New:
@@ -65,6 +66,7 @@ YouTube:
     target="_blank">Part 2</a>)
 </li>
 
+<a name="sql-design"></a> 
 <li class="toplevel">
 Database Design
 <br/> New:
@@ -91,6 +93,7 @@ Setting up a Development Server on the Internet
     target="_blank">Slides</a>)
 </li>
 
+<a name="php-intro"></a> 
 <li class="toplevel">
 Overview of PHP
 (<a href="lectures/PHP-02-Overview.ppt"
@@ -100,6 +103,7 @@ Overview of PHP
 (Chapters: 27, 28, 31)
 </li>
 
+<a name="php-basics"></a> 
 <li class="toplevel">
 Expressions and Control Flow in PHP
 (<a href="lectures/PHP-03-Expressions-Control-String.ppt"
@@ -109,6 +113,7 @@ Expressions and Control Flow in PHP
 (Chapters: 27, 28, 31)
 </li>
 
+<a name="php-arrays"></a> 
 <li class="toplevel">
 PHP Arrays
 (<a href="lectures/PHP-04-Arrays.ppt"
@@ -120,6 +125,7 @@ PHP Arrays
 (Chapters: 27, 28, 31)
 </li>
 
+<a name="php-functions"></a> 
 <li class="toplevel">
 PHP Functions
 (<a href="lectures/PHP-05-Functions.ppt"
@@ -129,6 +135,7 @@ PHP Functions
 (Chapters: 32)
 </li>
 
+<a name="php-forms"></a> 
 <li class="toplevel">
 Forms and Handling POST Data
 (<a href="lectures/PHP-06-Forms.ppt"
@@ -143,21 +150,7 @@ YouTube:
 (Chapters 14, 27)
 </li>
 
-<li class="toplevel">
-Sessions, Cookies, and Redirection
-(<a href="lectures/PHP-07-Sessions-Cookies-Redirect.ppt"
-    target="_blank">Slides</a>, 
-<a href="code/sessions.zip"
-   target="_blank">Sample Code</a>, 
-YouTube:
-<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 1</a>,
-<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-    target="_blank">Part 2</a>)
-(Chapter: 27)
-</li>
-
-
+<a name="php-sql"></a> 
 <li class="toplevel">
 Using SQL in PHP
 (<a href="lectures/PHP-08-MySQL-PDO.ppt"
@@ -173,6 +166,22 @@ YouTube:
     target="_blank">Part 3</a>)
 </li>
 
+<a name="php-sessions"></a> 
+<li class="toplevel">
+Sessions, Cookies, and Redirection
+(<a href="lectures/PHP-07-Sessions-Cookies-Redirect.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/sessions.zip"
+   target="_blank">Sample Code</a>, 
+YouTube:
+<a href="https://www.youtube.com/watch?v=qBWyY21AkEk&index=16&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 1</a>,
+<a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+    target="_blank">Part 2</a>)
+(Chapter: 27)
+</li>
+
+<a name="php-objects"></a> 
 <li class="toplevel">
 PHP Objects
 (<a href="lectures-old/PHP-11-PHP-Objects.ppt"
@@ -182,6 +191,8 @@ PHP Objects
 <a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
 (Chapter: 33)
 </li>
+
+<a name="php-javascript"></a> 
 <li class="toplevel">
 JavaScript
 (<a href="lectures/JS-01-JavaScript.ppt"
@@ -200,6 +211,7 @@ target="_blank">YouTube</a>)
 </li>
 
 
+<a name="php-jquery"></a> 
 <li class="toplevel">
 JQuery and JSON
 (<a href="lectures/JS-03-JQuery-JSON.ppt"
@@ -222,6 +234,7 @@ YouTube:
   target="_blank">JSON CRUD</a>)
 </li>
 
+<a name="sql-advanced"></a> 
 <li class="toplevel">
 Advanced SQL
 (<a href="lectures-old/PHP-15-Advanced-SQL.ppt"
@@ -233,6 +246,7 @@ YouTube:
   target="_blank">Part 2</a>)
 </li>
 
+<a name="sql-transactions"></a> 
 <li class="toplevel">
 MySQL Transactions
 (<a href="lectures-old/PHP-16-MySQL-Transactions.ppt"
