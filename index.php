@@ -44,6 +44,9 @@ through the <a href="install.php">installation steps</a>
 including installing a text editor, installing MAMP or XAMPP (or equivalent),
 creating a MySql Database, and writing a PHP program.</a>
 (Chapter: 27)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=6kRMlfIBMCY&index=5&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">Computing Conversations: Brian Behlendorf on the Apache Software Foundation</a>
 </li>
 
 <a name="sql-intro"></a> 
@@ -62,6 +65,9 @@ YouTube:
     target="_blank">Part 1</a>,
 <a href="https://www.youtube.com/watch?v=-J8fH3zVkmQ&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=19"
     target="_blank">Part 2</a>)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=rLUm3vst87g&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">Elizabeth Fong: Creating the SQL Database Standards</a>
 </li>
 
 <a name="sql-design"></a> 
@@ -100,6 +106,9 @@ Overview of PHP
 <a href="https://www.youtube.com/watch?v=8WNHqtR2dOI&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=16"
     target="_blank">YouTube</a>)
 (Chapters: 27, 28, 31)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=YIGRXEzjE6c&index=5&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">Computing Conversations: Rasmus Lerdorf Interview on Creating PHP</a>
 </li>
 
 <a name="php-basics"></a> 
@@ -207,6 +216,9 @@ JavaScript Objects
    target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=ZXhiyeP6acg&index=25&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=IPxQ9kEaF8c&index=6&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">Computing Conversations with Brendan Eich</a>
 </li>
 
 
@@ -231,6 +243,12 @@ YouTube:
   target="_blank">JSON</a>,
 <a href="https://www.youtube.com/watch?v=ZL4HpKW16S4&index=32&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
   target="_blank">JSON CRUD</a>)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=B7Aut4OUuvs&index=39&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">John Resig: Building jQuery</a>
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=kc8BAR7SHJI&index=31&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">Discovering JavaScript Object Notation with Douglas Crockford</a>
 </li>
 
 <a name="sql-advanced"></a> 
