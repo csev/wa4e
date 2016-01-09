@@ -192,7 +192,7 @@ YouTube:
 <a name="php-objects"></a> 
 <li class="toplevel">
 PHP Objects
-(<a href="lectures-old/PHP-11-PHP-Objects.ppt"
+(<a href="lectures/PHP-09-PHP-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/objects.zip"
    target="_blank">Download Code</a>, 
