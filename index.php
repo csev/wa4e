@@ -75,7 +75,7 @@ target="_blank">Elizabeth Fong: Creating the SQL Database Standards</a>
 Database Design
 <br/> New:
 (<a href="lectures/SQL-02-MySQL-Design.ppt" target="_blank">Slides</a>, 
-<a href="lectures/SQL-02-MySQL-Design.doc" target="_blank">Handout</a>)
+<a href="lectures/SQL-02-MySQL-Design-Handout.doc" target="_blank">Handout</a>)
 (Chapters: 38, 40, 42)
 <br/> Old: (<a href="lectures-old/PHP-13-MySQL-Design.ppt"
     target="_blank">Slides</a>, 
