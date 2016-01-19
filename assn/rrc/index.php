@@ -1,13 +1,6 @@
 <?php
-$string = file_get_contents("peer.json");
-$json = json_decode($string);
-if ( $json === null ) {
-    echo("<pre>\n");
-    echo("Invalid JSON:\n\n");
-    echo($string);
-    echo("</pre>\n");
-    die("<p>Internal error contact instructor</p>\n");
-}
+require_once("../assn_util.php");
+$json = loadPeer("peer.json");
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,6 +68,9 @@ foreach($json->parts as $part ) {
 <h2>Grading</h2>
 <p>
 <?= $json->grading ?>
+</p>
+<p>
+<?= pointsDetail($json) ?>
 </p>
 <h2>Sample Screen Shots</h2>
 <p>

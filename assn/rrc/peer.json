@@ -1,7 +1,7 @@
 {
   "title": "Understanding the Request-Response Cycle",
-  "description": "Your application will be a single <b>index.php</b> file with some elements in HTML, some elements in PHP, and some elements in JavaScript - all working in the same file.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.",
-  "grading": "Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  This assignment is worth 10 points. 5 points come from the instructor, 3 points come from your peers and 2 points come from you grading other student's submissions.  You cannot see or grade other students assignments until you have turned in your assignment.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "description": "Your application will be a single index.php file with some elements in HTML, some elements in PHP, and some elements in JavaScript - all working in the same file.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.",
+  "grading": "Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
   "assignment" : "http://www.php-intro.com/assn/rrc/",
   "solution" : "http://www.php-intro.com/solutions/rrc/",
   "parts": [
