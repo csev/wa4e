@@ -20,20 +20,39 @@ li { padding: 5px; }
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
 <h1>Assignment: <?= $json->title ?></h1>
 <p>
-In this assignment, you will build a copy of the "Music" database covered in lecture.  You will 
-populate your database with tracks, artists and albums that are different from the ones used 
-in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables 
-need to normalized as described in class.
-</p><p>
-Then you must construct and run some queries on your data and then take screen shots 
-of those queries and submit the screen shots as your assignment.
+<?= $json->description ?>
 </p>
+<p>
+<ul>
+<li>Your name must be in the title bar like 'Charles Severance Request/Response'</li>
+<li>There should be an &lt;h1&gt; tag with your name and text like 'Charles Severance Request/Response'</li>
+<li>You should use a &lt;pre&gt; tag to create ASCII art of the first letter of your 
+name four spaces in from the left margin</li>
+<li>Your code should use PHP to compute the SHA256 of your name and print it 
+out like the sample application.  You must compute this in PHP.  The PHP code 
+to achieve this for 'Charles Severance' is: 
+<pre> 
+print hash('sha256', 'Charles Severance'); 
+</pre> </li>
+<li>Your name must be in a JavaScript alert() box with text like 
+'Charles Severance in an alert box' </li>
+<li>Your name must be in the console log with text like 'Charles Severance in the log' </li></li>
+</ul>
+</p>
+<?php if ( isset($json->solution) ) { ?>
+<h2>Sample solution</h2>
+<p>
+You can see with a sample solution for this problem at
+<pre>
+<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+</pre>
+<?php } ?>
 <h2>Resources</h2>
 <p>There are several sources of information so you can do the assignment:
 <ul>
-<li>Lectures and materials on <i>Database Design</i> from
+<li>Lectures and materials on <i>Introduction to Dynamic Web Content</i> from
 <a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
-<li> Chapters 38, 40, and 42 from the free textbook
+<li> Chapters 23, 24, 25, and 26 from the free textbook
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
 <a href="http://textbooks.opensuny.org/author/mmendez/" target="_blank">Michael Menendez</a>
@@ -53,37 +72,21 @@ foreach($json->parts as $part ) {
 ?>
 </ol>
 </p>
+<h2>Grading</h2>
+<p>
+<?= $json->grading ?>
+</p>
 <h2>Sample Screen Shots</h2>
 <p>
 <center>
-<a href="tracks.png" target="_blank">
-<img src="tracks.png" width="80%"></a>
+<a href="01-alert.png" target="_blank">
+<img src="01-alert.png" width="80%"></a>
 </center>
 </p>
 <p>
 <center>
-<a href="bigjoin.png" target="_blank">
-<img src="bigjoin.png" width="80%"></a>
-</center>
-</p>
-<p>
-<center>
-<a href="artistgenre.png" target="_blank">
-<img src="artistgenre.png" width="80%"></a>
-</center>
-</p>
-<h1><em>Optional</em> Challenges</h1>
-<p>
-<b>This section is entirely <em>optional</em> and is here in case you want to 
-explore a bit more deeply and expand your code skillz. There is nothing
-to hand in for this challenge.</b></p>
-<p>
-Come up with a query using <b>GROUP BY</b> to show the number 
-of tracks an Artist has in each Genre.
-You do not need to hand in a screen shot of this query.
-<center>
-<a href="groupby.png" target="_blank">
-<img src="groupby.png" width="80%"></a>
+<a href="02-console.png" target="_blank">
+<img src="02-console.png" width="80%"></a>
 </center>
 </p>
 <p>
