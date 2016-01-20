@@ -30,6 +30,10 @@ print hash('sha256', 'Charles Severance');
 <li>Your name must be in a JavaScript alert() box with text like 
 'Charles Severance in an alert box' </li>
 <li>Your name must be in the console log with text like 'Charles Severance in the log' </li></li>
+<li>Save <a href="fail.txt" target="_blank">this file</a> as <b>fail.php</b> in the 
+application folder.</li>
+<li>Save <a href="check.txt" target="_blank">this file</a> as <b>check.php</b> in the 
+application folder.</li>
 </ul>
 </p>
 <?php if ( isset($json->solution) ) { ?>
@@ -83,6 +87,18 @@ foreach($json->parts as $part ) {
 <center>
 <a href="02-console.png" target="_blank">
 <img src="02-console.png" width="80%"></a>
+</center>
+</p>
+<p>
+<center>
+<a href="03-fail.png" target="_blank">
+<img src="03-fail.png" width="80%"></a>
+</center>
+</p>
+<p>
+<center>
+<a href="04-check.png" target="_blank">
+<img src="04-check.png" width="80%"></a>
 </center>
 </p>
 <p>
