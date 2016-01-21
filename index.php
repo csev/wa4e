@@ -97,6 +97,10 @@ Introduction to Dynamic Web Content
 <a href="code/rrc.zip" target="_blank">Download code</a>)
 (Chapters 1, 3, 4)
 <br/>
+Assignment: <a href="assn/rrc/index.php" target="_blank">
+Request Response Cycle
+</a>
+<br/>
 Video: 
 <a href="https://www.youtube.com/watch?v=keo0dglCj7I" target="_blank">
 What Happens When You Click a Link? - Computerphile
