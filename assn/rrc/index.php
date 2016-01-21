@@ -31,7 +31,10 @@ print hash('sha256', 'Charles Severance');
 'Charles Severance in an alert box' </li>
 <li>Your name must be in the console log with text like 'Charles Severance in the log' </li></li>
 <li>Save <a href="fail.txt" target="_blank">this file</a> as <b>fail.php</b> in the 
-application folder.</li>
+application folder.  Do not alter this file - do <b>not</b> fix 
+the mistake in the code 
+in this file.  The goal is to trigger an error to verify that 
+we see errors in the browser.</li>
 <li>Save <a href="check.txt" target="_blank">this file</a> as <b>check.php</b> in the 
 application folder.</li>
 </ul>
@@ -49,6 +52,9 @@ You can see with a sample solution for this problem at
 <ul>
 <li>Lectures and materials on <i>Introduction to Dynamic Web Content</i> from
 <a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
+<li>The Wikipedia page on 
+<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">
+HTTP - Hypertext Transport Protocol</a>
 <li> Chapters 23, 24, 25, and 26 from the free textbook
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
