@@ -9,11 +9,11 @@
       "type": "image"
     },
     {
-      "title": "Screen shot (JPG or PNG) of all the data joined up sorted in ascending order by the Album",
+      "title": "Screen shot (JPG or PNG) of all the data joined up sorted in ascending order by the album title",
       "type": "image"
     },
     {
-      "title": "Screen shot (JPG or PNG) of all of the genres for a particular artist",
+      "title": "Screen shot (JPG or PNG) of all of the genres for a particular artist.  Hint - use JOIN, DISTINCT and WHERE",
       "type": "image"
     }
   ],

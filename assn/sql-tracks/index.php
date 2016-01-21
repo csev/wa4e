@@ -14,9 +14,10 @@ li { padding: 5px; }
 <h1>Assignment: <?= $json->title ?></h1>
 <p>
 In this assignment, you will build a copy of the "Music" database covered in lecture.  You will 
-populate your database with tracks, artists and albums that are different from the ones used 
-in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables 
-need to normalized as described in class.
+populate your database with tracks, artists, albums and genres that are different from the ones used 
+in class.  You must include three artists, five albums, and 20 tracks in your data.  
+Choose a genre for each track.
+Your tables need to normalized as described in class.
 </p><p>
 Then you must construct and run some queries on your data and then take screen shots 
 of those queries and submit the screen shots as your assignment.
