@@ -96,6 +96,16 @@ Introduction to Dynamic Web Content
 <a href="code/rrc/index.htm" target="_blank">Code Examples</a>,
 <a href="code/rrc.zip" target="_blank">Download code</a>)
 (Chapters 1, 3, 4)
+<br/>
+Video: 
+<a href="https://www.youtube.com/watch?v=keo0dglCj7I" target="_blank">
+What Happens When You Click a Link? - Computerphile
+</a>
+<br/>
+Wikipedia: 
+<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">
+Hypertext Transfer Protocol
+</a>
 </li>
 
 <a name="php-intro"></a> 
