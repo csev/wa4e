@@ -22,7 +22,7 @@ li { padding: 5px; }
 <li>You should use a &lt;pre&gt; tag to create ASCII art of the first letter of your 
 name four spaces in from the left margin</li>
 <li>Your code should use PHP to compute the SHA256 of your name and print it 
-out like the sample application.  You must compute this in PHP.  The PHP code 
+out like the sample application.  You must compute this in your index.php file.  The PHP code 
 to achieve this for 'Charles Severance' is: 
 <pre> 
 print hash('sha256', 'Charles Severance'); 
