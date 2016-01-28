@@ -38,6 +38,26 @@ we see errors in the browser.</li>
 <li>Save <a href="check.txt" target="_blank">this file</a> as <b>check.php</b> in the 
 application folder.</li>
 </ul>
+You must run these files in your PHP server.  Make a folder under your
+<strong>DOCUMENT_ROOT</strong> and then make sure your files are in that file.
+Sample DOCUMENT_ROOT values for some servers:
+<pre>
+DOCUMENT_ROOT: c:\xampp\htdocs
+DOCUMENT_ROOT: /Applications/MAMP/htdocs
+</pre>
+You can check the DOCUMENT_ROOT value for your server by scrolling 
+down in your PHPInfo output.  You may have changed a setting in your PHP 
+server to move the DOCUMENT_ROOT and that is OK as well.
+</p>
+<p>
+Just make sure all the files are in a folder somewhere within
+DOCUMENT_ROOT and that all your testing uses <b>localhost</b> URLs
+like:
+<pre>
+http://localhost:8080/php-intro/rrc/index.php
+</pre>
+If you turn in screen shots with <b>file://</b> in the URL you will 
+get zero points for the assignment.
 </p>
 <?php if ( isset($json->solution) ) { ?>
 <h2>Sample solution</h2>
