@@ -30,13 +30,16 @@ print hash('sha256', 'Charles Severance');
 <li>Your name must be in a JavaScript alert() box with text like 
 'Charles Severance in an alert box' </li>
 <li>Your name must be in the console log with text like 'Charles Severance in the log' </li></li>
-<li>Save <a href="fail.txt" target="_blank">this file</a> as <b>fail.php</b> in the 
-application folder.  Do not alter this file - do <b>not</b> fix 
+<li>Open <a href="fail.txt" target="_blank">this file</a> 
+and copy-paste its contents into a file named <b>fail.php</b> in the 
+same folder as your <b>index.php</b>.  Do not alter this file - do <b>not</b> fix 
 the mistake in the code 
 in this file.  The goal is to trigger an error to verify that 
 we see errors in the browser.</li>
-<li>Save <a href="check.txt" target="_blank">this file</a> as <b>check.php</b> in the 
-application folder.</li>
+<li>Open <a href="check.txt" target="_blank">this file</a> 
+and copy-paste in the contents into a file named <b>check.php</b> in the 
+same folder as your <b>index.php</b>. 
+</li>
 </ul>
 You must run these files in your PHP server.  Make a folder under your
 <strong>DOCUMENT_ROOT</strong> and then make sure your files are in that file.
