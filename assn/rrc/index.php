@@ -127,6 +127,25 @@ foreach($json->parts as $part ) {
 <img src="04-check.png" width="80%"></a>
 </center>
 </p>
+<h1><em>Optional</em> Challenges</h1>
+<p>
+<b>This section is entirely <em>optional</em> and is here in case you want to 
+explore a bit more deeply and test your code skillz.</b></p>
+<p>
+Here is a possible improvement:
+<ul>
+<li>The string that is your name is used in several places in the 
+<b>index.php</b> file (PHP, HTML, and JavaScript).  Make a single variable 
+at the top of the file:
+<pre>
+&lt;?php
+$name = 'Charles Severance';
+?&gt;
+</pre>
+Then use that variable everywhere else in the file.
+</li>
+</ul>
+<hr/>
 <p>
 Provided by: <a href="http://www.php-intro.com/" target="_blank">
 www.php-intro.com</a> <br/>
