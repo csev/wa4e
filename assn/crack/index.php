@@ -16,13 +16,13 @@ li { padding: 5px; }
 <?= $json->description ?>
 </p>
 <pre>
-email                hash_pin
------                --------
-csev@umich.edu       0bd65e799153554726820ca639514029
-nabgilby@umich.edu   aa36c88c27650af3b9868b723ae15dfc
-pconway@umich.edu    67305c2f862ad1d353f55bf38e5a5183
-font@umich.edu       1d8d70dddf147d2d92a634817f01b239
-collemc@umich.edu    acf06cdd9c744f969958e1f085554c8b
+email                pin   hash_pin
+-----                ---   --------
+csev@umich.edu       4429  0bd65e799153554726820ca639514029
+nabgilby@umich.edu   ????  aa36c88c27650af3b9868b723ae15dfc
+pconway@umich.edu    ????  67305c2f862ad1d353f55bf38e5a5183
+font@umich.edu       ????  1d8d70dddf147d2d92a634817f01b239
+collemc@umich.edu    ????  acf06cdd9c744f969958e1f085554c8b
 ...
 </pre>
 <p>
