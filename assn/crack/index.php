@@ -15,16 +15,22 @@ li { padding: 5px; }
 <p>
 <?= $json->description ?>
 </p>
+This following is a list of people, and their hashed PIN values along with one original
+PIN value. 
 <pre>
 email                pin   hash_pin
 -----                ---   --------
 csev@umich.edu       4429  0bd65e799153554726820ca639514029
 nabgilby@umich.edu   ????  aa36c88c27650af3b9868b723ae15dfc
-pconway@umich.edu    ????  67305c2f862ad1d353f55bf38e5a5183
+pconway@umich.edu    ????  1ca906c1ad59db8f11643829560bab55
 font@umich.edu       ????  1d8d70dddf147d2d92a634817f01b239
 collemc@umich.edu    ????  acf06cdd9c744f969958e1f085554c8b
 ...
 </pre>
+Of the above people, you should be able to easily crack their PINs.  One person
+used a longer password instead of a PIN and your code will not be able to 
+reverse that hash.   Try all the hashes above with your program and figure out which
+one you cannot crack.
 <p>
 The simplest brute force approach generally is done by writing a series of 
 nested loops that go through all possible combinations of characters.  
@@ -71,6 +77,8 @@ target="_blank">similar digest cracking application</a>.   You can play with thi
 at <a href="http://www.php-intro.com/code/crack/" target="_blank">http://www.php-intro.com/code/crack/</a>
 and download a ZIP of the code at 
 <a href="http://www.php-intro.com/code/crack.zip" target="_blank">http://www.php-intro.com/code/crack.zip</a>.
+<li> You can crack harder some but not all more complex hashed values using a site like:
+<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.
 </ul>
 </p>
 <h2>Specifications</h2>
