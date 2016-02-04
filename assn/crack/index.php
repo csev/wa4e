@@ -20,17 +20,13 @@ PIN value.
 <pre>
 email                pin   hash_pin
 -----                ---   --------
-csev@umich.edu       4429  0bd65e799153554726820ca639514029
+csev@umich.edu       ????  0bd65e799153554726820ca639514029
 nabgilby@umich.edu   ????  aa36c88c27650af3b9868b723ae15dfc
-pconway@umich.edu    ????  1ca906c1ad59db8f11643829560bab55
 font@umich.edu       ????  1d8d70dddf147d2d92a634817f01b239
 collemc@umich.edu    ????  acf06cdd9c744f969958e1f085554c8b
 ...
 </pre>
-Of the above people, you should be able to easily crack their PINs.  One person
-used a longer password instead of a PIN and your code will not be able to 
-reverse that hash.   Try all the hashes above with your program and figure out which
-one you cannot crack.
+You should be able to easily crack these PINs using your application.
 <p>
 The simplest brute force approach generally is done by writing a series of 
 nested loops that go through all possible combinations of characters.  
@@ -39,17 +35,6 @@ uppper case, lower case, numbers, and punctuation in passwords is to make
 brute force cracking more difficult.  Significantly increasing the 
 length of the password to something like 20-30 characters is a very 
 good to make brute force cracking more difficult.
-</p>
-<p>
-A variation on brute force cracking is to pre-compute hashes and store the
-original text for each hash and then instead of doing the comptuation each
-time you want to "crack" a hash, you can do a lookup.  This approach
-trades off a large increase in the amount of data stored an greatly 
-reduced amount of computation.  An advanced approach to using storage
-to crack hashes technique are called
-<a href="http://en.wikipedia.org/wiki/Rainbow_table" target="_blank">
-Rainbow Tables</a>.  You can probably find a hash reversing web site 
-by searching for something like "rainbow table for md5".
 </p>
 <?php if ( isset($json->solution) ) { ?>
 <h2>Sample solution</h2>
@@ -78,7 +63,14 @@ at <a href="http://www.php-intro.com/code/crack/" target="_blank">http://www.php
 and download a ZIP of the code at 
 <a href="http://www.php-intro.com/code/crack.zip" target="_blank">http://www.php-intro.com/code/crack.zip</a>.
 <li> You can crack harder some but not all more complex hashed values using a site like:
-<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.
+<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  For fun, use
+this site to crack the following hashed string:
+<pre>
+Email                  Hashed Password
+-----                  ---------------
+pconway@umich.edu      1ca906c1ad59db8f11643829560bab55
+</pre>
+Your application won't be able to crack this password.
 </ul>
 </p>
 <h2>Specifications</h2>
@@ -161,6 +153,8 @@ explore a bit more deeply and test your code skillz.</b></p>
 <p>
 Here are some possible improvements:
 <ul>
+<li>For fun, crack all of the pins at the top of this document and figure
+out why each person chose their PIN.</li>
 <li>Make your application test a more complex character set like, 
 upper case letters, lower case letters, numbers, and common punctuation.</li>
 <li>Change the code so when it finds a match, it breaks out of all four 
