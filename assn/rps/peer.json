@@ -1,0 +1,43 @@
+{
+  "title":"Login and Rock Paper Scissors",
+  "description":"In this assignment we will a two page web application to play rock, paper, scissors (http://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
+  "grading": "Please review carefully.  The most important aspect of peer-grading is useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "assignment" : "http://www.php-intro.com/assn/rps/",
+  "solution" : "http://www.php-intro.com/solutions/rps/",
+  "parts":[
+    {
+      "title":"A screen shot (with URL) of your login.php rejecting an incorrect password",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php correctly showing the 'Name parameter missing' error",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php doing a normal play with the computer making a choice other than Rock",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php doing a correct test run",
+      "type":"image"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of game.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":5,
+  "peerpoints":3,
+  "assesspoints":1,
+  "minassess":2,
+  "maxassess":5,
+  "flag":true
+
+}
