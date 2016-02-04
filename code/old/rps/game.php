@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+// If the user is not logged in redirect back to index.php
+// with an error
+if ( ! isset($_SESSION['name']) ) {
+    die("ACCESS DENIED");
+}
 
 // If the user requested logout go back to index.php
 if ( isset($_POST['logout']) ) {
@@ -39,18 +46,10 @@ $result = check($computer, $human);
 <html>
 <head>
 <title>Dr. Chuck's Rock, Paper, Scissors Game</title>
-<?php require_once "bootstrap.php"; ?>
 </head>
-<body>
-<div class="container">
-<h1>Rock Paper Scissors</h1>
-<?php 
-if ( isset($_REQUEST['name']) ) {
-    echo "<p>Welcome: ";
-    echo htmlentities($_REQUEST['name']);
-    echo "</p>\n";
-}
-?>
+<body style="font-family: sans-serif;">
+<h1>Welcome <?= htmlentities($_SESSION['name']); ?> to Rock
+Paper and Scissors</h1>
 <form method="post">
 <select name="human">
 <option value="-1">Select</option>
@@ -79,6 +78,5 @@ if ( $human == -1 ) {
 }
 ?>
 </pre>
-</div>
 </body>
 </html>
