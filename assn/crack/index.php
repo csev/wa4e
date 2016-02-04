@@ -62,15 +62,6 @@ target="_blank">similar digest cracking application</a>.   You can play with thi
 at <a href="http://www.php-intro.com/code/crack/" target="_blank">http://www.php-intro.com/code/crack/</a>
 and download a ZIP of the code at 
 <a href="http://www.php-intro.com/code/crack.zip" target="_blank">http://www.php-intro.com/code/crack.zip</a>.
-<li> You can crack harder some but not all more complex hashed values using a site like:
-<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  For fun, use
-this site to crack the following hashed string:
-<pre>
-Email                  Hashed Password
------                  ---------------
-pconway@umich.edu      1ca906c1ad59db8f11643829560bab55
-</pre>
-Your application won't be able to crack this password.
 </ul>
 </p>
 <h2>Specifications</h2>
@@ -155,6 +146,16 @@ Here are some possible improvements:
 <ul>
 <li>For fun, crack all of the pins at the top of this document and figure
 out why each person chose their PIN.</li>
+<li> You can crack harder some but not all more complex hashed values using a site like:
+<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  For fun, use
+this site to crack the following hashed string:
+<pre>
+Email                  Hashed Password
+-----                  ---------------
+pconway@umich.edu      1ca906c1ad59db8f11643829560bab55
+</pre>
+Your application won't be able to crack this password since it is more than 
+four characters long and uses letters and numbers.
 <li>Make your application test a more complex character set like, 
 upper case letters, lower case letters, numbers, and common punctuation.</li>
 <li>Change the code so when it finds a match, it breaks out of all four 

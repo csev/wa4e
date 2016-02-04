@@ -107,14 +107,20 @@ your PHP server, you will have a local URL to run your application similar to th
 Note the part of the URL after the host and port name.
 </p>
 <p>
-After you have followed the instructions to download and install ngrok, you will run it with
-a command similar to one of the following depending on which port your Apache server is running
-on:
+Download the ngrok ZIP file from the web site and extract it to your 
+Desktop.  Then open a terminal window or Windows command line:
 <pre>
+Macintosh:
+
+    cd Desktop
+    ./ngrok http 8888
+
+Windows
+
+    cd Desktop
     ngrok http 80
-    ngrok http 8080   (only run one of these)
-    ngrok http 8888
 </pre>
+The last parameter to ngrok is the port where your Apache server is running.
 </p>
 <p>
 Once ngrok is up and running, you should see a screen similar to this:
