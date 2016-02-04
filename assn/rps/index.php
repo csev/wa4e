@@ -41,7 +41,7 @@ target="_blank">header()</a> function works.
 </ul>
 <p>
 You can download sample code 
-for an incomplete/broken version of this application from:
+for an <b>incomplete/broken</b> version of this application from:
 <pre>
 <a href="http://www.php-intro.com/code/rps.zip" target="_blank">http://www.php-intro.com/code/rps.zip</a>
 </pre>
@@ -50,39 +50,32 @@ You can play with the broken sample code at:
 <a href="http://www.php-intro.com/code/rps/" target="_blank">http://www.php-intro.com/code/rps/</a>
 </pre>
 </p>
+<p>
+You can play with a <b>working</b> version of the application at
+<pre>
+    <a href="http://www.php-intro.com/solutions/rps/" target="_blank">http://www.php-intro.com/solutions/rps/</a>
+</pre>
+</p>
 <h2>Specifications</h2>
-<a href="02-RPS-Play.png" target="_blank">
+<a href="01-RPS-Index.png" target="_blank">
 <img style="margin-left: 10px; float:right;" 
-alt="Image of the RPS game playing"
-width="300px" src="02-RPS-Play.png" border="2"/>
+alt="Image of the index page"
+width="300px" src="01-RPS-Index.png" border="2"/>
 </a>
-<p>
-After the user logs in, they will be presented with a screen where they 
-can select their play and play the game or log out.
-The computer will select fairly and randomly amongst the choices
-and play a fair game, and report the results to the use in a line of the
-form:
-<pre>
-Your Play=Paper Computer Play=Scissors Result=You Lose
-</pre>
-In a &lt;pre&gt; tag.
+When you first come to the application (index.php) you are told to go to a 
+login screen.
+<br clear="all">
 </p>
-<p>
-You can play with a sample implementation of the application at
-<pre>
-    <a href="http://www.php-intro.com/assn/rps/" target="_blank">http://www.php-intro.com/assn/rps/</a>
-</pre>
-</p>
-<a href="01-RPS-Login.png" target="_blank">
-<img style="margin-left: 10px; float:right;" 
-alt="Image of the RPS Application login screen"
-width="300px" src="01-RPS-Login.png" border="2"/>
-</a>
 <h2>Requirements for the Login Screen</h2>
 <p>
-The <b>index.php</b> should be a login screen should present a field 
+<a href="02-RPS-Login.png" target="_blank">
+<img style="margin-left: 10px; float:right;" 
+alt="Image of the RPS Application login.php"
+width="300px" src="02-RPS-Login.png" border="2"/>
+</a>
+The <b>login.php</b> should be a login screen should present a field 
 for the person's name (name="who") and their password (name="pass").  
-Your form should have a button labelled "Log In" that submits the form
+Your form should have a button labeled "Log In" that submits the form
 data using method="POST" (i.e. these should not be GET parameters).
 <br clear="all"/>
 </p>
@@ -102,7 +95,7 @@ of the form:
 <pre style="color:red">
 Incorrect password
 </pre>
-If there are errors, you should come back to the login screen (index.php)
+If there are errors, you should come back to the login screen (login.php)
 and show the error with blank input fields (i.e. don't carry over the
 values for name="who" and name="pass" fields from the previous post).
 <p>
@@ -125,24 +118,24 @@ password together and then run that through the <b>hash()</b> function
 and compare it to the stored_hash.
 <p>
 If the incoming password, properly hashed matches the stored stored_hash
-value, the user's name is placed in the PHP session and the user's browser is 
+value, the user's browser is 
 <a href="http://en.wikipedia.org/wiki/URL_redirection#Using_server-side_scripting_for_redirection"
  target="_blank">redirected</a>
-to the <b>game.php</b> page using:
+to the <b>game.php</b> page with the user's name as a GET parameter using:
 <pre>
-header('Location: game.php');
+header("Location: game.php?name=".urlencode($_POST['who']));
 </pre>
 <h2>Specifications of the Game Playing Screen</h2>
 <p>
 In order to protect the game from being played without the user properly
 logging in, the <b>game.php</b> must first check the session to see
 if the user's name is set and if the user's name is not set in the session
-the game.php must stop immediately using the PHP die() function:
+the <b>game.php</b> must stop immediately using the PHP die() function:
 <pre>
-die("ACCESS DENIED");
+die("Name parameter missing");
 </pre>
 To test, navigate to <b>game.php</b> manually without logging in - it 
-should fail with "ACCESS DENIED".
+should fail with "Name parameter missing".
 <p>
 <a href="04-RPS-Play-Start.png" target="_blank">
 <img style="margin-left: 10px; float:right;" 
@@ -151,7 +144,7 @@ width="300px" src="04-RPS-Play-Start.png" border="2"/>
 </a>
 If the user is logged in, they should be presented with a drop-down menu
 showing the options Rock, Paper, Scissors, and Test as well as buttons 
-labelled "Play" and "Logout".
+labeled "Play" and "Logout".
 </p>
 <p>
 If the Logout button is pressed the user should be redirected back to the 
@@ -159,14 +152,6 @@ If the Logout button is pressed the user should be redirected back to the
 <pre>
 header('Location: index.php');
 </pre>
-Note that loading the <b>index.php</b> file will implicitly log the user out
-using a statement like:
-<pre>
-unset($_SESSION['name']);
-</pre>
-Before it checks for incoming POST data.  See the sample code provided for an
-example of how this works.
-</p>
 <p>
 If the user selects, Rock, Paper, or Scissors and presses "Play", the 
 game chooses  random computer throw, and scores the game and 
@@ -210,7 +195,7 @@ look as follows:
 </p>
 <p>
 <center>
-<img src="04-RPS-Test.png" style="width:80%" border="1"/>
+<img src="05-RPS-Test.png" style="width:80%" border="1"/>
 </center>
 </p>
 <p>
