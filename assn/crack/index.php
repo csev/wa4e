@@ -15,18 +15,20 @@ li { padding: 5px; }
 <p>
 <?= $json->description ?>
 </p>
-This following is a list of people, and their hashed PIN values along with one original
+This following is a list of people, and their hashed PIN values.
 PIN value. 
 <pre>
 email                pin   hash_pin
 -----                ---   --------
 csev@umich.edu       ????  0bd65e799153554726820ca639514029
 nabgilby@umich.edu   ????  aa36c88c27650af3b9868b723ae15dfc
+pconway@umich.edu    ????  1ca906c1ad59db8f11643829560bab55
 font@umich.edu       ????  1d8d70dddf147d2d92a634817f01b239
 collemc@umich.edu    ????  acf06cdd9c744f969958e1f085554c8b
 ...
 </pre>
-You should be able to easily crack these PINs using your application.
+You should be able to easily crack all but one of these these PINs using 
+your application.
 <p>
 The simplest brute force approach generally is done by writing a series of 
 nested loops that go through all possible combinations of characters.  
@@ -146,16 +148,11 @@ Here are some possible improvements:
 <ul>
 <li>For fun, crack all of the pins at the top of this document and figure
 out why each person chose their PIN.</li>
-<li> You can crack harder some but not all more complex hashed values using a site like:
-<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  For fun, use
-this site to crack the following hashed string:
-<pre>
-Email                  Hashed Password
------                  ---------------
-pconway@umich.edu      1ca906c1ad59db8f11643829560bab55
-</pre>
-Your application won't be able to crack this password since it is more than 
-four characters long and uses letters and numbers.
+<li> You can crack some but not all more complex hashed values using 
+a site like:
+<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  
+For fun, use
+this site to crack all the above hash values.
 <li>Make your application test a more complex character set like, 
 upper case letters, lower case letters, numbers, and common punctuation.</li>
 <li>Change the code so when it finds a match, it breaks out of all four 
