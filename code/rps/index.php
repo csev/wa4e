@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Charles Severance - Broken Rock Paper Scissors</title>
 <?php require_once "bootstrap.php"; ?>
-</html>
+</head>
 <body>
 <div class="container">
 <h1>Welcome to Broken Rock Paper Scissors</h1>
