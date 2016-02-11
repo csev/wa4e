@@ -343,18 +343,6 @@ image URL from within PHP and if the URL does not exist,
 issue an error message to the user and do not add the
 automobile.
 </li>
-<li>
-<b>This is a bit tricky so please don't try if it feels 
-confusing.</b>  Change the program so it supports 
-a separate list of autos for each user that logs into the
-system.  Insert a second row into the <b>users</b>
-table with the same or a diffferent hashed password.
-This way you can log in with one user name, add some 
-autos, logout and log in as another user, add some autos
-and then logout and log back in as the original user and
-your autos will still be there (unless you press "Clear All"
-of course).
-</li>
 </ul>
 </p>
 <h2>Sample Database Screen Shots</h2>
