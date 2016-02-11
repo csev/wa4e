@@ -10,6 +10,10 @@
       "type":"image"
     },
     {
+      "title":"A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+      "type":"image"
+    },
+    {
       "title":"A screen shot (with URL) of your autos.php showing 'Name parameter missing'",
       "type":"image"
     },
