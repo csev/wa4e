@@ -188,10 +188,21 @@ YouTube:
     target="_blank">Part 3</a>)
 </li>
 
+<a name="php-objects"></a> 
+<li class="toplevel">
+PHP Objects
+(<a href="lectures/PHP-08-PHP-Objects.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/objects.zip"
+   target="_blank">Download Code</a>, 
+<a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
+(Chapter: 33)
+</li>
+
 <a name="php-sessions"></a> 
 <li class="toplevel">
 Sessions, Cookies, and Redirection
-(<a href="lectures/PHP-08-Sessions-Cookies-Redirect.ppt"
+(<a href="lectures/PHP-09-Sessions-Cookies-Redirect.ppt"
     target="_blank">Slides</a>, 
 <a href="code/sessions.zip"
    target="_blank">Download Code</a>, 
@@ -201,17 +212,6 @@ YouTube:
 <a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 2</a>)
 (Chapter: 27)
-</li>
-
-<a name="php-objects"></a> 
-<li class="toplevel">
-PHP Objects
-(<a href="lectures/PHP-09-PHP-Objects.ppt"
-    target="_blank">Slides</a>, 
-<a href="code/objects.zip"
-   target="_blank">Download Code</a>, 
-<a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
-(Chapter: 33)
 </li>
 
 <a name="php-javascript"></a> 
