@@ -92,7 +92,7 @@ YouTube:
     target="_blank">Part 4</a>)
 <br/>
 Sample Assignment: 
-<a href="assn/sql-tracks/index.htm" target="_blank">Specification</a>
+<a href="assn/sql-tracks/index.php" target="_blank">Specification</a>
 <br/>
 </li>
 
