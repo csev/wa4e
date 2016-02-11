@@ -32,12 +32,14 @@ We will only allow logged in users to track automobiles.
 </p>
 Note that there is no specific sample code for this assignment.
 </p>
+<?php if ( isset($json->solution) ) { ?>
+<h2>Sample solution</h2>
 <p>
-You can play with a sample implementation of the code 
-at:
-<a href="http://www.php-intro.com/assn/autosdb/" 
-target="_blank">http://www.php-intro.com/assn/autosdb/</a>.
-</p>
+You can explore a sample solution for this problem at
+<pre>
+<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+</pre>
+<?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>

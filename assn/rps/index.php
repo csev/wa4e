@@ -50,12 +50,14 @@ You can play with the broken sample code at:
 <a href="http://www.php-intro.com/code/rps/" target="_blank">http://www.php-intro.com/code/rps/</a>
 </pre>
 </p>
+<?php if ( isset($json->solution) ) { ?>
+<h2>Sample solution</h2>
 <p>
-You can play with a <b>working</b> version of the application at
+You can explore a sample solution for this problem at:
 <pre>
-    <a href="http://www.php-intro.com/solutions/rps/" target="_blank">http://www.php-intro.com/solutions/rps/</a>
+<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
 </pre>
-</p>
+<?php } ?>
 <h2>Specifications</h2>
 <a href="01-RPS-Index.png" target="_blank">
 <img style="margin-left: 10px; float:right;" 

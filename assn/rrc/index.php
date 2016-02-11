@@ -65,7 +65,7 @@ get zero points for the assignment.
 <?php if ( isset($json->solution) ) { ?>
 <h2>Sample solution</h2>
 <p>
-You can see with a sample solution for this problem at
+You can explore a sample solution for this problem at
 <pre>
 <a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
 </pre>
