@@ -4,15 +4,15 @@
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
   "parts":[
     {
-      "title":"A screen shot (including the URL) of your index.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+      "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@)",
       "type":"image"
     },
     {
-      "title":"A screen shot (with URL) of your autos.php showing ACCESS DENIED",
+      "title":"A screen shot (with URL) of your autos.php showing 'Name parameter missing'",
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your autos.php with three vehicles in the list",
+      "title":"A screen shot (including the URL) of your autos.php with three vehicles in the list.  At least one of the vehicles must have '&lt;b&gt;' in its title and it must be shown properly (i.e. the title should not be bold)",
       "type":"image"
     },
     {
@@ -20,19 +20,11 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your autos.php showing the success and empty list of automobiles after the Clear All has been done.",
+      "title":"A screen shot of your autos database table with at least three vehicles",
       "type":"image"
     },
     {
-      "title":"A screen shot of your users table that shows your email address",
-      "type":"image"
-    },
-    {
-      "title":"A screen shot of your autos table with at least three vehicles",
-      "type":"image"
-    },
-    {
-      "title":"Source code of index.php",
+      "title":"Source code of login.php",
       "type":"code",
       "language":"php"
     },
