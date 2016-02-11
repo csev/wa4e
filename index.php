@@ -192,7 +192,7 @@ Sample Assignment:
 <a name="php-objects"></a> 
 <li class="toplevel">
 PHP Objects
-(<a href="lectures/PHP-07-PHP-Objects.ppt"
+(<a href="lectures/PHP-07-Objects.ppt"
     target="_blank">Slides</a>, 
 <a href="code/objects.zip"
    target="_blank">Download Code</a>, 
