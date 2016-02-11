@@ -22,14 +22,6 @@ alt="Image of the auto management application"
 width="300px" src="01-Autos.png" border="2"/>
 </a>
 <p>
-In this assignment you will build a web based application to 
-track data about automobiles and store the data in a MySql
-database.  
-This assignment is nearly identical to the previous assignment
-except that (a) we use a database in session and 
-(b) we log in with email instead of user name.
-We will only allow logged in users to track automobiles.
-</p>
 Note that there is no specific sample code for this assignment.
 </p>
 <?php if ( isset($json->solution) ) { ?>
@@ -70,7 +62,7 @@ target="_blank">PDO</a> to connect to a database.
 </li>
 <li>
 You can look though the sample code from the lecture. It has examples
-of using PDO to insert and retrieve data to/from a database:
+of using PDO to communicate with a database:
 <pre>
 <a href="http://www.php-intro.com/code/pdo.zip" target="_blank">http://www.php-intro.com/code/pdo.zip</a>
 </pre>
