@@ -5,7 +5,6 @@
 <body>
 <?php include("nav.php"); ?>
 <div id="main">
-<iframe width="560" style="float:right; padding:5px;" height="315" src="https://www.youtube.com/embed/videoseries?list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" frameborder="0" allowfullscreen></iframe>
 <p>
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
@@ -66,6 +65,9 @@ YouTube:
 <a href="https://www.youtube.com/watch?v=-J8fH3zVkmQ&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=19"
     target="_blank">Part 2</a>)
 <br/>
+Sample Assignment: 
+<a href="assn/sql-single/index.htm" target="_blank">Specification</a>
+<br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=rLUm3vst87g&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">Elizabeth Fong: Creating the SQL Database Standards</a>
 </li>
@@ -88,6 +90,10 @@ YouTube:
     target="_blank">Part 3</a>,
 <a href="https://www.youtube.com/watch?v=5bWkPKEms5U&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=29"
     target="_blank">Part 4</a>)
+<br/>
+Sample Assignment: 
+<a href="assn/sql-tracks/index.htm" target="_blank">Specification</a>
+<br/>
 </li>
 
 <li class="toplevel">
@@ -97,7 +103,7 @@ Introduction to Dynamic Web Content
 <a href="code/rrc.zip" target="_blank">Download code</a>)
 (Chapters 1, 3, 4)
 <br/>
-Assignment: <a href="assn/rrc/index.php" target="_blank">
+Sample Assignment: <a href="assn/rrc/index.php" target="_blank">
 Request Response Cycle
 </a>
 <br/>
@@ -133,6 +139,10 @@ Expressions and Control Flow in PHP
 <a href="https://www.youtube.com/watch?v=oek0oMq9JUo&index=11&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 (Chapters: 27, 28, 31)
+<br/>
+Sample Assignment: 
+(<a href="assn/crack/" target="_blank">Specification</a>,
+<a href="solutions/crack" target="_blank">Sample Implementation</a>)
 </li>
 
 <a name="php-arrays"></a> 
@@ -145,6 +155,10 @@ PHP Arrays
 <a href="https://www.youtube.com/watch?v=hEkuyEa_lK0&index=12&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">YouTube</a>)
 (Chapters: 27, 28, 31)
+<br/>
+Sample Assignment: 
+(<a href="assn/guess/" target="_blank">Specification</a>,
+<a href="code/guess/guess.php?gues=12" target="_blank">Sample Implementation</a>)
 </li>
 
 <a name="php-functions"></a> 
@@ -169,13 +183,27 @@ YouTube:
     target="_blank">Part 1</a>,
 <a href="https://www.youtube.com/watch?v=8zno_C_VMUE&index=15&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 2</a>)
-(Chapters 14, 27)
+(Chapters 14, 27)<br/>
+Sample Assignment: 
+(<a href="assn/rps/" target="_blank">Specification</a>,
+<a href="solutions/rps/" target="_blank">Sample Implementation</a>)
+</li>
+
+<a name="php-objects"></a> 
+<li class="toplevel">
+PHP Objects
+(<a href="lectures/PHP-07-PHP-Objects.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/objects.zip"
+   target="_blank">Download Code</a>, 
+<a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
+(Chapter: 33)
 </li>
 
 <a name="php-sql"></a> 
 <li class="toplevel">
 Using SQL in PHP
-(<a href="lectures/PHP-07-MySQL-PDO.ppt"
+(<a href="lectures/PHP-08-MySQL-PDO.ppt"
     target="_blank">Slides</a>, 
 <a href="code/pdo.zip"
    target="_blank">Download Code</a>, 
@@ -185,18 +213,10 @@ YouTube:
 <a href="https://www.youtube.com/watch?v=md3HInQM0eA&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=21"
     target="_blank">Part 2</a>,
 <a href="https://www.youtube.com/watch?v=-giRidLxtP0&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=22"
-    target="_blank">Part 3</a>)
-</li>
-
-<a name="php-objects"></a> 
-<li class="toplevel">
-PHP Objects
-(<a href="lectures/PHP-08-PHP-Objects.ppt"
-    target="_blank">Slides</a>, 
-<a href="code/objects.zip"
-   target="_blank">Download Code</a>, 
-<a href="https://www.youtube.com/watch?v=Wp54FO3N88c&index=23&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" target="_blank">YouTube</a>)
-(Chapter: 33)
+    target="_blank">Part 3</a>)<br/>
+Sample Assignment: 
+(<a href="assn/autosdb/" target="_blank">Specification</a>,
+<a href="solutions/autosdb/" target="_blank">Sample Implementation</a>)
 </li>
 
 <a name="php-sessions"></a> 
