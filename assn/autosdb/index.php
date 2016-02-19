@@ -218,8 +218,8 @@ Make sure to find your error log and find those error messages as they come out:
 <h2>Specifications for the Auto Database Screen</h2>
 <p>
 In order to protect the database from being modified without the user properly
-logging in, the <b>autos.php</b> must first check the session to see
-if the user's name is set and if the user's name is not set in the session
+logging in, the <b>autos.php</b> must first check the $_GET variable to see
+if the user's name is set and if the user's name is not present,
 the autos.php must stop immediately using the PHP die() function:
 <pre>
 die("Name parameter missing");
