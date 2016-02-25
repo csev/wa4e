@@ -1,0 +1,50 @@
+{
+  "title":"Automobiles, Sessions, and POST-Redirect",
+  "description":"In this assignment you will expand a web based application to track data about automobiles and store the data in a MySQL database.  All interactions will follow the POST-Redirect pattern where appropriate.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment" : "http://www.php-intro.com/assn/autosess/",
+  "solution" : "http://www.php-intro.com/solutions/autosess/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@).  You must also include the developer console network tab showing both the POST and GET.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your autos.php showing 'Name parameter missing'.  You must also include the developer console network tab showing both the POST and GET.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your list.php with three vehicles in the list.  At least one of the vehicles must have '&lt;b&gt;' in its title and it must be shown properly (i.e. the title should not be bold)",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a non-numeric year. You must also include the developer console network tab showing both the POST and GET.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":5,
+  "peerpoints":3,
+  "assesspoints":1,
+  "minassess":2,
+  "maxassess":5
+}
