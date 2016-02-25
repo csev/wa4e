@@ -232,6 +232,10 @@ YouTube:
 <a href="https://www.youtube.com/watch?v=raaGRMk6fr4&index=17&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
     target="_blank">Part 2</a>)
 (Chapter: 27)
+<br/>
+Sample Assignment: 
+(<a href="assn/autosess/" target="_blank">Specification</a>,
+<a href="solutions/autosess/" target="_blank">Sample Implementation</a>)
 </li>
 
 <a name="php-javascript"></a> 
