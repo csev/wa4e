@@ -195,7 +195,7 @@ In <b>view.php</b> if the <b>Logout</b> button is pressed the user should be red
 reditect back to <b>index.php</b>:
 <pre>
 session_start();
-unset($_SESSION['name']);
+session_destroy();
 header('Location: index.php');
 </pre>
 <p>
