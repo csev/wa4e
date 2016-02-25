@@ -1,15 +1,16 @@
 <?php
-session_start();
 require_once "pdo.php";
 
-// p' OR email = 'barb@umich.edu
+// p' OR '1' = '1
 
 if ( isset($_POST['email']) && isset($_POST['password'])  ) {
-    echo("Handling POST data...\n");
+    echo("<p>Handling POST data...</p>\n");
 
     $sql = "SELECT name FROM users 
         WHERE email = :em AND password = :pw";
-    echo "<pre>\n$sql\n</pre>\n";
+
+    echo "<p>$sql</p>\n";
+
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(
         ':em' => $_POST['email'], 
@@ -19,16 +20,9 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
     var_dump($row);
    if ( $row === FALSE ) {
       echo "<h1>Login incorrect.</h1>\n";
-      unset($_SESSION['name']);
    } else { 
       echo "<p>Login success.</p>\n";
-      $_SESSION['name'] = $row['name'];
    }
-}
-if ( isset($_SESSION['name']) ) {
-   echo('<p>Hello '.htmlentities($_SESSION['name']).'</p>'."\n");
-   echo('<p><a href="logout.php">Logout</a></p>'."\n");
-   return;
 }
 ?>
 <p>Please Login</p>

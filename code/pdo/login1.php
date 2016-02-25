@@ -1,40 +1,29 @@
 <?php
-session_start();
 require_once "pdo.php";
 
 // p' OR '1' = '1
 
 if ( isset($_POST['email']) && isset($_POST['password'])  ) {
-   echo("<!--\n");
-   echo("Handling POST data...\n");
-   $e = $_POST['email'];
-   $p = $_POST['password'];
-   echo("Password: $p\n");
+    echo("<p>Handling POST data...</p>\n");
+    $e = $_POST['email'];
+    $p = $_POST['password'];
 
-   $sql = "SELECT name FROM users
+    $sql = "SELECT name FROM users
        WHERE email = '$e'
        AND password = '$p'";
 
-   $stmt = $pdo->query($sql);
-   $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    echo "<p>$sql</p>\n";
 
-   var_dump($row);
-   echo "-->\n";
-   if ( $row === FALSE ) {
-      echo "<h1>Login incorrect.</h1>\n";
-      unset($_SESSION['name']);
-   } else {
-      echo "<p>Login success.</p>\n";
-      $_SESSION['name'] = $row['name'];
-   }
-   echo "<pre>\n";
-   echo "$sql\n";
-   echo "</pre>\n";
-}
-if ( isset($_SESSION['name']) ) {
-   echo('<p>Hello '.htmlentities($_SESSION['name']).'</p>'."\n");
-   echo('<p><a href="logout.php">Logout</a></p>'."\n");
-   return;
+    $stmt = $pdo->query($sql);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    var_dump($row);
+    echo "-->\n";
+    if ( $row === FALSE ) {
+       echo "<h1>Login incorrect.</h1>\n";
+    } else {
+       echo "<p>Login success.</p>\n";
+    }
 }
 ?>
 <p>Please Login</p>
