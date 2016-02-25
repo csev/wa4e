@@ -272,7 +272,7 @@ you can add the automobile to the database using an <b>INSERT</b> statement.
 <pre>
 ...
     $stmt = $pdo-&gt;prepare('INSERT INTO autos
-        (make, year, mileage) VALUES ( :uid, :mk, :yr, :mi)');
+        (make, year, mileage) VALUES ( :mk, :yr, :mi)');
     $stmt-&gt;execute(array(
         ':mk' =&gt; $_POST['make'],
         ':yr' =&gt; $_POST['year'],
