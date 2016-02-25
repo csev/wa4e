@@ -66,7 +66,6 @@ of using PDO to communicate with a database:
 <pre>
 <a href="http://www.php-intro.com/code/pdo.zip" target="_blank">http://www.php-intro.com/code/pdo.zip</a>
 </pre>
-The <code>users</code> folder will likely be the most useful from that sample code.
 </li>
 </ul>
 </p>
