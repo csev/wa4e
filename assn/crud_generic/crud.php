@@ -175,8 +175,8 @@ of the form:
     Incorrect password
 </pre>
 <p>
-<b>Note:</b> Please name your form fields in <b>login.php</b> exactly as follows 
-for autograding:
+<b>Note:</b> Please name your form fields in <b>login.php</b> exactly 
+as follows for autograding:
 <pre>
 User Name &lt;input type="text" name="email"&gt;&lt;br/&gt;
 Password &lt;input type="text" name="pass"&gt;&lt;br/&gt;
