@@ -248,10 +248,8 @@ Building a CRUD Application
 <a href="https://www.youtube.com/watch?v=-giRidLxtP0&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=22"
     target="_blank">YouTube</a>)<br/>
 Sample Assignment: 
-<!--
-(<a href="assn/autosdb/" target="_blank">Specification</a>,
-<a href="solutions/autosdb/" target="_blank">Sample Implementation</a>)
--->
+(<a href="assn/autoscrud/" target="_blank">Specification</a>,
+<a href="solutions/autoscrud/" target="_blank">Sample Implementation</a>)
 </li>
 
 <a name="php-javascript"></a> 
