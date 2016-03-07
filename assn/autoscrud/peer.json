@@ -1,0 +1,43 @@
+{
+  "title":"Midterm Exam",
+  "description":"This exam is graded by the instructional staff.",
+  "grading":"This exam is not peer graded.",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your index.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your data.php showing ACCESS DENIED",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your data.php with three items in the list",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your data.php showing the data validation error message",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your data.php showing the success and empty list of items after the Clear All has been done.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of index.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of data.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":10,
+  "peerpoints":0,
+  "assesspoints":0,
+  "minassess":0,
+  "maxassess":0
+}

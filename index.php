@@ -238,6 +238,22 @@ Sample Assignment:
 <a href="solutions/autosess/" target="_blank">Sample Implementation</a>)
 </li>
 
+<a name="CRUD"></a> 
+<li class="toplevel">
+Building a CRUD Application
+(<a href="lectures/PHP-10-CRUD.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/crud.zip"
+   target="_blank">Download Code</a>, 
+<a href="https://www.youtube.com/watch?v=-giRidLxtP0&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu&index=22"
+    target="_blank">YouTube</a>)<br/>
+Sample Assignment: 
+<!--
+(<a href="assn/autosdb/" target="_blank">Specification</a>,
+<a href="solutions/autosdb/" target="_blank">Sample Implementation</a>)
+-->
+</li>
+
 <a name="php-javascript"></a> 
 <li class="toplevel">
 JavaScript
