@@ -370,6 +370,7 @@ on localhost, you will need the <a href="http://www.php-intro.com/ngrok.php"
 target="_blank">Ngrok</a> application installed.
 </p>
 <hr/>
+Provided by: <a href="http://www.php-intro.com/" target="_blank">www.php-intro.com</a>
 <center>
 <?php if ( $assignment_type == 'Exam' ) { ?>
 Copyright Charles R. Severance - All Rights Reserved
