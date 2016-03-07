@@ -1,0 +1,56 @@
+{
+  "title":"CRUD Databases",
+  "description":"In this assignment you will expand a web based application to Create, Read, Update, and Delete (C.R.U.D.) data in a MySQL database.  All interactions will follow the POST-Redirect and Flash Message patterns where appropriate.  All generated HTML must be properly protected using htmlentities().",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/autoscrud/",
+  "solution":"http://www.php-intro.com/solutions/autoscrud/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your index.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your view.php showing ACCESS DENIED",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php with three entries in the list",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing a validation error",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) showing three rows of data in your MySQL administration interface",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing the error message for invalid data",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing a successful delete.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":5,
+  "peerpoints":3,
+  "assesspoints":1,
+  "minassess":2,
+  "maxassess":5,
+  "flag":true,
+  "rating":0,
+  "gallery":"off"
+}
