@@ -79,6 +79,15 @@ data validation, you should still validate data on the server in case
 the user is using a non-HTML5 browser.
 </li>
 </ul>
+<?php if ( $reference ) { ?>
+<h2>Sample Implementation</h2>
+<p>
+You can experiment with a reference implementation at:
+</p>
+<p>
+<a href="<?= $reference ?>" target="_blank">Sample implementation</a>
+</p>
+<?php } ?>
 <h2>Using the Autograder</h2>
 <p>
 This <?= $assignment_type_lower ?> will be automatically graded and so your web server will need an 
@@ -99,7 +108,7 @@ it will run all the tests but will not treat the grade as official.
 </p>
 <h2>Creating <?= $title_singular ?> table</h2>
 <p>
-You can reuse the <b>Users</b> table from a previous assignment.   This assignment
+You can reuse or adapt a table from a previous assignment.   This assignment
 will need a table as follows:
 <pre>
     CREATE TABLE <?= $table_name ?> (

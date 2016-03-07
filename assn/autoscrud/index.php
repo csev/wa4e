@@ -1,5 +1,7 @@
 <?php
 
+$reference = "../../solutions/autoscrud";
+
 $assignment_type = "Assignment";
 $assignment_type_lower = "assignment";
 
