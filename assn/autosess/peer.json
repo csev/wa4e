@@ -14,11 +14,11 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (with URL) of your autos.php showing 'Name parameter missing'.  You must also include the developer console network tab showing both the POST and GET.",
+      "title":"A screen shot (with URL) of your add.php showing 'Name parameter missing'.  You must also include the developer console network tab showing both the POST and GET.",
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your list.php with three vehicles in the list.  At least one of the vehicles must have '&lt;b&gt;' in its title and it must be shown properly (i.e. the title should not be bold)",
+      "title":"A screen shot (including the URL) of your view.php with three vehicles in the list.  At least one of the vehicles must have '&lt;b&gt;' in its title and it must be shown properly (i.e. the title should not be bold)",
       "type":"image"
     },
     {

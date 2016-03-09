@@ -102,7 +102,7 @@ No additional tables are necessary.
 <h1>Specifications</h1>
 <p>
 The changes to <b>index.php</b> are new wording and pointing to 
-<b>autos.php</b> to test for login bypass.
+<b>view.php</b> to test for login bypass.
 </p>
 <h2>Specifications for the Login Screen</h2>
 <p>
@@ -154,7 +154,8 @@ requests (i.e. refreshing the page) should <b>not</b> show the error message to
 </ul>
 <h2>Specifications for the Auto Database Screens</h2>
 <p>
-The <b>autos.php</b> script is broken into two scripts. The <b>view.pbp</b> script
+The <b>autos.php</b> script from the previous assignment is broken into two scripts
+in this assignment. The <b>view.pbp</b> script
 shows the list of automobiles in the database and the <b>add.php</b> script 
 handles adding new automobiles to the database but does not list any autos.  
 The <b>view.pbp</b> includes a link to <b>add.php</b> and <b>logout.php</b>
@@ -178,15 +179,15 @@ width="300px" src="03-Add.png" border="2"/>
 </p>
 <p>
 In order to protect the database from being modified without the user properly
-logging in, the <b>autos.php</b> and <b>add.php</b> must first check the session to see
+logging in, the <b>view.php</b> and <b>add.php</b> must first check the session to see
 if the user's name is set and if the user's name is not present,
-the autos.php must stop immediately using the PHP die() function:
+the <b>view.php</b> must stop immediately using the PHP die() function:
 <pre>
 if ( ! isset($_SESSION['name']) ) {
     die('Not logged in');
 }
 </pre>
-To test, navigate to <b>autos.php</b> manually without logging in - it 
+To test, navigate to <b>view.php</b> manually without logging in - it 
 should fail with "Not logged in".
 </p>
 <p>
