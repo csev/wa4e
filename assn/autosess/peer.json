@@ -14,7 +14,7 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (with URL) of your add.php showing 'Name parameter missing'.  You must also include the developer console network tab showing both the POST and GET.",
+      "title":"A screen shot (with URL) of your add.php showing a data validation error.  You must also include the developer console network tab showing both the POST and GET.",
       "type":"image"
     },
     {
