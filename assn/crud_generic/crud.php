@@ -6,6 +6,10 @@ shuffle($WORDS);
 <html>
 <head>
 <title><?= $assignment_type ?>: <?= $title_singular ?> Database CRUD</title>
+<style>
+li { padding: 5px; }
+pre {padding-left: 2em;}
+</style>
 </head>
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
 <h1><?= $assignment_type ?>: <?= $title_singular ?> Database CRUD</h1>
@@ -48,6 +52,24 @@ exam even is it is not 100% complete. Please do not discuss the
 nature of the exam with anyone except the teaching staff until
 we tell you that all students have completed the exam.
 </p>
+<?php } else { ?>
+<h1>Resources</h1>
+<p>There are several resources you might find useful:
+<ul>
+<li>Recorded lectures, sample code and chapters from
+<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<ul>
+<li class="toplevel">
+Understanding CRUD
+</li>
+</ul>
+<li>
+The sample code from the CRUD lecture is a simple working CRUD application.
+<pre>
+<a href="http://www.php-intro.com/code/crud.zip" target="_blank">http://www.php-intro.com/code/crud.zip</a>
+</pre>
+</li>
+</ul>
 <?php } ?>
 <h2 clear="all">General Specifications</h2>
 <p>
