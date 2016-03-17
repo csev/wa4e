@@ -22,10 +22,6 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your add.php showing the error message for a non-numeric year. You must also include the developer console network tab showing both the POST and GET.",
-      "type":"image"
-    },
-    {
       "title":"Source code of login.php",
       "type":"code",
       "language":"php"

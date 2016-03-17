@@ -267,7 +267,9 @@ JavaScript Objects
 <a href="code/javascript-objects.zip"
    target="_blank">Download Code</a>, 
 <a href="https://www.youtube.com/watch?v=ZXhiyeP6acg&index=25&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-target="_blank">YouTube</a>)
+target="_blank">YouTube</a>)<br/>
+Sample Assignment: 
+<a href="assn/res-profile/index.php" target="_blank">Specification</a>
 <br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=IPxQ9kEaF8c&index=6&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">Computing Conversations with Brendan Eich</a>
