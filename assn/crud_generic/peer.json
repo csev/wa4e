@@ -6,15 +6,15 @@
   "solution":"http://www.php-intro.com/solutions/autoscrud/",
   "parts":[
     {
-      "title":"A screen shot (including the URL) of your index.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+      "title":"A screen shot (including the URL) of your login.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
       "type":"image"
     },
     {
-      "title":"A screen shot (with URL) of your view.php showing ACCESS DENIED",
+      "title":"A screen shot (with URL) of your add.php showing ACCESS DENIED",
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your view.php with three entries in the list",
+      "title":"A screen shot (including the URL) of your index.php with three entries in the list",
       "type":"image"
     },
     {
@@ -30,7 +30,7 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your view.php showing a successful delete.",
+      "title":"A screen shot (including the URL) of your index.php showing a successful delete.",
       "type":"image"
     },
     {
