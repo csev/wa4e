@@ -269,7 +269,8 @@ JavaScript Objects
 <a href="https://www.youtube.com/watch?v=ZXhiyeP6acg&index=25&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">YouTube</a>)<br/>
 Sample Assignment: 
-<a href="assn/res-profile/index.php" target="_blank">Specification</a>
+(<a href="assn/res-profile/index.php" target="_blank">Specification</a>, 
+<a href="solutions/res-profile/index.php" target="_blank">Sample Implementation</a>)
 <br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=IPxQ9kEaF8c&index=6&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">Computing Conversations with Brendan Eich</a>
@@ -297,6 +298,10 @@ YouTube:
   target="_blank">JSON</a>,
 <a href="https://www.youtube.com/watch?v=ZL4HpKW16S4&index=32&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
   target="_blank">JSON CRUD</a>)
+<br/>
+Sample Assignment: 
+(<a href="assn/res-position/index.php" target="_blank">Specification</a>, 
+<a href="solutions/res-position/index.php" target="_blank">Sample Implemenetation</a>)
 <br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=B7Aut4OUuvs&index=39&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">John Resig: Building jQuery</a>
