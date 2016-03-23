@@ -32,12 +32,14 @@ to our <b>Profile</b> table.
 <p>
 This assignment will use JQuery to dynamically add and
 delete positions in the add and edit user interface.  
+<?php if ( isset($json->solution) ) { ?>
+<h2>Sample solution</h2>
 <p>
-You can play with a sample implementation of the code 
-at:
-<a href="http://www.php-intro.com/assn/res-position/" 
-target="_blank">http://www.php-intro.com/assn/res-position/</a>.
-</p>
+You can explore a sample solution for this problem at
+<pre>
+<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+</pre>
+<?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>

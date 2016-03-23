@@ -42,12 +42,14 @@ This assignment will also feature a
 <a href="https://jqueryui.com/autocomplete/" target="_blank">jQuery auto-complete</a>
 field when entering the name of the school.
 </p>
+<?php if ( isset($json->solution) ) { ?>
+<h2>Sample solution</h2>
 <p>
-You can play with a sample implementation of the code 
-at:
-<a href="http://www.php-intro.com/assn/res-education/" 
-target="_blank">http://www.php-intro.com/assn/res-education/</a>.
-</p>
+You can explore a sample solution for this problem at
+<pre>
+<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+</pre>
+<?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
