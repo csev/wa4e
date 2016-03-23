@@ -1,0 +1,50 @@
+{
+  "title":"Profiles, Positions and jQuery",
+  "description":"In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where postition entries are added in the browser.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment" : "http://www.php-intro.com/assn/res-position/",
+  "solution" : "http://www.php-intro.com/solutions/res-position/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your add.php showing two positions",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing one position modified, one position deleted and one new position",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing the correct new positions after the edit is complete",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a bad year",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Postition database table showing at least three rows",
+      "type":"image"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":5,
+  "peerpoints":3,
+  "assesspoints":1,
+  "minassess":2,
+  "maxassess":5
+}

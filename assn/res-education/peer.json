@@ -1,0 +1,57 @@
+{
+  "title":"Profiles, Positions, and Education",
+  "description":"This assignment is worth 10 points. 5 points are from the instructor, 3 points are from your peers and 2 points come from you grading other student's submissions.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your add.php showing one existing education entry and one new education entry",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing one education entry modified, one education entry deleted and one new education entry",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing the correct new education entry after the edit is complete",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a bad year",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Education database table showing at least three rows",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Institution database table showing at least one new row inserted when the institution name did not match an existing instutition",
+      "type":"image"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code any file in your application that you choose (i.e. util.php)",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":5,
+  "peerpoints":3,
+  "assesspoints":1,
+  "minassess":2,
+  "maxassess":5
+}
