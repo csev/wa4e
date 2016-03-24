@@ -24,18 +24,7 @@ pre {padding-left: 2em;}
 </a>
 <h1>Assignment: <?= $json->title ?></h1>
 <p>
-In this assignment you will extend our simple resume database 
-to support Create, Read, Update, and Delete operations (CRUD) 
-into a <b>Education</b> table that has a many-to-one relationship
-to our <b>Profile</b> table and a many-to-many relationship
-to an <b>Institution</b> table.
-</p>
-<p>
-This assignment will use JQuery to dynamically add and
-delete positions and education entries in the add and edit user interface.  
-This assigment <b>must</b> use JQuery and <b>must not use</b> getElementById() anywhere 
-in its code.  So the JavaScript code from the previous assignment must 
-be rewritten using jQuery.
+<?= $json->description ?>
 </p>
 <p>
 This assignment will also feature a 
@@ -73,7 +62,10 @@ JSON
 <li>An article from Stack Overflow on
 <a href="http://stackoverflow.com/questions/17650776/add-remove-html-inside-div-using-javascript"
 target="_blank">Add/Remove HTML Inside a div Using JavaScript</a>
-(this time you can look at the jQuery versions of the answers for this assignment)
+</li>
+<li>
+Documentation for <a href="https://jqueryui.com/autocomplete/"
+target="_new">JQuery Autocomplete</a>
 </li>
 <li>
 Sample code: 
@@ -145,16 +137,6 @@ INSERT INTO Institution (name) VALUES ('Montana State University');
 </pre>
 This will allow you to have some university names pop up when
 you are typing ahead in the School field.
-</p>
-<h2 clear="all">JavaScript and CSS Code</h2>
-<p>
-You should include the JQuery CSS, JavaScript, and jQuery UI JavaScript
-in your code at the appropriate points.  You can use these files:
-<ul>
-<li> <a href="../js/jquery-1.10.2.js">http://www.php-intro.com/assn/res-education/js/jquery-1.10.2.js</a></li>
-<li> <a href="../js/jquery-ui-1.11.4.js">http://www.php-intro.com/assn/res-education/js/jquery-ui-1.11.4.js</a></li>
-<li> <a href="../css/jquery-ui-1.11.4-ui-lightness.css">http://www.php-intro.com/assn/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
-</ul>
 </p>
 <h2 clear="all">Type Ahead</h2>
 <p>

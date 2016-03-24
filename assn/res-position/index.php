@@ -91,6 +91,16 @@ The <b>rank</b> column should be used to record the order
 in which the positions are to be displayed.   Do not use the 
 <b>year</b> as the sort key when viewing the data.
 </p>
+<h2 clear="all">JavaScript and CSS Code</h2>
+<p>
+You should include the JQuery CSS, JavaScript, and jQuery UI JavaScript
+in your code at the appropriate points.  You can use these files:
+<ul>
+<li> <a href="../js/jquery-1.10.2.js">http://www.php-intro.com/assn/res-education/js/jquery-1.10.2.js</a></li>
+<li> <a href="../js/jquery-ui-1.11.4.js">http://www.php-intro.com/assn/res-education/js/jquery-ui-1.11.4.js</a></li>
+<li> <a href="../css/jquery-ui-1.11.4-ui-lightness.css">http://www.php-intro.com/assn/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
+</ul>
+</p>
 <h2 clear="all">Design Point</h2>
 <p>
 If you look at the sample implementation, it only allows a 

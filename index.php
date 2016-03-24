@@ -303,6 +303,10 @@ Sample Assignment:
 (<a href="assn/res-position/index.php" target="_blank">Specification</a>, 
 <a href="solutions/res-position/index.php" target="_blank">Sample Implemenetation</a>)
 <br/>
+Advanced Assignment: 
+(<a href="assn/res-education/index.php" target="_blank">Specification</a>, 
+<a href="solutions/res-education/index.php" target="_blank">Sample Implementation</a>)
+<br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=B7Aut4OUuvs&index=39&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">John Resig: Building jQuery</a>
 <br/>
@@ -310,6 +314,14 @@ Bonus Interview: <a href="https://www.youtube.com/watch?v=kc8BAR7SHJI&index=31&l
 target="_blank">Discovering JavaScript Object Notation with Douglas Crockford</a>
 </li>
 
+<a name="handlebars"></a> 
+<li class="toplevel">
+Handlebars<br/>
+Sample Assignment: 
+(<a href="assn/res-handlebars/index.php" target="_blank">Specification</a>, 
+<a href="solutions/res-handlebars/index.php" target="_blank">Sample Implemenetation</a>)
+<br/>
+</li>
 <a name="sql-advanced"></a> 
 <li class="toplevel">
 Advanced SQL
