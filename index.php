@@ -279,12 +279,28 @@ target="_blank">Computing Conversations with Brendan Eich</a>
 
 <a name="php-jquery"></a> 
 <li class="toplevel">
-JQuery and JSON
-(<a href="lectures/JS-03-JQuery-JSON.ppt"
+JQuery 
+(<a href="lectures/JS-03-JQuery.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/jquery-01.zip"
+   target="_blank">Download code</a>, 
+<a href="https://www.youtube.com/watch?v=HuILi2alAUc&index=30&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+   target="_blank">YouTube</a>)
+<br/>
+Sample Assignment: 
+(<a href="assn/res-position/index.php" target="_blank">Specification</a>, 
+<a href="solutions/res-position/index.php" target="_blank">Sample Implemenetation</a>)
+<br/>
+Bonus Interview: <a href="https://www.youtube.com/watch?v=B7Aut4OUuvs&index=39&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
+target="_blank">John Resig: Building jQuery</a>
+</li>
+
+<a name="php-JSON"></a> 
+<li class="toplevel">
+JSON
+(<a href="lectures/JS-04-JSON.ppt"
     target="_blank">Slides</a>, 
 Download code: 
-<a href="code/jquery-01.zip"
-   target="_blank">JQuery</a>, 
 <a href="code/json-01.zip"
    target="_blank">JSON</a>, 
 <a href="code/json-02-chat.zip"
@@ -292,23 +308,14 @@ Download code:
 <a href="code/json-03-crud.zip"
    target="_blank">JSON CRUD</a>, 
 YouTube:
-<a href="https://www.youtube.com/watch?v=HuILi2alAUc&index=30&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-   target="_blank">JQuery</a>,
 <a href="https://www.youtube.com/watch?v=MUqGiqlmeGk&index=31&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu" 
   target="_blank">JSON</a>,
 <a href="https://www.youtube.com/watch?v=ZL4HpKW16S4&index=32&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
   target="_blank">JSON CRUD</a>)
 <br/>
 Sample Assignment: 
-(<a href="assn/res-position/index.php" target="_blank">Specification</a>, 
-<a href="solutions/res-position/index.php" target="_blank">Sample Implemenetation</a>)
-<br/>
-Advanced Assignment: 
 (<a href="assn/res-education/index.php" target="_blank">Specification</a>, 
 <a href="solutions/res-education/index.php" target="_blank">Sample Implementation</a>)
-<br/>
-Bonus Interview: <a href="https://www.youtube.com/watch?v=B7Aut4OUuvs&index=39&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
-target="_blank">John Resig: Building jQuery</a>
 <br/>
 Bonus Interview: <a href="https://www.youtube.com/watch?v=kc8BAR7SHJI&index=31&list=PLlRFEj9H3Oj5F-GFxG-rKzORVAu3jestu"
 target="_blank">Discovering JavaScript Object Notation with Douglas Crockford</a>
