@@ -96,9 +96,9 @@ in which the positions are to be displayed.   Do not use the
 You should include the JQuery CSS, JavaScript, and jQuery UI JavaScript
 in your code at the appropriate points.  You can use these files:
 <ul>
-<li> <a href="../js/jquery-1.10.2.js">http://www.php-intro.com/assn/res-education/js/jquery-1.10.2.js</a></li>
-<li> <a href="../js/jquery-ui-1.11.4.js">http://www.php-intro.com/assn/res-education/js/jquery-ui-1.11.4.js</a></li>
-<li> <a href="../css/jquery-ui-1.11.4-ui-lightness.css">http://www.php-intro.com/assn/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
+<li> <a href="http://www.php-intro.com/solutions/res-education/js/jquery-1.10.2.js" target="_blank">http://www.php-intro.com/solutions/res-education/js/jquery-1.10.2.js</a></li>
+<li> <a href="http://www.php-intro.com/solutions/res-education/js/jquery-ui-1.11.4.js" target="_blank">http://www.php-intro.com/solutions/res-education/js/jquery-ui-1.11.4.js</a></li>
+<li> <a href="http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css" target="_blank">http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
 </ul>
 </p>
 <h2 clear="all">Design Point</h2>

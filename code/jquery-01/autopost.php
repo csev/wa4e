@@ -30,7 +30,8 @@ Enter or the form will get submitted.</p>
           $('#spinner').hide();
       }
     ).error( function() { 
-      window.console && console.log('error'); 
+      $('#target').css('background-color', 'red');
+      alert("Dang!");
 	});
   });
 </script>
