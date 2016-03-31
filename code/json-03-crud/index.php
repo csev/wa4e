@@ -31,19 +31,19 @@ function htmlentities(str) {
 </script>
 <script type="text/javascript">
 // Do this *after* the table tag is rendered
-$.getJSON('getjson.php', function(data) {
+$.getJSON('getjson.php', function(rows) {
     $("#mytab").empty();
     found = false;
-    for (var i = 0; i < data.length; i++) {
-        entry = data[i];
+    for (var i = 0; i < rows.length; i++) {
+        row = rows[i];
         found = true;
         window.console && console.log(data[i].title);
-        $("#mytab").append("<tr><td>"+htmlentities(entry.title)+'</td><td>'
-            + htmlentities(entry.plays)+'</td><td>'
-            + htmlentities(entry.rating)+"</td><td>\n"
-            + '<a href="edit.php?id='+htmlentities(entry.id)+'">'
+        $("#mytab").append("<tr><td>"+htmlentities(row.title)+'</td><td>'
+            + htmlentities(row.plays)+'</td><td>'
+            + htmlentities(row.rating)+"</td><td>\n"
+            + '<a href="edit.php?id='+htmlentities(row.id)+'">'
             + 'Edit</a> / '
-            + '<a href="delete.php?id='+htmlentities(entry.id)+'">'
+            + '<a href="delete.php?id='+htmlentities(row.id)+'">'
             + 'Delete</a>\n</td></tr>');
     }
     if ( ! found ) {

@@ -52,6 +52,12 @@ previous assignment</a>.
 target="_blank">Add/Remove HTML Inside a div Using JavaScript</a>
 (you can scroll past the JavaScript-only answers and see the jQuery answer at the bottom)
 </li>
+<li>
+The documentation for 
+<a href="http://php.net/manual/en/pdo.lastinsertid.php" target="_blank">PDO lastInsertId()</a>
+where you can retrieve the most recently assigned primary key as a result of an INSERT
+statement.
+</li>
 <li>Recorded lectures and materials from 
 <a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
 <ul>
@@ -170,6 +176,48 @@ or
 <pre style="color:red">
 Year must be numeric
 </pre>
+</p>
+<h1>Setting the Foreign Key for Positions</h1>
+<p>
+When you are building the <b>add.php</b> code to add a new profile and some 
+number of positions, you need to insert the <b>profile_id</b> as a foreign
+key for each of the position rows.  But since you have not yet added the profile
+you do now know the <b>profile_id</b> which will be selected by the database.
+</p>
+<p>
+Fortunately there is a way to ask PDO for the most recently inserted primary
+key after the insert has been done using the <b>lastInsertId()</b> method provided 
+by PDO.  Here is some sample code:
+<pre>
+    // Data is valid - time to insert
+    $stmt = $pdo-&gt;prepare('INSERT INTO Profile
+        (user_id, first_name, last_name, email, headline, summary) 
+    VALUES ( :uid, :fn, :ln, :em, :he, :su)');
+    $stmt-&gt;execute(array(
+        ':uid' =&gt; $_SESSION['user_id'],
+        ':fn' =&gt; $_POST['first_name'],
+        ':ln' =&gt; $_POST['last_name'],
+        ':em' =&gt; $_POST['email'],
+        ':he' =&gt; $_POST['headline'],
+        ':su' =&gt; $_POST['summary'])
+    );
+    $profile_id = $pdo-&gt;lastInsertId();
+
+    ...
+
+        $stmt = $pdo-&gt;prepare('INSERT INTO Position
+            (profile_id, rank, year, description) 
+        VALUES ( :pid, :rank, :year, :desc)');
+        $stmt-&gt;execute(array(
+            ':pid' =&gt; $profile_id,
+            ':rank' =&gt; $rank,
+            ':year' =&gt; $year,
+            ':desc' =&gt; $desc)
+        );
+
+</pre>
+The variable <b>$profile_id</b> contains the primary key of the newly created profile
+so you can include it in the INSERT into the Postion table.
 </p>
 <h1>What To Hand In</h1>
 <p>
