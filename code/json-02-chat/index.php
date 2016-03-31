@@ -32,25 +32,24 @@
 </script>
 <script type="text/javascript">
 function updateMsg() {
-  window.console && console.log("Requesting JSON"); 
-  $.ajax({
-    url: "chatlist.php",
-    cache: false,
-    success: function(data){
-      window.console && console.log("JSON Received"); 
-      window.console && console.log(data);
-      $("#chatcontent").empty();
-      for (var i = 0; i < data.length; i++) {
-        entry = data[i];
-        $("#chatcontent").append("<p>"+entry[0] +
-            "<br/>&nbsp;&nbsp;"+entry[1]+"</p>\n");
-        window.console && console.log("entry " + entry[0]);
+  window.console && console.log('Requesting JSON'); 
+  $.getJSON('chatlist.php', function(rowz){
+      window.console && console.log('JSON Received'); 
+      window.console && console.log(rowz);
+      $('#chatcontent').empty();
+      for (var i = 0; i < rowz.length; i++) {
+        arow = rowz[i];
+        $('#chatcontent').append('<p>'+arow[0] +
+            '<br/>&nbsp;&nbsp;'+arow[1]+"</p>\n");
       }
       setTimeout('updateMsg()', 4000);
-    }
   });
 }
-window.console && console.log("Startup complete"); 
-updateMsg();
+
+// Make sure JSON requests are not cached
+$(document).ready(function() {
+  $.ajaxSetup({ cache: false });
+  updateMsg();
+});
 </script>
 </body>
