@@ -252,7 +252,7 @@ by PDO.  Here is some sample code:
             ':year' =&gt; $year,
             ':desc' =&gt; $desc)
         );
-
+        $rank++;
 </pre>
 The variable <b>$profile_id</b> contains the primary key of the newly created profile
 so you can include it in the INSERT into the Postion table.
