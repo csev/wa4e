@@ -289,7 +289,7 @@ Please do not use HTML5 in-browser data
 validation (i.e. type="number") for the fields 
 in this assignment as we want to make sure you can properly do server 
 side data validation.  And in general, even when you do client-side
-data validation, you should stil validate data on the server in case
+data validation, you should still validate data on the server in case
 the user is using a non-HTML5 browser.
 </li>
 </ul>

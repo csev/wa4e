@@ -107,28 +107,6 @@ in your code at the appropriate points.  You can use these files:
 <li> <a href="http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css" target="_blank">http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
 </ul>
 </p>
-<h2 clear="all">Design Point</h2>
-<p>
-If you look at the sample implementation, it only allows a 
-maximum of nine positions in the form.  This is checked 
-and enforced in the JavaScript for both the add.php and 
-edit.php code.
-</p>
-<p>
-The logic is somewhat simple and gets confused when there is 
-a combination of adds and deletes.  It will never add more 
-than nine new or total positions, but if you delete some 
-of the positions, you do not get a postion "back" to re-add 
-unless you press "Save".  So if you 
-add eight positions and then delete five positions without 
-pressing "Save", you can only add one more entry rather 
-than four more entries.
-</p>
-<p>
-This makes the JavaScript simpler and you are welcome to take
-the same approach.  
-</p>
-
 <h2 clear="all">The Screens for This Assignment</h2>
 <p>
 We will be extending the user interface of the previous assignment 
@@ -177,6 +155,66 @@ or
 Year must be numeric
 </pre>
 </p>
+<h2 clear="all">Handling the Input From Multiple Positions</h2>
+<p>
+If you look at the sample implementation, it only allows a 
+maximum of nine positions in the form.  This is checked 
+and enforced in the JavaScript for both the add.php and 
+edit.php code.
+</p>
+<p>
+The logic is somewhat simple and gets confused when there is 
+a combination of adds and deletes.  It will never add more 
+than nine new or total positions, but if you delete some 
+of the positions, you do not get a postion "back" to re-add 
+unless you press "Save".  So if you 
+add eight positions and then delete five positions without 
+pressing "Save", you can only add one more entry rather 
+than four more entries.
+</p>
+<p>
+This makes the JavaScript simpler and you are welcome to take
+the same approach.  
+</p>
+<p>The result is that if you add two positions and delete one 
+position, you will end up with a form that looks like the following
+in the generated document object model:
+<pre>
+&lt;div id="position1"&gt;
+&lt;p>Year: &lt;input type="text" name="year1" value=""&gt;
+&lt;input type="button" value="-" onclick="$('#position1').remove();return false;"&gt;&lt;/p&gt;
+&lt;textarea name="desc1" rows="8" cols="80"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div id="position3"&gt;
+&lt;p&gt;Year: &lt;input type="text" name="year3" value=""&gt;
+&lt;input type="button" value="-" onclick="$('#position3').remove();return false;"&gt;&lt;/p&gt;
+&lt;textarea name="desc3" rows="8" cols="80"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+</pre>
+In a sense we are simulating an array with the naming convention of the fields 
+with the number at the end of the field.   A way to handle multiple inputs with 
+a naming convention like this is to use code like the following:
+<pre>
+function validatePos() {
+    for($i=1; $i<=9; $i++) {
+        if ( ! isset($_POST['year'.$i]) ) continue;
+        if ( ! isset($_POST['desc'.$i]) ) continue;
+        $year = $_POST['year'.$i];
+        $desc = $_POST['desc'.$i];
+        if ( strlen($year) == 0 || strlen($desc) == 0 ) {
+            return "All fields are required";
+        }
+
+        if ( ! is_numeric($year) ) {
+            return "Position year must be numeric";
+        }
+    }
+    return true;
+}
+</pre>
+Note that we handle gaps by simply checking the data that is present and skipping 
+any data that is missing.
+</p>
 <h1>Setting the Foreign Key for Positions</h1>
 <p>
 When you are building the <b>add.php</b> code to add a new profile and some 
@@ -219,6 +257,52 @@ by PDO.  Here is some sample code:
 The variable <b>$profile_id</b> contains the primary key of the newly created profile
 so you can include it in the INSERT into the Postion table.
 </p>
+<h1>Dealing with Changes to Positions When Editing</h1>
+<p>
+When you implement <b>edit.php</b> the user can do any combination of adds, removals, or edits
+of the position data.   So when you are processing the incoming POST data, you need to somehow
+get the data in the database to match the incoming POST data.  
+</p>
+<p>
+One (difficult) approach is to retrieve the "old" positions from the database, and loop
+through all old positions and figure out which need to be deleted, updated, or inserted.
+If you want to try to do that for this assignment - feel free - but consider it an "extra challenge".
+</p>
+<p>
+For your first implementation of handling the POST data in <b>edit.php</b> just delete all
+the old Postion entries and re-insert them:
+<pre>
+    // Clear out the old position entries
+    $stmt = $pdo-&gt;prepare('DELETE FROM Position
+        WHERE profile_id=:pid');
+    $stmt-&gt;execute(array( ':pid' =&gt; $_REQUEST['profile_id']));
+
+    // Insert the position entries
+    $rank = 1;
+    for($i=1; $i&lt;=9; $i++) {
+        if ( ! isset($_POST['year'.$i]) ) continue;
+        if ( ! isset($_POST['desc'.$i]) ) continue;
+        $year = $_POST['year'.$i];
+        $desc = $_POST['desc'.$i];
+
+        $stmt = $pdo-&gt;prepare('INSERT INTO Position
+            (profile_id, rank, year, description)
+        VALUES ( :pid, :rank, :year, :desc)');
+        $stmt-&gt;execute(array(
+            ':pid' =&gt; $_REQUEST['profile_id'],
+            ':rank' =&gt; $rank,
+            ':year' =&gt; $year,
+            ':desc' =&gt; $desc)
+        );
+        $rank++;
+    }
+</pre>
+This approach has the nice advantage that you are reusing code between
+<b>edit.php</b> and <b>add.php</b>.  The only difference is that in <b>edit.php</b> you just remove
+the existing entries first.
+
+
+</p>
 <h1>What To Hand In</h1>
 <p>
 As a reminder, your code must meet all the specifications
@@ -234,9 +318,13 @@ foreach($json->parts as $part ) {
 </ol>
 <h1><em>Optional</em> Challenges</h1>
 <p>
-There are no optional challenges in this assignment.  You can look at the 
-<a href="../../res-profile/spec/index.php">the challenges from the previous
-assignment</a> if you like.
+<ul>
+<li>Try to so the more inticate approach to updating positions in
+<b>edit.php</b> without using the "delete all the previous positions" trick.
+It will help if you add the <b>position_id</b> form markup that you 
+generate for the positions that came from the database when <b>edit.php</b>
+starts.
+</ul>
 </p>
 <h2 clear="all">General Specifications</h2>
 <p>
@@ -272,7 +360,7 @@ Please do not use HTML5 in-browser data
 validation (i.e. type="number") for the fields 
 in this assignment as we want to make sure you can properly do server 
 side data validation.  And in general, even when you do client-side
-data validation, you should stil validate data on the server in case
+data validation, you should still validate data on the server in case
 the user is using a non-HTML5 browser.
 </li>
 </ul>
