@@ -110,7 +110,7 @@ in your code at the appropriate points.  You can use these files:
 <h2 clear="all">The Screens for This Assignment</h2>
 <p>
 We will be extending the user interface of the previous assignment 
-to implment this assignment.  All of the requirements from the previous
+to implement this assignment.  All of the requirements from the previous
 assignment still hold.   In this section we will talk about the additional
 UI requirements.
 <li>
@@ -163,7 +163,7 @@ and enforced in the JavaScript for both the add.php and
 edit.php code.
 </p>
 <p>
-The logic is somewhat simple and gets confused when there is 
+The logic is somewhat simple and gets confusing when there is 
 a combination of adds and deletes.  It will never add more 
 than nine new or total positions, but if you delete some 
 of the positions, you do not get a postion "back" to re-add 
@@ -173,7 +173,7 @@ pressing "Save", you can only add one more entry rather
 than four more entries.
 </p>
 <p>
-This makes the JavaScript simpler and you are welcome to take
+This makes the JavaScript more simple and you are welcome to take
 the same approach.  
 </p>
 <p>The result is that if you add two positions and delete one 
