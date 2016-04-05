@@ -27,6 +27,20 @@ editing an existing entry. All of the form rendering will be done with
 the the <b>Handlebars</b> JavaScript library.
 </p>
 <p>
+In the sample code, some off the files have been comverted to completely use
+in-browser rendering for dynamic data, other files use a in-server MVC approach
+similar to previous assignments, and others are hybrid:
+<ul>
+<li><b>index.php</b> and <b>view.php</b> use in-browser rendering for all data
+that comes from the model.  In these files, there is no need to requir <b>pdo.php</b>
+as a result.</li>
+<li><b>form.php</b> uses in-browser rendering to pull in old data if there is a 
+field being edited but uses old-style MVC to handle the incoming POST data when
+an entry is added or edited.</li>
+<li><b>login.php</b> and <b>delete.php</b> are old-style MVC where model, controller,
+and view all are handled in PHP.</li>
+</ul>
+<p>
 You can play with a sample implementation of the code at:
 <pre>
 <a href="http://www.php-intro.com/solutions/res-handlebars/" target="_blank">http://www.php-intro.com/solutions/res-handlebars/</a>
