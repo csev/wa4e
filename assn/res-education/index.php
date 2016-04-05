@@ -158,7 +158,7 @@ $('.school').autocomplete({
 This simply says that we want to have autocomplete active for all input tags
 with a class of "school" and to call the script <b>school.php</b> with the 
 partially typed school name using the following calling sequence (make sure
-your are logged in before accessing this URL):
+your are logged in to the sample application before accessing this URL):
 </p>
 <p>
 <a href="http://www.php-intro.com/solutions/res-education/school.php?term=Univer"
