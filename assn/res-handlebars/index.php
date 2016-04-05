@@ -32,7 +32,7 @@ in-browser rendering for dynamic data, other files use a in-server MVC approach
 similar to previous assignments, and others are hybrid:
 <ul>
 <li><b>index.php</b> and <b>view.php</b> use in-browser rendering for all data
-that comes from the model.  In these files, there is no need to requir <b>pdo.php</b>
+that comes from the model.  In these files, there is no need to require <b>pdo.php</b>
 as a result.</li>
 <li><b>form.php</b> uses in-browser rendering to pull in old data if there is a 
 field being edited but uses old-style MVC to handle the incoming POST data when

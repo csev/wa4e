@@ -15,11 +15,6 @@
       "title":"Source code of profile.php",
       "type":"code",
       "language":"php"
-    },
-    {
-      "title":"(Optional) Source code any file in your application that you choose (i.e. util.php)",
-      "type":"code",
-      "language":"php"
     }
   ],
   "totalpoints":10,
