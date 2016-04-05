@@ -2,6 +2,8 @@
   "title":"Profiles, Positions, and Education",
   "description":"In this assignment you will extend our simple resume database to support Create, Read, Update, and Delete operations (CRUD) into a Education table that has a many-to-one relationship to our Profile table and a many-to-many relationship to an Institution table. We will add an JQuery autocomplete field to our user interface.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment" : "http://www.php-intro.com/assn/res-education/",
+  "solution" : "http://www.php-intro.com/solutions/res-education/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your add.php showing one existing education entry and one new education entry",

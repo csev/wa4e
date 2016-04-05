@@ -161,8 +161,8 @@ partially typed school name using the following calling sequence (make sure
 your are logged in before accessing this URL):
 </p>
 <p>
-<a href="http://www.php-intro.com/assn/res-education/school.php?term=Univer"
- target="_blank">http://www.php-intro.com/assn/res-education/school.php?term=Univer</a>
+<a href="http://www.php-intro.com/solutions/res-education/school.php?term=Univer"
+ target="_blank">http://www.php-intro.com/solutions/res-education/school.php?term=Univer</a>
 </p>
 <p>
 The <b>term</b> is whatever has been typed into the input field so far.  The 

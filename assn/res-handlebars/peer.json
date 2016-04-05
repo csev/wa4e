@@ -2,6 +2,8 @@
   "title":"Handlebars",
   "description":"This assignment is worth 10 points. 5 points are from the instructor, 3 points are from your peers and 2 points come from you grading other student's submissions.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment" : "http://www.php-intro.com/assn/res-handlebars/",
+  "solution" : "http://www.php-intro.com/solutions/res-handlebars/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your form.php showing editing an existing entry showing the retrieval of the JSON to populate the form.",
