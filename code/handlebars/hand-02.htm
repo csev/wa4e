@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<p>Before hand-02</p>
+<div id="stuff"><img src="spinner.gif"></div>
+<p>After hand-02</p>
+
+<script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+</script>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/handlebars.js"></script>
+
+<script>
+var raw_template = $("#entry-template").html();
+var template = Handlebars.compile(raw_template);
+
+$.getJSON('hand-02-json.php', function (context) {
+    var rendered = template(context);
+    $('#stuff').replaceWith(rendered);
+});
+
+</script>
+</body>

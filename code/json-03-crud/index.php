@@ -37,7 +37,7 @@ $.getJSON('getjson.php', function(rows) {
     for (var i = 0; i < rows.length; i++) {
         row = rows[i];
         found = true;
-        window.console && console.log(data[i].title);
+        window.console && console.log(row.title);
         $("#mytab").append("<tr><td>"+htmlentities(row.title)+'</td><td>'
             + htmlentities(row.plays)+'</td><td>'
             + htmlentities(row.rating)+"</td><td>\n"

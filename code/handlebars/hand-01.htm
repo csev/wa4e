@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<p>Before hand-01</p>
+<div id="stuff"><img src="spinner.gif"></div>
+<p>After hand-01</p>
+
+<script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+</script>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/handlebars.js"></script>
+
+<script>
+var raw_template = $("#entry-template").html();
+var template = Handlebars.compile(raw_template);
+var context = {title: "Equations", body: "guess < 42"};
+var rendered = template(context);
+alert('Check out the sweet spinner..:)');
+$('#stuff').html(rendered);
+</script>
+</body>

@@ -323,7 +323,12 @@ target="_blank">Discovering JavaScript Object Notation with Douglas Crockford</a
 
 <a name="handlebars"></a> 
 <li class="toplevel">
-Handlebars<br/>
+Handlebars
+(<a href="lectures/JS-05-Handlebars.ppt"
+    target="_blank">Slides</a>, 
+<a href="code/handlebars.zip"
+   target="_blank">Code</a>)
+<br/>
 Sample Assignment: 
 (<a href="assn/res-handlebars/index.php" target="_blank">Specification</a>, 
 <a href="solutions/res-handlebars/index.php" target="_blank">Sample Implemenetation</a>)
