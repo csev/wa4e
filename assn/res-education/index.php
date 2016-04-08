@@ -43,7 +43,7 @@ You can explore a sample solution for this problem at
 <p>There are several resources you might find useful:
 <ul>
 <li>You might want to refer back to the resources for the 
-<a href="../../res-position/spec/index.php" target="_blank">
+<a href="../res-position/index.php" target="_blank">
 previous assignment</a>.
 </li>
 <li>Recorded lectures and slides from 
