@@ -20,7 +20,7 @@ $table_name_lower = 'pizza';
 $fields = array(
     array('Store', 'store', false),
     array('Address', 'address', false),
-    array('Rating', 'year', 'i',false,10),
+    array('Rating', 'rating', 'i',false,10),
     array('Best Pizza', 'best', false)
 );
 
