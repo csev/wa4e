@@ -14,14 +14,20 @@ pre {padding-left: 2em;}
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
 <h1><?= $assignment_type ?>: <?= $title_singular ?> Database CRUD</h1>
 <p>
-In this exam you will build a web based application to
+In this <?= $assignment_type_lower ?> you will build a web based application to
 track data about <?= strtolower($title_plural) ?>.
 We will only allow logged in users
 to track <?= strtolower($title_plural) ?>.
 </p>
-<?php if ( $assignment_type == 'Exam' ) { ?>
-<h1><?= $assignment_type ?> Rules</h1>
+<?php if ( $assignment_type == 'Exam' || $assignment_type == "Sample Exam" ) { ?>
+<h1><?= $assignment_type ?> Rules
+</h1>
 <p>
+<?php
+    if ( $assignment_type == "Sample Exam" ) {
+        echo('<b>(If this were a real exam)</b> ');
+    }
+?>
 In order for us to consider your exam for grading, you must read the
 statement below and if you agree with the statement sign and date below
 and turn the entire exam packet in at the end of the exam.
@@ -42,7 +48,14 @@ Date:  _______________
 </b>
 </div>
 <p>
-This exam is open-book, open notes, open network, and you can use
+<?php
+    if ( $assignment_type == "Sample Exam" ) {
+        echo('If this were a real exam, it would be ');
+    } else {
+        echo('This exam is');
+    }
+?>
+open-book, open notes, open network, and you can use
 any of your prior work for the class to complete the exam.
 You cannot listen to audio or watch any videos during the exam.
 You cannot get any help from any other person. You also cannot give
@@ -107,7 +120,7 @@ the user is using a non-HTML5 browser.
 You can experiment with a reference implementation at:
 </p>
 <p>
-<a href="<?= $reference ?>" target="_blank">Sample implementation</a>
+<a href="<?= $reference ?>" target="_blank"><?= $reference ?></a>
 </p>
 <?php } ?>
 <h2>Using the Autograder</h2>
@@ -403,7 +416,7 @@ target="_blank">Ngrok</a> application installed.
 <hr/>
 Provided by: <a href="http://www.php-intro.com/" target="_blank">www.php-intro.com</a>
 <center>
-<?php if ( $assignment_type == 'Exam' ) { ?>
+<?php if ( strpos($assignment_type,'Exam') !== false ) { ?>
 Copyright Charles R. Severance - All Rights Reserved
 <?php } else { ?>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
