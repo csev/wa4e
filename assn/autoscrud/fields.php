@@ -5,7 +5,7 @@ $folder = basename(__DIR__);
 // Reference can be relative
 $reference = "../../solutions/$folder";
 
-// These two mucst be absolute as theu will be in peer.json
+// These two must be absolute as they will be in peer.json
 $reference_implementation = "http://www.php-intro.com/solutions/$folder";
 $specification = "http://www.php-intro.com/assn/$folder";
 
