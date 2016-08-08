@@ -1,3 +1,11 @@
+<?php
+use \Tsugi\Core\LTIX;
+
+if ( file_exists("tsugi/config.php") ) {
+	require_once "tsugi/config.php";
+	$LAUNCH = LTIX::session_start();
+}
+?>
 <html>
 <head>
 <?php include("header.php"); ?>
