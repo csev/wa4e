@@ -1,18 +1,13 @@
 <?php
 use \Tsugi\Core\LTIX;
 
-if ( file_exists("tsugi/config.php") ) {
-	require_once "tsugi/config.php";
-	$LAUNCH = LTIX::session_start();
-}
+require_once "tsugi/config.php";
+$LAUNCH = LTIX::session_start();
+
+include("header.php");
+include("nav.php"); 
 ?>
-<html>
-<head>
-<?php include("header.php"); ?>
-</head>
-<body>
-<?php include("nav.php"); ?>
-<div id="main">
+<div id="container">
 <p>
 Hello and welcome to my site where you can work through my materials and learn PHP
 and MySQL on your own.  I would love to hear from you if you find this material useful.  
@@ -384,6 +379,4 @@ and use
 -- Dr. Chuck
 </p>
 </div>
-<?php include("footer.php"); ?>
-</body>
-</html>
+<?php $OUTPUT->footer();

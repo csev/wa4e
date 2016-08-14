@@ -11,7 +11,7 @@ include("nav.php");
 <iframe	
 height="4600" width="100%" frameborder="0" marginwidth="0"
 marginheight="0" scrolling="auto"
-src="software.php">
+src="install.php">
 </iframe>
 </div>
 <?php $OUTPUT->footer();
