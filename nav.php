@@ -3,8 +3,8 @@ $OUTPUT->bodyStart();
 $R = $CFG->apphome . '/';
 $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
-$set->addLeft('Instructor', 'http://www.dr-chuck.com');
 $set->addLeft('Install', $R.'install.php');
+$set->addLeft('Instructor', 'http://www.dr-chuck.com');
 $set->addLeft('Book', 'http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/');
 
 $T = $CFG->wwwroot . '/';
