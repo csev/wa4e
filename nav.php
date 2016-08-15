@@ -11,12 +11,15 @@ $T = $CFG->wwwroot . '/';
 if ( isset($_SESSION['id']) ) {
     $submenu = new \Tsugi\UI\Menu();
     $submenu->addLink('Profile', $T.'profile.php');
+    if ( $CFG->DEVELOPER ) {
+        $submenu->addLink('Test LTI Tools', $T . 'dev.php');
+    }
     if ( $CFG->providekeys ) {
         $submenu->addLink('Use this Service', $T . 'admin/key/index.php');
     }
     $submenu->addLink('Logout', $T.'logout.php');
     if ( isset($_SESSION['avatar']) ) {
-        $set->addRight('<img src="'.$_SESSION['avatar'].'" style="width: 2em;"/>', $submenu);
+        $set->addRight('<img src="'.$_SESSION['avatar'].'" style="height: 2em;"/>', $submenu);
         // htmlentities($_SESSION['displayname']), $submenu);
     } else {
         $set->addRight(htmlentities($_SESSION['displayname']), $submenu);
@@ -25,5 +28,8 @@ if ( isset($_SESSION['id']) ) {
     $set->addRight('Login', $T.'login.php');
 }
 
-$OUTPUT->topNav($set);
+// Set the topNav for the session
+$OUTPUT->topNavSession($set);
+
+$OUTPUT->topNav();
 $OUTPUT->flashMessages();

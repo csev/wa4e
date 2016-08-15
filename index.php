@@ -1,5 +1,6 @@
 <?php
 use \Tsugi\Core\LTIX;
+use \Tsugi\UI\Output;
 
 define('COOKIE_SESSION', true);
 require_once "tsugi/config.php";
@@ -381,7 +382,7 @@ and use
 </p>
 <!--
 <?php
-    // var_dump($_SESSION);
+echo(Output::safe_var_dump($_SESSION));
 ?>
 -->
 </div>
