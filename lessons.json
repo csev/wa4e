@@ -370,6 +370,144 @@
             }
         ]
     }
+},
+{
+    "title": "Basic JavaScript",
+    "anchor": "javascript",
+    "icon" : "fa-code",
+    "description": "We talk a quick look at the JavaScript language.  We assume that you already know PHP - so it is a pretty quick introduction focusing on what is <b>different</b> about JavaScript.",
+    "slides": "lectures/JS-01-JavaScript.ppt",
+    "videos" : [
+        {
+            "title" : "Introduction to JavaScript",
+            "youtube" : "HPtDPZdiBUk"
+        },
+        {
+            "title" : "Bonus: Building JavaScript with with Brendan Eich",
+            "youtube" : "IPxQ9kEaF8c"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/javascript.zip"
+        },
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "JavaScript Objects",
+    "anchor": "js-oo",
+    "icon" : "fa-code",
+    "description": "We do a quick look at how the JavaScript language supports the Object-Oriented pattern.",
+    "slides": "lectures/JS-02-JavaScript-Objects.ppt",
+    "videos" : 
+        {
+            "title" : "JavaScript Objects",
+            "youtube" : "ZXhiyeP6acg"
+        },
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/javascript-objects.zip"
+        },
+    "assignment" : "assn/res-profile/index.php",
+    "solution" : "solutions/res-profile/index.php",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "JQuery",
+    "anchor": "jquery",
+    "icon" : "fa-briefcase",
+    "description": "This is a brief introduction to the JQuery library which is widely used to do in-browser manipulation of the Document Object Model(DOM) and event handling.",
+    "slides": "lectures/JS-03-JQuery.ppt",
+    "videos" : [
+        {
+            "title" : "Introductory JQuery",
+            "youtube" : "HuILi2alAUc"
+        },
+        {
+            "title" : "Bonus: John Resig - Building JQuery",
+            "youtube" : "B7Aut4OUuvs"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/jquery-01.zip"
+        },
+    "assignment" : "assn/res-position/index.php",
+    "solution" : "solutions/res-position/index.php",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "JSON - JavaScipt Object Notation",
+    "anchor": "json",
+    "icon" : "fa-briefcase",
+    "description": "In this section we look at JavaScript Object Notation (JSON).  JSON is commonly used as a syntax to exchange data between code running on the server (i.e. in PHP) and code running in the browser (JavaScript/JQuery.",
+    "slides": "lectures/JS-04-JSON.ppt",
+    "videos" : [
+        {
+            "title" : "Basic JSON",
+            "youtube" : "MUqGiqlmeGk"
+        },
+        {
+            "title" : "Implementing CRUD with JSON",
+            "youtube" : "ZL4HpKW16S4"
+        },
+        {
+            "title" : "Bonus: Douglas Crockford - Discovering JSON",
+            "youtube" : "kc8BAR7SHJI"
+        }
+    ],
+    "references" : [
+        {
+            "title" : "Sample code - JSON",
+            "href" : "code/json-01.zip"
+        },
+        {
+            "title" : "Sample code - JSON Chat",
+            "href" : "code/json-02-chat.zip"
+        },
+        {
+            "title" : "Sample code - JSON CRUD",
+            "href" : "code/json-03-crud.zip"
+        }
+    ],
+    "assignment" : "assn/res-position/index.php",
+    "solution" : "solutions/res-position/index.php",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
 }
 
 ]
