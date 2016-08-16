@@ -35,7 +35,7 @@ you can also listen to the audio recordings of the live lectures for
 <a href="https://archive.org/details/201509UMSI664Podcasts" target="_blank">UMSI 664 Fall 2015</a>
 on campus.
 </p>
-
+<!--
 <h3>Materials</h3>
 <p>
 <ul>
@@ -359,6 +359,7 @@ MySQL Transactions
 
 </ul>
 </p>
+-->
 <h3>Copyright</h3>
 <p>
 All this material produced by Charles Severance (including audio and video) 
