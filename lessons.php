@@ -56,13 +56,21 @@ if ( $anchor !== null || $index !== null ) {
         if ( $position == 1 ) {
             echo('<li class="previous disabled"><a href="#" onclick="return false;">&larr; Previous</a></li>'."\n");
         } else {
-            echo('<li class="previous"><a href="lessons.php?index='.($position-1).'">&larr; Previous</a></li>'."\n");
+            $prev = 'index='.($position-1);
+            if ( isset($lessons->modules[$position-2]->anchor) ) {
+                $prev = 'anchor='.$lessons->modules[$position-2]->anchor;
+            }
+            echo('<li class="previous"><a href="lessons.php?'.$prev.'">&larr; Previous</a></li>'."\n");
         }
-        echo('<li><a href="lessons.php">All</a></li>');
+        echo('<li><a href="lessons.php">All ('.$position.' / '.count($lessons->modules).')</a></li>');
         if ( $position >= count($lessons->modules) ) {
             echo('<li class="next disabled"><a href="#" onclick="return false;">&rarr; Next</a></li>'."\n");
         } else {
-            echo('<li class="next"><a href="lessons.php?index='.($position+1).'">&rarr; Next</a></li>'."\n");
+            $next = 'index='.($position+1);
+            if ( isset($lessons->modules[$position]->anchor) ) {
+                $next = 'anchor='.$lessons->modules[$position]->anchor;
+            }
+            echo('<li class="next"><a href="lessons.php?'.$next.'">&rarr; Next</a></li>'."\n");
         }
         echo("</ul></div>\n");
         echo('<h1>'.$module->title."</h1>\n");

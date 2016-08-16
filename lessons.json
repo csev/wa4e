@@ -311,7 +311,7 @@
 },
 {
     "title": "PHP Sessions",
-    "anchor": "php-forms",
+    "anchor": "php-sessions",
     "icon" : "fa-bell",
     "description": "We look at how PHP used cookies and manages session data.  We also look at how we properly handle POST requests of form data in web applications.",
     "slides": "lectures/PHP-09-Sessions-Cookies-Redirect.ppt",
@@ -508,6 +508,64 @@
             }
         ]
     }
+},
+{
+    "title": "Handlebars UI Templates",
+    "anchor": "handlebars",
+    "icon" : "fa-bicycle",
+    "description": "In this section we look at moving the templates to build HTML fragments from the server (PHP) in to the browser (JavaScript) using the Handlebars library.",
+    "slides": "lectures/JS-05-Handlebars.ppt",
+    "references" : [
+        {
+            "title" : "Sample code",
+            "href" : "code/handlebars.zip"
+        },
+        {
+            "title" : "Handlebars Web site",
+            "href" : "http://handlebarsjs.com/"
+        }
+    ],
+    "assignment" : "assn/res-handlebars/index.php",
+    "solution" : "solutions/res-handlebars/index.php",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "Advanced SQL",
+    "anchor": "sql-advanced",
+    "icon" : "fa-database",
+    "description": "This section covers some advanced SQL topics.",
+    "slides": "lectures-old/PHP-15-Advanced-SQL.ppt",
+    "videos" : [
+        {
+            "title" : "Advanced SQL - Part 1",
+            "youtube" : "XNeVf_TXdTA"
+        },
+        {
+            "title" : "Advanced SQL - Part 2",
+            "youtube" : "vDDAvd-6ovU"
+        }
+    ]
+},
+{
+    "title": "SQL Transactions",
+    "anchor": "sql-transactions",
+    "icon" : "fa-database",
+    "description": "This section covers SQL transactions.",
+    "slides": "lectures-old/PHP-16-MySQL-Transactions.ppt",
+    "videos" : [
+        {
+            "title" : "SQL Transactions",
+            "youtube" : "8xpM8pm5yIo"
+        }
+    ]
 }
 
 ]
