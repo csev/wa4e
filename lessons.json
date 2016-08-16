@@ -39,11 +39,11 @@
     ],
     "assignment" : "assn/sql-single/index.htm",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "single_mysql.php"
             }
         ]
     }
@@ -76,11 +76,11 @@
     ],
     "assignment" : "assn/sql-tracks",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "many_many_mysql.php"
             }
         ]
     }
@@ -104,11 +104,11 @@
         },
     "assignment" : "assn/rrc/index.php",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "http_headers.php"
             }
         ]
     }
@@ -131,7 +131,7 @@
         }
     ],
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -155,7 +155,7 @@
     "assignment" : "assn/crack/",
     "solution" : "solutions/crack/",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -184,7 +184,7 @@
     "assignment" : "assn/guess/",
     "solution" : "code/arrays/guess.php?guess=12",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -206,7 +206,7 @@
             "youtube" : "wYhw5pt7Kwg"
         },
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -240,7 +240,7 @@
     "assignment" : "assn/rps/",
     "solution" : "solutions/rps",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -267,7 +267,7 @@
             "href" : "code/objects.zip"
         },
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -300,7 +300,7 @@
     "assignment" : "assn/autosdb/",
     "solution" : "solutions/autosdb",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -334,7 +334,7 @@
     "assignment" : "assn/autosess/",
     "solution" : "solutions/autosess",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -362,7 +362,7 @@
     "assignment" : "assn/autoscrud/",
     "solution" : "solutions/autoscrud",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -393,7 +393,7 @@
             "href" : "code/javascript.zip"
         },
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -421,7 +421,7 @@
     "assignment" : "assn/res-profile/index.php",
     "solution" : "solutions/res-profile/index.php",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -454,7 +454,7 @@
     "assignment" : "assn/res-position/index.php",
     "solution" : "solutions/res-position/index.php",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -500,7 +500,7 @@
     "assignment" : "assn/res-position/index.php",
     "solution" : "solutions/res-position/index.php",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -528,7 +528,7 @@
     "assignment" : "assn/res-handlebars/index.php",
     "solution" : "solutions/res-handlebars/index.php",
     "lti" : {
-        "url" : "mod/sql/index.php",
+        "url" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",

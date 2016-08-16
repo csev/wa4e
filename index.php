@@ -380,6 +380,7 @@ and use
 <!--
 <?php
 echo(Output::safe_var_dump($_SESSION));
+var_dump($USER);
 ?>
 -->
 </div>

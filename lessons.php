@@ -1,4 +1,7 @@
 <?php
+use \Tsugi\Util\LTI;
+use \Tsugi\Core\LTIX;
+
 require_once "top.php";
 ?>
 <style>
@@ -24,7 +27,18 @@ $anchor = isset($_GET['anchor']) ? $_GET['anchor'] : null;
 $index = isset($_GET['index']) ? $_GET['index'] : null;
 $waterfall = false;
 
+if ( isset($_GET['lti_errormsg']) ) {
+    $_SESSION['error'] = $_GET['lti_errormsg'];
+}
+
 echo('<div id="container">'."\n");
+
+$OUTPUT->flashMessages();
+if ( isset($_GET['detail']) ) {
+    echo("\n<!--\n");
+    echo(str_replace("-->","--:>",$_GET['detail']));
+    echo("\n-->\n");
+}
 
 $json_str = file_get_contents('lessons.json');
 $lessons = json_decode($json_str);
@@ -75,18 +89,19 @@ if ( $anchor !== null || $index !== null ) {
         echo("</ul></div>\n");
         echo('<h1>'.$module->title."</h1>\n");
         echo('<p>'.$module->description."</p>\n");
+
         echo("<ul>\n");
         if ( isset($module->slides) ) {
-            echo('<li><a href="'.$module->slides.'" target=="_blank">Slides</a></li>'."\n");
+            echo('<li><a href="'.$module->slides.'" target="_blank">Slides</a></li>'."\n");
         }
         if ( isset($module->chapters) ) {
             echo('<li>Chapters: '.$module->chapters.'</a></li>'."\n");
         }
         if ( isset($module->assignment) ) {
-            echo('<li><a href="'.$module->assignment.'" target=="_blank">Assignment Specification</a></li>'."\n");
+            echo('<li><a href="'.$module->assignment.'" target="_blank">Assignment Specification</a></li>'."\n");
         }
         if ( isset($module->solution) ) {
-            echo('<li><a href="'.$module->solution.'" target=="_blank">Assignment Solution</a></li>'."\n");
+            echo('<li><a href="'.$module->solution.'" target="_blank">Assignment Solution</a></li>'."\n");
         }
         if ( isset($module->videos) ) {
             if ( is_array($module->videos) ) {
@@ -116,6 +131,58 @@ if ( $anchor !== null || $index !== null ) {
                     $module->references->href.'" target="_blank">'.
                     $module->references->title."</a></li>\n");
             }
+        }
+
+        if ( isset($module->lti) ) {
+            $key = isset($_SESSION['oauth_consumer_key']) ? $_SESSION['oauth_consumer_key'] : false;
+            $secret = isset($_SESSION['secret']) ? $_SESSION['secret'] : false;
+
+            $resource_link_id = 'resource:';
+            if ( $anchor != null ) $resource_link_id .= $anchor . ':';
+            if ( $index != null ) $resource_link_id .= $index . ':';
+            $resource_link_id .= md5($CFG->context_title);
+            $parms = array(
+                'lti_message_type' => 'basic-lti-launch-request',
+                'resource_link_id' => $resource_link_id,
+                'resource_link_title' => $module->title,
+                'resource_link_description' => $module->description,
+                'tool_consumer_info_product_family_code' => 'tsugi',
+                'tool_consumer_info_version' => '1.1',
+                'context_id' => 'course:'.md5($CFG->context_title),
+                'context_label' => $CFG->context_title,
+                'context_title' => $CFG->context_title,
+                'user_id' => 'google:'.md5($_SESSION['email']),
+                'user_image' => $_SESSION['avatar'],
+                'lis_person_name_full' => $_SESSION['displayname'],
+                'lis_person_contact_email_primary' => $_SESSION['email'],
+                'roles' => 'Learner'
+            );
+
+            if ( isset($module->lti->custom) ) {
+                foreach($module->lti->custom as $custom) {
+                    $parms['custom_'.$custom->key] = $custom->value;
+                }
+            }
+
+            $return_url = $CFG->getCurrentUrl();
+            if ( $anchor ) $return_url .= '?anchor='.urlencode($anchor);
+            elseif ( $index ) $return_url .= '?index='.urlencode($index);
+            $parms['launch_presentation_return_url'] = $return_url;
+
+            if ( isset($_SESSION['tsugi_top_nav']) ) {
+                $parms['ext_tsugi_top_nav'] = $_SESSION['tsugi_top_nav'];
+            }
+
+            $form_id = "tsugi_form_id_".bin2Hex(openssl_random_pseudo_bytes(4));
+            $parms['ext_lti_form_id'] = $form_id;
+
+            $endpoint = $CFG->apphome . '/' . $module->lti->url;
+            $parms = LTI::signParameters($parms, $endpoint, "POST", $key, $secret,
+                "Finish Launch", $CFG->product_instance_guid, $CFG->servicename);
+
+            $content = LTI::postLaunchHTML($parms, $endpoint, true /*debug */, '_pause');
+            print($content);
+            echo('<li><a href="#" onclick="document.'.$form_id.'.submit();return false">Submit Your Assignment</a></li>'."\n");
         }
     }
 
