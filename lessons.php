@@ -133,7 +133,7 @@ if ( $anchor !== null || $index !== null ) {
             }
         }
 
-        if ( isset($module->lti) ) {
+        if ( isset($module->lti) && isset($_SESSION['secret']) ) {
             $key = isset($_SESSION['oauth_consumer_key']) ? $_SESSION['oauth_consumer_key'] : false;
             $secret = isset($_SESSION['secret']) ? $_SESSION['secret'] : false;
 
