@@ -1,4 +1,7 @@
 <?php
+use \Tsugi\Core\LTIX;
+use \Tsugi\UI\Output;
+
 require_once "top.php";
 require_once "nav.php";
 ?>
