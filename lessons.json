@@ -112,6 +112,264 @@
             }
         ]
     }
+},
+{
+    "title": "Introduction to PHP",
+    "anchor": "php-intro",
+    "icon" : "fa-bell",
+    "description": "We begin learning PHP.",
+    "slides": "lectures/PHP-02-Overview.ppt",
+    "chapters" : "27, 28, 31",
+    "videos" : [
+        {
+            "title" : "PHP Overview",
+            "youtube" : "i8WNHqtR2dOI"
+        },
+        {
+            "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
+            "youtube" : "YIGRXEzjE6c"
+        }
+    ],
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "Overview of PHP Language",
+    "anchor": "php-basics",
+    "icon" : "fa-bell",
+    "description": "We begin the syntax of the PHP language, control structures, and expressions.",
+    "slides": "lectures/PHP-03-Expressions-Control-String.ppt",
+    "chapters" : "27, 28, 31",
+    "videos" : 
+        {
+            "title" : "PHP Overview",
+            "youtube" : "oek0oMq9JUo"
+        },
+    "assignment" : "assn/crack/",
+    "solution" : "solutions/crack/",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Arrays",
+    "anchor": "php-arrays",
+    "icon" : "fa-bell",
+    "description": "We look at arrays and superglobals like $_SESSION in PHP language.",
+    "slides": "lectures/PHP-04-Arrays.ppt",
+    "chapters" : "27, 28, 31",
+    "videos" : 
+        {
+            "title" : "PHP Arrays",
+            "youtube" : "hEkuyEa_lK0"
+        },
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/arrays.zip"
+        },
+    "assignment" : "assn/guess/",
+    "solution" : "code/arrays/guess.php?guess=12",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Functions",
+    "anchor": "php-fuctions",
+    "icon" : "fa-bell",
+    "description": "We look at functions in PHP language.",
+    "slides": "lectures/PHP-05-Functions.ppt",
+    "chapters" : "32",
+    "videos" : 
+        {
+            "title" : "PHP Functions",
+            "youtube" : "wYhw5pt7Kwg"
+        },
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Forms",
+    "anchor": "php-forms",
+    "icon" : "fa-bell",
+    "description": "We look at how HTML forms are created and processed in the PHP language.",
+    "slides": "lectures/PHP-06-Forms.ppt",
+    "chapters" : "14, 27",
+    "videos" : [
+        {
+            "title" : "PHP Forms Part 1",
+            "youtube" : "2hA_PA_BCTY"
+        },
+        {
+            "title" : "PHP Forms Part 2",
+            "youtube" : "8zno_C_VMUE"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/forms.zip"
+        },
+    "assignment" : "assn/rps/",
+    "solution" : "solutions/rps",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Objects",
+    "anchor": "php-objects",
+    "icon" : "fa-bell",
+    "description": "We look at the opbejct oriented pattern in the PHP language.",
+    "slides": "lectures/PHP-07-Objects.ppt",
+    "chapters" : "33",
+    "videos" : 
+        {
+            "title" : "PHP Objects",
+            "youtube" : "Wp54FO3N88c"
+        },
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/objects.zip"
+        },
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP and MySQL",
+    "anchor": "php-mysql",
+    "icon" : "fa-bell",
+    "description": "We look at how we connect to a MySQL using the Portable Data Objects (PDO) library and issue SQL commands in the the PHP language.",
+    "slides": "lectures/PHP-08-MySQL-PDO.ppt",
+    "videos" : [
+        {
+            "title" : "PHP MySQL Part 1",
+            "youtube" : "OJsCXLlIHg8"
+        },
+        {
+            "title" : "PHP MySQL Part 2",
+            "youtube" : "md3HInQM0eA"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/pdo.zip"
+        },
+    "assignment" : "assn/autosdb/",
+    "solution" : "solutions/autosdb",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Sessions",
+    "anchor": "php-forms",
+    "icon" : "fa-bell",
+    "description": "We look at how PHP used cookies and manages session data.  We also look at how we properly handle POST requests of form data in web applications.",
+    "slides": "lectures/PHP-09-Sessions-Cookies-Redirect.ppt",
+    "chapters" : "27",
+    "videos" : [
+        {
+            "title" : "PHP Sessions Part 1",
+            "youtube" : "qBWyY21AkEk"
+        },
+        {
+            "title" : "PHP Sessions Part 2",
+            "youtube" : "raaGRMk6fr4"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/sessions.zip"
+        },
+    "assignment" : "assn/autosess/",
+    "solution" : "solutions/autosess",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "Building a CRUD Application",
+    "anchor": "php-crud",
+    "icon" : "fa-bell",
+    "description": "Now we buid our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
+    "slides": "lectures/PHP-10-CRUD.ppt",
+    "videos" : 
+        {
+            "title" : "Building a CRUD Application",
+            "youtube" : "-giRidLxtP0"
+        },
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/crud.zip"
+        },
+    "assignment" : "assn/autoscrud/",
+    "solution" : "solutions/autoscrud",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
 }
 
 ]

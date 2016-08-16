@@ -77,6 +77,9 @@ if ( $anchor !== null || $index !== null ) {
         if ( isset($module->assignment) ) {
             echo('<li><a href="'.$module->assignment.'" target=="_blank">Assignment Specification</a></li>'."\n");
         }
+        if ( isset($module->solution) ) {
+            echo('<li><a href="'.$module->solution.'" target=="_blank">Assignment Solution</a></li>'."\n");
+        }
         if ( isset($module->videos) ) {
             if ( is_array($module->videos) ) {
                 echo("<li>Videos:<ul>\n");
@@ -126,10 +129,10 @@ if ( $anchor !== null || $index !== null ) {
             echo('<i class="fa '.$module->icon.' fa-2x" aria-hidden="true" style="float: left; padding-right: 5px;"></i>');
         }
         echo('<a href="'.$href.'">'."\n");
-        echo($count.': '.$module->title."\n");
+        echo('<p>'.$count.': '.$module->title."</p>\n");
         $desc = $module->description;
         if ( strlen($desc) > 100 ) $desc = substr($desc, 0, 100) . " ...";
-        echo($desc."\n");
+        echo('<p>'.$desc."</p>\n");
         echo("</a></div>\n");
    }
    echo('</div> <!-- box -->'."\n");
