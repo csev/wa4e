@@ -1,0 +1,118 @@
+{
+"title": "Web Applications for Everybody",
+"description" : "Hello and welcome to my site where you can work through these modules and learn develop PHP-based database-backed web applications.",
+"count": true,
+"modules": [
+{ 
+    "title": "Installing PHP and SQL",
+    "anchor": "install",
+    "icon" : "fa-clone",
+    "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
+    "chapters" : "27",
+    "assignment" : "install.php",
+    "videos" : {
+        "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
+        "youtube": "6kRMlfIBMCY"
+    }
+},
+{
+    "title": "Introduction to Structured Query Language (SQL)",
+    "anchor": "sql-intro",
+    "icon" : "fa-database",
+    "description": "We learn about single table queries and the basic syntax of the SQL language.",
+    "slides": "lectures/SQL-01-MySQL.ppt",
+    "chapters" : "37, 39, 41",
+    "handout": "lectures/SQL-01-MySQL-Handout.doc",
+    "videos" : [
+        {
+            "title" : "SQL Part 1",
+            "youtube" : "lNizVvj0vdY"
+        },
+        {
+            "title" : "SQL Part 2",
+            "youtube" : "-J8fH3zVkmQ"
+        },
+        {
+            "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
+            "youtube" : "rLUm3vst87"
+        }
+    ],
+    "assignment" : "assn/sql-single/index.htm",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "Database Design",
+    "anchor": "sql-design",
+    "icon" : "fa-database",
+    "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
+    "slides": "lectures/SQL-02-MySQL-Design.ppt",
+    "chapters" : "38, 40, 42",
+    "handout": "lectures/SQL-02-MySQL-Design-Handout.doc",
+    "videos" : [
+        {
+            "title" : "Data Modeling Part 1",
+            "youtube" : "U8IWOdrJk-o"
+        },
+        {
+            "title" : "Data Modeling Part 2",
+            "youtube" : "Jxy8Pgc-OCo"
+        },
+        {
+            "title" : "Data Modeling Part 3",
+            "youtube" : "c1W8a7TT_eE"
+        },
+        {
+            "title" : "Data Modeling Part 4",
+            "youtube" : "5bWkPKEms5U"
+        }
+    ],
+    "assignment" : "assn/sql-tracks",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+},
+{
+    "title": "Introduction to Dynamic Web Content",
+    "anchor": "rrc",
+    "icon" : "fa-clone",
+    "description": "We look at the basic structure of a web application and how a web browser interacts with a web server.   We explore the Request-Response Cycle that is the basis of the Hypertext Transport Protocol (HTTP).",
+    "slides": "lectures-old/PHP-01-Intro.ppt",
+    "chapters" : "1, 3, 4",
+    "videos" : 
+        {
+            "title" : "What Happens When You Click a Link? - Computerphile",
+            "youtube" : "keo0dglCj7I"
+        },
+    "references" : 
+        {
+            "title" : "Hypertext Transfer Protocol",
+            "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
+        },
+    "assignment" : "assn/rrc/index.php",
+    "lti" : {
+        "url" : "mod/sql/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "Single Table MySQL (Users)"
+            }
+        ]
+    }
+}
+
+]
+}

@@ -1,13 +1,6 @@
 <?php
-use \Tsugi\Core\LTIX;
-use \Tsugi\UI\Output;
-
-define('COOKIE_SESSION', true);
-require_once "tsugi/config.php";
-$LAUNCH = LTIX::session_start();
-
-include("header.php");
-include("nav.php"); 
+require_once "top.php";
+require_once "nav.php";
 ?>
 <div id="container">
 <p>

@@ -4,7 +4,7 @@ $R = $CFG->apphome . '/';
 $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
 $set->addLeft('Install', $R.'install.php');
-$set->addLeft('Instructor', 'http://www.dr-chuck.com');
+$set->addLeft('Lessons', $R.'lessons.php');
 $set->addLeft('Book', 'http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/');
 
 $T = $CFG->wwwroot . '/';
@@ -27,6 +27,7 @@ if ( isset($_SESSION['id']) ) {
 } else {
     $set->addRight('Login', $T.'login.php');
 }
+$set->addRight('Instructor', 'http://www.dr-chuck.com');
 
 // Set the topNav for the session
 $OUTPUT->topNavSession($set);
