@@ -39,7 +39,7 @@
     ],
     "assignment" : "assn/sql-single/index.htm",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "launch" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -76,7 +76,7 @@
     ],
     "assignment" : "assn/sql-tracks",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "launch" : "tools/sql/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -104,7 +104,7 @@
         },
     "assignment" : "assn/rrc/index.php",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -166,7 +166,7 @@
     "assignment" : "assn/guess/",
     "solution" : "code/arrays/guess.php?guess=12",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -213,7 +213,7 @@
     "assignment" : "assn/rps/",
     "solution" : "solutions/rps",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -264,7 +264,7 @@
     "assignment" : "assn/autosdb/",
     "solution" : "solutions/autosdb",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -298,7 +298,7 @@
     "assignment" : "assn/autosess/",
     "solution" : "solutions/autosess",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -326,7 +326,7 @@
     "assignment" : "assn/autoscrud/",
     "solution" : "solutions/autoscrud",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -376,7 +376,7 @@
     "assignment" : "assn/res-profile/index.php",
     "solution" : "solutions/res-profile/index.php",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -409,7 +409,7 @@
     "assignment" : "assn/res-position/index.php",
     "solution" : "solutions/res-position/index.php",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -455,7 +455,7 @@
     "assignment" : "assn/res-education/index.php",
     "solution" : "solutions/res-education/index.php",
     "lti" : {
-        "url" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
@@ -510,6 +510,17 @@
         {
             "title" : "SQL Transactions",
             "youtube" : "8xpM8pm5yIo"
+        }
+    ]
+},
+{
+    "title": "Course Tools",
+    "anchor": "tools",
+    "icon" : "fa-wrench",
+    "lti" : [
+        {
+        "title" : "Gradebook",
+        "launch" : "mod/grades/index.php"
         }
     ]
 }

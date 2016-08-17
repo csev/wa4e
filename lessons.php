@@ -88,7 +88,9 @@ if ( $anchor !== null || $index !== null ) {
         }
         echo("</ul></div>\n");
         echo('<h1>'.$module->title."</h1>\n");
-        echo('<p>'.$module->description."</p>\n");
+        if ( isset($module->description) ) {
+            echo('<p>'.$module->description."</p>\n");
+        }
 
         echo("<ul>\n");
         if ( isset($module->slides) ) {
@@ -134,55 +136,65 @@ if ( $anchor !== null || $index !== null ) {
         }
 
         if ( isset($module->lti) && isset($_SESSION['secret']) ) {
-            $key = isset($_SESSION['oauth_consumer_key']) ? $_SESSION['oauth_consumer_key'] : false;
-            $secret = isset($_SESSION['secret']) ? $_SESSION['secret'] : false;
+            $ltis = $module->lti;
+            if ( ! is_array($ltis) ) {
+                $ltis = array($ltis);
+            }
 
-            $resource_link_id = 'resource:';
-            if ( $anchor != null ) $resource_link_id .= $anchor . ':';
-            if ( $index != null ) $resource_link_id .= $index . ':';
-            $resource_link_id .= md5($CFG->context_title);
-            $parms = array(
-                'lti_message_type' => 'basic-lti-launch-request',
-                'resource_link_id' => $resource_link_id,
-                'resource_link_title' => $module->title,
-                'resource_link_description' => $module->description,
-                'tool_consumer_info_product_family_code' => 'tsugi',
-                'tool_consumer_info_version' => '1.1',
-                'context_id' => 'course:'.md5($CFG->context_title),
-                'context_label' => $CFG->context_title,
-                'context_title' => $CFG->context_title,
-                'user_id' => 'google:'.md5($_SESSION['email']),
-                'user_image' => $_SESSION['avatar'],
-                'lis_person_name_full' => $_SESSION['displayname'],
-                'lis_person_contact_email_primary' => $_SESSION['email'],
-                'roles' => 'Learner'
-            );
+            if ( count($ltis) > 1 ) echo("<ul>\n");
+            foreach($ltis as $lti ) {
+                $key = isset($_SESSION['oauth_consumer_key']) ? $_SESSION['oauth_consumer_key'] : false;
+                $secret = isset($_SESSION['secret']) ? $_SESSION['secret'] : false;
 
-            if ( isset($module->lti->custom) ) {
-                foreach($module->lti->custom as $custom) {
-                    $parms['custom_'.$custom->key] = $custom->value;
+                $resource_link_id = 'resource:';
+                if ( $anchor != null ) $resource_link_id .= $anchor . ':';
+                if ( $index != null ) $resource_link_id .= $index . ':';
+                $resource_link_id .= md5($CFG->context_title);
+                $parms = array(
+                    'lti_message_type' => 'basic-lti-launch-request',
+                    'resource_link_id' => $resource_link_id,
+                    'resource_link_title' => $module->title,
+                    'tool_consumer_info_product_family_code' => 'tsugi',
+                    'tool_consumer_info_version' => '1.1',
+                    'context_id' => 'course:'.md5($CFG->context_title),
+                    'context_label' => $CFG->context_title,
+                    'context_title' => $CFG->context_title,
+                    'user_id' => 'google:'.md5($_SESSION['email']),
+                    'user_image' => $_SESSION['avatar'],
+                    'lis_person_name_full' => $_SESSION['displayname'],
+                    'lis_person_contact_email_primary' => $_SESSION['email'],
+                    'roles' => 'Learner'
+                );
+
+                if ( isset($lti->custom) ) {
+                    foreach($lti->custom as $custom) {
+                        $parms['custom_'.$custom->key] = $custom->value;
+                    }
                 }
+
+                $return_url = $CFG->getCurrentUrl();
+                if ( $anchor ) $return_url .= '?anchor='.urlencode($anchor);
+                elseif ( $index ) $return_url .= '?index='.urlencode($index);
+                $parms['launch_presentation_return_url'] = $return_url;
+
+                if ( isset($_SESSION['tsugi_top_nav']) ) {
+                    $parms['ext_tsugi_top_nav'] = $_SESSION['tsugi_top_nav'];
+                }
+
+                $form_id = "tsugi_form_id_".bin2Hex(openssl_random_pseudo_bytes(4));
+                $parms['ext_lti_form_id'] = $form_id;
+
+                $endpoint = $CFG->apphome . '/' . $lti->launch;
+                $parms = LTI::signParameters($parms, $endpoint, "POST", $key, $secret,
+                    "Finish Launch", $CFG->product_instance_guid, $CFG->servicename);
+
+                $content = LTI::postLaunchHTML($parms, $endpoint, false /*debug */, '_pause');
+                $title = isset($lti->title) ? $lti->title : "Autograder";
+                echo('<li><a href="#" onclick="document.'.$form_id.'.submit();return false">'.htmlentities($title).'</a></li>'."\n");
+                print($content);
             }
 
-            $return_url = $CFG->getCurrentUrl();
-            if ( $anchor ) $return_url .= '?anchor='.urlencode($anchor);
-            elseif ( $index ) $return_url .= '?index='.urlencode($index);
-            $parms['launch_presentation_return_url'] = $return_url;
-
-            if ( isset($_SESSION['tsugi_top_nav']) ) {
-                $parms['ext_tsugi_top_nav'] = $_SESSION['tsugi_top_nav'];
-            }
-
-            $form_id = "tsugi_form_id_".bin2Hex(openssl_random_pseudo_bytes(4));
-            $parms['ext_lti_form_id'] = $form_id;
-
-            $endpoint = $CFG->apphome . '/' . $module->lti->url;
-            $parms = LTI::signParameters($parms, $endpoint, "POST", $key, $secret,
-                "Finish Launch", $CFG->product_instance_guid, $CFG->servicename);
-
-            $content = LTI::postLaunchHTML($parms, $endpoint, false /*debug */, '_pause');
-            echo('<li><a href="#" onclick="document.'.$form_id.'.submit();return false">Submit Your Assignment</a></li>'."\n");
-            print($content);
+            if ( count($ltis) > 1 ) echo("</ul>\n");
         }
     }
 
@@ -205,9 +217,11 @@ if ( $anchor !== null || $index !== null ) {
         }
         echo('<a href="'.$href.'">'."\n");
         echo('<p>'.$count.': '.$module->title."</p>\n");
-        $desc = $module->description;
-        if ( strlen($desc) > 100 ) $desc = substr($desc, 0, 100) . " ...";
-        echo('<p>'.$desc."</p>\n");
+        if ( isset($module->description) ) {
+            $desc = $module->description;
+            if ( strlen($desc) > 100 ) $desc = substr($desc, 0, 100) . " ...";
+            echo('<p>'.$desc."</p>\n");
+        }
         echo("</a></div>\n");
    }
    echo('</div> <!-- box -->'."\n");
