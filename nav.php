@@ -5,7 +5,9 @@ $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
 $set->addLeft('Install', $R.'install.php');
 $set->addLeft('Lessons', $R.'lessons.php');
-$set->addLeft('Tools', $R.'lessons.php?anchor=tools');
+if ( isset($_SESSION['id']) ) {
+	$set->addLeft('Tools', $R.'lessons.php?anchor=tools');
+}
 
 $T = $CFG->wwwroot . '/';
 if ( isset($_SESSION['id']) ) {

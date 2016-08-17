@@ -58,6 +58,7 @@ if ( $anchor !== null || $index !== null ) {
     $module = false;
     $position = false;
     foreach($lessons->modules as $mod) {
+	if ( isset($mod->login) && $mod->login && !isset($_SESSION['id']) ) continue;
         $count++;
         if ( $anchor !== null && isset($mod->anchor) && $anchor != $mod->anchor ) continue;
         if ( $index !== null && $index != $count ) continue;
@@ -205,6 +206,7 @@ if ( $anchor !== null || $index !== null ) {
     $waterfall = true;
     $count = 0;
     foreach($lessons->modules as $module) {
+	if ( isset($module->login) && $module->login && !isset($_SESSION['id']) ) continue;
         $count++;
         echo('<div class="card">'."\n");
         if ( isset($module->anchor) ) {
