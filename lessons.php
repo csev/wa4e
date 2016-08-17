@@ -180,9 +180,9 @@ if ( $anchor !== null || $index !== null ) {
             $parms = LTI::signParameters($parms, $endpoint, "POST", $key, $secret,
                 "Finish Launch", $CFG->product_instance_guid, $CFG->servicename);
 
-            $content = LTI::postLaunchHTML($parms, $endpoint, true /*debug */, '_pause');
-            print($content);
+            $content = LTI::postLaunchHTML($parms, $endpoint, false /*debug */, '_pause');
             echo('<li><a href="#" onclick="document.'.$form_id.'.submit();return false">Submit Your Assignment</a></li>'."\n");
+            print($content);
         }
     }
 

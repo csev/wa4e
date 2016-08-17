@@ -129,16 +129,7 @@
             "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
             "youtube" : "YIGRXEzjE6c"
         }
-    ],
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+    ]
 },
 {
     "title": "Overview of PHP Language",
@@ -153,16 +144,7 @@
             "youtube" : "oek0oMq9JUo"
         },
     "assignment" : "assn/crack/",
-    "solution" : "solutions/crack/",
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+    "solution" : "solutions/crack/"
 },
 {
     "title": "PHP Arrays",
@@ -184,11 +166,11 @@
     "assignment" : "assn/guess/",
     "solution" : "code/arrays/guess.php?guess=12",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "guess.php"
             }
         ]
     }
@@ -204,16 +186,7 @@
         {
             "title" : "PHP Functions",
             "youtube" : "wYhw5pt7Kwg"
-        },
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+        }
 },
 {
     "title": "PHP Forms",
@@ -240,11 +213,11 @@
     "assignment" : "assn/rps/",
     "solution" : "solutions/rps",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "rps.php"
             }
         ]
     }
@@ -265,16 +238,7 @@
         {
             "title" : "Sample code",
             "href" : "code/objects.zip"
-        },
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+        }
 },
 {
     "title": "PHP and MySQL",
@@ -300,11 +264,11 @@
     "assignment" : "assn/autosdb/",
     "solution" : "solutions/autosdb",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "autosdb.php"
             }
         ]
     }
@@ -334,11 +298,11 @@
     "assignment" : "assn/autosess/",
     "solution" : "solutions/autosess",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "autosess.php"
             }
         ]
     }
@@ -362,11 +326,11 @@
     "assignment" : "assn/autoscrud/",
     "solution" : "solutions/autoscrud",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "autoscrud.php"
             }
         ]
     }
@@ -391,16 +355,7 @@
         {
             "title" : "Sample code",
             "href" : "code/javascript.zip"
-        },
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+        }
 },
 {
     "title": "JavaScript Objects",
@@ -421,11 +376,11 @@
     "assignment" : "assn/res-profile/index.php",
     "solution" : "solutions/res-profile/index.php",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "res-profile.php"
             }
         ]
     }
@@ -454,11 +409,11 @@
     "assignment" : "assn/res-position/index.php",
     "solution" : "solutions/res-position/index.php",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "res-position.php"
             }
         ]
     }
@@ -497,14 +452,14 @@
             "href" : "code/json-03-crud.zip"
         }
     ],
-    "assignment" : "assn/res-position/index.php",
-    "solution" : "solutions/res-position/index.php",
+    "assignment" : "assn/res-education/index.php",
+    "solution" : "solutions/res-education/index.php",
     "lti" : {
-        "url" : "tools/sql/index.php",
+        "url" : "tools/autograder/index.php",
         "custom" : [
             {
                 "key": "exercise",
-                "value": "Single Table MySQL (Users)"
+                "value": "res-education.php"
             }
         ]
     }
@@ -526,16 +481,7 @@
         }
     ],
     "assignment" : "assn/res-handlebars/index.php",
-    "solution" : "solutions/res-handlebars/index.php",
-    "lti" : {
-        "url" : "tools/sql/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "Single Table MySQL (Users)"
-            }
-        ]
-    }
+    "solution" : "solutions/res-handlebars/index.php"
 },
 {
     "title": "Advanced SQL",
