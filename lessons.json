@@ -41,7 +41,7 @@
   "peerpoints":6,
   "assesspoints":2,
   "minassess":2,
-  "maxassess":5,
+  "maxassess":10,
   "flag":true,
   "rating":0,
   "gallery":"off",
@@ -156,7 +156,7 @@
   "peerpoints":4,
   "assesspoints":2,
   "minassess":3,
-  "maxassess":5,
+  "maxassess":10,
   "flag":true,
   "rating":0,
   "gallery":"off",
@@ -186,7 +186,8 @@
             "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
         },
     "assignment" : "assn/rrc/index.php",
-    "lti" : {
+    "lti" : [
+        {
         "title" : "Autograder: Request-Response Cycle",
         "launch" : "tools/autograder/index.php",
         "custom" : [
@@ -195,7 +196,59 @@
                 "value": "http_headers.php"
             }
         ]
+        },
+        {
+        "title" : "Peer graded: Request-Response Cycle",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json" :
+{
+  "title":"Understanding the Request-Response Cycle",
+  "description":"Your application will be a single index.php file with some elements in HTML, some elements in PHP, and some elements in JavaScript - all working in the same file.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in yout PHP server (i.e. file:// urls will not be accepted)",
+  "grading":"Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "assignment":"http://www.php-intro.com/assn/rrc/",
+  "solution":"http://www.php-intro.com/solutions/rrc/",
+  "parts":[
+    {
+      "title":"Image of your application showing the URL bar, alert box and the rest of the output.",
+      "type":"image"
+    },
+    {
+      "title":"Image of your application showing the URL bar, console and the rest of the output",
+      "type":"image"
+    },
+    {
+      "title":"Image of your application showing the URL bar and output of fail.php",
+      "type":"image"
+    },
+    {
+      "title":"Image of your application showing the URL bar output of check.php",
+      "type":"image"
+    },
+    {
+      "title":"Source code of your index.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "resubmit":"off",
+  "notepublic":"false"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "Introduction to PHP",
@@ -228,7 +281,50 @@
             "youtube" : "oek0oMq9JUo"
         },
     "assignment" : "assn/crack/",
-    "solution" : "solutions/crack/"
+    "solution" : "solutions/crack/",
+    "lti" : {
+        "title" : "Peer Graded: Reversing an MD5 Hash",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json" :
+{
+  "title":"Reversing an MD5 hash (password cracking)",
+  "description":"In this assignment we build code to reverse an MD5 hash using a brute force technique where we simply 'forward hash' all possible combinations of characters in strings. This would be similar to a situation where an e-commerce site stored hashed passwords in its database and we somehow have gotten our hands on the database contents and we want to take the hashed password and determine the actual plaintext passwords.",
+  "grading":"Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "assignment":"http://www.php-intro.com/assn/crack/",
+  "solution":"http://www.php-intro.com/solutions/crack/",
+  "parts":[
+    {
+      "title":"A screen shot of one of the MD5's from the list above that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+      "type":"image"
+    },
+    {
+      "title":"One of the MD5's in the list above does not crack.  Figure out which MD5 does not crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of your index.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "resubmit":"off",
+  "notepublic":"false"
+}
+            }
+        ]
+    }
 },
 {
     "title": "PHP Arrays",
@@ -296,7 +392,9 @@
         },
     "assignment" : "assn/rps/",
     "solution" : "solutions/rps",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Autograder: Rock Paper Scissors",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -304,7 +402,64 @@
                 "value": "rps.php"
             }
         ]
+        },
+        {
+        "title" : "Peer grader: Rock Paper Scissors",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json" :
+{
+  "title":"Login and Rock Paper Scissors",
+  "description":"In this assignment we will a two page web application to play rock, paper, scissors (http://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
+  "grading":"Please review carefully.  The most important aspect of peer-grading is useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "assignment":"http://www.php-intro.com/assn/rps/",
+  "solution":"http://www.php-intro.com/solutions/rps/",
+  "parts":[
+    {
+      "title":"A screen shot (with URL) of your login.php rejecting an incorrect password",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php correctly showing the 'Name parameter missing' error",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php doing a normal play with the computer making a choice other than Rock",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your game.php doing a correct test run",
+      "type":"image"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of game.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":3,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "resubmit":"off",
+  "notepublic":"false"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "PHP Objects",
@@ -347,7 +502,10 @@
         },
     "assignment" : "assn/autosdb/",
     "solution" : "solutions/autosdb",
-    "lti" : {
+    "lti" : 
+        [
+        {
+        "title" : "Autograder: Autos Database",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -355,7 +513,72 @@
                 "value": "autosdb.php"
             }
         ]
+        },
+        {
+        "title" : "Peer graded: Autos Database",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json":
+{
+  "title":"Automobiles and Databases",
+  "description":"In this assignment you will build a web based application to track data about automobiles and store the data in a MySQL database.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/autosdb/",
+  "solution":"http://www.php-intro.com/solutions/autosdb/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@)",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your autos.php showing 'Name parameter missing'",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your autos.php with three vehicles in the list.  At least one of the vehicles must have '<b>' in its title and it must be shown properly (i.e. the title should not be bold)",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your autos.php showing the error message for a non-numeric year",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your autos database table in a database program with at least three vehicles",
+      "type":"image"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of autos.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "resubmit":"off",
+  "notepublic":"false"
+}
+            }
+        ]
+        }
+        ]
 },
 {
     "title": "PHP Sessions",
