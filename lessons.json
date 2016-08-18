@@ -923,7 +923,9 @@
         },
     "assignment" : "assn/res-position/index.php",
     "solution" : "solutions/res-position/index.php",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Auto-Grader: Profiles, Positions and jQuery",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -931,7 +933,73 @@
                 "value": "res-position.php"
             }
         ]
+        },
+        {
+        "title" : "Peer-Grader: Profiles, Positions and jQuery",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Profiles, Positions and jQuery",
+  "description":"In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where postition entries are added in the browser.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/res-position/",
+  "solution":"http://www.php-intro.com/solutions/res-position/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your add.php showing two positions",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing one position modified, one position deleted and one new position",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing the correct new positions after the edit is complete",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a bad year",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Postition database table showing at least three rows",
+      "type":"image"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "JSON - JavaScipt Object Notation",
@@ -969,7 +1037,9 @@
     ],
     "assignment" : "assn/res-education/index.php",
     "solution" : "solutions/res-education/index.php",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Auto-Grader: Profiles, Positions, and Education",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -977,7 +1047,82 @@
                 "value": "res-education.php"
             }
         ]
+        },
+        {
+        "title" : "Peer-Grader: Profiles, Positions, and Education",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Profiles, Positions, and Education",
+  "description":"In this assignment you will extend our simple resume database to support Create, Read, Update, and Delete operations (CRUD) into a Education table that has a many-to-one relationship to our Profile table and a many-to-many relationship to an Institution table. We will add an JQuery autocomplete field to our user interface.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/res-education/",
+  "solution":"http://www.php-intro.com/solutions/res-education/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your add.php showing one existing Education institution and one new education institution",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing one education entry modified, one education entry deleted and one new education entry",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing the correct new education entry after the edit is complete",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a bad year",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Education database table showing at least three rows",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Institution database table showing at least one new row inserted when the institution name did not match an existing instutition",
+      "type":"image"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code any file in your application that you choose (i.e. util.php)",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "Handlebars UI Templates",
@@ -996,7 +1141,50 @@
         }
     ],
     "assignment" : "assn/res-handlebars/index.php",
-    "solution" : "solutions/res-handlebars/index.php"
+    "solution" : "solutions/res-handlebars/index.php",
+    "lti" : {
+        "title": "Peer Graded: Handlebars",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Handlebars",
+  "description":"This assignment is worth 10 points. 5 points are from the instructor, 3 points are from your peers and 2 points come from you grading other student's submissions.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/res-handlebars/",
+  "solution":"http://www.php-intro.com/solutions/res-handlebars/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your form.php showing editing an existing entry showing the retrieval of the JSON to populate the form.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your profile.php showing the retrieved JSON.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of profile.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
+    }
 },
 {
     "title": "Advanced SQL",
