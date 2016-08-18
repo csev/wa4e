@@ -171,7 +171,12 @@ if ( $anchor !== null || $index !== null ) {
 
                 if ( isset($lti->custom) ) {
                     foreach($lti->custom as $custom) {
-                        $parms['custom_'.$custom->key] = $custom->value;
+                        if ( isset($custom->value) ) {
+                            $parms['custom_'.$custom->key] = $custom->value;
+                        }
+                        if ( isset($custom->json) ) {
+                            $parms['custom_'.$custom->key] = json_encode($custom->json);
+                        }
                     }
                 }
 
