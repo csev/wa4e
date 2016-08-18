@@ -143,7 +143,7 @@ if ( $anchor !== null || $index !== null ) {
                 $ltis = array($ltis);
             }
 
-            if ( count($ltis) > 1 ) echo("<ul>\n");
+            if ( count($ltis) > 1 ) echo("<li>Tools:<ul> <!-- start of ltis -->\n");
             foreach($ltis as $lti ) {
                 $key = isset($_SESSION['oauth_consumer_key']) ? $_SESSION['oauth_consumer_key'] : false;
                 $secret = isset($_SESSION['secret']) ? $_SESSION['secret'] : false;
@@ -199,10 +199,12 @@ if ( $anchor !== null || $index !== null ) {
                 $content = LTI::postLaunchHTML($parms, $endpoint, false /*debug */, '_pause');
                 $title = isset($lti->title) ? $lti->title : "Autograder";
                 echo('<li><a href="#" onclick="document.'.$form_id.'.submit();return false">'.htmlentities($title).'</a></li>'."\n");
+                echo("<!-- Start of content -->\n");
                 print($content);
+                echo("<!-- End of content -->\n");
             }
 
-            if ( count($ltis) > 1 ) echo("</ul>\n");
+            if ( count($ltis) > 1 ) echo("</li></ul><!-- end of ltis -->\n");
         }
     }
 
