@@ -9,6 +9,7 @@ require_once "top.php";
         border: 1px solid black;
         margin: 5px;
         padding: 5px;
+        min-height: 8em;
     }
 #loader {
       position: fixed;
@@ -151,10 +152,11 @@ if ( $anchor !== null || $index !== null ) {
                 if ( $anchor != null ) $resource_link_id .= $anchor . ':';
                 if ( $index != null ) $resource_link_id .= $index . ':';
                 $resource_link_id .= md5($CFG->context_title);
+                $resource_link_title = isset($lti->title) ? $lti->title : $module->title;
                 $parms = array(
                     'lti_message_type' => 'basic-lti-launch-request',
                     'resource_link_id' => $resource_link_id,
-                    'resource_link_title' => $module->title,
+                    'resource_link_title' => $resource_link_title,
                     'tool_consumer_info_product_family_code' => 'tsugi',
                     'tool_consumer_info_version' => '1.1',
                     'context_id' => 'course:'.md5($CFG->context_title),
