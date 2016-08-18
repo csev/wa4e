@@ -604,7 +604,9 @@
         },
     "assignment" : "assn/autosess/",
     "solution" : "solutions/autosess",
-    "lti" : {
+    "lti" : [
+        {
+        "title": "Auto-Grader: Autos with Post-Redirect",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -612,7 +614,73 @@
                 "value": "autosess.php"
             }
         ]
+        },
+        {
+        "title": "Peer-Grader: Autos with Post-Redirect",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Automobiles, Sessions, and POST-Redirect",
+  "description":"In this assignment you will expand a web based application to track data about automobiles and store the data in a MySQL database.  All interactions will follow the POST-Redirect pattern where appropriate.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/autosess/",
+  "solution":"http://www.php-intro.com/solutions/autosess/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@).  You must also include the developer console network tab showing both the POST and GET.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+      "type":"image"
+    },
+    {
+      "title":"This was a duplicate screen shot - please give full credit to any uploaded image - including a kitty picture.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php with three vehicles in the list.  At least one of the vehicles must have '<b>' in its title and it must be shown properly (i.e. the title should not be bold)",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing the error message for a non-numeric year. You must also include the developer console network tab showing both the POST and GET.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of view.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of add.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "Building a CRUD Application",
@@ -632,7 +700,9 @@
         },
     "assignment" : "assn/autoscrud/",
     "solution" : "solutions/autoscrud",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Auto-Grader: Autos CRUD",
         "launch" : "tools/autograder/index.php",
         "custom" : [
             {
@@ -640,7 +710,76 @@
                 "value": "autoscrud.php"
             }
         ]
+        },
+        {
+        "title" : "Peer-Grader: Autos CRUD",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Automobiles CRUD Database",
+  "description":"In this assignment you will expand a web based application to Create, Read, Update, and Delete (C.R.U.D.) data in a MySQL database.  All interactions will follow the POST-Redirect and Flash Message patterns where appropriate.  All generated HTML must be properly protected using htmlentities().",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/autoscrud",
+  "solution":"http://www.php-intro.com/solutions/autoscrud",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your login.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (with URL) of your add.php showing ACCESS DENIED",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your index.php with three entries in the list",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your add.php showing a validation error",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) showing three rows of data in your MySQL administration interface",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing the error message for invalid data",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your view.php showing a successful delete.",
+      "type":"image"
+    },
+    {
+      "title":"Source code of index.php (or view.php)",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
     }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
+        }
+    ]
 },
 {
     "title": "Basic JavaScript",
@@ -662,7 +801,87 @@
         {
             "title" : "Sample code",
             "href" : "code/javascript.zip"
+        },
+    "assignment" : "assn/res-profile/index.php",
+    "solution" : "solutions/res-profile/index.php",
+    "lti" : [
+        {
+        "title" : "Auto-Grader: JavaScript / Resumes",
+        "launch" : "tools/autograder/index.php",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "res-profile.php"
+            }
+        ]
+        },
+        {
+        "title" : "Peer-Grader: JavaScript / Resumes",
+        "launch" : "mod/peer-grade/index.php",
+        "custom" : [
+            {
+                "key": "config",
+                "json": 
+{
+  "title":"Profile Database",
+  "description":"In this assignment you will write a simple resume database that support Create, Read, Update, and Delete operations (CRUD).  You will also move user information into its own table and link entries between two tables using foreign keys.  You will also add some in-browser JavaScript data validation.",
+  "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"http://www.php-intro.com/assn/res-profile/",
+  "solution":"http://www.php-intro.com/solutions/res-profile/",
+  "parts":[
+    {
+      "title":"A screen shot (including the URL) of your index.php with the user logged in three resumes  in the list.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your edit.php showing the error message for a bad email address",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot (including the URL) of your delete.php showing that you are showing the confirmation screen before the delete is being done.",
+      "type":"image"
+    },
+    {
+      "title":"A screen shot of your Profile database table showing three rows",
+      "type":"image"
+    },
+    {
+      "title":"Source code of index.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of login.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of edit.php",
+      "type":"code",
+      "language":"php"
+    },
+    {
+      "title":"Source code of delete.php",
+      "type":"code",
+      "language":"php"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "notepublic":"false",
+  "resubmit":"off"
+}
+            }
+        ]
         }
+    ]
 },
 {
     "title": "JavaScript Objects",
@@ -679,18 +898,7 @@
         {
             "title" : "Sample code",
             "href" : "code/javascript-objects.zip"
-        },
-    "assignment" : "assn/res-profile/index.php",
-    "solution" : "solutions/res-profile/index.php",
-    "lti" : {
-        "launch" : "tools/autograder/index.php",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "res-profile.php"
-            }
-        ]
-    }
+        }
 },
 {
     "title": "JQuery",
