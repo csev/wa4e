@@ -63,6 +63,7 @@ if ( $anchor !== null || $index !== null ) {
         $count++;
         if ( $anchor !== null && isset($mod->anchor) && $anchor != $mod->anchor ) continue;
         if ( $index !== null && $index != $count ) continue;
+        if ( $anchor == null && isset($module->anchor) ) $anchor = $module->anchor;
         $module = $mod;
         $position = $count;
     }
@@ -206,6 +207,32 @@ if ( $anchor !== null || $index !== null ) {
 
             if ( count($ltis) > 1 ) echo("</li></ul><!-- end of ltis -->\n");
         }
+    }
+    if ( !isset($module->discuss) ) $module->discuss = true;
+    if ( !isset($module->anchor) ) $module->anchor = $position;
+    if ( isset($_SESSION['id']) && $module->discuss ) {
+?>
+<hr/>
+<div id="disqus_thread" style="margin-top: 30px;"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+var disqus_config = function () {
+    this.page.url = '<?= $CFG->apphome ?>';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '<?= $module->anchor ?>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//php-intro.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                    
+<?php
     }
 
 } else {

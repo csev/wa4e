@@ -1220,6 +1220,7 @@
     "title": "Course Tools",
     "login": true,
     "anchor": "tools",
+    "discuss" : false,
     "icon" : "fa-wrench",
     "lti" : [
         {
