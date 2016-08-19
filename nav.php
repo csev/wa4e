@@ -6,7 +6,7 @@ $set->setHome($CFG->servicename, $CFG->apphome);
 $set->addLeft('Install', $R.'install.php');
 $set->addLeft('Lessons', $R.'lessons.php');
 if ( isset($_SESSION['id']) ) {
-	$set->addLeft('Discuss', $R.'discuss.php');
+	if ( isset($CFG->disqushost) ) $set->addLeft('Discuss', $R.'discuss.php');
 	$set->addLeft('Tools', $R.'lessons.php?anchor=tools');
 }
 

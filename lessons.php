@@ -210,7 +210,7 @@ if ( $anchor !== null || $index !== null ) {
     }
     if ( !isset($module->discuss) ) $module->discuss = true;
     if ( !isset($module->anchor) ) $module->anchor = $position;
-    if ( isset($_SESSION['id']) && $module->discuss ) {
+    if ( isset($CFG->disqushost) && isset($_SESSION['id']) && $module->discuss ) {
 ?>
 <hr/>
 <div id="disqus_thread" style="margin-top: 30px;"></div>
@@ -220,7 +220,7 @@ if ( $anchor !== null || $index !== null ) {
  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
 var disqus_config = function () {
-    this.page.url = '<?= $CFG->apphome ?>';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.url = '<?= $CFG->disqushost ?>';  // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = '<?= $module->anchor ?>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 (function() { // DON'T EDIT BELOW THIS LINE

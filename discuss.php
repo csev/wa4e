@@ -7,7 +7,9 @@ require_once "nav.php";
 
 $OUTPUT->flashMessages();
 
-    if ( isset($_SESSION['id']) ) {
+    if ( !isset($CFG->disqushost) ) {
+        echo("<p>Disqus not enabled</p>\n");
+    } else if ( isset($_SESSION['id']) ) {
 ?>
 <hr/>
 <div id="disqus_thread" style="margin-top: 30px;"></div>
