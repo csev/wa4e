@@ -14,12 +14,19 @@ $T = $CFG->wwwroot . '/';
 if ( isset($_SESSION['id']) ) {
     $submenu = new \Tsugi\UI\Menu();
     $submenu->addLink('Profile', $T.'profile.php');
+    if ( isset($CFG->google_map_api_key) ) {
+        $submenu->addLink('Map', $T.'map.php');
+    }
     if ( $CFG->DEVELOPER ) {
         $submenu->addLink('Test LTI Tools', $T . 'dev.php');
     }
     if ( $CFG->providekeys ) {
         $submenu->addLink('Use this Service', $T . 'admin/key/index.php');
     }
+    if ( isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true" ) {
+        $submenu->addLink('Administer', $T . 'admin/');
+    }
+    $submenu->addLink('Profile', $T.'profile.php');
     $submenu->addLink('Logout', $T.'logout.php');
     if ( isset($_SESSION['avatar']) ) {
         $set->addRight('<img src="'.$_SESSION['avatar'].'" style="height: 2em;"/>', $submenu);
