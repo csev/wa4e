@@ -27,7 +27,6 @@ if ( isset($_SESSION['id']) ) {
     if ( isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true" ) {
         $submenu->addLink('Administer', $T . 'admin/');
     }
-    $submenu->addLink('Profile', $T.'profile.php');
     $submenu->addLink('Logout', $T.'logout.php');
     if ( isset($_SESSION['avatar']) ) {
         $set->addRight('<img src="'.$_SESSION['avatar'].'" style="height: 2em;"/>', $submenu);
