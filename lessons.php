@@ -53,6 +53,20 @@ if ( $lessons === null ) {
     die();
 }
 
+// Filter modules based on login
+if ( !isset($_SESSION['id']) ) {
+    $filtered_modules = array();
+    $filtered = false;
+    foreach($lessons->modules as $module) {
+	    if ( isset($module->login) && $module->login ) {
+            $filtered = true;
+            continue;
+        }
+        $filtered_modules[] = $module;
+    }
+    if ( $filtered ) $lessons->modules = $filtered_modules;
+}
+
 if ( $anchor !== null || $index !== null ) {
 
     $count = 0;
