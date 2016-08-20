@@ -26,7 +26,6 @@ require_once "top.php";
 require_once "nav.php";
 $anchor = isset($_GET['anchor']) ? $_GET['anchor'] : null;
 $index = isset($_GET['index']) ? $_GET['index'] : null;
-$waterfall = false;
 
 if ( isset($_GET['lti_errormsg']) ) {
     $_SESSION['error'] = $_GET['lti_errormsg'];
@@ -68,6 +67,26 @@ if ( !isset($_SESSION['id']) ) {
 }
 
 if ( $anchor !== null || $index !== null ) {
+?>
+
+<link rel="stylesheet" href="<?= $CFG->staticroot ?>/plugins/jquery.bxslider/jquery.bxslider.css" type="text/css"/>
+<!--
+<p>
+<ul class="bxslider">
+  <li>
+    <iframe src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </li>
+  <li>
+    <iframe width="500" height="281" src="https://www.youtube.com/embed/1SQ4eAeVV4Y?list=PLlRFEj9H3Oj4qyq0OLZ76cMtUUgqUNtmz" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+
+  </li>
+  <li>
+    <iframe src="http://player.vimeo.com/video/17230728" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </li>
+</ul>
+</p>
+-->
+<?php
 
     $count = 0;
     $module = false;
@@ -105,6 +124,19 @@ if ( $anchor !== null || $index !== null ) {
         }
         echo("</ul></div>\n");
         echo('<h1>'.$module->title."</h1>\n");
+
+        if ( isset($module->videos) ) {
+            $videos = $module->videos;
+            if ( ! is_array($videos) ) $videos = array($videos);
+            echo('<ul class="bxslider">'."\n");
+            foreach($videos as $video ) {
+                echo('<li><iframe src="https://www.youtube.com/embed/'.
+                    $video->youtube.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen '.
+                    ' alt="'.htmlentities($video->title).'"></iframe>'."\n");
+            }
+            echo("</ul>\n");
+        }
+
         if ( isset($module->description) ) {
             echo('<p>'.$module->description."</p>\n");
         }
@@ -121,21 +153,6 @@ if ( $anchor !== null || $index !== null ) {
         }
         if ( isset($module->solution) ) {
             echo('<li><a href="'.$module->solution.'" target="_blank">Assignment Solution</a></li>'."\n");
-        }
-        if ( isset($module->videos) ) {
-            if ( is_array($module->videos) ) {
-                echo("<li>Videos:<ul>\n");
-                foreach($module->videos as $video ) {
-                    echo('<li><a href="https://www.youtube.com/watch?v='.
-                        $video->youtube.'" target="_blank">'.
-                        $video->title."</a></li>\n");
-                }
-                echo("</ul></li>\n");
-            } else {
-                echo('<li>Video: <a href="https://www.youtube.com/watch?v='.
-                    $module->videos->youtube.'" target="_blank">'.
-                    $module->videos->title."</a></li>\n");
-            }
         }
         if ( isset($module->references) ) {
             if ( is_array($module->references) ) {
@@ -248,12 +265,36 @@ var disqus_config = function () {
                                     
 <?php
     }
+?>
+</div> <!-- container -->
+<?php
+$OUTPUT->footerStart();
+// http://bxslider.com/examples/video
+?>
+<script src="<?= $CFG->staticroot ?>/plugins/jquery.bxslider/plugins/jquery.fitvids.js">
+</script>
+<script src="<?= $CFG->staticroot ?>/plugins/jquery.bxslider/jquery.bxslider.js">
+</script>
+<script>
+$(document).ready(function() {
+    $('.bxslider').bxSlider({
+        video: true,
+        useCSS: false,
+        adaptiveHeight: false,
+        slideWidth: "350px",
+        infiniteLoop: false,
+        maxSlides: 2
+    });
+});
+</script>
+<?php
+$OUTPUT->footerend();
 
-} else {
+} else {  // else of the anchor || index
+
     echo('<h1>'.$lessons->title."</h1>\n");
     echo('<p>'.$lessons->description."</p>\n");
     echo('<div id="box">'."\n");
-    $waterfall = true;
     $count = 0;
     foreach($lessons->modules as $module) {
 	if ( isset($module->login) && $module->login && !isset($_SESSION['id']) ) continue;
@@ -277,13 +318,11 @@ var disqus_config = function () {
         echo("</a></div>\n");
    }
    echo('</div> <!-- box -->'."\n");
-} // End of the anchor || index
 ?>
 </div> <!-- container -->
 <?php
 $OUTPUT->footerStart();
 // https://github.com/LinZap/jquery.waterfall
-if ( $waterfall ) {
 ?>
 <script type="text/javascript" src="<?= $CFG->staticroot ?>/js/waterfall-light.js"></script>
 <script>
@@ -292,6 +331,6 @@ $(function(){
 });
 </script>
 <?php
-}
 $OUTPUT->footerend();
 
+} // End of the anchor || index

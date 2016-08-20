@@ -260,7 +260,7 @@
     "videos" : [
         {
             "title" : "PHP Overview",
-            "youtube" : "i8WNHqtR2dOI"
+            "youtube" : "8WNHqtR2dOI"
         },
         {
             "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
@@ -333,11 +333,16 @@
     "description": "We look at arrays and superglobals like $_SESSION in PHP language.",
     "slides": "lectures/PHP-04-Arrays.ppt",
     "chapters" : "27, 28, 31",
-    "videos" : 
+    "videos" : [
         {
             "title" : "PHP Arrays",
             "youtube" : "hEkuyEa_lK0"
         },
+        {
+            "title" : "Using the Autograder",
+            "youtube" : "95I-Yk0ltmE"
+        }
+    ],
     "references" : 
         {
             "title" : "Sample code",
@@ -465,7 +470,7 @@
     "title": "PHP Objects",
     "anchor": "php-objects",
     "icon" : "fa-bell",
-    "description": "We look at the opbejct oriented pattern in the PHP language.",
+    "description": "We look at the object oriented pattern in the PHP language.",
     "slides": "lectures/PHP-07-Objects.ppt",
     "chapters" : "33",
     "videos" : 
