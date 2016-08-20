@@ -3,7 +3,7 @@ $OUTPUT->bodyStart();
 $R = $CFG->apphome . '/';
 $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
-$set->addLeft('Install', $R.'install.php');
+$set->addLeft('Get Started', $R.'install.php');
 $set->addLeft('Lessons', $R.'lessons.php');
 if ( isset($_SESSION['id']) ) {
 	if ( isset($CFG->disqushost) ) $set->addLeft('Discuss', $R.'discuss.php');
