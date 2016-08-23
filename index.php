@@ -8,7 +8,7 @@ require_once "nav.php";
 <div id="container">
 <h1>Web Applications for Everybody</h1>
 <p>
-Hello and welcome to my <b>"Web Applications for Everyone"</b> site where you can work through my materials 
+Hello and welcome to my <b>"Web Applications for Everybody"</b> site where you can work through my materials 
 and learn PHP, MySQL, JQuery, and Handlebars. You can submit homework to the autograders for this site if 
 you are logged in.
 I would love to hear from you if you find this material useful.  
