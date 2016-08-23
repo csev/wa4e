@@ -7,8 +7,10 @@ require_once "nav.php";
 ?>
 <div id="container">
 <p>
-Hello and welcome to my site where you can work through my materials and learn PHP
-and MySQL on your own.  I would love to hear from you if you find this material useful.  
+Hello and welcome to my <b>"Web Applications for Everyone"</b> site where you can work through my materials 
+and learn PHP, MySQL, JQuery, and Handlebars. You can submit homework to the autograders for this site if 
+you are logged in.
+I would love to hear from you if you find this material useful.  
 This material is always in progress and is revised everytime I teach the course.   
 You can see all of the material and its history on 
 <a href="https://github.com/csev/php-intro" target="_blank">GitHub</a>.

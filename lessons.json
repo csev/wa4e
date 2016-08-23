@@ -589,7 +589,7 @@
     "title": "PHP Sessions",
     "anchor": "php-sessions",
     "icon" : "fa-bell",
-    "description": "We look at how PHP used cookies and manages session data.  We also look at how we properly handle POST requests of form data in web applications.",
+    "description": "We look at how PHP uses cookies and manages session data.  We also look at how we properly handle POST requests of form data in web applications.",
     "slides": "lectures/PHP-09-Sessions-Cookies-Redirect.ppt",
     "chapters" : "27",
     "videos" : [
