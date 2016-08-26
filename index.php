@@ -6,7 +6,7 @@ require_once "top.php";
 require_once "nav.php";
 ?>
 <div id="container">
-<h1>Web Applications for Everybody</h1>
+<h1>Web Applications for Everybody (WA4E)</h1>
 <p>
 Hello and welcome to my <b>"Web Applications for Everybody"</b> site where you can work through my materials 
 and learn PHP, MySQL, JQuery, and Handlebars.
