@@ -59,7 +59,7 @@
     "icon" : "fa-clone",
     "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
     "chapters" : "27",
-    "assignment" : "install.php",
+    "assignment" : "https://www.php-intro.com/install.php",
     "videos" : {
         "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
         "youtube": "6kRMlfIBMCY"
@@ -125,7 +125,7 @@
             "youtube" : "rLUm3vst87"
         }
     ],
-    "assignment" : "assn/sql-single/index.htm",
+    "assignment" : "https://www.php-intro.com/assn/sql-single/index.htm",
     "lti" : {
         "title" : "Autograder: Single-table SQL",
         "launch" : "tools/sql/index.php",
@@ -164,7 +164,7 @@
             "youtube" : "5bWkPKEms5U"
         }
     ],
-    "assignment" : "assn/sql-tracks",
+    "assignment" : "https://www.php-intro.com/assn/sql-tracks",
     "lti" : [
         {
         "title" : "Autograder: Many-to-Many Databases",
@@ -239,7 +239,7 @@
             "title" : "Hypertext Transfer Protocol",
             "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
         },
-    "assignment" : "assn/rrc/index.php",
+    "assignment" : "https://www.php-intro.com/assn/rrc/index.php",
     "lti" : [
         {
         "title" : "Autograder: Request-Response Cycle",
@@ -336,8 +336,8 @@
             "title" : "PHP Overview",
             "youtube" : "oek0oMq9JUo"
         },
-    "assignment" : "assn/crack/",
-    "solution" : "solutions/crack/",
+    "assignment" : "https://www.php-intro.com/assn/crack/",
+    "solution" : "https://www.php-intro.com/solutions/crack/",
     "lti" : {
         "title" : "Peer Graded: Reversing an MD5 Hash",
         "launch" : "mod/peer-grade/index.php",
@@ -405,8 +405,8 @@
             "title" : "Sample code",
             "href" : "code/arrays.zip"
         },
-    "assignment" : "assn/guess/",
-    "solution" : "code/arrays/guess.php?guess=12",
+    "assignment" : "https://www.php-intro.com/assn/guess/",
+    "solution" : "https://www.php-intro.com/code/arrays/guess.php?guess=12",
     "lti" : {
         "title" : "Guessing Game",
         "launch" : "tools/autograder/index.php",
@@ -454,8 +454,8 @@
             "title" : "Sample code",
             "href" : "code/forms.zip"
         },
-    "assignment" : "assn/rps/",
-    "solution" : "solutions/rps",
+    "assignment" : "https://www.php-intro.com/assn/rps/",
+    "solution" : "https://www.php-intro.com/solutions/rps",
     "lti" : [
         {
         "title" : "Autograder: Rock Paper Scissors",
@@ -566,8 +566,8 @@
             "title" : "Sample code",
             "href" : "code/pdo.zip"
         },
-    "assignment" : "assn/autosdb/",
-    "solution" : "solutions/autosdb",
+    "assignment" : "https://www.php-intro.com/assn/autosdb/",
+    "solution" : "https://www.php-intro.com/solutions/autosdb",
     "lti" : 
         [
         {
@@ -670,8 +670,8 @@
             "title" : "Sample code",
             "href" : "code/sessions.zip"
         },
-    "assignment" : "assn/autosess/",
-    "solution" : "solutions/autosess",
+    "assignment" : "https://www.php-intro.com/assn/autosess/",
+    "solution" : "https://www.php-intro.com/solutions/autosess",
     "lti" : [
         {
         "title": "Auto-Grader: Autos with Post-Redirect",
@@ -768,8 +768,8 @@
             "title" : "Sample code",
             "href" : "code/crud.zip"
         },
-    "assignment" : "assn/autoscrud/",
-    "solution" : "solutions/autoscrud",
+    "assignment" : "https://www.php-intro.com/assn/autoscrud/",
+    "solution" : "https://www.php-intro.com/solutions/autoscrud",
     "lti" : [
         {
         "title" : "Auto-Grader: Autos CRUD",
@@ -874,8 +874,8 @@
             "title" : "Sample code",
             "href" : "code/javascript.zip"
         },
-    "assignment" : "assn/res-profile/index.php",
-    "solution" : "solutions/res-profile/index.php",
+    "assignment" : "https://www.php-intro.com/assn/res-profile/index.php",
+    "solution" : "https://www.php-intro.com/solutions/res-profile/index.php",
     "lti" : [
         {
         "title" : "Auto-Grader: JavaScript / Resumes",
@@ -995,8 +995,8 @@
             "title" : "Sample code",
             "href" : "code/jquery-01.zip"
         },
-    "assignment" : "assn/res-position/index.php",
-    "solution" : "solutions/res-position/index.php",
+    "assignment" : "https://www.php-intro.com/assn/res-position/index.php",
+    "solution" : "https://www.php-intro.com/solutions/res-position/index.php",
     "lti" : [
         {
         "title" : "Auto-Grader: Profiles, Positions and jQuery",
@@ -1111,8 +1111,8 @@
             "href" : "code/json-03-crud.zip"
         }
     ],
-    "assignment" : "assn/res-education/index.php",
-    "solution" : "solutions/res-education/index.php",
+    "assignment" : "https://www.php-intro.com/assn/res-education/index.php",
+    "solution" : "https://www.php-intro.com/solutions/res-education/index.php",
     "lti" : [
         {
         "title" : "Auto-Grader: Profiles, Positions, and Education",
@@ -1218,8 +1218,8 @@
             "href" : "http://handlebarsjs.com/"
         }
     ],
-    "assignment" : "assn/res-handlebars/index.php",
-    "solution" : "solutions/res-handlebars/index.php",
+    "assignment" : "https://www.php-intro.com/assn/res-handlebars/index.php",
+    "solution" : "https://www.php-intro.com/solutions/res-handlebars/index.php",
     "lti" : {
         "title": "Peer Graded: Handlebars",
         "launch" : "mod/peer-grade/index.php",
