@@ -4,16 +4,52 @@
 "count": true,
 "badges": [
     {
-        "title" : "Structured Query Language / MySQL"
+        "title" : "Structured Query Language / MySQL",
+        "assignments" : [
+            "install",
+            "mysql_01_single",
+            "mysql_02_tracks",
+            "mysql_03_many_peer"
+        ]
     },
     {
-        "title" : "Building Database Backed Web Sites with PHP"
+        "title" : "Building Database Backed Web Sites with PHP",
+        "assignments" : [
+            "php_01_rrc",
+            "php_02_hash",
+            "php_03_guess",
+            "php_04_rps",
+            "php_05_autosdb",
+            "php_06_crud"
+        ]
     },
     {
-        "title" : "JavaScript, JQuery, and JSON"
+        "title" : "JavaScript, JQuery, and JSON",
+        "assignments" : [
+            "php_07_profile",
+            "php_08_position",
+            "php_09_education"
+        ]
     },
     {
-        "title" : "Introductory Handlebars"
+        "title" : "Introductory Handlebars",
+        "assignments" : [
+            "php_10_handlebars_peer"
+        ]
+    },
+    {
+        "title" : "PHP-Intro Community Master",
+        "assignments" : [
+            "php_01_rrc_peer",
+            "php_04_rps_peer",
+            "php_05_autosdb_peer",
+            "php_05_autosess",
+            "php_05_autosess_peer",
+            "php_06_crud_peer",
+            "php_07_profile_peer",
+            "php_08_position_peer",
+            "php_09_peer"
+        ]
     }
 ],
 "modules": [
@@ -31,6 +67,7 @@
     "lti" : {
         "title": "Peer Graded: Installation Screen Shots",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "install",
         "custom" : [
             {
                 "key": "config",
@@ -92,6 +129,7 @@
     "lti" : {
         "title" : "Autograder: Single-table SQL",
         "launch" : "tools/sql/index.php",
+        "resource_link_id" : "mysql_01_single",
         "custom" : [
             {
                 "key": "exercise",
@@ -131,6 +169,7 @@
         {
         "title" : "Autograder: Many-to-Many Databases",
         "launch" : "tools/sql/index.php",
+        "resource_link_id" : "mysql_02_tracks",
         "custom" : [
             {
                 "key": "exercise",
@@ -141,6 +180,7 @@
         {
         "title" : "Peer Grader: Many-to-Many Databases",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "mysql_03_many_peer",
         "custom" :
             [
             {
@@ -204,6 +244,7 @@
         {
         "title" : "Autograder: Request-Response Cycle",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_01_rrc",
         "custom" : [
             {
                 "key": "exercise",
@@ -214,6 +255,7 @@
         {
         "title" : "Peer graded: Request-Response Cycle",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_01_rrc_peer",
         "custom" : [
             {
                 "key": "config",
@@ -299,6 +341,7 @@
     "lti" : {
         "title" : "Peer Graded: Reversing an MD5 Hash",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_02_hash",
         "custom" : [
             {
                 "key": "config",
@@ -365,7 +408,9 @@
     "assignment" : "assn/guess/",
     "solution" : "code/arrays/guess.php?guess=12",
     "lti" : {
+        "title" : "Guessing Game",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_03_guess",
         "custom" : [
             {
                 "key": "exercise",
@@ -415,6 +460,7 @@
         {
         "title" : "Autograder: Rock Paper Scissors",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_04_rps",
         "custom" : [
             {
                 "key": "exercise",
@@ -425,6 +471,7 @@
         {
         "title" : "Peer grader: Rock Paper Scissors",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_04_rps_peer",
         "custom" : [
             {
                 "key": "config",
@@ -526,6 +573,7 @@
         {
         "title" : "Autograder: Autos Database",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_05_autosdb",
         "custom" : [
             {
                 "key": "exercise",
@@ -536,6 +584,7 @@
         {
         "title" : "Peer graded: Autos Database",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_05_autosdb_peer",
         "custom" : [
             {
                 "key": "config",
@@ -627,6 +676,7 @@
         {
         "title": "Auto-Grader: Autos with Post-Redirect",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_05_autosess",
         "custom" : [
             {
                 "key": "exercise",
@@ -637,6 +687,7 @@
         {
         "title": "Peer-Grader: Autos with Post-Redirect",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_05_autosess_peer",
         "custom" : [
             {
                 "key": "config",
@@ -723,6 +774,7 @@
         {
         "title" : "Auto-Grader: Autos CRUD",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_06_crud",
         "custom" : [
             {
                 "key": "exercise",
@@ -733,6 +785,7 @@
         {
         "title" : "Peer-Grader: Autos CRUD",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_06_crud_peer",
         "custom" : [
             {
                 "key": "config",
@@ -827,6 +880,7 @@
         {
         "title" : "Auto-Grader: JavaScript / Resumes",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_07_profile",
         "custom" : [
             {
                 "key": "exercise",
@@ -837,6 +891,7 @@
         {
         "title" : "Peer-Grader: JavaScript / Resumes",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_07_profile_peer",
         "custom" : [
             {
                 "key": "config",
@@ -946,6 +1001,7 @@
         {
         "title" : "Auto-Grader: Profiles, Positions and jQuery",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_08_position",
         "custom" : [
             {
                 "key": "exercise",
@@ -956,6 +1012,7 @@
         {
         "title" : "Peer-Grader: Profiles, Positions and jQuery",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_08_position_peer",
         "custom" : [
             {
                 "key": "config",
@@ -1060,6 +1117,7 @@
         {
         "title" : "Auto-Grader: Profiles, Positions, and Education",
         "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_09_education",
         "custom" : [
             {
                 "key": "exercise",
@@ -1070,6 +1128,7 @@
         {
         "title" : "Peer-Grader: Profiles, Positions, and Education",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_09_peer",
         "custom" : [
             {
                 "key": "config",
@@ -1164,6 +1223,7 @@
     "lti" : {
         "title": "Peer Graded: Handlebars",
         "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_10_handlebars_peer",
         "custom" : [
             {
                 "key": "config",
@@ -1232,19 +1292,6 @@
         {
             "title" : "SQL Transactions",
             "youtube" : "8xpM8pm5yIo"
-        }
-    ]
-},
-{
-    "title": "Course Tools",
-    "login": true,
-    "anchor": "tools",
-    "discuss" : false,
-    "icon" : "fa-wrench",
-    "lti" : [
-        {
-        "title" : "Gradebook",
-        "launch" : "mod/grades/index.php"
         }
     ]
 }
