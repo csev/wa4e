@@ -4,6 +4,13 @@
 "count": true,
 "badges": [
     {
+        "title" : "Enrolled in Web Applications for Everybody (WA4E)",
+        "image" : "00_hello_world.png",
+        "threshold" : "0.0",
+        "assignments" : [
+        ]
+    },
+    {
         "title" : "Structured Query Language / MySQL",
         "image" : "01_sql.png",
         "threshold" : "0.6",
