@@ -5,6 +5,8 @@
 "badges": [
     {
         "title" : "Structured Query Language / MySQL",
+        "image" : "01_sql.png",
+        "threshold" : "0.6",
         "assignments" : [
             "install",
             "mysql_01_single",
@@ -14,6 +16,8 @@
     },
     {
         "title" : "Building Database Backed Web Sites with PHP",
+        "image" : "02_php.png",
+        "threshold" : "1.0",
         "assignments" : [
             "php_01_rrc",
             "php_02_hash",
@@ -25,6 +29,8 @@
     },
     {
         "title" : "JavaScript, JQuery, and JSON",
+        "image" : "03_javascript.png",
+        "threshold" : "1.0",
         "assignments" : [
             "php_07_profile",
             "php_08_position",
@@ -33,12 +39,16 @@
     },
     {
         "title" : "Introductory Handlebars",
+        "threshold" : "1.0",
+        "image" : "04_handlebars.png",
         "assignments" : [
             "php_10_handlebars_peer"
         ]
     },
     {
         "title" : "PHP-Intro Community Master",
+        "image" : "05_community.png",
+        "threshold" : "0.8",
         "assignments" : [
             "php_01_rrc_peer",
             "php_04_rps_peer",
