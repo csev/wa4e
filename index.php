@@ -6,7 +6,7 @@ require_once "top.php";
 require_once "nav.php";
 ?>
 <div id="container">
-<h1>Web Applications for Everybody (WA4E)</h1>
+<h1>Web Applications for Everybody</h1>
 <?php if ( isset($_SESSION['id']) ) { ?>
 <p>
 Welcome to our Massive Open Online Course (MOOC). Now that you have logged in, you have access to 
