@@ -35,10 +35,8 @@ an IMS Learning Tools Interoperability® (LTI®)
 </ul>
 <?php } else { ?>
 <p>
-Hello and welcome to my <b>"Web Applications for Everybody"</b> site where you can work through my materials 
-and learn PHP, MySQL, JQuery, and Handlebars.
-</p>
-<p>
+Hello and welcome to my site where you can learn to build database-backed
+web sites using PHP, MySQL, JQuery, and Handlebars. 
 You can use this web site many different ways:
 <ul class="list-group">
 <li class="list-group-item">
@@ -47,8 +45,7 @@ I have developed
 for this class are all provided with a Creative Commons license so you can download or link to 
 them to incorporate them into your own teaching if you like.</li>
 <li class="list-group-item">
-This site uses <a href="http://www.tsugi.org" target="_blank">Tsugi</a> framework to embed a learning 
-management system into this site.  So if you <a href="tsugi/login.php">log in</a> to this site 
+If you <a href="tsugi/login.php">log in</a> to this site 
 it is as if you have joined a free, global
 open and online course.  You have a grade book, autograded assignments, a discussion forum, and can earn
 badges for your efforts.</li>
@@ -68,7 +65,10 @@ copy of the course site, publish it and remix it any way you like.  Even more ex
 the entire site (course) into your own language and publish it.</li>
 </ul>
 <?php } ?>
-I think that this is an exciting way to provide online materials.  If you are interested in collaborating
+This site uses <a href="http://www.tsugi.org" target="_blank">Tsugi</a> 
+framework to embed a learning 
+management system into this site and handle the autograders.  
+If you are interested in collaborating
 to build these kinds of sites for yourself, please see the 
 <a href="http://www.tsugi.org" target="_blank">tsugi.org</a> website.
 </p>
