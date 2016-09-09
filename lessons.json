@@ -142,6 +142,11 @@
             "youtube" : "rLUm3vst87"
         }
     ],
+    "references" : 
+        {
+            "title" : "SQL Handout",
+            "href" : "lectures/SQL-01-MySQL-Handout.txt"
+        },
     "assignment" : "https://www.php-intro.com/assn/sql-single/index.htm",
     "lti" : {
         "title" : "Autograder: Single-table SQL",
