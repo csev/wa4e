@@ -21,7 +21,11 @@ CREATE TABLE Users (
 
 DESCRIBE Users;
 
-INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu')
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
 
 DELETE FROM Users WHERE email='ted@umich.edu'
 
@@ -47,3 +51,10 @@ CREATE TABLE Users (
 );
 
 ALTER TABLE Users ADD INDEX ( name )
+
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
+
