@@ -194,18 +194,7 @@
     "assignment" : "https://www.php-intro.com/assn/sql-tracks",
     "lti" : [
         {
-        "title" : "Autograder: Many-to-Many Databases",
-        "launch" : "tools/sql/index.php",
-        "resource_link_id" : "mysql_02_tracks",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "many_many_mysql.php"
-            }
-            ]
-        },
-        {
-        "title" : "Peer Grader: Many-to-Many Databases",
+        "title" : "Peer Grader: Multi-Table Databases (Tracks)",
         "launch" : "mod/peer-grade/index.php",
         "resource_link_id" : "mysql_03_many_peer",
         "custom" :
@@ -246,7 +235,18 @@
 }
         }
         ]
-}
+},
+        {
+        "title" : "Autograder: Many-to-Many Databases",
+        "launch" : "tools/sql/index.php",
+        "resource_link_id" : "mysql_02_tracks",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "many_many_mysql.php"
+            }
+            ]
+        }
 ]
 },
 {
