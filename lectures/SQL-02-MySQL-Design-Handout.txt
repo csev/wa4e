@@ -3,12 +3,12 @@ CREATE DATABASE Music DEFAULT CHARACTER SET utf8;
 USE Music;
 
 CREATE TABLE Artist (
-  artist_id INTEGER NOT NULL AUTO_INCREMENT KEY,
+  artist_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255)
 ) ENGINE = InnoDB;
 
 CREATE TABLE Album (
-  album_id INTEGER NOT NULL AUTO_INCREMENT KEY,
+  album_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255),
   artist_id INTEGER,
 
@@ -20,12 +20,12 @@ CREATE TABLE Album (
 ) ENGINE = InnoDB;
 
 CREATE TABLE Genre (
-  genre_id INTEGER NOT NULL AUTO_INCREMENT KEY,
+  genre_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255)
 ) ENGINE = InnoDB;
 
 CREATE TABLE Track (
-  track_id INTEGER NOT NULL AUTO_INCREMENT KEY,
+  track_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255),
   len INTEGER,
   rating INTEGER,
@@ -66,6 +66,53 @@ DROP TABLE Track; DROP TABLE Album; DROP TABLE Genre; DROP TABLE Artist;
 
 Fresh Database...
 
-CREATE TABLE User (    user_id     INTEGER NOT NULL AUTO_INCREMENT KEY,    email       VARCHAR(128) UNIQUE,    name        VARCHAR(128)) ENGINE=InnoDB CHARACTER SET=utf8;CREATE TABLE Course (    course_id     INTEGER NOT NULL AUTO_INCREMENT KEY,    title         VARCHAR(128) UNIQUE) ENGINE=InnoDB CHARACTER SET=utf8;
+CREATE TABLE User (
+    user_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
+    email       VARCHAR(128) UNIQUE,
+    name        VARCHAR(128)
+) ENGINE=InnoDB CHARACTER SET=utf8;
 
-CREATE TABLE Member (    user_id       INTEGER,    course_id     INTEGER,    role          INTEGER,    CONSTRAINT FOREIGN KEY (user_id) REFERENCES User (user_id)      ON DELETE CASCADE ON UPDATE CASCADE,    CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)       ON DELETE CASCADE ON UPDATE CASCADE,    PRIMARY KEY (user_id, course_id)) ENGINE=InnoDB CHARACTER SET=utf8;INSERT INTO User (name, email) VALUES ('Jane', 'jane@tsugi.org');INSERT INTO User (name, email) VALUES ('Ed', 'ed@tsugi.org');INSERT INTO User (name, email) VALUES ('Sue', 'sue@tsugi.org');INSERT INTO Course (title) VALUES ('Python');INSERT INTO Course (title) VALUES ('SQL');INSERT INTO Course (title) VALUES ('PHP');INSERT INTO Member (user_id, course_id, role) VALUES (1, 1, 1);INSERT INTO Member (user_id, course_id, role) VALUES (2, 1, 0);INSERT INTO Member (user_id, course_id, role) VALUES (3, 1, 0);INSERT INTO Member (user_id, course_id, role) VALUES (1, 2, 0);INSERT INTO Member (user_id, course_id, role) VALUES (2, 2, 1);INSERT INTO Member (user_id, course_id, role) VALUES (2, 3, 1);INSERT INTO Member (user_id, course_id, role) VALUES (3, 3, 0);SELECT User.name, Member.role, Course.titleFROM User JOIN Member JOIN CourseON Member.user_id = User.user_id AND Member.course_id = Course.course_idORDER BY Course.title, Member.role DESC, User.name 
+CREATE TABLE Course (
+    course_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
+    title         VARCHAR(128) UNIQUE
+) ENGINE=InnoDB CHARACTER SET=utf8;
+
+CREATE TABLE Member (
+    user_id       INTEGER,
+    course_id     INTEGER,
+    role          INTEGER,
+
+    CONSTRAINT FOREIGN KEY (user_id) REFERENCES User (user_id)
+      ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)
+       ON DELETE CASCADE ON UPDATE CASCADE,
+
+    PRIMARY KEY (user_id, course_id)
+) ENGINE=InnoDB CHARACTER SET=utf8;
+
+INSERT INTO User (name, email) VALUES ('Jane', 'jane@tsugi.org');
+INSERT INTO User (name, email) VALUES ('Ed', 'ed@tsugi.org');
+INSERT INTO User (name, email) VALUES ('Sue', 'sue@tsugi.org');
+
+INSERT INTO Course (title) VALUES ('Python');
+INSERT INTO Course (title) VALUES ('SQL');
+INSERT INTO Course (title) VALUES ('PHP');
+
+INSERT INTO Member (user_id, course_id, role) VALUES (1, 1, 1);
+INSERT INTO Member (user_id, course_id, role) VALUES (2, 1, 0);
+INSERT INTO Member (user_id, course_id, role) VALUES (3, 1, 0);
+
+INSERT INTO Member (user_id, course_id, role) VALUES (1, 2, 0);
+INSERT INTO Member (user_id, course_id, role) VALUES (2, 2, 1);
+
+INSERT INTO Member (user_id, course_id, role) VALUES (2, 3, 1);
+INSERT INTO Member (user_id, course_id, role) VALUES (3, 3, 0);
+
+SELECT User.name, Member.role, Course.title
+FROM User JOIN Member JOIN Course
+ON Member.user_id = User.user_id AND 
+Member.course_id = Course.course_id
+ORDER BY Course.title, Member.role DESC, User.name 
+
+
+
