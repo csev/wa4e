@@ -167,6 +167,11 @@
     "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
     "slides": "lectures/SQL-02-MySQL-Design.ppt",
     "chapters" : "38, 40, 42",
+    "references" : 
+        {
+            "title" : "Multi-Table SQL Handout",
+            "href" : "lectures/SQL-02-MySQL-Design-Handout.txt"
+        },
     "handout": "lectures/SQL-02-MySQL-Design-Handout.doc",
     "videos" : [
         {
