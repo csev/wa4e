@@ -256,11 +256,20 @@
     "description": "We look at the basic structure of a web application and how a web browser interacts with a web server.   We explore the Request-Response Cycle that is the basis of the Hypertext Transport Protocol (HTTP).",
     "slides": "lectures-old/PHP-01-Intro.ppt",
     "chapters" : "1, 3, 4",
-    "videos" : 
+    "videos" : [
+        {
+            "title" : "Web Applications and the Request/Response Cycle",
+            "youtube" : "grOhhEBzSMs"
+        },
+        {
+            "title" : "Understanding Browser Developer Mode",
+            "youtube" : "-YSrB4T9JFw"
+        },
         {
             "title" : "What Happens When You Click a Link? - Computerphile",
             "youtube" : "keo0dglCj7I"
-        },
+        }
+    ], 
     "references" : 
         {
             "title" : "Hypertext Transfer Protocol",
