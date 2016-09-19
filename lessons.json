@@ -57,7 +57,7 @@
         "image" : "05_community.png",
         "threshold" : "0.8",
         "assignments" : [
-            "php_01_rrc_peer",
+            "php_01_php_peer",
             "php_04_rps_peer",
             "php_05_autosdb_peer",
             "php_05_autosess",
@@ -275,7 +275,6 @@
             "title" : "Hypertext Transfer Protocol",
             "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
         },
-    "assignment" : "https://www.php-intro.com/assn/rrc/index.php",
     "lti" : [
         {
         "title" : "Autograder: Request-Response Cycle",
@@ -285,58 +284,6 @@
             {
                 "key": "exercise",
                 "value": "http_headers.php"
-            }
-        ]
-        },
-        {
-        "title" : "Peer graded: Request-Response Cycle",
-        "launch" : "mod/peer-grade/index.php",
-        "resource_link_id" : "php_01_rrc_peer",
-        "custom" : [
-            {
-                "key": "config",
-                "json" :
-{
-  "title":"Understanding the Request-Response Cycle",
-  "description":"Your application will be a single index.php file with some elements in HTML, some elements in PHP, and some elements in JavaScript - all working in the same file.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in yout PHP server (i.e. file:// urls will not be accepted)",
-  "grading":"Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment":"http://www.php-intro.com/assn/rrc/",
-  "solution":"http://www.php-intro.com/solutions/rrc/",
-  "parts":[
-    {
-      "title":"Image of your application showing the URL bar, alert box and the rest of the output.",
-      "type":"image"
-    },
-    {
-      "title":"Image of your application showing the URL bar, console and the rest of the output",
-      "type":"image"
-    },
-    {
-      "title":"Image of your application showing the URL bar and output of fail.php",
-      "type":"image"
-    },
-    {
-      "title":"Image of your application showing the URL bar output of check.php",
-      "type":"image"
-    },
-    {
-      "title":"Source code of your index.php",
-      "type":"code",
-      "language":"php"
-    }
-  ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
-}
             }
         ]
         }
@@ -357,6 +304,53 @@
         {
             "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
             "youtube" : "YIGRXEzjE6c"
+        }
+    ],
+    "assignment" : "https://www.php-intro.com/assn/php/index.php",
+    "lti" : [
+        {
+        "title" : "Peer graded: Getting Started with PHP",
+        "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "php_01_php_peer",
+        "custom" : [
+            {
+                "key": "config",
+                "json" :
+{
+  "title": "Getting Started with PHP",
+  "description": "Your application will be a single index.php file with some elements in HTML and some elements in PHP. This also verifies that you can do basic HTML and know how to use the 'pre' tag as well as understand how to switch between PHP and HTML when writing a PHP script.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in your PHP server (i.e. file:// urls will not be accepted)",
+  "grading": "Please do your reviews of the other students submissions carefully.  The actual points you award are less important than useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+  "assignment" : "http://www.php-intro.com/assn/php/",
+  "solution" : "http://www.php-intro.com/solutions/php/",
+  "parts": [
+    {
+      "title": "Image of your application showing the URL bar and the rest of the output.",
+      "type": "image"
+    },
+    {
+      "title": "Image of your application showing the URL bar and output of fail.php",
+      "type": "image"
+    },
+    {
+      "title": "Image of your application showing the URL bar output of check.php",
+      "type": "image"
+    },
+    {
+      "title": "Source code of your index.php",
+      "type": "code",
+      "language": "php"
+    }
+  ],
+  "totalpoints": 10,
+  "instructorpoints": 5,
+  "peerpoints": 3,
+  "assesspoints": 1,
+  "minassess": 2,
+  "maxassess": 5,
+  "flag": true
+}
+            }
+        ]
         }
     ]
 },
