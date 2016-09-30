@@ -7,7 +7,7 @@ use Goutte\Client;
 line_out("Grading PHP-Intro Rock Paper Scissors");
 ?>
 <p>The specification for this assignment is:
-<a href="http://www.php-intro.com/assn/rps/" target="_blank">http://www.php-intro.com/assn/rps/</a></p>
+<a href="http://www.wa4e.com/assn/rps/" target="_blank">http://www.wa4e.com/assn/rps/</a></p>
 <?php
 
 $grade = 0;
@@ -16,7 +16,7 @@ $title_once = false; // Only send the error once
 $titlefound = false;
 $account = "umsi@umich.edu";
 
-$url = getUrl('http://www.php-intro.com/solutions/rps/index.php');
+$url = getUrl('http://www.wa4e.com/solutions/rps/index.php');
 if ( $url === false ) return;
 
 error_log("RPS ".$url);

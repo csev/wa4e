@@ -96,6 +96,11 @@ function webauto_test_passed($grade, $url) {
         return false;
     }
 
+    if ( $USER->instructor ) {
+        line_out('Instructor grades are not sent..');
+        return false;
+    }
+
     $LTI = $_SESSION['lti'];
 
     $old_grade = isset($LTI['grade']) ? $LTI['grade'] : 0.0;
@@ -110,6 +115,7 @@ function webauto_test_passed($grade, $url) {
     $debug_log = array();
     $retval = LTIX::gradeSend($grade, false, $debug_log);
     $OUTPUT->dumpDebugArray($debug_log);
+    $success = false;
     if ( $retval == true ) {
         $success = "Grade sent to server (".$grade.")";
     } else if ( is_string($retval) ) {

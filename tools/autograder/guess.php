@@ -14,11 +14,17 @@ $correct = $MT->getNext(12,82);
 
 ?>
 <p>Assignment specification:
-<a href="http://www.php-intro.com/assn/guess/" target="_blank">http://www.php-intro.com/assn/guess/</a></p>
+<a href="http://www.wa4e.com/assn/guess/" target="_blank">http://www.wa4e.com/assn/guess/</a></p>
 <p>For this assignment, each student is given a different "correct" answer which must be used
 in your code.
-Your assignment must accept <strong><?= $correct ?></strong> as the correct
+</p>
+<p>
+<b>
+Note: Your assignment must accept <?= $correct ?> as the correct
 answer to complete this assignment with full credit. 
+</b>
+</p>
+<p>
 <?php if ( $USER->displayname === false ) { ?>
 Since this autograder does now know your name, all the tests for the assignment
 can be run, but no grade will be returned. </p>
@@ -35,7 +41,7 @@ application to get a temporary URL that can be used with this application.
 </p>
 <?php
 
-$url = getUrl('http://www.php-intro.com/code/arrays/guess.php');
+$url = getUrl('http://www.wa4e.com/code/arrays/guess.php');
 if ( $url === false ) return;
 $grade = 0;
 

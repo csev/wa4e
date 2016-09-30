@@ -1,6 +1,6 @@
 <?php
 
-$reference_implementation = 'http://www.php-intro.com/solutions/res-profile';
+$reference_implementation = 'http://www.wa4e.com/solutions/res-profile';
 
 $assignment_type = "Assignment";
 $assignment_type_lower = "assignment";

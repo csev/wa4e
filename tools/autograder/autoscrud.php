@@ -1,6 +1,6 @@
 <?php
 
-$reference_implementation = 'http://www.php-intro.com/solutions/autoscrud';
+$reference_implementation = 'http://www.wa4e.com/solutions/autoscrud';
 
 $assignment_type = "Assignment";
 $assignment_type_lower = "assignment";

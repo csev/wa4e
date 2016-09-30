@@ -3,11 +3,11 @@
 $folder = basename(__FILE__, ".php");
 
 // Reference can be relative
-$reference = "http://www.php-intro.com/solutions/$folder";
+$reference = "http://www.wa4e.com/solutions/$folder";
 
 // These two must be absolute as they will be in peer.json
-$reference_implementation = "http://www.php-intro.com/solutions/$folder";
-$specification = "http://www.php-intro.com/assn/$folder";
+$reference_implementation = "http://www.wa4e.com/solutions/$folder";
+$specification = "http://www.wa4e.com/assn/$folder";
 
 $assignment_type = "Sample Exam";
 $assignment_type_lower = "exam";
