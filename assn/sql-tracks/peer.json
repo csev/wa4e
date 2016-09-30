@@ -2,7 +2,7 @@
   "title": "Building a Multi-Table Database With Relationships",
   "description": "In this assignment, you will build a copy of the Music database covered in lecture.  You will populate your database with tracks, artists and albums that are different from the ones used in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables need to normalized as described in lecture.",
   "grading": "This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment" : "http://www.php-intro.com/assn/sql-tracks/",
+  "assignment" : "http://www.wa4e.com/assn/sql-tracks/",
   "parts": [
     {
       "title": "Screen shot (JPG or PNG) of data in the Track table",

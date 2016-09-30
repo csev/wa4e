@@ -2,8 +2,8 @@
   "title":"Automobiles and Databases",
   "description":"In this assignment you will build a web based application to track data about automobiles and store the data in a MySQL database.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment" : "http://www.php-intro.com/assn/autosdb/",
-  "solution" : "http://www.php-intro.com/solutions/autosdb/",
+  "assignment" : "http://www.wa4e.com/assn/autosdb/",
+  "solution" : "http://www.wa4e.com/solutions/autosdb/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@)",

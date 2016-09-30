@@ -2,8 +2,8 @@
   "title":"Profile Database",
   "description":"In this assignment you will write a simple resume database that support Create, Read, Update, and Delete operations (CRUD).  You will also move user information into its own table and link entries between two tables using foreign keys.  You will also add some in-browser JavaScript data validation.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment" : "http://www.php-intro.com/assn/res-profile/",
-  "solution" : "http://www.php-intro.com/solutions/res-profile/",
+  "assignment" : "http://www.wa4e.com/assn/res-profile/",
+  "solution" : "http://www.wa4e.com/solutions/res-profile/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your index.php with the user logged in three resumes  in the list.",

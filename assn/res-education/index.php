@@ -47,7 +47,7 @@ You can explore a sample solution for this problem at
 previous assignment</a>.
 </li>
 <li>Recorded lectures and slides from 
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 JavaScript
@@ -69,13 +69,13 @@ target="_new">JQuery Autocomplete</a>
 </li>
 <li>
 Sample code: 
-<a href="http://www.php-intro.com/code/jquery-01.zip"
+<a href="http://www.wa4e.com/code/jquery-01.zip"
    target="_blank">JQuery</a>, 
-<a href="http://www.php-intro.com/code/json-01.zip"
+<a href="http://www.wa4e.com/code/json-01.zip"
    target="_blank">JSON</a>, 
-<a href="http://www.php-intro.com/code/json-02-chat.zip"
+<a href="http://www.wa4e.com/code/json-02-chat.zip"
    target="_blank">JSON Chat</a>, 
-<a href="http://www.php-intro.com/code/json-03-crud.zip"
+<a href="http://www.wa4e.com/code/json-03-crud.zip"
    target="_blank">JSON CRUD</a>
 </ul>
 </li>
@@ -161,8 +161,8 @@ partially typed school name using the following calling sequence (make sure
 your are logged in to the sample application before accessing this URL):
 </p>
 <p>
-<a href="http://www.php-intro.com/solutions/res-education/school.php?term=Univer"
- target="_blank">http://www.php-intro.com/solutions/res-education/school.php?term=Univer</a>
+<a href="http://www.wa4e.com/solutions/res-education/school.php?term=Univer"
+ target="_blank">http://www.wa4e.com/solutions/res-education/school.php?term=Univer</a>
 </p>
 <p>
 The <b>term</b> is whatever has been typed into the input field so far.  The 
@@ -294,8 +294,8 @@ the user is using a non-HTML5 browser.
 </li>
 </ul>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

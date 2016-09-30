@@ -49,7 +49,7 @@ I love building web sites in PHP and MySQL.
 <p>
    <input type="submit" name="dopost" value="Submit"/>
    <input type="button" 
-    onclick="location.href='http://www.php-intro.com/'; return false;"
+    onclick="location.href='http://www.wa4e.com/'; return false;"
     value="Escape">
    </p>
 </form>

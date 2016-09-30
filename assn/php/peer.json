@@ -2,8 +2,8 @@
   "title": "Getting Started with PHP",
   "description": "Your application will be a single index.php file with some elements in HTML and some elements in PHP. This also verifies that you can do basic HTML and know how to use the 'pre' tag as well as understand how to switch between PHP and HTML when writing a PHP script.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in your PHP server (i.e. file:// urls will not be accepted)",
   "grading": "Please do your reviews of the other students submissions carefully.  The actual points you award are less important than useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment" : "http://www.php-intro.com/assn/php/",
-  "solution" : "http://www.php-intro.com/solutions/php/",
+  "assignment" : "http://www.wa4e.com/assn/php/",
+  "solution" : "http://www.wa4e.com/solutions/php/",
   "parts": [
     {
       "title": "Image of your application showing the URL bar and the rest of the output.",

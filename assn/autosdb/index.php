@@ -36,7 +36,7 @@ You can explore a sample solution for this problem at
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from 
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Review the SQL language
@@ -64,7 +64,7 @@ target="_blank">PDO</a> to connect to a database.
 You can look though the sample code from the lecture. It has examples
 of using PDO to communicate with a database:
 <pre>
-<a href="http://www.php-intro.com/code/pdo.zip" target="_blank">http://www.php-intro.com/code/pdo.zip</a>
+<a href="http://www.wa4e.com/code/pdo.zip" target="_blank">http://www.wa4e.com/code/pdo.zip</a>
 </pre>
 </li>
 </ul>
@@ -355,8 +355,8 @@ src="05-Auto-Table.png" border="2"/>
 </center>
 </p>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

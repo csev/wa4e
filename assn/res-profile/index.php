@@ -35,7 +35,7 @@ You can explore a sample solution for this problem at
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Review the SQL language
@@ -382,8 +382,8 @@ clause in your tables query to return the correct range of rows.
 </ul>
 </p>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

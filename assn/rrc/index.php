@@ -74,7 +74,7 @@ You can explore a sample solution for this problem at
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Introduction to Dynamic Web Content</i> from
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li>The Wikipedia page on 
 <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">
 HTTP - Hypertext Transport Protocol</a>
@@ -150,8 +150,8 @@ Then use that variable everywhere else in the file.
 </ul>
 <hr/>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

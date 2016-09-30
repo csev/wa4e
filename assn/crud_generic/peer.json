@@ -2,8 +2,8 @@
   "title":"CRUD Databases",
   "description":"In this assignment you will expand a web based application to Create, Read, Update, and Delete (C.R.U.D.) data in a MySQL database.  All interactions will follow the POST-Redirect and Flash Message patterns where appropriate.  All generated HTML must be properly protected using htmlentities().",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.php-intro.com/assn/autoscrud/",
-  "solution":"http://www.php-intro.com/solutions/autoscrud/",
+  "assignment":"http://www.wa4e.com/assn/autoscrud/",
+  "solution":"http://www.wa4e.com/solutions/autoscrud/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your login.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",

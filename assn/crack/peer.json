@@ -2,8 +2,8 @@
   "title":"Reversing an MD5 hash (password cracking)",
   "description":"In this assignment we build code to reverse an MD5 hash using a brute force technique where we simply 'forward hash' all possible combinations of characters in strings. This would be similar to a situation where an e-commerce site stored hashed passwords in its database and we somehow have gotten our hands on the database contents and we want to take the hashed password and determine the actual plaintext passwords.",
   "grading": "Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment" : "http://www.php-intro.com/assn/crack/",
-  "solution" : "http://www.php-intro.com/solutions/crack/",
+  "assignment" : "http://www.wa4e.com/assn/crack/",
+  "solution" : "http://www.wa4e.com/solutions/crack/",
   "parts":[
     {
       "title":"A screen shot of one of the MD5's from the list above/in the spec that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",

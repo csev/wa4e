@@ -1,7 +1,7 @@
-php-intro
-=========
+Web Applications for Everybody (WA4E)
+=====================================
 
-Course materials for www.php-intro.com
+Course materials for www.wa4e.com
 
 This site also needs the Tsugi Development console checked
 out into the `tsugi` folder

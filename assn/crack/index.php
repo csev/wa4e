@@ -57,13 +57,13 @@ and published by
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
 target="_blank">Open SUNY Textbooks</a>.
 <li>Lectures and materials on Expressions, Control Flow, Arrays, Functions, and Forms
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li>Sample code for a 
-<a href="https://github.com/csev/php-intro/tree/master/code/crack"
+<a href="https://github.com/csev/wa4e/tree/master/code/crack"
 target="_blank">similar digest cracking application</a>.   You can play with this application
-at <a href="http://www.php-intro.com/code/crack/" target="_blank">http://www.php-intro.com/code/crack/</a>
+at <a href="http://www.wa4e.com/code/crack/" target="_blank">http://www.wa4e.com/code/crack/</a>
 and download a ZIP of the code at 
-<a href="http://www.php-intro.com/code/crack.zip" target="_blank">http://www.php-intro.com/code/crack.zip</a>.
+<a href="http://www.wa4e.com/code/crack.zip" target="_blank">http://www.wa4e.com/code/crack.zip</a>.
 </ul>
 </p>
 <h2>Specifications</h2>
@@ -187,8 +187,8 @@ is running too long and blows up your application.  You can check the variable
 many seconds PHP will let your code run before aborting it.
 </p>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

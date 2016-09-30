@@ -2,8 +2,8 @@
   "title": "A Guessing Game and HTTP GET Parameters",
   "description": "In this assignment you will write a guessing game in PHP that takes GET parameters and plays the game.",
   "grading": "Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment" : "http://www.php-intro.com/assn/guess/",
-  "solution" : "http://www.php-intro.com/code/arrays/guess.php?guess=1234",
+  "assignment" : "http://www.wa4e.com/assn/guess/",
+  "solution" : "http://www.wa4e.com/code/arrays/guess.php?guess=1234",
   "parts": [
     {
       "title": "Image of your application showing the alert box and the rest of the output.",

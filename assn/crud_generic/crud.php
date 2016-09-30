@@ -70,7 +70,7 @@ we tell you that all students have completed the exam.
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Understanding CRUD
@@ -79,7 +79,7 @@ Understanding CRUD
 <li>
 The sample code from the CRUD lecture is a simple working CRUD application.
 <pre>
-<a href="http://www.php-intro.com/code/crud.zip" target="_blank">http://www.php-intro.com/code/crud.zip</a>
+<a href="http://www.wa4e.com/code/crud.zip" target="_blank">http://www.wa4e.com/code/crud.zip</a>
 </pre>
 </li>
 </ul>
@@ -131,7 +131,7 @@ you will need to install and use a piece of software called "ngrok".  Instructio
 for installing and using ngrok are available at:
 </p>
 <p>
-<a href="http://www.php-intro.com/ngrok.php" target="_blank">http://www.php-intro.com/ngrok.php</a>
+<a href="http://www.wa4e.com/ngrok.php" target="_blank">http://www.wa4e.com/ngrok.php</a>
 </p>
 <p>
 Please see the process for handing in the <?= $assignment_type_lower ?> at the end of this document.
@@ -410,11 +410,11 @@ is deleted and the user is redirected to <b>index.php</b> with a success message
 This <?= $assignment_type_lower ?> will be autograded by a link that you will be provided with in the LMS
 system.   When you launch the autograder, it will prompt for a web-accessible URL
 where it can access your web application.   Since your application is running
-on localhost, you will need the <a href="http://www.php-intro.com/ngrok.php" 
+on localhost, you will need the <a href="http://www.wa4e.com/ngrok.php" 
 target="_blank">Ngrok</a> application installed.
 </p>
 <hr/>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">www.php-intro.com</a>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">www.wa4e.com</a>
 <center>
 <?php if ( strpos($assignment_type,'Exam') !== false ) { ?>
 Copyright Charles R. Severance - All Rights Reserved

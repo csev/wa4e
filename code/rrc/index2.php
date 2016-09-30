@@ -6,7 +6,7 @@
 <body>
 <h1>Hello World - index2.php</h1>
 <p>
-This is a <a href="http://www.php-intro.com">PHP</a> 
+This is a <a href="http://www.wa4e.com">PHP</a> 
 page. Most of it is just HTML.
 </p>
 <p> 

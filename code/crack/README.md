@@ -14,7 +14,7 @@ matches.
 
 You can play with this application at:
 
-http://www.php-intro.com/code/crack
+http://www.wa4e.com/code/crack
 
 This is a lesson in how easy it is to crack short passwords
 with a limited alphabet.  While this works well to crack 

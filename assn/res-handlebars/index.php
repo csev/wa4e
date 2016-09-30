@@ -43,14 +43,14 @@ and view all are handled in PHP.</li>
 <p>
 You can play with a sample implementation of the code at:
 <pre>
-<a href="http://www.php-intro.com/solutions/res-handlebars/" target="_blank">http://www.php-intro.com/solutions/res-handlebars/</a>
+<a href="http://www.wa4e.com/solutions/res-handlebars/" target="_blank">http://www.wa4e.com/solutions/res-handlebars/</a>
 </pre>
 </p>
 <p>
 You can download nearly complete implementation of this 
 assignment at:
 <pre>
-<a href="res-handlebars.zip">http://www.php-intro.com/assn/res-handlebars/res-handlbars.zip</a>
+<a href="res-handlebars.zip">http://www.wa4e.com/assn/res-handlebars/res-handlbars.zip</a>
 </pre>
 The only part that is missing its implementation of <b>profile.php</b>.  
 Without a working <b>profile.php</b> the application's 
@@ -147,8 +147,8 @@ the user is using a non-HTML5 browser.
 </li>
 </ul>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

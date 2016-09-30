@@ -59,11 +59,11 @@ where you can retrieve the most recently assigned primary key as a result of an 
 statement.
 </li>
 <li>Recorded lectures and materials from 
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>:
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 jQuery
-(<a href="http://www.php-intro.com/code/jquery.zip"
+(<a href="http://www.wa4e.com/code/jquery.zip"
    target="_blank">Sample Code</a>)
 </li>
 </ul>
@@ -102,9 +102,9 @@ in which the positions are to be displayed.   Do not use the
 You should include the JQuery CSS, JavaScript, and jQuery UI JavaScript
 in your code at the appropriate points.  You can use these files:
 <ul>
-<li> <a href="http://www.php-intro.com/solutions/res-education/js/jquery-1.10.2.js" target="_blank">http://www.php-intro.com/solutions/res-education/js/jquery-1.10.2.js</a></li>
-<li> <a href="http://www.php-intro.com/solutions/res-education/js/jquery-ui-1.11.4.js" target="_blank">http://www.php-intro.com/solutions/res-education/js/jquery-ui-1.11.4.js</a></li>
-<li> <a href="http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css" target="_blank">http://www.php-intro.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
+<li> <a href="http://www.wa4e.com/solutions/res-education/js/jquery-1.10.2.js" target="_blank">http://www.wa4e.com/solutions/res-education/js/jquery-1.10.2.js</a></li>
+<li> <a href="http://www.wa4e.com/solutions/res-education/js/jquery-ui-1.11.4.js" target="_blank">http://www.wa4e.com/solutions/res-education/js/jquery-ui-1.11.4.js</a></li>
+<li> <a href="http://www.wa4e.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css" target="_blank">http://www.wa4e.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
 </ul>
 </p>
 <h2 clear="all">The Screens for This Assignment</h2>
@@ -365,8 +365,8 @@ the user is using a non-HTML5 browser.
 </li>
 </ul>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

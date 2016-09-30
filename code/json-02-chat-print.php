@@ -1,4 +1,4 @@
-Files from: http://www.php-intro.com/code/json-02-chat.zip
+Files from: http://www.wa4e.com/code/json-02-chat.zip
 
 index.php
 

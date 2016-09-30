@@ -19,7 +19,7 @@ li { padding: 5px; }
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from the textbook
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a>
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>
 will be helpful in understanding the aspects of PHP used in this application.
 <ul>
 <li>Arrays</li>
@@ -43,11 +43,11 @@ target="_blank">header()</a> function works.
 You can download sample code 
 for an <b>incomplete/broken</b> version of this application from:
 <pre>
-<a href="http://www.php-intro.com/code/rps.zip" target="_blank">http://www.php-intro.com/code/rps.zip</a>
+<a href="http://www.wa4e.com/code/rps.zip" target="_blank">http://www.wa4e.com/code/rps.zip</a>
 </pre>
 You can play with the broken sample code at:
 <pre>
-<a href="http://www.php-intro.com/code/rps/" target="_blank">http://www.php-intro.com/code/rps/</a>
+<a href="http://www.wa4e.com/code/rps/" target="_blank">http://www.wa4e.com/code/rps/</a>
 </pre>
 </p>
 <?php if ( isset($json->solution) ) { ?>
@@ -241,8 +241,8 @@ with images - simply add some images to make it prettier.
 </ul>
 </p>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

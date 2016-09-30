@@ -26,7 +26,7 @@ of those queries and submit the screen shots as your assignment.
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Database Design</i> from
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li> Chapters 38, 40, and 42 from the free textbook
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
@@ -88,8 +88,8 @@ You do not need to hand in a screen shot of this query.
 </center>
 </p>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

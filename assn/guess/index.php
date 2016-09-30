@@ -26,7 +26,7 @@ This sample solution won't completly pass the autograder.  It needs some work
 to meet the specifications.  You can download the code for the partially complete
 sample solution at:
 <pre>
-<a href="http://www.php-intro.com/code/arrays.zip" target="_blank">http://www.php-intro.com/code/arrays.zip</a>
+<a href="http://www.wa4e.com/code/arrays.zip" target="_blank">http://www.wa4e.com/code/arrays.zip</a>
 </pre>
 <?php } ?>
 <h2>Resources</h2>
@@ -34,7 +34,7 @@ sample solution at:
 <ul>
 <li>Lectures and materials on <i>Expressions and Control Flow in PHP</i> 
 and <i>PHP Arrays</i> from 
-<a href="http://www.php-intro.com" target="_blank">www.php-intro.com</a></li>
+<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li> Chapters 27, 28, and 31 from the free textbook
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
@@ -186,8 +186,8 @@ You can run the autograder as many times as you like to work through the autogra
 complaints and fix the errors in your program.
 <hr/>
 <p>
-Provided by: <a href="http://www.php-intro.com/" target="_blank">
-www.php-intro.com</a> <br/>
+Provided by: <a href="http://www.wa4e.com/" target="_blank">
+www.wa4e.com</a> <br/>
 </p>
 <center>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance

@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 </script>
 </body>
-Files from http://www.php-intro.com/code/jquery-01.zip
+Files from http://www.wa4e.com/code/jquery-01.zip
 
 resize.php
 
