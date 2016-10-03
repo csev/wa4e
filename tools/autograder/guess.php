@@ -21,21 +21,22 @@ in your code.
 <p>
 <b>
 Note: Your assignment must accept <?= $correct ?> as the correct
-answer to complete this assignment with full credit. 
+answer to complete this assignment with full credit.
 </b>
 </p>
 <p>
-<?php if ( $USER->displayname === false ) { ?>
-Since this autograder does now know your name, all the tests for the assignment
-can be run, but no grade will be returned. </p>
-<?php } else { ?>
-To receive a grade for this assignment, your name 
-(<strong><?= $USER->displayname ?></strong>) must 
-in in the &lt;title&gt; tag in all the pages of your application.
+To receive a grade for this assignment,
+<?php
+if ( $USER->displayname === false ) {
+    echo("your name and this string <strong>".md5($code)."</strong> \n");
+} else {
+    echo("your name (<strong>".htmlentities($USER->displayname)."</strong>) \n");
+}
+?>
+must be in the &lt;title&gt; tag in all the pages of your application.
 </p>
-<?php } ?>
 <p>If you need to run this grading program on an application that is running on your
-laptop or desktop computer with a URL like <strong>http://localhost...</strong> you 
+laptop or desktop computer with a URL like <strong>http://localhost...</strong> you
 will need to install and use the <a href="https://ngrok.com/" target="_blank">ngrok</a>
 application to get a temporary URL that can be used with this application.
 </p>

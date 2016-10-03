@@ -140,9 +140,10 @@ function webauto_test_passed($grade, $url) {
 }
 
 function webauto_check_title($crawler) {
-    global $USER;
-    if ( $USER->displayname === false || $USER->displayname == '' ) {
-        return false;
+    global $USER, $LINK, $CONTEXT;
+    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+    if ( $USER->displayname !== false && strlen($USER->displayname) > 0 ) {
+        $check = $USER->displayname;
     }
 
     try {
@@ -150,8 +151,8 @@ function webauto_check_title($crawler) {
     } catch(Exception $ex) {
         return "Did not find title tag";
     }
-    if ( stripos($title,$USER->displayname) === false ) {
-        return "Did not find '$USER->displayname' in title tag";
+    if ( stripos($title,$check) === false ) {
+        return "Did not find '$check' in title tag";
     }
     return true;
 }
