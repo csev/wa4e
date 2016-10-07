@@ -93,7 +93,7 @@
   "title":"Installing PHP/MySQL",
   "description":"This assignment is designed to show that you have successfully installed a PHP/MySQL environment.  This assignment is worth 10 points. 4 points come from your peers and 2 points come from you grading other student's submissions and 4 points come from the instructor review of your assignment .",
   "grading":"This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/sql-single/",
+  "assignment":"https://www.wa4e.com/assn/sql-single/",
   "parts":[
     {
       "title":"Image (JPG or PNG) of your php.ini display_errors setting (Maximium 1MB per file)",
@@ -206,7 +206,7 @@
   "title":"Building a Multi-Table Database With Relationships",
   "description":"In this assignment, you will build a copy of the Music database covered in lecture.  You will populate your database with tracks, artists and albums that are different from the ones used in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables need to normalized as described in lecture.",
   "grading":"This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/sql-tracks/",
+  "assignment":"https://www.wa4e.com/assn/sql-tracks/",
   "parts":[
     {
       "title":"Screen shot (JPG or PNG) of data in the Track table",
@@ -320,8 +320,8 @@
   "title": "Getting Started with PHP",
   "description": "Your application will be a single index.php file with some elements in HTML and some elements in PHP. This also verifies that you can do basic HTML and know how to use the 'pre' tag as well as understand how to switch between PHP and HTML when writing a PHP script.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in your PHP server (i.e. file:// urls will not be accepted)",
   "grading": "Please do your reviews of the other students submissions carefully.  The actual points you award are less important than useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment" : "http://www.wa4e.com/assn/php/",
-  "solution" : "http://www.wa4e.com/solutions/php/",
+  "assignment" : "https://www.wa4e.com/assn/php/",
+  "solution" : "https://www.wa4e.com/solutions/php/",
   "parts": [
     {
       "title": "Image of your application showing the URL bar and the rest of the output.",
@@ -380,8 +380,8 @@
   "title":"Reversing an MD5 hash (password cracking)",
   "description":"In this assignment we build code to reverse an MD5 hash using a brute force technique where we simply 'forward hash' all possible combinations of characters in strings. This would be similar to a situation where an e-commerce site stored hashed passwords in its database and we somehow have gotten our hands on the database contents and we want to take the hashed password and determine the actual plaintext passwords.",
   "grading":"Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment":"http://www.wa4e.com/assn/crack/",
-  "solution":"http://www.wa4e.com/solutions/crack/",
+  "assignment":"https://www.wa4e.com/assn/crack/",
+  "solution":"https://www.wa4e.com/solutions/crack/",
   "parts":[
     {
       "title":"A screen shot of one of the MD5's from the list above that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",
@@ -508,10 +508,10 @@
                 "json" :
 {
   "title":"Login and Rock Paper Scissors",
-  "description":"In this assignment we will a two page web application to play rock, paper, scissors (http://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
+  "description":"In this assignment we will a two page web application to play rock, paper, scissors (https://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
   "grading":"Please review carefully.  The most important aspect of peer-grading is useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
-  "assignment":"http://www.wa4e.com/assn/rps/",
-  "solution":"http://www.wa4e.com/solutions/rps/",
+  "assignment":"https://www.wa4e.com/assn/rps/",
+  "solution":"https://www.wa4e.com/solutions/rps/",
   "parts":[
     {
       "title":"A screen shot (with URL) of your login.php rejecting an incorrect password",
@@ -623,8 +623,8 @@
   "title":"Automobiles and Databases",
   "description":"In this assignment you will build a web based application to track data about automobiles and store the data in a MySQL database.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/autosdb/",
-  "solution":"http://www.wa4e.com/solutions/autosdb/",
+  "assignment":"https://www.wa4e.com/assn/autosdb/",
+  "solution":"https://www.wa4e.com/solutions/autosdb/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@)",
@@ -726,8 +726,8 @@
   "title":"Automobiles, Sessions, and POST-Redirect",
   "description":"In this assignment you will expand a web based application to track data about automobiles and store the data in a MySQL database.  All interactions will follow the POST-Redirect pattern where appropriate.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/autosess/",
-  "solution":"http://www.wa4e.com/solutions/autosess/",
+  "assignment":"https://www.wa4e.com/assn/autosess/",
+  "solution":"https://www.wa4e.com/solutions/autosess/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@).  You must also include the developer console network tab showing both the POST and GET.",
@@ -824,8 +824,8 @@
   "title":"Automobiles CRUD Database",
   "description":"In this assignment you will expand a web based application to Create, Read, Update, and Delete (C.R.U.D.) data in a MySQL database.  All interactions will follow the POST-Redirect and Flash Message patterns where appropriate.  All generated HTML must be properly protected using htmlentities().",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/autoscrud",
-  "solution":"http://www.wa4e.com/solutions/autoscrud",
+  "assignment":"https://www.wa4e.com/assn/autoscrud",
+  "solution":"https://www.wa4e.com/solutions/autoscrud",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your login.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
@@ -930,8 +930,8 @@
   "title":"Profile Database",
   "description":"In this assignment you will write a simple resume database that support Create, Read, Update, and Delete operations (CRUD).  You will also move user information into its own table and link entries between two tables using foreign keys.  You will also add some in-browser JavaScript data validation.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/res-profile/",
-  "solution":"http://www.wa4e.com/solutions/res-profile/",
+  "assignment":"https://www.wa4e.com/assn/res-profile/",
+  "solution":"https://www.wa4e.com/solutions/res-profile/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your index.php with the user logged in three resumes  in the list.",
@@ -1051,8 +1051,8 @@
   "title":"Profiles, Positions and jQuery",
   "description":"In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where postition entries are added in the browser.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/res-position/",
-  "solution":"http://www.wa4e.com/solutions/res-position/",
+  "assignment":"https://www.wa4e.com/assn/res-position/",
+  "solution":"https://www.wa4e.com/solutions/res-position/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your add.php showing two positions",
@@ -1167,8 +1167,8 @@
   "title":"Profiles, Positions, and Education",
   "description":"In this assignment you will extend our simple resume database to support Create, Read, Update, and Delete operations (CRUD) into a Education table that has a many-to-one relationship to our Profile table and a many-to-many relationship to an Institution table. We will add an JQuery autocomplete field to our user interface.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/res-education/",
-  "solution":"http://www.wa4e.com/solutions/res-education/",
+  "assignment":"https://www.wa4e.com/assn/res-education/",
+  "solution":"https://www.wa4e.com/solutions/res-education/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your add.php showing one existing Education institution and one new education institution",
@@ -1262,8 +1262,8 @@
   "title":"Handlebars",
   "description":"This assignment is worth 10 points. 5 points are from the instructor, 3 points are from your peers and 2 points come from you grading other student's submissions.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"http://www.wa4e.com/assn/res-handlebars/",
-  "solution":"http://www.wa4e.com/solutions/res-handlebars/",
+  "assignment":"https://www.wa4e.com/assn/res-handlebars/",
+  "solution":"https://www.wa4e.com/solutions/res-handlebars/",
   "parts":[
     {
       "title":"A screen shot (including the URL) of your form.php showing editing an existing entry showing the retrieval of the JSON to populate the form.",
