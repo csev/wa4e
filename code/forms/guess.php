@@ -1,12 +1,12 @@
 <?php
-    $guess = '';
+    $oldguess = '';
     $message = false;
     if ( isset($_POST['guess']) ) {
         // Trick for integer / numeric parameters
-        $guess = $_POST['guess'] + 0;
-        if ( $guess == 42 ) {
+        $oldguess = $_POST['guess'] + 0;
+        if ( $oldguess == 42 ) {
             $message = "Great job!";
-        } else if ( $guess < 42 ) {
+        } else if ( $oldguess < 42 ) {
             $message = "Too low";
         } else  {
             $message = "Too high...";
@@ -26,8 +26,8 @@
 ?>
 <form method="post">
    <p><label for="guess">Input Guess</label>
-   <input type="text" name="guess" id="guess" size="40" 
-     value="<?= htmlentities($oldguess) ?></p>
+   <input type="text" name="guess" id="guess" size="40"
+     value="<?= htmlentities($oldguess) ?>"/></p>
    <input type="submit"/>
 </form>
 </body>
