@@ -417,7 +417,7 @@
     "title": "PHP Arrays",
     "anchor": "php-arrays",
     "icon" : "fa-bell",
-    "description": "We look at arrays and superglobals like $_SESSION in PHP language.",
+    "description": "We look at arrays and superglobals like $_GET in PHP language.",
     "slides": "lectures/PHP-04-Arrays.ppt",
     "chapters" : "27, 28, 31",
     "videos" : [
