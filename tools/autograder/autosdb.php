@@ -95,7 +95,7 @@ line_out("Attempting a good login.");
 $form->setValues(array("who" => $account, "pass" => "php123"));
 $crawler = $client->submit($form);
 markTestPassed('Submit good login values to login.php');
-checkPostRedirect($client);
+// checkPostRedirect($client);
 $html = $crawler->html();
 $OUTPUT->togglePre("Show retrieved page",$html);
 $form = webauto_get_form_button($crawler,'Add');
