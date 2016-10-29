@@ -171,7 +171,7 @@ $OUTPUT->togglePre("Show retrieved page",$html);
 webauto_search_for($html, "Please Log In");
 
 
-$perfect = 26;
+$perfect = 25;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
 
 if ( ! $titlefound ) {
