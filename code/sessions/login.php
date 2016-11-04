@@ -32,6 +32,7 @@
 <form method="post">
 <p>Account: <input type="text" name="account" value=""></p>
 <p>Password: <input type="text" name="pw" value=""></p>
+<!-- password is umsi -->
 <p><input type="submit" value="Log In"></p>
 </form>
 </body>
