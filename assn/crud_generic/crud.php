@@ -114,13 +114,13 @@ data validation, you should still validate data on the server in case
 the user is using a non-HTML5 browser.
 </li>
 </ul>
-<?php if ( $reference ) { ?>
+<?php if ( $reference_implementation ) { ?>
 <h2>Sample Implementation</h2>
 <p>
 You can experiment with a reference implementation at:
 </p>
 <p>
-<a href="<?= $reference ?>" target="_blank"><?= $reference ?></a>
+<a href="<?= $reference_implementation ?>" target="_blank"><?= $reference_implementation ?></a>
 </p>
 <?php } ?>
 <h2>Using the Autograder</h2>
