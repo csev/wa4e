@@ -1,4 +1,5 @@
 mod/peer-grade
+mod/tsugi-php-slack
 mod/grades
 
 db.php

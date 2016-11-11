@@ -11,6 +11,13 @@ if ( isset($_POST['delete']) && isset($_POST['user_id']) ) {
     return;
 }
 
+// Guardian: Make sure that user_id is present
+if ( ! isset($_GET['user_id']) ) {
+  $_SESSION['error'] = "Missing user_id";
+  header('Location: index.php');
+  return;
+}
+
 $stmt = $pdo->prepare("SELECT name, user_id FROM users where user_id = :xyz");
 $stmt->execute(array(":xyz" => $_GET['user_id']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);

@@ -20,6 +20,8 @@ if ( isset($_POST['name']) && isset($_POST['email'])
     return;
 }
 
+// Guardian should go here (see add.php)
+
 $stmt = $pdo->prepare("SELECT * FROM users where user_id = :xyz");
 $stmt->execute(array(":xyz" => $_GET['user_id']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
