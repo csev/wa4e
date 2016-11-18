@@ -20,7 +20,7 @@ $client->setMaxRedirects(5);
 
 $crawler = $client->request('GET', $url);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Searching for h1 tag...");
 

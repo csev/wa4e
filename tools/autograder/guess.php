@@ -61,7 +61,7 @@ try {
 $crawler = $client->request('GET', $url);
 
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -79,7 +79,7 @@ $u = $url . "?guess=";
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 line_out("Looking for 'Your guess is too short");
 if ( stripos($html, 'Your guess is too short') > 0 ) $passed++;
 else error_out("Not found");
@@ -89,7 +89,7 @@ $u = $url . "?guess=fred";
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 line_out("Looking for 'Your guess is not a number");
 if ( stripos($html, 'Your guess is not a number') > 0 ||
      stripos($html, 'Your guess is not valid') > 0 ) $passed++;
@@ -100,7 +100,7 @@ $u = $url . "?guess=".($correct-1);
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 line_out("Looking for 'Your guess is too low'");
 if ( stripos($html, 'Your guess is too low') > 0 ) $passed++;
 else error_out("Not found");
@@ -110,7 +110,7 @@ $u = $url . "?guess=".($correct+1);
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 line_out("Looking for 'Your guess is too high'");
 if ( stripos($html, 'Your guess is too high') > 0 ) $passed++;
 else error_out("Not found");
@@ -120,19 +120,21 @@ $u = $url . "?guess=".$correct;
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 line_out("Looking for 'Congratulations - You are right'");
 if ( stripos($html, 'congratulations') > 0 ) $passed++;
 else error_out("Not found");
 
 } catch (Exception $ex) {
     error_out("The autograder did not find something it was looking for in your HTML - test ended.");
+    error_out("Usually the problem is in one of the pages returned from your application.");
+    error_out("Use the 'Toggle' links above to see the pages returned by your application.");
     error_log($ex->getMessage());
     error_log($ex->getTraceAsString());
     $detail = "This indicates the source code line where the test stopped.\n" .
         "It may not make any sense without looking at the source code for the test.\n".
         'Caught exception: '.$ex->getMessage()."\n".$ex->getTraceAsString()."\n";
-    $OUTPUT->togglePre("Internal error detail.",$detail);
+    showHTML("Internal error detail.",$detail);
 }
 
 $perfect = 11;

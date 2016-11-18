@@ -30,7 +30,7 @@ $client->setMaxRedirects(5);
 
 $crawler = $client->request('GET', $url);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -47,7 +47,7 @@ line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 markTestPassed('login.php page retrieved');
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -73,7 +73,7 @@ markTestPassed('Submit bad login values to login.php');
 // This one does not post redirect
 // checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -96,7 +96,7 @@ $crawler = $client->submit($form);
 markTestPassed('Submit good login values to login.php');
 checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 try {
     $form = $crawler->selectButton('Play')->form();
@@ -134,7 +134,7 @@ for ( $i=0; $i<5; $i++) {
     line_out("Playing ".$names[$i % 3]);
     $crawler = $client->submit($form);
     $html = $crawler->html();
-    $OUTPUT->togglePre('Show retrieved page',$html);
+    showHTML('Show retrieved page',$html);
 
     $retval = webauto_check_title($crawler);
     if ( $retval === true ) {

@@ -62,7 +62,7 @@ $crawler = $client->request('GET', $url);
 
 $html = $crawler->html();
 markTestPassed('Index retrieved');
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval !== true ) {
@@ -77,7 +77,7 @@ line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 markTestPassed('login page retrieved');
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 // Doing a log in
 line_out('Looking for the form with a value="Log In" submit button');
@@ -90,7 +90,7 @@ $crawler = $client->submit($form);
 markTestPassed('Submit to login.php');
 checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 
 line_out("Looking for anchor tag with 'Add New Entry' as the text");
@@ -101,7 +101,7 @@ line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 $html = $crawler->html();
 markTestPassed('Retrieve add.php');
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 // Add new fail
 line_out('Looking for the form with a value="Add" submit button in add.php');
@@ -115,7 +115,7 @@ $crawler = $client->submit($form);
 markTestPassed('Form submitted');
 checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Expecting 'All values are required'");
 if ( strpos(strtolower($html), 'are required') !== false ) {
@@ -136,7 +136,7 @@ $crawler = $client->submit($form);
 markTestPassed('Form data submitted');
 checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Expecting 'added'");
 if ( strpos(strtolower($html), 'added') !== false ) {
@@ -164,7 +164,7 @@ line_out("Retrieving ".$editlink."...");
 $crawler = $client->request('GET', $editlink);
 $html = $crawler->html();
 markTestPassed("Retrieved $editlink");
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out('Looking for the form with a value="Save" submit button');
 $form = $crawler->selectButton('Save')->form();
@@ -176,7 +176,7 @@ $crawler = $client->submit($form);
 markTestPassed("edit.php submitted");
 $html = $crawler->html();
 checkPostRedirect($client);
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Checking edit results");
 if ( strpos(strtolower($html), '42') !== false ) {
@@ -197,7 +197,7 @@ line_out("Retrieving ".$editlink."...");
 $crawler = $client->request('GET', $editlink);
 $html = $crawler->html();
 markTestPassed("Retrieved delete.php");
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 // Do the Delete
 line_out('Looking for the form with a value="Delete" submit button');
@@ -206,7 +206,7 @@ $crawler = $client->submit($form);
 markTestPassed("Submitted form on delete.php");
 $html = $crawler->html();
 checkPostRedirect($client);
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Making sure '$firststring' has been deleted");
 if ( strpos($html,$firststring) > 0 ) {
@@ -228,7 +228,7 @@ while ( $i-- > 0 ) {
 
     $crawler = $client->request('GET', $editlink);
     $html = $crawler->html();
-    $OUTPUT->togglePre("Show retrieved page",$html);
+    showHTML("Show retrieved page",$html);
 
     // Do the Delete
     line_out('Looking for the form with a value="Delete" submit button');
@@ -236,7 +236,7 @@ while ( $i-- > 0 ) {
     $crawler = $client->submit($form);
     checkPostRedirect($client);
     $html = $crawler->html();
-    $OUTPUT->togglePre("Show retrieved page",$html);
+    showHTML("Show retrieved page",$html);
 
     $passed--;  // Undo post redirect
 }
@@ -244,12 +244,14 @@ while ( $i-- > 0 ) {
 
 } catch (Exception $ex) {
     error_out("The autograder did not find something it was looking for in your HTML - test ended.");
+    error_out("Usually the problem is in one of the pages returned from your application.");
+    error_out("Use the 'Toggle' links above to see the pages returned by your application.");
     error_log($ex->getMessage());
     error_log($ex->getTraceAsString());
     $detail = "This indicates the source code line where the test stopped.\n" .
         "It may not make any sense without looking at the source code for the test.\n".
         'Caught exception: '.$ex->getMessage()."\n".$ex->getTraceAsString()."\n";
-    $OUTPUT->togglePre("Internal error detail.",$detail);
+    showHTML("Internal error detail.",$detail);
     return;
 }
 

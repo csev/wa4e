@@ -22,9 +22,9 @@ $assignments = array(
     'autosdb.php' => 'Autos PDO',
     'autosess.php' => 'Autos Post-Redirect',
     'autoscrud.php' => 'Autos CRUD',
-    'res-profile.php' => 'Profiles Databse',
-    'res-position.php' => 'Profiles+Postions Databse',
-    'res-education.php' => 'Prof+Pos+Educ Databse',
+    'res-profile.php' => 'Profiles Database',
+    'res-position.php' => 'Profiles+Postions Database',
+    'res-education.php' => 'Prof+Pos+Educ Database',
     'final-sample.php' => 'Sample Final Exam'
 );
 
@@ -82,6 +82,8 @@ function my_error_handler($errno , $errstr, $errfile, $errline , $trace = false)
 {
     global $OUTPUT, $ALL_GOOD;
     error_out("The autograder did not find something it was looking for in your HTML - test ended.");
+    error_out("Usually the problem is in one of the pages returned from your application.");
+    error_out("Use the 'Toggle' links above to see the pages returned by your application.");
     $message = $errfile."@".$errline." ".$errstr;
     error_log($message);
     if ( $trace ) error_log($trace);
@@ -89,7 +91,7 @@ function my_error_handler($errno , $errstr, $errfile, $errline , $trace = false)
         "Check the most recently retrieved page (above) and see why the autograder is uphappy.\n" .
         "\nHere is some internal detail where the autograder was unable to continue.\n".
         'Caught exception: '.$message."\n".$trace."\n";
-    $OUTPUT->togglePre("Internal error detail.",$detail);
+    showHTML("Internal error detail.",$detail);
     $OUTPUT->footer();
     $ALL_GOOD = true;
 }

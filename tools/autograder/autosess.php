@@ -31,7 +31,7 @@ $client->setMaxRedirects(5);
 
 $crawler = $client->request('GET', $url);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -48,7 +48,7 @@ line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 markTestPassed('login.php page retrieved');
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -74,7 +74,7 @@ markTestPassed('Submit bad login values to login.php');
 // This one does not post redirect
 // checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -97,7 +97,7 @@ $crawler = $client->submit($form);
 markTestPassed('Submit good login values to login.php');
 checkPostRedirect($client);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 
 line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
 $link = $crawler->selectLink('Add New')->link();
@@ -127,7 +127,7 @@ $crawler = $client->submit($form);
 
 $html = $crawler->html();
 checkPostRedirect($client);
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 webauto_search_for_many($html, array($make, $year, $mileage) );
 
 line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
@@ -144,7 +144,7 @@ $form->setValues(array("mileage" => $mileage, "year" => $year));
 $crawler = $client->submit($form);
 $html = $crawler->html();
 checkPostRedirect($client);
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 webauto_search_for($html,'Make is required');
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
@@ -155,7 +155,7 @@ $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => "fourty
 $crawler = $client->submit($form);
 $html = $crawler->html();
 checkPostRedirect($client);
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 webauto_search_for($html,'Mileage and year must be numeric');
 
 $form = webauto_get_form_button($crawler,'Add');
@@ -166,7 +166,7 @@ $mileage = rand(10,350000);
 $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => $year));
 $crawler = $client->submit($form);
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 $goodmake = htmlentities($make);
 webauto_search_for_many($html, array($goodmake, $year, $mileage) );
 webauto_dont_want($html,$make);
@@ -181,7 +181,7 @@ line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 markTestPassed('index..php page retrieved');
 $html = $crawler->html();
-$OUTPUT->togglePre("Show retrieved page",$html);
+showHTML("Show retrieved page",$html);
 webauto_search_for($html, "Please Log In");
 
 

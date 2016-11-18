@@ -18,6 +18,20 @@ if ( $dueDate->message ) {
     echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
 }
 
+function showHTML($message, $html) {
+    global $OUTPUT;
+    $pos = strpos($html,'<b>Fatal error</b>');
+    if ( $pos === false ) {
+        $OUTPUT->togglePre($message, $html);
+        return;
+    }
+    echo('<p style="color:red">Your application seems to have an error in this page:</p>');
+    echo("\n<pre>\n");
+    echo(htmlentities($html));
+    echo("\n</pre>\n");
+    
+}
+
 function getUrl($sample) {
     global $USER, $access_code;
 
