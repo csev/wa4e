@@ -57,8 +57,9 @@ function getUrl($sample) {
         return $_GET['url'];
     }
 
-    echo('<form>
-        Please enter the URL of your web site to grade:<br/>
+    echo('<form>');
+    echo('<input type="hidden" name="'.session_name().'" value="'.session_id().'">');
+    echo('    Please enter the URL of your web site to grade:<br/>
         <input type="text" name="url" value="'.$sample.'" size="100"><br/>');
     if ( isset($_GET['code']) ) {
         echo('<input type="hidden" name="code" value="'.$_GET['code'].'"><br/>'); 
