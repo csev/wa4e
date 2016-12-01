@@ -189,7 +189,7 @@ while ( $row = $stmt-&gt;fetch(PDO::FETCH_ASSOC) ) {
     $retval[] = $row['name'];
 }
 
-echo(json_encode($retval));
+echo(json_encode($retval), JSON_PRETTY_PRINT);
 </pre>
 
 <h2 clear="all">The Screens for This Assignment</h2>
