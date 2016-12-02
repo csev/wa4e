@@ -1,8 +1,16 @@
-Files from: http://www.wa4e.com/code/json-02-chat.zip
 
-index.php
+Files from http://www.wa4e.com/code/json-02-chat.zip
 
-<?php
+<?php  // chatlist.php
+    session_start();
+    sleep(5);
+    header('Content-Type: application/json; charset=utf-8');
+    if ( !isset($_SESSION['chats']) ) $_SESSION['chats'] = array();
+    echo(json_encode($_SESSION['chats']));
+?>
+
+
+<?php // index.php
   session_start();
   if ( isset($_POST['reset']) ) {
     $_SESSION['chats'] = Array();
@@ -36,34 +44,24 @@ index.php
 </script>
 <script type="text/javascript">
 function updateMsg() {
-  window.console && console.log("Requesting JSON"); 
-  $.ajax({
-    url: "chatlist.php",
-    cache: false,
-    success: function(data){
-      window.console && console.log("JSON Received"); 
-      window.console && console.log(data);
-      $("#chatcontent").empty();
-      for (var i = 0; i < data.length; i++) {
-        entry = data[i];
-        $("#chatcontent").append("<p>"+entry[0] +
-            "<br/>&nbsp;&nbsp;"+entry[1]+"</p>\n");
-        window.console && console.log("entry " + entry[0]);
+  window.console && console.log('Requesting JSON'); 
+  $.getJSON('chatlist.php', function(rowz){
+      window.console && console.log('JSON Received'); 
+      window.console && console.log(rowz);
+      $('#chatcontent').empty();
+      for (var i = 0; i < rowz.length; i++) {
+        arow = rowz[i];
+        $('#chatcontent').append('<p>'+arow[0] +
+            '<br/>&nbsp;&nbsp;'+arow[1]+"</p>\n");
       }
       setTimeout('updateMsg()', 4000);
-    }
   });
 }
-window.console && console.log("Startup complete"); 
-updateMsg();
+
+// Make sure JSON requests are not cached
+$(document).ready(function() {
+  $.ajaxSetup({ cache: false });
+  updateMsg();
+});
 </script>
 </body>
-
-chatlist.php
-
-<?php
-    session_start();
-    sleep(5);
-    header('Content-Type: application/json; charset=utf-8');
-    if ( !isset($_SESSION['chats']) ) $_SESSION['chats'] = array();
-    echo(json_encode($_SESSION['chats']));
