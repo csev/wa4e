@@ -51,13 +51,13 @@ $OUTPUT->topNav();
 
 // Settings button and dialog
 
-echo('<span style="position: absolute; right: 10px; top: 5px;">');
+echo('<div style="float: right;">');
 if ( $USER->instructor ) {
     echo('<a href="grades.php" target="_blank"><button class="btn btn-info">Grade detail</button></a> '."\n");
 }
 SettingsForm::button();
 $OUTPUT->exitButton();
-echo('</span>');
+echo('</div>');
 
 SettingsForm::start();
 SettingsForm::select("exercise", __('Please select an assignment'),$assignments);
