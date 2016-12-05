@@ -33,11 +33,12 @@ function htmlentities(str) {
 // Do this *after* the table tag is rendered
 $.getJSON('getjson.php', function(rows) {
     $("#mytab").empty();
+    console.log(rows);
     found = false;
     for (var i = 0; i < rows.length; i++) {
         row = rows[i];
         found = true;
-        window.console && console.log(row.title);
+        window.console && console.log('Row: '+i+' '+row.title);
         $("#mytab").append("<tr><td>"+htmlentities(row.title)+'</td><td>'
             + htmlentities(row.plays)+'</td><td>'
             + htmlentities(row.rating)+"</td><td>\n"

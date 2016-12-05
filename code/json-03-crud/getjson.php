@@ -8,4 +8,4 @@ while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
   $rows[] = $row;
 }
 
-echo json_encode($rows);
+echo json_encode($rows, JSON_PRETTY_PRINT);
