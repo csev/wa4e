@@ -25,7 +25,8 @@ $assignments = array(
     'res-profile.php' => 'Profiles Database',
     'res-position.php' => 'Profiles+Postions Database',
     'res-education.php' => 'Prof+Pos+Educ Database',
-    'final-sample.php' => 'Sample Final Exam'
+    // 'practical-f16-pizza' => 'Fall 16 Pizza Exam',
+    'practical-sample.php' => 'Sample Practical Exam'
 );
 
 $oldsettings = Settings::linkGetAll();
