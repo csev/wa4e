@@ -1,6 +1,7 @@
 mod/peer-grade
 mod/tsugi-php-slack
 mod/grades
+.DS_Store
 
 db.php
 solutions
