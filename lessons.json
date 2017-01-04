@@ -80,22 +80,23 @@
     "videos" : [
         {
             "title" : "Web Applications and the Request/Response Cycle",
-            "youtube" : "grOhhEBzSMs"
+            "youtube" : "6Vyn7qhV2xs"
         },
         {
             "title" : "Understanding Browser Developer Mode",
-            "youtube" : "-YSrB4T9JFw"
-        },
-        {
-            "title" : "What Happens When You Click a Link? - Computerphile",
-            "youtube" : "keo0dglCj7I"
+            "youtube" : "kL3hYPVnhjQ"
         }
     ], 
-    "references" : 
+    "references" : [
         {
             "title" : "Hypertext Transfer Protocol",
             "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
         },
+        {
+            "title" : "What Happens When You Click a Link? - Computerphile",
+            "href" : "https://www.youtube.com/watch?v=keo0dglCj7I"
+        }
+    ],
     "lti" : [
         {
         "title" : "Autograder: Request-Response Cycle",
@@ -170,23 +171,24 @@
     "handout": "lectures/SQL-01-MySQL-Handout.doc",
     "videos" : [
         {
-            "title" : "SQL Part 1",
-            "youtube" : "lNizVvj0vdY"
+            "title" : "Single Table SQL - Part 1",
+            "youtube" : "FXtT2RRmrdo"
         },
         {
-            "title" : "SQL Part 2",
-            "youtube" : "-J8fH3zVkmQ"
-        },
-        {
-            "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
-            "youtube" : "rLUm3vst87"
+            "title" : "Single Table SQL - Part 2",
+            "youtube" : "9608FG9_XWM"
         }
     ],
-    "references" : 
+    "references" : [
         {
             "title" : "SQL Handout",
             "href" : "lectures/SQL-01-MySQL-Handout.txt"
         },
+        {
+            "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
+            "href" : "https://www.youtube.com/watch?v=rLUm3vst87"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/sql-single/index.htm",
     "lti" : {
         "title" : "Autograder: Single-table SQL",
