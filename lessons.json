@@ -385,7 +385,7 @@
     "assignment" : "https://www.wa4e.com/assn/guess/",
     "solution" : "https://www.wa4e.com/code/arrays/guess.php?guess=12",
     "lti" : {
-        "title" : "Guessing Game",
+        "title" : "Auto-grader: Guessing Game",
         "launch" : "tools/autograder/index.php",
         "resource_link_id" : "php_03_guess",
         "custom" : [
@@ -901,7 +901,7 @@
     "solution" : "https://www.wa4e.com/solutions/res-profile/index.php",
     "lti" : [
         {
-        "title" : "Auto-Grader: JavaScript / Resumes",
+        "title" : "Auto-Grader: JavaScript / Profiles",
         "launch" : "tools/autograder/index.php",
         "resource_link_id" : "php_07_profile",
         "custom" : [
@@ -912,7 +912,7 @@
         ]
         },
         {
-        "title" : "Peer-Grader: JavaScript / Resumes",
+        "title" : "Peer-Grader: JavaScript / Profiles",
         "launch" : "mod/peer-grade/index.php",
         "resource_link_id" : "php_07_profile_peer",
         "custom" : [
