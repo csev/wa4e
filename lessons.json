@@ -425,11 +425,11 @@
   "solution":"https://www.wa4e.com/solutions/crack/",
   "parts":[
     {
-      "title":"A screen shot of one of the MD5's from the list above that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+      "title":"A screen shot of one of the MD5's from the list from the specification that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",
       "type":"image"
     },
     {
-      "title":"One of the MD5's in the list above does not crack.  Figure out which MD5 does not crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+      "title":"One of the MD5's in the list from the specification does not crack.  Figure out which MD5 does not crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
       "type":"image"
     },
     {
