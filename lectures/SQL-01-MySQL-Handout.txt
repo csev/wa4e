@@ -10,9 +10,9 @@ Starting MySQL in linux:
 
 mysql -u root -p
 
-CREATE DATABASE People;
+CREATE DATABASE People DEFAULT CHARACTER SET utf8;
 
-USE People;
+USE People; (Command line only)
 
 CREATE TABLE Users (
   name VARCHAR(128), 
