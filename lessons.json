@@ -297,11 +297,15 @@
     "icon" : "fa-bell",
     "description": "We begin learning PHP.",
     "slides": "lectures/PHP-02-Overview.ppt",
-    "chapters" : "23, 24, 25, 26",
+    "chapters" : "23, 24, 25, 26, 27, 28, 31",
     "videos" : [
         {
-            "title" : "PHP Overview",
+            "title" : "Introduction - Part 1",
             "youtube" : "8WNHqtR2dOI"
+        },
+        {
+            "title" : "Intruduction - Part 2",
+            "youtube" : "oek0oMq9JUo"
         },
         {
             "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
@@ -357,16 +361,52 @@
     ]
 },
 {
-    "title": "Overview of PHP Language",
-    "anchor": "php-basics",
+    "title": "PHP Arrays",
+    "anchor": "php-arrays",
     "icon" : "fa-bell",
-    "description": "We begin the syntax of the PHP language, control structures, and expressions.",
-    "slides": "lectures/PHP-03-Expressions-Control-String.ppt",
+    "description": "We look at arrays and superglobals like $_GET in PHP language.",
+    "slides": "lectures/PHP-03-Arrays.ppt",
     "chapters" : "27, 28, 31",
+    "videos" : [
+        {
+            "title" : "PHP Arrays",
+            "youtube" : "hEkuyEa_lK0"
+        },
+        {
+            "title" : "Using the Autograder",
+            "youtube" : "95I-Yk0ltmE"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/arrays.zip"
+        },
+    "assignment" : "https://www.wa4e.com/assn/guess/",
+    "solution" : "https://www.wa4e.com/code/arrays/guess.php?guess=12",
+    "lti" : {
+        "title" : "Guessing Game",
+        "launch" : "tools/autograder/index.php",
+        "resource_link_id" : "php_03_guess",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "guess.php"
+            }
+        ]
+    }
+},
+{
+    "title": "PHP Functions",
+    "anchor": "php-fuctions",
+    "icon" : "fa-bell",
+    "description": "We look at functions in PHP language.",
+    "slides": "lectures/PHP-04-Functions.ppt",
+    "chapters" : "32",
     "videos" : 
         {
-            "title" : "PHP Overview",
-            "youtube" : "oek0oMq9JUo"
+            "title" : "PHP Functions",
+            "youtube" : "wYhw5pt7Kwg"
         },
     "assignment" : "https://www.wa4e.com/assn/crack/",
     "solution" : "https://www.wa4e.com/solutions/crack/",
@@ -414,55 +454,6 @@
             }
         ]
     }
-},
-{
-    "title": "PHP Arrays",
-    "anchor": "php-arrays",
-    "icon" : "fa-bell",
-    "description": "We look at arrays and superglobals like $_GET in PHP language.",
-    "slides": "lectures/PHP-04-Arrays.ppt",
-    "chapters" : "27, 28, 31",
-    "videos" : [
-        {
-            "title" : "PHP Arrays",
-            "youtube" : "hEkuyEa_lK0"
-        },
-        {
-            "title" : "Using the Autograder",
-            "youtube" : "95I-Yk0ltmE"
-        }
-    ],
-    "references" : 
-        {
-            "title" : "Sample code",
-            "href" : "code/arrays.zip"
-        },
-    "assignment" : "https://www.wa4e.com/assn/guess/",
-    "solution" : "https://www.wa4e.com/code/arrays/guess.php?guess=12",
-    "lti" : {
-        "title" : "Guessing Game",
-        "launch" : "tools/autograder/index.php",
-        "resource_link_id" : "php_03_guess",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "guess.php"
-            }
-        ]
-    }
-},
-{
-    "title": "PHP Functions",
-    "anchor": "php-fuctions",
-    "icon" : "fa-bell",
-    "description": "We look at functions in PHP language.",
-    "slides": "lectures/PHP-05-Functions.ppt",
-    "chapters" : "32",
-    "videos" : 
-        {
-            "title" : "PHP Functions",
-            "youtube" : "wYhw5pt7Kwg"
-        }
 },
 {
     "title": "PHP Forms",

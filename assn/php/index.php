@@ -17,8 +17,8 @@ li { padding: 5px; }
 </p>
 <p>
 <ul>
-<li>Your name must be in the title bar like 'Charles Severance Request/Response'</li>
-<li>There should be an &lt;h1&gt; tag with your name and text like 'Charles Severance Request/Response'</li>
+<li>Your name must be in the &lt;title&gt; tag like 'Charles Severance PHP'</li>
+<li>There should be an &lt;h1&gt; tag with your name and text like 'Charles Severance PHP'</li>
 <li>You should use a &lt;pre&gt; tag to create ASCII art of the first letter of your 
 name four spaces in from the left margin</li>
 <li>Your code should use PHP to compute the SHA256 of <b>your name</b> and print it 
