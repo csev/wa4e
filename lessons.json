@@ -302,16 +302,24 @@
     "chapters" : "23, 24, 25, 26, 27, 28, 31",
     "videos" : [
         {
-            "title" : "Introduction - Part 1",
-            "youtube" : "8WNHqtR2dOI"
-        },
-        {
-            "title" : "Intruduction - Part 2",
-            "youtube" : "oek0oMq9JUo"
+            "title" : "PHP Language Overview - Part 1",
+            "youtube" : "srw_5veGPyg"
         },
         {
             "title" : "Bonus: Rasmus Lerdorf Interview on Creating PHP",
             "youtube" : "YIGRXEzjE6c"
+        },
+        {
+            "title" : "PHP Language - Variables and Constants - Part 2",
+            "youtube" : "uL6WzC7chE0"
+        },
+        {
+            "title" : "PHP Language - Expressions - Part 3",
+            "youtube" : "r6UdI22AOUM"
+        },
+        {
+            "title" : "PHP Language - Control Structures - Part 4",
+            "youtube" : "JrssSWJ5JzQ"
         }
     ],
     "assignment" : "https://www.wa4e.com/assn/php/index.php",
