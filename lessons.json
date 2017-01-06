@@ -213,23 +213,26 @@
             "title" : "Multi-Table SQL Handout",
             "href" : "lectures/SQL-02-MySQL-Design-Handout.txt"
         },
-    "handout": "lectures/SQL-02-MySQL-Design-Handout.doc",
     "videos" : [
         {
-            "title" : "Data Modeling Part 1",
-            "youtube" : "U8IWOdrJk-o"
+            "title" : "Data Modeling - Building a Data Model (Part 1)",
+            "youtube" : "qFJa1bB9wrs"
         },
         {
-            "title" : "Data Modeling Part 2",
-            "youtube" : "Jxy8Pgc-OCo"
+            "title" : "Data Modeling - Representing Relationships (Part 2)",
+            "youtube" : "I17pyb1e9YA"
         },
         {
-            "title" : "Data Modeling Part 3",
-            "youtube" : "c1W8a7TT_eE"
+            "title" : "Data Modeling - Relationships in SQL (Part 3)",
+            "youtube" : "CBVZGsmd5qw"
         },
         {
-            "title" : "Data Modeling Part 4",
-            "youtube" : "5bWkPKEms5U"
+            "title" : "Data Modeling - Using Join (Part 4)",
+            "youtube" : "RxqgQPkqoUE"
+        },
+        {
+            "title" : "Data Modeling - Many-To-Many (Part 5)",
+            "youtube" : "Ymlu1tK9qK0"
         }
     ],
     "assignment" : "https://www.wa4e.com/assn/sql-tracks",
