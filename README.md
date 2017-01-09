@@ -54,7 +54,7 @@ some of the following values are the values I use on my MAMP:
     ... 
     
     $CFG->tool_folders = array("admin", "../tools", "../mod");
-    $CFG->install_folder = $CFG->dirroot.'/mod'; // Tsugi as a store
+    $CFG->install_folder = $CFG->dirroot.'./../mod'; // Tsugi as a store
     
     ...
     
