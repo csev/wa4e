@@ -6,11 +6,13 @@ Course materials for www.wa4e.com
 Setup On Localhost
 ------------------
 
-Here are the steps to set this up on localhost.
+Here are the steps to set this up on localhost on a Macintosh using MAMP.
+
+Install MAMP (or similar) using https://www.py4e.com/install.php
 
 Check out this repo into a top level folder in htdocs
 
-    cd htdocs
+    cd /Applications/MAMP/htdocs
     git clone https://github.com/csev/wa4e.git
 
 Go into the newly checked out folder and get a copy of Tsugi:
@@ -26,13 +28,15 @@ Create a database in your SQL server:
 
 Still in the tsugi folder set up config.php:
 
-    cp config.php config-dist.php
+    cp config-dist.php config.php
 
 Edit the config.php file and set up configuration.  Here are the values
 I use for WA4E on MAMP:
 
     $wwwroot = 'http://localhost:8888/wa4e/tsugi';   // Embedded Tsugi localhsot
     $CFG->pdo = 'mysql:host=127.0.0.1;port=8889;dbname=tsugi'; // MAMP
+    $CFG->dbuser    = 'ltiuser';
+    $CFG->dbpass    = 'ltipassword';
     $CFG->adminpw = 'short';
     $CFG->apphome = 'http://localhost:8888/wa4e';
     $CFG->context_title = "Web Applications for Everybody";
@@ -51,7 +55,10 @@ And this into Authorized redirect URIs:
 
     http://localhost/wa4e/tsugi/login.php
 
-It will give you a 'client ID' and 'client secret', add them to `config.php`
+Note: You do not need port numbers for either of these values in your Google
+configuration.
+
+Google will give you a 'client ID' and 'client secret', add them to `config.php`
 as follows:
 
     $CFG->google_client_id = '96..snip..oogleusercontent.com';
