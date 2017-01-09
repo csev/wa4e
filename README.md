@@ -30,19 +30,34 @@ Still in the tsugi folder set up config.php:
 
     cp config-dist.php config.php
 
-Edit the config.php file and set up configuration.  Here are the values
-I use for WA4E on MAMP:
+Edit the config.php file, scroll through and set up all the variables.  As you scroll through the file
+some of the following values are the values I use on my MAMP:
 
-    $wwwroot = 'http://localhost:8888/wa4e/tsugi';   // Embedded Tsugi localhsot
+    $wwwroot = 'http://localhost:8888/wa4e/tsugi';   // Embedded Tsugi localhost
+    
+    ...
+    
     $CFG->pdo = 'mysql:host=127.0.0.1;port=8889;dbname=tsugi'; // MAMP
     $CFG->dbuser    = 'ltiuser';
     $CFG->dbpass    = 'ltipassword';
+    
+    ...
+    
     $CFG->adminpw = 'short';
+    
+    ...
+    
     $CFG->apphome = 'http://localhost:8888/wa4e';
     $CFG->context_title = "Web Applications for Everybody";
     $CFG->lessons = $CFG->dirroot.'/../lessons.json';
+    
+    ... 
+    
     $CFG->tool_folders = array("admin", "../tools", "../mod");
     $CFG->install_folder = $CFG->dirroot.'/mod'; // Tsugi as a store
+    
+    ...
+    
     $CFG->servicename = 'WA4E';
 
 Then go to https://console.developers.google.com/apis/credentials and
