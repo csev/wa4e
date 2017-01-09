@@ -2,8 +2,14 @@
 use \Tsugi\Core\LTIX;
 use \Tsugi\UI\Output;
 
+// Help the installert through the setup process 
+require "check.php" ; 
+
 require_once "top.php";
 require_once "nav.php";
+
+// Help the installer through the setup process 
+require_once "tsugi/admin/sanity-db.php";
 ?>
 <div id="container">
 <div style="margin-left: 10px; float:right">
