@@ -40,6 +40,20 @@ if ( $assn && isset($assignments[$assn]) ) {
     $assn = $custom;
 }
 
+
+if ( $assn === false && isset($_GET["inherit"]) && isset($CFG->lessons) ) {
+    $l = new Lessons($CFG->lessons);
+    if ( $l ) {
+        $lti = $l->getLtiByRlid($_GET['inherit']);
+        if ( isset($lti->custom) ) foreach($lti->custom as $custom ) {
+            if (isset($custom->key) && isset($custom->value) && $custom->key == 'exercise' ) {
+                $assn = $custom->value;
+                Settings::linkSet('exercise', $assn);
+            }
+        }
+    }
+}
+
 // Get any due date information
 $dueDate = SettingsForm::getDueDate();
 // Let the assignment handle the POST

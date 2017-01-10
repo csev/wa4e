@@ -60,7 +60,7 @@ makes (all lower case) followed by 123. -->
 <ul>
 <li> Try to <a href="game.php">play the game</a> without
 logging in.</li>
-<li><a href="https://github.com/csev/php-intro/tree/master/code/rps"
+<li><a href="https://github.com/csev/wa4e/tree/master/code/rps"
 target="_blank">Source Code</a></li>
 <ul>
 </body>

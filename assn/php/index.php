@@ -59,7 +59,7 @@ Just make sure all the files are in a folder somewhere within
 DOCUMENT_ROOT and that all your testing uses <b>localhost</b> URLs
 like:
 <pre>
-http://localhost:8888/php-intro/php/index.php
+http://localhost:8888/wa4e/php/index.php
 </pre>
 If you turn in screen shots with <b>file://</b> in the URL you will 
 get zero points for the assignment.

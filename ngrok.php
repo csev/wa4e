@@ -21,9 +21,9 @@ internet.
 So while you can test your applications locally by connecting to the 
 "loop-back" address using "localhost" and urls like:
 <pre>
-http://localhost/php-intro/assn01/
-http://localhost:8080/php-intro/assn01/
-http://localhost:8888/php-intro/assn01/
+http://localhost/wa4e/assn01/
+http://localhost:8080/wa4e/assn01/
+http://localhost:8888/wa4e/assn01/
 </pre>
 So even if you knew the local IP (Internet Protocol) address of your computer, it is not possible 
 to connect from the internet to your computer due to a gateway or firewall.
