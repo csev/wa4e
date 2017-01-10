@@ -117,11 +117,17 @@
     "icon" : "fa-clone",
     "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
     "chapters" : "27",
-    "assignment" : "https://www.wa4e.com/install.php",
+    "assignment" : "https://www.wa4e.com/assn/install/",
     "videos" : {
         "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
         "youtube": "6kRMlfIBMCY"
     },
+    "references" : [
+        {
+            "title" : "Installation Handout",
+            "href" : "https://www.wa4e.com/install.php"
+        }
+    ],
     "lti" : {
         "title": "Peer Graded: Installation Screen Shots",
         "launch" : "mod/peer-grade/index.php",
