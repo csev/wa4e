@@ -50,6 +50,7 @@ CREATE TABLE Users (
   INDEX ( name )
 );
 
+To add the index after the table was created:
 ALTER TABLE Users ADD INDEX ( name )
 
 INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@umich.edu') ;
@@ -57,4 +58,3 @@ INSERT INTO Users (name, email) VALUES ('Sally', 'sally@umich.edu') ;
 INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@umich.edu') ;
 INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@umich.edu') ;
 INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
-
