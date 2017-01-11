@@ -1,4 +1,5 @@
 <?php
+use \Tsugi\Util\Net;
 use \Tsugi\Core\LTIX;
 use \Tsugi\UI\Output;
 
@@ -109,6 +110,7 @@ unless otherwise indicated.
 </p>
 <!--
 <?php
+echo("IP Address: ".Net::getIP()."\n");
 echo(Output::safe_var_dump($_SESSION));
 var_dump($USER);
 ?>
