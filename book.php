@@ -4,9 +4,7 @@ define('COOKIE_SESSION', true);
 require_once "tsugi/config.php";
 $LAUNCH = LTIX::session_start();
 $OUTPUT->header();
-echo("---------\n")
-$output->startBody();
-echo("---------\n")
+$OUTPUT->startBody();
 $OUTPUT->flashMessages();
 require_once("nav.php");
 ?>
