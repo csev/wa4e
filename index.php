@@ -3,11 +3,11 @@ use \Tsugi\Util\Net;
 use \Tsugi\Core\LTIX;
 use \Tsugi\UI\Output;
 
-// Help the installert through the setup process 
+// Help the installer through the setup process 
 require "check.php" ; 
 
-require_once "top.php";
-require_once "nav.php";
+require "top.php";
+require "nav.php";
 
 // Help the installer through the setup process 
 require_once "tsugi/admin/sanity-db.php";
@@ -117,12 +117,4 @@ var_dump($USER);
 -->
 </div>
 <?php 
-
-$foot = '
-<p style="font-size: 75%; margin-top: 5em;">
-Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</p>';
-
-$OUTPUT->setAppFooter($foot);
-
-$OUTPUT->footer();
+require "foot.php";

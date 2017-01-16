@@ -1,6 +1,6 @@
 <?php
-require_once "top.php";
-include("nav.php");
+require "top.php";
+require "nav.php";
 ?>
 <div id="container">
 <iframe	
@@ -9,4 +9,5 @@ marginheight="0" scrolling="auto"
 src="software.php">
 </iframe>
 </div>
-<?php $OUTPUT->footer();
+<?php 
+require "foot.php";
