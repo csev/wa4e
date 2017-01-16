@@ -22,14 +22,14 @@ and follow along to complete the tasks.  There are notes below the YouTube video
 You may want to print this page to have the notes as you follow the steps in the video.
 </p>
 <center>
-<iframe width="480" height="390" src="http://www.youtube.com/embed/CwwF801i5_4" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="390" src="https://www.youtube.com/embed/CwwF801i5_4" frameborder="0" allowfullscreen></iframe>
 </center>
 <p>
 <h3>Installation Notes</h3>
 <p>
 Download the installation package from:
 <pre>
-     <a href="http://mamp.info/" target="_new">http://mamp.info</a>
+     <a href="http://mamp.info/" target="_blank">http://mamp.info</a>
 </pre>
 It will download into your <b>Downloads</b> folder as a rather large ZIP file.  
 Depending on your browser, it may auto-extract 
@@ -72,7 +72,7 @@ Enter your name (lower case no spaces) and press "Create".   The screen will ref
 database will appear on the left navigation.  Congratulations - you have created your first
 database in MySql!
 <center>
-<a href="phpmyadmin-00-create-db.png" target="_new">
+<a href="phpmyadmin-00-create-db.png" target="_blank">
 <img src="phpmyadmin-00-create-db.png" width="540">
 </a>
 </center>
@@ -102,7 +102,7 @@ Create the folder <b>first</b> under the <b>htdocs</b> folder when you save the 
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost:8888/first/index.php" target="_new">http://localhost:8888/first/index.php</a>
+    <a href="http://localhost:8888/first/index.php" target="_blank">http://localhost:8888/first/index.php</a>
 </pre>
 </p>
 <p>
