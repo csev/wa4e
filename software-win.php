@@ -20,7 +20,7 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 <p>Alternatively: Download and install NotePad++ from this site.  
 </p>
 <p><a href="http://notepad-plus-plus.org/"
-target="_new">http://notepad-plus-plus.org/</a>
+target="_blank">http://notepad-plus-plus.org/</a>
 </p>
 <h3>Installing XAMPP</h3>
 <p>
@@ -34,9 +34,9 @@ Below the video is a link to download the entire high-quality video to your desk
 you can play it locally with QuickTime.
 </p>
 <center>
-<iframe width="480" height="390" src="http://www.youtube.com/embed/msF-XcJk3Bc" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="390" src="https://www.youtube.com/embed/msF-XcJk3Bc" frameborder="0" allowfullscreen></iframe>
 <p>
-Download Entire Video: <a href="http://afs.dr-chuck.com/courses/shared/podcasts/installing-xampp-windows.mov" target="_new">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
+Download Entire Video: <a href="http://afs.dr-chuck.com/courses/shared/podcasts/installing-xampp-windows.mov" target="_blank">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
 </p>
 </center>
 <p>
@@ -44,7 +44,7 @@ Download Entire Video: <a href="http://afs.dr-chuck.com/courses/shared/podcasts/
 <p>
 Download the installation package from:
 <pre>
-     <a href="http://www.apachefriends.org/en/xampp.html" target="_new">http://www.apachefriends.org/en/xampp.html</a>
+     <a href="http://www.apachefriends.org/en/xampp.html" target="_blank">http://www.apachefriends.org/en/xampp.html</a>
 </pre>
 I choose the "Installer" (i.e. neither the ZIP nor 7zip) installation package.  
 Download the package to your desktop and once the download is complete, run the installer,
@@ -77,7 +77,7 @@ you can press the "Admin..." button next to Apache to launch the XAMPP user inte
 Note that the "Admin..." button next to MySql seems not to function.  Don't worry about that.
 You could also bring up the XAMPP start screen by navigating your web browser to:
 <pre>
-     <a href="http://localhost/" target="_new">http://localhost/</a>
+     <a href="http://localhost/" target="_blank">http://localhost/</a>
 </pre>
 It should initially start with an XAMPP splash screen so you can select your language
 and then proceed to the XAMPP main screen with an orange navigation bar along the
@@ -85,7 +85,7 @@ right side.
 </p>
 <p>
 <center>
-<a href="xampp-win-02-startup.png" target="_new"><img 
+<a href="xampp-win-02-startup.png" target="_blank"><img 
 src="xampp-win-02-startup.png" width="540"/></a>
 </center>
 </p>
@@ -99,7 +99,7 @@ Enter your name (lower case no spaces) and press "Create".   The screen will ref
 database will appear on the left navigation.  Congratulations - you have created your first
 database in MySql!
 <center>
-<a href="phpmyadmin-00-create-db.png" target="_new">
+<a href="phpmyadmin-00-create-db.png" target="_blank">
 <img src="phpmyadmin-00-create-db.png" width="540">
 </a>
 </center>
@@ -131,7 +131,7 @@ are not running as the administrator.
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost/si572/index.php" target="_new">http://localhost/si572/index.php</a>
+    <a href="http://localhost/si572/index.php" target="_blank">http://localhost/si572/index.php</a>
 </pre>
 </p>
 <p>
@@ -193,12 +193,12 @@ download the entire high-quality video to your desktop so
 you can play it locally with QuickTime using the link below.
 </p>
 <center>
-<iframe width="480" height="390" src="http://www.youtube.com/embed/bIKg8uGqETI" 
+<iframe width="480" height="390" src="https://www.youtube.com/embed/bIKg8uGqETI" 
 frameborder="0" allowfullscreen></iframe>
 <p>
 Download Entire Video: 
 <a href="http://afs.dr-chuck.com/courses/shared/podcasts/fixing-php-ini-xampp-windows.mov"
-target="_new">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
+target="_blank">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
 </p>
 </center>
 
