@@ -14,8 +14,7 @@ PHP/MySql application, and explore that application briefly.
 We have separate pages for each of the commonly used Operating Systems:
 <ul>
 <li><a href="software-win.php">Setting up the XAMPP PHP/MySql Environment in Microsoft Windows</a>
-<li><a href="software-mac.php">Setting up the MAMP PHP/MySql Environment on a Macintosh</a> (suggested)
-<li><a href="software-mac-xampp.php">Setting up the XAMPP PHP/MySql Environment on a Macintosh</a> (if you have problems with MAMP)
+<li><a href="software-mac.php">Setting up the MAMP PHP/MySql Environment on a Macintosh</a>
 </ul>
 <p>
 You can use any software you like - I suggest XAMPP for Windows and MAMP for Macintosh because it seems as that these
