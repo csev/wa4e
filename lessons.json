@@ -388,8 +388,12 @@
     "chapters" : "27, 28, 31",
     "videos" : [
         {
-            "title" : "PHP Arrays",
-            "youtube" : "hEkuyEa_lK0"
+            "title" : "PHP Arrays - Part 1",
+            "youtube" : "bfXmkxSzdms"
+        },
+        {
+            "title" : "PHP Arrays - Part 2",
+            "youtube" : "2MVTZ3WY0As"
         },
         {
             "title" : "Using the Autograder",
