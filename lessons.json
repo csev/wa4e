@@ -128,17 +128,17 @@
     },
     {
         "title": "Installing XAMPP on Windows for PHP/MySQL",
-        "youtube": "msF-XcJk3Bc"
-    },
-    {
-        "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
-        "youtube": "6kRMlfIBMCY"
+        "youtube": "X0_pthMQPMM"
     }
     ],
     "references" : [
         {
             "title" : "Installation Handout",
             "href" : "https://www.wa4e.com/install.php"
+        },
+        {
+            "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
+            "href": "https://www.youtube.com/watch?v=6kRMlfIBMCY"
         }
     ],
     "lti" : {

@@ -13,14 +13,8 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 (or similar) bundle is much easier than installing all the components separately.
 </p>
 <h3>Pre-Requisite: Atom, NotePad++ or some other Programming Editor</h3>
-<p><b>Update:</b> We are now recommending Atom as the text editor to use:
 </p>
 <p><a href="https://atom.io/" target="_blank">https://atom.io/</a>
-</p>
-<p>Alternatively: Download and install NotePad++ from this site.  
-</p>
-<p><a href="http://notepad-plus-plus.org/"
-target="_blank">http://notepad-plus-plus.org/</a>
 </p>
 <h3>Installing XAMPP</h3>
 <p>
@@ -34,43 +28,39 @@ Below the video is a link to download the entire high-quality video to your desk
 you can play it locally with QuickTime.
 </p>
 <center>
-<iframe width="480" height="390" src="https://www.youtube.com/embed/msF-XcJk3Bc" frameborder="0" allowfullscreen></iframe>
-<p>
-Download Entire Video: <a href="http://afs.dr-chuck.com/courses/shared/podcasts/installing-xampp-windows.mov" target="_blank">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
-</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/X0_pthMQPMM" frameborder="0" allowfullscreen></iframe>
 </center>
 <p>
 <h3>Installation Notes</h3>
 <p>
 Download the installation package from:
 <pre>
-     <a href="http://www.apachefriends.org/en/xampp.html" target="_blank">http://www.apachefriends.org/en/xampp.html</a>
+     <a href="https://www.apachefriends.org/index.html" target="_blank">https://www.apachefriends.org/index.html</a>
 </pre>
 I choose the "Installer" (i.e. neither the ZIP nor 7zip) installation package.  
 Download the package to your desktop and once the download is complete, run the installer,
 and go through the installation steps.
 Make sure you are doing this on an administrator account.
 </p>
-<img src="xampp-win-01-panel.png" align="right"/>
 <h3>Starting the XAMPP Control Panel Application</h3>
 <p>
-Your installation hopefully places a shortcut to XAMPP on your desktop.  Make sure to not become
-confused looking at the installer or the control panel itself.  You can even discard 
-the installer file after it is installed.  If you did not put the control panel shortcut 
-on your desktop, you can find it under:
+If you installed XAMPP in the default location, you can find it at:
 <pre>
     <b>C:\XAMPP\xampp-control.exe</b>
 </pre>
-You can navigate to this through <b>Start -> My Computer -> C: -> xampp</b>.  You may 
-also be able to start XAMPP via <b>Start -> All Programs -> Apache Friends -> XAMPP Control
-Panel</b>.
+You can pin this to your task bar once it starts to make it easier to launch.
 </p>
 <p>
 You will need to Start both the Apache and MySql service.   
 When you press Start, you may be prompted for 
-some firewall settings or other trust dialog boxes.  Generally yu will only see 
-these trust dialogs once.
+some firewall settings or other trust dialog boxes.  Make sure to say 'yes' to these trust boxes.
+Generally you will only see these trust dialogs once.
 </p>
+<center>
+<a href="images/xampp-win-01-panel.png" target="_blank">
+<img src="images/xampp-win-01-panel.png" border="2px" width="50%"/>
+</a>
+</center>
 <p>
 Once you get two little green "Running" indicators (Apache and MySql) in the XAMPP control panel, 
 you can press the "Admin..." button next to Apache to launch the XAMPP user interface.
@@ -85,8 +75,8 @@ right side.
 </p>
 <p>
 <center>
-<a href="xampp-win-02-startup.png" target="_blank"><img 
-src="xampp-win-02-startup.png" width="540"/></a>
+<a href="images/xampp-win-02-startup.png" target="_blank"><img 
+src="images/xampp-win-02-startup.png" width="80%" border="2px"/></a>
 </center>
 </p>
 <!--
@@ -112,8 +102,8 @@ you should only modify or delete databases you created.
 -->
 <h3>Your First PHP Program</h3>
 <p>
-Open a text editor (i.e. NotePad++) and put the following text in the file
-putting your own name in instead of mine:
+Open a text editor (i.e. Atom) and put the following text in the file
+putting your own name or something elese uniquely identifying in instead of mine:
 <pre>
 &lt;h1&gt;Hello from Dr. Chuck's HTML Page&lt;/h1&gt;
 </pre>
@@ -122,22 +112,24 @@ just an HTML file.
 </p><p>
 Save this file as:
 <pre>
-    <b>C:\xampp\htdocs\si572\index.php</b>
+    <b>C:\xampp\htdocs\first\index.php</b>
 </pre>
-Create the folder <b>si572</b> under the <b>htdocs</b> folder when you save the file.  If you get
+Create the folder <b>first</b> under the <b>htdocs</b> folder when you save the file.  If you get
 a permissions error while creating the folder or saving the file it likely means that you either
 are not running as the administrator.
 </p>
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost/si572/index.php" target="_blank">http://localhost/si572/index.php</a>
+    <a href="http://localhost/first/index.php" target="_blank">http://localhost/first/index.php</a>
 </pre>
 </p>
 <p>
 And you should see your web page in your browser.
 <center>
-<img src="assn00-01-first-page-win.png">
+<a href="images/assn00-01-first-page-win.png" target="_blank">
+<img src="images/assn00-01-first-page-win.png" width="50%" border="2px">
+</a>
 </center>
 </p>
 <p>
@@ -158,7 +150,9 @@ After you save, press "Refresh" in your browser and it should appear as follows:
 </p>
 <p>
 <center>
-<img src="assn00-02-first-page-win.png">
+<a href="images/assn00-02-first-page-win.png" target="_blank">
+<img src="images/assn00-02-first-page-win.png" width="50%" border="2px">
+</a>
 </center>
 </p>
 <p>
@@ -166,52 +160,31 @@ Congratulations, you have written your first PHP program.
 </p>
 <h3>Displaying Syntax Errors</h3>
 <p>
-XAMPP usually comes configured by default <b>not</b> to display errors when you 
-make a mistake in your PHP code.  This is an appropriate setting for production 
-servers but very inconvienent when developing PHP code.
+XAMPP usually comes configured by default to display errors when you 
+make a mistake in your PHP code.  This is an appropriate setting 
+cwwhile developingdevelopers. 
 </p><p>
-The solution is to find and edit the <b>php.ini</b> file that controls
-the XAMPP configuration, search for the setting <b>display_errors</b> 
-and set the value to <b>On</b> and then restart your Apache server.
-</p>
-<p>
-The php.ini file is located by default here on XAMP on Windows
+To verify this, go into the XAMPP control panel and select 
+<b>Config</b> and then <b>php.ini</b>.  This will being up a NotePad
+with the PHP configuration.  Scroll down to verify that:
 <pre>
-c:\xampp\php\php.ini
+display_errors=On
 </pre>
-You can always find where php.ini is by looking at your PHPInfo screen.
-You should find and change the setting to be:
-<pre>
-display_errors = On
-</pre>
-</p>
-<p>
-There is a screen cast of this process below on YouTube.  The quality of the 
-YouTube version is not too good so you may want to 
-Also the text is difficult to read on the YouTube version.
-download the entire high-quality video to your desktop so 
-you can play it locally with QuickTime using the link below.
-</p>
 <center>
-<iframe width="480" height="390" src="https://www.youtube.com/embed/bIKg8uGqETI" 
-frameborder="0" allowfullscreen></iframe>
-<p>
-Download Entire Video: 
-<a href="http://afs.dr-chuck.com/courses/shared/podcasts/fixing-php-ini-xampp-windows.mov"
-target="_blank">QuickTime</a> <br/>(Right-Click or Control-Click and Save this file)
-</p>
+<a href="images/xampp-win-03-ini-notepad.png" target="_blank">
+<img src="images/xampp-win-03-ini-notepad.png" width="80%"border="2px">
+</a>
 </center>
-
-</div>
-<!-- Don't use footer because we don't want chat -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-423997-6");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
+</p>
+<p>
+If it is <b>Off</b> change it to <b>On</b> and then go back to the XAMPP
+Control Panel and stop and then restart the Apahce server.   Then go back to
+<b>Admin</b> page and check the <b>PHPInfo</b> page to make sure that 
+display_errors is indeed <b>On</b>.
+<center>
+<a href="images/xampp-win-04-php-info.png" target="_blank">
+<img src="images/xampp-win-04-php-info.png" width="80%" border="2px">
+</a>
+</center>
 </body>
 </html>
