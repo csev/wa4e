@@ -60,9 +60,21 @@ INSERT INTO Track (title, rating, len, count, album_id, genre_id)
 INSERT INTO Track (title, rating, len, count, album_id, genre_id)
     VALUES ('Who Made Who', 5, 207, 0, 1, 2);
 
-SELECT Track.title, Genre.name FROM Track JOIN Genre ON Track.genre_id = Genre.genre_id;
+SELECT Album.title, Artist.name FROM Album JOIN Artist ON
+    Album.artist_id = Artist.artist_id
 
-SELECT Track.title, Artist.name, Album.title, Genre.name FROM Track JOIN Genre JOIN Album ON Track.genre_id = Genre.genre_id and Track.album_id = Album.album_id JOIN Artist ON Album.artist_id = Artist.artist_id;
+SELECT Album.title, Album.artist_id, Artist.artist_id, Artist.name 
+    FROM Album JOIN Artist ON Album.artist_id = Artist.artist_id
+
+SELECT Track.title, Genre.name FROM Track JOIN Genre
+
+SELECT Track.title, Genre.name FROM Track JOIN Genre ON 
+    Track.genre_id = Genre.genre_id;
+
+SELECT Track.title, Artist.name, Album.title, Genre.name 
+    FROM Track JOIN Genre JOIN Album JOIN Artist 
+    ON Track.genre_id = Genre.genre_id AND Track.album_id = 
+    Album.album_id AND Album.artist_id = Artist.artist_id
 
 DELETE FROM Genre WHERE name = 'Metal'
 
@@ -75,13 +87,13 @@ CREATE DATABASE Learning DEFAULT CHARACTER SET utf8 ;
 USE Learning;   (Command line only)
 
 CREATE TABLE User (
-    user_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
+    user_id     INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email       VARCHAR(128) UNIQUE,
     name        VARCHAR(128)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
 CREATE TABLE Course (
-    course_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
+    course_id     INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title         VARCHAR(128) UNIQUE
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
