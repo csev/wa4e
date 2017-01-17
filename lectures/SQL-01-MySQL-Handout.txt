@@ -29,7 +29,7 @@ INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
 
 DELETE FROM Users WHERE email='ted@umich.edu'
 
-UPDATE Users SET name=Charles WHERE email='csev@umich.edu'
+UPDATE Users SET name='Charles' WHERE email='csev@umich.edu'
 
 SELECT * FROM Users
 
