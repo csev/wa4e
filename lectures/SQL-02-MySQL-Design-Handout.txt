@@ -45,16 +45,20 @@ CREATE TABLE Track (
 INSERT INTO Artist (name) VALUES ('Led Zepplin');
 INSERT INTO Artist (name) VALUES ('AC/DC');
 
-INSERT INTO Genre (name) VALUES ('Rock'); 
+INSERT INTO Genre (name) VALUES ('Rock');
 INSERT INTO Genre (name) VALUES ('Metal');
 
 INSERT INTO Album (title, artist_id) VALUES ('Who Made Who', 2);
 INSERT INTO Album (title, artist_id) VALUES ('IV', 1);
 
-INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Black Dog', 5, 297, 0, 2, 1);
-INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Stairway', 5, 482, 0, 2, 1);
-INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('About to Rock', 5, 313, 0, 1, 2);
-INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Who Made Who', 5, 207, 0, 1, 2);
+INSERT INTO Track (title, rating, len, count, album_id, genre_id)
+    VALUES ('Black Dog', 5, 297, 0, 2, 1);
+INSERT INTO Track (title, rating, len, count, album_id, genre_id)
+    VALUES ('Stairway', 5, 482, 0, 2, 1);
+INSERT INTO Track (title, rating, len, count, album_id, genre_id)
+    VALUES ('About to Rock', 5, 313, 0, 1, 2);
+INSERT INTO Track (title, rating, len, count, album_id, genre_id)
+    VALUES ('Who Made Who', 5, 207, 0, 1, 2);
 
 SELECT Track.title, Genre.name FROM Track JOIN Genre ON Track.genre_id = Genre.genre_id;
 
@@ -114,9 +118,9 @@ INSERT INTO Member (user_id, course_id, role) VALUES (3, 3, 0);
 
 SELECT User.name, Member.role, Course.title
   FROM User JOIN Member JOIN Course
-  ON Member.user_id = User.user_id 
+  ON Member.user_id = User.user_id
     AND Member.course_id = Course.course_id
-  ORDER BY Course.title, Member.role DESC, User.name 
+  ORDER BY Course.title, Member.role DESC, User.name
 
 
 
