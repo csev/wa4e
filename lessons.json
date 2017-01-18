@@ -393,7 +393,7 @@
     "title": "PHP Arrays",
     "anchor": "php-arrays",
     "icon" : "fa-bell",
-    "description": "We look at arrays and superglobals like $_GET in PHP language.",
+    "description": "We look at unique aspects of arrays in the PHP language.",
     "slides": "lectures/PHP-03-Arrays.ppt",
     "chapters" : "27, 28, 31",
     "videos" : [
@@ -437,10 +437,16 @@
     "slides": "lectures/PHP-04-Functions.ppt",
     "chapters" : "32",
     "videos" : 
+    [
         {
-            "title" : "PHP Functions",
-            "youtube" : "wYhw5pt7Kwg"
+            "title" : "PHP Functions - Part 1",
+            "youtube" : "qgVaMIXF5EQ"
         },
+        {
+            "title" : "PHP Functions - Part 2 - Scope and Modularity",
+            "youtube" : "1Msp1AGz_NU"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/crack/",
     "solution" : "https://www.wa4e.com/solutions/crack/",
     "lti" : {
