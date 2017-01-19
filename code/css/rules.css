@@ -1,0 +1,15 @@
+body {
+  font-family: arial, sans-serif;
+}
+h1 {
+  color: blue;
+}
+p {
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
