@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Fourth Dimension minus 1</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    div { 
+     width:10em; 
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="position.htm" class="back">&lArr; Position Blocks</a></li>
+<li><a href="navdetail.htm" class="forward">Inside the Navigation &rArr;</a></li>
+</ul>
+</nav>
+<h1>The Third Dimension (x,y,x)</h1>
+<div style="z-index:100; background-color: pink; position:absolute; top: 10px; right: 50%;">
+(1) A block can force itself to be shown over top of other
+material by having a larger <b>z-index</b>.
+</div>
+<div style="z-index: -100; background-color: orange; min-height: 120px; position:absolute; top: 20px; left: 0;">
+(2) We won't see see all of this because it will be 
+behind the rest of the text with a 
+<strong> z-index</strong> of -100. This was text (2)
+by the way.
+</div>
+<div style="background-color: yellow; position:absolute; top: 100px; right: 60%;">
+(3) When there is a background color (i.e. not transparent)
+overlapping blocks matter.
+</div>
+<div style="position: absolute; right: 10px;">
+(4) Like many things in CSS, it is important to carefully
+manage your use of <strong>z-index</strong> - especially when 
+you are using multiple CSS files from multiple sources and
+when you are using JavaScript or something like JQuery
+to tweak your markup.
+</div>
+
+<!-- We finally know how this sticky piece of navigation works! -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Go back to the
+<a href="index.htm">Starting page</a>.
+</p>
+</body>
