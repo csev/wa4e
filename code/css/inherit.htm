@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>*Cascading*</title>
+  <style>
+    body {
+      font-family: arial, sans-serif;
+    }
+    p {
+      border-style: dotted;
+      border-color: red !important;
+      border-width: 5px;
+      background-color: #EAECEE;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+  <style>
+    p {
+      border-style: solid;
+      border-color: green;
+    }
+  </style>
+</head>
+<body>
+<h1>Putting the "Cascasde" in CSS</h1>
+<p>
+Order matters.  The CSS rule that is "closest"
+to the tag wins unless a "further away" tag
+(i.e. border-color) marks itself as <b>!important</b>.
+</p>
+<p style="border-style: dashed; border-color: blue;">
+Even using the <strong>style</strong> attribute
+<em>right on the tag</em> fades in the face of
+the <strong>!important</strong> tag.
+</p>
+<p style="border-style: dashed; border-color: blue !important;">
+But you can always take local control using
+<strong>!important</strong> "closer" to the tag.
+</p>
+<p>
+Use <strong>!important</strong> sparingly.
+We tend to use it when we have a stylesheet provided
+by someone that we are using and cannot change.
+Sometimes it is compensating for a markup problem
+and it is bets to solve things without resorting 
+to <strong>!important</strong> if possible.
+</p>
+</body>
