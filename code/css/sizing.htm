@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Sizing Blocks</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    body {font-family: monospace;}
+    div { /* Defaults */
+     width:20em; 
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="inherit.htm" class="back">&lArr; "C" Stands for "Cascade"</a></li>
+<li><a href="position.htm" class="forward">Positioning Blocks &rArr;</a></li>
+</ul>
+</nav>
+<h1>Sizing Blocks</h1>
+<div>
+Width without height is pretty cool - text
+is autowrapped and the height just expands
+as necessary.
+</div>
+<div style="height: 3em;">
+Once you specify height, you are overriding the 
+natural way the browser sets height after 
+text wrapping.
+</div>
+<div style="height: 40px;">
+If you use pixels to set the height, your
+block may or may not resize as you use zoom
+to make the text larger or smaller.
+</div>
+<div style="height: 3em; overflow: scroll">
+You can tell the browser to add a little scrollbar
+if the text will not fit in the height you
+set.
+</div>
+<div style="height: 3em; overflow: scroll">
+No scroll if text fits.
+</div>
+<div style="height: 3em; overflow: hidden">
+Or you can say, just hide any text that would
+flow beyond the height.  Like where did 
+all this text go???
+</div>
+<div>
+For a puzzle, figure out why the body text
+is <strong>monospace</strong> while the 
+navigation bar is stll <strong>sans-serif</strong>.
+</div>
+
+<!-- Ignore this for now :) -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Go back to the
+<a href="index.htm">Starting page</a>.
+</p>
+</body>

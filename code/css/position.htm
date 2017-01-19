@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Positioning</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    div { 
+     width:10em; 
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="sizing.htm" class="back">&lArr; Sizing Blocks</a></li>
+<li><a href="position.htm" class="forward">Positioning Blocks &rArr;</a></li>
+</ul>
+</nav>
+<h1>Positioning</h1>
+<div>
+(1) By default, blocks of text
+just folow each other 
+</div>
+<div>
+(2) One after another.
+</div>
+<div style="position: relative; left: -20px; top: 20px;">
+(3) A relative position moves a block away from where it would normally
+lay out.
+</div>
+<div>
+(4) And text after that just lays out.  So be somewhat
+careful with relative.
+</div>
+<div style="border-color: green; position: fixed; bottom: 20px; left: 30%;">
+(5) Fixed text is relative to the <em>window</em>.
+It maintains its position even when the window is resized
+or scrolled. 
+A <a href="index.htm">link</a> that never goes away.
+</div>
+<div style="border-color: orange; position: absolute; top: 40px; left: 30%;">
+(6) Absolute text is relative to  its parent element.
+In this case the <strong>div</strong> is positioned
+relative to the <strong>body</strong> tag.
+It maintains its position even when the window is resized
+or scrolled.
+</div>
+<div>
+(7) In a sense, the <strong>fixed</strong> and
+<strong>absolute</strong> elements are 
+"plucked out" of the the normal render stream 
+and as such take up no vertical space.
+there is not any padding or margin
+left behind by these tags.
+</div>
+<div style="border-color: yellow; position: relative; left: -1000px;">
+(8) Where did this text go?
+</div>
+<div style="border-color: yellow;">
+(9) Why can't I see (8) but it took up space?
+</div>
+
+<!-- We finally know how this sticky piece of navigation works! -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Go back to the
+<a href="index.htm">Starting page</a>.
+</p>
+</body>
