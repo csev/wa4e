@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Gettin' Classy</title>
+  <style>
+    /* I wish this were the default */
+    body {
+      font-family: arial, sans-serif;
+    }
+    #first {
+      font-family: monospace;
+    }
+    #second {
+      color: green;
+    }
+    .morespace {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .shout {
+      text-transform: uppercase;
+    }
+    .loud {
+      color: red;
+    }
+    /* Paragraph tags within a tag with id */
+    #third p {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+<h1>Selecting and Styling Tags</h1>
+<div id="first">
+<p>
+To avoid putting too much into the
+<strong>style</strong> attribute,
+we can use the <strong>class</strong> and
+<strong>id</strong> attributes to style
+a subset of the tags.
+</p>
+<p class="morespace">
+An <strong>id</strong> tag must be unique 
+through the document while the 
+<strong>class</strong> tag can be used on 
+many tags throughout the document.
+</div>
+<div id="second">
+<p>
+We can use the <strong>class</strong>
+<span class="shout">all</span> throughout
+the <span class="shout">entire</span>
+document.
+</p>
+<p class="morespace">
+It is <strong class="shout">very cool</strong>
+to use classes.  The can be used on any tag.
+</p>
+<p class="shout loud">
+A tag can have more than one class!.
+</p>
+</div>
+<div id="third">
+<p>
+You can even use a hierarchical selection string 
+to style tags.
+</p>
+<p>
+In general it is nice to keep your HTML as clean
+and easily understood as possible.
+</p>
+</div>
+</body>
