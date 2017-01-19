@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>About that Nav Bar</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="position.htm" class="back">&lArr; Positioning Blocks</a></li>
+<li><a href="index.htm" class="forward">Back to the Start &rArr;</a></li>
+</ul>
+</nav>
+<h1>Inside the Navigation Bar</h1>
+<p>
+It is finally time to figure out how the Navigation bar works.
+</p>
+<p>
+Here is the CSS:
+<pre style="margin-left:3em;">
+body {
+  font-family: arial, sans-serif;
+}
+
+nav {
+    background-color: lightgray;
+    height : 3em;
+    font-family: arial, sans-serif;
+}
+
+nav ul { 
+    list-style-type: none;
+    padding-left: 0;
+    vertical-align: middle;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav li a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+}
+
+.forward {
+    position: absolute;
+    right: 20px;
+}
+
+</pre>
+</body>
