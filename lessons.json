@@ -123,7 +123,11 @@
     "chapters" : "7-14",
     "references" : [
         {
-            "title" : "HTML Sample Code",
+            "title" : "HTML Sample Code (Browse)",
+            "href" : "https://www.wa4e.com/code/html/"
+        },
+        {
+            "title" : "HTML Sample Code (Download)",
             "href" : "https://www.wa4e.com/code/html.zip"
         }
     ]
@@ -137,7 +141,11 @@
     "chapters" : "15-22",
     "references" : [
         {
-            "title" : "CSS Sample Code",
+            "title" : "CSS Sample Code (Browse)",
+            "href" : "https://www.wa4e.com/code/css"
+        },
+        {
+            "title" : "CSS Sample Code (Download)",
             "href" : "https://www.wa4e.com/code/css.zip"
         },
         {
