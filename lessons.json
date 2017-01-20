@@ -114,6 +114,34 @@
         }
     ]
 },
+{
+    "title": "HyperText Markup Language (HTML)",
+    "anchor": "html",
+    "icon" : "fa-html5",
+    "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
+    "slides": "lectures/Web-02-HTML.ppt",
+    "chapters" : "7-14",
+    "references" : [
+        {
+            "title" : "HTML Sample Code",
+            "href" : "https://www.wa4e.com/code/html.zip"
+        }
+    ]
+},
+{
+    "title": "Cascading Style Sheets (CSS)",
+    "anchor": "css",
+    "icon" : "fa-css3",
+    "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
+    "slides": "lectures/Web-03-CSS.ppt",
+    "chapters" : "15-22",
+    "references" : [
+        {
+            "title" : "CSS Sample Code",
+            "href" : "https://www.wa4e.com/code/css.zip"
+        }
+    ]
+},
 { 
     "title": "Installing PHP and SQL",
     "anchor": "install",
