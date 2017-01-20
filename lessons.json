@@ -132,7 +132,7 @@
     "title": "Cascading Style Sheets (CSS)",
     "anchor": "css",
     "icon" : "fa-css3",
-    "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
+    "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
     "slides": "lectures/Web-03-CSS.ppt",
     "chapters" : "15-22",
     "references" : [
