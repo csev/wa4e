@@ -15,6 +15,6 @@ marginheight="0" scrolling="auto"
 src="book.htm">
 </iframe>
 </div>
-<?php include("footer.php"); ?>
+<?php include("foot.php"); ?>
 </body>
 </html>
