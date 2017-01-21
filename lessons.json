@@ -121,6 +121,20 @@
     "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
     "slides": "lectures/Web-02-HTML.ppt",
     "chapters" : "7-14",
+    "videos" : [
+        {
+            "title" : "HTML - HyperText Markup Language (Part 1)",
+            "youtube" : "ZV9SG8unDYc"
+        },
+        {
+            "title" : "HTML - HyperText Markup Language (Part 2)",
+            "youtube" : "-pCB98FvdB8"
+        },
+        {
+            "title" : "HTML - Sample Code Walkthrough",
+            "youtube" : "b99aHsUi7Zk"
+        }
+    ], 
     "references" : [
         {
             "title" : "HTML Sample Code (Browse)",
