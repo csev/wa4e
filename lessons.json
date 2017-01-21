@@ -153,6 +153,16 @@
     "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
     "slides": "lectures/Web-03-CSS.ppt",
     "chapters" : "15-22",
+    "videos" : [
+        {
+            "title" : "CSS - Sample Code Walkthrough (Part 1)",
+            "youtube" : "SLiS4oQahuk"
+        },
+        {
+            "title" : "CSS - Sample Code Walkthrough (Part 2)",
+            "youtube" : "pzw7JnPCGdo"
+        }
+    ], 
     "references" : [
         {
             "title" : "CSS Sample Code (Browse)",
