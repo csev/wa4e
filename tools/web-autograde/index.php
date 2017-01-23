@@ -63,6 +63,7 @@ font-weight:bold;
 };
 </style>";
 $OUTPUT->bodyStart();
+$OUTPUT->topNav();
 
 // Settings button and dialog
 

@@ -144,6 +144,19 @@
             "title" : "HTML Sample Code (Download)",
             "href" : "https://www.wa4e.com/code/html.zip"
         }
+    ],
+    "lti" : [
+        {
+        "title" : "Autograder: HyperText Markup Language (HTML)",
+        "launch" : "tools/web-autograde/index.php",
+        "resource_link_id" : "html_01",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "a01.php"
+            }
+        ]
+        }
     ]
 },
 {
