@@ -177,6 +177,7 @@
             "youtube" : "pzw7JnPCGdo"
         }
     ], 
+    "assignment" : "https://www.wa4e.com/assn/css/",
     "references" : [
         {
             "title" : "CSS Sample Code (Browse)",
@@ -187,7 +188,11 @@
             "href" : "https://www.wa4e.com/code/css.zip"
         },
         {
-            "title" : "CSS Cheat Sheet",
+            "title" : "Web Developer Plugin by Chris Pedrick",
+            "href" : "https://chrispederick.com/"
+        },
+        {
+            "title" : "CSS Cheat Sheet by Leslie Frank",
             "href" : "http://www.lesliefranke.com/files/reference/csscheatsheet.html"
         }
     ],
