@@ -37,6 +37,34 @@ if ( tagExists($dom, 'div') ) $grade++;
 progressMessage($grade,$possgrade);
 
 $possgrade++;
+if ( tagExists($dom, 'strong') ) $grade++;
+progressMessage($grade,$possgrade);
+
+$possgrade++;
+$count = getTagCount($dom, 'b');
+if ( $count >= 1 ) {
+    badmessage('Found at least one b (bold) tag');
+} else {
+    $grade++;
+    goodmessage('Did not find any b (bold) tags');
+}
+progressMessage($grade,$possgrade);
+
+$possgrade++;
+if ( tagExists($dom, 'em') ) $grade++;
+progressMessage($grade,$possgrade);
+
+$possgrade++;
+$count = getTagCount($dom, 'i');
+if ( $count >= 1 ) {
+    badmessage('Found at least one i (italics) tag');
+} else {
+    $grade++;
+    goodmessage('Did not find any i (italics) tags');
+}
+progressMessage($grade,$possgrade);
+
+$possgrade++;
 $count = getTagCount($dom, 'span');
 if ( $count >= 1 ) {
     $grade++;
@@ -64,7 +92,7 @@ $possgrade++;
 $count = getTagCount($dom, 'a');
 if ( $count == 3 ) {
     $grade++;
-    goodmessage('Found three a tags');
+    goodmessage('Found three a (anchor) tags');
 } else {
     badmessage('Wanted three a (anchor) tags, found '.$count."\n");
 }
