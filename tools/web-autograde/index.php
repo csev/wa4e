@@ -21,12 +21,21 @@ $assignments = array(
     'colleen.php' => 'Colleen HTML Assignment 01'
 );
 
-$oldsettings = Settings::linkGetAll();
-
-$assn = Settings::linkGet('exercise');
 
 // Get any due date information
 $dueDate = SettingsForm::getDueDate();
+
+$assn = Settings::linkGet('exercise');
+if ( ! $assn || ! isset($assignments[$assn]) ) {
+    $rlid = isset($_GET['inherit']) ? $_GET['inherit'] : false;
+    if ( $rlid && isset($CFG->lessons) ) {
+        $l = new Lessons($CFG->lessons);
+        $assn = $l->getCustomWithInherit('exercise', $rlid);
+    } else {
+        $assn = LTIX::ltiCustomGet('exercise');
+    }
+    Settings::linkSet('exercise', $assn);
+}
 
 // Deal with the POST
 if ( isset($_FILES['html_01']) ) {
@@ -127,6 +136,13 @@ if ( $dueDate->message ) {
 Make sure that your code passes 
 the <a href="https://validator.w3.org/nu/" target="_blank">W3C HTML Validator</a>
 before submitting this assignment.
+</p>
+<p>
+Make sure your title tag in the HTML contains this:
+<pre>
+&lt;title&gt; ... <?= htmlentities(getTitleCheck()) ?> ... &lt;/title&gt;
+</pre>
+</p>
 <p>
 <form name="myform" enctype="multipart/form-data" method="post" action="<?= addSession('index.php') ?>">
 Please upload your file containing the HTML.
@@ -160,10 +176,18 @@ if (! $valid){
 
 // Make sure we catch fatal errors
 register_shutdown_function("fatalHandler");
+
+$titlematch = false;
 require($assn);
 
-echo ($grade .' out of ' . $possgrade ."\n\n");
-echo ("\n\nYour score is  " . $grade/$possgrade . "\n\n");
+echo("\n\nGrading Complete, your score is  " . $grade/$possgrade . "\n\n");
+
+if ( ! $titlematch ) {
+    badmessage("Since the title tag was not correct your grade is not recorded");
+    $OUTPUT->footer();
+    $ALL_GOOD = true; // Get the shutdown_function to chill
+    return;
+}
 
 $gradetosend = $grade/$possgrade;
 $scorestr = "Your answer is correct, score saved.";
@@ -187,8 +211,7 @@ if ( $retval === true ) {
     echo("</pre>\n");
 }
 
-$ALL_GOOD = true;
-
 $OUTPUT->footer();
 
+$ALL_GOOD = true; // Get the shutdown_function to chill
 

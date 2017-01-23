@@ -5,6 +5,86 @@ use \Tsugi\Util\LTI;
 use \Tsugi\Util\Net;
 use \Tsugi\Blob\BlobUtil;
 
+function getTitleCheck() {
+    global $USER, $LINK, $CONTEXT;
+    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+    if ( $USER->displayname !== false && strlen($USER->displayname) > 0 ) {
+        $check = $USER->displayname;
+    }
+    return $check;
+}
+
+function tagExists($dom, $tagname) {
+    try {
+        $nodes = $dom->getElementsByTagName($tagname);
+        if ($nodes->length>=1) {
+            goodmessage("Found $tagname tag");
+            return true;
+        }
+    } catch(Exception $ex) {
+        badmessage("Error looking for $tagname tag");
+        return false;
+    }
+    badmessage("Did not find $tagname tag...");
+    return false;
+}
+
+function progressMessage($grade, $possgrade) {
+    echo ($grade .' out of ' . $possgrade ."\n\n");
+}
+
+function getTag($dom, $tagname) {
+    try {
+        $nodes = $dom->getElementsByTagName($tagname);
+        if ($nodes->length >= 1 ) foreach ($nodes as $node) {
+            return $node;
+        }
+    } catch(Exception $ex) {
+        return false;
+    }
+    return false;
+}
+
+function getTagText($dom, $tagname) {
+    $node = getTag($dom, $tagname);
+    if ( $node ) return $node->nodeValue;
+    return $false;
+}
+
+function getTagCount($dom, $tagname) {
+    try {
+        $nodes = $dom->getElementsByTagName($tagname);
+        return $nodes->length;
+    } catch(Exception $ex) {
+        return false;
+    }
+    return false;
+}
+
+function titleCheck($dom) {
+    $title = getTagText($dom, 'title');
+    if ( ! $title ) return false;
+    if ( strpos($title, getTitleCheck()) !== false ) return true;
+    return false;
+}
+
+function doMessage($condition, $goodmessage=false, $badmessage=false) {
+    if ( $condition ) {
+        goodmessage($goodmessage);
+    } else { 
+        badmessage($badmessage);
+    }
+}
+
+function goodmessage($goodmessage=false) {
+    if ( $goodmessage ) echo("<span class=\"correct\">".htmlentities($goodmessage)."</span>\n");
+}
+
+function badmessage($badmessage=false) {
+    if ( $badmessage ) echo("<span class=\"incorrect\">".htmlentities($badmessage)."</span>\n");
+}
+
+
 /* Return:
  * (1) False - no data
  * (2) A string - it is an error
@@ -68,15 +148,19 @@ function validateHTML($data) {
             return false;
         }
 
+        $count = 0;
         foreach($json->messages as $item)
         {
-            if($item->type == "error")
+            if($item->type == 'error')
             {
-                // echo("Validator Output:\n");
-                // echo(htmlentities(LTI::jsonIndent($return)));
-                unset($_SESSION['html_data']);
-                return false;
+                $count++;
             }
+        }
+        if ( $count > 0 ) {
+           // echo("Validator Output:\n");
+           // echo(htmlentities(LTI::jsonIndent($return)));
+           unset($_SESSION['html_data']);
+           return false;
         }
     }
     return true;
