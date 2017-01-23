@@ -100,9 +100,8 @@ function fatalHandler() {
     }
     exit();
 }
-register_shutdown_function("fatalHandler");
 
-// Assume try / catch is in the script
+// Make sure we are configured
 if ( strlen($assn) < 1 || ! isset($assignments[$assn]) ) {
     if ( $USER->instructor ) {
         echo("<p>Please use settings to select an assignment for this tool.</p>\n");
@@ -124,6 +123,10 @@ if ( $dueDate->message ) {
     echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
 }
 ?>
+<p>
+Make sure that your code passes 
+the <a href="https://validator.w3.org/nu/" target="_blank">W3C HTML Validator</a>
+before submitting this assignment.
 <p>
 <form name="myform" enctype="multipart/form-data" method="post" action="<?= addSession('index.php') ?>">
 Please upload your file containing the HTML.
@@ -155,6 +158,8 @@ if (! $valid){
     return;
 }
 
+// Make sure we catch fatal errors
+register_shutdown_function("fatalHandler");
 require($assn);
 
 echo ($grade .' out of ' . $possgrade ."\n\n");
