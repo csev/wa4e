@@ -3,6 +3,7 @@ require_once "../config.php";
 
 use \Tsugi\Core\Settings;
 use \Tsugi\Core\LTIX;
+use \Tsugi\UI\Lessons;
 use \Tsugi\UI\SettingsForm;
 
 require_once "html_util.php";
