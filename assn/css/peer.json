@@ -1,0 +1,35 @@
+{
+  "title": "Cascading Style Sheets",
+  "description": "In this assignment you will develop a Cascading Style Sheet (CSS) to control, the look, feel, and layout of some provide HTML content.",
+  "grading": "This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment" : "http://www.wa4e.com/assn/css/",
+  "parts": [
+    {
+      "title": "Image (JPG or PNG) of your index.htm with the styling applied",
+      "type": "image"
+    },
+    {
+      "title": "The source code of your blocks.css file",
+      "type": "image"
+    },
+    {
+      "title": "Image (JPG or PNG) of your blocks.css passing the W3 CSS validator",
+      "type": "image"
+    },
+    {
+      "title": "Image (JPG or PNG) of your browser viewing www.brainyquote.com with all styles turned off",
+      "type": "image"
+    },
+    {
+      "title": "Image (JPG or PNG) of your browser at www.brainyquote.com inspecting the navigation element to find its background color",
+      "type": "image"
+    }
+  ],
+  "totalpoints": 10,
+  "instructorpoints": 4,
+  "peerpoints": 4,
+  "assesspoints": 1,
+  "minassess": 2,
+  "maxassess": 5,
+  "flag": true
+}
