@@ -1,4 +1,107 @@
-<? // do some grading
+<?php
+
+use \Tsugi\Core\LTIX;
+use \Tsugi\Util\LTI;
+use \Tsugi\Util\Net;
+use \Tsugi\Blob\BlobUtil;
+
+$oldgrade = $RESULT->grade;
+$grade = 0;
+$possgrade = 0;
+if ( isset($_FILES['html_01']) ) {
+
+    $fdes = $_FILES['html_01'];
+    $filename = isset($fdes['name']) ? basename($fdes['name']) : false;
+     // Check to see if they left off a file
+    if( $fdes['error'] == 4) {
+        $_SESSION['error'] = 'Missing file, make sure to select all files before pressing submit';
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+
+    $data = BlobUtil::uploadFileToString($fdes, false);
+    if ( $data === false ) {
+        $_SESSION['error'] = 'Could not retrieve file data';
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+
+    if ( count($data) > 250000 ) {
+        $_SESSION['error'] = 'Please upload a file less than 250K';
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+    
+    // Put the data into session to allow us to process this in the GET request
+    $_SESSION['html_data'] = $data;
+    header( 'Location: '.addSession('index.php') ) ;
+    return;
+}
+
+if ( $LINK->grade > 0 ) {
+    echo('<p class="alert alert-info">Your current grade on this assignment is: '.($LINK->grade*100.0).'%</p>'."\n");
+}
+
+if ( $dueDate->message ) {
+    echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
+}
+?>
+<p>
+<form name="myform" enctype="multipart/form-data" method="post" action="<?= addSession('index.php') ?>">
+Please upload your file containing the HTML.
+<p><input name="html_01" type="file"></p>
+<input type="submit">
+</form>
+</p>
+<?php
+
+if ( ! isset($_SESSION['html_data']) ) return;
+
+$data = $_SESSION['html_data'];
+unset($_SESSION['html_data']);
+echo("<pre>\n");
+// echo("Input HTML\n");
+// echo(htmlentities($data));
+// echo("\n");
+
+$val_error=false;
+if ( $CFG->OFFLINE ) {
+    echo("Skipped validator because we are offline\n");
+} else {
+    $validator = 'https://validator.w3.org/nu/?out=json&parser=html5';
+    echo("Sending ".strlen($data)." characters to the validator.\n$validator ...\n");
+    $return = Net::doBody($validator, "POST", $data, 
+        "Content-type: text/html; charset=utf-8\nUser-Agent: Autograder_www.wa4e.com");
+
+    echo(htmlentities(LTI::jsonIndent($return)));
+    $json = json_decode($return);
+    if ( !isset($json->messages) || ! is_array($json->messages) ) {
+        echo "<span>Did not get a correct response from the validator</span>\n";
+        echo "URL: ".htmlentities($validator)."\n";
+        echo "Data length: ".strlen($return)."\n";
+        echo("Validator Output:\n");
+        echo(htmlentities(LTI::jsonIndent($return)));
+        return;
+    }
+
+    foreach($json->messages as $item)
+    {
+        if($item->type == "error")
+        {
+            echo "<span>Found error</span>";
+            // echo("Validator Output:\n");
+            // echo(htmlentities(LTI::jsonIndent($return)));
+            $val_error=true;
+            break;
+        }
+    }
+}
+
+if ($val_error){
+  echo "Your code did not validate.  Please return to the W3 validator at validator.w3.org to check your code.";
+  return;
+}
+    echo "Validation success!\n";
     $dom = new DOMDocument;
     @$dom->loadHTML($data);
 
@@ -433,3 +536,31 @@ else
 print("<span>***Did not find footer tag!</span>");
 error_log("***Did not find footer tag!");
 }
+
+echo ($grade .' out of ' . $possgrade ."\n\n");
+echo ("\n\nYour score is  " . $grade/$possgrade . "\n\n");
+
+
+$gradetosend = $grade/$possgrade;
+$scorestr = "Your answer is correct, score saved.";
+
+if ( $oldgrade > $gradetosend ) {
+    $scorestr = "New score of $gradetosend is < than previous grade of $oldgrade, previous grade kept";
+    $gradetosend = $oldgrade;
+}
+
+// Use LTIX to send the grade back to the LMS.
+$debug_log = array();
+$retval = LTIX::gradeSend($gradetosend, false, $debug_log);
+
+if ( $retval === true ) {
+    echo($scorestr."\n\n");
+    } else if ( is_string($retval) ) {
+        echo("Grade not sent: ".$retval."\n\n");
+    } else {
+        echo("<pre>\n");
+        var_dump($retval);
+        echo("</pre>\n");
+    }
+
+

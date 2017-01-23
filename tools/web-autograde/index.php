@@ -5,6 +5,8 @@ use \Tsugi\Core\Settings;
 use \Tsugi\Core\LTIX;
 use \Tsugi\UI\SettingsForm;
 
+require_once "html_util.php";
+
 $LTI = LTIX::requireData();
 $p = $CFG->dbprefix;
 
@@ -16,7 +18,7 @@ if ( SettingsForm::handleSettingsPost() ) {
 // All the assignments we support
 $assignments = array(
     'a01.php' => 'HTML Validate',
-    'courseraHTML.php' => 'Autograde HTML Final Project'
+    'colleen.php' => 'Colleen HTML Assignment 01'
 );
 
 $oldsettings = Settings::linkGetAll();
@@ -26,10 +28,18 @@ $assn = Settings::linkGet('exercise');
 // Get any due date information
 $dueDate = SettingsForm::getDueDate();
 
-// Let the assignment handle the POST
-if ( (count($_POST) > 0 || count($_FILES) > 0 ) && $assn && isset($assignments[$assn]) ) {
-    require($assn);
-    return;
+// Deal with the POST
+if ( isset($_FILES['html_01']) ) {
+    $retval = checkHTMLPost();
+    if ( $retval === true ) {
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+    if ( is_string($retval) ) {
+         $_SESSION['error'] = $retval;
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
 }
 
 // View
@@ -57,7 +67,6 @@ echo('</span>');
 SettingsForm::start();
 SettingsForm::select("exercise", __('Please select an assignment'),$assignments);
 SettingsForm::dueDate();
-SettingsForm::done();
 SettingsForm::end();
 
 $OUTPUT->flashMessages();
@@ -94,14 +103,83 @@ function fatalHandler() {
 register_shutdown_function("fatalHandler");
 
 // Assume try / catch is in the script
-if ( $assn && isset($assignments[$assn]) ) {
-    include($assn);
-} else {
+if ( strlen($assn) < 1 || ! isset($assignments[$assn]) ) {
     if ( $USER->instructor ) {
         echo("<p>Please use settings to select an assignment for this tool.</p>\n");
     } else {
         echo("<p>This tool needs to be configured - please see your instructor.</p>\n");
     }
+    $OUTPUT->footer();
+    return;
+}
+
+
+$oldgrade = $RESULT->grade;
+
+if ( $LINK->grade > 0 ) {
+    echo('<p class="alert alert-info">Your current grade on this assignment is: '.($LINK->grade*100.0).'%</p>'."\n");
+}
+
+if ( $dueDate->message ) {
+    echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
+}
+?>
+<p>
+<form name="myform" enctype="multipart/form-data" method="post" action="<?= addSession('index.php') ?>">
+Please upload your file containing the HTML.
+<p><input name="html_01" type="file"></p>
+<input type="submit">
+</form>
+</p>
+<?php
+
+if ( ! isset($_SESSION['html_data']) ) {
+    $OUTPUT->footer();
+    return;
+}
+
+$grade = 0;
+$possgrade = 0;
+$data = $_SESSION['html_data'];
+unset($_SESSION['html_data']);
+echo("<pre>\n");
+// echo("Input HTML\n");
+// echo(htmlentities($data));
+// echo("\n");
+
+$valid= validateHTML($data);
+
+if (! $valid){
+    echo "Your code did not validate.  Please return to the W3 validator at validator.w3.org to check your code.";
+    $OUTPUT->footer();
+    return;
+}
+
+require($assn);
+
+echo ($grade .' out of ' . $possgrade ."\n\n");
+echo ("\n\nYour score is  " . $grade/$possgrade . "\n\n");
+
+$gradetosend = $grade/$possgrade;
+$scorestr = "Your answer is correct, score saved.";
+
+if ( $oldgrade > $gradetosend ) {
+    $scorestr = "New score of $gradetosend is < than previous grade of $oldgrade, previous grade kept";
+    $gradetosend = $oldgrade;
+}
+
+// Use LTIX to send the grade back to the LMS.
+$debug_log = array();
+$retval = LTIX::gradeSend($gradetosend, false, $debug_log);
+
+if ( $retval === true ) {
+    echo($scorestr."\n\n");
+} else if ( is_string($retval) ) {
+    echo("Grade not sent: ".$retval."\n\n");
+} else {
+    echo("<pre>\n");
+    var_dump($retval);
+    echo("</pre>\n");
 }
 
 $ALL_GOOD = true;
