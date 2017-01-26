@@ -1,33 +1,27 @@
-<?php
-    $oldguess = '';
-    $message = false;
-    if ( isset($_POST['guess']) ) {
-        // Trick for integer / numeric parameters
-        $oldguess = $_POST['guess'] + 0;
-        if ( $oldguess == 42 ) {
-            $message = "Great job!";
-        } else if ( $oldguess < 42 ) {
-            $message = "Too low";
-        } else  {
-            $message = "Too high...";
-        }
-    }
-?>
 <html>
 <head>
-    <title>A Guessing game</title>
+<title>Guessing Game for Charles Severance</title>
 </head>
-<body style="font-family: sans-serif;">
-<p>Guessing game...</p>
+<body>
+<h1>Welcome to my guessing game</h1>
+<p>
 <?php
-   if ( $message !== false )  {
-        echo("<p>$message</p>\n");
-    }
+  if ( ! isset($_GET['guess']) ) { 
+    echo("Missing guess parameter");
+  } else if ( strlen($_GET['guess']) < 1 ) {
+    echo("Your guess is too short");
+  } else if ( ! is_numeric($_GET['guess']) ) {
+    echo("Your guess is not a number");
+  } else if ( $_GET['guess'] < 42 ) {
+    echo("Your guess is too low");
+  } else if ( $_GET['guess'] > 42 ) {
+    echo("Your guess is too high");
+  } else {
+    echo("Congratulations - You are right");
+  }
 ?>
-<form method="post">
-   <p><label for="guess">Input Guess</label>
-   <input type="text" name="guess" id="guess" size="40"
-     value="<?= htmlentities($oldguess) ?>"/></p>
-   <input type="submit"/>
-</form>
+</p>
 </body>
+</html>
+  
+

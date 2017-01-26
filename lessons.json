@@ -552,10 +552,16 @@
         }
     ],
     "references" : 
+    [
         {
-            "title" : "Sample code",
-            "href" : "code/arrays.zip"
+            "title" : "Sample Array Code",
+            "href" : "code/arrays/"
         },
+        {
+            "title" : "Sample Array Code (Download)",
+            "href" : "code/arrays.zip"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/guess/",
     "solution" : "https://www.wa4e.com/code/arrays/guess.php?guess=12",
     "lti" : {
@@ -652,11 +658,16 @@
             "youtube" : "8zno_C_VMUE"
         }
     ],
-    "references" : 
+    "references" : [
         {
-            "title" : "Sample code",
+            "title" : "Sample Forms Code (Download)",
             "href" : "code/forms.zip"
         },
+        {
+            "title" : "Sample Forms Code",
+            "href" : "code/forms/"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/rps/",
     "solution" : "https://www.wa4e.com/solutions/rps",
     "lti" : [
