@@ -545,10 +545,6 @@
         {
             "title" : "PHP Arrays - Part 2",
             "youtube" : "2MVTZ3WY0As"
-        },
-        {
-            "title" : "Using the Autograder",
-            "youtube" : "95I-Yk0ltmE"
         }
     ],
     "references" : 
@@ -560,6 +556,10 @@
         {
             "title" : "Sample Array Code (Download)",
             "href" : "code/arrays.zip"
+        },
+        {
+            "title" : "Using NGROK and the Autograder",
+            "href" : "https://www.youtube.com/watch?v=95I-Yk0ltmE"
         }
     ],
     "assignment" : "https://www.wa4e.com/assn/guess/",
