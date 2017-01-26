@@ -169,6 +169,18 @@
     "chapters" : "15-22",
     "videos" : [
         {
+            "title" : "CSS - Cascading Style Sheets - (Part 1)",
+            "youtube" : "v6lfSzF8MuI"
+        },
+        {
+            "title" : "CSS - Cascading Style Sheets - (Part 2)",
+            "youtube" : "hEY4V_OWZAU"
+        },
+        {
+            "title" : "CSS - Cascading Style Sheets - (Part 3)",
+            "youtube" : "aA587wqx0B0"
+        },
+        {
             "title" : "CSS - Sample Code Walkthrough (Part 1)",
             "youtube" : "SLiS4oQahuk"
         },
