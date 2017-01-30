@@ -14,7 +14,7 @@ $json = loadPeer("peer.json");
 <p>
 You will transform from this:
 <center>
-<a href="start.htm" target="_blank">
+<a href="01-No-style.png" target="_blank">
 <img src="01-No-style.png" width="80%" border="2px"></a>
 </center>
 To this:
