@@ -46,7 +46,8 @@ Here are the tasks for this assignment.
 <li><p>Download this file <a href="start.htm" target="_blank">this file</a> and save it as 
 <b>index.htm</b>.  You will not change this file.
 <li><p>Download this file <a href="blocks.css" target="_blank">this file</a>
-into the same folder as the above file and edit it to make it look different.
+into the same folder as the above file, edit it and add the CSS rules so 
+it the HTML file looks like the above image when you refresh your browser.
 </p></li>
 <li><p>The four boxes have five pixel borders with different colors and five pixels 
 of margin and padding.  It is probably simplest to use fixed positioning to get the
