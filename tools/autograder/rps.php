@@ -8,6 +8,11 @@ line_out("Grading PHP-Intro Rock Paper Scissors");
 ?>
 <p>The specification for this assignment is:
 <a href="http://www.wa4e.com/assn/rps/" target="_blank">http://www.wa4e.com/assn/rps/</a></p>
+<p>If you need to run this grading program on an application that is running on your
+laptop or desktop computer with a URL like <strong>http://localhost...</strong> you
+will need to install and use the <a href="https://ngrok.com/" target="_blank">ngrok</a>
+application to get a temporary URL that can be used with this application.
+</p>
 <?php
 
 $grade = 0;

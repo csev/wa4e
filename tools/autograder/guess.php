@@ -38,7 +38,7 @@ must be in the &lt;title&gt; tag in all the pages of your application.
 <p>If you need to run this grading program on an application that is running on your
 laptop or desktop computer with a URL like <strong>http://localhost...</strong> you
 will need to install and use the <a href="https://ngrok.com/" target="_blank">ngrok</a>
-application to get a temporary URL that can be used with this application.
+application to get a temporary Internet-accessible URL that can be used with this application.
 </p>
 <?php
 
