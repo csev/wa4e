@@ -66,7 +66,7 @@ line_out("-- if your fields do not match these, the next tests will fail.");
 
 
 
-line_out("Attempting a bad login.");
+line_out("Attempting a bad login $account pass=meow123.");
 $form->setValues(array("who" => $account, "pass" => "meow123"));
 $crawler = $client->submit($form);
 markTestPassed('Submit bad login values to login.php');
