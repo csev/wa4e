@@ -558,8 +558,12 @@
             "href" : "code/arrays.zip"
         },
         {
-            "title" : "Using NGROK and the Autograder",
+            "title" : "Using NGROK and the Autograder (Macintosh)",
             "href" : "https://www.youtube.com/watch?v=2QdAqK7_dU0"
+        },
+        {
+            "title" : "Using NGROK and the Autograder (Windows-10)",
+            "href" : "https://www.youtube.com/watch?v=L4M58YLwXVI"
         }
     ],
     "assignment" : "https://www.wa4e.com/assn/guess/",
