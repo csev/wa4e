@@ -654,12 +654,24 @@
     "chapters" : "14, 27",
     "videos" : [
         {
-            "title" : "PHP Forms Part 1",
-            "youtube" : "2hA_PA_BCTY"
+            "title" : "PHP Forms (Part 1)",
+            "youtube" : "zVd5CS40lrU"
         },
         {
-            "title" : "PHP Forms Part 2",
-            "youtube" : "8zno_C_VMUE"
+            "title" : "PHP Forms - GET and POST (Part 2)",
+            "youtube" : "V1nC77E2QHQ"
+        },
+        {
+            "title" : "PHP Forms - Input Types (Part 3)",
+            "youtube" : "yEh5IrpEesc"
+        },
+        {
+            "title" : "PHP Forms - HTML Injection and Validation (Part 4) ",
+            "youtube" : "C5blJ7GtwYY"
+        },
+        {
+            "title" : "PHP Forms - MVC - (Part 5) ",
+            "youtube" : "VcdnOAFJ92w"
         }
     ],
     "references" : [
