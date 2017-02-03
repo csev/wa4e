@@ -765,10 +765,24 @@
     "slides": "lectures/PHP-05-Objects.ppt",
     "chapters" : "33",
     "videos" : 
+    [
         {
-            "title" : "PHP Objects",
-            "youtube" : "Wp54FO3N88c"
+            "title" : "PHP Objects - Part 1",
+            "youtube" : "9-Ch77JBKFQ"
         },
+        {
+            "title" : "PHP Objects - Defintition - Part 2",
+            "youtube" : "CKy3rXWAKdc"
+        },
+        {
+            "title" : "PHP Objects - Life Cycle - Part 3",
+            "youtube" : "kWYuUfyR5rc"
+        },
+        {
+            "title" : "PHP Objects - Inheritance - Part 4",
+            "youtube" : "zU6uil50Mkg"
+        }
+    ],
     "references" : 
         {
             "title" : "Sample code",
