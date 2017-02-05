@@ -1105,19 +1105,29 @@
     "slides": "lectures/JS-01-JavaScript.ppt",
     "videos" : [
         {
-            "title" : "Introduction to JavaScript",
-            "youtube" : "HPtDPZdiBUk"
+            "title" : "JavaScript - Part 1",
+            "youtube" : "AyIllqHSGoI"
         },
         {
-            "title" : "Bonus: Building JavaScript with with Brendan Eich",
-            "youtube" : "IPxQ9kEaF8c"
+            "title" : "JavaScript - Part 2",
+            "youtube" : "E5jTKLXz9OE"
+        },
+        {
+            "title" : "JavaScript - Part 3",
+            "youtube" : "jQQ88xzuBTU"
         }
     ],
     "references" : 
+    [
         {
             "title" : "Sample code",
             "href" : "code/javascript.zip"
         },
+        {
+            "title" : "Bonus: Building JavaScript with with Brendan Eich",
+            "href" : "https://www.youtube.com/watch?v=IPxQ9kEaF8c"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/res-profile/index.php",
     "solution" : "https://www.wa4e.com/solutions/res-profile/index.php",
     "lti" : [
@@ -1209,8 +1219,8 @@
     "slides": "lectures/JS-02-JavaScript-Objects.ppt",
     "videos" : 
         {
-            "title" : "JavaScript Objects",
-            "youtube" : "ZXhiyeP6acg"
+            "title" : "JavaScript Object Orientation",
+            "youtube" : "dPvjFwNl2fM"
         },
     "references" : 
         {
@@ -1226,19 +1236,29 @@
     "slides": "lectures/JS-03-JQuery.ppt",
     "videos" : [
         {
-            "title" : "Introductory JQuery",
-            "youtube" : "HuILi2alAUc"
+            "title" : "JQuery - Part 1",
+            "youtube" : "vCdsSaylTDM"
         },
         {
-            "title" : "Bonus: John Resig - Building JQuery",
-            "youtube" : "B7Aut4OUuvs"
+            "title" : "JQuery - Part 2",
+            "youtube" : "auVow0kWZCg"
+        },
+        {
+            "title" : "JQuery - Part 3",
+            "youtube" : "Cjrf7S-rsVk"
         }
     ],
     "references" : 
+    [
         {
             "title" : "Sample code",
             "href" : "code/jquery-01.zip"
         },
+        {
+            "title" : "Bonus: John Resig - Building JQuery",
+            "href" : "https://www.youtube.com/watch?v=B7Aut4OUuvs"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/res-position/index.php",
     "solution" : "https://www.wa4e.com/solutions/res-position/index.php",
     "lti" : [
@@ -1329,19 +1349,23 @@
     "slides": "lectures/JS-04-JSON.ppt",
     "videos" : [
         {
-            "title" : "Basic JSON",
+            "title" : "JSON - JavaScript Object Notation - JSON",
             "youtube" : "MUqGiqlmeGk"
         },
         {
-            "title" : "Implementing CRUD with JSON",
-            "youtube" : "ZL4HpKW16S4"
+            "title" : "JSON and PHP - Part 2",
+            "youtube" : "FC-xk7RVUNU"
         },
         {
-            "title" : "Bonus: Douglas Crockford - Discovering JSON",
-            "youtube" : "kc8BAR7SHJI"
+            "title" : "JSON and CRUD - Part 3",
+            "youtube" : "ZL4HpKW16S4"
         }
     ],
     "references" : [
+        {
+            "title" : "Bonus: Douglas Crockford - Discovering JSON",
+            "href" : "https://www.youtube.com/watch?v=kc8BAR7SHJI"
+        },
         {
             "title" : "Sample code - JSON",
             "href" : "code/json-01.zip"
