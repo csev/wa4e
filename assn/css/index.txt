@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
   <title>Blocks</title>
   <!-- Do not change this file - add your CSS styling 
        rules to the blocks.css file included below -->
   <link type="text/css" rel="stylesheet" href="blocks.css">
-<head>
 </head>
 <body>
 <div id="one">
@@ -30,8 +30,5 @@ small minds discuss people. - Eleanor Roosevelt
 Brainy Quotes
 </a>
 </p>
-</body>
-</body>
-</body>
 </body>
 </html>
