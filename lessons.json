@@ -797,12 +797,20 @@
     "slides": "lectures/PHP-06-MySQL-PDO.ppt",
     "videos" : [
         {
-            "title" : "PHP MySQL Part 1",
-            "youtube" : "OJsCXLlIHg8"
+            "title" : "PHP MySQL and PDO - Part 1",
+            "youtube" : "cmKxlLCL2-s"
         },
         {
-            "title" : "PHP MySQL Part 2",
-            "youtube" : "md3HInQM0eA"
+            "title" : "PHP MySQL and PDO - Part 2",
+            "youtube" : "M_Ai2gzBmWY"
+        },
+        {
+            "title" : "PHP MySQL and PDO - Part 3",
+            "youtube" : "L4atUHiyPzA"
+        },
+        {
+            "title" : "PHP MySQL and PDO - Part 4",
+            "youtube" : "FxoIOSZzlmk"
         }
     ],
     "references" : 
