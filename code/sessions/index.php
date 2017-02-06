@@ -5,7 +5,7 @@
 <head>
 </head>
 <body style="font-family: sans-serif;">
-<h1>Online Address Book</h1>
+<h1>Cool Application</h1>
 <?php 
     if ( isset($_SESSION["success"]) ) {
         echo('<p style="color:green">'.$_SESSION["success"]."</p>\n");
