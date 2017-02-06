@@ -926,7 +926,7 @@
     "solution" : "https://www.wa4e.com/solutions/cookies",
     "lti" : [
         {
-        "title": "Auto-Grader: Cookies and Session (TBD)", 
+        "title": "Auto-Grader: Cookies and Session", 
         "launch" : "tools/cookies/index.php",
         "resource_link_id" : "php_05_cookies"
         }
