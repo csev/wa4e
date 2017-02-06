@@ -901,11 +901,43 @@
         ]
 },
 {
-    "title": "PHP Sessions",
+    "title": "PHP Cookies and Sessions",
+    "anchor": "php-cookies",
+    "icon" : "fa-bell",
+    "description": "We look at how PHP uses cookies and manages session data.",
+    "slides": "lectures/PHP-07-Cookies-Sessions.ppt",
+    "chapters" : "27",
+    "videos" : [
+        {
+            "title" : "PHP Sessions Part 1",
+            "youtube" : "qBWyY21AkEk"
+        },
+        {
+            "title" : "PHP Sessions Part 2",
+            "youtube" : "raaGRMk6fr4"
+        }
+    ],
+    "references" : 
+        {
+            "title" : "Sample code",
+            "href" : "code/sessions.zip"
+        },
+    "assignment" : "https://www.wa4e.com/assn/cookies/",
+    "solution" : "https://www.wa4e.com/solutions/cookies",
+    "lti" : [
+        {
+        "title": "Auto-Grader: Cookies and Session (TBD)", 
+        "launch" : "tools/cookies/index.php",
+        "resource_link_id" : "php_05_cookies"
+        }
+    ]
+},
+{
+    "title": "PHP Routing, Redirect and Authentication",
     "anchor": "php-sessions",
     "icon" : "fa-bell",
-    "description": "We look at how PHP uses cookies and manages session data.  We also look at how we properly handle POST requests of form data in web applications.",
-    "slides": "lectures/PHP-07-Sessions-Cookies-Redirect.ppt",
+    "description": "We look at how PHP avoids double posting data, how falsh messages are implemented, and how we use a session to log in users in web applications.",
+    "slides": "lectures/PHP-08-POST-Redirect-Authn.ppt",
     "chapters" : "27",
     "videos" : [
         {
@@ -1009,7 +1041,7 @@
     "anchor": "php-crud",
     "icon" : "fa-bell",
     "description": "Now we buid our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
-    "slides": "lectures/PHP-08-CRUD.ppt",
+    "slides": "lectures/PHP-09-CRUD.ppt",
     "videos" : 
         {
             "title" : "Building a CRUD Application",
