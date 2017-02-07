@@ -34,6 +34,7 @@ if ( $row === false ) {
 $n = htmlentities($row['name']);
 $e = htmlentities($row['email']);
 $p = htmlentities($row['password']);
+$user_id = $row['user_id'];
 ?>
 <p>Edit User</p>
 <form method="post">
@@ -43,7 +44,7 @@ $p = htmlentities($row['password']);
 <input type="text" name="email" value="<?= $e ?>"></p>
 <p>Password:
 <input type="text" name="password" value="<?= $p ?>"></p>
-<input type="hidden" name="user_id" value="<?= $row['user_id'] ?>">
+<input type="hidden" name="user_id" value="<?= $user_id ?>">
 <p><input type="submit" value="Update"/>
 <a href="index.php">Cancel</a></p>
 </form>
