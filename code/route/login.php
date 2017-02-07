@@ -33,6 +33,7 @@
 <p>Account: <input type="text" name="account" value=""></p>
 <p>Password: <input type="text" name="pw" value=""></p>
 <!-- password is umsi -->
-<p><input type="submit" value="Log In"></p>
+<p><input type="submit" value="Log In">
+<a href="app.php">Cancel</a></p>
 </form>
 </body>
