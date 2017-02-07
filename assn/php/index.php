@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <?php
 require_once("../assn_util.php");
 $json = loadPeer("peer.json");
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 <title>Assignment: <?= $json->title ?></title>
@@ -44,15 +44,16 @@ same folder as your <b>index.php</b>.
 </li>
 </ul>
 You must run these files in your PHP server.  Make a folder under your
-<strong>DOCUMENT_ROOT</strong> and then make sure your files are in that file.
-Sample DOCUMENT_ROOT values for some servers:
+<strong>htdocs</strong> folder and then place your files in that file.
+The htdocs folder is in different locations depending on your web server:
 <pre>
-DOCUMENT_ROOT: c:\xampp\htdocs
-DOCUMENT_ROOT: /Applications/MAMP/htdocs
+XAMPP: c:\xampp\htdocs
+MAMP:  /Applications/MAMP/htdocs
 </pre>
-You can check the DOCUMENT_ROOT value for your server by scrolling 
-down in your PHPInfo output.  You may have changed a setting in your PHP 
-server to move the DOCUMENT_ROOT and that is OK as well.
+You can check the htdocs (a.k.a. DOCUMENT_ROOT) value for your server 
+by scrolling down in your PHPInfo output.  You may have changed a 
+setting in your PHP server to move the DOCUMENT_ROOT to another
+location and that is OK as well.
 </p>
 <p>
 Just make sure all the files are in a folder somewhere within

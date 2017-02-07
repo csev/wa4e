@@ -58,9 +58,8 @@ and published by
 target="_blank">Open SUNY Textbooks</a>.
 <li>Lectures and materials on Expressions, Control Flow, Arrays, Functions, and Forms
 <a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
-<li>Sample code for a 
-<a href="https://github.com/csev/wa4e/tree/master/code/crack"
-target="_blank">similar digest cracking application</a>.   You can play with this application
+<li>Partially working sample code.
+You can play with this application
 at <a href="http://www.wa4e.com/code/crack/" target="_blank">http://www.wa4e.com/code/crack/</a>
 and download a ZIP of the code at 
 <a href="http://www.wa4e.com/code/crack.zip" target="_blank">http://www.wa4e.com/code/crack.zip</a>.
