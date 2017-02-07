@@ -5,7 +5,7 @@
         if ( $_POST['pw'] == 'umsi' ) {
             $_SESSION["account"] = $_POST["account"];
             $_SESSION["success"] = "Logged in.";
-            header( 'Location: index.php' ) ;
+            header( 'Location: app.php' ) ;
             return;
         } else {
             $_SESSION["error"] = "Incorrect password.";
