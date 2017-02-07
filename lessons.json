@@ -941,18 +941,18 @@
     "chapters" : "27",
     "videos" : [
         {
-            "title" : "PHP Sessions Part 1",
+            "title" : "PHP Routing Part 1",
             "youtube" : "qBWyY21AkEk"
         },
         {
-            "title" : "PHP Sessions Part 2",
+            "title" : "PHP Routing Part 2",
             "youtube" : "raaGRMk6fr4"
         }
     ],
     "references" : 
         {
             "title" : "Sample code",
-            "href" : "code/sessions.zip"
+            "href" : "code/route.zip"
         },
     "assignment" : "https://www.wa4e.com/assn/autosess/",
     "solution" : "https://www.wa4e.com/solutions/autosess",
