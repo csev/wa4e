@@ -945,12 +945,16 @@
     "chapters" : "27",
     "videos" : [
         {
-            "title" : "PHP Routing Part 1",
-            "youtube" : "qBWyY21AkEk"
+            "title" : "PHP HTTP Redirects - Part 1",
+            "youtube" : "1T6etywegfQ"
         },
         {
-            "title" : "PHP Routing Part 2",
-            "youtube" : "raaGRMk6fr4"
+            "title" : "PHP Post / Redirect - Part 2",
+            "youtube" : "bIkqNHyj25w"
+        },
+        {
+            "title" : "PHP - Flash Messages / Authentication - Part 3",
+            "youtube" : "43Sc0s70oTU"
         }
     ],
     "references" : 
