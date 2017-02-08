@@ -909,12 +909,16 @@
     "chapters" : "27",
     "videos" : [
         {
-            "title" : "PHP Sessions Part 1",
-            "youtube" : "qBWyY21AkEk"
+            "title" : "PHP Cookies Part 1",
+            "youtube" : "WvGPeF-qHHQ"
         },
         {
             "title" : "PHP Sessions Part 2",
-            "youtube" : "raaGRMk6fr4"
+            "youtube" : "DbHZ5THxt4s"
+        },
+        {
+            "title" : "PHP Sessions without Cookies - Part 3",
+            "youtube" : "syGzIkBLBGs"
         }
     ],
     "references" : 
