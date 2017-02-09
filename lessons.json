@@ -943,6 +943,10 @@
         {
             "title" : "PHP Sessions without Cookies - Part 3",
             "youtube" : "syGzIkBLBGs"
+        },
+        {
+            "title" : "PHP Cookies Code Walkthrough",
+            "youtube" : "SDWT4tKJ4I"
         }
     ],
     "references" : 
@@ -979,6 +983,18 @@
         {
             "title" : "PHP - Flash Messages / Authentication - Part 3",
             "youtube" : "43Sc0s70oTU"
+        },
+        {
+            "title" : "PHP - Routing Code Walkthrough - Part 1",
+            "youtube" : "LIP8L-oPIMk"
+        },
+        {
+            "title" : "PHP - Routing Code Walkthrough - Part 2",
+            "youtube" : "I-RPKB7lvpM"
+        },
+        {
+            "title" : "PHP - Routing Code Walkthrough - Part 1",
+            "youtube" : "u9HBObWvJlw"
         }
     ],
     "references" : 
