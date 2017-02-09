@@ -19,7 +19,7 @@
 <body style="font-family: sans-serif;">
 <?php
     $guess = isset($_SESSION['guess']) ? $_SESSION['guess'] : '';
-    $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+    $message = isset($_SESSION['message']) ? $_SESSION['message'] : false;
 ?>
 <p>Guessing game...</p>
 <?php
@@ -29,7 +29,7 @@
 ?>
 <form method="post">
    <p><label for="guess">Input Guess</label>
-   <input type="text" name="guess" id="guess" size="40" 
+   <input type="text" name="guess" id="guess" size="40"
 <?php
    echo 'value="' . htmlentities($guess) . '"';
 ?>

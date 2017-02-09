@@ -1,5 +1,4 @@
 <?php
-    session_start();
     if ( isset($_POST['where']) ) {
         if ( $_POST['where'] == '1' ) {
             header("Location: redir1.php");
