@@ -1091,10 +1091,16 @@
     "description": "Now we buid our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
     "slides": "lectures/PHP-09-CRUD.ppt",
     "videos" : 
+    [
         {
             "title" : "Building a CRUD Application",
             "youtube" : "kkJwbRaVKV4"
         },
+        {
+            "title" : "Code Walkthrough - CRUD Application",
+            "youtube" : "AHjb2p7hyhc"
+        }
+    ],
     "references" : 
         {
             "title" : "Sample code",
