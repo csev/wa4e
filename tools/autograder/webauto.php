@@ -151,7 +151,15 @@ function webauto_test_passed($grade, $url) {
     } else {
         error_log("No status");
     }
+
     return true;
+}
+
+function autoToggle() {
+    global $div_id;
+    echo("<script>dataToggle('$div_id');</script>\n");
+    $div_id--;
+    echo("<script>dataToggle('$div_id');</script>\n");
 }
 
 function webauto_check_title($crawler) {

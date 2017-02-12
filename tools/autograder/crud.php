@@ -259,6 +259,8 @@ while ( $i-- > 0 ) {
 $perfect = 25;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
 
+if ( $score < 1.0 ) autoToggle();
+
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles so this grade is not official");
     return;

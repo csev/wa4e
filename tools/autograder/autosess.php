@@ -188,6 +188,8 @@ webauto_search_for($html, "Please Log In");
 $perfect = 28;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
 
+if ( $score < 1.0 ) autoToggle();
+
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles or the student name is missing");
     error_out("so no grade was sent.");

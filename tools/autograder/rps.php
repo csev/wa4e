@@ -187,6 +187,8 @@ for ( $i=0; $i<5; $i++) {
 $perfect = 17;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
 
+if ( $score < 1.0 ) autoToggle();
+
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles so this grade was not sent");
     return;

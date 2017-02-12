@@ -53,6 +53,8 @@ if ( $USER->displayname && stripos($h1,$USER->displayname) !== false ) {
 $perfect = 2;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
 
+if ( $score < 1.0 ) autoToggle();
+
 // Send grade
 if ( $score > 0.0 ) webauto_test_passed($score, $url);
 
