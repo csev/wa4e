@@ -16,8 +16,8 @@ class MyClass
 
 $obj = new MyClass();
 echo $obj->pub."\n"; // Works
-echo $obj->pro."\n"; // Fatal Error
-echo $obj->priv."\n"; // Fatal Error
+// echo $obj->pro."\n"; // Fatal Error
+// echo $obj->priv."\n"; // Fatal Error
 $obj->printHello(); // Shows Public, Protected and Private
 
 class MyClass2 extends MyClass
