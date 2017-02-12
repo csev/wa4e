@@ -1,4 +1,8 @@
 This folder cannot be executed from www.wa4e.com, 
 please download the ZIP file for this sample code
+or grab a copy from github:
+
+https://github.com/csev/wa4e/tree/master/code
+
 and run it on your local server.
 
