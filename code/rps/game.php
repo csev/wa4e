@@ -8,7 +8,7 @@ if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {
 // If the user requested logout go back to index.php
 if ( isset($_POST['logout']) ) {
     header('Location: index.php');
-    exit();
+    return;
 }
 
 // Set up the values for the game...
@@ -49,7 +49,7 @@ $result = check($computer, $human);
 <body>
 <div class="container">
 <h1>Rock Paper Scissors</h1>
-<?php 
+<?php
 if ( isset($_REQUEST['name']) ) {
     echo "<p>Welcome: ";
     echo htmlentities($_REQUEST['name']);

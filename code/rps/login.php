@@ -20,7 +20,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
         if ( $check == $stored_hash ) {
             // Redirect the browser to game.php
             header("Location: game.php?name=".urlencode($_POST['who']));
-            exit();
+            return;
         } else {
             $failure = "Incorrect password";
         }
