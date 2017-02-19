@@ -7,7 +7,8 @@ $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
 $set->addLeft('Get Started', $R.'install.php');
 if ( isset($CFG->lessons) ) {
-    $set->addLeft('Lessons', $T.'lessons.php');
+    // $set->addLeft('Lessons', $T.'lessons.php');
+    $set->addLeft('Lessons', $T.'lessons');
 }
 $set->addLeft('YouTube', 'https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX');
 if ( isset($_SESSION['id']) ) {
