@@ -83,13 +83,58 @@ if ( isset($_FILES['json']) ) {
     $user_table = $tables['user_table'];
     $member = $tables['member'];
 
+    // Check sanity
+    if ( count($course_table) < 1 ) {
+        $_SESSION['error'] = "Course table is empty";
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+    if ( count($user_table) < 1 ) {
+        $_SESSION['error'] = "User table is empty";
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+
+    if ( count($member) < 1 ) {
+        $_SESSION['error'] = "Member table is empty";
+        header( 'Location: '.addSession('index.php') ) ;
+        return;
+    }
+
+    // Make sure columns are present
+    $n = 0;
+    foreach($user_table as $u) {
+        $n++;
+        if ( isset($u['user_id']) && isset($u['name']) ) {
+            // Good
+        } else {
+            $_SESSION['error'] = "Could not find user_id and name columns in row $n in the user table";
+            header( 'Location: '.addSession('index.php') ) ;
+            return;
+        }
+    }
+
+    $n = 0;
+    foreach($course_table as $c) {
+        $n++;
+        if ( isset($c['course_id']) && isset($c['title']) ) {
+            // Good
+        } else {
+            $_SESSION['error'] = "Could not find course_id and title columns in row $n in the course table";
+            header( 'Location: '.addSession('index.php') ) ;
+            return;
+        }
+    }
+
     // Run the joins...
     $new = array();
+    $n = 0;
     foreach($member as $m) {
+        $n++;
         if ( isset($m['course_id']) && isset($m['user_id']) && isset($m['role']) ) {
             // Good
         } else {
-            $_SESSION['error'] = 'Could not find user_id, course_id, or role in member table';
+            $_SESSION['error'] = "Could not find user_id, course_id, or role in row $n of the member table";
             header( 'Location: '.addSession('index.php') ) ;
             return;
         }
