@@ -15,6 +15,8 @@ if ( isset($_SESSION['id']) ) {
 	if ( isset($CFG->disqushost) ) $set->addLeft('Discuss', $T.'discuss.php');
 	else if ( isset($CFG->disquschannel) ) $set->addLeft('Discuss', $CFG->disquschannel);
 	$set->addLeft('Assignments', $T.'assignments.php');
+} else {
+    $set->addLeft('Materials', $R.'materials.php');
 }
 
 
@@ -25,6 +27,7 @@ if ( isset($_SESSION['id']) ) {
         $submenu->addLink('Map', $T.'map.php');
     }
     $submenu->addLink('Badges', $T.'badges.php');
+    $set->addLeft('Materials', $R.'materials.php');
     if ( $CFG->DEVELOPER ) {
         $submenu->addLink('Test LTI Tools', $T . 'dev.php');
     }
