@@ -34,7 +34,7 @@ if ( isset($_POST['cookie']) && isset($_POST['session']) ) {
     }
 
     $RESULT->gradeSend($score);
-    if ( $scoer >= 1.0 ) {
+    if ( $score >= 1.0 ) {
         $_SESSION['success'] = 'Assignment completed';
     } else {
         $_SESSION['error'] = $error . ' Score=' . $score;
