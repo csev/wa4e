@@ -29,6 +29,7 @@ flush();
 $client = new Client();
 $client->setMaxRedirects(5);
 
+try {
 $crawler = $client->request('GET', $url);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
@@ -183,7 +184,17 @@ markTestPassed('index..php page retrieved');
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 webauto_search_for($html, "Please Log In");
-
+} catch (Exception $ex) {
+    error_out("The autograder did not find something it was looking for in your HTML - test ended.");
+    error_out("Usually the problem is in one of the pages returned from your application.");
+    error_out("Use the 'Toggle' links above to see the pages returned by your application.");
+    error_log($ex->getMessage());
+    error_log($ex->getTraceAsString());
+    $detail = "This indicates the source code line where the test stopped.\n" .
+        "It may not make any sense without looking at the source code for the test.\n".
+        'Caught exception: '.$ex->getMessage()."\n".$ex->getTraceAsString()."\n";
+    showHTML("Internal error detail.",$detail);
+}
 
 $perfect = 28;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
