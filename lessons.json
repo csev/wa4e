@@ -954,8 +954,6 @@
             "title" : "Sample code",
             "href" : "code/sessions.zip"
         },
-    "assignment" : "https://www.wa4e.com/assn/cookies/",
-    "solution" : "https://www.wa4e.com/solutions/cookies",
     "lti" : [
         {
         "title": "Auto-Grader: Cookies and Session", 
