@@ -256,6 +256,15 @@ POST-Redirect pattern similar to the following:
 src="05-POST-Redirect.png" border="2"/>
 </center>
 </p>
+Some browsers don't actually show two separate requests for the post-redirect.
+Instead they show the POST and Redirect on the same line.
+They might produce a screen like the following:
+<p>
+<center>
+<img alt="Image of a POST-Redirect pattern in the developer console" style="width: 95%"
+src="06-POST-Redirect.png" border="2"/>
+</center>
+</p>
 <p>
 Provided by: <a href="http://www.wa4e.com/" target="_blank">
 www.wa4e.com</a> <br/>
