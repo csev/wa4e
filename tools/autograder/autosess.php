@@ -136,6 +136,8 @@ $link = $crawler->selectLink('Add New')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
+$html = $crawler->html();
+showHTML("Show retrieved page",$html);
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
 
