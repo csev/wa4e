@@ -213,8 +213,9 @@ function webauto_get_form_button($crawler,$text)
         markTestPassed('Found form with "'.$text.'" button');
         return $form;
     } catch(Exception $ex) {
-        error_out('Did not find form with a "'.$text.'" button');
-        return false;
+        $msg = 'Did not find form with a "'.$text.'" button';
+        error_out($msg);
+        throw new Exception($msg);
     }
 }
 
