@@ -81,7 +81,7 @@ showHTML("Show retrieved page",$html);
 
 // Doing a log in
 line_out('Looking for the form with a value="Log In" submit button');
-$form = $crawler->selectButton('Log In')->form();
+$form = webauto_get_form_button($crawler,'Log In');
 line_out("-- this autograder expects the log in form field names to be:");
 line_out("-- email and pass");
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -105,7 +105,7 @@ showHTML("Show retrieved page",$html);
 
 // Add new fail
 line_out('Looking for the form with a value="Add" submit button in add.php');
-$form = $crawler->selectButton('Add')->form();
+$form = webauto_get_form_button($crawler,'Add');
 line_out("-- this autograder expects the form field names to be:");
 line_out("-- ".$fieldlist);
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -126,7 +126,7 @@ if ( strpos(strtolower($html), 'are required') !== false ) {
 
 // Add new success
 line_out('Looking for the form with a value="Add" submit button in add.php');
-$form = $crawler->selectButton('Add')->form();
+$form = webauto_get_form_button($crawler,'Add');
 line_out("-- this autograder expects the form field names to be:");
 line_out("-- ".$fieldlist);
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -167,7 +167,7 @@ markTestPassed("Retrieved $editlink");
 showHTML("Show retrieved page",$html);
 
 line_out('Looking for the form with a value="Save" submit button');
-$form = $crawler->selectButton('Save')->form();
+$form = webauto_get_form_button($crawler,'Save');
 line_out("Changing $firststringfield to be 42");
 $xsubmit = $submit;
 $xsubmit[$firststringfield] = 42;
@@ -201,7 +201,7 @@ showHTML("Show retrieved page",$html);
 
 // Do the Delete
 line_out('Looking for the form with a value="Delete" submit button');
-$form = $crawler->selectButton('Delete')->form();
+$form = webauto_get_form_button($crawler,'Delete');
 $crawler = $client->submit($form);
 markTestPassed("Submitted form on delete.php");
 $html = $crawler->html();
@@ -232,7 +232,7 @@ while ( $i-- > 0 ) {
 
     // Do the Delete
     line_out('Looking for the form with a value="Delete" submit button');
-    $form = $crawler->selectButton('Delete')->form();
+    $form = webauto_get_form_button($crawler,'Delete');
     $crawler = $client->submit($form);
     checkPostRedirect($client);
     $html = $crawler->html();
