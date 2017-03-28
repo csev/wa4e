@@ -239,6 +239,9 @@ foreach($json->parts as $part ) {
 ?>
 </ol>
 </p>
+<p>
+See the sample screenshots below to see how to show a POST-Redirect-GET happenned.
+</p>
 <h2>Grading</h2>
 <p>
 <?= $json->grading ?>
