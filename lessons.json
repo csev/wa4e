@@ -1158,11 +1158,11 @@
       "type":"image"
     },
     {
-      "title":"A screen shot (including the URL) of your view.php showing a successful delete.",
+      "title":"A screen shot (including the URL) of your index.php showing a successful delete.",
       "type":"image"
     },
     {
-      "title":"Source code of index.php (or view.php)",
+      "title":"Source code of index.php",
       "type":"code",
       "language":"php"
     },
