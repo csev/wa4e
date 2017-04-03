@@ -966,7 +966,7 @@
     "title": "PHP Routing, Redirect and Authentication",
     "anchor": "php-sessions",
     "icon" : "fa-bell",
-    "description": "We look at how PHP avoids double posting data, how falsh messages are implemented, and how we use a session to log in users in web applications.",
+    "description": "We look at how PHP avoids double posting data, how flash messages are implemented, and how we use a session to log in users in web applications.",
     "slides": "lectures/PHP-08-POST-Redirect-Authn.ppt",
     "chapters" : "27",
     "videos" : [
