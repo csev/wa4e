@@ -61,9 +61,8 @@ target="_blank">PDO</a> to talk to a database.
 Here are some general specifications for this assignment:
 <ul>
 <li>
-You <b>must</b> use the PHP PDO database layer for this assignment.  If you use the 
-"mysql_" library routines or "mysqli" routines to access the database, you will
-<b>receive a zero on this assignment</b>.
+You must use the PHP PDO database layer for this assignment.
+</li>
 <li>
 Your name must be in the title tag of the HTML for all of the pages
 for this assignment.
@@ -96,7 +95,7 @@ the user is using a non-HTML5 browser.
 </ul>
 <h2 clear="all">Databases and Tables Required for the Assignment</h2>
 <p>
-You will need to add a <b>users</b> table as follows:
+You will need to have a <b>users</b> table as follows:
 <pre>
 CREATE TABLE users (
    user_id INTEGER NOT NULL AUTO_INCREMENT KEY,
