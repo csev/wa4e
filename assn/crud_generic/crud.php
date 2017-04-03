@@ -370,7 +370,7 @@ successful flash message:
    Record added
 </pre>
 
-<h2>Editing Records</h2>
+<h2>Editing Records and Validation Errors</h2>
 <p>
 When you edit a record, the prior data must be shown and properly escaped.  All of the 
 data validation must be performed on the edit data as required in the <b>add.php</b>.

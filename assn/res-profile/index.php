@@ -203,21 +203,20 @@ INSERT INTO users (name,email,password)
     VALUES ('UMSI','umsi@umich.edu','1a52e17fa899cf40fb04cfc42e6352f1');
 </pre>
 The above password is the salted MD5 hash of 'php123' using a salt
-of 'XyZzy12*_'.  You can compute the salted hash of any password with the
-following PHP code:
-<pre>
-$md5 = hash('md5', 'XyZzy12*_secret456');
-echo($md5."\n");
-</pre>
-The salt value remains in the PHP code while the stored hash moves into
-the database.  There should be no stored hash in your PHP code.
-</p>
-<p>
+of 'XyZzy12*_'.  
 You will need this user in the database to pass the assignment.  You can 
 add other users to the database is you like.
 </p>
+The salt value remains in the PHP code while the stored hash moves into
+the database.  There should be <b>no stored hash</b> in your PHP code.
+You can compute the salted hash of any password / salt combination
+using this PHP code:
 <p>
-Since the email address salted hash is stored in the database, we must use 
+<a href="hash.php" target="_blank">Salt-O-Matic 2000</a>
+</p>
+</pre>
+<p>
+Since the email address and salted hash are stored in the database, we must use 
 a different approach than in the previous assignment to check to see if the 
 email and password match using the following approach:
 <pre>
@@ -241,6 +240,9 @@ if ( $row !== false ) {
     return;
 ...
 </pre>
+Make sure to redirect back to <b>login.php</b> with an error message when there
+is no row selected.
+</p>
 <h2 clear="all">Login Data Validation in JavaScript</h2>
 <p>
 In addition to the PHP data validation in the previous assignment, you need to add
@@ -291,7 +293,7 @@ checks can be bypassed by a determinied end-user.
 </p>
 <h2 clear="all">Profile Data validation</h2>
 <p>
-When you are reading data in <b>add.php</b> or <b>edit.php</b>, do the following data 
+When you are reading profile data in <b>add.php</b> or <b>edit.php</b>, do the following data 
 validation:
 <ul>
 <li>
