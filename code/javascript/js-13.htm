@@ -2,9 +2,9 @@
 Hello <b><span id="person">Chuck</span></b> there.
 </p> 
 <script type="text/javascript">
+console.dir(document.getElementById('person'));
 st = document.getElementById('person').innerHTML;
-window.console && console.log("ST = "+st);
+console.log("ST = "+st);
 alert('Hi there ' + st);
 document.getElementById('person').innerHTML = 'Joseph';
-window.console && console.dir(document.getElementById('person'));
 </script>
