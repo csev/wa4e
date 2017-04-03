@@ -14,6 +14,7 @@ $salt = isset($_SESSION['post']['salt']) ? $_SESSION['post']['salt'] : 'XyZzy12*
 $pass = isset($_SESSION['post']['pass']) ? $_SESSION['post']['pass'] : 'php123';
 
 ?>
+<html><head><title>Salt-O-Matic 2000</title></head><body>
 <h1>Welcome to Salted Password Maker</h1>
 <?php
     if ( isset($_SESSION['md5']) ) {
