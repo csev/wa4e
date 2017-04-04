@@ -158,6 +158,19 @@ header('Location: index.php');
 <b>add.php</b> add a new Profile entry.  Make sure to mark the entry with the 
 foreign key
 <b>user_id</b> of the currently logged in user. (create)
+<pre>
+    $stmt = $pdo-&gt;prepare('INSERT INTO Profile
+        (user_id, first_name, last_name, email, headline, summary) 
+        VALUES ( :uid, :fn, :ln, :em, :he, :su)');
+    $stmt-&gt;execute(array(
+        ':uid' =&gt; $_SESSION['user_id'],
+        ':fn' =&gt; $_POST['first_name'],
+        ':ln' =&gt; $_POST['last_name'],
+        ':em' =&gt; $_POST['email'],
+        ':he' =&gt; $_POST['headline'],
+        ':su' =&gt; $_POST['summary'])
+    );
+</pre>
 </li>
 <li>
 <b>view.php</b> show the detail for a particular entry.  This works even is the user 
