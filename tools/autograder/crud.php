@@ -84,6 +84,7 @@ line_out('Looking for the form with a value="Log In" submit button');
 $form = webauto_get_form_button($crawler,'Log In');
 line_out("-- this autograder expects the log in form field names to be:");
 line_out("-- email and pass");
+line_out("-- umsi@umich.edu / php123");
 line_out("-- if your fields do not match these, the next tests will fail.");
 $form->setValues(array("email" => "umsi@umich.edu", "pass" => "php123"));
 $crawler = $client->submit($form);
