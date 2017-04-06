@@ -86,7 +86,7 @@ if ( isset($_SESSION['debug']) ) {
 <p>
 <form method="post">
 To get credit for this assignment, perform the instructions below and 
-enter the code you get from the instrutions below here (Hint: starts with <?= substr($goodsha,0,3) ?>)<br/>
+enter the code you get from the instructions below here (Hint: starts with <?= substr($goodsha,0,3) ?>)<br/>
 <input type="text" size="80" name="sha1">
 <input type="submit">
 </form>
