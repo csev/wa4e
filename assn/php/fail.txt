@@ -5,4 +5,4 @@ echo("<p>What we want to see below is a 'Fatal Error'.</p>\n");
 // trigger an error to verify that we see errors in the browser.
 
 failure_is_expected();
-
+?>
