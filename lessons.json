@@ -957,7 +957,7 @@
     "lti" : [
         {
         "title": "Auto-Grader: Cookies and Session", 
-        "launch" : "tools/cookies/index.php",
+        "launch" : "tools/cookies/",
         "resource_link_id" : "php_05_cookies"
         }
     ]

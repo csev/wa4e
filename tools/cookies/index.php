@@ -9,7 +9,7 @@ $p = $CFG->dbprefix;
 
 // Note - cannot have any output before setcookie
 $code = md5($USER->id+$LINK->id+$CONTEXT->id);
-if ( ! isset($_COOKIE['zap']) ) {
+if ( ! isset($_COOKIE['wa4e_secret_cookie']) ) {
     setcookie('wa4e_secret_cookie', $code, time()+3600);
 }
 
@@ -51,6 +51,7 @@ $OUTPUT->topNav();
 $OUTPUT->flashMessages();
 
 ?>
+<!-- Rendered using old school MVC index.php -->
 <p>
 <b>Finding Cookies and Sessions in a Haystack</b>
 </p>
