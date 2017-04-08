@@ -5,14 +5,13 @@ Cookie Application
 I have written this application two ways in the same folder:
 
 * As a single PHP file using the "Dr. Chuck" MVC pattern
-* As a Silex Applicatjn with nice URL routing and Twi templating
+* As a Silex Application with nice URL routing and Twi templating (PHP > 7.1)
 
-As a default, we run the silex version of the code.
+As a default, we run the non-Silex version of the code.
 
-If you want to run the "old school" version rename the `.htaccess`
-file
+If you want to run the Silex version copy the `.htaccess` file
 
-    mv .htaccess .htaccess-save
+    cp .htaccess-silex .htaccess
 
 You can check which version is running by looking for a comment
 like: 
