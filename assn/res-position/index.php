@@ -105,9 +105,9 @@ in your code similar to the following:
 
 &lt;head&gt;
 ...
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"&gt;lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"&gt;&lt;/script&gt;
 ...
-&lt;head&gt;
+&lt;/head&gt;
 </pre>
 </p>
 <h2 clear="all">The Screens for This Assignment</h2>
