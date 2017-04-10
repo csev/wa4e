@@ -97,15 +97,18 @@ The <b>rank</b> column should be used to record the order
 in which the positions are to be displayed.   Do not use the 
 <b>year</b> as the sort key when viewing the data.
 </p>
-<h2 clear="all">JavaScript and CSS Code</h2>
+<h2 clear="all">Including JQuery</h2>
 <p>
-You should include the JQuery CSS, JavaScript, and jQuery UI JavaScript
-in your code at the appropriate points.  You can use these files:
-<ul>
-<li> <a href="http://www.wa4e.com/solutions/res-education/js/jquery-1.10.2.js" target="_blank">http://www.wa4e.com/solutions/res-education/js/jquery-1.10.2.js</a></li>
-<li> <a href="http://www.wa4e.com/solutions/res-education/js/jquery-ui-1.11.4.js" target="_blank">http://www.wa4e.com/solutions/res-education/js/jquery-ui-1.11.4.js</a></li>
-<li> <a href="http://www.wa4e.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css" target="_blank">http://www.wa4e.com/solutions/res-education/css/jquery-ui-1.11.4-ui-lightness.css</a></li>
-</ul>
+You should include the JQuery JavaScript
+in your code similar to the following:
+<pre>
+
+&lt;head&gt;
+...
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"&gt;lt;/script&gt;
+...
+&lt;head&gt;
+</pre>
 </p>
 <h2 clear="all">The Screens for This Assignment</h2>
 <p>
