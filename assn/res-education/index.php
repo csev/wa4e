@@ -138,6 +138,39 @@ INSERT INTO Institution (name) VALUES ('Montana State University');
 This will allow you to have some university names pop up when
 you are typing ahead in the School field.
 </p>
+<h2 clear="all">JavaScript and CSS</h2>
+<p>
+To make this work use the following JavaScript / CSS in your document's
+head area:
+<pre>
+&lt;head&gt;
+...
+&lt;link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+    crossorigin="anonymous"&gt;
+
+&lt;link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" 
+    crossorigin="anonymous"&gt;
+
+&lt;link rel="stylesheet" 
+    href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css"&gt;
+
+&lt;script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+
+&lt;script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+
+...
+&lt;/head&gt;
+</pre>
 <h2 clear="all">Type Ahead</h2>
 <p>
 If you look a the sample implementation, the actual typeahead code

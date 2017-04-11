@@ -63,7 +63,7 @@ statement.
 <ul>
 <li class="toplevel">
 jQuery
-(<a href="http://www.wa4e.com/code/jquery.zip"
+(<a href="http://www.wa4e.com/code/jquery-01.zip"
    target="_blank">Sample Code</a>)
 </li>
 </ul>
@@ -99,13 +99,26 @@ in which the positions are to be displayed.   Do not use the
 </p>
 <h2 clear="all">Including JQuery</h2>
 <p>
-You should include the JQuery JavaScript
+You should include the JQuery JavaScript along with the bootstrap CSS
 in your code similar to the following:
 <pre>
 
 &lt;head&gt;
 ...
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+    crossorigin="anonymous"&gt;
+
+&lt;link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" 
+    crossorigin="anonymous"&gt;
+
+&lt;script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
 ...
 &lt;/head&gt;
 </pre>
