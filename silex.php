@@ -17,9 +17,12 @@ $app['debug'] = true;
 $app->error(function (NotFoundHttpException $e, Request $request, $code) use ($app) {
     global $CFG, $LAUNCH, $OUTPUT, $USER, $CONTEXT, $LINK, $RESULT;
 
-    return $app['twig']->render('@Tsugi/Error.twig',
-        array('error' => '<p>Page not found.</p>')
-    );
+    include("top.php");
+    include("nav.php");
+    echo("<h2>Page not found.</h2>\n");
+    include("foot.php");
+    return "";
+
 });
 
 
