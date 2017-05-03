@@ -5,7 +5,7 @@ $T = $CFG->wwwroot . '/';
 $adminmenu = isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true";
 $set = new \Tsugi\UI\MenuSet();
 $set->setHome($CFG->servicename, $CFG->apphome);
-$set->addLeft('Get Started', $R.'install.php');
+$set->addLeft('Get Started', $R.'install');
 if ( isset($CFG->lessons) ) {
     // $set->addLeft('Lessons', $T.'lessons.php');
     $set->addLeft('Lessons', $T.'lessons');
@@ -16,7 +16,7 @@ if ( isset($_SESSION['id']) ) {
 	else if ( isset($CFG->disquschannel) ) $set->addLeft('Discuss', $CFG->disquschannel);
 	$set->addLeft('Assignments', $T.'assignments.php');
 } else {
-    $set->addLeft('Materials', $R.'materials.php');
+    $set->addLeft('Materials', $R.'materials');
 }
 
 
@@ -27,7 +27,7 @@ if ( isset($_SESSION['id']) ) {
         $submenu->addLink('Map', $T.'map.php');
     }
     $submenu->addLink('Badges', $T.'badges.php');
-    $submenu->addLink('Materials', $R.'materials.php');
+    $submenu->addLink('Materials', $R.'materials');
     if ( $CFG->DEVELOPER ) {
         $submenu->addLink('Test LTI Tools', $T . 'dev.php');
     }

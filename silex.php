@@ -1,23 +1,27 @@
 <?php
 
-require_once("tsugi/vendor/autoload.php");
+define('COOKIE_SESSION', true);
+require_once "tsugi/config.php";
 
-$app = new \Silex\Application();
-// $app['debug'] = true;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-$app->error(function (\Exception $e, $code) use ($app) {
-    global $CFG, $OUTPUT, $USER, $CONTEXT, $LINK, $RESULT;
-    include("top.php");
-    include("nav.php");
-?>
-<div>
-<p>You have accessed a page which does not exist.
-</p>
-</div>
-<?php
-    include("footer.php");
-    return "";
+use \Tsugi\Core\LTIX;
+
+$launch = LTIX::session_start();
+$app = new \Tsugi\Silex\Application($launch);
+$app['tsugi']->output->buffer = false;
+$app['debug'] = true;
+
+$app->error(function (NotFoundHttpException $e, Request $request, $code) use ($app) {
+    global $CFG, $LAUNCH, $OUTPUT, $USER, $CONTEXT, $LINK, $RESULT;
+
+    return $app['twig']->render('@Tsugi/Error.twig',
+        array('error' => '<p>Page not found.</p>')
+    );
 });
+
 
 $app->get('/materials', function () {
     global $CFG, $OUTPUT, $USER, $CONTEXT, $LINK, $RESULT;
