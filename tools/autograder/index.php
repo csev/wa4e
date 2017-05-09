@@ -26,7 +26,9 @@ $assignments = array(
     'res-profile.php' => 'Profiles Database',
     'res-position.php' => 'Profiles+Postions Database',
     'res-education.php' => 'Prof+Pos+Educ Database',
-    // 'practical-f16-pizza' => 'Fall 16 Pizza Exam',
+    'practical-f16-cats.php' => 'Fall 16 Cats Exam',
+    'practical-w17-parking.php' => 'Winter 17 Parking Exam',
+    'practical-w17-dogs.php' => 'Winter 17 Dogs Exam',
     'practical-sample.php' => 'Sample Practical Exam'
 );
 
