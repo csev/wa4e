@@ -1,6 +1,4 @@
 
-php_value session.save_path /data/phpintro/sess
-
     <IfModule mod_rewrite.c>
         RewriteEngine on
         RewriteRule ^ - [E=protossl]
