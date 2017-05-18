@@ -135,6 +135,7 @@ Specific Instructions on the UMich hosting Instance (for Chuck)
 
 Make sure to set the non-standard session save path in these files:
 
+    assn/.htaccess
     code/.htaccess
     solutions/.htaccess
    
