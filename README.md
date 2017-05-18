@@ -66,9 +66,10 @@ put the following into "Authorized JavaScript Origins":
 
         http://localhost
 
-And this into Authorized redirect URIs:
+And these into Authorized redirect URIs:
 
     http://localhost/wa4e/tsugi/login.php
+    http://localhost/wa4e/tsugi/login
 
 Note: You do not need port numbers for either of these values in your Google
 configuration.
@@ -129,3 +130,11 @@ Then log in with your Google account and the UI should change.  In particular yo
 see 'Assignments' and in Lessons you should start seeing LTI autograders.
 
 
+Specific Instructions on the UMich hosting Instance (for Chuck)
+---------------------------------------------------------------
+
+Make sure to set the non-standard session save path in these files:
+
+    code/.htaccess
+    solutions/.htaccess
+   
