@@ -322,138 +322,6 @@
     }
 },
 {
-    "title": "Introduction to Structured Query Language (SQL)",
-    "anchor": "sql-intro",
-    "icon" : "fa-database",
-    "description": "We learn about single table queries and the basic syntax of the SQL language.",
-    "slides": "lectures/SQL-01-MySQL.ppt",
-    "chapters" : "37, 39, 41",
-    "handout": "lectures/SQL-01-MySQL-Handout.doc",
-    "videos" : [
-        {
-            "title" : "Single Table SQL - Part 1",
-            "youtube" : "FXtT2RRmrdo"
-        },
-        {
-            "title" : "Single Table SQL - Part 2",
-            "youtube" : "9608FG9_XWM"
-        }
-    ],
-    "references" : [
-        {
-            "title" : "SQL Handout",
-            "href" : "lectures/SQL-01-MySQL-Handout.txt"
-        },
-        {
-            "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
-            "href" : "https://www.youtube.com/watch?v=rLUm3vst87"
-        }
-    ],
-    "lti" : {
-        "title" : "Autograder: Single-table SQL",
-        "launch" : "tools/sql/index.php",
-        "resource_link_id" : "mysql_01_single",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "single_mysql.php"
-            }
-        ]
-    }
-},
-{
-    "title": "Database Design",
-    "anchor": "sql-design",
-    "icon" : "fa-database",
-    "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
-    "slides": "lectures/SQL-02-MySQL-Design.ppt",
-    "chapters" : "38, 40, 42",
-    "references" : 
-        {
-            "title" : "Multi-Table SQL Handout",
-            "href" : "lectures/SQL-02-MySQL-Design-Handout.txt"
-        },
-    "videos" : [
-        {
-            "title" : "Data Modeling - Building a Data Model (Part 1)",
-            "youtube" : "qFJa1bB9wrs"
-        },
-        {
-            "title" : "Data Modeling - Representing Relationships (Part 2)",
-            "youtube" : "I17pyb1e9YA"
-        },
-        {
-            "title" : "Data Modeling - Relationships in SQL (Part 3)",
-            "youtube" : "CBVZGsmd5qw"
-        },
-        {
-            "title" : "Data Modeling - Using Join (Part 4)",
-            "youtube" : "RxqgQPkqoUE"
-        },
-        {
-            "title" : "Data Modeling - Many-To-Many (Part 5)",
-            "youtube" : "Ymlu1tK9qK0"
-        }
-    ],
-    "assignment" : "https://www.wa4e.com/assn/sql-tracks",
-    "lti" : [
-        {
-        "title" : "Peer Grader: Multi-Table Databases (Tracks)",
-        "launch" : "mod/peer-grade/index.php",
-        "resource_link_id" : "mysql_03_many_peer",
-        "custom" :
-            [
-            {
-                "key" : "config",
-                "json" :
-{
-  "title":"Building a Multi-Table Database With Relationships",
-  "description":"In this assignment, you will build a copy of the Music database covered in lecture.  You will populate your database with tracks, artists and albums that are different from the ones used in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables need to normalized as described in lecture.",
-  "grading":"This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
-  "assignment":"https://www.wa4e.com/assn/sql-tracks/",
-  "parts":[
-    {
-      "title":"Screen shot (JPG or PNG) of data in the Track table",
-      "type":"image"
-    },
-    {
-      "title":"Screen shot (JPG or PNG) of all the data joined up sorted in ascending order by the album title",
-      "type":"image"
-    },
-    {
-      "title":"Screen shot (JPG or PNG) of all of the genres for a particular artist.  Hint - use JOIN, DISTINCT and WHERE",
-      "type":"image"
-    }
-  ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
-}
-        }
-        ]
-},
-        {
-        "title" : "Autograder: Many-to-Many Databases",
-        "launch" : "tools/sql/index.php",
-        "resource_link_id" : "mysql_02_tracks",
-        "custom" : [
-            {
-                "key": "exercise",
-                "value": "many_many_mysql.php"
-            }
-            ]
-        }
-]
-},
-{
     "title": "Introduction to PHP",
     "anchor": "php-intro",
     "icon" : "fa-bell",
@@ -768,6 +636,138 @@
         ]
         }
     ]
+},
+{
+    "title": "Introduction to Structured Query Language (SQL)",
+    "anchor": "sql-intro",
+    "icon" : "fa-database",
+    "description": "We learn about single table queries and the basic syntax of the SQL language.",
+    "slides": "lectures/SQL-01-MySQL.ppt",
+    "chapters" : "37, 39, 41",
+    "handout": "lectures/SQL-01-MySQL-Handout.doc",
+    "videos" : [
+        {
+            "title" : "Single Table SQL - Part 1",
+            "youtube" : "FXtT2RRmrdo"
+        },
+        {
+            "title" : "Single Table SQL - Part 2",
+            "youtube" : "9608FG9_XWM"
+        }
+    ],
+    "references" : [
+        {
+            "title" : "SQL Handout",
+            "href" : "lectures/SQL-01-MySQL-Handout.txt"
+        },
+        {
+            "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
+            "href" : "https://www.youtube.com/watch?v=rLUm3vst87"
+        }
+    ],
+    "lti" : {
+        "title" : "Autograder: Single-table SQL",
+        "launch" : "tools/sql/index.php",
+        "resource_link_id" : "mysql_01_single",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "single_mysql.php"
+            }
+        ]
+    }
+},
+{
+    "title": "Database Design",
+    "anchor": "sql-design",
+    "icon" : "fa-database",
+    "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
+    "slides": "lectures/SQL-02-MySQL-Design.ppt",
+    "chapters" : "38, 40, 42",
+    "references" : 
+        {
+            "title" : "Multi-Table SQL Handout",
+            "href" : "lectures/SQL-02-MySQL-Design-Handout.txt"
+        },
+    "videos" : [
+        {
+            "title" : "Data Modeling - Building a Data Model (Part 1)",
+            "youtube" : "qFJa1bB9wrs"
+        },
+        {
+            "title" : "Data Modeling - Representing Relationships (Part 2)",
+            "youtube" : "I17pyb1e9YA"
+        },
+        {
+            "title" : "Data Modeling - Relationships in SQL (Part 3)",
+            "youtube" : "CBVZGsmd5qw"
+        },
+        {
+            "title" : "Data Modeling - Using Join (Part 4)",
+            "youtube" : "RxqgQPkqoUE"
+        },
+        {
+            "title" : "Data Modeling - Many-To-Many (Part 5)",
+            "youtube" : "Ymlu1tK9qK0"
+        }
+    ],
+    "assignment" : "https://www.wa4e.com/assn/sql-tracks",
+    "lti" : [
+        {
+        "title" : "Peer Grader: Multi-Table Databases (Tracks)",
+        "launch" : "mod/peer-grade/index.php",
+        "resource_link_id" : "mysql_03_many_peer",
+        "custom" :
+            [
+            {
+                "key" : "config",
+                "json" :
+{
+  "title":"Building a Multi-Table Database With Relationships",
+  "description":"In this assignment, you will build a copy of the Music database covered in lecture.  You will populate your database with tracks, artists and albums that are different from the ones used in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables need to normalized as described in lecture.",
+  "grading":"This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+  "assignment":"https://www.wa4e.com/assn/sql-tracks/",
+  "parts":[
+    {
+      "title":"Screen shot (JPG or PNG) of data in the Track table",
+      "type":"image"
+    },
+    {
+      "title":"Screen shot (JPG or PNG) of all the data joined up sorted in ascending order by the album title",
+      "type":"image"
+    },
+    {
+      "title":"Screen shot (JPG or PNG) of all of the genres for a particular artist.  Hint - use JOIN, DISTINCT and WHERE",
+      "type":"image"
+    }
+  ],
+  "totalpoints":10,
+  "instructorpoints":0,
+  "peerpoints":4,
+  "assesspoints":2,
+  "minassess":3,
+  "maxassess":10,
+  "flag":true,
+  "rating":0,
+  "gallery":"off",
+  "resubmit":"off",
+  "notepublic":"false"
+}
+        }
+        ]
+},
+        {
+        "title" : "Autograder: Many-to-Many Databases",
+        "launch" : "tools/sql/index.php",
+        "resource_link_id" : "mysql_02_tracks",
+        "custom" : [
+            {
+                "key": "exercise",
+                "value": "many_many_mysql.php"
+            }
+            ]
+        }
+]
 },
 {
     "title": "PHP Objects",
