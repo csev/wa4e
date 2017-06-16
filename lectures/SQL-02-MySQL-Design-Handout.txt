@@ -3,15 +3,17 @@ CREATE DATABASE Music DEFAULT CHARACTER SET utf8;
 USE Music;  (Command line only)
 
 CREATE TABLE Artist (
-  artist_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255)
+  artist_id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255),
+  PRIMARY KEY(artist_id)
 ) ENGINE = InnoDB;
 
 CREATE TABLE Album (
-  album_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  album_id INTEGER NOT NULL AUTO_INCREMENT,
   title VARCHAR(255),
   artist_id INTEGER,
 
+  PRIMARY KEY(album_id),
   INDEX USING BTREE (title),
 
   CONSTRAINT FOREIGN KEY (artist_id)
@@ -20,12 +22,13 @@ CREATE TABLE Album (
 ) ENGINE = InnoDB;
 
 CREATE TABLE Genre (
-  genre_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255)
+  genre_id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255),
+  PRIMARY KEY(genre_id)
 ) ENGINE = InnoDB;
 
 CREATE TABLE Track (
-  track_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  track_id INTEGER NOT NULL AUTO_INCREMENT,
   title VARCHAR(255),
   len INTEGER,
   rating INTEGER,
@@ -33,6 +36,7 @@ CREATE TABLE Track (
   album_id INTEGER,
   genre_id INTEGER,
 
+  PRIMARY KEY(track_id),
   INDEX USING BTREE (title),
 
   CONSTRAINT FOREIGN KEY (album_id) REFERENCES Album (album_id)
@@ -87,53 +91,55 @@ CREATE DATABASE Learning DEFAULT CHARACTER SET utf8 ;
 
 USE Learning;   (Command line only)
 
-CREATE TABLE User (
-    user_id     INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Account (
+    account_id  INTEGER NOT NULL AUTO_INCREMENT,
     email       VARCHAR(128) UNIQUE,
-    name        VARCHAR(128)
+    name        VARCHAR(128),
+    PRIMARY KEY(account_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
 CREATE TABLE Course (
-    course_id     INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title         VARCHAR(128) UNIQUE
+    course_id     INTEGER NOT NULL AUTO_INCREMENT,
+    title         VARCHAR(128) UNIQUE,
+    PRIMARY KEY(course_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
 CREATE TABLE Member (
-    user_id       INTEGER,
+    account_id    INTEGER,
     course_id     INTEGER,
     role          INTEGER,
 
-    CONSTRAINT FOREIGN KEY (user_id) REFERENCES User (user_id)
+    CONSTRAINT FOREIGN KEY (account_id) REFERENCES Account (account_id)
       ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)
        ON DELETE CASCADE ON UPDATE CASCADE,
 
-    PRIMARY KEY (user_id, course_id)
+    PRIMARY KEY (account_id, course_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
-INSERT INTO User (name, email) VALUES ('Jane', 'jane@tsugi.org');
-INSERT INTO User (name, email) VALUES ('Ed', 'ed@tsugi.org');
-INSERT INTO User (name, email) VALUES ('Sue', 'sue@tsugi.org');
+INSERT INTO Account (name, email) VALUES ('Jane', 'jane@tsugi.org');
+INSERT INTO Account (name, email) VALUES ('Ed', 'ed@tsugi.org');
+INSERT INTO Account (name, email) VALUES ('Sue', 'sue@tsugi.org');
 
 INSERT INTO Course (title) VALUES ('Python');
 INSERT INTO Course (title) VALUES ('SQL');
 INSERT INTO Course (title) VALUES ('PHP');
 
-INSERT INTO Member (user_id, course_id, role) VALUES (1, 1, 1);
-INSERT INTO Member (user_id, course_id, role) VALUES (2, 1, 0);
-INSERT INTO Member (user_id, course_id, role) VALUES (3, 1, 0);
+INSERT INTO Member (account_id, course_id, role) VALUES (1, 1, 1);
+INSERT INTO Member (account_id, course_id, role) VALUES (2, 1, 0);
+INSERT INTO Member (account_id, course_id, role) VALUES (3, 1, 0);
 
-INSERT INTO Member (user_id, course_id, role) VALUES (1, 2, 0);
-INSERT INTO Member (user_id, course_id, role) VALUES (2, 2, 1);
+INSERT INTO Member (account_id, course_id, role) VALUES (1, 2, 0);
+INSERT INTO Member (account_id, course_id, role) VALUES (2, 2, 1);
 
-INSERT INTO Member (user_id, course_id, role) VALUES (2, 3, 1);
-INSERT INTO Member (user_id, course_id, role) VALUES (3, 3, 0);
+INSERT INTO Member (account_id, course_id, role) VALUES (2, 3, 1);
+INSERT INTO Member (account_id, course_id, role) VALUES (3, 3, 0);
 
-SELECT User.name, Member.role, Course.title
-  FROM User JOIN Member JOIN Course
-  ON Member.user_id = User.user_id
+SELECT Account.name, Member.role, Course.title
+  FROM Account JOIN Member JOIN Course
+  ON Member.account_id = Account.account_id
     AND Member.course_id = Course.course_id
-  ORDER BY Course.title, Member.role DESC, User.name
+  ORDER BY Course.title, Member.role DESC, Account.name
 
 
 
