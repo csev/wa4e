@@ -23,7 +23,7 @@ Welcome to our Massive Open Online Course (MOOC). Now that you have logged in, y
 course-style features of this web site.
 <ul>
 <li>
-As you go through the <a href="tsugi/lessons.php">Lessons</a> in the course you now will see additional
+As you go through the <a href="lessons">Lessons</a> in the course you now will see additional
 links to the autograders in the class.  You can attempt the autograders and get a score.</li>
 <li>
 You can track your progress through the course using the <a href="tsugi/assignments.php">Assignments</a>
@@ -53,7 +53,7 @@ web sites using PHP, MySQL, JQuery, and Handlebars.
 You can use this web site many different ways:
 <ul>
 <li>
-You browse my videos and course materials under <a href="tsugi/lessons.php">Lessons</a>.  The materials
+You browse my videos and course materials under <a href="lessons">Lessons</a>.  The materials
 I have developed
 for this class are all provided with a Creative Commons license so you can download or link to 
 them to incorporate them into your own teaching if you like.</li>

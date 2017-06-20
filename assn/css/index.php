@@ -28,7 +28,7 @@ Using only CSS.
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Cascading Style Sheets</i> from
-<a href="https://www.wa4e.com/tsugi/lessons.php?anchor=css" target="_blank">www.wa4e.com</a></li>
+<a href="https://www.wa4e.com/lessons/css" target="_blank">www.wa4e.com</a></li>
 </ul>
 </p>
 <h1>Pre-Requisites</h1>
