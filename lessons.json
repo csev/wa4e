@@ -1086,7 +1086,7 @@
     "title": "Building a CRUD Application",
     "anchor": "php-crud",
     "icon" : "fa-bell",
-    "description": "Now we buid our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
+    "description": "Now we build our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
     "slides": "lectures/PHP-09-CRUD.ppt",
     "videos" : 
     [
@@ -1434,10 +1434,10 @@
     ]
 },
 {
-    "title": "JSON - JavaScipt Object Notation",
+    "title": "JSON - JavaScript Object Notation",
     "anchor": "json",
     "icon" : "fa-briefcase",
-    "description": "In this section we look at JavaScript Object Notation (JSON).  JSON is commonly used as a syntax to exchange data between code running on the server (i.e. in PHP) and code running in the browser (JavaScript/JQuery.",
+    "description": "In this section we look at JavaScript Object Notation (JSON).  JSON is commonly used as a syntax to exchange data between code running on the server (i.e. in PHP) and code running in the browser (JavaScript/JQuery).",
     "slides": "lectures/JS-04-JSON.ppt",
     "videos" : [
         {
