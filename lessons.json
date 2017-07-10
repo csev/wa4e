@@ -102,8 +102,13 @@
     ],
     "lti" : [
         {
+        "title" : "Quiz: Request-Response Cycle",
+        "launch" : "mod/gift/?quiz=01-Request-Response.txt",
+        "resource_link_id" : "php_01_rrc_quiz"
+        },
+        {
         "title" : "Autograder: Request-Response Cycle",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_01_rrc",
         "custom" : [
             {
@@ -147,6 +152,11 @@
     ],
     "assignment" : "https://www.wa4e.com/assn/html/",
     "lti" : [
+        {
+        "title" : "Quiz: HTML",
+        "launch" : "mod/gift/?quiz=00-HTML.txt",
+        "resource_link_id" : "php_01_html_quiz"
+        },
         {
         "title" : "Autograder: HyperText Markup Language (HTML)",
         "launch" : "tools/web-autograde/index.php",
@@ -208,7 +218,13 @@
             "href" : "http://www.lesliefranke.com/files/reference/csscheatsheet.html"
         }
     ],
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Quiz: CSS",
+        "launch" : "mod/gift/?quiz=00-CSS.txt",
+        "resource_link_id" : "php_01_css_quiz"
+        },
+        {
         "title": "Peer Graded: Cascading Style Sheets (CSS)",
         "launch" : "mod/peer-grade/index.php",
         "resource_link_id" : "css",
@@ -253,7 +269,8 @@
 }
             }
         ]
-    }
+        }
+        ]
 },
 { 
     "title": "Installing PHP and SQL",
@@ -353,6 +370,11 @@
     "assignment" : "https://www.wa4e.com/assn/php/index.php",
     "lti" : [
         {
+        "title" : "Quiz: PHP",
+        "launch" : "mod/gift/?quiz=02-PHP.txt",
+        "resource_link_id" : "php_02_php_quiz"
+        },
+        {
         "title" : "Peer graded: Getting Started with PHP",
         "launch" : "mod/peer-grade/index.php",
         "resource_link_id" : "php_01_php_peer",
@@ -436,7 +458,13 @@
     ],
     "assignment" : "https://www.wa4e.com/assn/guess/",
     "solution" : "https://www.wa4e.com/code/arrays/guess.php?guess=12",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Quiz: PHP Arrays",
+        "launch" : "mod/gift/?quiz=02-Arrays.txt",
+        "resource_link_id" : "php_02_arrays_quiz"
+        },
+        {
         "title" : "Auto-grader: Guessing Game",
         "launch" : "tools/autograder/index.php",
         "resource_link_id" : "php_03_guess",
@@ -446,7 +474,8 @@
                 "value": "guess.php"
             }
         ]
-    }
+        }
+    ]
 },
 {
     "title": "PHP Functions",
@@ -468,7 +497,13 @@
     ],
     "assignment" : "https://www.wa4e.com/assn/crack/",
     "solution" : "https://www.wa4e.com/solutions/crack/",
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Quiz: Functions",
+        "launch" : "mod/gift/?quiz=03-Functions.txt",
+        "resource_link_id" : "php_03_func_quiz"
+        },
+        {
         "title" : "Peer Graded: Reversing an MD5 Hash",
         "launch" : "mod/peer-grade/index.php",
         "resource_link_id" : "php_02_hash",
@@ -511,7 +546,8 @@
 }
             }
         ]
-    }
+        }
+    ]
 },
 {
     "title": "PHP Forms",
@@ -567,6 +603,11 @@
     "assignment" : "https://www.wa4e.com/assn/rps/",
     "solution" : "https://www.wa4e.com/solutions/rps",
     "lti" : [
+        {
+        "title" : "Quiz: Forms",
+        "launch" : "mod/gift/?quiz=03-Forms.txt",
+        "resource_link_id" : "php_03_forms_quiz"
+        },
         {
         "title" : "Autograder: Rock Paper Scissors",
         "launch" : "tools/autograder/index.php",
@@ -665,7 +706,13 @@
             "href" : "https://www.youtube.com/watch?v=rLUm3vst87"
         }
     ],
-    "lti" : {
+    "lti" : [
+        {
+        "title" : "Quiz: Queries",
+        "launch" : "mod/gift/?quiz=06-SQL-Queries.txt",
+        "resource_link_id" : "php_06_sqls_quiz"
+        },
+        {
         "title" : "Autograder: Single-table SQL",
         "launch" : "tools/sql/index.php",
         "resource_link_id" : "mysql_01_single",
@@ -675,7 +722,8 @@
                 "value": "single_mysql.php"
             }
         ]
-    }
+        }
+    ]
 },
 {
     "title": "Database Design",
@@ -713,6 +761,11 @@
     ],
     "assignment" : "https://www.wa4e.com/assn/sql-tracks",
     "lti" : [
+        {
+        "title" : "Quiz: Database Models",
+        "launch" : "mod/gift/?quiz=07-Database-Models.txt",
+        "resource_link_id" : "php_07_models_quiz"
+        },
         {
         "title" : "Peer Grader: Multi-Table Databases (Tracks)",
         "launch" : "mod/peer-grade/index.php",
@@ -799,7 +852,14 @@
         {
             "title" : "Sample code",
             "href" : "code/objects.zip"
+        },
+    "lti" : [
+        {
+        "title" : "Quiz: PHP Objects",
+        "launch" : "mod/gift/?quiz=08-PHP-Objects.txt",
+        "resource_link_id" : "php_08_objects_quiz"
         }
+    ]
 },
 {
     "title": "PHP and MySQL",
@@ -844,8 +904,12 @@
         },
     "assignment" : "https://www.wa4e.com/assn/autosdb/",
     "solution" : "https://www.wa4e.com/solutions/autosdb",
-    "lti" : 
-        [
+    "lti" : [
+        {
+        "title" : "Quiz: PHP and MySQL",
+        "launch" : "mod/gift/?quiz=08-PDO.txt",
+        "resource_link_id" : "php_08_pdo_quiz"
+        },
         {
         "title" : "Autograder: Autos Database",
         "launch" : "tools/autograder/index.php",
@@ -956,6 +1020,11 @@
         },
     "lti" : [
         {
+        "title" : "Quiz: Cookies and Sessions",
+        "launch" : "mod/gift/?quiz=05-Session.txt",
+        "resource_link_id" : "php_05_session_quiz"
+        },
+        {
         "title": "Auto-Grader: Cookies and Session", 
         "launch" : "tools/cookies/",
         "resource_link_id" : "php_05_cookies"
@@ -1003,6 +1072,11 @@
     "assignment" : "https://www.wa4e.com/assn/autosess/",
     "solution" : "https://www.wa4e.com/solutions/autosess",
     "lti" : [
+        {
+        "title" : "Quiz: Routing and Redirect",
+        "launch" : "mod/gift/?quiz=05-Routing.txt",
+        "resource_link_id" : "php_05_route_quiz"
+        },
         {
         "title": "Auto-Grader: Autos with Post-Redirect",
         "launch" : "tools/autograder/index.php",
@@ -1224,6 +1298,11 @@
     "solution" : "https://www.wa4e.com/solutions/res-profile/index.php",
     "lti" : [
         {
+        "title" : "Quiz: JavaScript",
+        "launch" : "mod/gift/?quiz=09-JavaScript.txt",
+        "resource_link_id" : "js_09_javascript_quiz"
+        },
+        {
         "title" : "Auto-Grader: JavaScript / Profiles",
         "launch" : "tools/autograder/index.php",
         "resource_link_id" : "php_07_profile",
@@ -1318,7 +1397,14 @@
         {
             "title" : "Sample code",
             "href" : "code/javascript-objects.zip"
+        },
+    "lti" : [
+        {
+        "title" : "Quiz: JavaScript Objects",
+        "launch" : "mod/gift/?quiz=09-JavaScript-Objects.txt",
+        "resource_link_id" : "js_09_js_objects_quiz"
         }
+    ]
 },
 {
     "title": "JQuery",
@@ -1354,6 +1440,11 @@
     "assignment" : "https://www.wa4e.com/assn/res-position/index.php",
     "solution" : "https://www.wa4e.com/solutions/res-position/index.php",
     "lti" : [
+        {
+        "title" : "Quiz: JQuery",
+        "launch" : "mod/gift/?quiz=10-JQuery.txt",
+        "resource_link_id" : "js_10_jquery_quiz"
+        },
         {
         "title" : "Auto-Grader: Profiles, Positions and jQuery",
         "launch" : "tools/autograder/index.php",
