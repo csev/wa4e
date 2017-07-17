@@ -159,7 +159,7 @@
         },
         {
         "title" : "Autograder: HyperText Markup Language (HTML)",
-        "launch" : "tools/web-autograde/index.php",
+        "launch" : "tools/web-autograde/",
         "resource_link_id" : "html_01",
         "custom" : [
             {
@@ -226,7 +226,7 @@
         },
         {
         "title": "Peer Graded: Cascading Style Sheets (CSS)",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "css",
         "custom" : [
             {
@@ -301,14 +301,14 @@
     ],
     "lti" : {
         "title": "Peer Graded: Installation Screen Shots",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "install",
         "custom" : [
             {
                 "key": "config",
                 "json": 
 {
-  "title":"Installing PHP/MySQL",
+  "title":"Peer Graded: Installing PHP/MySQL",
   "description":"This assignment is designed to show that you have successfully installed a PHP/MySQL environment.  This assignment is worth 10 points. 4 points come from your peers and 2 points come from you grading other student's submissions and 4 points come from the instructor review of your assignment .",
   "grading":"This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
   "assignment":"https://www.wa4e.com/assn/install/",
@@ -367,7 +367,7 @@
             "youtube" : "JrssSWJ5JzQ"
         }
     ],
-    "assignment" : "https://www.wa4e.com/assn/php/index.php",
+    "assignment" : "https://www.wa4e.com/assn/php/",
     "lti" : [
         {
         "title" : "Quiz: PHP",
@@ -376,7 +376,7 @@
         },
         {
         "title" : "Peer graded: Getting Started with PHP",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_01_php_peer",
         "custom" : [
             {
@@ -466,7 +466,7 @@
         },
         {
         "title" : "Auto-grader: Guessing Game",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_03_guess",
         "custom" : [
             {
@@ -505,7 +505,7 @@
         },
         {
         "title" : "Peer Graded: Reversing an MD5 Hash",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_02_hash",
         "custom" : [
             {
@@ -610,7 +610,7 @@
         },
         {
         "title" : "Autograder: Rock Paper Scissors",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_04_rps",
         "custom" : [
             {
@@ -621,7 +621,7 @@
         },
         {
         "title" : "Peer grader: Rock Paper Scissors",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_04_rps_peer",
         "custom" : [
             {
@@ -714,7 +714,7 @@
         },
         {
         "title" : "Autograder: Single-table SQL",
-        "launch" : "tools/sql/index.php",
+        "launch" : "tools/sql/",
         "resource_link_id" : "mysql_01_single",
         "custom" : [
             {
@@ -768,7 +768,7 @@
         },
         {
         "title" : "Peer Grader: Multi-Table Databases (Tracks)",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "mysql_03_many_peer",
         "custom" :
             [
@@ -811,7 +811,7 @@
 },
         {
         "title" : "Autograder: Many-to-Many Databases",
-        "launch" : "tools/sql/index.php",
+        "launch" : "tools/sql/",
         "resource_link_id" : "mysql_02_tracks",
         "custom" : [
             {
@@ -912,7 +912,7 @@
         },
         {
         "title" : "Autograder: Autos Database",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_05_autosdb",
         "custom" : [
             {
@@ -923,7 +923,7 @@
         },
         {
         "title" : "Peer graded: Autos Database",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_05_autosdb_peer",
         "custom" : [
             {
@@ -1079,7 +1079,7 @@
         },
         {
         "title": "Auto-Grader: Autos with Post-Redirect",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_05_autosess",
         "custom" : [
             {
@@ -1090,7 +1090,7 @@
         },
         {
         "title": "Peer-Grader: Autos with Post-Redirect",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_05_autosess_peer",
         "custom" : [
             {
@@ -1183,7 +1183,7 @@
     "lti" : [
         {
         "title" : "Auto-Grader: Autos CRUD",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_06_crud",
         "custom" : [
             {
@@ -1194,7 +1194,7 @@
         },
         {
         "title" : "Peer-Grader: Autos CRUD",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_06_crud_peer",
         "custom" : [
             {
@@ -1294,8 +1294,8 @@
             "href" : "https://www.youtube.com/watch?v=IPxQ9kEaF8c"
         }
     ],
-    "assignment" : "https://www.wa4e.com/assn/res-profile/index.php",
-    "solution" : "https://www.wa4e.com/solutions/res-profile/index.php",
+    "assignment" : "https://www.wa4e.com/assn/res-profile/",
+    "solution" : "https://www.wa4e.com/solutions/res-profile/",
     "lti" : [
         {
         "title" : "Quiz: JavaScript",
@@ -1304,7 +1304,7 @@
         },
         {
         "title" : "Auto-Grader: JavaScript / Profiles",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_07_profile",
         "custom" : [
             {
@@ -1315,7 +1315,7 @@
         },
         {
         "title" : "Peer-Grader: JavaScript / Profiles",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_07_profile_peer",
         "custom" : [
             {
@@ -1437,8 +1437,8 @@
             "href" : "https://www.youtube.com/watch?v=B7Aut4OUuvs"
         }
     ],
-    "assignment" : "https://www.wa4e.com/assn/res-position/index.php",
-    "solution" : "https://www.wa4e.com/solutions/res-position/index.php",
+    "assignment" : "https://www.wa4e.com/assn/res-position/",
+    "solution" : "https://www.wa4e.com/solutions/res-position/",
     "lti" : [
         {
         "title" : "Quiz: JQuery",
@@ -1447,7 +1447,7 @@
         },
         {
         "title" : "Auto-Grader: Profiles, Positions and jQuery",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_08_position",
         "custom" : [
             {
@@ -1458,7 +1458,7 @@
         },
         {
         "title" : "Peer-Grader: Profiles, Positions and jQuery",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_08_position_peer",
         "custom" : [
             {
@@ -1562,12 +1562,12 @@
             "href" : "code/json-03-crud.zip"
         }
     ],
-    "assignment" : "https://www.wa4e.com/assn/res-education/index.php",
-    "solution" : "https://www.wa4e.com/solutions/res-education/index.php",
+    "assignment" : "https://www.wa4e.com/assn/res-education/",
+    "solution" : "https://www.wa4e.com/solutions/res-education/",
     "lti" : [
         {
         "title" : "Auto-Grader: Profiles, Positions, and Education",
-        "launch" : "tools/autograder/index.php",
+        "launch" : "tools/autograder/",
         "resource_link_id" : "php_09_education",
         "custom" : [
             {
@@ -1578,7 +1578,7 @@
         },
         {
         "title" : "Peer-Grader: Profiles, Positions, and Education",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_09_peer",
         "custom" : [
             {
@@ -1669,11 +1669,11 @@
             "href" : "http://handlebarsjs.com/"
         }
     ],
-    "assignment" : "https://www.wa4e.com/assn/res-handlebars/index.php",
-    "solution" : "https://www.wa4e.com/solutions/res-handlebars/index.php",
+    "assignment" : "https://www.wa4e.com/assn/res-handlebars/",
+    "solution" : "https://www.wa4e.com/solutions/res-handlebars/",
     "lti" : {
         "title": "Peer Graded: Handlebars",
-        "launch" : "mod/peer-grade/index.php",
+        "launch" : "mod/peer-grade/",
         "resource_link_id" : "php_10_handlebars_peer",
         "custom" : [
             {
