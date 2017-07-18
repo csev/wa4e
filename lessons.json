@@ -260,12 +260,13 @@
     }
   ],
   "totalpoints": 10,
-  "instructorpoints": 4,
+  "instructorpoints": 0,
   "peerpoints": 4,
-  "assesspoints": 1,
+  "assesspoints":3,
   "minassess": 2,
-  "maxassess": 5,
-  "flag": true
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -322,17 +323,14 @@
       "type":"image"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":6,
-  "assesspoints":2,
-  "minassess":2,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -408,12 +406,13 @@
     }
   ],
   "totalpoints": 10,
-  "instructorpoints": 5,
-  "peerpoints": 3,
-  "assesspoints": 1,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
   "minassess": 2,
-  "maxassess": 5,
-  "flag": true
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -532,17 +531,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -661,17 +657,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
   "assesspoints":3,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -794,17 +787,14 @@
       "type":"image"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
         }
         ]
@@ -971,17 +961,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "resubmit":"off",
-  "notepublic":"false"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1139,17 +1126,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1246,17 +1230,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1365,17 +1346,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1507,17 +1485,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1636,17 +1611,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
@@ -1700,17 +1672,14 @@
       "language":"php"
     }
   ],
-  "totalpoints":10,
-  "instructorpoints":0,
-  "peerpoints":4,
-  "assesspoints":2,
-  "minassess":3,
-  "maxassess":10,
-  "flag":true,
-  "rating":0,
-  "gallery":"off",
-  "notepublic":"false",
-  "resubmit":"off"
+  "totalpoints": 10,
+  "instructorpoints": 0,
+  "peerpoints": 4,
+  "assesspoints":3,
+  "minassess": 2,
+  "maxassess": 6,
+  "flag": true,
+  "resubmit":"on"
 }
             }
         ]
