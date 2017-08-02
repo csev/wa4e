@@ -395,6 +395,47 @@ clause in your tables query to return the correct range of rows.
 </li>
 </ul>
 </p>
+<h1>Database Setup Detail</h1>
+<p id="dbshow">
+<a href="#" id="dbshow" onclick="
+    document.getElementById('dbdetail').style.display = 'block';
+    document.getElementById('dbshow').style.display = 'none';
+    return false;
+">More ...</a>
+</a>
+</p>
+<div id="dbdetail" style="display:none">
+<p>
+If you have been doing al the previous assignments, you should have a database
+set up.  Here is the SQL if you are just starting on this assignment:
+<pre>
+CREATE DATABASE misc DEFAULT CHARACTER SET utf8 ;
+
+GRANT ALL ON misc.* TO 'fred'@'localhost' IDENTIFIED BY 'zap';
+GRANT ALL ON misc.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
+
+USE misc;   (If in the command line)
+
+CREATE TABLE users (
+   user_id INTEGER NOT NULL KEY AUTO_INCREMENT,
+   name VARCHAR(128),
+   email VARCHAR(128),
+   password VARCHAR(128),
+
+   INDEX(email)
+) ENGINE=InnoDB CHARSET=utf8;
+
+ALTER TABLE users ADD INDEX(email);
+ALTER TABLE users ADD INDEX(password);
+
+INSERT INTO users (name,email,password)
+    VALUES ('Chuck','csev@umich.edu','1a52e17fa899cf40fb04cfc42e6352f1');
+
+INSERT INTO users (name,email,password)
+    VALUES ('UMSI','umsi@umich.edu','1a52e17fa899cf40fb04cfc42e6352f1');
+</pre>
+</p>
+</div>
 <p>
 Provided by: <a href="http://www.wa4e.com/" target="_blank">
 www.wa4e.com</a> <br/>

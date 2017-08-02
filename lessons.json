@@ -1440,7 +1440,7 @@
                 "json": 
 {
   "title":"Profiles, Positions and jQuery",
-  "description":"In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where postition entries are added in the browser.",
+  "description":"In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where position entries are added in the browser.",
   "grading":"Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
   "assignment":"https://www.wa4e.com/assn/res-position/",
   "solution":"https://www.wa4e.com/solutions/res-position/",
