@@ -78,11 +78,13 @@ to the <b>Profile</b> table with a many-to-one relationship.
 </p>
 <pre>
 CREATE TABLE Position (
-  position_id INTEGER NOT NULL KEY AUTO_INCREMENT,
+  position_id INTEGER NOT NULL AUTO_INCREMENT,
   profile_id INTEGER,
   rank INTEGER,
   year INTEGER,
   description TEXT,
+
+  PRIMARY KEY(position_id),
 
   CONSTRAINT position_ibfk_1
         FOREIGN KEY (profile_id)
@@ -403,10 +405,12 @@ GRANT ALL ON misc.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
 USE misc;   (If in the command line)
 
 CREATE TABLE users (
-   user_id INTEGER NOT NULL KEY AUTO_INCREMENT,
+   user_id INTEGER NOT NULL AUTO_INCREMENT,
    name VARCHAR(128),
    email VARCHAR(128),
    password VARCHAR(128),
+
+   PRIMARY KEY(user_id),
 
    INDEX(email)
 ) ENGINE=InnoDB CHARSET=utf8;

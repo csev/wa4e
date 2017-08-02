@@ -98,10 +98,11 @@ the user is using a non-HTML5 browser.
 You will need to have a <b>users</b> table as follows:
 <pre>
 CREATE TABLE users (
-   user_id INTEGER NOT NULL AUTO_INCREMENT KEY,
+   user_id INTEGER NOT NULL AUTO_INCREMENT,
    name VARCHAR(128),
    email VARCHAR(128),
-   password VARCHAR(128)
+   password VARCHAR(128),
+   PRIMARY KEY(user_id)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 ALTER TABLE users ADD INDEX(email);
@@ -110,13 +111,15 @@ ALTER TABLE users ADD INDEX(password);
 You will also need to add a <b>Profile</b> table as follows:
 <pre>
 CREATE TABLE Profile (
-  profile_id INTEGER NOT NULL KEY AUTO_INCREMENT,
+  profile_id INTEGER NOT NULL AUTO_INCREMENT,
   user_id INTEGER NOT NULL,
   first_name TEXT,
   last_name TEXT,
   email TEXT,
   headline TEXT,
   summary TEXT,
+
+  PRIMARY KEY(profile_id),
 
   CONSTRAINT profile_ibfk_2
         FOREIGN KEY (user_id)
@@ -417,10 +420,12 @@ GRANT ALL ON misc.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
 USE misc;   (If in the command line)
 
 CREATE TABLE users (
-   user_id INTEGER NOT NULL KEY AUTO_INCREMENT,
+   user_id INTEGER NOT NULL AUTO_INCREMENT,
    name VARCHAR(128),
    email VARCHAR(128),
    password VARCHAR(128),
+
+   PRRIMARY KEY(user_id),
 
    INDEX(email)
 ) ENGINE=InnoDB CHARSET=utf8;
