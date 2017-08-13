@@ -106,7 +106,7 @@ function webauto_test_passed($grade, $url) {
 
     success_out("Test passed - congratulations");
 
-    if ( $USER->displayname === false || ! isset($_SESSION['lti']) ) {
+    if ( ! $USER->displayname || ! isset($_SESSION['lti']) ) {
         line_out('Not setup to return a grade..');
         return false;
     }
@@ -165,7 +165,7 @@ function autoToggle() {
 function webauto_check_title($crawler) {
     global $USER, $LINK, $CONTEXT;
     $check = md5($USER->id+$LINK->id+$CONTEXT->id);
-    if ( $USER->displayname !== false && strlen($USER->displayname) > 0 ) {
+    if ( $USER->displayname && strlen($USER->displayname) > 0 ) {
         $check = $USER->displayname;
     }
 

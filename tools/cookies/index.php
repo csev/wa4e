@@ -57,7 +57,7 @@ $OUTPUT->flashMessages();
 </p>
 <?
 
-if ( $USER->displayname === false || $USER->displayname == '' ) {
+if ( ! $USER->displayname || $USER->displayname == '' ) {
     echo('<p style="color:blue;">Auto grader launched without a student name.</p>'.PHP_EOL);
 } else {
     $OUTPUT->welcomeUserCourse();

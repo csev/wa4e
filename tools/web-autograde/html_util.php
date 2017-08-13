@@ -8,7 +8,7 @@ use \Tsugi\Blob\BlobUtil;
 function getTitleCheck() {
     global $USER, $LINK, $CONTEXT;
     $check = md5($USER->id+$LINK->id+$CONTEXT->id);
-    if ( $USER->displayname !== false && strlen($USER->displayname) > 0 ) {
+    if ( $USER->displayname && strlen($USER->displayname) > 0 ) {
         $check = $USER->displayname;
     }
     return $check;

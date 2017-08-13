@@ -27,7 +27,7 @@ answer to complete this assignment with full credit.
 <p>
 To receive a grade for this assignment,
 <?php
-if ( $USER->displayname === false ) {
+if ( ! $USER->displayname ) {
     echo("your name and this string <strong>".md5($code)."</strong> \n");
 } else {
     echo("your name (<strong>".htmlentities($USER->displayname)."</strong>) \n");
