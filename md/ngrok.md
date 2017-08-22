@@ -44,6 +44,10 @@ You should note the temporary URL that ngrok has assigned you for use later.
 In this example, the temporary URL is `http://f01f774d.ngrok.io` - record
 that for later.
 
+You can place the `ngrok` executable command in any folder you like.  If you
+like, you can place it in a folder that is in your path and then type `ngrok`
+from any folder on your system.
+
 Checking Your Application Locally
 ---------------------------------
 

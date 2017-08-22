@@ -32,6 +32,13 @@ if ( $file !== false ) {
 }
 
 $OUTPUT->header();
+?>
+<style>
+center {
+    padding-bottom: 10px;
+}
+</style>
+<?php
 $OUTPUT->bodyStart();
 $OUTPUT->topNav();
 
