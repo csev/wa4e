@@ -48,7 +48,8 @@ if ( $contents != false ) {
 } else {
 ?>
 <ul>
-<li><a href="ngrok_mac.md">Using ngrok</a></li>
+<li><a href="ngrok_mac.md">Using ngrok on a Macintosh</a></li>
+<li><a href="lt_mac.md">Using LocalTunnel on a Macintosh</a></li>
 </ul>
 <?php
 }
