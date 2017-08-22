@@ -48,7 +48,7 @@ if ( $contents != false ) {
 } else {
 ?>
 <ul>
-<li><a href="NGROK.md">Using ngrok</a></li>
+<li><a href="ngrok_mac.md">Using ngrok</a></li>
 </ul>
 <?php
 }
