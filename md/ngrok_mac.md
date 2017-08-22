@@ -20,6 +20,12 @@ Applications like ngrok (or localtunnel) can make a temporary hole
 through your firewall and give you a temporary domain name you can
 use to submit your application to the Autograder.
 
+Ngrok is a "freemium" product that provided a low-level of service for free.
+The free level of the product should be sufficient for the purposes of
+autograding your assignment for this course.  If you cannot use ngrok
+at the free level, you should take a look at "localtunnel" which is
+a less-full featured product, but always free.
+
 Installing Ngrok
 ----------------
 
