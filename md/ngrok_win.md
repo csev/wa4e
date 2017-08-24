@@ -7,7 +7,7 @@ by sending requests and checking the responses from your application.
 
 <center><a href="ngrok_mac/00-autograder.png" target="_blank"><img src="ngrok_mac/00-autograder.png" style="width:80%; border: 1px black solid;"></a></center>
 
-You cannot submit a URL like `http://localhost:8888/homework/guess.php`
+You cannot submit a URL like `http://localhost/homework/guess.php`
 because "localhost" only works for network conections originating *within*
 your computer and your computer protects your computer from
 incoming connectsion (i.e. they are blocked by a firewall).
