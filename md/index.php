@@ -31,11 +31,26 @@ if ( $file !== false ) {
     $contents = file_get_contents($file);
 }
 
+function x_sel($file) {
+    global $HTML_FILE;
+    $retval = 'value="'.$file.'"';
+    if ( strpos($HTML_FILE, $file) === 0 ) {
+        $retval .= " selected";
+    }
+    return $retval;
+}
+
+
 $OUTPUT->header();
 ?>
 <style>
 center {
     padding-bottom: 10px;
+}
+@media print {
+    #chapters {
+        display: none;
+    }
 }
 </style>
 <?php
@@ -43,15 +58,39 @@ $OUTPUT->bodyStart();
 $OUTPUT->topNav();
 
 if ( $contents != false ) {
+?>
+<script>
+function onSelect() {
+    console.log($('#chapters').val());
+    window.location = $('#chapters').val();
+}
+</script>
+<div style="float:right">
+<select id="chapters" onchange="onSelect();">
+  <option <?= x_sel("ngrok_mac.md") ?>>Using Ngrok on the Mac</option>
+  <option <?= x_sel("ngrok_win.md") ?>>Using Ngrok on Windows</option>
+  <option <?= x_sel("lt_mac.md") ?>>Using LocalTunnel on Mac</option>
+</select>
+</div>
+<?php
     $Parsedown = new Parsedown();
     echo $Parsedown->text($contents);
 } else {
 ?>
+<p>
+This is a set of supplementary documentation for use with this
+web site.
+</p>
 <ul>
-<li><a href="ngrok_mac.md">Using ngrok and the Autograder on a Macintosh</a></li>
-<li><a href="ngrok_win.md">Using ngrok and the Autograder on Windows-10</a></li>
+<li><a href="ngrok_mac.md">Using Ngrok and the Autograder on a Macintosh</a></li>
+<li><a href="ngrok_win.md">Using nGrok and the Autograder on Windows-10</a></li>
 <li><a href="lt_mac.md">Using LocalTunnel and the Autograder on a Macintosh</a></li>
 </ul>
+<p>
+If you find a mistake in this documentation, feel free to send me a fix using
+<a href="https://github.com/csev/wa4e/tree/master/md" target="_blank">Github</a>.
+</p>
 <?php
 }
 $OUTPUT->footer();
+
