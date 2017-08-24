@@ -286,6 +286,10 @@
         "youtube": "CwwF801i5_4"
     },
     {
+        "title": "Installing MAMP on Windows-10 for PHP/MySQL",
+        "youtube": "0P6DEUJaVTc"
+    },
+    {
         "title": "Installing XAMPP on Windows for PHP/MySQL",
         "youtube": "X0_pthMQPMM"
     }
@@ -293,7 +297,7 @@
     "references" : [
         {
             "title" : "Installation Handout",
-            "href" : "https://www.wa4e.com/install.php"
+            "href" : "install.php"
         },
         {
             "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",

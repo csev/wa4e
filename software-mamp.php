@@ -27,7 +27,7 @@ and follow along to complete the tasks.  There are notes below the YouTube video
 You may want to print this page to have the notes as you follow the steps in the video.
 </p>
 <center>
-<iframe width="480" height="390" src="https://www.youtube.com/embed/CwwF801i5_4" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/0P6DEUJaVTc" frameborder="0" allowfullscreen></iframe>
 </center>
 <p>
 <h3>Installation Notes</h3>
