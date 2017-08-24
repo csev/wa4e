@@ -21,11 +21,6 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 There is a screen cast of this process below on YouTube.  You can watch the screen cast
 and follow along to complete the tasks.  There are notes below the YouTube video as well.
 You may want to print this page to have the notes as you follow the steps in the video.
-You may find that watching this on YouTube does not work so well because you may have a slow 
-network connection, or you need to stop and start the video too often as you watch it.
-Also the text is difficult to read on the YouTube version.
-Below the video is a link to download the entire high-quality video to your desktop so 
-you can play it locally with QuickTime.
 </p>
 <center>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/X0_pthMQPMM" frameborder="0" allowfullscreen></iframe>
