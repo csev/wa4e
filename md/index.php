@@ -48,8 +48,9 @@ if ( $contents != false ) {
 } else {
 ?>
 <ul>
-<li><a href="ngrok_mac.md">Using ngrok on a Macintosh</a></li>
-<li><a href="lt_mac.md">Using LocalTunnel on a Macintosh</a></li>
+<li><a href="ngrok_mac.md">Using ngrok and the Autograder on a Macintosh</a></li>
+<li><a href="ngrok_win.md">Using ngrok and the Autograder on Windows-10</a></li>
+<li><a href="lt_mac.md">Using LocalTunnel and the Autograder on a Macintosh</a></li>
 </ul>
 <?php
 }
