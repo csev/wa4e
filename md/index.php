@@ -71,6 +71,7 @@ function onSelect() {
   <option <?= x_sel("ngrok_mac.md") ?>>Using Ngrok on the Mac</option>
   <option <?= x_sel("ngrok_win.md") ?>>Using Ngrok on Windows</option>
   <option <?= x_sel("lt_mac.md") ?>>Using LocalTunnel on Mac</option>
+  <option <?= x_sel("lt_win.md") ?>>Using LocalTunnel on Win-10</option>
 </select>
 </div>
 <?php
@@ -86,6 +87,7 @@ web site.
 <li><a href="ngrok_mac.md">Using Ngrok and the Autograder on a Macintosh</a></li>
 <li><a href="ngrok_win.md">Using nGrok and the Autograder on Windows-10</a></li>
 <li><a href="lt_mac.md">Using LocalTunnel and the Autograder on a Macintosh</a></li>
+<li><a href="lt_win.md">Using LocalTunnel and the Autograder on Windows-10</a></li>
 </ul>
 <p>
 If you find a mistake in this documentation, feel free to send me a fix using
