@@ -29,6 +29,7 @@ if ( $pieces >= 2 ) {
 
 if ( $file !== false ) {
     $contents = file_get_contents($file);
+    $HTML_FILE = $file;
 }
 
 function x_sel($file) {
