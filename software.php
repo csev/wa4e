@@ -14,9 +14,6 @@ We have separate pages for each of the commonly used Operating Systems:
 <li><a href="software-win.php">Setting up the XAMPP PHP/MySql Environment in Microsoft Windows</a></li>
 <li><a href="software-mac.php">Setting up the MAMP PHP/MySql Environment on a Macintosh</a>
 </li>
-<li><a href="https://www.youtube.com/watch?v=zvZ6TUYeEnw" target="_blank">Using Apache and MySQL in the Bash Shell on Windows-10</a> - Only use this
-if you can tolerate a little more complexity.
-</li>
 </ul>
 <p>
 You can use any software you like - I suggest XAMPP for Windows and MAMP for 
