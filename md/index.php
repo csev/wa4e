@@ -85,7 +85,7 @@ web site.
 </p>
 <ul>
 <li><a href="ngrok_mac.md">Using Ngrok and the Autograder on a Macintosh</a></li>
-<li><a href="ngrok_win.md">Using nGrok and the Autograder on Windows-10</a></li>
+<li><a href="ngrok_win.md">Using Ngrok and the Autograder on Windows-10</a></li>
 <li><a href="lt_mac.md">Using LocalTunnel and the Autograder on a Macintosh</a></li>
 <li><a href="lt_win.md">Using LocalTunnel and the Autograder on Windows-10</a></li>
 </ul>
