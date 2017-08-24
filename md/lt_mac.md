@@ -24,6 +24,13 @@ LocalTunnel is a free product and service and is suitable for use for
 this class.  If you want a more full-featured product, you might be interested
 in "ngrok" which has a "freemium" pricing model.
 
+Video Tutorial
+--------------
+
+You can watch a video demonstrating the use of LocalTunnel on Macintosh at:
+
+<a href="https://www.youtube.com/watch?v=U5AP8XdUdiA&list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX" target="_blank">https://www.youtube.com/watch?v=U5AP8XdUdiA</a>
+
 Installing LocalTunnel
 ----------------------
 
