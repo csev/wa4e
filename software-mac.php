@@ -85,7 +85,7 @@ you should only modify or delete databases you created.
 -->
 <h3>Your First PHP Program</h3>
 <p>
-Open a text editor (i.e. TextWrangler) and put the following text in the file
+Open a text editor (i.e. Atom) and put the following text in the file
 putting your own name in instead of mine:
 <pre>
 &lt;h1&gt;Hello from Dr. Chuck's HTML Page&lt;/h1&gt;
