@@ -176,7 +176,7 @@
     "icon" : "fa-css3",
     "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
     "slides": "lectures/Web-03-CSS.ppt",
-    "chapters" : "15-22",
+    "chapters" : "19-22",
     "videos" : [
         {
             "title" : "CSS - Cascading Style Sheets - (Part 1)",
@@ -278,7 +278,7 @@
     "anchor": "install",
     "icon" : "fa-clone",
     "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
-    "chapters" : "27",
+    "chapters" : "3",
     "assignment" : "https://www.wa4e.com/assn/install/",
     "videos" : [
     {
