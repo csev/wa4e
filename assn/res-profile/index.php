@@ -409,7 +409,7 @@ clause in your tables query to return the correct range of rows.
 </p>
 <div id="dbdetail" style="display:none">
 <p>
-If you have been doing al the previous assignments, you should have a database
+If you have been doing all the previous assignments, you should have a database
 set up.  Here is the SQL if you are just starting on this assignment:
 <pre>
 CREATE DATABASE misc DEFAULT CHARACTER SET utf8 ;
@@ -425,7 +425,7 @@ CREATE TABLE users (
    email VARCHAR(128),
    password VARCHAR(128),
 
-   PRRIMARY KEY(user_id),
+   PRIMARY KEY(user_id),
 
    INDEX(email)
 ) ENGINE=InnoDB CHARSET=utf8;
