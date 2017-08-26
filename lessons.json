@@ -1281,7 +1281,7 @@
         },
         {
             "title" : "Code Walkthrough: Profiles and JavaScript",
-            "href" : "https://www.youtube.com/watch?v=yD6q94ibv3Q&feature=youtu.be"
+            "href" : "https://www.youtube.com/watch?v=yD6q94ibv3Q"
         },
         {
             "title" : "Bonus: Building JavaScript with with Brendan Eich",
@@ -1422,6 +1422,10 @@
         {
             "title" : "Sample code",
             "href" : "code/jquery-01.zip"
+        },
+        {
+            "title" : "Code Walkthrough: Profiles, Positions and JQuery",
+            "href" : "https://www.youtube.com/watch?v=EVLluVD6dRo"
         },
         {
             "title" : "Bonus: John Resig - Building JQuery",
