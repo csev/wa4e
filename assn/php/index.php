@@ -80,7 +80,7 @@ You can explore a sample solution for this problem at
 <a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li>The Wikipedia page on 
 <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">
-HTTP - Hypertext Transport Protocol</a>
+HTTP - Hypertext Transfer Protocol</a>
 <li> Chapters 23, 24, 25, and 26 from the free textbook
 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by

@@ -65,7 +65,7 @@ unset($_SESSION['postdata']);
 
 ?>
 <p>
-<b>Exploring the HyperText Transport Protocol</b>
+<b>Exploring the HyperText Transfer Protocol</b>
 <p>
 You are to retrieve the following document in a browser tab with 
 "Developer Mode" enabled so you can examine the HTTP Response headers.
