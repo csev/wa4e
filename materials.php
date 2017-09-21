@@ -42,7 +42,7 @@ Desire2Learn, Blackboard, or similar.
         </ul>
         <p>
         If you are interested in translating the book or other online materials into another 
-        language, please contact me so we can coordinate out sctivities.
+        language, please contact me so we can coordinate our sctivities.
         </p>
 
 
