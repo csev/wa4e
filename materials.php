@@ -1,5 +1,9 @@
 <?php include("top.php");?>
 <?php include("nav.php");?>
+<div id="iframe-dialog" title="Read Only Dialog" style="display: none;">
+   <iframe name="iframe-frame" style="height:600px" id="iframe-frame" 
+    src="<?= $OUTPUT->getSpinnerUrl() ?>"></iframe>
+</div>
         <h2>Free / Open Educational Resources (OER)</h2>
         <p>
             You are welcome to use/reuse/remix/retain these materials in your own courses.
@@ -19,10 +23,11 @@
             <li>
                 <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/" target="_blank">Free Textbook</a>
             </li>
-            <li>
-Download all
-<a href="tsugi/cc/export.php"> the course material</a> as an
-IMS Common Cartridge®, to import into an LMS like Sakai, Moodle, Canvas, 
+<li>
+  <a href="tsugi/cc/select" title="Download course material" target="iframe-frame"
+  onclick="showModalIframe(this.title, 'iframe-dialog', 'iframe-frame', _TSUGI.spinnerUrl, true);" >
+  Download course material
+  </a> as an IMS Common Cartridge®, to import into an LMS like Sakai, Moodle, Canvas,
 Desire2Learn, Blackboard, or similar.
 </li>
             <li>
