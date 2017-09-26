@@ -17,13 +17,16 @@ $OUTPUT->flashMessages();
 // Show the basic info for this user
 GradeUtil::gradeShowInfo($row);
 
-// Unique detail
-echo("<p>Submitted URL:</p>\n");
-$json = json_decode($row['json']);
-if ( is_object($json) && isset($json->url)) {
-    echo("<p><a href=\"".safe_href($json->url)."\" target=\"_new\">");;
-    echo(htmlent_utf8($json->url));
-    echo("</a></p>\n");
+if ( isset($row['note']) ) {
+    echo("<p>Note:</p>\n<pre>\n");
+    echo(htmlentities($row['note']));
+    echo("</pre>\n");
+}
+
+if ( strlen($row['json']) > 0 ) {
+    echo("<p>JSON:</p>\n<pre>\n");
+    echo(htmlentities($row['json']));
+    echo("</pre>\n");
 }
 
 $OUTPUT->footer();

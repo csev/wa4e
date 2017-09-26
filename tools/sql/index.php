@@ -82,6 +82,12 @@ SettingsForm::dueDate();
 SettingsForm::done();
 SettingsForm::end();
 
+if ( isset($_SESSION['error']) ) {
+    $RESULT->setNote($_SESSION['error']);
+} else if ( isset($_SESSION['success']) ) {
+    $RESULT->setNote($_SESSION['success']);
+}
+
 $OUTPUT->flashMessages();
 
 $OUTPUT->welcomeUserCourse();

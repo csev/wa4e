@@ -52,6 +52,11 @@ if ( isset($_FILES['json']) ) {
     }
     $file = $fdes['tmp_name'];
     $data = file_get_contents($file);
+
+    // Retain the submission
+    $store = substr($data, 0, 5000);
+    $RESULT->setJSON($store);
+
     $tables = load_mysql_json_export($data);
     if ( is_string($tables) ) {
         $_SESSION['error'] = $tables;
