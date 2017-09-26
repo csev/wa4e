@@ -308,6 +308,7 @@ When you have the data all inserted, use phpMyAdmin to Export the data as follow
 <li>Select "Custom - display all possible options"</li>
 <li>Select "Save output to a file"</li>
 <li>Set the format to JSON</li>
+<li>Do not select "pretty print" the output</li>
 <li>Leave everything else as default and run the export.</li>
 </ul>
 The output will be on a file named "roster.json" that should look like the following:
@@ -320,9 +321,13 @@ The output will be on a file named "roster.json" that should look like the follo
 // Database 'roster'
 // roster.Course
 
-[{"course_id":"6","title":"si106"}, ... }]// roster.Member
+[{"course_id":"6","title":"si106"}, ... }]
 
-[{"user_id":"1","course_id":"1","role":"1"}, ... }]// roster.User
+// roster.Member
+
+[{"user_id":"1","course_id":"1","role":"1"}, ... }]
+
+// roster.User
 
 [{"user_id":"15","name":"Areez"}, ... }]
 </pre>

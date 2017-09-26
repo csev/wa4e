@@ -31,34 +31,60 @@ function makeRoster($code,$course_count=false,$name_count=false) {
 // Load the export to JSON format from MySQL
 function load_mysql_json_export($data) {
 
+    // The format changes for the php JSON EXPORT plugins...
+
+    // This version and earlier - the whole thing is not valid JSON
+    // Export to JSON plugin for PHPMyAdmin @version 4.6.5.2
+
+    // This version and later it is valid JSON but quite different
+    // {"type":"header","version":"4.7.2","comment":"Export to JSON plugin for PHPMyAdmin"},
+
     $pos = 0;
+    $tables = array();
     $retval = array();
     $errors = array();
-    $things = explode('//',$data);
-    // echo("<pre>\n");
-    // print_r($things);
-    foreach($things as $thing) {
-        if ( strpos($thing,'[{') === false || strpos($thing, '}]') === false ) {
-            continue;
-        }
-        $thing = trim($thing);
-        $pieces = explode("\n",$thing);
-        // echo("==========\n"); print_r($pieces);
-        if ( count($pieces) != 3 ) continue;
-        $name = trim($pieces[0]);
-        $chunks = explode('.',$name);
-        if ( count($chunks) > 1 ) {
-            $name = $chunks[count($chunks)-1];
-        }
-        $name = strtolower($name);
-        // echo("name=$name\n");
-        $json = json_decode($pieces[2], true);
-        if ( $json === NULL ) {
-            $errors[] = "Unable to parse the $name JSON ".json_last_error();
-            continue;
-        }
 
-        $retval[$name] = $json;
+
+    // echo("<pre>\n");
+    $newformat = json_decode($data, true);
+    if ( $newformat !== null ) {
+        foreach($newformat as $table) {
+            if ( $table['type'] != "table" ) continue;
+            $name = strtolower($table['name']);
+            $retval[$name] = $table['data']; 
+            // echo("Name $name\n"); var_dump($table['data']); die('new format');
+        }
+    } else { 
+        $things = explode('//',$data);
+        // echo("<pre>\n"); print_r($things);
+        foreach($things as $thing) {
+            if ( strpos($thing,'[{') === false || strpos($thing, '}]') === false ) {
+                continue;
+            }
+            $thing = trim($thing);
+            $pieces = explode("\n",$thing);
+            // echo("==========\n"); print_r($pieces);
+            if ( count($pieces) != 3 ) continue;
+            $name = trim($pieces[0]);
+            $chunks = explode('.',$name);
+            if ( count($chunks) > 1 ) {
+                $name = $chunks[count($chunks)-1];
+            }
+            $name = strtolower($name);
+            // echo("name=$name\n");
+            $json = json_decode($pieces[2], true);
+            if ( $json === NULL ) {
+                $errors[] = "Unable to parse the $name JSON ".json_last_error();
+                continue;
+            }
+
+            // echo("Name $name\n"); var_dump($json); die('old format');
+            $retval[$name] = $json;
+        }
+    }
+
+    // Actually prepare the data for return
+    foreach($retval as $name => $json ) {
         if ( count($json) < 1 ) continue;
 
         $key = strtolower($name).'_id';
