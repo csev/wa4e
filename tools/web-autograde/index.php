@@ -138,6 +138,12 @@ if ( $dueDate->message ) {
 }
 ?>
 <p>
+Here is the specification for this assignment:
+<a href="https://www.wa4e.com/assn/html/" target="_blank">
+https://www.wa4e.com/assn/html/
+</a>
+</p>
+<p>
 Make sure that your code passes 
 the <a href="https://validator.w3.org/nu/" target="_blank">W3C HTML Validator</a>
 before submitting this assignment.
