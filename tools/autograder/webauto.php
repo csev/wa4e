@@ -32,6 +32,28 @@ function showHTML($message, $html) {
     
 }
 
+function titleNote() {
+    global $USER, $LINK, $CONTEXT;
+    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+?>
+<p>
+To receive a grade for this assignment, include your name
+<?php
+if ( $USER->displayname ) {
+    echo("(<strong>".htmlentities($USER->displayname)."</strong>) \n");
+}
+echo("and/or this string <strong>".md5($check)."</strong> \n");
+?>
+in the &lt;title&gt; tag in all the pages of your application.
+</p>
+<p>If you need to run this grading program on an application that is running on your
+laptop or desktop computer with a URL like <strong>http://localhost...</strong> you
+will need to install and use the <a href="http://www.wa4e.com/md/" target="_blank">NGrok or LocalTunnel</a>
+application to get a temporary Internet-accessible URL that can be used with this application.
+</p>
+<?php
+}
+
 function getUrl($sample) {
     global $USER, $access_code;
 
@@ -165,19 +187,21 @@ function autoToggle() {
 function webauto_check_title($crawler) {
     global $USER, $LINK, $CONTEXT;
     $check = md5($USER->id+$LINK->id+$CONTEXT->id);
-    if ( $USER->displayname && strlen($USER->displayname) > 0 ) {
-        $check = $USER->displayname;
-    }
 
     try {
         $title = $crawler->filter('title')->text();
     } catch(Exception $ex) {
         return "Did not find title tag";
     }
-    if ( stripos($title,$check) === false ) {
-        return "Did not find '$check' in title tag";
+
+    if ( stripos($title,$check) !== false ) {
+        return true;
     }
-    return true;
+    if ( $USER->displayname && strlen($USER->displayname) > 0 ) {
+        if ( stripos($title, $USER->displayname) !== false ) return true;
+    }
+
+    return "Did not find name or '$check' in title tag";
 }
 
 function webauto_compute_effective_score($perfect, $passed, $penalty) {

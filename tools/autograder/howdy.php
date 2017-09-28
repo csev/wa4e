@@ -6,6 +6,8 @@ use Goutte\Client;
 
 line_out("Grading PHP-Intro Assignment 2");
 
+titleNote();
+
 $url = getUrl('http://csevumich.byethost18.com/howdy.php');
 if ( $url === false ) return;
 $grade = 0;
