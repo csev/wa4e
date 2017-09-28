@@ -210,6 +210,7 @@ function webauto_compute_effective_score($perfect, $passed, $penalty) {
     $score = $passed * (1.0 / $perfect);
     if ( $score < 0 ) $score = 0;
     if ( $score > 1 ) $score = 1;
+    if ( $passed > $perfect ) $passed = $perfect;
     if ( $penalty == 0 ) {
         $scorestr = "Score = $score ($passed/$perfect)";
     } else {
