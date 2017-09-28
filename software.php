@@ -12,7 +12,7 @@ PHP/MySql application, and explore that application briefly.
 We have separate pages for each of the commonly used Operating Systems:
 <ul>
 <li><a href="software-mac.php">Setting up the MAMP PHP/MySql Environment on a Macintosh</a>
-<li><a href="software-MAMP.php">Setting up the MAMP PHP/MySql Environment on a Windows</a>
+<li><a href="software-mamp.php">Setting up the MAMP PHP/MySql Environment on a Windows</a>
 <li><a href="software-win.php">Setting up the XAMPP PHP/MySql Environment in Microsoft Windows</a></li>
 </li>
 </ul>

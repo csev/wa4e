@@ -24,10 +24,11 @@ You can explore a sample solution for this problem at
 </pre>
 This sample solution won't completly pass the autograder.  It needs some work
 to meet the specifications.  You can download the code for the partially complete
-sample solution at:
-<pre>
-<a href="http://www.wa4e.com/code/arrays.zip" target="_blank">http://www.wa4e.com/code/arrays.zip</a>
-</pre>
+sample solution
+<a href="guess.txt" target="_blank">here</a>.
+You will have to change this per the instructions in the autograder in order
+to pass the autograder.
+</p>
 <?php } ?>
 <h2>Resources</h2>
 <p>There are several sources of information so you can do the assignment:
