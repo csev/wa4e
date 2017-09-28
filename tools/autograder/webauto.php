@@ -34,15 +34,17 @@ function showHTML($message, $html) {
 
 function titleNote() {
     global $USER, $LINK, $CONTEXT;
-    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+    $check = substr(md5($USER->id+$LINK->id+$CONTEXT->id),0,8);
 ?>
 <p>
 To receive a grade for this assignment, include your name
 <?php
 if ( $USER->displayname ) {
-    echo("(<strong>".htmlentities($USER->displayname)."</strong>) \n");
+    echo("(<strong>".htmlentities($USER->displayname)."</strong>) and/or \n");
+} else {
+    echo("and \n");
 }
-echo("and/or this string <strong>".md5($check)."</strong> \n");
+echo("this string <strong>".$check."</strong> \n");
 ?>
 in the &lt;title&gt; tag in all the pages of your application.
 </p>
@@ -186,7 +188,7 @@ function autoToggle() {
 
 function webauto_check_title($crawler) {
     global $USER, $LINK, $CONTEXT;
-    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+    $check = substr(md5($USER->id+$LINK->id+$CONTEXT->id),0,8);
 
     try {
         $title = $crawler->filter('title')->text();
