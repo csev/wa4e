@@ -89,7 +89,7 @@ if ( stripos($html,'Incorrect password') > 0 ) {
     error_out("Could not find 'Incorrect password'"); 
 }
 
-line_out("Attempting a good login.");
+line_out("Attempting a proper login with pw=php123.");
 $form->setValues(array("who" => $account, "pass" => "php123"));
 $crawler = $client->submit($form);
 markTestPassed('Submit good login values to login.php');
