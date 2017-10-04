@@ -65,8 +65,8 @@ line_out("-- if your fields do not match these, the next tests will fail.");
 
 
 
-line_out("Attempting a bad login $account pass=secret42.");
-$form->setValues(array("who" => $account, "pass" => "secret42"));
+line_out("Attempting a bad login $account pass=badsecret42.");
+$form->setValues(array("who" => $account, "pass" => "badsecret42"));
 $crawler = $client->submit($form);
 markTestPassed('Submit bad login values to login.php');
 // This one does not post redirect
