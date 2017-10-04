@@ -113,6 +113,10 @@ and stored hash:
 $salt = 'XyZzy12*_';
 $stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';
 </pre>
+Note that the sample code is using a <i>different</i> salted hash so you 
+should change the sample code to use this hash.
+</p>
+<p>
 The stored_hash is the MD5 of the salt concatenated with the plaintext
 of php123 - which is the password.  This has is computed using the following
 PHP:
