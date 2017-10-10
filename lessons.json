@@ -507,6 +507,13 @@
             "youtube" : "1Msp1AGz_NU"
         }
     ],
+    "references" : 
+    [
+        {
+            "title" : "Bruce Schnier: Building Cryptographic Systems",
+            "href" : "https://www.youtube.com/watch?v=opT6pIfyGUs"
+        }
+    ],
     "assignment" : "https://www.wa4e.com/assn/crack/",
     "solution" : "https://www.wa4e.com/solutions/crack/",
     "lti" : [
