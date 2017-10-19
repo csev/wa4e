@@ -1,4 +1,4 @@
-<? // do some grading
+<?php // do some grading
 $possgrade = 0;
 $grade = 0;
 $titlematch = false;

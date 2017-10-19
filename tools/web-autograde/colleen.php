@@ -1,4 +1,4 @@
-<? // do some grading
+<?= // do some grading
     $dom = new DOMDocument;
     @$dom->loadHTML($data);
 

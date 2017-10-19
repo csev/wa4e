@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 use \Tsugi\Core\LTIX;
 use \Tsugi\Util\LTI;
 use \Tsugi\Util\Mersenne_Twister;
@@ -279,7 +282,7 @@ the following data items into your database, creating and linking all the
 foreign keys properly.  Encode instructor with a role of 1 and a learner with a role
 of 0.
 <pre>
-<?
+<?php
 foreach($roster as $entry) {
     $role = $entry[2] == 1 ? 'Instructor' : 'Learner';
     echo "$entry[0], $entry[1], $role\n";
@@ -343,7 +346,7 @@ if ( ! $USER->instructor ) {
 <h1>Instructor Only Debug</h1>
 Here is a set of insert statements to achieve this assignment.
 <pre>
-<?
+<?php
 foreach($roster as $entry) {
     echo "INSERT IGNORE INTO User (name) VALUES ('$entry[0]');\n";
     echo "INSERT IGNORE INTO Course (title) VALUES ('$entry[1]');\n";
