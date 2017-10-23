@@ -34,6 +34,10 @@ Desire2Learn, Blackboard, or similar.
                 Free cloud hosted autograder software for non-commercial use. (Login and "Use This Service")
             </li>
             <li>
+                If you run Canvas, course material for the first 10 chapters of this book are available in
+<a href="https://lor.instructure.com/resources/4ec64e664fac47679b43c74d64d3d6b7" target="_blank">Canvas Commons</a> with
+a CC-BY license.
+            <li>
                 All the course content and sotware is available on 
                 <a href="https://github.com/csev/wa4e" target="_blank">
                 Github</a> - you could literally make a copy of this site and host it as your own.
