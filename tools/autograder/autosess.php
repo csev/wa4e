@@ -190,12 +190,14 @@ webauto_search_for($html, "Please Log In");
     error_out("The autograder did not find something it was looking for in your HTML - test ended.");
     error_out("Usually the problem is in one of the pages returned from your application.");
     error_out("Use the 'Toggle' links above to see the pages returned by your application.");
+    echo("<!--\n");
     error_log($ex->getMessage());
     error_log($ex->getTraceAsString());
     $detail = "This indicates the source code line where the test stopped.\n" .
         "It may not make any sense without looking at the source code for the test.\n".
         'Caught exception: '.$ex->getMessage()."\n".$ex->getTraceAsString()."\n";
     showHTML("Internal error detail.",$detail);
+    echo("\n-->\n");
 }
 
 $perfect = 28;
