@@ -55,7 +55,7 @@ $OUTPUT->flashMessages();
 <p>
 <b>Finding Cookies and Sessions in a Haystack</b>
 </p>
-<?
+<?php
 
 if ( ! $USER->displayname || $USER->displayname == '' ) {
     echo('<p style="color:blue;">Auto grader launched without a student name.</p>'.PHP_EOL);
