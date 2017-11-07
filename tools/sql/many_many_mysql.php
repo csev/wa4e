@@ -357,5 +357,3 @@ foreach($roster as $entry) {
 ?>
 </pre>
 </p>
-<?php
-$OUTPUT->footer();
