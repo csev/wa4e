@@ -53,7 +53,8 @@ if ( $assn === false && isset($_GET["inherit"]) && isset($CFG->lessons) ) {
 $dueDate = SettingsForm::getDueDate();
 
 // Let the assignment handle the POST
-if ( count($_POST) > 0 && $assn && isset($assignments[$assn]) ) {
+if ( ( count($_FILES) + count($_POST) ) > 0 && 
+    $assn && isset($assignments[$assn]) ) {
     include($assn);
     return;
 }
