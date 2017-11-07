@@ -5,7 +5,19 @@ session_start();
 if ( isset($_POST['name']) && isset($_POST['email'])
      && isset($_POST['password']) && isset($_POST['user_id']) ) {
 
-    // Data validation should go here (see add.php)
+    // Data validation
+    if ( strlen($_POST['name']) < 1 || strlen($_POST['password']) < 1) {
+        $_SESSION['error'] = 'Missing data';
+        header("Location: edit.php?user_id=".$_POST['user_id']);
+        return;
+    }
+
+    if ( strpos($_POST['email'],'@') === false ) {
+        $_SESSION['error'] = 'Bad data';
+        header("Location: edit.php?user_id=".$_POST['user_id']);
+        return;
+    }
+
     $sql = "UPDATE users SET name = :name,
             email = :email, password = :password
             WHERE user_id = :user_id";
@@ -20,7 +32,12 @@ if ( isset($_POST['name']) && isset($_POST['email'])
     return;
 }
 
-// Guardian should go here (see delete.php)
+// Guardian: Make sure that user_id is present
+if ( ! isset($_GET['user_id']) ) {
+  $_SESSION['error'] = "Missing user_id";
+  header('Location: index.php');
+  return;
+}
 
 $stmt = $pdo->prepare("SELECT * FROM users where user_id = :xyz");
 $stmt->execute(array(":xyz" => $_GET['user_id']));
@@ -29,6 +46,12 @@ if ( $row === false ) {
     $_SESSION['error'] = 'Bad value for user_id';
     header( 'Location: index.php' ) ;
     return;
+}
+
+// Flash pattern
+if ( isset($_SESSION['error']) ) {
+    echo '<p style="color:red">'.$_SESSION['error']."</p>\n";
+    unset($_SESSION['error']);
 }
 
 $n = htmlentities($row['name']);

@@ -68,7 +68,7 @@ $OUTPUT->topNav();
 
 // Settings button and dialog
 
-echo('<span style="position: fixed; right: 10px; top: 5px;">');
+echo('<span style="float: right;">');
 if ( $USER->instructor ) {
     if ( $CFG->launchactivity ) {
         echo('<a href="analytics" class="btn btn-default">Launches</a> ');
