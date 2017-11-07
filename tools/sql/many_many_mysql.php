@@ -70,7 +70,15 @@ if ( isset($_FILES['json']) ) {
     if ( isset($tables['user']) && isset($tables['course']) && isset($tables['member']) ) {
         // OK
     } else {
-        $_SESSION['error'] = "Expecting user, course, and member tables";
+        $tstr = '';
+        $tlist = array();
+        if ( $tables['user'] ) $tlist[] = 'user';
+        if ( $tables['course'] ) $tlist[] = 'course';
+        if ( $tables['member'] ) $tlist[] = 'member';
+        if ( count($tlist) > 0 ) {
+            $tstr = ". Found: " . htmlentities(implode(', ', $tlist));
+        }
+        $_SESSION['error'] = "Expecting user, course, and member tables".$tstr;
         header( 'Location: '.addSession('index.php') ) ;
         return;
     }
