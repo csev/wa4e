@@ -118,6 +118,6 @@ Once the inserts are done, run the following SQL command:
 <pre>
 SELECT sha1(CONCAT(name,age)) AS X FROM Ages ORDER BY X
 </pre>
-Find the <b>first</b> row in the resulting record set and enter the long string that looks like 
-<b>254c6127cdbc4c38e065317667340e8b0950046f</b>.
+Find the <b>first</b> row in the resulting record set and enter the long string that looks <i>like</i>
+<b>254c6127cdbc4c38e065317667340e8b0950046f</b> (this is just a sample string).
 </p>
