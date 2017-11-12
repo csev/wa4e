@@ -5,6 +5,22 @@ use \Tsugi\Util\LTI;
 use \Tsugi\Util\Net;
 use \Tsugi\Blob\BlobUtil;
 
+function getTitleString() {
+    global $USER;
+    $retval = '';
+    if ( $USER->displayname && strlen($USER->displayname) > 0 ) {
+        $retval = $USER->displayname . ' ';
+    }
+    $retval .= getTitleCode();
+    return $retval;
+}
+
+function getTitleCode() {
+    global $USER, $LINK, $CONTEXT;
+    $check = md5($USER->id+$LINK->id+$CONTEXT->id);
+    return substr($check,0,6);
+}
+
 function getTitleCheck() {
     global $USER, $LINK, $CONTEXT;
     $check = md5($USER->id+$LINK->id+$CONTEXT->id);
@@ -65,6 +81,7 @@ function titleCheck($dom) {
     $title = getTagText($dom, 'title');
     if ( ! $title ) return false;
     if ( strpos($title, getTitleCheck()) !== false ) return true;
+    if ( strpos($title, getTitleCode()) !== false ) return true;
     return false;
 }
 

@@ -151,7 +151,7 @@ before submitting this assignment.
 <p>
 Make sure your title tag in the HTML contains this:
 <pre>
-&lt;title&gt; ... <?= htmlentities(getTitleCheck()) ?> ... &lt;/title&gt;
+&lt;title&gt; ... <?= htmlentities(getTitleString()) ?> ... &lt;/title&gt;
 </pre>
 </p>
 <p>

@@ -11,7 +11,7 @@ $titlematch = titleCheck($dom);
 if ( $titlematch ) {
     echo("Found correct text in title tag\n");
 } else {
-    echo("<span class=\"incorrect\">Did not find ... ".htmlentities(getTitleCheck())." ... in the title tag\n");
+    echo("<span class=\"incorrect\">Did not find ... ".htmlentities(getTitleString())." ... in the title tag\n");
     echo("Document will be checked, but the grade will not be recorded...</span>\n");
 }
 
