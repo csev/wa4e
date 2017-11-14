@@ -33,13 +33,28 @@
             "php_02_hash",
             "php_03_guess",
             "php_04_rps",
-            "php_05_autosdb",
+            "php_05_autosdb"
+        ]
+    },
+    {
+        "title" : "Building a CRUD Application with PHP",
+        "image" : "02_crud.png",
+        "threshold" : "1.0",
+        "assignments" : [
             "php_06_crud"
         ]
     },
     {
-        "title" : "JavaScript, JQuery, and JSON",
+        "title" : "JavaScript",
         "image" : "03_javascript.png",
+        "threshold" : "1.0",
+        "assignments" : [
+            "php_07_profile"
+        ]
+    },
+    {
+        "title" : "JQuery, and JSON",
+        "image" : "04_jquery.png",
         "threshold" : "1.0",
         "assignments" : [
             "php_07_profile",
@@ -69,6 +84,21 @@
             "php_07_profile_peer",
             "php_08_position_peer",
             "php_09_peer"
+        ]
+    },
+    {
+        "title" : "Web Applications with PHP, SQL, JavaScript, and JQuery",
+        "image" : "badge_wa4e.png",
+        "threshold" : "0.6",
+        "assignments" : [
+            "html_01",
+            "mysql_01_single",
+            "mysql_02_tracks",
+            "mysql_03_many_peer",
+            "php_06_crud",
+            "php_07_profile",
+            "php_08_position",
+            "php_09_education"
         ]
     }
 ],
