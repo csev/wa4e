@@ -273,7 +273,7 @@ by PDO.  Here is some sample code:
         $rank++;
 </pre>
 The variable <b>$profile_id</b> contains the primary key of the newly created profile
-so you can include it in the INSERT into the Postion table.
+so you can include it in the INSERT into the Position table.
 </p>
 <h1>Dealing with Changes to Positions When Editing</h1>
 <p>
@@ -288,7 +288,7 @@ If you want to try to do that for this assignment - feel free - but consider it 
 </p>
 <p>
 For your first implementation of handling the POST data in <b>edit.php</b> just delete all
-the old Postion entries and re-insert them:
+the old Position entries and re-insert them:
 <pre>
     // Clear out the old position entries
     $stmt = $pdo-&gt;prepare('DELETE FROM Position
