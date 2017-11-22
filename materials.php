@@ -36,7 +36,7 @@ LTI-based tools provided in that cartridge.
 If you are using <a href="https://classroom.google.com" target="_blank">Google Classroom</a>,
 you can automatically link the resources in this site
 into your classroom in the 
-<a href="<?= $CFG->apphome ?>/lessons/intro?nostyle=yes">low-style view of the lessons</a>.
+<a href="<?= $CFG->apphome ?>/lessons/rrc?nostyle=yes">low-style view of the lessons</a>.
 </p></li>
             <li><p>
                 If you have access to
@@ -47,7 +47,7 @@ a CC-BY license.
 <li><p>
 If your LMS supports neither Content Item, nor Common Cartridge
 you can hand-copy the links from this course material into your LMS from the
-<a href="<?= $CFG->apphome ?>/lessons/intro?nostyle=yes">low-style view of the lessons</a>.
+<a href="<?= $CFG->apphome ?>/lessons/rrc?nostyle=yes">low-style view of the lessons</a>.
 </p></li>
         </ul>
         <h2>Free / Open Educational Resources (OER)</h2>
