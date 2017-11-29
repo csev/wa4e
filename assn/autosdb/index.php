@@ -121,7 +121,7 @@ like this if you are using MAMP (Macintosh):
 $pdo = new PDO('mysql:host=localhost;port=8889;dbname=misc', 'fred', 'zap');
 $pdo-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 </pre>
-If you are using XAMPP or Linux yor file should change the port to 3306:
+If you are using XAMPP or Linux you should change the port to 3306:
 <pre>
 &lt;?php
 $pdo = new PDO('mysql:host=localhost;port=3306;dbname=misc', 'fred', 'zap');
