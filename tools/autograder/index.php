@@ -29,6 +29,7 @@ $assignments = array(
     'practical-f16-cats.php' => 'Fall 16 Cats Exam',
     'practical-w17-parking.php' => 'Winter 17 Parking Exam',
     'practical-w17-dogs.php' => 'Winter 17 Dogs Exam',
+    'practical-f17-courses.php' => 'Fall 17 Courses Exam',
     'practical-sample.php' => 'Sample Practical Exam'
 );
 

@@ -123,6 +123,7 @@ if ( strpos(strtolower($html), 'are required') !== false ) {
     markTestPassed('Found error message');
 } else {
     error_out("Could not find 'All values are required' in add.php");
+    return;
 }
 
 // Add new success
@@ -144,6 +145,7 @@ if ( strpos(strtolower($html), 'added') !== false ) {
     markTestPassed('Found success message after add');
 } else {
     error_out("Could not find 'added'");
+    return;
 }
 
 
@@ -153,6 +155,7 @@ if ( $pos > 1 ) {
     markTestPassed("Found '$firststring' entry in index.php");
 } else {
     error_out("Could not find '$firststring' entry in index.php");
+    return;
 }
 $pos2 = strpos($html, "edit.php", $pos);
 
@@ -169,10 +172,7 @@ showHTML("Show retrieved page",$html);
 
 line_out('Looking for the form with a value="Save" submit button');
 $form = webauto_get_form_button($crawler,'Save');
-line_out("Changing $firststringfield to be 42");
-$xsubmit = $submit;
-$xsubmit[$firststringfield] = 42;
-$form->setValues($xsubmit);
+webauto_change_form($form, $firstintfield, '42');
 $crawler = $client->submit($form);
 markTestPassed("edit.php submitted");
 $html = $crawler->html();
@@ -183,14 +183,19 @@ line_out("Checking edit results");
 if ( strpos(strtolower($html), '42') !== false ) {
     markTestPassed("edit.php results verified");
 } else {
-    error_out("Record did not seem to be updated'");
+    error_out("Record did not seem to be updated");
+    return;
 }
 
 // Delete...
-line_out("Looking for delete.php link associated with '$firststring' entry");
+line_out("Looking for delete.php link in index.php associated with '$firststring' entry");
 $pos = strpos($html, $firststring);
 $pos2 = strpos($html, "delete.php", $pos);
 $pos3 = strpos($html, '"', $pos2);
+if ( $pos < 1 || $pos2 < 1 || $pos3 < 1 ) {
+    error_out("Could not find delete.php link");
+    return;
+}
 $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
@@ -212,6 +217,7 @@ showHTML("Show retrieved page",$html);
 line_out("Making sure '$firststring' has been deleted");
 if ( strpos($html,$firststring) > 0 ) {
     error_out("Entry '$firststring' not deleted");
+    return;
 } else {
     markTestPassed("Entry '$firststring' deleted");
 }

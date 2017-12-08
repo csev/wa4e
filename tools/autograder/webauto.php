@@ -105,13 +105,13 @@ function getUrl($sample) {
 
 function checkPostRedirect($client) {
     global $passed;
-    line_out("Checking to see if there was a POST redirect to a GET");
+    line_out("Checking to see if the POST redirected to a GET");
     $method = $client->getRequest()->getMethod();
     if ( $method == "get" ) {
         $passed++;
         markTestPassed("POST Redirect Check");
     } else {
-        error_out('Expecting POST to Redirect to GET - found '.$method);
+        error_out('Expecting POST to Redirected to a GET - found '.$method);
     }
 }
 
@@ -244,6 +244,20 @@ function webauto_get_form_button($crawler,$text)
         error_out($msg);
         throw new Exception($msg);
     }
+}
+
+// http://api.symfony.com/4.0/Symfony/Component/DomCrawler/Form.html
+function webauto_change_form($form, $name, $value) 
+{
+    try {
+        $x = $form->get($name);
+    } catch(Exception $ex) {
+        $msg = 'Did not find form field named "'.$name;
+        error_out($msg);
+        throw new Exception($msg);
+    }
+    line_out("Changing form field '$name' to be $value");
+    $x->setValue($value);
 }
 
 function webauto_search_for_many($html, $needles) 
