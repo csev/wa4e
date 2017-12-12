@@ -103,6 +103,11 @@ $ALL_GOOD = false;
 function my_error_handler($errno , $errstr, $errfile, $errline , $trace = false)
 {
     global $OUTPUT, $ALL_GOOD;
+    if ( ob_get_status() ) {
+        $ob_output = ob_get_contents();
+        ob_end_clean();
+        echo($ob_output);
+    }
     error_out("The autograder did not find something it was looking for in your HTML - test ended.");
     error_out("Usually the problem is in one of the pages returned from your application.");
     error_out("Use the 'Toggle' links above to see the pages returned by your application.");
@@ -121,6 +126,11 @@ function my_error_handler($errno , $errstr, $errfile, $errline , $trace = false)
 function fatalHandler() {
     global $ALL_GOOD, $OUTPUT;
     if ( $ALL_GOOD ) return;
+    if ( ob_get_status() ) {
+        $ob_output = ob_get_contents();
+        ob_end_clean();
+        echo($ob_output);
+    }
     $error = error_get_last();
     error_out("Fatal error handler triggered");
     if($error) {
@@ -134,7 +144,13 @@ register_shutdown_function("fatalHandler");
 
 // Assume try / catch is in the script
 if ( $assn && isset($assignments[$assn]) ) {
+    ob_start();
     include($assn);
+    $ob_output = ob_get_contents();
+    ob_end_clean();
+    echo($ob_output);
+
+    $LAUNCH->result->setJsonKey('output', $ob_output);
 } else {
     if ( $USER->instructor ) {
         echo("<p>Please use settings to select an assignment for this tool.</p>\n");
@@ -144,6 +160,11 @@ if ( $assn && isset($assignments[$assn]) ) {
 }
 
 $ALL_GOOD = true;
+if ( ob_get_status() ) {
+    $ob_output = ob_get_contents();
+    ob_end_clean();
+    echo($ob_output);
+}
 
 $OUTPUT->footer();
 

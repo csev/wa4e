@@ -6,7 +6,7 @@ require_once "words.php";
 shuffle($WORDS);
 use Goutte\Client;
 
-line_out("Grading PHP-Intro Final");
+line_out("Grading PHP-Intro CRUD");
 
 $url = getUrl($reference_implementation);
 if ( $url === false ) return;
@@ -172,7 +172,8 @@ showHTML("Show retrieved page",$html);
 
 line_out('Looking for the form with a value="Save" submit button');
 $form = webauto_get_form_button($crawler,'Save');
-webauto_change_form($form, $firstintfield, '42');
+webauto_change_form($form, $firststringfield, '42');
+$firststring='42';
 $crawler = $client->submit($form);
 markTestPassed("edit.php submitted");
 $html = $crawler->html();

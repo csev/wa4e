@@ -26,4 +26,9 @@ if ( is_object($json) && isset($json->url)) {
     echo("</a></p>\n");
 }
 
+if ( is_object($json) && isset($json->output)) {
+    echo("<p>Student output:</p><hr/>\n");
+    echo($json->output);
+}
+
 $OUTPUT->footer();
