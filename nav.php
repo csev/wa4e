@@ -34,8 +34,8 @@ if ( isset($_SESSION['id']) ) {
     }
     if ( isset($CFG->google_classroom_secret) ) {
         $submenu->addLink('Google Classroom', $T.'gclass/login');
-    $submenu->addLink('Free App Store', 'https://www.tsugicloud.org');
     }
+    $submenu->addLink('Free App Store', 'https://www.tsugicloud.org');
     if ( $CFG->DEVELOPER ) {
         $submenu->addLink('Test LTI Tools', $T . 'dev');
     }
