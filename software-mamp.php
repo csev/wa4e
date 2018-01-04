@@ -138,7 +138,7 @@ and set the value to <b>On</b> and then restart your Apache server.
 <p>
 On MAMP the php.ini file is located here:
 <pre>
-C:\MAMP\bin\php\php7.1.5\conf\php.ini
+C:\MAMP\conf\php7.1.5\php.ini
 </pre>
 The "7.1.5" might be different on your system.
 You can always find where php.ini is by looking at your PHPInfo screen.
