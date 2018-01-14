@@ -3,6 +3,8 @@
 // This does a lot of sanity checking and leads the admin through
 // the install process
 
+if ( isset($CFG) ) return;  // Do not allow indirect calls
+
 define('COOKIE_SESSION', true);
 if ( ! file_exists('tsugi') ) {
     echo('<p style="color:red">'."\n");
