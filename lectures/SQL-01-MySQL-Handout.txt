@@ -1,6 +1,6 @@
 Starting Mysql with MAMP (Macintosh):
 
-/Applications/MAMP/Library/bin/mysql -u root -p
+/Applications/MAMP/Library/bin/mysql -u root -p  (enter root when prompted)
 
 Starting MySql with XAMPP (Windows):
 
