@@ -165,7 +165,7 @@ header('Location: index.php');
 <p>
 If the user selects, Rock, Paper, or Scissors and presses "Play", the 
 game chooses  random computer throw, and scores the game and 
-prits out the result of the game:
+prints out the result of the game:
 <pre>
 Your Play=Paper Computer Play=Paper Result=Tie
 </pre>
