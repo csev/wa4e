@@ -243,9 +243,9 @@ if ( $dueDate->message ) {
 ?>
 <p>
 <form name="myform" enctype="multipart/form-data" method="post" >
-To get credit for this assignment, perform the instructions below and 
+To get credit for this assignment, perform the instructions below and
 upload your JSON export of the resulting database here: <br/>
-<input name="json" type="file"> 
+<input name="json" type="file">
 (Must have a .json suffix)<br/>
 <input type="submit">
 </p>
@@ -253,21 +253,23 @@ upload your JSON export of the resulting database here: <br/>
 </p>
 <h1>Tables for the Assignment</h1>
 <p>
-Create the following tables in a database named "roster".  Make sure that 
+Create the following tables in a database named "roster".  Make sure that
 your database and tables are named exactly as follows including matching case.
 <pre>
 DROP TABLE IF EXISTS Member;
-DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS `User`;
 DROP TABLE IF EXISTS Course;
 
-CREATE TABLE User (
-    user_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
-    name        VARCHAR(128) UNIQUE
+CREATE TABLE `User` (
+    user_id     INTEGER NOT NULL AUTO_INCREMENT,
+    name        VARCHAR(128) UNIQUE,
+    PRIMARY KEY(user_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
 CREATE TABLE Course (
-    course_id     INTEGER NOT NULL AUTO_INCREMENT KEY,
-    title         VARCHAR(128) UNIQUE
+    course_id     INTEGER NOT NULL AUTO_INCREMENT,
+    title         VARCHAR(128) UNIQUE,
+    PRIMARY KEY(course_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 
 CREATE TABLE Member (
@@ -275,7 +277,7 @@ CREATE TABLE Member (
     course_id     INTEGER,
     role          INTEGER,
 
-    CONSTRAINT FOREIGN KEY (user_id) REFERENCES User (user_id)
+    CONSTRAINT FOREIGN KEY (user_id) REFERENCES `User` (user_id)
       ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)
        ON DELETE CASCADE ON UPDATE CASCADE,
@@ -283,10 +285,13 @@ CREATE TABLE Member (
     PRIMARY KEY (user_id, course_id)
 ) ENGINE=InnoDB CHARACTER SET=utf8;
 </pre>
+<p>Note that we need to surround <b>User</b> with back-quotes (i.e.
+<b>`User`</b> because it is a keyword in later versions of MySQL.
+</p>
 <h1>Course Data</h1>
 <p>
-You will normalize the following data (each user gets different data), and insert 
-the following data items into your database, creating and linking all the 
+You will normalize the following data (each user gets different data), and insert
+the following data items into your database, creating and linking all the
 foreign keys properly.  Encode instructor with a role of 1 and a learner with a role
 of 0.
 <pre>
@@ -302,12 +307,12 @@ foreach($roster as $entry) {
 You can test to see if your data has been entered properly with the following
 SQL statement.
 <pre>
-SELECT User.name, Course.title, Member.role
-    FROM User JOIN Member JOIN Course 
-    ON User.user_id = Member.user_id AND Member.course_id = Course.course_id 
-    ORDER BY Course.title, Member.role DESC, User.name
+SELECT `User`.name, Course.title, Member.role
+    FROM `User` JOIN Member JOIN Course
+    ON `User`.user_id = Member.user_id AND Member.course_id = Course.course_id
+    ORDER BY Course.title, Member.role DESC, `User`.name
 </pre>
-The order of the data and number of rows that comes back from this query should be the 
+The order of the data and number of rows that comes back from this query should be the
 same as above.  There should be no missing or extra data in your query.
 </p>
 <h1>What Turn In</h1>
@@ -342,7 +347,7 @@ The output will be on a file named "roster.json" that should look like the follo
 
 [{"user_id":"15","name":"Areez"}, ... }]
 </pre>
-It is a somewhat strange format - it is one bit of JSON for each table.  You don't need 
+It is a somewhat strange format - it is one bit of JSON for each table.  You don't need
 to edit or even look at this file.  Simply upload it above.
 </p>
 <?php
@@ -356,10 +361,10 @@ Here is a set of insert statements to achieve this assignment.
 <pre>
 <?php
 foreach($roster as $entry) {
-    echo "INSERT IGNORE INTO User (name) VALUES ('$entry[0]');\n";
+    echo "INSERT IGNORE INTO `User` (name) VALUES ('$entry[0]');\n";
     echo "INSERT IGNORE INTO Course (title) VALUES ('$entry[1]');\n";
     echo "INSERT IGNORE INTO Member (user_id,course_id,role) VALUES
-        ( (SELECT user_id FROM User WHERE name='$entry[0]') , 
+        ( (SELECT user_id FROM `User` WHERE name='$entry[0]') ,
           (SELECT course_id FROM Course WHERE title='$entry[1]') , $entry[2] );\n";
 }
 ?>

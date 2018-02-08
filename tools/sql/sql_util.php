@@ -46,25 +46,31 @@ function load_mysql_json_export($data) {
 
 
     // echo("<pre>\n");
-    $newformat = json_decode($data, true);
+    try {
+        $newformat = json_decode($data, true);
+    } catch(Exception $e) {
+        $newformat = null;
+    }
     if ( $newformat !== null ) {
         foreach($newformat as $table) {
             if ( $table['type'] != "table" ) continue;
             $name = strtolower($table['name']);
-            $retval[$name] = $table['data']; 
+            $retval[$name] = $table['data'];
             // echo("Name $name\n"); var_dump($table['data']); die('new format');
         }
-    } else { 
+    } else {
         $things = explode('//',$data);
         // echo("<pre>\n"); print_r($things);
         foreach($things as $thing) {
-            if ( strpos($thing,'[{') === false || strpos($thing, '}]') === false ) {
+            $startpos = strpos($thing,'[{');
+            $endpos = strpos($thing,'}]');
+            if ( $startpos === false || $endpos === false ) {
                 continue;
             }
             $thing = trim($thing);
             $pieces = explode("\n",$thing);
             // echo("==========\n"); print_r($pieces);
-            if ( count($pieces) != 3 ) continue;
+            if ( count($pieces) < 1 ) continue;
             $name = trim($pieces[0]);
             $chunks = explode('.',$name);
             if ( count($chunks) > 1 ) {
@@ -72,13 +78,16 @@ function load_mysql_json_export($data) {
             }
             $name = strtolower($name);
             // echo("name=$name\n");
-            $json = json_decode($pieces[2], true);
+
+            $json_str = substr($thing, $startpos-1, 2+$endpos-$startpos);
+            // echo("json_str=$json_str\n");
+            $json = json_decode($json_str, true);
             if ( $json === NULL ) {
                 $errors[] = "Unable to parse the $name JSON ".json_last_error();
                 continue;
             }
 
-            // echo("Name $name\n"); var_dump($json); die('old format');
+            // echo("Name $name\n"); var_dump($json);
             $retval[$name] = $json;
         }
     }
@@ -99,6 +108,6 @@ function load_mysql_json_export($data) {
         $retval[$name."_table"] = $table;
     }
 
-    // echo("<pre>\n"); print_r($retval); echo("</pre>\n");
+    // echo("<pre>\n"); echo("=== retval ===\n"); print_r($retval); echo("</pre>\n"); die('retval');
     return $retval;
 }
