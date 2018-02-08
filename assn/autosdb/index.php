@@ -21,9 +21,6 @@ pre {padding-left: 2em;}
 alt="Image of the auto management application"
 width="300px" src="01-Autos.png" border="2"/>
 </a>
-<p>
-Note that there is no specific sample code for this assignment.
-</p>
 <?php if ( isset($json->solution) ) { ?>
 <h2>Sample solution</h2>
 <p>
@@ -66,6 +63,11 @@ of using PDO to communicate with a database:
 <pre>
 <a href="http://www.wa4e.com/code/pdo.zip" target="_blank">http://www.wa4e.com/code/pdo.zip</a>
 </pre>
+<p>
+Note that this is not precisely sample code for <em>this</em> assignment.  You should
+adapt your login code from the 
+<a href="../rps">Rock Paper Scissors</a> assignment using elements from the sample code above.
+</p>
 </li>
 </ul>
 </p>
