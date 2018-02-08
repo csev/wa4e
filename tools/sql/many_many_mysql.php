@@ -194,9 +194,12 @@ if ( isset($_FILES['json']) ) {
 
         if ( $roster[$i] == $new[$i] ) continue;
 
-        $_SESSION['error'] = $msg."Expecting row ".($i+1)." to be (" .
-          $roster[$i][0].", ".$roster[$i][1].", ".$roster[$i][2].") " .
-          "Found (".$new[$i][0].", ".$new[$i][1].", ".$new[$i][2].")";
+        $msg .= "Mismatch in row ".($i+1)." ";
+        if ( $roster[$i][0] != $new[$i][0] ) $msg .= 'Name '.$roster[$i][0].' != '.$new[$i][0].' ';
+        if ( $roster[$i][1] != $new[$i][1] ) $msg .= 'Course '.$roster[$i][1].' != '.$new[$i][1].' ';
+        if ( $roster[$i][2] != $new[$i][2] ) $msg .= 'Role '.$roster[$i][2].' != '.$new[$i][2].' ';
+
+        $_SESSION['error'] = $msg;
         header( 'Location: '.addSession('index.php') ) ;
         return;
     }
