@@ -19,12 +19,14 @@ if ( isset($_POST['delete']) && isset($_POST['user_id']) ) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(':zip' => $_POST['user_id']));
 }
+
+$stmt = $pdo->query("SELECT name, email, password, user_id FROM users");
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html>
 <head></head><body><table border="1">
 <?php
-$stmt = $pdo->query("SELECT name, email, password, user_id FROM users");
-while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+foreach ( $rows as $row ) {
     echo "<tr><td>";
     echo($row['name']);
     echo("</td><td>");

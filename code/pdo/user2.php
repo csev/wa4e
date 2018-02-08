@@ -12,12 +12,14 @@ if ( isset($_POST['name']) && isset($_POST['email'])
         ':email' => $_POST['email'],
         ':password' => $_POST['password']));
 }
+
+$stmt = $pdo->query("SELECT name, email, password FROM users");
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html>
 <head></head><body><table border="1">
 <?php
-$stmt = $pdo->query("SELECT name, email, password FROM users");
-while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+foreach ( $rows as $row ) {
     echo "<tr><td>";
     echo($row['name']);
     echo("</td><td>");
