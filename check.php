@@ -34,7 +34,7 @@ if ( ! file_exists('tsugi/config.php') ) {
     echo('    $wwwroot = \'https://www.wa4e.com/tsugi\';   // For Tsugi'."\n");
     echo("     ...\n");
     echo("\nor on localhost:\n");
-    echo('    $apphome = \'https://localhost:8888/wa4e\';   // For the site'."\n");
+    echo('    $apphome = \'http://localhost:8888/wa4e\';   // For the site'."\n");
     echo('    $wwwroot = \'http://localhost:8888/wa4e/tsugi\';   // For Tsugi'."\n");
     echo("     ...\n");
     echo("\nand to scan for tools and install modules at the parent level:\n");
