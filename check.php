@@ -30,13 +30,13 @@ if ( ! file_exists('tsugi/config.php') ) {
           make sure to set several *additional* configuration parameters:\n");
     echo("<pre>\n");
     echo("On a production server:\n");
-    echo('    $wwwroot      = \'https://www.wa4e.com/tsugi\';   // For Tsugi'."\n");
+    echo('    $apphome = \'https://www.wa4e.com\';   // For the site'."\n");
+    echo('    $wwwroot = \'https://www.wa4e.com/tsugi\';   // For Tsugi'."\n");
     echo("     ...\n");
-    echo('    $CFG->apphome = \'https://www.wa4e.com\';   // For the site'."\n");
     echo("\nor on localhost:\n");
-    echo('    $wwwroot      = \'http://localhost:8888/wa4e/tsugi\';   // For Tsugi'."\n");
+    echo('    $apphome = \'https://localhost:8888/wa4e\';   // For the site'."\n");
+    echo('    $wwwroot = \'http://localhost:8888/wa4e/tsugi\';   // For Tsugi'."\n");
     echo("     ...\n");
-    echo('    $CFG->apphome = \'https://localhost:8888/wa4e\';   // For the site'."\n");
     echo("\nand to scan for tools and install modules at the parent level:\n");
     echo('    $CFG->tool_folders = array("admin", "../tools", "../mod");'."\n");
     echo('    $CFG->install_folder = $CFG->dirroot."/../mod";'."\n");
