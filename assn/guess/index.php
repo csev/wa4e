@@ -72,6 +72,9 @@ It will look at the contents of the &lt;title&gt; tag and insist your name is pa
 It will call your program with no parameters at all and your program should say, "Missing guess parameter".
 </li>
 <li>
+It will call your program with the guess parameter without a value and your program should say, "Your guess is too short".
+</li> 
+<li>
 It will call your code with a non-numeric value and your code should say, "Your guess is not a number".
 </li>
 <li>
