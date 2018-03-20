@@ -53,7 +53,7 @@ function load_mysql_json_export($data) {
     }
     if ( $newformat !== null ) {
         foreach($newformat as $table) {
-            if ( $table['type'] != "table" ) continue;
+            if ( !isset($table['type']) || $table['type'] != "table" ) continue;
             $name = strtolower($table['name']);
             $retval[$name] = $table['data'];
             // echo("Name $name\n"); var_dump($table['data']); die('new format');
