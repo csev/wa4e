@@ -72,9 +72,9 @@ if ( isset($_FILES['json']) ) {
     } else {
         $tstr = '';
         $tlist = array();
-        if ( $tables['user'] ) $tlist[] = 'user';
-        if ( $tables['course'] ) $tlist[] = 'course';
-        if ( $tables['member'] ) $tlist[] = 'member';
+        if ( isset($tables['user']) ) $tlist[] = 'user';
+        if ( isset($tables['course']) ) $tlist[] = 'course';
+        if ( isset($tables['member']) ) $tlist[] = 'member';
         if ( count($tlist) > 0 ) {
             $tstr = ". Found: " . htmlentities(implode(', ', $tlist));
         }
