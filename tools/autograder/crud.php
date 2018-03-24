@@ -173,7 +173,7 @@ showHTML("Show retrieved page",$html);
 line_out('Looking for the form with a value="Save" submit button');
 $form = webauto_get_form_button($crawler,'Save');
 $firststring='42986856712';
-webauto_change_form($form, $firststringfield, '429862634856712');
+webauto_change_form($form, $firststringfield, $firststring);
 $crawler = $client->submit($form);
 markTestPassed("edit.php submitted");
 $html = $crawler->html();
