@@ -83,7 +83,7 @@ Sample code:
 </p>
 <h2 clear="all">Additional Tables Required for the Assignment</h2>
 <p>
-This assignment will add one more table to the database from the previous 
+This assignment will add two more tables to the database from the previous 
 assignment.  We will create <b>Education</b> and <b>Instutition</b> tables 
 and connect them to the <b>Profile</b> table.
 </p>
