@@ -1,6 +1,10 @@
 <?php
 require_once "words.php";
 shuffle($WORDS);
+
+if ( !isset($title_singular) ) {
+    die('Fields not set');
+}
 ?>
 <!DOCTYPE html>
 <html>
