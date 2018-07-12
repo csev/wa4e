@@ -74,6 +74,6 @@ in your courses any way you like.  You can make copies and host them yourselves 
 be freely given - Charles Severance (www.dr-chuck.com).
 </p>
 </div>
-<?php include("footer.php"); ?>
+<?php include("foot.php"); ?>
 </body>
 </html>
