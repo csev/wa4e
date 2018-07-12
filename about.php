@@ -14,7 +14,7 @@ to allow self-paced learning of the Python Language.
 <h3>Other Python Courses</h3>
 <p>
 This is a list of other courses that I have found using Python 
-to teach introductory materials.
+to teach introductory programming.
 <ul>
 <li>
 <a href=http://www.cs.luc.edu/~anh/python/hands-on/ target=_new>
