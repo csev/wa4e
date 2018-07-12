@@ -10,19 +10,7 @@
 <p>
 PythonLearn is intended to collect a set of generic Python Learning Resources
 to allow self-paced learning of the Python Language. 
-The materials from the site are collected from several courses at
-the Univrsity of Michigan that use Python:
-<ul>
-<li> <a href=http://www.si182.com target=_new>
-EECS/SI 182 - Building Applications for Information Environments
-</a>
-<li><a href=http://www.si502.com >
-SI 502 - Networked Computing: Storage, Communication, and Processing
-</a>
-<li><a href=http://www.si539.com >
-SI 539 - Design of Complex Web Sites</a>.
 </p>
-</ul>
 <h3>Other Python Courses</h3>
 <p>
 This is a list of other courses that I have found using Python 
