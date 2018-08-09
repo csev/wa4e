@@ -1,0 +1,186 @@
+{
+  "id": "f4fa11a9-020f-4b0c-969d-d852c19dbc43",
+  "name": "WA4ETest",
+  "url": "https://www.wa4e.com",
+  "tests": [{
+    "id": "af85602b-fef9-48ed-8343-3cafe311eedb",
+    "name": "First",
+    "commands": [{
+      "id": "9b6a78be-9417-42dd-941b-ade41e72aeab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "fc0540c0-b588-465d-90a0-eaf6b0ad6059",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Lessons')]",
+      "value": "27,28"
+    }, {
+      "id": "a2c25ac3-8863-420a-b572-81a7093082d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=div.card > div",
+      "value": "1: Introduction to Dynamic Web Content\\n \\nWe look at the basic structure of a web application and how a web browser interacts with a web server. We explore the Request-Response Cycle that is the basis of the Hypertext Transfer Protocol (HTTP)."
+    }, {
+      "id": "d2d31741-5c44-4552-87c0-70b498bc678f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Materials')]",
+      "value": "56,28"
+    }, {
+      "id": "1cb9e165-13f6-4a41-a433-0a95b2f3142a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//a[contains(text(),'Sample Code')]",
+      "value": "Sample Code"
+    }, {
+      "id": "3ca093c9-64c7-4809-b1e3-2de8af93ca05",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Sample Code')]",
+      "value": "55,12"
+    }, {
+      "id": "747b9dba-94f4-49bf-8bf8-f04bb99770d6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "win_ser_1",
+      "value": ""
+    }, {
+      "id": "8cfa7d72-1a5f-461c-96dc-0c80ceeec5f2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "value": "Index of /code"
+    }, {
+      "id": "30944e22-420b-46b7-b7de-381cc1b0427a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'pdo/')]",
+      "value": "13,7"
+    }, {
+      "id": "3b51cb9b-b677-445d-b2c9-c10aad1023ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "value": "This folder cannot be executed from www.wa4e.com, \\nplease download the ZIP file for this sample code\\nor grab a copy from github:\\n\\nhttps://github.com/csev/wa4e/tree/master/code\\n\\nand run it on your local server."
+    }]
+  }, {
+    "id": "86dd3071-2352-48b5-8ddd-bf922c422450",
+    "name": "Solutions",
+    "commands": [{
+      "id": "027679e3-cbc9-474c-a1c2-2ae672821761",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "15023f67-1d0d-4abe-9ace-dd93e833f786",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a.navbar-brand",
+      "value": "29,29"
+    }, {
+      "id": "3d9093b0-3696-41fc-8826-2f134486c268",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Lessons')]",
+      "value": "56,31"
+    }, {
+      "id": "85a48066-358b-49e3-822a-f910f3620f4c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//div[@id='box']/div[15]/div/a",
+      "value": "45,16"
+    }, {
+      "id": "8cc06809-1860-4d24-aa90-67b006a6e6b6",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Assignment Solution')]",
+      "value": "117,6"
+    }, {
+      "id": "14a7fccd-6acc-4788-aeff-b8b230b62753",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "win_ser_1",
+      "value": ""
+    }, {
+      "id": "bda71b57-3102-4d47-ae2c-407406dce54a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=a",
+      "value": "Please log in"
+    }, {
+      "id": "a8b8bb54-e416-4bc3-9c7b-238cd9c352f8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a",
+      "value": "49,6"
+    }, {
+      "id": "e91cf888-46bb-456d-9670-fe78dbf83700",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=label",
+      "value": "User Name"
+    }, {
+      "id": "f9270da4-644a-4cd3-b6d7-8a799cfd4eed",
+      "comment": "",
+      "command": "assertText",
+      "target": "//label[2]",
+      "value": "Password"
+    }, {
+      "id": "f0158c3c-462a-4c03-a08e-faf9c3bca30d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=nam",
+      "value": "62,16"
+    }, {
+      "id": "2b9ca6b7-cf7a-4c08-a8d9-e53ea6ece0bd",
+      "comment": "",
+      "command": "type",
+      "target": "id=nam",
+      "value": "umsi@umich.edu"
+    }, {
+      "id": "130ed6ab-9d1f-4f5b-94c9-caa80f39df6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_1723",
+      "value": "php123"
+    }, {
+      "id": "e34047a7-f32f-48bb-a962-9936fcf6f6d9",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input[type=\"submit\"]",
+      "value": "33,8"
+    }, {
+      "id": "2e0e9114-b774-4e6a-9e24-427cd4ea65da",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a",
+      "value": "82,10"
+    }, {
+      "id": "515c7ff7-a5b6-45f9-9a4a-ee6725be9a83",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=a",
+      "value": "Add New Entry"
+    }, {
+      "id": "993fc7ae-5941-4fc5-9245-0d7b8c109cc2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "value": "Tracking Automobiles for umsi@umich.edu"
+    }]
+  }],
+  "suites": [{
+    "id": "376dc18a-a2f6-475f-a287-eab9839286db",
+    "name": "Default Suite",
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["af85602b-fef9-48ed-8343-3cafe311eedb"]
+  }],
+  "urls": ["https://www.wa4e.com/"],
+  "plugins": [],
+  "version": "1.0"
+}
