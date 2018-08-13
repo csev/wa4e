@@ -140,6 +140,7 @@ header("Location: login.php");
 return;
 </pre>
 The error message must be displayed only on the next GET request.  
+(i.e. properly implement the POST-Redirect-GET-Flash pattern)
 <pre>
 if ( isset($_SESSION['error']) ) {
     echo('&lt;p style="color: red;">'.htmlentities($_SESSION['error'])."&lt;/p>\n");
