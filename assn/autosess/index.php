@@ -148,7 +148,8 @@ if ( isset($_SESSION['error']) ) {
 }
 </pre>
 Subsequent GET 
-requests (i.e. refreshing the page) should <b>not</b> show the error message to 
+requests (i.e. refreshing the page) should <b>not</b> show the error message to
+properly implement the POST-Redirect-GET-Flash pattern.
 
 </li> 
 </ul>
