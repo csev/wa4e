@@ -9,8 +9,6 @@ require "check.php" ;
 require "top.php";
 require "nav.php";
 
-// Help the installer through the setup process 
-require_once "tsugi/admin/sanity-db.php";
 ?>
 <div id="container">
 <div style="margin-left: 10px; float:right">
