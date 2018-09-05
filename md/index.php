@@ -5,8 +5,8 @@ if ( ! defined('COOKIE_SESSION') ) define('COOKIE_SESSION', true);
 require_once "../tsugi/config.php";
 require_once "Parsedown.php";
 
-// require_once "../top.php";
-// require_once "../nav.php";
+require_once "../top.php";
+require_once "../nav.php";
 
 if ( ! function_exists('endsWith') ) {
 function endsWith($haystack, $needle) {
