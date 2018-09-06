@@ -123,6 +123,7 @@ if ( strpos(strtolower($html), 'are required') !== false ) {
     markTestPassed('Found error message');
 } else {
     error_out("Could not find 'All values are required' in add.php");
+    error_out("It is a good practice to put the 'All fields are required' check before the other checks (like is_numeric)");
     return;
 }
 
