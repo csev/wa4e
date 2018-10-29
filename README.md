@@ -8,7 +8,7 @@ Setup On Localhost
 
 Here are the steps to set this up on localhost on a Macintosh using MAMP.
 
-Install MAMP (or similar) using https://www.py4e.com/install.php
+Install MAMP (or similar) using https://www.wa4e.com/install
 
 Check out this repo into a top level folder in htdocs
 
