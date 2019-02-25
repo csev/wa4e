@@ -1,0 +1,51 @@
+Starting PostgreSQL on Macintosh
+
+psql
+\connect csev
+#  CREATE DATABASE People DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE Users (
+  name VARCHAR(128), 
+  email VARCHAR(128)
+);
+
+\d Users
+
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
+
+DELETE FROM Users WHERE email='ted@umich.edu';
+
+UPDATE Users SET name='Charles' WHERE email='csev@umich.edu';
+
+SELECT * FROM Users;
+
+SELECT * FROM Users WHERE email='csev@umich.edu';
+
+SELECT * FROM Users ORDER BY email;
+
+SELECT * FROM Users WHERE name LIKE '%e%';
+
+SELECT * FROM Users ORDER BY email DESC LIMIT 2;
+
+SELECT * FROM Users ORDER BY email OFFSET 1 LIMIT 2;
+
+CREATE TABLE Users (
+  user_id SERIAL,
+  name VARCHAR(128), 
+  email VARCHAR(128),
+  PRIMARY KEY(user_id)
+);
+
+To add the index after the table was created:
+
+CREATE UNIQUE INDEX ON Users (name);
+
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@umich.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu') ;
