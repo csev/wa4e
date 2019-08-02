@@ -58,7 +58,7 @@ target="_blank">PDO</a> to connect to a database.
 <a href="http://php.net/manual/en/pdo.prepare.php" target="_new">PHP PDO Prepared Statements</a>
 </li>
 <li>
-You can look though the sample code from the lecture. It has examples
+You can look through the sample code from the lecture. It has examples
 of using PDO to communicate with a database:
 <pre>
 <a href="http://www.wa4e.com/code/pdo.zip" target="_blank">http://www.wa4e.com/code/pdo.zip</a>
