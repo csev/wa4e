@@ -69,7 +69,7 @@ unset($_SESSION['postdata']);
 <p>
 You are to retrieve the following document in a browser tab with 
 "Developer Mode" enabled so you can examine the HTTP Response headers.
-You may need to open the URL in a new tab, turn on dveloper mode, 
+You may need to open the URL in a new tab, turn on developer mode, 
 and then press refresh to get the proper data.
 <ul>
 <li><a href="<?= $getUrl ?>" target="_blank"><?= $getUrl ?></a></li>
@@ -107,10 +107,10 @@ Enter the header values in each of the fields below and press "Submit".
 it may be that your browser is caching the request.  Look for the 
 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" taget="_blank">HTTP
 Response Code</a> in the developer console. Normally you should see a "200" code indicating a 
-normal document retrieval.  If you see a "304" error code, it means that your browser
+normal document retrieval.  If you see a "304" status code, it means that your browser
 is likely using a cached copy of the file.</p>
 <p clear="all">
-To convince yor browser to actually retrieve the
+To convince your browser to actually retrieve the
 document, clear your browser cache and re-retrieve the document, or add a key-value pair to 
 the URL like:
 <pre>
