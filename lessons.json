@@ -495,14 +495,6 @@
             "title" : "Using NGROK and the Autograder (Windows-10)",
             "href" : "md/ngrok_win.md",
             "oldhref" : "https://www.youtube.com/watch?v=L4M58YLwXVI"
-        },
-        {
-            "title" : "Using LocalTunnel and the Autograder (Macintosh)",
-            "href" : "md/lt_mac.md"
-        },
-        {
-            "title" : "Using LocalTunnel and the Autograder (Windows-10)",
-            "href" : "md/lt_win.md"
         }
     ],
     "assignment" : "https://www.wa4e.com/assn/guess/",

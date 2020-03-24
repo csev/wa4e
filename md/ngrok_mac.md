@@ -16,16 +16,13 @@ Unless you install your application on a server with Internet
 connectivity and a domain name, you need to use a program like `ngrok` to
 submit your program to the autograder.
 
-Applications like ngrok (or localtunnel) can make a temporary hole
+Applications like ngrok can make a temporary hole
 through your firewall and give you a temporary domain name you can
 use to submit your application to the Autograder.
 
 Ngrok is a "freemium" product that provided a low-level of service for free.
 The free level of the product should be sufficient for the purposes of
-autograding your assignment for this course.  If you cannot use ngrok
-at the free level, you should take a look at
-<a href="lt_mac.md">localtunnel</a> which is
-a less-full featured product, but always free.
+autograding your assignment for this course.  
 
 Video Tutorial
 --------------
