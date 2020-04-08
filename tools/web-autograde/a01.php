@@ -37,7 +37,13 @@ if ( tagExists($dom, 'div') ) $grade++;
 progressMessage($grade,$possgrade);
 
 $possgrade++;
-if ( tagExists($dom, 'strong') ) $grade++;
+$count = getTagCount($dom, 'strong');
+if ( $count >= 1 ) {
+    goodmessage('Found at least one strong tag');
+    $grade++;
+} else {
+    badmessage('Did not find any strong tags');
+}
 progressMessage($grade,$possgrade);
 
 $possgrade++;
@@ -51,7 +57,13 @@ if ( $count >= 1 ) {
 progressMessage($grade,$possgrade);
 
 $possgrade++;
-if ( tagExists($dom, 'em') ) $grade++;
+$count = getTagCount($dom, 'em');
+if ( $count >= 1 ) {
+    goodmessage('Found at least one em (emphasis) tag');
+    $grade++;
+} else {
+    badmessage('Did not find any em (emphasis) tags');
+}
 progressMessage($grade,$possgrade);
 
 $possgrade++;
