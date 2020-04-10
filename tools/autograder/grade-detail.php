@@ -14,13 +14,17 @@ if ( ! U::get($_REQUEST, 'user_id') ) {
 // Get the user's grade data also checks session
 $row = GradeUtil::gradeLoad($_REQUEST['user_id']);
 
+$menu = new \Tsugi\UI\MenuSet();
+$menu->addLeft(__('Back to all grades'), 'index.php');
+
 // View
 $OUTPUT->header();
 $OUTPUT->bodyStart();
+$OUTPUT->topNav($menu);
 $OUTPUT->flashMessages();
 
 // Show the basic info for this user
-GradeUtil::gradeShowInfo($row);
+GradeUtil::gradeShowInfo($row, false);
 
 // Unique detail
 echo("<p>Submitted URL:</p>\n");
