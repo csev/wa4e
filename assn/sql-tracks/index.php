@@ -17,7 +17,7 @@ In this assignment, you will build a copy of the "Music" database covered in lec
 populate your database with tracks, artists, albums and genres that are different from the ones used 
 in class.  You must include three artists, five albums, and 20 tracks in your data.  
 Choose a genre for each track.
-Your tables need to normalized as described in class.
+Your tables need to be normalized as described in class.
 </p><p>
 Then you must construct and run some queries on your data and then take screen shots 
 of those queries and submit the screen shots as your assignment.
