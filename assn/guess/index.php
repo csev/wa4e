@@ -143,18 +143,18 @@ enter that URL in the browser as follows:
 </center>
 Make <strong>sure</strong> that you can see your application when it is being
 accessed by the ngrok URL.  If you cannot see your application at the ngrok URL,
-the autograder will also not be able to see the application.  So if t is not working,
+the autograder will also not be able to see the application.  So if it is not working,
 do not proceed to the next step until you figure out why it is not working.
 </p>
 <p>
-Nagivate to the autograder for the assignment in your LMS as directed by te instructor
+Nagivate to the autograder for the assignment in your LMS as directed by the instructor
 and submit the ngrok URL to the autograder:
 <center>
 <a href="07-submit-ngrok.png" target="_blank">
 <img src="07-submit-ngrok.png" width="80%"></a>
 </center>
-When you press "Evaluate", the autograder will start makking connections to your
-web server therough ngrok.   The ngrok display will start showing the requests
+When you press "Evaluate", the autograder will start making connections to your
+web server through ngrok.   The ngrok display will start showing the requests
 as the autograder makes requests.
 </p>
 <p>
