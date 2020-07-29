@@ -155,7 +155,7 @@ this site to crack all the above hash values.
 <li>Make your application test a more complex character set like, 
 upper case letters, lower case letters, numbers, and common punctuation.</li>
 <li>Change the code so when it finds a match, it breaks out of all four 
-of the nexted loops.  So if the PIN turned out to be 1234 it would only run
+of the nested loops.  So if the PIN turned out to be 1234 it would only run
 that many times.  Hint:  Make a logical variable that you set to true
 when you get a match and then as soon as that becomes true, break out of
 the outer loops.</li>
