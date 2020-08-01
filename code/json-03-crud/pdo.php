@@ -4,7 +4,7 @@ try {
         'fred', 'zap');
 } catch (Exception $e) {
 echo($e->getMessage());
-    die("You need to create the database and table for this application:
+    die(". You need to create the database and table for this application:
 <pre>
 CREATE DATABASE misc DEFAULT CHARACTER SET utf8;
 GRANT ALL ON misc.* TO 'fred'@localhost IDENTIFIED BY 'zap';
