@@ -14,19 +14,7 @@ if ( ini_get('display_errors') == 1 ) {
     echo("display_errors = On\n\n");
 }
 
-// magic_quotes_gpc = off
-$magic = get_magic_quotes_gpc();
-echo 'magic_quotes_gpc = ' . ($magic == 1 ? "On" : "Off") . "\n";
-if ( get_magic_quotes_gpc() == 0 ) {
-    echo("magic_quotes_gpc is set correctly...\n\n");
-    $good ++;
-} else {
-    echo("WARNING: You need to edit your configuration file\n");
-    echo("and set:\n\n");
-    echo("magic_quotes_gpc = off\n\n");
-}
-
-if ( $good == 2 ) {
+if ( $good == 1 ) {
     echo("</pre>\n");
     return;
 }
