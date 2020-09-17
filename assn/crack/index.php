@@ -15,8 +15,7 @@ li { padding: 5px; }
 <p>
 <?= $json->description ?>
 </p>
-This following is a list of people, and their hashed PIN values.
-PIN value. 
+This following is a list of people, and their hashed PIN values. 
 <pre>
 email                pin   hash_pin
 -----                ---   --------
