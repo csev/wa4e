@@ -109,6 +109,13 @@
         ]
     }
 ],
+"discussions" : [
+    {
+    "title" : "Introduce Yourself",
+    "launch" : "mod/tdiscus/",
+    "resource_link_id": "discussion_introduce"
+    }
+],
 "modules": [
 {
     "title": "Introduction to Dynamic Web Content",
