@@ -9,7 +9,7 @@ if ( isset($CFG->lessons) ) {
     $set->addLeft('Lessons', $R.'lessons');
     if ( isset($CFG->tdiscus) && $CFG->tdiscus  ) $set->addLeft('Discussions', $R.'discussions');
 }
-$set->addLeft('YouTube', 'https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX');
+// $set->addLeft('YouTube', 'https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX');
 if ( isset($_SESSION['id']) ) {
 	if ( isset($CFG->disqushost) ) $set->addLeft('Discuss', $T.'discuss.php');
 	else if ( isset($CFG->disquschannel) ) $set->addLeft('Discuss', $CFG->disquschannel);
