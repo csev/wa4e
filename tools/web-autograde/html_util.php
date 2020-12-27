@@ -118,7 +118,7 @@ function checkHTMLPost() {
     }
 
     $data = BlobUtil::uploadFileToString($fdes, false);
-    if ( $data === false ) {
+    if ( $data === false || $data === null ) {
         return 'Could not retrieve file data';
     }
 
