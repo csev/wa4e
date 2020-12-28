@@ -122,7 +122,7 @@ function checkHTMLPost() {
         return 'Could not retrieve file data';
     }
 
-    if ( count($data) > 250000 ) {
+    if ( strlen($data) > 250000 ) {
         return 'Please upload a file less than 250K';
     }
 
