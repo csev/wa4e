@@ -124,6 +124,13 @@
     "description": "We look at the basic structure of a web application and how a web browser interacts with a web server.   We explore the Request-Response Cycle that is the basis of the Hypertext Transfer Protocol (HTTP).",
     "slides": "lectures/Web-01-HTTP.ppt",
     "chapters" : "1, 3, 4",
+    "discussions" : [
+        {
+        "title" : "Introduction to Dynamic Web Content",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_01_http"
+        }
+    ],
     "videos" : [
         {
             "title" : "Web Applications and the Request/Response Cycle",
@@ -170,6 +177,13 @@
     "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
     "slides": "lectures/Web-02-HTML.ppt",
     "chapters" : "7-14",
+    "discussions" : [
+        {
+        "title" : "HyperText Markup Language (HTML)",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_02_html"
+        }
+    ],
     "videos" : [
         {
             "title" : "HTML - HyperText Markup Language (Part 1)",
@@ -221,6 +235,13 @@
     "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
     "slides": "lectures/Web-03-CSS.ppt",
     "chapters" : "19-22",
+    "discussions" : [
+        {
+        "title" : "Cascading Style Sheets (CSS)",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_03_css"
+        }
+    ],
     "videos" : [
         {
             "title" : "CSS - Cascading Style Sheets - (Part 1)",
@@ -323,6 +344,13 @@
     "icon" : "fa-clone",
     "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
     "chapters" : "3",
+    "discussions" : [
+        {
+        "title" : "Installing PHP and SQL",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_04_install"
+        }
+    ],
     "assignment" : "{apphome}/assn/install/",
     "videos" : [
     {
@@ -391,6 +419,13 @@
     "description": "We begin learning PHP.",
     "slides": "lectures/PHP-01-Overview.ppt",
     "chapters" : "23, 24, 25, 26, 27, 28, 31",
+    "discussions" : [
+        {
+        "title" : "Introduction to PHP",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_05_intro"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP Language Overview - Part 1",
@@ -474,6 +509,13 @@
     "description": "We look at unique aspects of arrays in the PHP language.",
     "slides": "lectures/PHP-02-Arrays.ppt",
     "chapters" : "27, 28, 31",
+    "discussions" : [
+        {
+        "title" : "PHP Arrays",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_06_arrays"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP Arrays - Part 1",
@@ -532,6 +574,13 @@
     "description": "We look at functions in PHP language.",
     "slides": "lectures/PHP-03-Functions.ppt",
     "chapters" : "32",
+    "discussions" : [
+        {
+        "title" : "PHP Functions",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_07_functions"
+        }
+    ],
     "videos" : 
     [
         {
@@ -608,6 +657,13 @@
     "description": "We look at how HTML forms are created and processed in the PHP language.",
     "slides": "lectures/PHP-04-Forms.ppt",
     "chapters" : "14, 27",
+    "discussions" : [
+        {
+        "title" : "PHP Forms",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_08_forms"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP Forms (Part 1)",
@@ -735,6 +791,13 @@
     "slides": "lectures/SQL-01-MySQL.ppt",
     "chapters" : "37, 39, 41",
     "handout": "lectures/SQL-01-MySQL-Handout.doc",
+    "discussions" : [
+        {
+        "title" : "Introduction to Structured Query Language (SQL)",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_09_sql"
+        }
+    ],
     "videos" : [
         {
             "title" : "Single Table SQL - Part 1",
@@ -781,6 +844,13 @@
     "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
     "slides": "lectures/SQL-02-MySQL-Design.ppt",
     "chapters" : "38, 40, 42",
+    "discussions" : [
+        {
+        "title" : "Database Design",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_10_model"
+        }
+    ],
     "references" : 
         {
             "title" : "Multi-Table SQL Handout",
@@ -875,6 +945,13 @@
     "description": "We look at the object oriented pattern in the PHP language.",
     "slides": "lectures/PHP-05-Objects.ppt",
     "chapters" : "33",
+    "discussions" : [
+        {
+        "title" : "PHP Objects",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_11_objects"
+        }
+    ],
     "videos" : 
     [
         {
@@ -913,6 +990,13 @@
     "icon" : "fa-bell",
     "description": "We look at how we connect to a MySQL using the Portable Data Objects (PDO) library and issue SQL commands in the the PHP language.",
     "slides": "lectures/PHP-06-MySQL-PDO.ppt",
+    "discussions" : [
+        {
+        "title" : "PHP and MySQL",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_12_pdo"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP MySQL and PDO - Part 1",
@@ -1038,6 +1122,13 @@
     "description": "We look at how PHP uses cookies and manages session data.",
     "slides": "lectures/PHP-07-Cookies-Sessions.ppt",
     "chapters" : "27",
+    "discussions" : [
+        {
+        "title" : "PHP Cookies and Sessions",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_13_cookies"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP Cookies Part 1",
@@ -1081,6 +1172,13 @@
     "description": "We look at how PHP avoids double posting data, how flash messages are implemented, and how we use a session to log in users in web applications.",
     "slides": "lectures/PHP-08-POST-Redirect-Authn.ppt",
     "chapters" : "27",
+    "discussions" : [
+        {
+        "title" : "PHP Routing, Redirect and Authentication",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_14_redirect"
+        }
+    ],
     "videos" : [
         {
             "title" : "PHP HTTP Redirects - Part 1",
@@ -1198,6 +1296,13 @@
     "icon" : "fa-bell",
     "description": "Now we build our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
     "slides": "lectures/PHP-09-CRUD.ppt",
+    "discussions" : [
+        {
+        "title" : "Building a CRUD Application",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_15_crud"
+        }
+    ],
     "videos" : 
     [
         {
@@ -1302,6 +1407,13 @@
     "icon" : "fa-code",
     "description": "We talk a quick look at the JavaScript language.  We assume that you already know PHP - so it is a pretty quick introduction focusing on what is <b>different</b> about JavaScript.",
     "slides": "lectures/JS-01-JavaScript.ppt",
+    "discussions" : [
+        {
+        "title" : "Basic JavaScript",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_16_javascript"
+        }
+    ],
     "videos" : [
         {
             "title" : "JavaScript - Part 1",
@@ -1422,6 +1534,13 @@
     "icon" : "fa-code",
     "description": "We do a quick look at how the JavaScript language supports the Object-Oriented pattern.",
     "slides": "lectures/JS-02-JavaScript-Objects.ppt",
+    "discussions" : [
+        {
+        "title" : "JavaScript Objects",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_17_oojs"
+        }
+    ],
     "videos" : 
         {
             "title" : "JavaScript Object Orientation",
@@ -1441,11 +1560,18 @@
     ]
 },
 {
-    "title": "JQuery",
+    "title": "jQuery",
     "anchor": "jquery",
     "icon" : "fa-briefcase",
     "description": "This is a brief introduction to the JQuery library which is widely used to do in-browser manipulation of the Document Object Model(DOM) and event handling.",
     "slides": "lectures/JS-03-JQuery.ppt",
+    "discussions" : [
+        {
+        "title" : "jQuery",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_18_jquery"
+        }
+    ],
     "videos" : [
         {
             "title" : "JQuery - Part 1",
@@ -1565,6 +1691,13 @@
     "icon" : "fa-briefcase",
     "description": "In this section we look at JavaScript Object Notation (JSON).  JSON is commonly used as a syntax to exchange data between code running on the server (i.e. in PHP) and code running in the browser (JavaScript/JQuery).",
     "slides": "lectures/JS-04-JSON.ppt",
+    "discussions" : [
+        {
+        "title" : "JSON - JavaScript Object Notation",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_19_json"
+        }
+    ],
     "videos" : [
         {
             "title" : "JSON - JavaScript Object Notation - JSON",
@@ -1695,6 +1828,13 @@
     "icon" : "fa-bicycle",
     "description": "In this section we look at moving the templates to build HTML fragments from the server (PHP) in to the browser (JavaScript) using the Handlebars library.",
     "slides": "lectures/JS-05-Handlebars.ppt",
+    "discussions" : [
+        {
+        "title" : "Handlebars UI Templates",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_20_handlebars"
+        }
+    ],
     "references" : [
         {
             "title" : "Sample code",
@@ -1755,6 +1895,13 @@
     "icon" : "fa-database",
     "description": "This section covers some advanced SQL topics.",
     "slides": "lectures-old/PHP-15-Advanced-SQL.ppt",
+    "discussions" : [
+        {
+        "title" : "Advanced SQL",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_21_sql"
+        }
+    ],
     "videos" : [
         {
             "title" : "Advanced SQL - Part 1",
@@ -1772,6 +1919,13 @@
     "icon" : "fa-database",
     "description": "This section covers SQL transactions.",
     "slides": "lectures-old/PHP-16-MySQL-Transactions.ppt",
+    "discussions" : [
+        {
+        "title" : "SQL Transactions",
+        "launch" : "mod/tdiscus/",
+        "resource_link_id": "discuss_21_transactions"
+        }
+    ],
     "videos" : [
         {
             "title" : "SQL Transactions",
