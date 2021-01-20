@@ -128,7 +128,7 @@ function markTestPassed($message=false) {
 function webauto_test_passed($grade, $url) {
     global $USER, $OUTPUT;
 
-    success_out("Test passed - congratulations");
+    success_out("Test complete");
 
     if ( ! $USER->displayname || ! isset($_SESSION['lti']) ) {
         line_out('Not setup to return a grade..');
