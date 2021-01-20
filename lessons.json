@@ -391,11 +391,11 @@
   "assignment":"{apphome}/assn/install/",
   "parts":[
     {
-      "title":"Image (JPG or PNG) of your php.ini display_errors setting (Maximium 1MB per file)",
+      "title":"Image (JPG or PNG) of PHPMyAdmin with the results of your SELECT statement (Maximium 1MB per file)",
       "type":"image"
     },
     {
-      "title":"Image (JPG or PNG) of PHPMyAdmin with the results of your SELECT statement (Maximium 1MB per file)",
+      "title":"Image (JPG or PNG) of your php.ini display_errors setting (Maximium 1MB per file)",
       "type":"image"
     }
   ],
