@@ -37,7 +37,7 @@ such as the
 <a href="lectures" target="_blank">lectures</a>
 in your own classes.
 You can also 
-<a href="tsugi/cc/export.php">export the course material</a> as an
+<a href="tsugi/cc/">export the course material</a> as an
 IMS Common Cartridge®, or apply for
 an IMS Learning Tools Interoperability® (LTI®)
 <a href="tsugi/admin/key/index.php">key and secret</a> 
@@ -67,7 +67,7 @@ We take your privacy seriously on this site, you can review our
 <li>
 If you want to use these Creative Commons Licensed materials 
 in your own classes you can download or link to the artifacts on this site,
-<a href="tsugi/cc/export.php">export the course material</a> as an
+<a href="tsugi/cc/">export the course material</a> as an
 IMS Common Cartridge®, or apply for
 an IMS Learning Tools Interoperability® (LTI®)
 <a href="tsugi/admin/key/index.php">key and secret</a> 
