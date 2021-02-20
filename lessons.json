@@ -5,7 +5,8 @@
 "required_modules": [
     "https://github.com/tsugitools/gift",
     "https://github.com/tsugitools/youtube",
-    "https://github.com/tsugitools/peer-grade"
+    "https://github.com/tsugitools/peer-grade",
+    "https://github.com/tsugitools/tdiscus"
 ],
 "badges": [
     {
