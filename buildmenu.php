@@ -13,8 +13,6 @@ function buildMenu() {
     }
     // $set->addLeft('YouTube', 'https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX');
     if ( isset($_SESSION['id']) ) {
-    	if ( isset($CFG->disqushost) ) $set->addLeft('Discuss', $T.'discuss.php');
-    	else if ( isset($CFG->disquschannel) ) $set->addLeft('Discuss', $CFG->disquschannel);
     	$set->addLeft('Assignments', $R.'assignments');
     } else {
         $set->addLeft('Materials', $R.'materials');
