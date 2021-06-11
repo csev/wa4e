@@ -25,7 +25,7 @@ As you go through the <a href="lessons">Lessons</a> in the course you now will s
 links to the autograders in the class.  You can attempt the autograders and get a score.</li>
 <li>
 You can track your progress through the course using the <a href="tsugi/assignments.php">Assignments</a>
-tool and when you complete a group of assignments, you can earn a <a href="tsugi/badges.php">Badge</a>.
+tool and when you complete a group of assignments, you can earn a <a href="badges">Badge</a>.
 You can download these badges and host them on your web site or refer the badge URLs on this site.</li>
 <li>
 There is an 
