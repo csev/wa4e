@@ -51,7 +51,7 @@ to create temporary secure tunnels from a local server to the Internet.
 <h2>Specifications</h2>
 
 Since this assignment will be graded using an autograder (see below), your
-code must match to match the wording and error messages in the sample application 
+code must match the wording and error messages in the sample application 
 precisely.   
 <center>
 <a href="01-guess-too-high.png" target="_blank">
