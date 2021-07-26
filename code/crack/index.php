@@ -25,7 +25,7 @@ if ( isset($_GET['md5']) ) {
     for($i=0; $i<strlen($txt); $i++ ) {
         $ch1 = $txt[$i];   // The first of two characters
 
-        // Our inner loop Not the use of new variables
+        // Our inner loop. Note the use of new variables
         // $j and $ch2 
         for($j=0; $j<strlen($txt); $j++ ) {
             $ch2 = $txt[$j];  // Our second character
