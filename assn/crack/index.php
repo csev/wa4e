@@ -91,9 +91,9 @@ does not reverse hash to a four digit number simply put out a message like:
 </pre>
 </p>
 <p>
-You must check all four-digit combinations.  You must has the value as a
-<strong>string</strong> not as an integer.  For this shows the right and 
-wrong way to check the has for "1234":
+You must check all four-digit combinations.  You must hash the value as a
+<strong>string</strong> not as an integer. For example, this shows the right and 
+wrong way to check the hash for "1234":
 <pre>
     $check = hash('md5', '1234');  // Correct - hashing a string
     $check = hash('md5', 1234);    // Incorrect - hashing an integer
@@ -102,7 +102,7 @@ wrong way to check the has for "1234":
 <p>
 You should also print out the first 15 attempts to reverse-hash including both
 the MD5 value and PIN that you were testing.  You should also print out
-the ellapsed time for your computation as shown in the sample application.
+the elapsed time for your computation as shown in the sample application.
 </p>
 <h3>Consistency Details</h3>
 <p>

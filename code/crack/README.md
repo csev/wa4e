@@ -21,7 +21,7 @@ with a limited alphabet.  While this works well to crack
 very short passwords it is not practical as password 
 length grows.
 
-A more sophisticated attack ti reverse hashes which uses a 
+A more sophisticated attack to reverse hashes which uses a 
 lot of storage to pre-compute lots of hashes and look them up
 quickly is called "Rainbow Tables".  This tiny application
 is *not* using a Rainbow Table approach.

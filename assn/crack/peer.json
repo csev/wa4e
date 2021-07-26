@@ -10,7 +10,7 @@
       "type":"image"
     },
     {
-      "title":"One of the MD5's list above/in the spec does not crack.  Using your code, figure out which MD5 in the list does *NOT* crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+      "title":"One of the MD5's from the list above/in the spec does not crack.  Using your code, figure out which MD5 in the list does *NOT* crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
       "type":"image"
     },
     {
