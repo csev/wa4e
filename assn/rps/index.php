@@ -200,7 +200,7 @@ for($c=0;$c<3;$c++) {
 }
 </pre>
 The <b>$names</b> variable contains the strings "Rock", "Paper", 
-and "Scissors" in this example.  The output of this should look
+and "Scissors" in this example.  The output of this should 
 look as follows:
 </p>
 <p>
@@ -210,7 +210,7 @@ look as follows:
 </p>
 <p>
 This will allow you to make sure that your <b>check()</b> function
-properly handles all combinations of the possible plays properly
+properly handles all combinations of the possible plays 
 without having to play for a long time as the computer makes 
 random plays.
 </p>
