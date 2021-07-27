@@ -19,7 +19,7 @@ if ( isset($_GET['md5']) ) {
     $txt = "abcdefghijklmnopqrstuvwxyz";
     $show = 15;
 
-    // Outer loop go go through the alphabet for the
+    // Outer loop to go through the alphabet for the
     // first position in our "possible" pre-hash
     // text
     for($i=0; $i<strlen($txt); $i++ ) {
