@@ -79,7 +79,7 @@ login screen.
 alt="Image of the RPS Application login.php"
 width="300px" src="02-RPS-Login.png" border="2"/>
 </a>
-The <b>login.php</b> should be a login screen should present a field 
+The <b>login.php</b> should be a login screen. It should present a field 
 for the person's name (name="who") and their password (name="pass").  
 Your form should have a button labeled "Log In" that submits the form
 data using method="POST" (i.e. these should not be GET parameters).
@@ -106,7 +106,7 @@ and show the error with blank input fields (i.e. don't carry over the
 values for name="who" and name="pass" fields from the previous post).
 <p>
 You are to use a "salted hash" for the password.  The "plaintext" of the 
-password is not to be present in your application source code execpt in comments.
+password is not to be present in your application source code except in comments.
 For this assignment, we will be using the following values for the salt 
 and stored hash:
 <pre>
@@ -118,12 +118,12 @@ should change the sample code to use this hash.
 </p>
 <p>
 The stored_hash is the MD5 of the salt concatenated with the plaintext
-of php123 - which is the password.  This has is computed using the following
+of php123 - which is the password.  This hash is computed using the following
 PHP:
 <pre>
 $md5 = hash('md5', 'XyZzy12*_php123');
 </pre>
-In order to check an incoming password you must concatenate te salt plus 
+In order to check an incoming password you must concatenate the salt plus 
 password together and then run that through the <b>hash()</b> function 
 and compare it to the stored_hash.
 <p>
