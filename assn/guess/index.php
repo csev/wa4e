@@ -37,12 +37,12 @@ to pass the autograder.
 and <i>PHP Arrays</i> from 
 <a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
 <li> Chapters 27, 28, and 31 from the free textbook
-<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
+<a href="https://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="http://textbooks.opensuny.org/author/mmendez/" target="_blank">Michael Menendez</a>
+<a href="https://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
 and published by
-<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
-target="_blank">Open SUNY Textbooks</a>.
+<a href="https://milneopentextbooks.org/" 
+target="_blank">Milne Open Textbooks</a>.
 <li><a href="http://www.ngrok.com/" target="_blank">NGROK</a> - A tool 
 to create temporary secure tunnels from a local server to the Internet.
 </li>
