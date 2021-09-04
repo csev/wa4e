@@ -223,8 +223,8 @@ Password &lt;input type="text" name="pass"&gt;&lt;br/&gt;
 
 <h2><?= $title_singular ?> Database Main List</h2>
 <p>
-Once the user is logged in, they should should be redirected to <b>index.php</b>
-where they will be shown see a list of
+Once the user is logged in, they should be redirected to <b>index.php</b>
+where they will see a list of
 the <?= strtolower($title_plural) ?> in the database in a table similar to the
 following:
 <div style="border: 2px solid black; padding: 10px;">
