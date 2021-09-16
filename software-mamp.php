@@ -17,8 +17,8 @@ Setting up the MAMP PHP/MySql Environment on Windows
 <p>We will install the MAMP bundled PHP/MySql system.  Installing the MAMP
 (or similar) bundle is much easier than installing all the components separately.
 </p>
-<h3>Pre-Requisite: Atom, TextWrangler or some other Programming Editor</h3>
-<p><a href="https://atom.io/" target="_blank">https://atom.io/</a>
+<h3>Pre-Requisite: VSCode, Atom or some other Programming Editor</h3>
+<p><a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
 </p>
 <h3>Installing MAMP</h3>
 <p>
@@ -75,7 +75,7 @@ with MAMP and MySql.
 </p>
 <h3>Your First PHP Program</h3>
 <p>
-Open a text editor (i.e. Atom) and put the following text in the file
+Open a text editor (i.e. VSCode) and put the following text in the file
 putting your own name in instead of mine:
 <pre>
 &lt;h1&gt;Hello from Dr. Chuck's HTML Page&lt;/h1&gt;
