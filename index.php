@@ -47,6 +47,7 @@ web sites using PHP, MySQL, JQuery, and Handlebars.
 You can take this course and receive a certificate at:
 <ul>
 <li><a href="https://www.coursera.org/specializations/web-applications" target="_blank">Coursera: Web Applications for Everybody Specialization</a> </li>
+<li><a href="https://online.umich.edu/series/web-applications-for-everybody/" target="_blank">Free certificates for University of Michgan students and staff</a></li>
 </ul>
 If you <a href="tsugi/login.php">log in</a> to this site
 you have joined a free, global
