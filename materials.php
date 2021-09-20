@@ -67,7 +67,7 @@ you can hand-copy the links from this course material into your LMS from the
                 YouTube Channel</a>
             </li>
             <li>
-                <a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/" target="_blank">Free Textbook</a>
+                <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" target="_blank">Free Textbook</a>
             </li>
 </ul>
             <p>

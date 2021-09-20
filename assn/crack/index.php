@@ -49,11 +49,11 @@ You can explore a sample solution for this problem at
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li> Chapters 14, 23-28, 31 and 32 from the free textbook
-<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
+<a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="http://textbooks.opensuny.org/author/mmendez/" target="_blank">Michael Menendez</a>
+<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
 and published by
-<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
+<a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
 target="_blank">Open SUNY Textbooks</a>.
 <li>Lectures and materials on Expressions, Control Flow, Arrays, Functions, and Forms
 <a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>

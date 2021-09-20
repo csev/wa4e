@@ -52,7 +52,7 @@ function buildMenu() {
         $set->addRight('Login', $T.'login.php');
     }
 
-    $set->addRight('Book', 'http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/');
+    $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
     $set->addRight('Instructor', 'http://www.dr-chuck.com');
 
     return $set;

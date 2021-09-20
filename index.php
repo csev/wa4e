@@ -28,10 +28,6 @@ You can track your progress through the course using the <a href="tsugi/assignme
 tool and when you complete a group of assignments, you can earn a <a href="badges">Badge</a>.
 You can download these badges and host them on your web site or refer the badge URLs on this site.</li>
 <li>
-There is an 
-<a href="https://disqus.com/home/channel/webapplicationsforeverybody/" target="_blank">online disucsson forum</a>
-hosted by Disqus.</li>
-<li>
 You can use these Creative Commons Licensed materials 
 such as the 
 <a href="lectures" target="_blank">lectures</a>
@@ -86,13 +82,13 @@ to build these kinds of sites for yourself, please see the
 <h3>TextBook</h3>
 <p>
 I am using an open textbook 
-<a href="http://textbooks.opensuny.org/the-missing-link-an-introduction-to-web-development-and-programming/"
+<a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
 target="_new">
 The Missing Link: An Introduction to Web Development and Programming
 </a>
 written by Michael Mendez 
 and published by 
-<a href="http://textbooks.opensuny.org/" target="_blank">OpenSUNY</a>.  All of the electronic copies
+<a href="http://milneopentextbooks.org/" target="_blank">OpenSUNY</a>.  All of the electronic copies
 of the book are free.   Print copies of the book are available on 
 <a href="http://www.amazon.com/The-Missing-Link-Introduction-Development/dp/1502447967/"
 target="_blank">Amazon</a>.
