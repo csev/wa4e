@@ -65,7 +65,7 @@ line_out("-- if your fields do not match these, the next tests will fail.");
 
 
 
-line_out("Attempting a bad login $account pass=badsecret42.");
+line_out("Attempting a bad login $account pass=badsecret42");
 $form->setValues(array("who" => $account, "pass" => "badsecret42"));
 $crawler = $client->submit($form);
 markTestPassed('Submit bad login values to login.php');
@@ -89,7 +89,7 @@ if ( stripos($html,'Incorrect password') > 0 ) {
     error_out("Could not find 'Incorrect password'"); 
 }
 
-line_out("Attempting a proper login with pw=php123.");
+line_out("Attempting a proper login with pass=php123");
 $form->setValues(array("who" => $account, "pass" => "php123"));
 $crawler = $client->submit($form);
 markTestPassed('Submit good login values to login.php');
