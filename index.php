@@ -15,6 +15,9 @@ require "nav.php";
 <iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <h1>Web Applications for Everybody</h1>
+<?php
+if (version_compare(PHP_VERSION, '8.0.0') >= 0) echo('<p style="color:red;"><b>The autograders associated with this site do not work beyond PHP 7.</b></p>'."\n");
+?>
 <?php if ( isset($_SESSION['id']) ) { ?>
 <p>
 Welcome to our Massive Open Online Course (MOOC). Now that you have logged in, you have access to 
