@@ -269,7 +269,7 @@ the profile entries with the <b>user_id</b> of the owner.
 </p>
 <p>
 The <b>user_id</b> is put into the session in the <b>login.php</b> and read elsewhere.   The <b>profile_id</b>
-is what is used in <b>delete.php</b>, and <b> edit.php</b> to sleect the row that you
+is what is used in <b>delete.php</b>, and <b> edit.php</b> to select the row that you
 are going to delete or edit.
 </p>
 <h2 clear="all">Login Data Validation in JavaScript</h2>
