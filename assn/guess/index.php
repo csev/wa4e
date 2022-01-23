@@ -22,7 +22,7 @@ You can explore a sample solution for this problem at
 <pre>
 <a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
 </pre>
-This sample solution won't completly pass the autograder.  It needs some work
+This sample solution won't completely pass the autograder.  It needs some work
 to meet the specifications.  You can download the code for the partially complete
 sample solution
 <a href="guess.txt" target="_blank">here</a>.
