@@ -10,12 +10,43 @@ require_once "lib/goutte/Goutte/Client.php";
 use \Tsugi\UI\SettingsForm;
 use \Tsugi\Core\LTIX;
 
+$ngrok_fails = array(
+    "ngrok.com/signup",
+    "Sign up for an ngrok account",
+    "ngrok account and install your authtoken",
+);
+
 // Get any due date information
 $dueDate = SettingsForm::getDueDate();
 $penalty = $dueDate->penalty;
 
 if ( $dueDate->message ) {
     echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
+}
+
+function webauto_get_html($crawler) {
+    global $ngrok_fails;
+    try {
+        $html = $crawler->html();
+    }
+    catch (Exception $e) {
+        error_out("Could not find HTML ".$e->getMessage());
+        error_log("Could not find HTML ".$e->getMessage());
+        throw new Exception("Could not retrieve HTML from page");
+    }
+    // Check for ngrok failures
+    $ngrok_fail = false;
+    foreach($ngrok_fails as $fail) {
+        if ( stripos($html, $fail) !== false ) $ngrok_fail = true;
+    }
+    if ( $ngrok_fail ) {
+        error_out("It appears that your ngrok tunnel is not working properly.");
+    }
+    showHTML("Show retrieved page",$html);
+
+    // https://stackoverflow.com/questions/1084741/regexp-to-strip-html-comments
+    $html = preg_replace('/<!--(.*)-->/Uis', '', $html);
+    return $html;
 }
 
 function showHTML($message, $html) {

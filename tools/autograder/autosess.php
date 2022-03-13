@@ -31,8 +31,7 @@ $client->setMaxRedirects(5);
 
 try {
 $crawler = $client->request('GET', $url);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$html = webauto_get_html($crawler);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {
@@ -48,7 +47,7 @@ $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
 $crawler = $client->request('GET', $url);
 markTestPassed('login.php page retrieved');
-$html = $crawler->html();
+$html = webauto_get_html($crawler);
 showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);

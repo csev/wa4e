@@ -44,25 +44,23 @@ $titlefound = false;
 try {
 
 $crawler = $client->request('GET', $url);
+$html = webauto_get_html($crawler);
 
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+    $retval = webauto_check_title($crawler);
+    if ( $retval === true ) {
+        $titlefound = true;
+    } else {
+        error_out($retval);
+    }
 
-$retval = webauto_check_title($crawler);
-if ( $retval === true ) {
-    $titlefound = true;
-} else {
-    error_out($retval);
-}
+    line_out("Looking for 'Missing guess parameter'");
+    if ( stripos($html, 'Missing guess parameter') > 0 ) $passed++;
+    else error_out("Not found");
 
-line_out("Looking for 'Missing guess parameter'");
-if ( stripos($html, 'Missing guess parameter') > 0 ) $passed++;
-else error_out("Not found");
-
-// Empty guess
-$u = $url . "?guess=";
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
+    // Empty guess
+    $u = $url . "?guess=";
+    line_out("Retrieving ".htmlent_utf8($u));
+    $crawler = $client->request('GET', $u);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 line_out("Looking for 'Your guess is too short");
@@ -104,8 +102,7 @@ else error_out("Not found");
 $u = $url . "?guess=".$correct;
 line_out("Retrieving ".htmlent_utf8($u));
 $crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Congratulations - You are right'");
 if ( stripos($html, 'congratulations') > 0 ) $passed++;
 else error_out("Not found");

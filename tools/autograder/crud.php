@@ -60,9 +60,8 @@ try {
 
 $crawler = $client->request('GET', $url);
 
-$html = $crawler->html();
+$html = webauto_get_html($crawler);
 markTestPassed('Index retrieved');
-showHTML("Show retrieved page",$html);
 
 $retval = webauto_check_title($crawler);
 if ( $retval !== true ) {

@@ -31,8 +31,7 @@ $client->setMaxRedirects(5);
 
 try {
 $crawler = $client->request('GET', $url);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$html = webauto_get_html($crawler);
 
 $retval = webauto_check_title($crawler);
 if ( $retval === true ) {

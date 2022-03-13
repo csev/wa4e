@@ -21,8 +21,7 @@ $client = new Client();
 $client->setMaxRedirects(5);
 
 $crawler = $client->request('GET', $url);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$html = webauto_get_html($crawler);
 
 line_out("Searching for h1 tag...");
 
