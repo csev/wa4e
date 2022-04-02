@@ -37,6 +37,7 @@ flush();
 
 $client = new Client();
 $client->setMaxRedirects(5);
+$client->getClient()->setSslVerification(false);
 
 // Yes, one gigantic unindented try/catch block
 $passed = 5;

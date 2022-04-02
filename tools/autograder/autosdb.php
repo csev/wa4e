@@ -28,6 +28,7 @@ flush();
 // http://symfony.com/doc/current/components/dom_crawler.html
 $client = new Client();
 $client->setMaxRedirects(5);
+$client->getClient()->setSslVerification(false);
 
 try {
 $crawler = $client->request('GET', $url);

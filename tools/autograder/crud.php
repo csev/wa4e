@@ -18,6 +18,7 @@ flush();
 
 $client = new Client();
 $client->setMaxRedirects(5);
+$client->getClient()->setSslVerification(false);
 
 // Make up some good submit data
 $wcount = 1;

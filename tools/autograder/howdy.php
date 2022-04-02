@@ -19,6 +19,7 @@ flush();
 // http://symfony.com/doc/current/components/dom_crawler.html
 $client = new Client();
 $client->setMaxRedirects(5);
+$client->getClient()->setSslVerification(false);
 
 $crawler = $client->request('GET', $url);
 $html = webauto_get_html($crawler);
