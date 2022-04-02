@@ -11,6 +11,8 @@ use \Tsugi\UI\SettingsForm;
 use \Tsugi\Core\LTIX;
 
 $ngrok_fails = array(
+    "ERR_NGROK_6022",
+    "Before you can serve HTML content, you must sign up for an ngrok account and install your authtoken",
     "ngrok.com/signup",
     "Sign up for an ngrok account",
     "ngrok account and install your authtoken",
