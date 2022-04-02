@@ -16,9 +16,7 @@ error_log($title_plural." ".$url);
 line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
-$client = new Client();
-$client->setMaxRedirects(5);
-$client->getClient()->setSslVerification(false);
+webauto_setup();
 
 // Make up some good submit data
 $wcount = 1;
@@ -59,7 +57,8 @@ $passed = 0;
 $titlefound = true;
 try {
 
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 
 $html = webauto_get_html($crawler);
 markTestPassed('Index retrieved');
@@ -74,7 +73,8 @@ line_out("Looking for  an anchor tag with text of 'Please log in' (case matters)
 $link = $crawler->selectLink('Please log in')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 markTestPassed('login page retrieved');
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
@@ -99,7 +99,8 @@ $link = $crawler->selectLink('Add New Entry')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
 
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed('Retrieve add.php');
 showHTML("Show retrieved page",$html);
@@ -166,7 +167,8 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = $client->request('GET', $editlink);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved $editlink");
 showHTML("Show retrieved page",$html);
@@ -202,7 +204,8 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = $client->request('GET', $editlink);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved delete.php");
 showHTML("Show retrieved page",$html);
@@ -235,7 +238,8 @@ while ( $i-- > 0 ) {
     $editlink = str_replace("&amp;","&",$editlink);
     line_out("Retrieving ".$editlink."...");
 
-    $crawler = $client->request('GET', $editlink);
+    $crawler = webauto_load_url($url);
+    if ( $crawler === false ) return;
     $html = $crawler->html();
     showHTML("Show retrieved page",$html);
 

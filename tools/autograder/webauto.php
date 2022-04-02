@@ -9,9 +9,10 @@ require_once "lib/goutte/Goutte/Client.php";
 
 use \Tsugi\UI\SettingsForm;
 use \Tsugi\Core\LTIX;
+use \Goutte\Client;
 
 $ngrok_fails = array(
-    "ERR_NGROK_6022",
+    "ERR_NGROK_",
     "Before you can serve HTML content, you must sign up for an ngrok account and install your authtoken",
     "ngrok.com/signup",
     "Sign up for an ngrok account",
@@ -26,12 +27,60 @@ if ( $dueDate->message ) {
     echo('<p style="color:red;">'.$dueDate->message.'</p>'."\n");
 }
 
-function webauto_get_html($crawler) {
+function webauto_setup() {
+    global $client;
+    // http://symfony.com/doc/current/components/dom_crawler.html
+    $client = new Client();
+    $client->setMaxRedirects(5);
+    $client->getClient()->setSslVerification(false);
+}
+
+
+/* Returns a crawler */
+function webauto_load_url($url, $message=false) {
+    global $client;
     global $ngrok_fails;
+    global $base_url_path;
+    global $webauto_http_status;
+    global $webauto_http_content;
+    line_out(" ");
+    if ( $message ) echo("<b>".htmlentities($message)."</b><br/>\n");
+    echo("<hr/><b>Loading URL:</b> ".htmlentities($url));
+    $the_url = str_replace('"',"&quot;", $url);
+    if ( strpos($the_url, '/') === 0 ) $the_url = $base_url_path . $the_url;
+    echo(' (<a href="'.$the_url.'" target="_blank">Open URL</a>)');
+    echo("<br/>\n");
+    flush();
+    try {
+        $crawler = $client->request('GET', $url);
+        $response = $client->getResponse();
+        $webauto_http_status = $response->getStatus();
+        $webauto_http_content = $response->getContent();
+
+        // Check for ngrok failures
+        $ngrok_fail = false;
+        foreach($ngrok_fails as $fail) {
+            if ( stripos($webauto_http_content, $fail) !== false ) $ngrok_fail = true;
+        }
+        if ( $ngrok_fail ) {
+            error_out("It appears that your ngrok tunnel is not working properly: ".$webauto_http_content);
+        }
+    } catch(\Exception $e) {
+        error_out($e->getMessage());
+        return false;
+    }
+    return $crawler;
+}
+
+
+function webauto_get_html($crawler) {
+    global $ngrok_fails, $client;
     try {
         $html = $crawler->html();
     }
     catch (Exception $e) {
+        $response = $client->getResponse();
+        $status = $response->getStatus();
         error_out("Could not find HTML ".$e->getMessage());
         error_log("Could not find HTML ".$e->getMessage());
         throw new Exception("Could not retrieve HTML from page");

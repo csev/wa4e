@@ -25,13 +25,11 @@ error_log("AutosDb ".$url);
 line_out("Initial page ".htmlent_utf8($url)."...");
 flush();
 
-// http://symfony.com/doc/current/components/dom_crawler.html
-$client = new Client();
-$client->setMaxRedirects(5);
-$client->getClient()->setSslVerification(false);
+webauto_setup();
 
 try {
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 
 $html = webauto_get_html($crawler);
 
@@ -47,7 +45,8 @@ line_out("Looking for  an anchor tag with text of 'Please Log In' (case matters)
 $link = $crawler->selectLink('Please Log In')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 markTestPassed('login.php page retrieved');
 $html = webauto_get_html($crawler);
 showHTML("Show retrieved page",$html);
@@ -105,7 +104,8 @@ line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
 $link = $crawler->selectLink('Add New')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
 $form = webauto_get_form_button($crawler,'Add');
@@ -136,7 +136,8 @@ line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
 $link = $crawler->selectLink('Add New')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 
@@ -182,7 +183,8 @@ line_out("Looking for a 'Logout' link...");
 $link = $crawler->selectLink('Logout')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 markTestPassed('index..php page retrieved');
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);

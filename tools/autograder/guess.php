@@ -35,16 +35,15 @@ error_log("Guess/GET ".$url);
 line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
-$client = new Client();
-$client->setMaxRedirects(5);
-$client->getClient()->setSslVerification(false);
+webauto_setup();
 
 // Yes, one gigantic unindented try/catch block
 $passed = 5;
 $titlefound = false;
 try {
 
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 
     $retval = webauto_check_title($crawler);

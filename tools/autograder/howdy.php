@@ -16,12 +16,10 @@ error_log("ASSN02 ".$url);
 line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
-// http://symfony.com/doc/current/components/dom_crawler.html
-$client = new Client();
-$client->setMaxRedirects(5);
-$client->getClient()->setSslVerification(false);
+webauto_setup();
 
-$crawler = $client->request('GET', $url);
+$crawler = webauto_load_url($url);
+if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 
 line_out("Searching for h1 tag...");
