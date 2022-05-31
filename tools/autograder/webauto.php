@@ -4,8 +4,7 @@
 use \Tsugi\Grades\GradeUtil;
 
 // A library for webscraping graders
-require_once "lib/goutte/vendor/autoload.php";
-require_once "lib/goutte/Goutte/Client.php";
+require_once "vendor/autoload.php";
 
 use \Tsugi\UI\SettingsForm;
 use \Tsugi\Core\LTIX;
@@ -140,7 +139,7 @@ function checkPostRedirect($client) {
     global $passed;
     line_out("Checking to see if the POST redirected to a GET");
     $method = $client->getRequest()->getMethod();
-    if ( $method == "get" ) {
+    if ( strcasecmp($method,"get") == 0 ) {
         $passed++;
         markTestPassed("POST Redirect Check");
     } else {
