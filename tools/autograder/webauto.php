@@ -9,6 +9,7 @@ require_once "vendor/autoload.php";
 use \Tsugi\UI\SettingsForm;
 use \Tsugi\Core\LTIX;
 use \Goutte\Client;
+use Symfony\Component\HttpClient\HttpClient;
 
 $ngrok_fails = array(
     "ERR_NGROK_",
@@ -29,9 +30,12 @@ if ( $dueDate->message ) {
 function webauto_setup() {
     global $client;
     // http://symfony.com/doc/current/components/dom_crawler.html
-    $client = new Client();
+    // $client = new Client();
+    // $client->getClient()->setSslVerification(false);
+
+    // https://stackoverflow.com/questions/63539346/how-can-i-fix-the-ssl-problem-in-symfony-goutte
+    $client = new Client(HttpClient::create(['verify_peer' => false, 'verify_host' => false]));
     $client->setMaxRedirects(5);
-    $client->getClient()->setSslVerification(false);
 }
 
 
@@ -53,7 +57,7 @@ function webauto_load_url($url, $message=false) {
     try {
         $crawler = $client->request('GET', $url);
         $response = $client->getResponse();
-        $webauto_http_status = $response->getStatus();
+        $webauto_http_status = $response->getStatusCode();
         $webauto_http_content = $response->getContent();
 
         // Check for ngrok failures
