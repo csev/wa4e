@@ -167,7 +167,7 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_load_url($editlink);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved $editlink");
@@ -204,7 +204,7 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_load_url($editlink);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved delete.php");
@@ -238,7 +238,7 @@ while ( $i-- > 0 ) {
     $editlink = str_replace("&amp;","&",$editlink);
     line_out("Retrieving ".$editlink."...");
 
-    $crawler = webauto_load_url($url);
+    $crawler = webauto_load_url($editlink);
     if ( $crawler === false ) return;
     $html = $crawler->html();
     showHTML("Show retrieved page",$html);
