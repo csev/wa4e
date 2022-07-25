@@ -12,7 +12,7 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 <p>We will install the XAMPP bundled PHP/MySql system.  Installing the XAMPP
 (or similar) bundle is much easier than installing all the components separately.
 </p>
-<h3>Pre-Requisite: VSCode, Atom or some other Programming Editor</h3>
+<h3>Pre-Requisite: VSCode or some other Programming Editor</h3>
 <p><a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
 </p>
 <h3>Installing XAMPP</h3>
