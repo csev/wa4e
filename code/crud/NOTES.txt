@@ -1,6 +1,6 @@
 To get started run the following SQL commands:
 
-CREATE DATABASE misc;
+CREATE DATABASE misc CHARACTER SET=utf8mb4;
 CREATE USER 'fred'@'localhost' IDENTIFIED BY 'zap';
 GRANT ALL ON misc.* TO 'fred'@'localhost';
 CREATE USER 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
