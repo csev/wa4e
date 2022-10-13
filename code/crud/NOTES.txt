@@ -1,18 +1,19 @@
 To get started run the following SQL commands:
 
 CREATE DATABASE misc;
-GRANT ALL ON misc.* TO 'fred'@'localhost' IDENTIFIED BY 'zap';
-GRANT ALL ON misc.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
+CREATE USER 'fred'@'localhost' IDENTIFIED BY 'zap';
+GRANT ALL ON misc.* TO 'fred'@'localhost';
+CREATE USER 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
+GRANT ALL ON misc.* TO 'fred'@'127.0.0.1';
 
 USE misc; (Or select misc in phpMyAdmin)
 
 CREATE TABLE users (
    user_id INTEGER NOT NULL
-     AUTO_INCREMENT KEY,
+     AUTO_INCREMENT,
    name VARCHAR(128),
    email VARCHAR(128),
    password VARCHAR(128),
+   PRIMARY KEY(user_id),
    INDEX(email)
-) ENGINE=InnoDB CHARSET=utf8;
-
-
+) ENGINE=InnoDB CHARSET=utf8mb4;
