@@ -93,14 +93,14 @@ enter the code you get from the instructions below here (Hint: starts with <?= s
 </p>
 <h1>Instructions</h1>
 <p>
-First, create a MySql database or use an existing database (make sure to 
-use a UTF8 character set) and then create a table in the database called "Ages":
+First, create a MySQL database or use an existing database (make sure to 
+use a UTF8 character set, like utf8mb4) and then create a table in the database called "Ages":
 
 <pre>
 CREATE TABLE Ages ( 
-  name VARCHAR(128), 
+  `name` VARCHAR(128), 
   age INTEGER
-)
+);
 </pre>
 <p>
 Then make sure the table is empty by deleting any rows that 
@@ -110,13 +110,13 @@ with the following commands:
 <?php
 echo("DELETE FROM Ages;\n");
 foreach($database as $row) {
-   echo("INSERT INTO Ages (name, age) VALUES ('".$row[1]."', ".$row[2].");\n");
+   echo("INSERT INTO Ages (`name`, age) VALUES ('".$row[1]."', ".$row[2].");\n");
 }
 ?>
 </pre>
 Once the inserts are done, run the following SQL command:
 <pre>
-SELECT sha1(CONCAT(name,age)) AS X FROM Ages ORDER BY X
+SELECT sha1(CONCAT(`name`,age)) AS X FROM Ages ORDER BY X;
 </pre>
 Find the <b>first</b> row in the resulting record set and enter the long string that looks <i>like</i>
 <b>254c6127cdbc4c38e065317667340e8b0950046f</b> (this is just a sample string).
