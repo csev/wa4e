@@ -1,6 +1,6 @@
 {
 "title": "Web Applications for Everybody (WA4E)",
-"description" : "Hello and welcome to my site where you can work through these modules and learn develop PHP-based database-backed web applications.",
+"description" : "Hello and welcome to my site where you can work through these modules and learn to develop PHP-based database-backed web applications.",
 "count": true,
 "required_modules": [
     "https://github.com/tsugitools/gift",
@@ -738,7 +738,7 @@
                 "json" :
 {
   "title":"Login and Rock Paper Scissors",
-  "description":"In this assignment we will a two page web application to play rock, paper, scissors (https://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
+  "description":"In this assignment we will create a two page web application to play rock, paper, scissors (https://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
   "grading":"Please review carefully.  The most important aspect of peer-grading is useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
   "assignment":"{apphome}/assn/rps/",
   "solution":"{apphome}/solutions/rps/",
@@ -1406,7 +1406,7 @@
     "title": "Basic JavaScript",
     "anchor": "javascript",
     "icon" : "fa-code",
-    "description": "We talk a quick look at the JavaScript language.  We assume that you already know PHP - so it is a pretty quick introduction focusing on what is <b>different</b> about JavaScript.",
+    "description": "We take a quick look at the JavaScript language.  We assume that you already know PHP - so it is a pretty quick introduction focusing on what is <b>different</b> about JavaScript.",
     "slides": "lectures/JS-01-JavaScript.ppt",
     "discussions" : [
         {
