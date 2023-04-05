@@ -156,10 +156,10 @@ properly implement the POST-Redirect-GET-Flash pattern.
 <h2>Specifications for the Auto Database Screens</h2>
 <p>
 The <b>autos.php</b> script from the previous assignment is broken into two scripts
-in this assignment. The <b>view.pbp</b> script
+in this assignment. The <b>view.php</b> script
 shows the list of automobiles in the database and the <b>add.php</b> script 
 handles adding new automobiles to the database but does not list any autos.  
-The <b>view.pbp</b> includes a link to <b>add.php</b> and <b>logout.php</b>
+The <b>view.php</b> includes a link to <b>add.php</b> and <b>logout.php</b>
 and the <b>add.php</b> has a <b>Cancel</b> button.
 </p>
 <p>
