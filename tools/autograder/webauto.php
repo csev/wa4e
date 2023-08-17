@@ -227,7 +227,7 @@ function checkPostRedirect($client) {
     global $passed;
     line_out("Checking to see if the POST redirected to a GET");
     $method = $client->getRequest()->getMethod();
-    if ( $method == "get" ) {
+    if ( $method == "GET" ) {
         $passed++;
         markTestPassed("POST Redirect Check");
     } else {
