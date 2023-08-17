@@ -1,27 +1,0 @@
-CREATE TABLE accounts (   number INT,   balance FLOAT,   PRIMARY KEY(number) ) ENGINE InnoDB; INSERT INTO accounts(number, balance) VALUES(12345, 1025); INSERT INTO accounts(number, balance) VALUES(67890, 140); 
-
-BEGIN;
-SELECT balance FROM accounts WHERE number=12345 FOR UPDATE;UPDATE accounts SET balance=balance+25 WHERE number=12345;
-COMMIT;
-
-BEGIN;UPDATE accounts SET balance=balance-250 WHERE number=12345;UPDATE accounts SET balance=balance+250 WHERE number=67890;SELECT * from accounts;
-ROLLBACK;
-
-
-
-BEGIN;
-SELECT balance FROM accounts WHERE number=12345 FOR UPDATE;BEGIN;
-SELECT balance FROM accounts WHERE number=12345 FOR UPDATE;BEGIN;
-UPDATE accounts SET balance=balance-250 WHERE number=12345;BEGIN;
-UPDATE accounts SET balance=balance-250 WHERE number=12345;
-
-
-BEGIN;
-SELECT balance FROM accounts WHERE number=12345 FOR UPDATE;
-SELECT balance FROM accounts WHERE number=67890 FOR UPDATE;
-
-BEGIN;
-SELECT balance FROM accounts WHERE number=67890 FOR UPDATE;
-SELECT balance FROM accounts WHERE number=12345 FOR UPDATE;
-
-
