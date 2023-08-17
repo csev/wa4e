@@ -86,13 +86,6 @@ function webauto_get_meta($crawler, $name) {
     return $retval;
 }
 
-function autoToggle() {
-    global $div_id;
-    echo("<script>dataToggle('$div_id');</script>\n");
-    $div_id--;
-    echo("<script>dataToggle('$div_id');</script>\n");
-}
-
 function togglePre($title, $html) {
     global $div_id;
     global $base_url_path;

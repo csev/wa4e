@@ -15,7 +15,7 @@ flush();
 
 webauto_setup();
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 
@@ -49,8 +49,6 @@ if ( $USER->displayname && stripos($h1,$USER->displayname) !== false ) {
 
 $perfect = 2;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 // Send grade
 if ( $score > 0.0 ) webauto_test_passed($score, $url);

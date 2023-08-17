@@ -3,9 +3,8 @@
 require_once "../config.php";
 require_once "webauto.php";
 require_once "makes.php";
-use Goutte\Client;
 
-line_out("Grading PHP-Intro Autos Post-Redirect");
+line_out("Grading DJ4E Autos Post-Redirect");
 ?>
 <p>The specification for this assignment is:
 <a href="http://www.wa4e.com/assn/autosess/" target="_blank">http://www.wa4e.com/assn/autosess/</a></p>
@@ -28,7 +27,7 @@ flush();
 webauto_setup();
 
 try {
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 
 $html = webauto_get_html($crawler);
@@ -45,7 +44,7 @@ line_out("Looking for  an anchor tag with text of 'Please Log In' (case matters)
 $link = $crawler->selectLink('Please Log In')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 markTestPassed('login.php page retrieved');
 $html = webauto_get_html($crawler);
@@ -61,7 +60,7 @@ if ( $retval === true ) {
 
 // Doing a log in
 line_out('Looking for the form with a value="Log In" submit button');
-$form = webauto_get_form_button($crawler,'Log In');
+$form = webauto_get_form_with_button($crawler,'Log In');
 line_out("-- this autograder expects the log in form field names to be:");
 line_out("-- email and pass");
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -104,11 +103,11 @@ line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
 $link = $crawler->selectLink('Add New')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 
 line_out("");
 line_out("-- You may want to remove rows from the autos  after");
@@ -136,14 +135,14 @@ line_out("Looking for  an anchor tag with text of 'Add New' (case matters)");
 $link = $crawler->selectLink('Add New')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Leaving make blank to cause an error");
 $form->setValues(array("mileage" => $mileage, "year" => $year));
 $crawler = $client->submit($form);
@@ -154,7 +153,7 @@ webauto_search_for($html,'Make is required');
 
 line_out("Looking for a form button with text of 'Add' (case matters)");
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Making mileage non-numeric to cause an error");
 $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => "fourtytwo"));
 $crawler = $client->submit($form);
@@ -163,7 +162,7 @@ checkPostRedirect($client);
 showHTML("Show retrieved page",$html);
 webauto_search_for($html,'Mileage and year must be numeric');
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Attempting html injection");
 $make = "<b>".$car_makes[1]." Bold</b>";
 $year = rand(1970,2016);
@@ -183,7 +182,7 @@ line_out("Looking for a 'Logout' link...");
 $link = $crawler->selectLink('Logout')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 markTestPassed('index..php page retrieved');
 $html = $crawler->html();
@@ -205,8 +204,6 @@ webauto_search_for($html, "Please Log In");
 
 $perfect = 28;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles or the student name is missing");
