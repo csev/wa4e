@@ -2,9 +2,7 @@
 
 require_once "webauto.php";
 
-use Goutte\Client;
-
-line_out("Grading PHP-Intro Assignment 2");
+line_out("Grading WA4E Assignment 2");
 
 titleNote();
 
@@ -12,7 +10,6 @@ $url = getUrl('http://csevumich.byethost18.com/howdy.php');
 if ( $url === false ) return;
 $grade = 0;
 
-error_log("ASSN02 ".$url);
 line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
