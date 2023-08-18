@@ -7,6 +7,7 @@ solutions
 wa4e-private
 code/php-*
 tsugi
+cron.txt
 *.zip
 *.swp
 
