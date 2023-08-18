@@ -43,7 +43,7 @@ array( "{$CFG->dbprefix}solutions_Profile",
 
   PRIMARY KEY(profile_id),
 
-  CONSTRAINT profile_ibfk_2
+  CONSTRAINT solutions_profile_ibfk_2
         FOREIGN KEY (user_id)
         REFERENCES solutions_users (user_id)
         ON DELETE CASCADE ON UPDATE CASCADE
@@ -63,7 +63,7 @@ array( "{$CFG->dbprefix}solutions_Position",
 
   PRIMARY KEY(position_id),
 
-  CONSTRAINT position_ibfk_1
+  CONSTRAINT solutions_position_ibfk_1
         FOREIGN KEY (profile_id)
         REFERENCES solutions_Profile (profile_id)
         ON DELETE CASCADE ON UPDATE CASCADE
@@ -93,12 +93,12 @@ array( "{$CFG->dbprefix}solutions_Education",
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
-  CONSTRAINT education_ibfk_1
+  CONSTRAINT solutions_education_ibfk_1
         FOREIGN KEY (profile_id)
         REFERENCES solutions_Profile (profile_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
 
-  CONSTRAINT education_ibfk_2
+  CONSTRAINT solutions_education_ibfk_2
         FOREIGN KEY (institution_id)
         REFERENCES solutions_Institution (institution_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
