@@ -2,8 +2,6 @@
 
 header("Content-Type: text/plain; charset=utf-8");
 
-$ZIP_TIME = 30*60; // 30 Minutes
-
 $dirname = dirname(__DIR__);
 require_once $dirname."/tsugi/config.php";
 
@@ -17,13 +15,17 @@ if ( file_exists($marker_file) ) {
     $delta = 24*60*60;
 }
 
+/* ------------- Actual cron --------------- */
+
+$ZIP_TIME = 30*60; // 30 Minutes
+
 if ( $delta > $ZIP_TIME ) {
     echo("Running command\n");
     echo(system("cd ../code ; bash zips.sh"));
     echo("\n");
     touch($marker_file);
 } else {
-    echo("Delta $delta\n");
+    echo("Delta $delta z:$ZIP_TIME\n");
 }
 
 
