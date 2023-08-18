@@ -2,7 +2,7 @@
 
 header("Content-Type: text/plain; charset=utf-8");
 
-$ZIP_TIME = 15;
+$ZIP_TIME = 30*60; // 30 Minutes
 
 $dirname = dirname(__DIR__);
 require_once $dirname."/tsugi/config.php";
