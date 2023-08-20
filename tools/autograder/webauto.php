@@ -30,7 +30,7 @@ function webauto_setup() {
     // $client->getClient()->setSslVerification(false);
 }
 
-function webauto_get_html($crawler) {
+function webauto_get_html($crawler, $showSource=false) {
     global $ngrok_fails;
     try {
         $html = $crawler->html();
@@ -61,7 +61,7 @@ function webauto_get_html($crawler) {
     if ( $ngrok_fail ) {
         error_out("It appears that your ngrok tunnel is not working properly.");
     }
-    showHTML("Show retrieved page",$html);
+    showHTML("Show retrieved page",$html, $showSource);
 
     // https://stackoverflow.com/questions/1084741/regexp-to-strip-html-comments
     $html = preg_replace('/<!--(.*)-->/Uis', '', $html);
@@ -109,10 +109,14 @@ function togglePre($title, $html) {
     echo("</iframe><br/>\n");
 }
 
-function showHTML($message, $html) {
+function showHTML($message, $html, $showSource=false) {
     global $OUTPUT;
     global $webauto_http_status;
-    togglePre("", $html);
+    if ( $showSource ) {
+        togglePre("", htmlentities($html));
+    } else {
+        togglePre("", $html);
+    }
     $pos = strpos($html,'<b>Fatal error</b>');
     if ( $webauto_http_status != 200 ) {
         error_out("Page may have errors, HTTP status=$webauto_http_status");

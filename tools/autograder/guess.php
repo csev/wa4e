@@ -31,7 +31,6 @@ if ( $url === false ) return;
 $grade = 0;
 
 error_log("Guess/GET ".$url);
-line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
 webauto_setup();
@@ -43,7 +42,7 @@ try {
 
 $crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler);
+$html = webauto_get_html($crawler, true);
 
     $retval = webauto_check_title($crawler);
     if ( $retval === true ) {
@@ -58,19 +57,18 @@ $html = webauto_get_html($crawler);
 
     // Empty guess
     $u = $url . "?guess=";
-    line_out("Retrieving ".htmlent_utf8($u));
-    $crawler = $client->request('GET', $u);
-$html = $crawler->html();
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler, true);
 line_out("Looking for 'Your guess is too short");
 if ( stripos($html, 'Your guess is too short') > 0 ) $passed++;
 else error_out("Not found");
 
 // Bad guess
 $u = $url . "?guess=fred";
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler, true);
 line_out("Looking for 'Your guess is not a number");
 if ( stripos($html, 'Your guess is not a number') > 0 ||
      stripos($html, 'Your guess is not valid') > 0 ) $passed++;
@@ -78,29 +76,27 @@ else error_out("Not found");
 
 // Low guess
 $u = $url . "?guess=".($correct-1);
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler, true);
 line_out("Looking for 'Your guess is too low'");
 if ( stripos($html, 'Your guess is too low') > 0 ) $passed++;
 else error_out("Not found");
 
 // High guess
 $u = $url . "?guess=".($correct+1);
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler, true);
 line_out("Looking for 'Your guess is too high'");
 if ( stripos($html, 'Your guess is too high') > 0 ) $passed++;
 else error_out("Not found");
 
 // Good guess
 $u = $url . "?guess=".$correct;
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = webauto_get_html($crawler);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler, true);
 line_out("Looking for 'Congratulations - You are right'");
 if ( stripos($html, 'congratulations') > 0 ) $passed++;
 else error_out("Not found");
