@@ -43,7 +43,7 @@ function webauto_get_html($crawler, $showSource=false) {
     if ( strpos($html,"<th>Exception Value:</th>") > 0 ) {
         $title = false;
         try {
-            $nodeValues = $crawler->filter('title')->each(function ($node, $i) {
+            $nodeValues = $crawler->filterXPath('//title')->each(function ($node, $i) {
                 return $node->text();
             });
             if ( is_array($nodeValues) && count($nodeValues) ) $title = $nodeValues[0];
@@ -324,9 +324,9 @@ function webauto_check_title($crawler) {
     $check = webauto_get_check();
 
     try {
-        $title = $crawler->filter('title')->text();
+        $title = $crawler->filterXPath('//title')->text();
     } catch(Exception $ex) {
-        return "Did not find title tag";
+        return "Did not find title tag $ex";
     }
 
     if ( stripos($title,$check) !== false ) {

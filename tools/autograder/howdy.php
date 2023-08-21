@@ -24,7 +24,7 @@ line_out("Searching for h1 tag...");
 $passed = 0;
 $titlefound = false;
 try {
-    $h1 = $crawler->filter('h1')->text();
+    $h1 = $crawler->filterXPath('//h1')->text();
     line_out("Found h1 tag...");
 } catch(Exception $ex) {
     error_out("Did not find h1 tag");
