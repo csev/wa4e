@@ -26,7 +26,7 @@ answer to complete this assignment with full credit.
 <?php
 titleNote();
 
-$url = getUrl('http://www.wa4e.com/code/arrays/guess.php');
+$url = getUrl('http://www.wa4e.com/solutions/guess/guess.php');
 if ( $url === false ) return;
 $grade = 0;
 
