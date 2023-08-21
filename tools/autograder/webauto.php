@@ -112,8 +112,9 @@ function togglePre($title, $html) {
 function showHTML($message, $html, $showSource=false) {
     global $OUTPUT;
     global $webauto_http_status;
-    if ( $showSource ) {
-        togglePre("", htmlentities($html));
+    global $SHOW_SOURCE;
+    if ( $showSource || (isset($SHOW_SOURCE) && $SHOW_SOURCE)) {
+        togglePre("", "<pre>\n".htmlentities($html)."\n</pre>\n");
     } else {
         togglePre("", $html);
     }

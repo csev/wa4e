@@ -6,6 +6,8 @@ use \Tsugi\Core\LTIX;
 use \Tsugi\UI\SettingsForm;
 use \Tsugi\UI\Lessons;
 
+$SHOW_SOURCE = true;
+
 $LAUNCH = LTIX::requireData();
 $p = $CFG->dbprefix;
 

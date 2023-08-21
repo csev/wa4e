@@ -42,7 +42,7 @@ try {
 
 $crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 
     $retval = webauto_check_title($crawler);
     if ( $retval === true ) {
@@ -59,7 +59,7 @@ $html = webauto_get_html($crawler, true);
     $u = $url . "?guess=";
 $crawler = webauto_get_url($client, $u);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too short");
 if ( stripos($html, 'Your guess is too short') > 0 ) $passed++;
 else error_out("Not found");
@@ -68,7 +68,7 @@ else error_out("Not found");
 $u = $url . "?guess=fred";
 $crawler = webauto_get_url($client, $u);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is not a number");
 if ( stripos($html, 'Your guess is not a number') > 0 ||
      stripos($html, 'Your guess is not valid') > 0 ) $passed++;
@@ -78,7 +78,7 @@ else error_out("Not found");
 $u = $url . "?guess=".($correct-1);
 $crawler = webauto_get_url($client, $u);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too low'");
 if ( stripos($html, 'Your guess is too low') > 0 ) $passed++;
 else error_out("Not found");
@@ -87,7 +87,7 @@ else error_out("Not found");
 $u = $url . "?guess=".($correct+1);
 $crawler = webauto_get_url($client, $u);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too high'");
 if ( stripos($html, 'Your guess is too high') > 0 ) $passed++;
 else error_out("Not found");
@@ -96,7 +96,7 @@ else error_out("Not found");
 $u = $url . "?guess=".$correct;
 $crawler = webauto_get_url($client, $u);
 if ( $crawler === false ) return;
-$html = webauto_get_html($crawler, true);
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Congratulations - You are right'");
 if ( stripos($html, 'congratulations') > 0 ) $passed++;
 else error_out("Not found");
