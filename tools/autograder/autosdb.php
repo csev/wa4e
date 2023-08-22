@@ -162,7 +162,7 @@ $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => $year))
 $crawler = $client->submit($form);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
-webauto_search_for_many($html, array($car_makes[2], 'DROP Table autos', $year, $mileage) );
+webauto_search_for_many($html, array($car_makes[2], 'DROP TABLE autos', $year, $mileage) );
 
 line_out("Preparing to log out...");
 $form = webauto_get_form_with_button($crawler,'logout');
