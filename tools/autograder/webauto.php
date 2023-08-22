@@ -326,7 +326,7 @@ function webauto_check_title($crawler) {
     try {
         $title = $crawler->filterXPath('//title')->text();
     } catch(Exception $ex) {
-        return "Did not find title tag $ex";
+        return "Did not find title tag";
     }
 
     if ( stripos($title,$check) !== false ) {
