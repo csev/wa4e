@@ -132,12 +132,14 @@ Then log in with your Google account and the UI should change.  In particular yo
 see 'Assignments' and in Lessons you should start seeing LTI autograders.
 
 
-Specific Instructions on the UMich hosting Instance (for Chuck)
----------------------------------------------------------------
+Private Repos
+-------------
 
-Make sure to set the non-standard session save path in these files:
+You also need the `wa4e-private` checked out and the top level folder
+`solutions` soft linked to `wa4e-private/assn`.
 
-    assn/.htaccess
-    code/.htaccess
-    solutions/.htaccess
-   
+    ln -s wa4e-private/assn solutions
+
+Also you need to set up the misc database so the solutions work using the
+instructions in that folder.
+

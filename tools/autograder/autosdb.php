@@ -3,9 +3,8 @@
 require_once "../config.php";
 require_once "webauto.php";
 require_once "makes.php";
-use Goutte\Client;
 
-line_out("Grading PHP-Intro Autos Database");
+line_out("Grading DJ4E Autos Database");
 ?>
 <p>The specification for this assignment is:
 <a href="http://www.wa4e.com/assn/autosdb/" target="_blank">http://www.wa4e.com/assn/autosdb/</a></p>
@@ -28,7 +27,7 @@ flush();
 webauto_setup();
 
 try {
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 
 $html = webauto_get_html($crawler);
@@ -46,7 +45,7 @@ $link = $crawler->selectLink('Please Log In')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 markTestPassed('login.php page retrieved');
 $html = $crawler->html();
@@ -100,7 +99,7 @@ markTestPassed('Submit good login values to login.php');
 // checkPostRedirect($client);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 
 line_out("");
 line_out("-- You may want to remove rows from the autos  after");
@@ -122,7 +121,7 @@ $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 webauto_search_for_many($html, array($make, $year, $mileage) );
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Leaving make blank to cause an error");
 $form->setValues(array("mileage" => $mileage, "year" => $year));
 $crawler = $client->submit($form);
@@ -130,7 +129,7 @@ $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 webauto_search_for($html,'Make is required');
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Making mileage non-numeric to cause an error");
 $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => "fourtytwo"));
 $crawler = $client->submit($form);
@@ -138,7 +137,7 @@ $html = $crawler->html();
 showHTML("Show retrieved page",$html);
 webauto_search_for($html,'Mileage and year must be numeric');
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Attempting html injection");
 $make = "<b>".$car_makes[1]." Bold</b>";
 $year = rand(1970,2016);
@@ -153,7 +152,7 @@ webauto_dont_want($html,$make);
 line_out("Making sure you have not called htmlentities() twice");
 webauto_dont_want($html,"&amp;lt");
 
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("Attempting SQL injection");
 line_out("https://xkcd.com/327/");
 $make = $car_makes[2]."'; DROP TABLE autos;'-- ?";
@@ -163,10 +162,10 @@ $form->setValues(array("make" => $make, "mileage" => $mileage, "year" => $year))
 $crawler = $client->submit($form);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
-webauto_search_for_many($html, array($car_makes[2], 'DROP Table autos', $year, $mileage) );
+webauto_search_for_many($html, array($car_makes[2], 'DROP TABLE autos', $year, $mileage) );
 
 line_out("Preparing to log out...");
-$form = webauto_get_form_button($crawler,'logout');
+$form = webauto_get_form_with_button($crawler,'logout');
 $crawler = $client->submit($form);
 $html = $crawler->html();
 showHTML("Show retrieved page",$html);
@@ -188,8 +187,6 @@ webauto_search_for($html, "Please Log In");
 
 $perfect = 25;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles or the student name is missing");

@@ -2,9 +2,8 @@
 
 require_once "../config.php";
 require_once "webauto.php";
-use Goutte\Client;
 
-line_out("Grading PHP-Intro Rock Paper Scissors");
+line_out("Grading DJ4E Rock Paper Scissors");
 
 titleNote();
 
@@ -25,7 +24,7 @@ flush();
 webauto_setup();
 
 try {
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 
@@ -41,7 +40,7 @@ line_out("Looking for  an anchor tag with text of 'Please Log In' (case matters)
 $link = $crawler->selectLink('Please Log In')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 markTestPassed('login.php page retrieved');
 $html = $crawler->html();
@@ -57,7 +56,7 @@ if ( $retval === true ) {
 
 // Doing a log in
 line_out('Looking for the form with a value="Log In" submit button');
-$form = webauto_get_form_button($crawler,'Log In');
+$form = webauto_get_form_with_button($crawler,'Log In');
 line_out("-- this autograder expects the log in form field names to be:");
 line_out("-- who and pass");
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -180,8 +179,6 @@ for ( $i=0; $i<5; $i++) {
 
 $perfect = 17;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles so this grade was not sent");

@@ -4,9 +4,8 @@ require_once "../config.php";
 require_once "webauto.php";
 require_once "words.php";
 shuffle($WORDS);
-use Goutte\Client;
 
-line_out("Grading PHP-Intro CRUD");
+line_out("Grading DJ4E CRUD");
 
 $url = getUrl($reference_implementation);
 if ( $url === false ) return;
@@ -57,7 +56,7 @@ $passed = 0;
 $titlefound = true;
 try {
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 
 $html = webauto_get_html($crawler);
@@ -73,7 +72,7 @@ line_out("Looking for  an anchor tag with text of 'Please log in' (case matters)
 $link = $crawler->selectLink('Please log in')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 markTestPassed('login page retrieved');
 $html = $crawler->html();
@@ -81,7 +80,7 @@ showHTML("Show retrieved page",$html);
 
 // Doing a log in
 line_out('Looking for the form with a value="Log In" submit button');
-$form = webauto_get_form_button($crawler,'Log In');
+$form = webauto_get_form_with_button($crawler,'Log In');
 line_out("-- this autograder expects the log in form field names to be:");
 line_out("-- email and pass");
 line_out("-- umsi@umich.edu / php123");
@@ -99,7 +98,7 @@ $link = $crawler->selectLink('Add New Entry')->link();
 $url = $link->getURI();
 line_out("Retrieving ".htmlent_utf8($url)."...");
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed('Retrieve add.php');
@@ -107,7 +106,7 @@ showHTML("Show retrieved page",$html);
 
 // Add new fail
 line_out('Looking for the form with a value="Add" submit button in add.php');
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("-- this autograder expects the form field names to be:");
 line_out("-- ".$fieldlist);
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -130,7 +129,7 @@ if ( strpos(strtolower($html), 'fields are required') !== false ) {
 
 // Add new success
 line_out('Looking for the form with a value="Add" submit button in add.php');
-$form = webauto_get_form_button($crawler,'Add');
+$form = webauto_get_form_with_button($crawler,'Add');
 line_out("-- this autograder expects the form field names to be:");
 line_out("-- ".$fieldlist);
 line_out("-- if your fields do not match these, the next tests will fail.");
@@ -167,14 +166,14 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = webauto_load_url($editlink);
+$crawler = webauto_get_url($client, $editlink);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved $editlink");
 showHTML("Show retrieved page",$html);
 
 line_out('Looking for the form with a value="Save" submit button');
-$form = webauto_get_form_button($crawler,'Save');
+$form = webauto_get_form_with_button($crawler,'Save');
 $firststring='42986856712';
 webauto_change_form($form, $firststringfield, $firststring);
 $crawler = $client->submit($form);
@@ -204,7 +203,7 @@ $editlink = substr($html,$pos2,$pos3-$pos2);
 $editlink = str_replace("&amp;","&",$editlink);
 line_out("Retrieving ".$editlink."...");
 
-$crawler = webauto_load_url($editlink);
+$crawler = webauto_get_url($client, $editlink);
 if ( $crawler === false ) return;
 $html = $crawler->html();
 markTestPassed("Retrieved delete.php");
@@ -212,7 +211,7 @@ showHTML("Show retrieved page",$html);
 
 // Do the Delete
 line_out('Looking for the form with a value="Delete" submit button');
-$form = webauto_get_form_button($crawler,'Delete');
+$form = webauto_get_form_with_button($crawler,'Delete');
 $crawler = $client->submit($form);
 markTestPassed("Submitted form on delete.php");
 $html = $crawler->html();
@@ -238,14 +237,14 @@ while ( $i-- > 0 ) {
     $editlink = str_replace("&amp;","&",$editlink);
     line_out("Retrieving ".$editlink."...");
 
-    $crawler = webauto_load_url($editlink);
+    $crawler = webauto_get_url($client, $editlink);
     if ( $crawler === false ) return;
     $html = $crawler->html();
     showHTML("Show retrieved page",$html);
 
     // Do the Delete
     line_out('Looking for the form with a value="Delete" submit button');
-    $form = webauto_get_form_button($crawler,'Delete');
+    $form = webauto_get_form_with_button($crawler,'Delete');
     $crawler = $client->submit($form);
     checkPostRedirect($client);
     $html = $crawler->html();
@@ -273,8 +272,6 @@ while ( $i-- > 0 ) {
 // There is a maximum 25 passes for this test
 $perfect = 25;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles so this grade is not official");

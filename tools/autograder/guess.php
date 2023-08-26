@@ -2,10 +2,9 @@
 
 require_once "../config.php";
 require_once "webauto.php";
-use Goutte\Client;
 use \Tsugi\Util\Mersenne_Twister;
 
-line_out("Grading PHP-Intro Guessing Assignment (GET)");
+line_out("Grading DJ4E Guessing Assignment (GET)");
 
 // Compute the stuff for the output
 $code = $USER->id+$LINK->id+$CONTEXT->id;
@@ -27,12 +26,11 @@ answer to complete this assignment with full credit.
 <?php
 titleNote();
 
-$url = getUrl('http://www.wa4e.com/code/arrays/guess.php');
+$url = getUrl('http://www.wa4e.com/solutions/guess/guess.php');
 if ( $url === false ) return;
 $grade = 0;
 
 error_log("Guess/GET ".$url);
-line_out("Retrieving ".htmlent_utf8($url)."...");
 flush();
 
 webauto_setup();
@@ -42,7 +40,7 @@ $passed = 5;
 $titlefound = false;
 try {
 
-$crawler = webauto_load_url($url);
+$crawler = webauto_get_url($client, $url);
 if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 
@@ -59,20 +57,18 @@ $html = webauto_get_html($crawler);
 
     // Empty guess
     $u = $url . "?guess=";
-    line_out("Retrieving ".htmlent_utf8($u));
-    $crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too short");
 if ( stripos($html, 'Your guess is too short') > 0 ) $passed++;
 else error_out("Not found");
 
 // Bad guess
 $u = $url . "?guess=fred";
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is not a number");
 if ( stripos($html, 'Your guess is not a number') > 0 ||
      stripos($html, 'Your guess is not valid') > 0 ) $passed++;
@@ -80,28 +76,26 @@ else error_out("Not found");
 
 // Low guess
 $u = $url . "?guess=".($correct-1);
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too low'");
 if ( stripos($html, 'Your guess is too low') > 0 ) $passed++;
 else error_out("Not found");
 
 // High guess
 $u = $url . "?guess=".($correct+1);
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
-$html = $crawler->html();
-showHTML("Show retrieved page",$html);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
+$html = webauto_get_html($crawler);
 line_out("Looking for 'Your guess is too high'");
 if ( stripos($html, 'Your guess is too high') > 0 ) $passed++;
 else error_out("Not found");
 
 // Good guess
 $u = $url . "?guess=".$correct;
-line_out("Retrieving ".htmlent_utf8($u));
-$crawler = $client->request('GET', $u);
+$crawler = webauto_get_url($client, $u);
+if ( $crawler === false ) return;
 $html = webauto_get_html($crawler);
 line_out("Looking for 'Congratulations - You are right'");
 if ( stripos($html, 'congratulations') > 0 ) $passed++;
@@ -123,8 +117,6 @@ else error_out("Not found");
 
 $perfect = 11;
 $score = webauto_compute_effective_score($perfect, $passed, $penalty);
-
-if ( $score < 1.0 ) autoToggle();
 
 if ( ! $titlefound ) {
     error_out("These pages do not have proper titles so this grade was not sent");

@@ -2,11 +2,12 @@ mod/*
 .DS_Store
 
 db.php
-solutions
 exams
-php-solutions
+solutions
+wa4e-private
 code/php-*
 tsugi
+cron.txt
 *.zip
 *.swp
 
