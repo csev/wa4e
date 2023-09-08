@@ -2,12 +2,15 @@
 require_once "../config.php";
 \Tsugi\Core\LTIX::getConnection();
 
+use \Tsugi\Util\U;
 use \Tsugi\Grades\GradeUtil;
 
 session_start();
 
 // Get the user's grade data also checks session
-$row = GradeUtil::gradeLoad($_REQUEST['user_id']);
+$user_id = U::get($_REQUEST, 'user_id');
+if ( ! $user_id ) die('user_id required');
+$row = GradeUtil::gradeLoad($user_id);
 
 $menu = new \Tsugi\UI\MenuSet();
 $menu->addLeft(__('Back to all grades'), 'index.php');
@@ -27,7 +30,7 @@ if ( isset($row['note']) ) {
     echo("</pre>\n");
 }
 
-if ( strlen($row['json']) > 0 ) {
+if ( U::strlen($row['json']) > 0 ) {
     echo("<p>JSON:</p>\n<pre>\n");
     echo(htmlentities($row['json']));
     echo("</pre>\n");
