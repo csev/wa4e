@@ -15,10 +15,27 @@ if ( ! U::get($_REQUEST, 'user_id') ) {
 $row = GradeUtil::gradeLoad($_REQUEST['user_id']);
 
 $menu = new \Tsugi\UI\MenuSet();
-$menu->addLeft(__('Back to all grades'), 'index.php');
+$menu->addLeft(__('Back to all grades'), 'grades.php');
 
 // View
 $OUTPUT->header();
+?>
+<style>
+a[target="_blank"]:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+</style>
+<script>
+function sendToIframe(id, html) {
+    var iframe = document.getElementById(id);
+    var iframedoc = iframe.contentDocument || iframe.contentWindow.document;
+    console.log(html);
+    iframedoc.body.innerHTML = html;
+}
+</script>
+
+<?php
 $OUTPUT->bodyStart();
 $OUTPUT->topNav($menu);
 $OUTPUT->flashMessages();
