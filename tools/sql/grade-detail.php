@@ -24,13 +24,13 @@ $OUTPUT->flashMessages();
 // Show the basic info for this user
 GradeUtil::gradeShowInfo($row, false);
 
-if ( isset($row['note']) ) {
+if ( U::isNotEmpty($row['note']) ) {
     echo("<p>Note:</p>\n<pre>\n");
     echo(htmlentities($row['note']));
     echo("</pre>\n");
 }
 
-if ( U::strlen($row['json']) > 0 ) {
+if ( U::isNotEmpty($row['json']) ) {
     echo("<p>JSON:</p>\n<pre>\n");
     echo(htmlentities($row['json']));
     echo("</pre>\n");
