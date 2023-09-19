@@ -124,7 +124,6 @@
     "icon" : "fa-clone",
     "description": "We look at the basic structure of a web application and how a web browser interacts with a web server.   We explore the Request-Response Cycle that is the basis of the Hypertext Transfer Protocol (HTTP).",
     "slides": "lectures/Web-01-HTTP.ppt",
-    "chapters" : "1, 3, 4",
     "discussions" : [
         {
         "title" : "Introduction to Dynamic Web Content",
@@ -146,6 +145,18 @@
         {
             "title" : "Hypertext Transfer Protocol",
             "href" : "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
+        },
+        {
+            "title" : "Book: Chapter 1 - Brief History of the Internet",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-1-brief-history-of-the-internet/"
+        },
+        {
+            "title" : "Book: Chapter 3 - Web Servers",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-3-web-servers/"
+        },
+        {
+            "title" : "Book: Chapter 4 - Network Basics",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-4-network-basics/"
         },
         {
             "title" : "What Happens When You Click a Link? - Computerphile",
@@ -177,7 +188,6 @@
     "icon" : "fa-html5",
     "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
     "slides": "lectures/Web-02-HTML.ppt",
-    "chapters" : "7-14",
     "discussions" : [
         {
         "title" : "HyperText Markup Language (HTML)",
@@ -200,6 +210,10 @@
         }
     ], 
     "references" : [
+        {
+            "title" : "Book: Chapters 7-11",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-7-markup-languages/"
+        },
         {
             "title" : "HTML Sample Code (Browse)",
             "href" : "{apphome}/code/html/index.htm"
@@ -235,7 +249,6 @@
     "icon" : "fa-css3",
     "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
     "slides": "lectures/Web-03-CSS.ppt",
-    "chapters" : "19-22",
     "discussions" : [
         {
         "title" : "Cascading Style Sheets (CSS)",
@@ -267,6 +280,10 @@
     ], 
     "assignment" : "{apphome}/assn/css/",
     "references" : [
+        {
+            "title" : "Book: Chapters 19-22",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-19-rule-structure/"
+        },
         {
             "title" : "CSS Sample Code (Browse)",
             "href" : "{apphome}/code/css/index.htm"
@@ -344,7 +361,6 @@
     "anchor": "install",
     "icon" : "fa-clone",
     "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
-    "chapters" : "3",
     "discussions" : [
         {
         "title" : "Installing PHP and SQL",
@@ -371,6 +387,10 @@
         {
             "title" : "Installation Handout",
             "href" : "install.php"
+        },
+        {
+            "title" : "Book: Chapter 3 - Web Servers",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-3-web-servers/"
         },
         {
             "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
@@ -419,7 +439,6 @@
     "icon" : "fa-bell",
     "description": "We begin learning PHP.",
     "slides": "lectures/PHP-01-Overview.ppt",
-    "chapters" : "23, 24, 25, 26, 27, 28, 31",
     "discussions" : [
         {
         "title" : "Introduction to PHP",
@@ -450,6 +469,12 @@
         }
     ],
     "assignment" : "{apphome}/assn/php/",
+    "references" : [
+        {
+            "title" : "Book: Chapters 23-31",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-23-server-side-and-client-side-scripting/"
+        }
+    ],
     "lti" : [
         {
         "title" : "Quiz: PHP",
@@ -509,7 +534,6 @@
     "icon" : "fa-bell",
     "description": "We look at unique aspects of arrays in the PHP language.",
     "slides": "lectures/PHP-02-Arrays.ppt",
-    "chapters" : "27, 28, 31",
     "discussions" : [
         {
         "title" : "PHP Arrays",
@@ -536,6 +560,10 @@
         {
             "title" : "Sample Array Code (Download)",
             "href" : "code/arrays.zip"
+        },
+        {
+            "title" : "Book: Chapters 27, 28, 31",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
         },
         {
             "title" : "Using NGROK and the Autograder (Macintosh)",
@@ -574,7 +602,6 @@
     "icon" : "fa-bell",
     "description": "We look at functions in PHP language.",
     "slides": "lectures/PHP-03-Functions.ppt",
-    "chapters" : "32",
     "discussions" : [
         {
         "title" : "PHP Functions",
@@ -595,6 +622,10 @@
     ],
     "references" : 
     [
+        {
+            "title" : "Book: Chapter 32 - Functions",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-32-functions/"
+        },
         {
             "title" : "Bruce Schnier: Building Cryptographic Systems",
             "href" : "https://www.youtube.com/watch?v=opT6pIfyGUs"
@@ -657,7 +688,6 @@
     "icon" : "fa-bell",
     "description": "We look at how HTML forms are created and processed in the PHP language.",
     "slides": "lectures/PHP-04-Forms.ppt",
-    "chapters" : "14, 27",
     "discussions" : [
         {
         "title" : "PHP Forms",
@@ -707,6 +737,14 @@
         {
             "title" : "Sample Forms Code",
             "href" : "code/forms/"
+        },
+        {
+            "title" : "Book: Chapter 14 - Forms",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-14-forms/"
+        },
+        {
+            "title" : "Book: Chapter 27 - Data Storage",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
         }
     ],
     "assignment" : "{apphome}/assn/rps/",
@@ -790,7 +828,6 @@
     "icon" : "fa-database",
     "description": "We learn about single table queries and the basic syntax of the SQL language.",
     "slides": "lectures/SQL-01-MySQL.ppt",
-    "chapters" : "37, 39, 41",
     "handout": "lectures/SQL-01-MySQL-Handout.doc",
     "discussions" : [
         {
@@ -813,6 +850,18 @@
         {
             "title" : "SQL Handout",
             "href" : "lectures/SQL-01-MySQL-Handout.txt"
+        },
+        {
+            "title" : "Book: Chapter 37 - Database Types",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-37-database-types/"
+        },
+        {
+            "title" : "Book: Chapter 39 - MySQL Data Types",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-39-mysql-data-types/"
+        },
+        {
+            "title" : "Book: Chapter 41 - MySQL CRUD Action",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-41-mysql-crud-action/"
         },
         {
             "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
@@ -844,7 +893,6 @@
     "icon" : "fa-database",
     "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
     "slides": "lectures/SQL-02-MySQL-Design.ppt",
-    "chapters" : "38, 40, 42",
     "discussions" : [
         {
         "title" : "Database Design",
@@ -852,11 +900,24 @@
         "resource_link_id": "discuss_10_model"
         }
     ],
-    "references" : 
+    "references" : [
         {
             "title" : "Multi-Table SQL Handout",
             "href" : "lectures/SQL-02-MySQL-Design-Handout.txt"
         },
+        {
+            "title" : "Book: Chapter 38 - Data relationships",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-38-data-relationships/"
+        },
+        {
+            "title" : "Book: Chapter 40 - Normalization",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-40-normalization/"
+        },
+        {
+            "title" : "Book: Chapter 42 - Advanced Queries",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-42-advanced-queries/"
+        }
+    ],
     "videos" : [
         {
             "title" : "Data Modeling - Building a Data Model (Part 1)",
@@ -945,7 +1006,6 @@
     "icon" : "fa-bell",
     "description": "We look at the object oriented pattern in the PHP language.",
     "slides": "lectures/PHP-05-Objects.ppt",
-    "chapters" : "33",
     "discussions" : [
         {
         "title" : "PHP Objects",
@@ -972,11 +1032,16 @@
             "youtube" : "zU6uil50Mkg"
         }
     ],
-    "references" : 
+    "references" : [
         {
             "title" : "Sample code",
             "href" : "code/objects.zip"
         },
+        {
+            "title" : "Book: Chapter 33 - Objects and Classes",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-33-objects-and-classes/"
+        }
+    ], 
     "lti" : [
         {
         "title" : "Quiz: PHP Objects",
@@ -1122,7 +1187,6 @@
     "icon" : "fa-bell",
     "description": "We look at how PHP uses cookies and manages session data.",
     "slides": "lectures/PHP-07-Cookies-Sessions.ppt",
-    "chapters" : "27",
     "discussions" : [
         {
         "title" : "PHP Cookies and Sessions",
@@ -1148,11 +1212,16 @@
             "youtube" : "fSDWT4tKJ4I"
         }
     ],
-    "references" : 
+    "references" : [
         {
             "title" : "Sample code",
             "href" : "code/sessions.zip"
         },
+        {
+            "title" : "Book: Chapter 27 - Data Storage",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+        }
+    ],
     "lti" : [
         {
         "title" : "Quiz: Cookies and Sessions",
@@ -1172,7 +1241,6 @@
     "icon" : "fa-bell",
     "description": "We look at how PHP avoids double posting data, how flash messages are implemented, and how we use a session to log in users in web applications.",
     "slides": "lectures/PHP-08-POST-Redirect-Authn.ppt",
-    "chapters" : "27",
     "discussions" : [
         {
         "title" : "PHP Routing, Redirect and Authentication",
@@ -1206,11 +1274,16 @@
             "youtube" : "HPEWTF0Baj8"
         }
     ],
-    "references" : 
+    "references" : [
         {
             "title" : "Sample code",
             "href" : "code/route.zip"
         },
+        {
+            "title" : "Book: Chapter 27 - Data Storage",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+        }
+    ],
     "assignment" : "{apphome}/assn/autosess/",
     "solution" : "{apphome}/solutions/autosess",
     "lti" : [
@@ -1440,6 +1513,14 @@
             "href" : "https://www.youtube.com/watch?v=yD6q94ibv3Q"
         },
         {
+            "title" : "Book: Chapter 34 - JavaScript Syntax",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-34-javascript-syntax/"
+        },
+        {
+            "title" : "Book: Chapter 35 - JavaScript Examples",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-35-javascript-examples/"
+        },
+        {
             "title" : "Bonus: Building JavaScript with with Brendan Eich",
             "href" : "https://www.youtube.com/watch?v=IPxQ9kEaF8c"
         }
@@ -1598,6 +1679,10 @@
             "href" : "https://www.youtube.com/watch?v=EVLluVD6dRo"
         },
         {
+            "title" : "Book: Chapter 36 - jQuery",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-36-jquery/"
+        },
+        {
             "title" : "Bonus: John Resig - Building JQuery",
             "href" : "https://www.youtube.com/watch?v=B7Aut4OUuvs"
         }
@@ -1733,6 +1818,10 @@
         {
             "title" : "Code Walkthrough: Profiles, Positions, Education and JSON",
             "href" : "https://www.youtube.com/watch?v=LpFt1AMfF3E"
+        },
+        {
+            "title" : "Book: Chapter 28 - Data Manipulation",
+            "href" : "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-28-data-manipulation/"
         }
     ],
     "assignment" : "{apphome}/assn/res-education/",
