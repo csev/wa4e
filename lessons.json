@@ -1984,7 +1984,7 @@
     "anchor": "sql-advanced",
     "icon" : "fa-database",
     "description": "This section covers some advanced SQL topics.",
-    "slides": "lectures-old/PHP-15-Advanced-SQL.ppt",
+    "slides": "lectures/SQL-15-Advanced-SQL.ppt",
     "discussions" : [
         {
         "title" : "Advanced SQL",
@@ -2008,7 +2008,7 @@
     "anchor": "sql-transactions",
     "icon" : "fa-database",
     "description": "This section covers SQL transactions.",
-    "slides": "lectures-old/PHP-16-MySQL-Transactions.ppt",
+    "slides": "lectures/SQL-16-MySQL-Transactions.ppt",
     "discussions" : [
         {
         "title" : "SQL Transactions",
