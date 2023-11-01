@@ -5,7 +5,7 @@ require_once "webauto.php";
 require_once "words.php";
 shuffle($WORDS);
 
-line_out("Grading DJ4E CRUD");
+line_out("Grading WA4E CRUD");
 
 $url = getUrl($reference_implementation);
 if ( $url === false ) return;

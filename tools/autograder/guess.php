@@ -4,7 +4,7 @@ require_once "../config.php";
 require_once "webauto.php";
 use \Tsugi\Util\Mersenne_Twister;
 
-line_out("Grading DJ4E Guessing Assignment (GET)");
+line_out("Grading WA4E Guessing Assignment (GET)");
 
 // Compute the stuff for the output
 $code = $USER->id+$LINK->id+$CONTEXT->id;

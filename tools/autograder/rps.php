@@ -3,7 +3,7 @@
 require_once "../config.php";
 require_once "webauto.php";
 
-line_out("Grading DJ4E Rock Paper Scissors");
+line_out("Grading WA4E Rock Paper Scissors");
 
 titleNote();
 

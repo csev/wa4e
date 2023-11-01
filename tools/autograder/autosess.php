@@ -4,7 +4,7 @@ require_once "../config.php";
 require_once "webauto.php";
 require_once "makes.php";
 
-line_out("Grading DJ4E Autos Post-Redirect");
+line_out("Grading WA4E Autos Post-Redirect");
 ?>
 <p>The specification for this assignment is:
 <a href="http://www.wa4e.com/assn/autosess/" target="_blank">http://www.wa4e.com/assn/autosess/</a></p>
