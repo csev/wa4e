@@ -40,7 +40,7 @@ in this file.  The goal is to trigger an error to verify that
 we see errors in the browser.</li>
 <li>Open <a href="check.txt" target="_blank">this file</a> 
 and copy-paste in the contents into a file named <b>check.php</b> in the 
-same folder as your <b>index.php</b>. 
+same folder as your <b>index.php</b>. Do not alter this file.
 </li>
 </ul>
 You must run these files in your PHP server.  Make a folder under your
