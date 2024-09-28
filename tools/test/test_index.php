@@ -1,35 +1,4 @@
-<h1>Test index</h1>
-<!--
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-	{'command': 'getdomsize'}, 'https://djtutorial.dj4e.com/polls4/');"
->getdomsize</button>
-
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-{'command': 'clicklink','tag': 'a', 'text':'Answer to the Ultimate Question'}, 'https://djtutorial.dj4e.com/polls4/');"
->clicklink</button>
-
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-{'command': 'searchtext','text': 'Ultimate'}, 'https://djtutorial.dj4e.com/polls4/');"
->searchtext</button>
-
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-{'command': 'searchtext','text': 'Waldo'}, 'https://djtutorial.dj4e.com/polls4/');"
->searchtext 2</button>
-
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-{'command': 'clickradio','text': '42'}, 'https://djtutorial.dj4e.com/polls4/');"
->clickradio</button>
-
-<button onclick="
-document.getElementById('myframe').contentWindow.postMessage(
-{'command': 'clicksubmit','text': 'Vote'}, 'https://djtutorial.dj4e.com/polls4/');"
->clicksubmit</button>
--->
+<h1>JavaScript Autograder</h1>
 
 <button onclick="doNextStep();" id="nextstep">Next Step</button>
 <span id="stepinfo">
