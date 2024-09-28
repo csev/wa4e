@@ -1,5 +1,15 @@
 <h1>JavaScript Autograder</h1>
 
+<script>
+var baseurl = "https://djtutorial.dj4e.com/polls4/";
+// var baseurl = "http://localhost:8000/polls4";
+</script>
+
+Url to test:
+<input type="text" name="baseurl" style="width:60%;" value="https://djtutorial.dj4e.com/polls4/"
+onchange="newUrl(this.value);return false;"
+/></br>
+
 <button onclick="doNextStep();" id="nextstep">Next Step</button>
 <span id="stepinfo">
 Placeholder
@@ -7,14 +17,16 @@ Placeholder
 
 <br/>
 <center>
-<iframe style="width:95%; height=800px;" src="https://djtutorial.dj4e.com/polls4/" id="myframe">
-</iframe>
+<script>
+document.write('<iframe style="width:95%; height=800px;" id="myframe"');
+document.write('src="'+baseurl+'">');
+document.write('</iframe>');
+</script>
 </center>
 
 
 <script>
-var baseurl = "https://djtutorial.dj4e.com/polls4/";
-var currenturl = "https://djtutorial.dj4e.com/polls4/";
+var currenturl = baseurl;
 
 var currentStep = -1;
 var json = `
@@ -47,6 +59,15 @@ window.addEventListener(
   false,
 );
 
+function newUrl(newurl) {
+	console.log("Switching to new url", newurl);
+	baseurl = newurl;
+	currenturl = baseurl;
+        document.getElementById('myframe').src = currenturl;
+	currentStep = -1;
+        moveToNextStep();
+}
+
 function moveToNextStep() {
 
     if ( currentStep >= (steps.length-1) ) {
@@ -69,6 +90,7 @@ function doNextStep() {
         document.getElementById('nextstep').disabled = true;
         return;
     }
+        document.getElementById('nextstep').disabled = false;
         const step = steps[currentStep];
         console.log(step);
         if ( step.command == 'switchurl' ) {
