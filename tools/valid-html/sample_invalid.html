@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invalid HTML Sample</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is a paragraph with some <strong>bold text</strong> and <em>italic text</em>.</p>
+            <p>Here's another paragraph with a <a href="https://example.com">link</a>.</p>
+            <!-- Missing closing p tag -->
+            <p>This paragraph is not properly closed
+            
+            <!-- Unclosed div tag -->
+            <div class="container">
+                <p>Content inside unclosed div</p>
+        </section>
+        
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This section contains information about us.</p>
+            <!-- Unquoted attribute value -->
+            <img src=image.jpg alt="Sample image" width=300 height=200>
+            
+            <!-- Duplicate attribute -->
+            <input type="text" id="name" name="name" id="username">
+            
+            <!-- Malformed quotes in attributes -->
+            <a href="https://example.com" title="This is a "quoted" title">Link with bad quotes</a>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    
+    <!-- Unexpected closing tag -->
+    </div>
+    
+    <!-- Unescaped special characters in text -->
+    <p>This text contains unescaped characters: < > & </p>
+</body>
+</html> 

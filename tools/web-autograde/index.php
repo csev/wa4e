@@ -176,9 +176,9 @@ echo("<pre>\n");
 // echo(htmlentities($data));
 // echo("\n");
 
-$valid= validateHTML($data);
+$valid = validateHTML($data);
 
-if (! $valid){
+if (! $valid ){
     echo "Your code did not validate.  Please return to the W3 validator at validator.w3.org to check your code.";
     $OUTPUT->footer();
     return;

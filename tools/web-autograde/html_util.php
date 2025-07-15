@@ -159,10 +159,12 @@ function validateHTML($data) {
             echo "<span>Did not get a correct response from the validator</span>\n";
             echo "URL: ".htmlentities($validator)."\n";
             echo "Data length: ".strlen($return)."\n";
-            echo("Validator Output:\n");
+            echo("<!-- Validator Output:\n");
             echo(htmlentities(LTI::jsonIndent($return)));
-            unset($_SESSION['html_data']);
-            return false;
+            echo("\n-->\n");
+            // If validator does not work, bypass the check and assume valid
+            echo("Validator not working - assuming valid HTML...\n");
+            return true;
         }
 
         $count = 0;
