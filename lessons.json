@@ -93,6 +93,7 @@
         "title" : "Web Applications with PHP, SQL, JavaScript, and JQuery",
         "image" : "badge_wa4e.png",
         "threshold" : "0.6",
+        "linkedin": true,
         "assignments" : [
             "html_01",
             "mysql_01_single",
