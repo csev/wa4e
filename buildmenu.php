@@ -25,7 +25,7 @@ function buildMenu() {
         if ( isset($CFG->google_map_api_key) ) {
             $submenu->addLink('Map', $R.'map');
         }
-        $submenu->addLink('Badges', $L.'badges');
+        $submenu->addLink('Badges', $L.'badges2');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
         $submenu->addLink('Privacy', $R.'privacy');
