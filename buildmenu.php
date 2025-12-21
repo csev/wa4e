@@ -4,6 +4,7 @@ function buildMenu() {
     global $CFG;
     $R = $CFG->apphome . '/';
     $T = $CFG->wwwroot . '/';
+    $L = $CFG->wwwroot . '/lms/';
     $adminmenu = isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true";
     $set = new \Tsugi\UI\MenuSet();
     $set->setHome($CFG->servicename, $CFG->apphome);
@@ -24,7 +25,7 @@ function buildMenu() {
         if ( isset($CFG->google_map_api_key) ) {
             $submenu->addLink('Map', $R.'map');
         }
-        $submenu->addLink('Badges', $R.'badges');
+        $submenu->addLink('Badges', $L.'badges');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
         $submenu->addLink('Privacy', $R.'privacy');
