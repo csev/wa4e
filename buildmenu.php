@@ -54,7 +54,7 @@ function buildMenu() {
     }
 
     $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
-    $set->addRight('Instructor', 'https://online.dr-chuck.com');
+    $set->addRight('Instructor', 'https://online.dr-chuck.com', true, array('target' => '_self'));
 
     return $set;
 }
