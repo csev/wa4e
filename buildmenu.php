@@ -25,7 +25,11 @@ function buildMenu() {
         if ( isset($CFG->google_map_api_key) ) {
             $submenu->addLink('Map', $R.'map');
         }
+        $submenu->addLink('Announcements', $R.'announcements');
+        $submenu->addLink('Notifications', $R.'notifications');
+        $submenu->addLink('Grades', $R.'grades');
         $submenu->addLink('Badges', $R.'badges');
+        $submenu->addLink('Pages', $R.'pages');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
         $submenu->addLink('Privacy', $R.'privacy');
@@ -55,6 +59,9 @@ function buildMenu() {
 
     $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
     $set->addRight('Instructor', 'https://online.dr-chuck.com', true, array('target' => '_self'));
+    if ( isset($_SESSION['id']) ) {
+        $set->addRight('<tsugi-notifications api-url="'. htmlspecialchars($T . 'api/notifications.php') . '" notifications-view-url="'. htmlspecialchars($R . 'notifications') . '" announcements-view-url="'. htmlspecialchars($R . 'announcements') . '"></tsugi-notifications>', false);
+    }
 
     return $set;
 }

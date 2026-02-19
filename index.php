@@ -2,6 +2,7 @@
 use \Tsugi\Util\Net;
 use \Tsugi\Core\LTIX;
 use \Tsugi\UI\Output;
+use \Tsugi\UI\Pages;
 
 // Help the installer through the setup process 
 require "check.php" ; 
@@ -15,6 +16,13 @@ require "nav.php";
 <iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <h1>Web Applications for Everybody</h1>
+<?php
+$front_page_text = null;
+if ( isset($_SESSION['id']) && isset($_SESSION['context_id']) ) $front_page_text = Pages::getFrontPageText($_SESSION['context_id']);
+if ( $front_page_text ) {
+    echo $front_page_text;
+} else {
+?>
 <?php if ( isset($_SESSION['id']) ) { ?>
 <p>
 Welcome to our Massive Open Online Course (MOOC). Now that you have logged in, you have access to 
@@ -73,6 +81,7 @@ The code for this site including the autograders, slides, and course content is 
 copy of the course site, publish it and remix it any way you like.  Even more exciting, you could translate
 the entire site (course) into your own language and publish it.  
 </p>
+<?php } ?>
 <?php } ?>
 This site uses <a href="http://www.tsugi.org" target="_blank">Tsugi</a> 
 framework to embed a learning 
