@@ -17,39 +17,39 @@ This is a list of other courses that I have found using Python
 to teach introductory programming.
 <ul>
 <li>
-<a href=http://www.cs.luc.edu/~anh/python/hands-on/ target=_new>
+<a href=http://www.cs.luc.edu/~anh/python/hands-on/ target="_blank" rel="noopener noreferrer">
 Loyola University Chicago - Dr. Andrew N. Harrington</a>
 <li>
-<a href=http://mcsp.wartburg.edu/zelle/cs220/ target=_new >
+<a href=http://mcsp.wartburg.edu/zelle/cs220/ target="_blank" rel="noopener noreferrer" >
 Wartburg College -
 John M. Zelle -
 CS 220: OOP and Data Structures
 </a></li>
 <li>
-<a href=http://coweb.cc.gatech.edu/cs1315 target=_new>
+<a href=http://coweb.cc.gatech.edu/cs1315 target="_blank" rel="noopener noreferrer">
 Gergia Tech - 
 Colin Potts and Monica Sweat</a>
 </a></li>
-<li><a href=http://www.cs.sfu.ca/CC/120/diana/ target=_new>
+<li><a href=http://www.cs.sfu.ca/CC/120/diana/ target="_blank" rel="noopener noreferrer">
 Simon Frasier University - 
 Diana Cukierman -
 CMPT 120 -
 </a></li>
-<li><a href=http://web.cse.msu.edu/~cse231/ target=_new>
+<li><a href=http://web.cse.msu.edu/~cse231/ target="_blank" rel="noopener noreferrer">
 Michigan State University -
 Richard Enbody and Bill Punch - 
 CSE 231: Introduction to Programming I
 </a></li>
-<li><a href=http://www.cs.brynmawr.edu/cs110/dx/ target=_new >
+<li><a href=http://www.cs.brynmawr.edu/cs110/dx/ target="_blank" rel="noopener noreferrer" >
 Bryn Mawr University - 
 Dianna Xu and Deepak Kuma
 </a></li>
-<li><a href=http://courses.csail.mit.edu/6.01/ target=_new>
+<li><a href=http://courses.csail.mit.edu/6.01/ target="_blank" rel="noopener noreferrer">
 MIT - 
 Intro to EECS I</a>
 </ul>
-<a href=http://www.python.org/ target=_new>
-<img src=python-powered-h-100x130.png align=right border=0 width=45/>
+<a href=http://www.python.org/ target="_blank" rel="noopener noreferrer">
+<img src="python-powered-h-100x130.png" alt="Python logo" align="right" border="0" width="45"/>
 </a>
 <p>
 If you are teaching an introductory programming course using Python 

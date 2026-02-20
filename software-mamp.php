@@ -18,7 +18,7 @@ Setting up the MAMP PHP/MySql Environment on Windows
 (or similar) bundle is much easier than installing all the components separately.
 </p>
 <h3>Pre-Requisite: VSCode or some other Programming Editor</h3>
-<p><a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a>
 </p>
 <h3>Installing MAMP</h3>
 <p>
@@ -26,29 +26,29 @@ There is a screen cast of this process below on YouTube.  You can watch the scre
 and follow along to complete the tasks.  There are notes below the YouTube video as well.
 You may want to print this page to have the notes as you follow the steps in the video.
 </p>
-<center>
-<iframe width="480" height="270" src="https://www.youtube.com/embed/0P6DEUJaVTc" frameborder="0" allowfullscreen></iframe>
-</center>
+<div style="text-align:center">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/0P6DEUJaVTc" frameborder="0" allowfullscreen title="MAMP installation screencast"></iframe>
+</div>
 <p>
 <h3>Installation Notes</h3>
 <p>
 Download the installation package from:
 <pre>
-     <a href="http://mamp.info/" target="_blank">http://mamp.info</a>
+     <a href="http://mamp.info/" target="_blank" rel="noopener noreferrer">http://mamp.info</a>
 </pre>
 Assuming you are using the Microsoft browser, it
 will download and automatically start the installer for you.   We can accept all the defaults,
 but you might not want to install MAMP Pro so it does not nag you to upgrade.
 </p>
-<center>
-<img src="images/mamp-win-01-no-pro.png" width="40%"/>
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-01-no-pro.png" width="40%" alt="MAMP installer without MAMP Pro option"/>
+</div>
 <p>
 The installer has placed <b>MAMP</b> on your Desktop, so you can clck on it to launch it.
 </p>
-<center>
-<img src="images/mamp-win-02-launch.png" width="50%"/>
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-02-launch.png" width="50%" alt="MAMP control panel launch"/>
+</div>
 <p>
 When MAMP starts you should see a control panel. Press "Start Servers" if they are automatically
 started.  Be patient, these things can take a moment.  
@@ -57,21 +57,21 @@ started.  Be patient, these things can take a moment.
 The first time you start the server, Windows will ask you to verify that Apache and MySQL
 are indeed allowed to use the network ports to receive traffic.  If you do not see these messages,
 you may need to run the installation as an administrator.
-<center>
-<img src="images/mamp-win-03-firewall.png" width="40%"/>
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-03-firewall.png" width="40%" alt="Windows firewall permission dialog"/>
+</div>
 <p>
 You should see two indicators that both the Apache and MySQL servers were started successfully.
 </p>
-<center>
-<img src="images/mamp-win-04-green.png" width="40%"/>
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-04-green.png" width="40%" alt="MAMP servers running with green indicators"/>
+</div>
 <p>
 Then press the "Open start page" to show the MAMP configuration screen.
 The start page is located at <b>http://localhost/MAMP/</b> and it is generally the way you work 
 with MAMP and MySql.
-<center>
-<img src="images/mamp-win-04-green.png" width="40%" /></center>
+<div style="text-align:center">
+<img src="images/mamp-win-04-green.png" width="40%" alt="MAMP start page"/></div>
 </p>
 <h3>Your First PHP Program</h3>
 <p>
@@ -92,14 +92,14 @@ Create the folder <b>first</b> under the <b>htdocs</b> folder when you save the 
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost/first/index.php" target="_blank">http://localhost/first/index.php</a>
+    <a href="http://localhost/first/index.php" target="_blank" rel="noopener noreferrer">http://localhost/first/index.php</a>
 </pre>
 </p>
 <p>
 And you should see your web page in your browser.
-<center>
-<img src="images/mamp-win-06-first.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-06-first.png" alt="First PHP page in browser">
+</div>
 </p>
 <p>
 Once that works, lets add a little PHP to our HTML.  Change your file to be as follows
@@ -118,9 +118,9 @@ and re-save:
 After you save, press "Refresh" in your browser and it should appear as follows:
 </p>
 <p>
-<center>
-<img src="images/mamp-win-07-first.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-07-first.png" alt="PHP page with dynamic content">
+</div>
 </p>
 <p>
 Congratulations, you have written your first PHP program.
@@ -152,9 +152,9 @@ Then you will need to stop and restart the Apache and MySQL servers
 using the MAMP, control panel and when you are done, you can use
 <b>phpinfo</b> check to make sure that your setting was successfully
 changed.
-<center>
-<img src="images/mamp-win-08-errors.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-win-08-errors.png" alt="PHP info page showing display_errors setting">
+</div>
 <p>
 It is important that you change this setting right away or you 
 will be rather confused when your PHP code fails and you 

@@ -17,13 +17,13 @@ pre {padding-left: 2em;}
 <?= $json->description ?>
 </p>
 <p>
-<center>
-<a href="01-Autos.png" target="_blank">
+<div style="text-align:center">
+<a href="01-Autos.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the auto management application"
 width="300px" src="01-Autos.png" border="2"/>
 </a>
-</center>
+</div>
 <p>
 Note that there is no specific sample code for this assignment.
 </p>
@@ -32,14 +32,14 @@ Note that there is no specific sample code for this assignment.
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from 
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Review the SQL language
@@ -51,13 +51,13 @@ Using PDO in PHP
 </ul>
 </li>
 <li>Documentation on 
-<a href="https://en.wikipedia.org/wiki/Post/Redirect/Get" target="_new">Post-Redirect-GET Pattern</a>
+<a href="https://en.wikipedia.org/wiki/Post/Redirect/Get" target="_blank" rel="noopener noreferrer">Post-Redirect-GET Pattern</a>
 </li>
 <li>
 You can look though the sample code from the lecture. It has examples
 of using sessions and POST-Redirect.
 <pre>
-<a href="http://www.wa4e.com/code/sessions.zip" target="_blank">http://www.wa4e.com/code/sessions.zip</a>
+<a href="http://www.wa4e.com/code/sessions.zip" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/sessions.zip</a>
 </pre>
 </li>
 </ul>
@@ -110,13 +110,13 @@ The basic functionality, password checking using salt and hashing,
 error logging, and data validation for the <b>login.php</b>
 is the same as in the
 <a href="../autosdb">previous assignment</a>.
-<center>
-<a href="02-Login.png" target="_blank">
+<div style="text-align:center">
+<a href="02-Login.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the login screen"
 width="300px" src="02-Login.png" border="2"/>
 </a>
-</center>
+</div>
 <p>
 There are several changes that are needed for this assignment as follows:
 <ul>
@@ -163,20 +163,20 @@ The <b>view.php</b> includes a link to <b>add.php</b> and <b>logout.php</b>
 and the <b>add.php</b> has a <b>Cancel</b> button.
 </p>
 <p>
-<center>
+<div style="text-align:center">
 <p><b>The view.php screen</b></p>
-<a href="03-View.png" target="_blank">
+<a href="03-View.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the auto management application"
 width="300px" src="03-View.png" border="2"/>
 </a>
 <p><b>The add.php screen</b></p>
-<a href="03-Add.png" target="_blank">
+<a href="03-Add.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the auto management application"
 width="300px" src="03-Add.png" border="2"/>
 </a>
-</center>
+</div>
 </p>
 <p>
 In order to protect the database from being modified without the user properly
@@ -221,13 +221,13 @@ if ( isset($_SESSION['success']) ) {
     unset($_SESSION['success']);
 }
 </pre>
-<center>
-<a href="04-Add-Success.png" target="_blank">
+<div style="text-align:center">
+<a href="04-Add-Success.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the auto management application"
 width="300px" src="04-Add-Success.png" border="2"/>
 </a>
-</center>
+</div>
 </p>
 <h1>What To Hand In</h1>
 <p>
@@ -255,26 +255,26 @@ See the sample screenshots below to see how to show a POST-Redirect-GET happenne
 Some of the screenshots ask to see the developer console demonstrating the 
 POST-Redirect pattern similar to the following:
 <p>
-<center>
+<div style="text-align:center">
 <img alt="Image of a POST-Redirect pattern in the developer console" style="width: 95%"
 src="05-POST-Redirect.png" border="2"/>
-</center>
+</div>
 </p>
 Some browsers don't actually show two separate requests for the post-redirect.
 Instead they show the POST and Redirect on the same line.
 They might produce a screen like the following:
 <p>
-<center>
+<div style="text-align:center">
 <img alt="Image of a POST-Redirect pattern in the developer console" style="width: 95%"
 src="06-POST-Redirect.png" border="2"/>
-</center>
+</div>
 </p>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

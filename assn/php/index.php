@@ -3,8 +3,9 @@
 require_once("../assn_util.php");
 $json = loadPeer("peer.json");
 ?>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Assignment: <?= $json->title ?></title>
 <style>
 li { padding: 5px; }
@@ -32,13 +33,13 @@ print hash('sha256', 'Charles Severance');
 'Charles Severance in an alert box' </li>
 <li>Your name must be in the console log with text like 'Charles Severance in the log' </li></li>
 -->
-<li>Open <a href="fail.txt" target="_blank">this file</a> 
+<li>Open <a href="fail.txt" target="_blank" rel="noopener noreferrer">this file</a> 
 and copy-paste its contents into a file named <b>fail.php</b> in the 
 same folder as your <b>index.php</b>.  Do not alter this file - do <b>not</b> fix 
 the mistake in the code 
 in this file.  The goal is to trigger an error to verify that 
 we see errors in the browser.</li>
-<li>Open <a href="check.txt" target="_blank">this file</a> 
+<li>Open <a href="check.txt" target="_blank" rel="noopener noreferrer">this file</a> 
 and copy-paste in the contents into a file named <b>check.php</b> in the 
 same folder as your <b>index.php</b>. Do not alter this file.
 </li>
@@ -70,24 +71,24 @@ get zero points for the assignment.
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h2>Resources</h2>
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Introduction to Dynamic Web Content</i> from
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a></li>
 <li>The Wikipedia page on 
-<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">
+<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" rel="noopener noreferrer">
 HTTP - Hypertext Transfer Protocol</a>
 <li> Chapters 23, 24, 25, and 26 from the free textbook
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
-target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
+target="_blank" rel="noopener noreferrer">The Missing Link: An Introduction to Web Development and Programming</a> written by
+<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank" rel="noopener noreferrer">Michael Menendez</a>
 and published by
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
-target="_blank">Open SUNY Textbooks</a>.
+target="_blank" rel="noopener noreferrer">Open SUNY Textbooks</a>.
 </ul>
 </p>
 <h1>What To Hand In</h1>
@@ -110,30 +111,30 @@ foreach($json->parts as $part ) {
 </p>
 <h2>Sample Screen Shots</h2>
 <p>
-<center>
-<a href="01-index.png" target="_blank">
-<img src="01-index.png" width="80%"></a>
-</center>
+<div style="text-align:center">
+<a href="01-index.png" target="_blank" rel="noopener noreferrer">
+<img src="01-index.png" width="80%" alt="Sample screenshot of PHP index page"></a>
+</div>
 </p>
 <p>
-<center>
-<a href="03-fail.png" target="_blank">
-<img src="03-fail.png" width="80%"></a>
-</center>
+<div style="text-align:center">
+<a href="03-fail.png" target="_blank" rel="noopener noreferrer">
+<img src="03-fail.png" width="80%" alt="Sample screenshot showing PHP error display"></a>
+</div>
 </p>
 <p>
-<center>
-<a href="04-check.png" target="_blank">
-<img src="04-check.png" width="80%"></a>
-</center>
+<div style="text-align:center">
+<a href="04-check.png" target="_blank" rel="noopener noreferrer">
+<img src="04-check.png" width="80%" alt="Sample screenshot of check.php output"></a>
+</div>
 </p>
 <hr/>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

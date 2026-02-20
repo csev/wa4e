@@ -13,7 +13,7 @@ Setting up the MAMP PHP/MySql Environment on a Macintosh
 (or similar) bundle is much easier than installing all the components separately.
 </p>
 <h3>Pre-Requisite: VSCode or some other Programming Editor</h3>
-<p><a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a>
 </p>
 <h3>Installing MAMP</h3>
 <p>
@@ -21,15 +21,15 @@ There is a screen cast of this process below on YouTube.  You can watch the scre
 and follow along to complete the tasks.  There are notes below the YouTube video as well.
 You may want to print this page to have the notes as you follow the steps in the video.
 </p>
-<center>
-<iframe width="480" height="390" src="https://www.youtube.com/embed/CwwF801i5_4" frameborder="0" allowfullscreen></iframe>
-</center>
+<div style="text-align:center">
+<iframe width="480" height="390" src="https://www.youtube.com/embed/CwwF801i5_4" frameborder="0" allowfullscreen title="MAMP installation screencast"></iframe>
+</div>
 <p>
 <h3>Installation Notes</h3>
 <p>
 Download the installation package from:
 <pre>
-     <a href="http://mamp.info/" target="_blank">http://mamp.info</a>
+     <a href="http://mamp.info/" target="_blank" rel="noopener noreferrer">http://mamp.info</a>
 </pre>
 It will download into your <b>Downloads</b> folder as a rather large ZIP file.  
 Depending on your browser, it may auto-extract 
@@ -47,9 +47,9 @@ The first time you start MAMP it might suggest you use MAMP Pro - you can ignore
 To stop the nagging, <b>uncheck</b> the check box and click on <b>Launch MAMP</b> - that should 
 stop the nagging for a while.  
 </p>
-<center>
-<img src="images/mamp-03-control.png" width="240"/>
-</center>
+<div style="text-align:center">
+<img src="images/mamp-03-control.png" width="240" alt="MAMP control panel"/>
+</div>
 <p>
 When MAMP starts you should see a control panel and it should start both the MySQL and 
 Apache Servers automatically.   It also generally opens the start page automatically as well.
@@ -59,8 +59,8 @@ Once the control panel is working - you don't use it very much.<br clear="all"/>
 <p>
 The start page is located at <b>http://localhost:8888/MAMP/</b> and it is generally the way you work 
 with MAMP and MySql.
-<center>
-<img src="images/mamp-03-start-page.png" width="480" /></center>
+<div style="text-align:center">
+<img src="images/mamp-03-start-page.png" width="480" alt="MAMP start page"/></div>
 </p>
 <!--
 <h3>Making your first MySql Database</h3>
@@ -71,11 +71,11 @@ explorer in the right.  It should be on a screen that allows you to reate a new 
 Enter your name (lower case no spaces) and press "Create".   The screen will refresh and a new
 database will appear on the left navigation.  Congratulations - you have created your first
 database in MySql!
-<center>
-<a href="phpmyadmin-00-create-db.png" target="_blank">
-<img src="phpmyadmin-00-create-db.png" width="540">
+<div style="text-align:center">
+<a href="phpmyadmin-00-create-db.png" target="_blank" rel="noopener noreferrer">
+<img src="phpmyadmin-00-create-db.png" width="540" alt="phpMyAdmin create database screen">
 </a>
-</center>
+</div>
 </p>
 <p>
 <b>Note:</b> Do not delete or modify the existing databases on the left hand side such as:
@@ -102,14 +102,14 @@ Create the folder <b>first</b> under the <b>htdocs</b> folder when you save the 
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost:8888/first/index.php" target="_blank">http://localhost:8888/first/index.php</a>
+    <a href="http://localhost:8888/first/index.php" target="_blank" rel="noopener noreferrer">http://localhost:8888/first/index.php</a>
 </pre>
 </p>
 <p>
 And you should see your web page in your browser.
-<center>
-<img src="images/mamp-04-first-01.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-04-first-01.png" alt="First PHP page in browser">
+</div>
 </p>
 <p>
 Once that works, lets add a little PHP to our HTML.  Change your file to be as follows
@@ -128,9 +128,9 @@ and re-save:
 After you save, press "Refresh" in your browser and it should appear as follows:
 </p>
 <p>
-<center>
-<img src="images/mamp-05-first-02.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-05-first-02.png" alt="PHP page with dynamic content">
+</div>
 </p>
 <p>
 Congratulations, you have written your first PHP program.
@@ -162,9 +162,9 @@ Then you will need to stop and restart the Apache and MySQL servers
 using the MAMP, control panel and when you are done, you can use
 <b>phpinfo</b> check to make sure that your setting was successfully
 changed.
-<center>
-<img src="images/mamp-06-errors.png">
-</center>
+<div style="text-align:center">
+<img src="images/mamp-06-errors.png" alt="PHP info page showing display_errors setting">
+</div>
 <p>
 It is important that you change this setting right away or you 
 will be rather confused when your PHP code fails and you 

@@ -13,7 +13,7 @@ Setting up the PHP/MySql XAMPP Environment on Windows
 (or similar) bundle is much easier than installing all the components separately.
 </p>
 <h3>Pre-Requisite: VSCode or some other Programming Editor</h3>
-<p><a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a>
 </p>
 <h3>Installing XAMPP</h3>
 <p>
@@ -21,15 +21,15 @@ There is a screen cast of this process below on YouTube.  You can watch the scre
 and follow along to complete the tasks.  There are notes below the YouTube video as well.
 You may want to print this page to have the notes as you follow the steps in the video.
 </p>
-<center>
+<div style="text-align:center">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/X0_pthMQPMM" frameborder="0" allowfullscreen></iframe>
-</center>
+</div>
 <p>
 <h3>Installation Notes</h3>
 <p>
 Download the installation package from:
 <pre>
-     <a href="https://www.apachefriends.org/index.html" target="_blank">https://www.apachefriends.org/index.html</a>
+     <a href="https://www.apachefriends.org/index.html" target="_blank" rel="noopener noreferrer">https://www.apachefriends.org/index.html</a>
 </pre>
 I choose the "Installer" (i.e. neither the ZIP nor 7zip) installation package.  
 Download the package to your desktop and once the download is complete, run the installer,
@@ -50,28 +50,28 @@ When you press Start, you may be prompted for
 some firewall settings or other trust dialog boxes.  Make sure to say 'yes' to these trust boxes.
 Generally you will only see these trust dialogs once.
 </p>
-<center>
-<a href="images/xampp-win-01-panel.png" target="_blank">
-<img src="images/xampp-win-01-panel.png" border="2px" width="50%"/>
+<div style="text-align:center">
+<a href="images/xampp-win-01-panel.png" target="_blank" rel="noopener noreferrer">
+<img src="images/xampp-win-01-panel.png" border="2px" width="50%" alt="XAMPP control panel with Apache and MySQL"/>
 </a>
-</center>
+</div>
 <p>
 Once you get two little green "Running" indicators (Apache and MySql) in the XAMPP control panel, 
 you can press the "Admin..." button next to Apache to launch the XAMPP user interface.
 Note that the "Admin..." button next to MySql seems not to function.  Don't worry about that.
 You could also bring up the XAMPP start screen by navigating your web browser to:
 <pre>
-     <a href="http://localhost/" target="_blank">http://localhost/</a>
+     <a href="http://localhost/" target="_blank" rel="noopener noreferrer">http://localhost/</a>
 </pre>
 It should initially start with an XAMPP splash screen so you can select your language
 and then proceed to the XAMPP main screen with an orange navigation bar along the
 right side.
 </p>
 <p>
-<center>
-<a href="images/xampp-win-02-startup.png" target="_blank"><img 
-src="images/xampp-win-02-startup.png" width="80%" border="2px"/></a>
-</center>
+<div style="text-align:center">
+<a href="images/xampp-win-02-startup.png" target="_blank" rel="noopener noreferrer"><img 
+src="images/xampp-win-02-startup.png" width="80%" border="2px" alt="XAMPP startup screen"/></a>
+</div>
 </p>
 <!--
 <h3>Making your first MySql Database</h3>
@@ -82,11 +82,11 @@ explorer in the right.  It should be on a screen that allows you to reate a new 
 Enter your name (lower case no spaces) and press "Create".   The screen will refresh and a new
 database will appear on the left navigation.  Congratulations - you have created your first
 database in MySql!
-<center>
-<a href="phpmyadmin-00-create-db.png" target="_blank">
-<img src="phpmyadmin-00-create-db.png" width="540">
+<div style="text-align:center">
+<a href="phpmyadmin-00-create-db.png" target="_blank" rel="noopener noreferrer">
+<img src="phpmyadmin-00-create-db.png" width="540" alt="phpMyAdmin create database screen">
 </a>
-</center>
+</div>
 </p>
 <p>
 <b>Note:</b> Do not delete or modify the existing databases on the left hand side such as:
@@ -115,16 +115,16 @@ are not running as the administrator.
 <p>
 Once you have saved this file, navigate your browser to:
 <pre>
-    <a href="http://localhost/first/index.php" target="_blank">http://localhost/first/index.php</a>
+    <a href="http://localhost/first/index.php" target="_blank" rel="noopener noreferrer">http://localhost/first/index.php</a>
 </pre>
 </p>
 <p>
 And you should see your web page in your browser.
-<center>
-<a href="images/assn00-01-first-page-win.png" target="_blank">
-<img src="images/assn00-01-first-page-win.png" width="50%" border="2px">
+<div style="text-align:center">
+<a href="images/assn00-01-first-page-win.png" target="_blank" rel="noopener noreferrer">
+<img src="images/assn00-01-first-page-win.png" width="50%" border="2px" alt="First PHP page displaying in browser">
 </a>
-</center>
+</div>
 </p>
 <p>
 Once that works, lets add a little PHP to our HTML.  Change your file to be as follows
@@ -143,11 +143,11 @@ and re-save:
 After you save, press "Refresh" in your browser and it should appear as follows:
 </p>
 <p>
-<center>
-<a href="images/assn00-02-first-page-win.png" target="_blank">
-<img src="images/assn00-02-first-page-win.png" width="50%" border="2px">
+<div style="text-align:center">
+<a href="images/assn00-02-first-page-win.png" target="_blank" rel="noopener noreferrer">
+<img src="images/assn00-02-first-page-win.png" width="50%" border="2px" alt="First PHP page with error display">
 </a>
-</center>
+</div>
 </p>
 <p>
 Congratulations, you have written your first PHP program.
@@ -164,21 +164,21 @@ with the PHP configuration.  Scroll down to verify that:
 <pre>
 display_errors=On
 </pre>
-<center>
-<a href="images/xampp-win-03-ini-notepad.png" target="_blank">
-<img src="images/xampp-win-03-ini-notepad.png" width="80%"border="2px">
+<div style="text-align:center">
+<a href="images/xampp-win-03-ini-notepad.png" target="_blank" rel="noopener noreferrer">
+<img src="images/xampp-win-03-ini-notepad.png" width="80%" border="2px" alt="php.ini file opened in Notepad">
 </a>
-</center>
+</div>
 </p>
 <p>
 If it is <b>Off</b> change it to <b>On</b> and then go back to the XAMPP
 Control Panel and stop and then restart the Apahce server.   Then go back to
 <b>Admin</b> page and check the <b>PHPInfo</b> page to make sure that 
 display_errors is indeed <b>On</b>.
-<center>
-<a href="images/xampp-win-04-php-info.png" target="_blank">
-<img src="images/xampp-win-04-php-info.png" width="80%" border="2px">
+<div style="text-align:center">
+<a href="images/xampp-win-04-php-info.png" target="_blank" rel="noopener noreferrer">
+<img src="images/xampp-win-04-php-info.png" width="80%" border="2px" alt="PHP info page showing display_errors setting">
 </a>
-</center>
+</div>
 </body>
 </html>

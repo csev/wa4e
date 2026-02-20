@@ -10,7 +10,7 @@ there are a number of options.
 <ul>
 <li><p>
 If your LMS supports
-<a href="https://www.imsglobal.org/specs/lticiv1p0" target="_blank">
+<a href="https://www.imsglobal.org/specs/lticiv1p0" target="_blank" rel="noopener noreferrer">
 Learning Tools Interoperability® Content-Item Message</a> you can
 login and apply for an LTI 1.x key and secret and install this web site
 into your LMS as an App Store / Learning Object Repository that allows
@@ -25,7 +25,7 @@ your key and secret.
   onclick="showModalIframe(this.title, 'iframe-dialog', 'iframe-frame', _TSUGI.spinnerUrl, true);" >
   Download course material
   </a> as an
-<a href="https://www.imsglobal.org/cc/index.html" target="_blank">
+<a href="https://www.imsglobal.org/cc/index.html" target="_blank" rel="noopener noreferrer">
 IMS Common Cartridge®</a>, to import into an LMS like Sakai, Moodle, Canvas,
 Desire2Learn, Blackboard, or similar.
 After loading the Cartridge, you will need an LTI key and secret if you want to provision the
@@ -33,14 +33,14 @@ LTI-based tools provided in that cartridge.
 </p>
 </li>
 <li><p>
-If you are using <a href="https://classroom.google.com" target="_blank">Google Classroom</a>,
+If you are using <a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">Google Classroom</a>,
 you can automatically link the resources in this site
 into your classroom in the 
 <a href="<?= $CFG->apphome ?>/lessons/rrc?nostyle=yes">low-style view of the lessons</a>. (Must be logged in)
 </p></li>
             <li><p>
                 If you have access to
-<a href="https://lor.instructure.com/resources/4ec64e664fac47679b43c74d64d3d6b7" target="_blank">Canvas Commons</a>,
+<a href="https://lor.instructure.com/resources/4ec64e664fac47679b43c74d64d3d6b7" target="_blank" rel="noopener noreferrer">Canvas Commons</a>,
 the course material for the first 10 chapters of this book are available in
 a CC-BY license.
             </p></li>
@@ -57,22 +57,22 @@ you can hand-copy the links from this course material into your LMS from the
         </p>
         <ul>
             <li>
-                <a href="lectures/" target="_blank">Lecture Slides and Handouts</a>
+                <a href="lectures/" target="_blank" rel="noopener noreferrer">Lecture Slides and Handouts</a>
             </li>
             <li>
-                <a href="code/" target="_blank">Sample Code</a>
+                <a href="code/" target="_blank" rel="noopener noreferrer">Sample Code</a>
             </li>
             <li>
-                <a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX" target="_blank">
+                <a href="https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX" target="_blank" rel="noopener noreferrer">
                 YouTube Channel</a>
             </li>
             <li>
-                <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" target="_blank">Free Textbook</a>
+                <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" target="_blank" rel="noopener noreferrer">Free Textbook</a>
             </li>
 </ul>
             <p>
                 All the course content and sotware is available on 
-                <a href="https://github.com/csev/wa4e" target="_blank">
+                <a href="https://github.com/csev/wa4e" target="_blank" rel="noopener noreferrer">
                 Github</a> - you could literally make a copy of this site and host it as your own.
                 Also you could make a copy of the site and translate everything into another language.
             </p>

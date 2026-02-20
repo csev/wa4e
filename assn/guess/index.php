@@ -20,12 +20,12 @@ li { padding: 5px; }
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 This sample solution won't completely pass the autograder.  It needs some work
 to meet the specifications.  You can download the code for the partially complete
 sample solution
-<a href="guess.txt" target="_blank">here</a>.
+<a href="guess.txt" target="_blank" rel="noopener noreferrer">here</a>.
 You will have to change this per the instructions in the autograder in order
 to pass the autograder.
 </p>
@@ -35,15 +35,15 @@ to pass the autograder.
 <ul>
 <li>Lectures and materials on <i>Expressions and Control Flow in PHP</i> 
 and <i>PHP Arrays</i> from 
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a></li>
 <li> Chapters 27, 28, and 31 from the free textbook
 <a href="https://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
-target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="https://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
+target="_blank" rel="noopener noreferrer">The Missing Link: An Introduction to Web Development and Programming</a> written by
+<a href="https://milneopentextbooks.org/author/mmendez/" target="_blank" rel="noopener noreferrer">Michael Menendez</a>
 and published by
 <a href="https://milneopentextbooks.org/" 
-target="_blank">Milne Open Textbooks</a>.
-<li><a href="http://www.ngrok.com/" target="_blank">NGROK</a> - A tool 
+target="_blank" rel="noopener noreferrer">Milne Open Textbooks</a>.
+<li><a href="http://www.ngrok.com/" target="_blank" rel="noopener noreferrer">NGROK</a> - A tool 
 to create temporary secure tunnels from a local server to the Internet.
 </li>
 </ul>
@@ -53,10 +53,10 @@ to create temporary secure tunnels from a local server to the Internet.
 Since this assignment will be graded using an autograder (see below), your
 code must match the wording and error messages in the sample application 
 precisely.   
-<center>
-<a href="01-guess-too-high.png" target="_blank">
+<div style="text-align:center">
+<a href="01-guess-too-high.png" target="_blank" rel="noopener noreferrer">
 <img src="01-guess-too-high.png" width="80%"></a>
-</center>
+</div>
 </p>
 <p>
 The autograder will randomly choose the "correct number" for your application so you will 
@@ -98,16 +98,16 @@ from the Internet.
 If your application has a real URL (i.e. not "localhost") then you can submit that URL
 to the autograder.   But if your application that is running on your
 laptop or desktop computer with a URL like <strong>http://localhost...</strong> you
-will need to install and use the <a href="https://ngrok.com/" target="_blank">ngrok</a>
+will need to install and use the <a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok</a>
 application to get a temporary URL that can be submitted to the autograder this application.
 </p>
 <p>
 Depending on where you put your <b>guess.php</b> relative to the <b>DOCUMENT_ROOT</b> of
 your PHP server, you will have a local URL to run your application similar to the following:
-<center>
-<a href="04-pre-ngrok.png" target="_blank">
+<div style="text-align:center">
+<a href="04-pre-ngrok.png" target="_blank" rel="noopener noreferrer">
 <img src="04-pre-ngrok.png" width="80%"></a>
-</center>
+</div>
 Note the part of the URL after the host and port name.
 </p>
 <p>
@@ -128,19 +128,19 @@ The last parameter to ngrok is the port where your Apache server is running.
 </p>
 <p>
 Once ngrok is up and running, you should see a screen similar to this:
-<center>
-<a href="05-ngrok-running.png" target="_blank">
+<div style="text-align:center">
+<a href="05-ngrok-running.png" target="_blank" rel="noopener noreferrer">
 <img src="05-ngrok-running.png" width="80%"></a>
-</center>
+</div>
 Note the domain name and URL that NGROK has assigned to your local server.
 </p>
 <p>
 Concatenate the URL from ngrok with the URL suffix from your localhost URL and
 enter that URL in the browser as follows:
-<center>
-<a href="06-post-ngrok.png" target="_blank">
+<div style="text-align:center">
+<a href="06-post-ngrok.png" target="_blank" rel="noopener noreferrer">
 <img src="06-post-ngrok.png" width="80%"></a>
-</center>
+</div>
 Make <strong>sure</strong> that you can see your application when it is being
 accessed by the ngrok URL.  If you cannot see your application at the ngrok URL,
 the autograder will also not be able to see the application.  So if it is not working,
@@ -149,17 +149,17 @@ do not proceed to the next step until you figure out why it is not working.
 <p>
 Nagivate to the autograder for the assignment in your LMS as directed by the instructor
 and submit the ngrok URL to the autograder:
-<center>
-<a href="07-submit-ngrok.png" target="_blank">
+<div style="text-align:center">
+<a href="07-submit-ngrok.png" target="_blank" rel="noopener noreferrer">
 <img src="07-submit-ngrok.png" width="80%"></a>
-</center>
+</div>
 When you press "Evaluate", the autograder will start making connections to your
 web server through ngrok.   The ngrok display will start showing the requests
 as the autograder makes requests.
 </p>
 <p>
 If you want more detail, you can monitor the requests
-in an inspector by nagivating your browser to <a href="http://localhost:4040" target="_blank">
+in an inspector by nagivating your browser to <a href="http://localhost:4040" target="_blank" rel="noopener noreferrer">
 http://localhost:4040</a> while ngrok is running.
 </p>
 <p>
@@ -167,10 +167,10 @@ http://localhost:4040</a> while ngrok is running.
 <h2>Sample Execution of the Autograder</h2>
 <p>
 The following is a sample execution of the autograder on the sample application:
-<center>
-<a href="10-autograde-toggle.png" target="_blank">
+<div style="text-align:center">
+<a href="10-autograde-toggle.png" target="_blank" rel="noopener noreferrer">
 <img src="10-autograde-toggle.png" width="80%"></a>
-</center>
+</div>
 The autograder tells you each URL it is retrieving and gives you the option to 
 show the actual retrieved page that came from your server.  It also tells you 
 what it is expecting to see in the page and then if it does not find what it is
@@ -190,11 +190,11 @@ You can run the autograder as many times as you like to work through the autogra
 complaints and fix the errors in your program.
 <hr/>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

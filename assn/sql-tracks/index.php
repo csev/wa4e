@@ -26,14 +26,14 @@ of those queries and submit the screen shots as your assignment.
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Database Design</i> from
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a></li>
 <li> Chapters 38, 40, and 42 from the free textbook
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
-target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
+target="_blank" rel="noopener noreferrer">The Missing Link: An Introduction to Web Development and Programming</a> written by
+<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank" rel="noopener noreferrer">Michael Menendez</a>
 and published by
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
-target="_blank">Open SUNY Textbooks</a>.
+target="_blank" rel="noopener noreferrer">Open SUNY Textbooks</a>.
 </ul>
 </p>
 <h1>What To Hand In</h1>
@@ -56,22 +56,22 @@ foreach($json->parts as $part ) {
 </p>
 <h2>Sample Screen Shots</h2>
 <p>
-<center>
-<a href="tracks.png" target="_blank">
+<div style="text-align:center">
+<a href="tracks.png" target="_blank" rel="noopener noreferrer">
 <img src="tracks.png" width="80%"></a>
-</center>
+</div>
 </p>
 <p>
-<center>
-<a href="bigjoin.png" target="_blank">
+<div style="text-align:center">
+<a href="bigjoin.png" target="_blank" rel="noopener noreferrer">
 <img src="bigjoin.png" width="80%"></a>
-</center>
+</div>
 </p>
 <p>
-<center>
-<a href="artistgenre.png" target="_blank">
+<div style="text-align:center">
+<a href="artistgenre.png" target="_blank" rel="noopener noreferrer">
 <img src="artistgenre.png" width="80%"></a>
-</center>
+</div>
 </p>
 <h1><em>Optional</em> Challenges</h1>
 <p>
@@ -82,17 +82,17 @@ to hand in for this challenge.</b></p>
 Come up with a query using <b>GROUP BY</b> to show the number 
 of tracks an Artist has in each Genre.
 You do not need to hand in a screen shot of this query.
-<center>
-<a href="groupby.png" target="_blank">
+<div style="text-align:center">
+<a href="groupby.png" target="_blank" rel="noopener noreferrer">
 <img src="groupby.png" width="80%"></a>
-</center>
+</div>
 </p>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

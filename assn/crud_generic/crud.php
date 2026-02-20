@@ -74,7 +74,7 @@ we tell you that all students have completed the exam.
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Understanding CRUD
@@ -83,7 +83,7 @@ Understanding CRUD
 <li>
 The sample code from the CRUD lecture is a simple working CRUD application.
 <pre>
-<a href="http://www.wa4e.com/code/crud.zip" target="_blank">http://www.wa4e.com/code/crud.zip</a>
+<a href="http://www.wa4e.com/code/crud.zip" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/crud.zip</a>
 </pre>
 </li>
 </ul>
@@ -124,7 +124,7 @@ the user is using a non-HTML5 browser.
 You can experiment with a reference implementation at:
 </p>
 <p>
-<a href="<?= $reference_implementation ?>" target="_blank"><?= $reference_implementation ?></a>
+<a href="<?= $reference_implementation ?>" target="_blank" rel="noopener noreferrer"><?= $reference_implementation ?></a>
 </p>
 <?php } ?>
 <h2>Using the Autograder</h2>
@@ -135,7 +135,7 @@ you will need to install and use a piece of software called "ngrok".  Instructio
 for installing and using ngrok are available at:
 </p>
 <p>
-<a href="http://www.wa4e.com/ngrok.php" target="_blank">http://www.wa4e.com/ngrok.php</a>
+<a href="http://www.wa4e.com/ngrok.php" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/ngrok.php</a>
 </p>
 <p>
 Please see the process for handing in the <?= $assignment_type_lower ?> at the end of this document.
@@ -188,7 +188,7 @@ and a link to <b>login.php</b> - they should not see the table of data.
 <p><span style="color:blue; text-decoration: underline;">Please log in</span></p>
 </div>
 <p>
-<a href="01-Login.png" target="_blank">
+<a href="01-Login.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;"
 alt="Image of the login screen"
 width="300px" src="../crud_generic/01-Login.png" border="2"/>
@@ -415,16 +415,16 @@ This <?= $assignment_type_lower ?> will be autograded by a link that you will be
 system.   When you launch the autograder, it will prompt for a web-accessible URL
 where it can access your web application.   Since your application is running
 on localhost, you will need the <a href="http://www.wa4e.com/ngrok.php" 
-target="_blank">Ngrok</a> application installed.
+target="_blank" rel="noopener noreferrer">Ngrok</a> application installed.
 </p>
 <hr/>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">www.wa4e.com</a>
-<center>
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>
+<div style="text-align:center">
 <?php if ( strpos($assignment_type,'Exam') !== false ) { ?>
 Copyright Charles R. Severance - All Rights Reserved
 <?php } else { ?>
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
 <?php } ?>
-</center>
+</div>
 </body>
 </html>

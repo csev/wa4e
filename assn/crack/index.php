@@ -42,7 +42,7 @@ good to make brute force cracking more difficult.
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h2>Resources</h2>
@@ -50,22 +50,22 @@ You can explore a sample solution for this problem at
 <ul>
 <li> Chapters 14, 23-28, 31 and 32 from the free textbook
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
-target="_blank">The Missing Link: An Introduction to Web Development and Programming</a> written by
-<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank">Michael Menendez</a>
+target="_blank" rel="noopener noreferrer">The Missing Link: An Introduction to Web Development and Programming</a> written by
+<a href="http://milneopentextbooks.org/author/mmendez/" target="_blank" rel="noopener noreferrer">Michael Menendez</a>
 and published by
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/" 
-target="_blank">Open SUNY Textbooks</a>.
+target="_blank" rel="noopener noreferrer">Open SUNY Textbooks</a>.
 <li>Lectures and materials on Expressions, Control Flow, Arrays, Functions, and Forms
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a></li>
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a></li>
 <li>Partially working sample code.
 You can play with this application
-at <a href="http://www.wa4e.com/code/crack/" target="_blank">http://www.wa4e.com/code/crack/</a>
+at <a href="http://www.wa4e.com/code/crack/" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/crack/</a>
 and download a ZIP of the code at 
-<a href="http://www.wa4e.com/code/crack.zip" target="_blank">http://www.wa4e.com/code/crack.zip</a>.
+<a href="http://www.wa4e.com/code/crack.zip" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/crack.zip</a>.
 </ul>
 </p>
 <h2>Specifications</h2>
-<a href="01-Crack-In-Action.png" target="_blank">
+<a href="01-Crack-In-Action.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the crack application with a successful crack"
 width="400px" 
@@ -148,7 +148,7 @@ Here are some possible improvements:
 out why each person chose their PIN.</li>
 <li> You can crack some but not all more complex hashed values using 
 a site like:
-<a href="https://crackstation.net/" target="_blank">CrackStation.net</a>.  
+<a href="https://crackstation.net/" target="_blank" rel="noopener noreferrer">CrackStation.net</a>.  
 For fun, use
 this site to crack all the above hash values.
 <li>Make your application test a more complex character set like, 
@@ -185,11 +185,11 @@ is running too long and blows up your application.  You can check the variable
 many seconds PHP will let your code run before aborting it.
 </p>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

@@ -19,7 +19,7 @@ pre {padding-left: 2em;}
 </style>
 </head>
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
-<a href="01-Education.png" target="_blank">
+<a href="01-Education.png" target="_blank" rel="noopener noreferrer">
 <img src="01-Education.png" style="border: 1px solid black; margin-left: 10px; float: right; width: 350px;">
 </a>
 <h1>Assignment: <?= $json->title ?></h1>
@@ -28,7 +28,7 @@ pre {padding-left: 2em;}
 </p>
 <p>
 This assignment will also feature a 
-<a href="https://jqueryui.com/autocomplete/" target="_blank">jQuery auto-complete</a>
+<a href="https://jqueryui.com/autocomplete/" target="_blank" rel="noopener noreferrer">jQuery auto-complete</a>
 field when entering the name of the school.
 </p>
 <?php if ( isset($json->solution) ) { ?>
@@ -36,18 +36,18 @@ field when entering the name of the school.
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
 <li>You might want to refer back to the resources for the 
-<a href="../res-position/index.php" target="_blank">
+<a href="../res-position/index.php" target="_blank" rel="noopener noreferrer">
 previous assignment</a>.
 </li>
 <li>Recorded lectures and slides from 
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 JavaScript
@@ -61,22 +61,22 @@ JSON
 </ul>
 <li>An article from Stack Overflow on
 <a href="http://stackoverflow.com/questions/17650776/add-remove-html-inside-div-using-javascript"
-target="_blank">Add/Remove HTML Inside a div Using JavaScript</a>
+target="_blank" rel="noopener noreferrer">Add/Remove HTML Inside a div Using JavaScript</a>
 </li>
 <li>
 Documentation for <a href="https://jqueryui.com/autocomplete/"
-target="_new">JQuery Autocomplete</a>
+target="_blank" rel="noopener noreferrer">JQuery Autocomplete</a>
 </li>
 <li>
 Sample code: 
 <a href="http://www.wa4e.com/code/jquery-01.zip"
-   target="_blank">JQuery</a>, 
+   target="_blank" rel="noopener noreferrer">JQuery</a>, 
 <a href="http://www.wa4e.com/code/json-01.zip"
-   target="_blank">JSON</a>, 
+   target="_blank" rel="noopener noreferrer">JSON</a>, 
 <a href="http://www.wa4e.com/code/json-02-chat.zip"
-   target="_blank">JSON Chat</a>, 
+   target="_blank" rel="noopener noreferrer">JSON Chat</a>, 
 <a href="http://www.wa4e.com/code/json-03-crud.zip"
-   target="_blank">JSON CRUD</a>
+   target="_blank" rel="noopener noreferrer">JSON CRUD</a>
 </ul>
 </li>
 </ul>
@@ -196,7 +196,7 @@ your are logged in to the sample application before accessing this URL):
 </p>
 <p>
 <a href="http://www.wa4e.com/solutions/res-education/school.php?term=Univer"
- target="_blank">http://www.wa4e.com/solutions/res-education/school.php?term=Univer</a>
+ target="_blank" rel="noopener noreferrer">http://www.wa4e.com/solutions/res-education/school.php?term=Univer</a>
 </p>
 <p>
 The <b>term</b> is whatever has been typed into the input field so far.  The 
@@ -207,9 +207,9 @@ displayed as the autocomplete list:
 "University of Oxford","University of Virginia"]
 </pre>
 </p>
-<center>
+<div style="text-align:center">
 <img src="02-Autocomplete.png" width="350px" style="border: 1px solid black;">
-</center>
+</div>
 <p>
 After error checking and session checking the code to return the list
 of universities that match the prefix typed so far looks as follows:
@@ -328,11 +328,11 @@ the user is using a non-HTML5 browser.
 </li>
 </ul>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

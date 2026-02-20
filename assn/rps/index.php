@@ -19,7 +19,7 @@ li { padding: 5px; }
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from the textbook
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>
 will be helpful in understanding the aspects of PHP used in this application.
 <ul>
 <li>Arrays</li>
@@ -29,16 +29,16 @@ will be helpful in understanding the aspects of PHP used in this application.
 </li>
 <li>Documentation of 
 <a href="http://en.wikipedia.org/wiki/Salt_%28cryptography%29" 
-target="_blank">how salted hashes work</a> from Wikipedia.
+target="_blank" rel="noopener noreferrer">how salted hashes work</a> from Wikipedia.
 </li>
 <li>Documentation on how one web page
 <a href="http://en.wikipedia.org/wiki/URL_redirection#Using_server-side_scripting_for_redirection"
-target="_blank">redirects</a> to another in HTTP and PHP.
+target="_blank" rel="noopener noreferrer">redirects</a> to another in HTTP and PHP.
 </li>
 <li>Documentation from PHP on how the
 <a href="http://php.net/manual/en/function.header.php" 
-target="_blank">header()</a> function works.
-<li><a href="http://www.ngrok.com/" target="_blank">NGROK</a> - A tool
+target="_blank" rel="noopener noreferrer">header()</a> function works.
+<li><a href="http://www.ngrok.com/" target="_blank" rel="noopener noreferrer">NGROK</a> - A tool
 to create temporary secure tunnels from a local server to the Internet
 if you need to submit this to an autograder.
 </li>
@@ -47,11 +47,11 @@ if you need to submit this to an autograder.
 You can download sample code 
 for an <b>incomplete/broken</b> version of this application from:
 <pre>
-<a href="http://www.wa4e.com/code/rps.zip" target="_blank">http://www.wa4e.com/code/rps.zip</a>
+<a href="http://www.wa4e.com/code/rps.zip" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/rps.zip</a>
 </pre>
 You can play with the broken sample code at:
 <pre>
-<a href="http://www.wa4e.com/code/rps/" target="_blank">http://www.wa4e.com/code/rps/</a>
+<a href="http://www.wa4e.com/code/rps/" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/rps/</a>
 </pre>
 </p>
 <?php if ( isset($json->solution) ) { ?>
@@ -59,16 +59,16 @@ You can play with the broken sample code at:
 <p>
 You can explore a sample solution for this problem at:
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <p>
 You also can play Rock, Paper, Scissors with players all around the world at 
-<a href="https://www.mmorps.com/" target="_blank">
+<a href="https://www.mmorps.com/" target="_blank" rel="noopener noreferrer">
 https://www.mmorps.com/</a>.
 </p>
 <?php } ?>
 <h2>Specifications</h2>
-<a href="01-RPS-Index.png" target="_blank">
+<a href="01-RPS-Index.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the index page"
 width="300px" src="01-RPS-Index.png" border="2"/>
@@ -79,7 +79,7 @@ login screen.
 </p>
 <h2>Requirements for the Login Screen</h2>
 <p>
-<a href="02-RPS-Login.png" target="_blank">
+<a href="02-RPS-Login.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the RPS Application login.php"
 width="300px" src="02-RPS-Login.png" border="2"/>
@@ -90,7 +90,7 @@ Your form should have a button labeled "Log In" that submits the form
 data using method="POST" (i.e. these should not be GET parameters).
 <br clear="all"/>
 </p>
-<a href="03-RPS-Login-Bad.png" target="_blank">
+<a href="03-RPS-Login-Bad.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the RPS Application login screen with an error"
 width="300px" src="03-RPS-Login-Bad.png" border="2"/></a>
@@ -135,7 +135,7 @@ and compare it to the stored_hash.
 If the incoming password, properly hashed matches the stored stored_hash
 value, the user's browser is 
 <a href="http://en.wikipedia.org/wiki/URL_redirection#Using_server-side_scripting_for_redirection"
- target="_blank">redirected</a>
+ target="_blank" rel="noopener noreferrer">redirected</a>
 to the <b>game.php</b> page with the user's name as a GET parameter using:
 <pre>
 header("Location: game.php?name=".urlencode($_POST['who']));
@@ -152,7 +152,7 @@ die("Name parameter missing");
 To test, navigate to <b>game.php</b> manually without logging in - it 
 should fail with "Name parameter missing".
 <p>
-<a href="04-RPS-Play-Start.png" target="_blank">
+<a href="04-RPS-Play-Start.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the RPS Application Initial Play Screen"
 width="300px" src="04-RPS-Play-Start.png" border="2"/>
@@ -209,9 +209,9 @@ and "Scissors" in this example.  The output of this should
 look as follows:
 </p>
 <p>
-<center>
+<div style="text-align:center">
 <img src="05-RPS-Test.png" style="width:80%" border="1"/>
-</center>
+</div>
 </p>
 <p>
 This will allow you to make sure that your <b>check()</b> function
@@ -254,11 +254,11 @@ with images - simply add some images to make it prettier.
 </ul>
 </p>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

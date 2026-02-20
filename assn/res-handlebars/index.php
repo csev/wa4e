@@ -43,7 +43,7 @@ and view all are handled in PHP.</li>
 <p>
 You can play with a sample implementation of the code at:
 <pre>
-<a href="http://www.wa4e.com/solutions/res-handlebars/" target="_blank">http://www.wa4e.com/solutions/res-handlebars/</a>
+<a href="http://www.wa4e.com/solutions/res-handlebars/" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/solutions/res-handlebars/</a>
 </pre>
 </p>
 <p>
@@ -147,11 +147,11 @@ the user is using a non-HTML5 browser.
 </li>
 </ul>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

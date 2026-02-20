@@ -13,7 +13,7 @@ require "nav.php";
 ?>
 <div id="container">
 <div style="margin-left: 10px; float:right">
-<iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?rel=0" frameborder="0" allowfullscreen title="Web Applications for Everybody course introduction"></iframe>
 </div>
 <h1>Web Applications for Everybody</h1>
 <?php
@@ -38,7 +38,7 @@ You can download these badges and host them on your web site or refer the badge 
 <li>
 You can use these Creative Commons Licensed materials 
 such as the 
-<a href="lectures" target="_blank">lectures</a>
+<a href="lectures" target="_blank" rel="noopener noreferrer">lectures</a>
 in your own classes.
 You can also 
 <a href="tsugi/cc/">export the course material</a> as an
@@ -54,9 +54,9 @@ Hello and welcome to my site where you can learn to build database-backed
 web sites using PHP, MySQL, JQuery, and Handlebars. 
 You can take this course and receive a certificate at:
 <ul>
-<li><a href="https://www.coursera.org/specializations/web-applications" target="_blank">Coursera: Web Applications for Everybody Specialization</a> </li>
-<li><a href="https://www.youtube.com/watch?v=xr6uZDRTna0" target="_blank">FreeCodeCamp: Web Applications for Everybody</a>
-<li><a href="https://online.umich.edu/series/web-applications-for-everybody/" target="_blank">Free certificates for University of Michigan students and staff</a></li>
+<li><a href="https://www.coursera.org/specializations/web-applications" target="_blank" rel="noopener noreferrer">Coursera: Web Applications for Everybody Specialization</a> </li>
+<li><a href="https://www.youtube.com/watch?v=xr6uZDRTna0" target="_blank" rel="noopener noreferrer">FreeCodeCamp: Web Applications for Everybody</a>
+<li><a href="https://online.umich.edu/series/web-applications-for-everybody/" target="_blank" rel="noopener noreferrer">Free certificates for University of Michigan students and staff</a></li>
 </ul>
 If you <a href="tsugi/login.php">log in</a> to this site
 you have joined a free, global
@@ -77,32 +77,32 @@ an IMS Learning Tools Interoperability® (LTI®)
 </p>
 <p>
 The code for this site including the autograders, slides, and course content is all available on
-<a href="https://github.com/csev/wa4e" target="_blank">GitHub</a>.  That means you could make your own
+<a href="https://github.com/csev/wa4e" target="_blank" rel="noopener noreferrer">GitHub</a>.  That means you could make your own
 copy of the course site, publish it and remix it any way you like.  Even more exciting, you could translate
 the entire site (course) into your own language and publish it.  
 </p>
 <?php } ?>
 <?php } ?>
-This site uses <a href="http://www.tsugi.org" target="_blank">Tsugi</a> 
+This site uses <a href="http://www.tsugi.org" target="_blank" rel="noopener noreferrer">Tsugi</a> 
 framework to embed a learning 
 management system into this site and handle the autograders.  
 If you are interested in collaborating
 to build these kinds of sites for yourself, please see the 
-<a href="http://www.tsugi.org" target="_blank">tsugi.org</a> website.
+<a href="http://www.tsugi.org" target="_blank" rel="noopener noreferrer">tsugi.org</a> website.
 </p>
 <h3>TextBook</h3>
 <p>
 I am using an open textbook 
 <a href="http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/"
-target="_new">
+target="_blank" rel="noopener noreferrer">
 The Missing Link: An Introduction to Web Development and Programming
 </a>
 written by Michael Mendez 
 and published by 
-<a href="http://milneopentextbooks.org/" target="_blank">OpenSUNY</a>.  All of the electronic copies
+<a href="http://milneopentextbooks.org/" target="_blank" rel="noopener noreferrer">OpenSUNY</a>.  All of the electronic copies
 of the book are free.   Print copies of the book are available on 
 <a href="http://www.amazon.com/The-Missing-Link-Introduction-Development/dp/1502447967/"
-target="_blank">Amazon</a>.
+target="_blank" rel="noopener noreferrer">Amazon</a>.
 </p>
 <h3>Copyright</h3>
 <p>

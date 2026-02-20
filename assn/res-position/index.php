@@ -19,7 +19,7 @@ pre {padding-left: 2em;}
 </style>
 </head>
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
-<a href="01-Position.png" target="_blank">
+<a href="01-Position.png" target="_blank" rel="noopener noreferrer">
 <img src="01-Position.png" style="border: 1px solid black; margin-left: 10px; float: right; width: 350px;">
 </a>
 <h1>Assignment: <?= $json->title ?></h1>
@@ -37,34 +37,34 @@ delete positions in the add and edit user interface.
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
 <li>You might want to refer back to the resources for the 
-<a href="../../res-profile/index.php" target="_blank">
+<a href="../../res-profile/index.php" target="_blank" rel="noopener noreferrer">
 previous assignment</a>.
 </li>
 <li>An article from Stack Overflow on
 <a href="http://stackoverflow.com/questions/17650776/add-remove-html-inside-div-using-javascript"
-target="_blank">Add/Remove HTML Inside a div Using JavaScript</a>
+target="_blank" rel="noopener noreferrer">Add/Remove HTML Inside a div Using JavaScript</a>
 (you can scroll past the JavaScript-only answers and see the jQuery answer at the bottom)
 </li>
 <li>
 The documentation for 
-<a href="http://php.net/manual/en/pdo.lastinsertid.php" target="_blank">PDO lastInsertId()</a>
+<a href="http://php.net/manual/en/pdo.lastinsertid.php" target="_blank" rel="noopener noreferrer">PDO lastInsertId()</a>
 where you can retrieve the most recently assigned primary key as a result of an INSERT
 statement.
 </li>
 <li>Recorded lectures and materials from 
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 jQuery
 (<a href="http://www.wa4e.com/code/jquery-01.zip"
-   target="_blank">Sample Code</a>)
+   target="_blank" rel="noopener noreferrer">Sample Code</a>)
 </li>
 </ul>
 </li>
@@ -427,11 +427,11 @@ INSERT INTO users (name,email,password)
 </p>
 </div>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

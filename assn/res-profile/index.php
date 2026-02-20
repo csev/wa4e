@@ -28,14 +28,14 @@ pre {padding-left: 2em;}
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Review the SQL language
@@ -47,12 +47,12 @@ Using PDO in PHP
 </li>
 <li>How to validate a form in JavaScript on
 <a href="http://stackoverflow.com/questions/32410590/form-submission-after-javascript-validation"
-target="_blank">StackOverflow</a>.
+target="_blank" rel="noopener noreferrer">StackOverflow</a>.
 </ul>
 </li>
 <li>Documentation from www.php.net on how to use
 <a href="http://php.net/manual/en/book.pdo.php"
-target="_blank">PDO</a> to talk to a database.
+target="_blank" rel="noopener noreferrer">PDO</a> to talk to a database.
 </li>
 </ul>
 </p>
@@ -228,7 +228,7 @@ the database.  There should be <b>no stored hash</b> in your PHP code.
 You can compute the salted hash of any password / salt combination
 using this PHP code:
 <p>
-<a href="hash.php" target="_blank">Salt-O-Matic 2000</a>
+<a href="hash.php" target="_blank" rel="noopener noreferrer">Salt-O-Matic 2000</a>
 </p>
 </pre>
 <p>
@@ -278,13 +278,13 @@ In addition to the PHP data validation in the previous assignment, you need to a
 JavaScript based data validation on the <b>login.php</b> screen that pops up an alert()
 dialog if teither field is blank or the email address is missing.
 </p>
-<center>
-<a href="01-Js-Validation.png" target="_blank">
+<div style="text-align:center">
+<a href="01-Js-Validation.png" target="_blank" rel="noopener noreferrer">
 <img
 alt="Image of the JavaScript popup"
 width="80%" src="01-Js-Validation.png" border="2"/>
 </a>
-</center>
+</div>
 <p>
 This is done using an <b>onclick</b> event on the form submit button that calls a JavaScript
 function that checks the data, puts up an alert box if there is a problem and then returns
@@ -455,11 +455,11 @@ INSERT INTO users (name,email,password)
 </p>
 </div>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

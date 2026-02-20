@@ -3,8 +3,9 @@
 require_once("../assn_util.php");
 $json = loadPeer("peer.json");
 ?>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Assignment: <?= $json->title ?></title>
 </head>
 <body style="margin-left:5%; margin-bottom: 60px; margin-right: 5%; font-family: sans-serif;">
@@ -13,28 +14,28 @@ $json = loadPeer("peer.json");
 <?= $json->description ?>
 <p>
 You will transform from this:
-<center>
-<a href="01-No-style.png" target="_blank">
-<img src="01-No-style.png" width="80%" border="2px"></a>
-</center>
+<div style="text-align:center">
+<a href="01-No-style.png" target="_blank" rel="noopener noreferrer">
+<img src="01-No-style.png" width="80%" border="2px" alt="Screenshot of page without CSS styling"></a>
+</div>
 To this:
-<center>
-<a href="02-style.png" target="_blank">
-<img src="02-style.png" width="80%" border="2px"></a>
-</center>
+<div style="text-align:center">
+<a href="02-style.png" target="_blank" rel="noopener noreferrer">
+<img src="02-style.png" width="80%" border="2px" alt="Screenshot of page with CSS styling applied"></a>
+</div>
 Using only CSS.
 </p>
 <h1>Resources</h1>
 <p>There are several sources of information so you can do the assignment:
 <ul>
 <li>Lectures and materials on <i>Cascading Style Sheets</i> from
-<a href="https://www.wa4e.com/lessons/css" target="_blank">www.wa4e.com</a></li>
+<a href="https://www.wa4e.com/lessons/css" target="_blank" rel="noopener noreferrer">www.wa4e.com</a></li>
 </ul>
 </p>
 <h1>Pre-Requisites</h1>
 <p>
 <ul>
-<li><p>Please install the <a href="http://chrispederick.com/work/web-developer/" target="_blank">
+<li><p>Please install the <a href="http://chrispederick.com/work/web-developer/" target="_blank" rel="noopener noreferrer">
 Web Developer Toolkit</a> for your browser from Chris Pedrick and know how to use it to 
 disable CSS styles.</p></li>
 </ul>
@@ -44,10 +45,10 @@ disable CSS styles.</p></li>
 Here are the tasks for this assignment.  You can do all the editing for this assignment
 in a folder on your computer.
 <ul>
-<li><p>Take this <a href="index.txt" target="_blank">this file</a> and 
+<li><p>Take this <a href="index.txt" target="_blank" rel="noopener noreferrer">this file</a> and 
 copy/paste the contents into 
 <b>index.htm</b>.  You will not change this file.
-<li><p>Take <a href="blocks.txt" target="_blank">this file</a>
+<li><p>Take <a href="blocks.txt" target="_blank" rel="noopener noreferrer">this file</a>
 and copy/paste the contents into 
 <b>blocks.css</b> in the same folder as the above file.
 </p>
@@ -60,13 +61,13 @@ of margin and padding.  It is probably simplest to use fixed positioning to get 
 boxes to be "sticky" to the corners of the screen even when you resize.  Make the boxes
 width be <b>25%</b> so the width changes as you resize your browser.</p></li>
 <li><p>Center the link at the top of the page.  Use your developer console / inspect element
-feature of your browser to visit <a href="https://www.brainyquote.com/" target="_blank">
+feature of your browser to visit <a href="https://www.brainyquote.com/" target="_blank" rel="noopener noreferrer">
 https://www.brainyquote.com/</a> and figure out the background color, font, and text color
 they are using an replicate that exactly for the link in your <b>index.htm</b>.
 </p></li>
 <li><p>Your CSS must pass the validator at:
 <pre>
-<a href="https://jigsaw.w3.org/css-validator" target="_blank">https://jigsaw.w3.org/css-validator</a>
+<a href="https://jigsaw.w3.org/css-validator" target="_blank" rel="noopener noreferrer">https://jigsaw.w3.org/css-validator</a>
 </pre>
 </p></li>
 </ul>
@@ -86,38 +87,38 @@ foreach($json->parts as $part ) {
 <h1>Sample Screen Shots</h1>
 <p>
 Using inspect element on the 
-<a href="https://www.brainyquote.com/" target="_blank">
+<a href="https://www.brainyquote.com/" target="_blank" rel="noopener noreferrer">
 https://www.brainyquote.com/</a>.
-<center>
-<a href="04-brainy-inspect.png" target="_blank">
-<img src="04-brainy-inspect.png" width="80%" border="2px"></a>
-</center>
+<div style="text-align:center">
+<a href="04-brainy-inspect.png" target="_blank" rel="noopener noreferrer">
+<img src="04-brainy-inspect.png" width="80%" border="2px" alt="Screenshot showing inspect element on BrainyQuote"></a>
+</div>
 </p>
 <p>
 Looking at 
-<a href="https://www.brainyquote.com/" target="_blank">
+<a href="https://www.brainyquote.com/" target="_blank" rel="noopener noreferrer">
 https://www.brainyquote.com/</a> using Chris Pedrick's
 Web Developer add on to turn off all styles:
-<center>
-<a href="05-brainy-no-css.png" target="_blank">
-<img src="05-brainy-no-css.png" width="80%" border="2px"></a>
-</center>
+<div style="text-align:center">
+<a href="05-brainy-no-css.png" target="_blank" rel="noopener noreferrer">
+<img src="05-brainy-no-css.png" width="80%" border="2px" alt="Screenshot of BrainyQuote with CSS disabled"></a>
+</div>
 </p>
 <p>Passing the CSS validator:
 <p>
-<center>
-<a href="06-css-validator.png" target="_blank">
-<img src="06-css-validator.png" width="80%" border="2px"></a>
-</center>
+<div style="text-align:center">
+<a href="06-css-validator.png" target="_blank" rel="noopener noreferrer">
+<img src="06-css-validator.png" width="80%" border="2px" alt="Screenshot of CSS validator passing"></a>
+</div>
 </p>
 
 
 <p style="padding-top:30px;">
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>

@@ -16,7 +16,7 @@ pre {padding-left: 2em;}
 <p>
 <?= $json->description ?>
 </p>
-<a href="01-Autos.png" target="_blank">
+<a href="01-Autos.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; margin-bottom: 10px; float:right;" 
 alt="Image of the auto management application"
 width="300px" src="01-Autos.png" border="2"/>
@@ -26,14 +26,14 @@ width="300px" src="01-Autos.png" border="2"/>
 <p>
 You can explore a sample solution for this problem at
 <pre>
-<a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
+<a href="<?= $json->solution ?>" target="_blank" rel="noopener noreferrer"><?= $json->solution ?></a>
 </pre>
 <?php } ?>
 <h1>Resources</h1>
 <p>There are several resources you might find useful:
 <ul>
 <li>Recorded lectures, sample code and chapters from 
-<a href="http://www.wa4e.com" target="_blank">www.wa4e.com</a>:
+<a href="http://www.wa4e.com" target="_blank" rel="noopener noreferrer">www.wa4e.com</a>:
 <ul>
 <li class="toplevel">
 Review the SQL language
@@ -45,23 +45,23 @@ Using PDO in PHP
 </ul>
 </li>
 <li>Documentation on 
-<a href="https://en.wikipedia.org/wiki/Code_injection#HTML_script_injection" target="_new">HTML Injection</a>
+<a href="https://en.wikipedia.org/wiki/Code_injection#HTML_script_injection" target="_blank" rel="noopener noreferrer">HTML Injection</a>
 </li>
 <li>Documentation from www.php.net on how to use 
 <a href="http://php.net/manual/en/book.pdo.php"
-target="_blank">PDO</a> to connect to a database.
+target="_blank" rel="noopener noreferrer">PDO</a> to connect to a database.
 </li>
 <li>Documentation on 
-<a href="https://en.wikipedia.org/wiki/SQL_injection" target="_new">SQL Injection</a>
+<a href="https://en.wikipedia.org/wiki/SQL_injection" target="_blank" rel="noopener noreferrer">SQL Injection</a>
 </li>
 <li>Documentation on 
-<a href="http://php.net/manual/en/pdo.prepare.php" target="_new">PHP PDO Prepared Statements</a>
+<a href="http://php.net/manual/en/pdo.prepare.php" target="_blank" rel="noopener noreferrer">PHP PDO Prepared Statements</a>
 </li>
 <li>
 You can look through the sample code from the lecture. It has examples
 of using PDO to communicate with a database:
 <pre>
-<a href="http://www.wa4e.com/code/pdo.zip" target="_blank">http://www.wa4e.com/code/pdo.zip</a>
+<a href="http://www.wa4e.com/code/pdo.zip" target="_blank" rel="noopener noreferrer">http://www.wa4e.com/code/pdo.zip</a>
 </pre>
 <p>
 Note that this is not precisely sample code for <em>this</em> assignment.  You should
@@ -147,7 +147,7 @@ CREATE TABLE autos (
 </pre>
 </p>
 <h1>Specifications</h1>
-<a href="01-Autos.png" target="_blank">
+<a href="01-Autos.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the login screen"
 width="300px" src="01-Autos.png" border="2"/>
@@ -158,7 +158,7 @@ The changes to <b>index.php</b> are new wording and pointing to
 </p>
 <br clear="all">
 <h2>Specifications for the Login Screen</h2>
-<a href="02-Login.png" target="_blank">
+<a href="02-Login.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; float:right;" 
 alt="Image of the login screen"
 width="300px" src="02-Login.png" border="2"/>
@@ -194,7 +194,7 @@ Email must have an at-sign (@)
 If the incoming password, properly hashed matches the stored stored_hash
 value, the user's browser is
 <a href="http://en.wikipedia.org/wiki/URL_redirection#Using_server-side_scripting_for_redirection"
- target="_blank">redirected</a>
+ target="_blank" rel="noopener noreferrer">redirected</a>
 to the <b>autos.php</b> page with the user's name as a GET parameter using:
 <pre>
 header("Location: autos.php?name=".urlencode($_POST['who']));
@@ -228,7 +228,7 @@ die("Name parameter missing");
 To test, navigate to <b>autos.php</b> manually without logging in - it 
 should fail with "Name parameter missing".
 </p>
-<a href="03-Autos-Empty.png" target="_blank">
+<a href="03-Autos-Empty.png" target="_blank" rel="noopener noreferrer">
 <img style="margin-left: 10px; margin-bottom: 10px; float:right;" 
 alt="Image of the auto management application"
 width="300px" src="03-Autos-Empty.png" border="2"/>
@@ -291,13 +291,13 @@ Record inserted
 <p>
 Once there are records in the database they should be shown below the 
 form to add a new entry.
-<center>
-<a href="04-Add-Success.png" target="_blank">
+<div style="text-align:center">
+<a href="04-Add-Success.png" target="_blank" rel="noopener noreferrer">
 <img 
 alt="Image of the auto management application"
 width="300px" src="04-Add-Success.png" border="2"/>
 </a>
-</center>
+</div>
 </p>
 <h1>What To Hand In</h1>
 <p>
@@ -351,17 +351,17 @@ automobile.
 The data in your screen shot(s) should not be the same as 
 these examples.
 <p>
-<center>
+<div style="text-align:center">
 <img alt="Image of the autos table" style="width: 95%"
 src="05-Auto-Table.png" border="2"/>
-</center>
+</div>
 </p>
 <p>
-Provided by: <a href="http://www.wa4e.com/" target="_blank">
+Provided by: <a href="http://www.wa4e.com/" target="_blank" rel="noopener noreferrer">
 www.wa4e.com</a> <br/>
 </p>
-<center>
+<div style="text-align:center">
 Copyright Creative Commons Attribution 3.0 - Charles R. Severance
-</center>
+</div>
 </body>
 </html>
