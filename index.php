@@ -13,7 +13,7 @@ require "nav.php";
 ?>
 <div id="container">
 <div style="margin-left: 10px; float:right">
-<iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?rel=0" frameborder="0" allowfullscreen title="Web Applications for Everybody course introduction"></iframe>
+<iframe width="400" height="225" src="https://www.youtube.com/embed/tuXySrvw8TE?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX&rel=0" frameborder="0" allowfullscreen title="Web Applications for Everybody course introduction"></iframe>
 </div>
 <h1>Web Applications for Everybody</h1>
 <?php
