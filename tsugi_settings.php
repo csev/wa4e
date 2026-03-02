@@ -5,8 +5,6 @@ $CFG->ownername = "WA4E";
 $CFG->servicename = "WA4E";
 $CFG->owneremail = "drchuck@learnxp.com";
 
-$CFG->launcherror = $CFG->apphome . "/launcherror";
-
 $CFG->providekeys=true;
 $CFG->autoapprovekeys='/.+@.+\\.edu/';
 
@@ -19,8 +17,6 @@ $CFG->lessons = $CFG->dirroot.'/../lessons.json';
 $CFG->youtube_playlist = 'PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX';
 
 $CFG->tdiscus = $CFG->apphome . '/mod/tdiscus/';
-
-$CFG->launcherror = $CFG->apphome . "/launcherror";
 
 $buildmenu = $CFG->dirroot.'/../buildmenu.php';
 if ( file_exists($buildmenu) ) {
