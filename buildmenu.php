@@ -28,7 +28,7 @@ function buildMenu() {
         $submenu->addLink('Announcements', $R.'announcements');
         $submenu->addLink('Notifications', $R.'notifications');
         $submenu->addLink('Grades', $R.'grades');
-        // $submenu->addLink('Badges', $R.'badges');
+        $submenu->addLink('Badges', $R.'badges');
         $submenu->addLink('Pages', $R.'pages');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
