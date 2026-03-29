@@ -54,7 +54,7 @@ function buildMenu() {
             $set->addRight(htmlentities($_SESSION['displayname']), $submenu);
         }
     } else {
-        $set->addRight('Login', $T.'login.php');
+        $set->addRight('Login', $R.'login');
     }
 
     $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');

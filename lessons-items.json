@@ -1,0 +1,2856 @@
+{
+    "title": "Web Applications for Everybody (WA4E)",
+    "description": "Hello and welcome to my site where you can work through these modules and learn to develop PHP-based database-backed web applications.",
+    "count": true,
+    "required_modules": [
+        "https://github.com/tsugitools/gift",
+        "https://github.com/tsugitools/youtube",
+        "https://github.com/tsugitools/peer-grade",
+        "https://github.com/tsugitools/tdiscus"
+    ],
+    "badges": [
+        {
+            "title": "Enrolled in Web Applications for Everybody (WA4E)",
+            "image": "00_hello_world.png",
+            "threshold": "0.0",
+            "assignments": []
+        },
+        {
+            "title": "Structured Query Language / MySQL",
+            "image": "01_sql.png",
+            "threshold": "0.6",
+            "assignments": [
+                "install",
+                "mysql_01_single",
+                "mysql_02_tracks",
+                "mysql_03_many_peer"
+            ]
+        },
+        {
+            "title": "Building Database Backed Web Sites with PHP",
+            "image": "02_php.png",
+            "threshold": "1.0",
+            "assignments": [
+                "php_01_rrc",
+                "php_02_hash",
+                "php_03_guess",
+                "php_04_rps",
+                "php_05_autosdb"
+            ]
+        },
+        {
+            "title": "Building a CRUD Application with PHP",
+            "image": "02_crud.png",
+            "threshold": "1.0",
+            "assignments": [
+                "php_06_crud"
+            ]
+        },
+        {
+            "title": "JavaScript",
+            "image": "03_javascript.png",
+            "threshold": "1.0",
+            "assignments": [
+                "php_07_profile"
+            ]
+        },
+        {
+            "title": "JQuery, and JSON",
+            "image": "04_jquery.png",
+            "threshold": "1.0",
+            "assignments": [
+                "php_07_profile",
+                "php_08_position",
+                "php_09_education"
+            ]
+        },
+        {
+            "title": "Introductory Handlebars",
+            "threshold": "1.0",
+            "image": "04_handlebars.png",
+            "assignments": [
+                "php_10_handlebars_peer"
+            ]
+        },
+        {
+            "title": "PHP-Intro Community Master",
+            "image": "05_community.png",
+            "threshold": "0.8",
+            "assignments": [
+                "php_01_php_peer",
+                "php_04_rps_peer",
+                "php_05_autosdb_peer",
+                "php_05_autosess",
+                "php_05_autosess_peer",
+                "php_06_crud_peer",
+                "php_07_profile_peer",
+                "php_08_position_peer",
+                "php_09_peer"
+            ]
+        },
+        {
+            "title": "Web Applications with PHP, SQL, JavaScript, and JQuery",
+            "image": "badge_wa4e.png",
+            "threshold": "0.6",
+            "completion": true,
+            "assignments": [
+                "html_01",
+                "mysql_01_single",
+                "mysql_02_tracks",
+                "mysql_03_many_peer",
+                "php_01_rrc",
+                "php_02_hash",
+                "php_03_guess",
+                "php_04_rps",
+                "php_05_autosdb",
+                "php_06_crud",
+                "php_07_profile",
+                "php_08_position",
+                "php_09_education"
+            ]
+        }
+    ],
+    "discussions": [
+        {
+            "title": "Welcome to WA4E",
+            "launch": "mod/tdiscus/",
+            "resource_link_id": "discussion_welcome"
+        }
+    ],
+    "modules": [
+        {
+            "title": "Introduction to Dynamic Web Content",
+            "anchor": "rrc",
+            "icon": "fa-clone",
+            "description": "We look at the basic structure of a web application and how a web browser interacts with a web server.   We explore the Request-Response Cycle that is the basis of the Hypertext Transfer Protocol (HTTP).",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "Web-01-HTTP.ppt",
+                    "href": "{apphome}/lectures/Web-01-HTTP.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Web Applications and the Request/Response Cycle",
+                    "youtube": "6Vyn7qhV2xs"
+                },
+                {
+                    "type": "video",
+                    "title": "Understanding Browser Developer Mode",
+                    "youtube": "kL3hYPVnhjQ"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Hypertext Transfer Protocol",
+                    "href": "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 1 - Brief History of the Internet",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-1-brief-history-of-the-internet/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 3 - Web Servers",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-3-web-servers/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 4 - Network Basics",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-4-network-basics/"
+                },
+                {
+                    "type": "reference",
+                    "title": "What Happens When You Click a Link? - Computerphile",
+                    "href": "https://www.youtube.com/watch?v=keo0dglCj7I"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Introduction to Dynamic Web Content",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_01_http"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Request-Response Cycle",
+                    "launch": "mod/gift/?quiz=01-Request-Response.txt",
+                    "resource_link_id": "php_01_rrc_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: Request-Response Cycle",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_01_rrc",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "http_headers.php"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HyperText Markup Language (HTML)",
+            "anchor": "html",
+            "icon": "fa-html5",
+            "description": "We briefly cover the basics of the HyperText Markup Language (HTML) that is the markup for web pages.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "Web-02-HTML.ppt",
+                    "href": "{apphome}/lectures/Web-02-HTML.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "HTML - HyperText Markup Language (Part 1)",
+                    "youtube": "ZV9SG8unDYc"
+                },
+                {
+                    "type": "video",
+                    "title": "HTML - HyperText Markup Language (Part 2)",
+                    "youtube": "tibwt3mVINM"
+                },
+                {
+                    "type": "video",
+                    "title": "HTML - Sample Code Walkthrough",
+                    "youtube": "b99aHsUi7Zk"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapters 7-11",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-7-markup-languages/"
+                },
+                {
+                    "type": "reference",
+                    "title": "HTML Sample Code (Browse)",
+                    "href": "{apphome}/code/html/index.htm"
+                },
+                {
+                    "type": "reference",
+                    "title": "HTML Sample Code (Download)",
+                    "href": "{apphome}/code/html.zip"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/html/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "HyperText Markup Language (HTML)",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_02_html"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: HTML",
+                    "launch": "mod/gift/?quiz=00-HTML.txt",
+                    "resource_link_id": "php_01_html_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: HyperText Markup Language (HTML)",
+                    "launch": "tools/web-autograde/",
+                    "resource_link_id": "html_01",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "a01.php"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Cascading Style Sheets (CSS)",
+            "anchor": "css",
+            "icon": "fa-css3",
+            "description": "We briefly cover the basics of cascading Style Sheets (CSS) that allow us to style the markup for web pages.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "Web-03-CSS.ppt",
+                    "href": "{apphome}/lectures/Web-03-CSS.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "CSS - Cascading Style Sheets - (Part 1)",
+                    "youtube": "v6lfSzF8MuI"
+                },
+                {
+                    "type": "video",
+                    "title": "CSS - Cascading Style Sheets - (Part 2)",
+                    "youtube": "hEY4V_OWZAU"
+                },
+                {
+                    "type": "video",
+                    "title": "CSS - Cascading Style Sheets - (Part 3)",
+                    "youtube": "aA587wqx0B0"
+                },
+                {
+                    "type": "video",
+                    "title": "CSS - Sample Code Walkthrough (Part 1)",
+                    "youtube": "SLiS4oQahuk"
+                },
+                {
+                    "type": "video",
+                    "title": "CSS - Sample Code Walkthrough (Part 2)",
+                    "youtube": "pzw7JnPCGdo"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapters 19-22",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-19-rule-structure/"
+                },
+                {
+                    "type": "reference",
+                    "title": "CSS Sample Code (Browse)",
+                    "href": "{apphome}/code/css/index.htm"
+                },
+                {
+                    "type": "reference",
+                    "title": "CSS Sample Code (Download)",
+                    "href": "{apphome}/code/css.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Web Developer Plugin by Chris Pedrick",
+                    "href": "https://chrispederick.com/"
+                },
+                {
+                    "type": "reference",
+                    "title": "CSS Cheat Sheet by Leslie Frank",
+                    "href": "http://www.lesliefranke.com/files/reference/csscheatsheet.html"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/css/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Cascading Style Sheets (CSS)",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_03_css"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: CSS",
+                    "launch": "mod/gift/?quiz=00-CSS.txt",
+                    "resource_link_id": "php_01_css_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer Graded: Cascading Style Sheets (CSS)",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "css",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Cascading Style Sheets",
+                                "description": "In this assignment you will develop a Cascading Style Sheet (CSS) to control, the look, feel, and layout of some provide HTML content.",
+                                "grading": "This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/css/",
+                                "parts": [
+                                    {
+                                        "title": "Image (JPG or PNG) of your index.htm with the styling applied",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "The source code of your blocks.css file",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image (JPG or PNG) of your blocks.css passing the W3 CSS validator",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image (JPG or PNG) of your browser viewing www.brainyquote.com with all styles turned off",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image (JPG or PNG) of your browser at www.brainyquote.com inspecting the navigation element to find its background color",
+                                        "type": "image"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Installing PHP and SQL",
+            "anchor": "install",
+            "icon": "fa-clone",
+            "description": "The first task is to work through the installation steps including installing a text editor, installing MAMP or XAMPP (or equivalent), creating a MySql Database, and writing a PHP program.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Installing MAMP on Macintosh for PHP/MySQL",
+                    "youtube": "CwwF801i5_4"
+                },
+                {
+                    "type": "video",
+                    "title": "Installing MAMP on Windows-10 for PHP/MySQL",
+                    "youtube": "0P6DEUJaVTc"
+                },
+                {
+                    "type": "video",
+                    "title": "Installing XAMPP on Windows for PHP/MySQL",
+                    "youtube": "X0_pthMQPMM"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Installation Handout",
+                    "href": "{apphome}/install.php"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 3 - Web Servers",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-3-web-servers/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Bonus: Brian Behlendorf on the Apache Software Foundation",
+                    "href": "https://www.youtube.com/watch?v=6kRMlfIBMCY"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/install/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Installing PHP and SQL",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_04_install"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer Graded: Installation Screen Shots",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "install",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Peer Graded: Installing PHP/MySQL",
+                                "description": "This assignment is designed to show that you have successfully installed a PHP/MySQL environment.",
+                                "grading": "This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/install/",
+                                "parts": [
+                                    {
+                                        "title": "Image (JPG or PNG) of PHPMyAdmin with the results of your SELECT statement (Maximium 1MB per file)",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image (JPG or PNG) of your php.ini display_errors setting (Maximium 1MB per file)",
+                                        "type": "image"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Introduction to PHP",
+            "anchor": "php-intro",
+            "icon": "fa-bell",
+            "description": "We begin learning PHP.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-01-Overview.ppt",
+                    "href": "{apphome}/lectures/PHP-01-Overview.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Language Overview - Part 1",
+                    "youtube": "srw_5veGPyg"
+                },
+                {
+                    "type": "video",
+                    "title": "Bonus: Rasmus Lerdorf Interview on Creating PHP",
+                    "youtube": "YIGRXEzjE6c"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Language - Variables and Constants - Part 2",
+                    "youtube": "uL6WzC7chE0"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Language - Expressions - Part 3",
+                    "youtube": "r6UdI22AOUM"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Language - Control Structures - Part 4",
+                    "youtube": "JrssSWJ5JzQ"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapters 23-31",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-23-server-side-and-client-side-scripting/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/php/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Introduction to PHP",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_05_intro"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: PHP",
+                    "launch": "mod/gift/?quiz=02-PHP.txt",
+                    "resource_link_id": "php_02_php_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer graded: Getting Started with PHP",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_01_php_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Getting Started with PHP",
+                                "description": "Your application will be a single index.php file with some elements in HTML and some elements in PHP. This also verifies that you can do basic HTML and know how to use the 'pre' tag as well as understand how to switch between PHP and HTML when writing a PHP script.  Make sure to save your screen shots JPG or PNG files and keep them less than 1MB.  You must include the URL bar in all of your screen shots and the software must be running in your PHP server (i.e. file:// urls will not be accepted)",
+                                "grading": "Please do your reviews of the other students submissions carefully.  The actual points you award are less important than useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+                                "assignment": "{apphome}/assn/php/",
+                                "solution": "{apphome}/solutions/php/",
+                                "parts": [
+                                    {
+                                        "title": "Image of your application showing the URL bar and the rest of the output.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image of your application showing the URL bar and output of fail.php",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Image of your application showing the URL bar output of check.php",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of your index.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PHP Arrays",
+            "anchor": "php-arrays",
+            "icon": "fa-bell",
+            "description": "We look at unique aspects of arrays in the PHP language.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-02-Arrays.ppt",
+                    "href": "{apphome}/lectures/PHP-02-Arrays.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Arrays - Part 1",
+                    "youtube": "bfXmkxSzdms"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Arrays - Part 2",
+                    "youtube": "1XkdPLvtJ3Y"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample Array Code",
+                    "href": "{apphome}/code/arrays/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample Array Code (Download)",
+                    "href": "{apphome}/code/arrays.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapters 27, 28, 31",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Using NGROK and the Autograder (Macintosh)",
+                    "href": "{apphome}/md/ngrok_mac.md"
+                },
+                {
+                    "type": "reference",
+                    "title": "Using NGROK and the Autograder (Windows-10)",
+                    "href": "{apphome}/md/ngrok_win.md",
+                    "oldhref": "https://www.youtube.com/watch?v=L4M58YLwXVI"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/guess/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/code/arrays/guess.php?guess=12"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Arrays",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_06_arrays"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: PHP Arrays",
+                    "launch": "mod/gift/?quiz=02-Arrays.txt",
+                    "resource_link_id": "php_02_arrays_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-grader: Guessing Game",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_03_guess",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "guess.php"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PHP Functions",
+            "anchor": "php-fuctions",
+            "icon": "fa-bell",
+            "description": "We look at functions in PHP language.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-03-Functions.ppt",
+                    "href": "{apphome}/lectures/PHP-03-Functions.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Functions - Part 1",
+                    "youtube": "qgVaMIXF5EQ"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Functions - Part 2 - Scope and Modularity",
+                    "youtube": "1Msp1AGz_NU"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 32 - Functions",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-32-functions/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Bruce Schnier: Building Cryptographic Systems",
+                    "href": "https://www.youtube.com/watch?v=opT6pIfyGUs"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/crack/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/crack/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Functions",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_07_functions"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Functions",
+                    "launch": "mod/gift/?quiz=03-Functions.txt",
+                    "resource_link_id": "php_03_func_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer Graded: Reversing an MD5 Hash",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_02_hash",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Reversing an MD5 hash (password cracking)",
+                                "description": "In this assignment we build code to reverse an MD5 hash using a brute force technique where we simply 'forward hash' all possible combinations of characters in strings. This would be similar to a situation where an e-commerce site stored hashed passwords in its database and we somehow have gotten our hands on the database contents and we want to take the hashed password and determine the actual plaintext passwords.",
+                                "grading": "Please review carefully.  The actual points are less important and useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+                                "assignment": "{apphome}/assn/crack/",
+                                "solution": "{apphome}/solutions/crack/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot of one of the MD5's from the list from the specification that you can successfully crack.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "One of the MD5's in the list from the specification does not crack.  Figure out which MD5 does not crack and show your application not finding the PIN for the MD5.  Include the URL of your page in the screen shot so we can see your GET parameter.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of your index.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PHP Forms",
+            "anchor": "php-forms",
+            "icon": "fa-bell",
+            "description": "We look at how HTML forms are created and processed in the PHP language.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-04-Forms.ppt",
+                    "href": "{apphome}/lectures/PHP-04-Forms.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms (Part 1)",
+                    "youtube": "zVd5CS40lrU"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms - GET and POST (Part 2)",
+                    "youtube": "V1nC77E2QHQ"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms - Input Types (Part 3)",
+                    "youtube": "yEh5IrpEesc"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms - HTML Injection and Validation (Part 4) ",
+                    "youtube": "C5blJ7GtwYY"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms - MVC - (Part 5) ",
+                    "youtube": "VcdnOAFJ92w"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms Code Walkthrough - (Part 1) ",
+                    "youtube": "x6LkjVhpr2Y"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms Code Walkthrough - (Part 2) ",
+                    "youtube": "nft7bs4oYCw"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Forms Code Walkthrough - (Part 3) ",
+                    "youtube": "NKsvNYYwHPg"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample Forms Code (Download)",
+                    "href": "{apphome}/code/forms.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample Forms Code",
+                    "href": "{apphome}/code/forms/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 14 - Forms",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-14-forms/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 27 - Data Storage",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/rps/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/rps"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Forms",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_08_forms"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Forms",
+                    "launch": "mod/gift/?quiz=03-Forms.txt",
+                    "resource_link_id": "php_03_forms_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: Rock Paper Scissors",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_04_rps",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "rps.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer grader: Rock Paper Scissors",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_04_rps_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Login and Rock Paper Scissors",
+                                "description": "In this assignment we will create a two page web application to play rock, paper, scissors (https://en.wikipedia.org/wiki/Rock-paper-scissors). We will only allow logged in users to play the game.",
+                                "grading": "Please review carefully.  The most important aspect of peer-grading is useful comments about what might be wrong and need fixing.  You cannot re-submit your assignment unless the instructor allows you to resubmit.",
+                                "assignment": "{apphome}/assn/rps/",
+                                "solution": "{apphome}/solutions/rps/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (with URL) of your login.php rejecting an incorrect password",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (with URL) of your game.php correctly showing the 'Name parameter missing' error",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (with URL) of your game.php doing a normal play with the computer making a choice other than Rock",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (with URL) of your game.php doing a correct test run",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of login.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of game.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Introduction to Structured Query Language (SQL)",
+            "anchor": "sql-intro",
+            "icon": "fa-database",
+            "description": "We learn about single table queries and the basic syntax of the SQL language.",
+            "handout": "lectures/SQL-01-MySQL-Handout.doc",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "SQL-01-MySQL.ppt",
+                    "href": "{apphome}/lectures/SQL-01-MySQL.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Single Table SQL - Part 1",
+                    "youtube": "FXtT2RRmrdo"
+                },
+                {
+                    "type": "video",
+                    "title": "Single Table SQL - Part 2",
+                    "youtube": "9608FG9_XWM"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "SQL Handout",
+                    "href": "{apphome}/lectures/SQL-01-MySQL-Handout.txt"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 37 - Database Types",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-37-database-types/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 39 - MySQL Data Types",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-39-mysql-data-types/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 41 - MySQL CRUD Action",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-41-mysql-crud-action/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Bonus: Elizabeth Fong - Creating the SQL Database Standards",
+                    "href": "https://www.youtube.com/watch?v=rLUm3vst87g"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Introduction to Structured Query Language (SQL)",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_09_sql"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Queries",
+                    "launch": "mod/gift/?quiz=06-SQL-Queries.txt",
+                    "resource_link_id": "php_06_sqls_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: Single-table SQL (Users)",
+                    "launch": "tools/sql/",
+                    "resource_link_id": "mysql_01_single",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "single_mysql.php"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Database Design",
+            "anchor": "sql-design",
+            "icon": "fa-database",
+            "description": "Covering database design with multiple tables, foreign keys, and the JOIN operation..",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "SQL-02-MySQL-Design.ppt",
+                    "href": "{apphome}/lectures/SQL-02-MySQL-Design.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Data Modeling - Building a Data Model (Part 1)",
+                    "youtube": "qFJa1bB9wrs"
+                },
+                {
+                    "type": "video",
+                    "title": "Data Modeling - Representing Relationships (Part 2)",
+                    "youtube": "I17pyb1e9YA"
+                },
+                {
+                    "type": "video",
+                    "title": "Data Modeling - Relationships in SQL (Part 3)",
+                    "youtube": "CBVZGsmd5qw"
+                },
+                {
+                    "type": "video",
+                    "title": "Data Modeling - Using Join (Part 4)",
+                    "youtube": "RxqgQPkqoUE"
+                },
+                {
+                    "type": "video",
+                    "title": "Data Modeling - Many-To-Many (Part 5)",
+                    "youtube": "Ymlu1tK9qK0"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Multi-Table SQL Handout",
+                    "href": "{apphome}/lectures/SQL-02-MySQL-Design-Handout.txt"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 38 - Data relationships",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-38-data-relationships/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 40 - Normalization",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-40-normalization/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 42 - Advanced Queries",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-42-advanced-queries/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/sql-tracks"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Database Design",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_10_model"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Database Models",
+                    "launch": "mod/gift/?quiz=07-Database-Models.txt",
+                    "resource_link_id": "php_07_models_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer Grader: Multi-Table Databases (Tracks)",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "mysql_03_many_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Building a Multi-Table Database With Relationships",
+                                "description": "In this assignment, you will build a copy of the Music database covered in lecture.  You will populate your database with tracks, artists and albums that are different from the ones used in class.  You must include three artists, five albums, and 20 tracks in your data.  Your tables need to be normalized as described in lecture.",
+                                "grading": "This is a relatively simple assignment.  Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/sql-tracks/",
+                                "parts": [
+                                    {
+                                        "title": "Screen shot (JPG or PNG) of data in the Track table",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Screen shot (JPG or PNG) of all the data joined up sorted in ascending order by the album title",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Screen shot (JPG or PNG) of all of the genres for a particular artist.  Hint - use JOIN, DISTINCT and WHERE",
+                                        "type": "image"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: Many-to-Many Databases",
+                    "launch": "tools/sql/",
+                    "resource_link_id": "mysql_02_tracks",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "many_many_mysql.php"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PHP Objects",
+            "anchor": "php-objects",
+            "icon": "fa-bell",
+            "description": "We look at the object oriented pattern in the PHP language.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-05-Objects.ppt",
+                    "href": "{apphome}/lectures/PHP-05-Objects.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Objects - Part 1",
+                    "youtube": "9-Ch77JBKFQ"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Objects - Defintition - Part 2",
+                    "youtube": "C5uu-8fakN0"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Objects - Life Cycle - Part 3",
+                    "youtube": "kWYuUfyR5rc"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Objects - Inheritance - Part 4",
+                    "youtube": "zU6uil50Mkg"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/objects.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 33 - Objects and Classes",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-33-objects-and-classes/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Objects",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_11_objects"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: PHP Objects",
+                    "launch": "mod/gift/?quiz=08-PHP-Objects.txt",
+                    "resource_link_id": "php_08_objects_quiz"
+                }
+            ]
+        },
+        {
+            "title": "PHP and MySQL",
+            "anchor": "php-mysql",
+            "icon": "fa-bell",
+            "description": "We look at how we connect to a MySQL using the Portable Data Objects (PDO) library and issue SQL commands in the the PHP language.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-06-MySQL-PDO.ppt",
+                    "href": "{apphome}/lectures/PHP-06-MySQL-PDO.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP MySQL and PDO - Part 1",
+                    "youtube": "cmKxlLCL2-s"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP MySQL and PDO - Part 2",
+                    "youtube": "M_Ai2gzBmWY"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP MySQL and PDO - Part 3",
+                    "youtube": "L4atUHiyPzA"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP MySQL and PDO - Part 4",
+                    "youtube": "FxoIOSZzlmk"
+                },
+                {
+                    "type": "video",
+                    "title": "PDO Code Walkthrough - Part 1",
+                    "youtube": "owGDQA54qt8"
+                },
+                {
+                    "type": "video",
+                    "title": "PDO Code Walkthrough - Part 2",
+                    "youtube": "2KkzRk0aNcc"
+                },
+                {
+                    "type": "video",
+                    "title": "PDO Code Walkthrough - Part 3",
+                    "youtube": "sRIGf52-k-Q"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/autosdb/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/autosdb"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP and MySQL",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_12_pdo"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: PHP and MySQL",
+                    "launch": "mod/gift/?quiz=08-PDO.txt",
+                    "resource_link_id": "php_08_pdo_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Autograder: Autos Database",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_05_autosdb",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "autosdb.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer graded: Autos Database",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_05_autosdb_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Automobiles and Databases",
+                                "description": "In this assignment you will build a web based application to track data about automobiles and store the data in a MySQL database.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/autosdb/",
+                                "solution": "{apphome}/solutions/autosdb/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@)",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (with URL) of your autos.php showing 'Name parameter missing'",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your autos.php with three vehicles in the list.  At least one of the vehicles must have '<b>' in its title and it must be shown properly (i.e. the title should not be bold)",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your autos.php showing the error message for a non-numeric year",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your autos database table in a database program with at least three vehicles",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of login.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of autos.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PHP Cookies and Sessions",
+            "anchor": "php-cookies",
+            "icon": "fa-bell",
+            "description": "We look at how PHP uses cookies and manages session data.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-07-Cookies-Sessions.ppt",
+                    "href": "{apphome}/lectures/PHP-07-Cookies-Sessions.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Cookies Part 1",
+                    "youtube": "WvGPeF-qHHQ"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Sessions Part 2",
+                    "youtube": "DbHZ5THxt4s"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Sessions without Cookies - Part 3",
+                    "youtube": "syGzIkBLBGs"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Cookies Code Walkthrough",
+                    "youtube": "fSDWT4tKJ4I"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/sessions.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 27 - Data Storage",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Cookies and Sessions",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_13_cookies"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Cookies and Sessions",
+                    "launch": "mod/gift/?quiz=05-Session.txt",
+                    "resource_link_id": "php_05_session_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: Cookies and Session",
+                    "launch": "tools/cookies/",
+                    "resource_link_id": "php_05_cookies"
+                }
+            ]
+        },
+        {
+            "title": "PHP Routing, Redirect and Authentication",
+            "anchor": "php-sessions",
+            "icon": "fa-bell",
+            "description": "We look at how PHP avoids double posting data, how flash messages are implemented, and how we use a session to log in users in web applications.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-08-POST-Redirect-Authn.ppt",
+                    "href": "{apphome}/lectures/PHP-08-POST-Redirect-Authn.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "PHP HTTP Redirects - Part 1",
+                    "youtube": "1T6etywegfQ"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP Post / Redirect - Part 2",
+                    "youtube": "bIkqNHyj25w"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP - Flash Messages / Authentication - Part 3",
+                    "youtube": "43Sc0s70oTU"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP - Routing Code Walkthrough - Part 1",
+                    "youtube": "LIP8L-oPIMk"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP - Routing Code Walkthrough - Part 2",
+                    "youtube": "I-RPKB7lvpM"
+                },
+                {
+                    "type": "video",
+                    "title": "PHP - Routing Code Walkthrough - Part 3",
+                    "youtube": "HPEWTF0Baj8"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/route.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 27 - Data Storage",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-27-data-storage/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/autosess/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/autosess"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "PHP Routing, Redirect and Authentication",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_14_redirect"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: Routing and Redirect",
+                    "launch": "mod/gift/?quiz=05-Routing.txt",
+                    "resource_link_id": "php_05_route_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: Autos with Post-Redirect",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_05_autosess",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "autosess.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer-Grader: Autos with Post-Redirect",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_05_autosess_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Automobiles, Sessions, and POST-Redirect",
+                                "description": "In this assignment you will expand a web based application to track data about automobiles and store the data in a MySQL database.  All interactions will follow the POST-Redirect pattern where appropriate.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/autosess/",
+                                "solution": "{apphome}/solutions/autosess/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your login.php rejecting an account without an at-sign (@).  You must also include the developer console network tab showing both the POST and GET.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your error log showing correct messages for both a successful and failed login attempt.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your view.php with three vehicles in the list.  At least one of the vehicles must have '<b>' in its title and it must be shown properly (i.e. the title should not be bold)",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing the error message for a non-numeric year. You must also include the developer console network tab showing both the POST and GET.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of login.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of view.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of add.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Building a CRUD Application",
+            "anchor": "php-crud",
+            "icon": "fa-bell",
+            "description": "Now we build our first 'complete' application that has multiple screens to Create, Read, Update and Delete (CRUD) our data.  This brings all the previous concepts together and will form the basis for all later web applications.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "PHP-09-CRUD.ppt",
+                    "href": "{apphome}/lectures/PHP-09-CRUD.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Building a CRUD Application",
+                    "youtube": "kkJwbRaVKV4"
+                },
+                {
+                    "type": "video",
+                    "title": "Code Walkthrough - CRUD Application",
+                    "youtube": "AHjb2p7hyhc"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/autoscrud/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/autoscrud"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Building a CRUD Application",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_15_crud"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: Autos CRUD",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_06_crud",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "autoscrud.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer-Grader: Autos CRUD",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_06_crud_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Automobiles CRUD Database",
+                                "description": "In this assignment you will expand a web based application to Create, Read, Update, and Delete (C.R.U.D.) data in a MySQL database.  All interactions will follow the POST-Redirect and Flash Message patterns where appropriate.  All generated HTML must be properly protected using htmlentities().",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/autoscrud",
+                                "solution": "{apphome}/solutions/autoscrud",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your login.php rejecting an incorrect password showing the developer console that proves you did a POST-Redirect",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (with URL) of your add.php showing ACCESS DENIED",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your index.php with three entries in the list",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing a validation error",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) showing three rows of data in your MySQL administration interface",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your edit.php showing the error message for invalid data",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your index.php showing a successful delete.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of index.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of edit.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Basic JavaScript",
+            "anchor": "javascript",
+            "icon": "fa-code",
+            "description": "We take a quick look at the JavaScript language.  We assume that you already know PHP - so it is a pretty quick introduction focusing on what is <b>different</b> about JavaScript.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "JS-01-JavaScript.ppt",
+                    "href": "{apphome}/lectures/JS-01-JavaScript.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "JavaScript - Part 1",
+                    "youtube": "AyIllqHSGoI"
+                },
+                {
+                    "type": "video",
+                    "title": "JavaScript - Part 2",
+                    "youtube": "E5jTKLXz9OE"
+                },
+                {
+                    "type": "video",
+                    "title": "JavaScript - Part 3",
+                    "youtube": "jQQ88xzuBTU"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/javascript.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Code Walkthrough: Profiles and JavaScript",
+                    "href": "https://www.youtube.com/watch?v=yD6q94ibv3Q"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 34 - JavaScript Syntax",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-34-javascript-syntax/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 35 - JavaScript Examples",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-35-javascript-examples/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Bonus: Building JavaScript with with Brendan Eich",
+                    "href": "https://www.youtube.com/watch?v=IPxQ9kEaF8c"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/res-profile/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/res-profile/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Basic JavaScript",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_16_javascript"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: JavaScript",
+                    "launch": "mod/gift/?quiz=09-JavaScript.txt",
+                    "resource_link_id": "js_09_javascript_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: JavaScript / Profiles",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_07_profile",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "res-profile.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer-Grader: JavaScript / Profiles",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_07_profile_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Profile Database",
+                                "description": "In this assignment you will write a simple resume database that support Create, Read, Update, and Delete operations (CRUD).  You will also move user information into its own table and link entries between two tables using foreign keys.  You will also add some in-browser JavaScript data validation.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/res-profile/",
+                                "solution": "{apphome}/solutions/res-profile/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your index.php with the user logged in three resumes  in the list.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your edit.php showing the error message for a bad email address",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your delete.php showing that you are showing the confirmation screen before the delete is being done.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your Profile database table showing three rows",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of index.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of login.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of edit.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of delete.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "JavaScript Objects",
+            "anchor": "js-oo",
+            "icon": "fa-code",
+            "description": "We do a quick look at how the JavaScript language supports the Object-Oriented pattern.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "JS-02-JavaScript-Objects.ppt",
+                    "href": "{apphome}/lectures/JS-02-JavaScript-Objects.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "JavaScript Objects",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_17_oojs"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: JavaScript Objects",
+                    "launch": "mod/gift/?quiz=09-JavaScript-Objects.txt",
+                    "resource_link_id": "js_09_js_objects_quiz"
+                }
+            ]
+        },
+        {
+            "title": "jQuery",
+            "anchor": "jquery",
+            "icon": "fa-briefcase",
+            "description": "This is a brief introduction to the JQuery library which is widely used to do in-browser manipulation of the Document Object Model(DOM) and event handling.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "JS-03-JQuery.ppt",
+                    "href": "{apphome}/lectures/JS-03-JQuery.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "JQuery - Part 1",
+                    "youtube": "vCdsSaylTDM"
+                },
+                {
+                    "type": "video",
+                    "title": "JQuery - Part 2",
+                    "youtube": "auVow0kWZCg"
+                },
+                {
+                    "type": "video",
+                    "title": "JQuery - Part 3",
+                    "youtube": "Cjrf7S-rsVk"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/jquery-01.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Code Walkthrough: Profiles, Positions and JQuery",
+                    "href": "https://www.youtube.com/watch?v=EVLluVD6dRo"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 36 - jQuery",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-36-jquery/"
+                },
+                {
+                    "type": "reference",
+                    "title": "Bonus: John Resig - Building JQuery",
+                    "href": "https://www.youtube.com/watch?v=B7Aut4OUuvs"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/res-position/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/res-position/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "jQuery",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_18_jquery"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Quiz: JQuery",
+                    "launch": "mod/gift/?quiz=10-JQuery.txt",
+                    "resource_link_id": "js_10_jquery_quiz"
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: Profiles, Positions and jQuery",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_08_position",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "res-position.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer-Grader: Profiles, Positions and jQuery",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_08_position_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Profiles, Positions and jQuery",
+                                "description": "In this assignment you will add a many-to-one relationship to represent how a Profile will reference multiple positions.  You will use jQuery to build a dynamic User Interface where position entries are added in the browser.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/res-position/",
+                                "solution": "{apphome}/solutions/res-position/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing two positions",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your edit.php showing one position modified, one position deleted and one new position",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your view.php showing the correct new positions after the edit is complete",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing the error message for a bad year",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your Postition database table showing at least three rows",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of add.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of view.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of edit.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "JSON - JavaScript Object Notation",
+            "anchor": "json",
+            "icon": "fa-briefcase",
+            "description": "In this section we look at JavaScript Object Notation (JSON).  JSON is commonly used as a syntax to exchange data between code running on the server (i.e. in PHP) and code running in the browser (JavaScript/JQuery).",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "JS-04-JSON.ppt",
+                    "href": "{apphome}/lectures/JS-04-JSON.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "JSON - JavaScript Object Notation - JSON",
+                    "youtube": "MUqGiqlmeGk"
+                },
+                {
+                    "type": "video",
+                    "title": "JSON and PHP - Part 2",
+                    "youtube": "FC-xk7RVUNU"
+                },
+                {
+                    "type": "video",
+                    "title": "JSON and CRUD - Part 3",
+                    "youtube": "ZL4HpKW16S4"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Bonus: Douglas Crockford - Discovering JSON",
+                    "href": "https://www.youtube.com/watch?v=kc8BAR7SHJI"
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code - JSON",
+                    "href": "{apphome}/code/json-01.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code - JSON Chat",
+                    "href": "{apphome}/code/json-02-chat.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code - JSON CRUD",
+                    "href": "{apphome}/code/json-03-crud.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Code Walkthrough: Profiles, Positions, Education and JSON",
+                    "href": "https://www.youtube.com/watch?v=LpFt1AMfF3E"
+                },
+                {
+                    "type": "reference",
+                    "title": "Book: Chapter 28 - Data Manipulation",
+                    "href": "https://milnepublishing.geneseo.edu/themissinglink/chapter/chapter-28-data-manipulation/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/res-education/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/res-education/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "JSON - JavaScript Object Notation",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_19_json"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Auto-Grader: Profiles, Positions, and Education",
+                    "launch": "tools/autograder/",
+                    "resource_link_id": "php_09_education",
+                    "custom": [
+                        {
+                            "key": "exercise",
+                            "value": "res-education.php"
+                        }
+                    ]
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer-Grader: Profiles, Positions, and Education",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_09_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Profiles, Positions, and Education",
+                                "description": "In this assignment you will extend our simple resume database to support Create, Read, Update, and Delete operations (CRUD) into a Education table that has a many-to-one relationship to our Profile table and a many-to-many relationship to an Institution table. We will add an JQuery autocomplete field to our user interface.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/res-education/",
+                                "solution": "{apphome}/solutions/res-education/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing one existing Education institution and one new education institution",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your edit.php showing one education entry modified, one education entry deleted and one new education entry",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your view.php showing the correct new education entry after the edit is complete",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your add.php showing the error message for a bad year",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your Education database table showing at least three rows",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot of your Institution database table showing at least one new row inserted when the institution name did not match an existing instutition",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of add.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of view.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code of edit.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    },
+                                    {
+                                        "title": "Source code any file in your application that you choose (i.e. util.php)",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Handlebars UI Templates",
+            "anchor": "handlebars",
+            "icon": "fa-bicycle",
+            "description": "In this section we look at moving the templates to build HTML fragments from the server (PHP) in to the browser (JavaScript) using the Handlebars library.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "JS-05-Handlebars.ppt",
+                    "href": "{apphome}/lectures/JS-05-Handlebars.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "References",
+                    "level": 2
+                },
+                {
+                    "type": "reference",
+                    "title": "Sample code",
+                    "href": "{apphome}/code/handlebars.zip"
+                },
+                {
+                    "type": "reference",
+                    "title": "Handlebars Web site",
+                    "href": "http://handlebarsjs.com/"
+                },
+                {
+                    "type": "header",
+                    "text": "Assignment",
+                    "level": 2
+                },
+                {
+                    "type": "assignment",
+                    "href": "{apphome}/assn/res-handlebars/"
+                },
+                {
+                    "type": "header",
+                    "text": "Solution",
+                    "level": 2
+                },
+                {
+                    "type": "solution",
+                    "href": "{apphome}/solutions/res-handlebars/"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Handlebars UI Templates",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_20_handlebars"
+                },
+                {
+                    "type": "header",
+                    "text": "Tools",
+                    "level": 2
+                },
+                {
+                    "type": "lti",
+                    "title": "Peer Graded: Handlebars",
+                    "launch": "mod/peer-grade/",
+                    "resource_link_id": "php_10_handlebars_peer",
+                    "custom": [
+                        {
+                            "key": "config",
+                            "json": {
+                                "title": "Handlebars",
+                                "description": "Using Handlebars.",
+                                "grading": "Don't take off points for little mistakes.  If they seem to have done the assignment give them full credit.   Feel free to make suggestions if there are small mistakes.  Please keep your comments positive and useful.  If you do not take grading seriously, the instructors may delete your response and you will lose points.",
+                                "assignment": "{apphome}/assn/res-handlebars/",
+                                "solution": "{apphome}/solutions/res-handlebars/",
+                                "parts": [
+                                    {
+                                        "title": "A screen shot (including the URL) of your form.php showing editing an existing entry showing the retrieval of the JSON to populate the form.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "A screen shot (including the URL) of your profile.php showing the retrieved JSON.",
+                                        "type": "image"
+                                    },
+                                    {
+                                        "title": "Source code of profile.php",
+                                        "type": "code",
+                                        "language": "php"
+                                    }
+                                ],
+                                "totalpoints": 10,
+                                "instructorpoints": 0,
+                                "peerpoints": 4,
+                                "assesspoints": 3,
+                                "minassess": 2,
+                                "maxassess": 6,
+                                "flag": true,
+                                "resubmit": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Advanced SQL",
+            "anchor": "sql-advanced",
+            "icon": "fa-database",
+            "description": "This section covers some advanced SQL topics.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "SQL-15-Advanced-SQL.ppt",
+                    "href": "{apphome}/lectures/SQL-15-Advanced-SQL.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "Advanced SQL - Part 1",
+                    "youtube": "XNeVf_TXdTA"
+                },
+                {
+                    "type": "video",
+                    "title": "Advanced SQL - Part 2",
+                    "youtube": "vDDAvd-6ovU"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "Advanced SQL",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_21_sql"
+                }
+            ]
+        },
+        {
+            "title": "SQL Transactions",
+            "anchor": "sql-transactions",
+            "icon": "fa-database",
+            "description": "This section covers SQL transactions.",
+            "items": [
+                {
+                    "type": "header",
+                    "text": "Slides",
+                    "level": 2
+                },
+                {
+                    "type": "slide",
+                    "title": "SQL-16-MySQL-Transactions.ppt",
+                    "href": "{apphome}/lectures/SQL-16-MySQL-Transactions.ppt"
+                },
+                {
+                    "type": "header",
+                    "text": "Videos",
+                    "level": 2
+                },
+                {
+                    "type": "video",
+                    "title": "SQL Transactions",
+                    "youtube": "8xpM8pm5yIo"
+                },
+                {
+                    "type": "header",
+                    "text": "Discussions",
+                    "level": 2
+                },
+                {
+                    "type": "discussion",
+                    "title": "SQL Transactions",
+                    "launch": "mod/tdiscus/",
+                    "resource_link_id": "discuss_21_transactions"
+                }
+            ]
+        }
+    ]
+}
