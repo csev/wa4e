@@ -18,10 +18,4 @@ $CFG->youtube_playlist = 'PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX';
 
 $CFG->tdiscus = $CFG->apphome . '/mod/tdiscus/';
 
-$buildmenu = $CFG->dirroot.'/../buildmenu.php';
-if ( file_exists($buildmenu) ) {
-    require_once $buildmenu;
-    $CFG->defaultmenu = buildMenu();
-}
-
 
