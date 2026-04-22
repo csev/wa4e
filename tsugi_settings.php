@@ -1,6 +1,7 @@
 <?php
 
 $CFG->context_title = "Web Applications for Everybody";
+$CFG->tool_folders = array("admin", "../tools", "../mod", "tool");
 $CFG->ownername = "WA4E";
 $CFG->servicename = "WA4E";
 $CFG->owneremail = "drchuck@learnxp.com";
