@@ -10,7 +10,6 @@ function buildMenu() {
     $set->setHome($CFG->servicename, $CFG->apphome);
     if ( isset($CFG->lessons) ) {
         $set->addLeft('Lessons', $R.'lessons');
-        if ( isset($CFG->tdiscus) && $CFG->tdiscus  ) $set->addLeft('Discussions', $R.'discussions');
     }
     // $set->addLeft('YouTube', 'https://www.youtube.com/playlist?list=PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX');
     if ( isset($_SESSION['id']) ) {
@@ -18,6 +17,8 @@ function buildMenu() {
     } else {
         $set->addLeft('Materials', $R.'materials');
     }
+    $set->addLeft('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
+    $set->addLeft('Courses', $R.'coursesredirect.php');
 
     if ( isset($_SESSION['id']) ) {
         $submenu = new \Tsugi\UI\Menu();
@@ -57,10 +58,16 @@ function buildMenu() {
         $set->addRight('Login', $R.'login');
     }
 
-    $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
-    $set->addRight('Courses', $R.'coursesredirect.php');
     if ( isset($_SESSION['id']) ) {
         $set->addRight('<tsugi-notifications api-url="'. htmlspecialchars($T . 'api/notifications.php') . '" notifications-view-url="'. htmlspecialchars($R . 'notifications') . '" announcements-view-url="'. htmlspecialchars($R . 'announcements') . '"></tsugi-notifications>', false);
+        if ( isset($CFG->tdiscus) && $CFG->tdiscus ) {
+            $set->addRight(
+                '<tsugi-discussions api-url="'. htmlspecialchars($R . 'discussions/json') . '" discussions-url="'. htmlspecialchars($R . 'discussions') . '"></tsugi-discussions>',
+                false,
+                true,
+                'hidden-xs tsugi-wc-nav-item'
+            );
+        }
     }
 
     return $set;
