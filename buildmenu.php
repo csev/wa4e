@@ -58,7 +58,7 @@ function buildMenu() {
     }
 
     $set->addRight('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
-    $set->addRight('Courses', 'https://online.dr-chuck.com', true, array('target' => '_self'));
+    $set->addRight('Courses', $R.'coursesredirect.php');
     if ( isset($_SESSION['id']) ) {
         $set->addRight('<tsugi-notifications api-url="'. htmlspecialchars($T . 'api/notifications.php') . '" notifications-view-url="'. htmlspecialchars($R . 'notifications') . '" announcements-view-url="'. htmlspecialchars($R . 'announcements') . '"></tsugi-notifications>', false);
     }
