@@ -17,6 +17,6 @@ $CFG->expire_tenant_days = 800; // Two years
 $CFG->lessons = $CFG->dirroot.'/../lessons-items.json';
 $CFG->youtube_playlist = 'PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX';
 
-$CFG->tdiscus = $CFG->apphome . '/mod/tdiscus/';
+$CFG->tdiscus = $CFG->wwwroot . '/tool/tdiscus/';
 
 

@@ -3,10 +3,7 @@
     "description": "Hello and welcome to my site where you can work through these modules and learn to develop PHP-based database-backed web applications.",
     "count": true,
     "required_modules": [
-        "https://github.com/tsugitools/gift",
-        "https://github.com/tsugitools/youtube",
-        "https://github.com/tsugitools/peer-grade",
-        "https://github.com/tsugitools/tdiscus"
+        "https://github.com/tsugitools/youtube"
     ],
     "badges": [
         {
@@ -113,7 +110,7 @@
     "discussions": [
         {
             "title": "Welcome to WA4E",
-            "launch": "mod/tdiscus/",
+            "launch": "tsugi/tool/tdiscus/",
             "resource_link_id": "discussion_welcome"
         }
     ],
@@ -187,7 +184,7 @@
                 {
                     "type": "discussion",
                     "title": "Introduction to Dynamic Web Content",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_01_http"
                 },
                 {
@@ -198,7 +195,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Request-Response Cycle",
-                    "launch": "mod/gift/?quiz=01-Request-Response.txt",
+                    "launch": "tsugi/tool/gift/?quiz=01-Request-Response.txt",
                     "resource_link_id": "php_01_rrc_quiz"
                 },
                 {
@@ -288,7 +285,7 @@
                 {
                     "type": "discussion",
                     "title": "HyperText Markup Language (HTML)",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_02_html"
                 },
                 {
@@ -299,7 +296,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: HTML",
-                    "launch": "mod/gift/?quiz=00-HTML.txt",
+                    "launch": "tsugi/tool/gift/?quiz=00-HTML.txt",
                     "resource_link_id": "php_01_html_quiz"
                 },
                 {
@@ -409,7 +406,7 @@
                 {
                     "type": "discussion",
                     "title": "Cascading Style Sheets (CSS)",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_03_css"
                 },
                 {
@@ -420,13 +417,13 @@
                 {
                     "type": "lti",
                     "title": "Quiz: CSS",
-                    "launch": "mod/gift/?quiz=00-CSS.txt",
+                    "launch": "tsugi/tool/gift/?quiz=00-CSS.txt",
                     "resource_link_id": "php_01_css_quiz"
                 },
                 {
                     "type": "lti",
                     "title": "Peer Graded: Cascading Style Sheets (CSS)",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "css",
                     "custom": [
                         {
@@ -535,7 +532,7 @@
                 {
                     "type": "discussion",
                     "title": "Installing PHP and SQL",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_04_install"
                 },
                 {
@@ -546,7 +543,7 @@
                 {
                     "type": "lti",
                     "title": "Peer Graded: Installation Screen Shots",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "install",
                     "custom": [
                         {
@@ -653,7 +650,7 @@
                 {
                     "type": "discussion",
                     "title": "Introduction to PHP",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_05_intro"
                 },
                 {
@@ -664,13 +661,13 @@
                 {
                     "type": "lti",
                     "title": "Quiz: PHP",
-                    "launch": "mod/gift/?quiz=02-PHP.txt",
+                    "launch": "tsugi/tool/gift/?quiz=02-PHP.txt",
                     "resource_link_id": "php_02_php_quiz"
                 },
                 {
                     "type": "lti",
                     "title": "Peer graded: Getting Started with PHP",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_01_php_peer",
                     "custom": [
                         {
@@ -802,7 +799,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Arrays",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_06_arrays"
                 },
                 {
@@ -813,7 +810,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: PHP Arrays",
-                    "launch": "mod/gift/?quiz=02-Arrays.txt",
+                    "launch": "tsugi/tool/gift/?quiz=02-Arrays.txt",
                     "resource_link_id": "php_02_arrays_quiz"
                 },
                 {
@@ -902,7 +899,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Functions",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_07_functions"
                 },
                 {
@@ -913,13 +910,13 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Functions",
-                    "launch": "mod/gift/?quiz=03-Functions.txt",
+                    "launch": "tsugi/tool/gift/?quiz=03-Functions.txt",
                     "resource_link_id": "php_03_func_quiz"
                 },
                 {
                     "type": "lti",
                     "title": "Peer Graded: Reversing an MD5 Hash",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_02_hash",
                     "custom": [
                         {
@@ -1071,7 +1068,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Forms",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_08_forms"
                 },
                 {
@@ -1082,7 +1079,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Forms",
-                    "launch": "mod/gift/?quiz=03-Forms.txt",
+                    "launch": "tsugi/tool/gift/?quiz=03-Forms.txt",
                     "resource_link_id": "php_03_forms_quiz"
                 },
                 {
@@ -1100,7 +1097,7 @@
                 {
                     "type": "lti",
                     "title": "Peer grader: Rock Paper Scissors",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_04_rps_peer",
                     "custom": [
                         {
@@ -1223,7 +1220,7 @@
                 {
                     "type": "discussion",
                     "title": "Introduction to Structured Query Language (SQL)",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_09_sql"
                 },
                 {
@@ -1234,7 +1231,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Queries",
-                    "launch": "mod/gift/?quiz=06-SQL-Queries.txt",
+                    "launch": "tsugi/tool/gift/?quiz=06-SQL-Queries.txt",
                     "resource_link_id": "php_06_sqls_quiz"
                 },
                 {
@@ -1339,7 +1336,7 @@
                 {
                     "type": "discussion",
                     "title": "Database Design",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_10_model"
                 },
                 {
@@ -1350,13 +1347,13 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Database Models",
-                    "launch": "mod/gift/?quiz=07-Database-Models.txt",
+                    "launch": "tsugi/tool/gift/?quiz=07-Database-Models.txt",
                     "resource_link_id": "php_07_models_quiz"
                 },
                 {
                     "type": "lti",
                     "title": "Peer Grader: Multi-Table Databases (Tracks)",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "mysql_03_many_peer",
                     "custom": [
                         {
@@ -1470,7 +1467,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Objects",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_11_objects"
                 },
                 {
@@ -1481,7 +1478,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: PHP Objects",
-                    "launch": "mod/gift/?quiz=08-PHP-Objects.txt",
+                    "launch": "tsugi/tool/gift/?quiz=08-PHP-Objects.txt",
                     "resource_link_id": "php_08_objects_quiz"
                 }
             ]
@@ -1568,7 +1565,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP and MySQL",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_12_pdo"
                 },
                 {
@@ -1579,7 +1576,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: PHP and MySQL",
-                    "launch": "mod/gift/?quiz=08-PDO.txt",
+                    "launch": "tsugi/tool/gift/?quiz=08-PDO.txt",
                     "resource_link_id": "php_08_pdo_quiz"
                 },
                 {
@@ -1597,7 +1594,7 @@
                 {
                     "type": "lti",
                     "title": "Peer graded: Autos Database",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_05_autosdb_peer",
                     "custom": [
                         {
@@ -1722,7 +1719,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Cookies and Sessions",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_13_cookies"
                 },
                 {
@@ -1733,7 +1730,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Cookies and Sessions",
-                    "launch": "mod/gift/?quiz=05-Session.txt",
+                    "launch": "tsugi/tool/gift/?quiz=05-Session.txt",
                     "resource_link_id": "php_05_session_quiz"
                 },
                 {
@@ -1836,7 +1833,7 @@
                 {
                     "type": "discussion",
                     "title": "PHP Routing, Redirect and Authentication",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_14_redirect"
                 },
                 {
@@ -1847,7 +1844,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: Routing and Redirect",
-                    "launch": "mod/gift/?quiz=05-Routing.txt",
+                    "launch": "tsugi/tool/gift/?quiz=05-Routing.txt",
                     "resource_link_id": "php_05_route_quiz"
                 },
                 {
@@ -1865,7 +1862,7 @@
                 {
                     "type": "lti",
                     "title": "Peer-Grader: Autos with Post-Redirect",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_05_autosess_peer",
                     "custom": [
                         {
@@ -1980,7 +1977,7 @@
                 {
                     "type": "discussion",
                     "title": "Building a CRUD Application",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_15_crud"
                 },
                 {
@@ -2003,7 +2000,7 @@
                 {
                     "type": "lti",
                     "title": "Peer-Grader: Autos CRUD",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_06_crud_peer",
                     "custom": [
                         {
@@ -2160,7 +2157,7 @@
                 {
                     "type": "discussion",
                     "title": "Basic JavaScript",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_16_javascript"
                 },
                 {
@@ -2171,7 +2168,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: JavaScript",
-                    "launch": "mod/gift/?quiz=09-JavaScript.txt",
+                    "launch": "tsugi/tool/gift/?quiz=09-JavaScript.txt",
                     "resource_link_id": "js_09_javascript_quiz"
                 },
                 {
@@ -2189,7 +2186,7 @@
                 {
                     "type": "lti",
                     "title": "Peer-Grader: JavaScript / Profiles",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_07_profile_peer",
                     "custom": [
                         {
@@ -2276,7 +2273,7 @@
                 {
                     "type": "discussion",
                     "title": "JavaScript Objects",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_17_oojs"
                 },
                 {
@@ -2287,7 +2284,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: JavaScript Objects",
-                    "launch": "mod/gift/?quiz=09-JavaScript-Objects.txt",
+                    "launch": "tsugi/tool/gift/?quiz=09-JavaScript-Objects.txt",
                     "resource_link_id": "js_09_js_objects_quiz"
                 }
             ]
@@ -2379,7 +2376,7 @@
                 {
                     "type": "discussion",
                     "title": "jQuery",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_18_jquery"
                 },
                 {
@@ -2390,7 +2387,7 @@
                 {
                     "type": "lti",
                     "title": "Quiz: JQuery",
-                    "launch": "mod/gift/?quiz=10-JQuery.txt",
+                    "launch": "tsugi/tool/gift/?quiz=10-JQuery.txt",
                     "resource_link_id": "js_10_jquery_quiz"
                 },
                 {
@@ -2408,7 +2405,7 @@
                 {
                     "type": "lti",
                     "title": "Peer-Grader: Profiles, Positions and jQuery",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_08_position_peer",
                     "custom": [
                         {
@@ -2567,7 +2564,7 @@
                 {
                     "type": "discussion",
                     "title": "JSON - JavaScript Object Notation",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_19_json"
                 },
                 {
@@ -2590,7 +2587,7 @@
                 {
                     "type": "lti",
                     "title": "Peer-Grader: Profiles, Positions, and Education",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_09_peer",
                     "custom": [
                         {
@@ -2718,7 +2715,7 @@
                 {
                     "type": "discussion",
                     "title": "Handlebars UI Templates",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_20_handlebars"
                 },
                 {
@@ -2729,7 +2726,7 @@
                 {
                     "type": "lti",
                     "title": "Peer Graded: Handlebars",
-                    "launch": "mod/peer-grade/",
+                    "launch": "tsugi/tool/peer-grade/",
                     "resource_link_id": "php_10_handlebars_peer",
                     "custom": [
                         {
@@ -2808,7 +2805,7 @@
                 {
                     "type": "discussion",
                     "title": "Advanced SQL",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_21_sql"
                 }
             ]
@@ -2847,7 +2844,7 @@
                 {
                     "type": "discussion",
                     "title": "SQL Transactions",
-                    "launch": "mod/tdiscus/",
+                    "launch": "tsugi/tool/tdiscus/",
                     "resource_link_id": "discuss_21_transactions"
                 }
             ]
