@@ -1,11 +1,18 @@
 <?php
 
+use \Tsugi\Util\U;
+
 function buildMenu() {
-    global $CFG;
+    global $CFG, $USER;
     $R = $CFG->apphome . '/';
     $T = $CFG->wwwroot . '/';
+    $showCalendarDueUi = isset($_SESSION['id'])
+        && U::isNotEmpty($CFG->lessons)
+        && \Tsugi\Grades\GradeUtil::showDueDates(U::get($_SESSION, 'context_id', 0));
 
     $adminmenu = isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true";
+    $isInstructor = (isset($USER) && $USER && isset($USER->instructor) && $USER->instructor)
+        || (isset($_SESSION['instructor']) && $_SESSION['instructor']);
     $set = new \Tsugi\UI\MenuSet();
     $set->setHome($CFG->servicename, $CFG->apphome);
     if ( isset($CFG->lessons) ) {
@@ -21,16 +28,22 @@ function buildMenu() {
 
     if ( isset($_SESSION['id']) ) {
         $submenu = new \Tsugi\UI\Menu();
-        $submenu->addLink('Profile', $R.'profile');
+        $submenu->addLink('Announcements', $R.'announcements');
+        $submenu->addLink('Grades', $R.'grades');
+        $submenu->addLink('Pages', $R.'pages');
+        $submenu->addLink('Discussions', $R.'discussions');
+        if ( $isInstructor ) {
+            $submenu->addLink('Notifications', $R.'notifications');
+        }
+        $submenu->addLink('Courses', $R.'coursesredirect.php');
         if ( isset($CFG->google_map_api_key) ) {
             $submenu->addLink('Map', $R.'map');
         }
-        $submenu->addLink('Announcements', $R.'announcements');
-        $submenu->addLink('Notifications', $R.'notifications');
-        $submenu->addLink('Grades', $R.'grades');
+        $submenu->addLink('Profile', $R.'profile');
+        if ( $showCalendarDueUi ) {
+            $submenu->addLink('Calendar', $R.'calendar');
+        }
         $submenu->addLink('Badges', $R.'badges');
-        $submenu->addLink('Pages', $R.'pages');
-        $submenu->addLink('Courses', $R.'coursesredirect.php');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
         $submenu->addLink('Privacy', $R.'privacy');
@@ -60,7 +73,20 @@ function buildMenu() {
     }
 
     if ( isset($_SESSION['id']) ) {
-        $set->addRight('<tsugi-notifications api-url="'. htmlspecialchars($T . 'api/notifications.php') . '" notifications-view-url="'. htmlspecialchars($R . 'notifications') . '" announcements-view-url="'. htmlspecialchars($R . 'announcements') . '"></tsugi-notifications>', false);
+        $set->addRight(
+            '<tsugi-notifications api-url="'. htmlspecialchars($T . 'api/notifications.php') . '" notifications-view-url="'. htmlspecialchars($R . 'notifications') . '" announcements-view-url="'. htmlspecialchars($R . 'announcements') . '"></tsugi-notifications>',
+            false,
+            true,
+            'hidden-xs tsugi-wc-nav-item'
+        );
+        if ( $showCalendarDueUi ) {
+            $set->addRight(
+                '<tsugi-calendar-due api-url="'. htmlspecialchars($R . 'calendar/json') . '" lessons-url="'. htmlspecialchars($R . 'lessons') . '"></tsugi-calendar-due>',
+                false,
+                true,
+                'hidden-xs tsugi-wc-nav-item'
+            );
+        }
         if ( isset($CFG->tdiscus) && $CFG->tdiscus ) {
             $set->addRight(
                 '<tsugi-discussions api-url="'. htmlspecialchars($R . 'discussions/json') . '" discussions-url="'. htmlspecialchars($R . 'discussions') . '"></tsugi-discussions>',
