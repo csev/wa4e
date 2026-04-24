@@ -18,7 +18,6 @@ function buildMenu() {
         $set->addLeft('Materials', $R.'materials');
     }
     $set->addLeft('Book', 'http://milneopentextbooks.org/the-missing-link-an-introduction-to-web-development-and-programming/');
-    $set->addLeft('Courses', $R.'coursesredirect.php');
 
     if ( isset($_SESSION['id']) ) {
         $submenu = new \Tsugi\UI\Menu();
@@ -31,6 +30,7 @@ function buildMenu() {
         $submenu->addLink('Grades', $R.'grades');
         $submenu->addLink('Badges', $R.'badges');
         $submenu->addLink('Pages', $R.'pages');
+        $submenu->addLink('Courses', $R.'coursesredirect.php');
         $submenu->addLink('Materials', $R.'materials');
         $submenu->addLink('Rate this course', 'https://www.class-central.com/mooc/7362/web-applications-for-everybody');
         $submenu->addLink('Privacy', $R.'privacy');
@@ -56,6 +56,7 @@ function buildMenu() {
         }
     } else {
         $set->addRight('Login', $R.'login');
+        $set->addRight('Courses', $R.'coursesredirect.php');
     }
 
     if ( isset($_SESSION['id']) ) {
