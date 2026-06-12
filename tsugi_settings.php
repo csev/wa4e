@@ -19,4 +19,11 @@ $CFG->youtube_playlist = 'PLlRFEj9H3Oj7FHbnXWviqQt0sKEK_hdKX';
 
 $CFG->tdiscus = $CFG->wwwroot . '/tool/tdiscus/';
 
+/*
+$CFG->refresh_menu_callback = function() {
+    global $CFG;
+    require_once $CFG->dirroot.'/../buildmenu.php';
+    return buildMenu();
+};
+*/
 
