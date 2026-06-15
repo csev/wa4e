@@ -4,9 +4,11 @@ use \Tsugi\Core\LTIX;
 use \Tsugi\UI\Output;
 use \Tsugi\UI\Pages;
 
-// Help the installer through the setup process 
-require "check.php" ; 
+if ( ! defined('COOKIE_SESSION') ) {
+    define('COOKIE_SESSION', true);
+}
 
+require_once "sanity.php";
 require "top.php";
 require "nav.php";
 
