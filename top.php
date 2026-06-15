@@ -12,11 +12,6 @@ if ( session_id() == "" ) {
     $LAUNCH = LTIX::session_start();
 }
 
-global $PDOX;
-if ( isset($PDOX) && is_object($PDOX) ) {
-    LTIX::loginSecureCookie();
-}
-
 $OUTPUT->header();
 ?>
 <style>
