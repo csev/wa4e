@@ -44,7 +44,7 @@ You can explore a sample solution for this problem at
 <p>There are several resources you might find useful:
 <ul>
 <li>You might want to refer back to the resources for the 
-<a href="../../res-profile/index.php" target="_blank" rel="noopener noreferrer">
+<a href="../res-profile/index.php" target="_blank" rel="noopener noreferrer">
 previous assignment</a>.
 </li>
 <li>An article from Stack Overflow on
