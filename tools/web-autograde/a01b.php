@@ -2,7 +2,7 @@
 use \Tsugi\Core\LTIX;
 use \Tsugi\Util\LTI;
 use \Tsugi\Util\Net;
-require_once $CFG->dirroot."/core/blob/blob_util.php";
+use \Tsugi\Blob\BlobUtil;
 error_reporting(0); 
 $oldgrade = $RESULT->grade;
 $grade = 0;
@@ -16,13 +16,13 @@ if ( isset($_FILES['html_01']) ) {
         header( 'Location: '.addSession('index.php') ) ;
         return;
     }
-    $data = uploadFileToString($fdes, false);
+    $data = BlobUtil::uploadFileToString($fdes);
     if ( $data === false ) {
         $_SESSION['error'] = 'Could not retrieve file data';
         header( 'Location: '.addSession('index.php') ) ;
         return;
     }
-    if ( count($data) > 250000 ) {
+    if ( strlen($data) > 250000 ) {
         $_SESSION['error'] = 'Please upload a file less than 250K';
         header( 'Location: '.addSession('index.php') ) ;
         return;
@@ -248,7 +248,7 @@ try {
         $count=0;
         foreach ($navlinks as $link) {
             $nav_links_all[] = $link;
-            if ($link->tagName === "a") {
+            if ($link instanceof \DOMElement && $link->tagName === "a") {
                 $count+=1;
                 print("Found ". $count . '....');
             }
@@ -282,7 +282,7 @@ try {
             $count = 0;
             foreach ($items as $item) {
                 $list_items[] = $item;
-                if ($item->tagName === 'li') {
+                if ($item instanceof \DOMElement && $item->tagName === 'li') {
                     $count += 1;
                 }
             }
@@ -349,10 +349,10 @@ try {
                 $details[] = $child;
             }
         }
-        if ($details[0]->tagName !== 'summary') {
+        if (!($details[0] instanceof \DOMElement) || $details[0]->tagName !== 'summary') {
             print(htmlentities("\n ***Missing <summary> tag") .'<br>');
         }
-        if ($details[1]->tagName !== 'p') {
+        if (!($details[1] instanceof \DOMElement) || $details[1]->tagName !== 'p') {
             print(htmlentities("\n ***Missing <p> tag in <details>") .'<br>');
         }
         elseif (trim(strtolower($details[1]->nodeValue)) == 'i grew up in ashtabula ohio. i lived near
@@ -384,18 +384,19 @@ try {
                 $footer[] = $item;
             }
         }
-        if ($footer[0]->tagName == 'p') {
+        if ($footer[0] instanceof \DOMElement && $footer[0]->tagName == 'p') {
             $footer_p = array();
             $children = $footer[0]->childNodes;
             foreach ($children as $child) {
                 $footer_p[] = $child;
             }
-            if ($footer_p[1]->tagName == 'img') {
+            $footerImg = $footer_p[1] ?? null;
+            if ($footerImg instanceof \DOMElement && $footerImg->tagName == 'img') {
                 print(htmlentities('Found <img> tag in footer <p> tag') .'<br>');
-                if ($footer_p[1]->getAttribute('src') !== 'http://www.intro-webdesign.com/images/newlogo.png') {
+                if ($footerImg->getAttribute('src') !== 'http://www.intro-webdesign.com/images/newlogo.png') {
                     print(htmlentities('***<img> tag  has incorrect src attribute') .'<br>');
                 }
-                elseif (!$footer_p[1]->getAttribute('alt')) {
+                elseif (!$footerImg->getAttribute('alt')) {
                     print(htmlentities('<img> tag is missing alt attribute') .'<br>');
                 }
                 else {
@@ -406,8 +407,9 @@ try {
             else {
                 print(htmlentities('***<img> tag is not first element within <p> tag of footer') .'<br>');
             }
-            if ($footer_p[2]->wholeText) {
-                $text = explode('by ', $footer_p[2]->wholeText);
+            $footerText = $footer_p[2] ?? null;
+            if ($footerText instanceof \DOMText && $footerText->wholeText) {
+                $text = explode('by ', $footerText->wholeText);
                 $text = explode(' ', $text[1]);
                 if (strtolower($text[1]) == 'name') {
                     print('***Name in footer not changed from example page' .'<br>');
@@ -416,9 +418,10 @@ try {
             else {
                 print(htmlentities('<p> tag text missing from footer'));
             }
-            if ($footer_p[3]->tagName == 'a') {
+            $footerLink = $footer_p[3] ?? null;
+            if ($footerLink instanceof \DOMElement && $footerLink->tagName == 'a') {
                 print(htmlentities('Found <a> tag in footer <p> tag') .'<br>');
-                if ($footer_p[3]->getAttribute('href') !== 'http://www.intro-webdesign.com') {
+                if ($footerLink->getAttribute('href') !== 'http://www.intro-webdesign.com') {
                     print(htmlentities('***Wrong href attribute for <a> tag in the <p> tag of the footer') .'<br>');
                 }
                 else {

@@ -12,6 +12,7 @@ if ( SettingsForm::handleSettingsPost() ) {
     header( 'Location: '.addSession('index.php') ) ;
     return;
 }
+?>
 Here is some documentation on the software used to build these unit tests:
 <ul>
 <li><a href="http://symfony.com/doc/current/components/dom_crawler.html" target="_new">

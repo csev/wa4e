@@ -37,7 +37,7 @@ class Thing {
     public function add10() {
         $this->value = self::add($this->value, 10);
         $this->value = $this->add($this->value, 10);
-        $this->inc2();
+        $this->inc2(1, 1);
     }
 
     function __destruct() {

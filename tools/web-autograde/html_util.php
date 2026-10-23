@@ -117,7 +117,7 @@ function checkHTMLPost() {
         return 'Missing file, make sure to select all files before pressing submit';
     }
 
-    $data = BlobUtil::uploadFileToString($fdes, false);
+    $data = BlobUtil::uploadFileToString($fdes);
     if ( $data === false || $data === null ) {
         return 'Could not retrieve file data';
     }
