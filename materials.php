@@ -82,5 +82,5 @@ you can hand-copy the links from this course material into your LMS from the
         </p>
 
 
-<?php include("foot.php"); ?>
+<?php include("foot.php");
 

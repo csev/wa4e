@@ -105,7 +105,7 @@ try {
 
 $names = array('Rock', 'Paper', 'Scissors');
 
-function check($matches) {
+function checkPlay($matches) {
     $map = Array('Rock' => 0, 'Paper' => 1, 'Scissors' => 2) ;
     $me = $map[$matches[1]];
     $co = $map[$matches[2]];
@@ -155,7 +155,7 @@ for ( $i=0; $i<5; $i++) {
         continue;
     }
     line_out('Found:'.$matches[0]);
-    if ( check($matches) ) {
+    if ( checkPlay($matches) ) {
         success_out('Correct play');
         $passed++;
     } else {

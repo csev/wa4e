@@ -1,4 +1,4 @@
-<?= // do some grading
+<?php // do some grading
     $dom = new DOMDocument;
     @$dom->loadHTML($data);
 
@@ -251,7 +251,7 @@ if ($nodes->length == 1) {
         $count = 0;
         foreach ($items as $item) {
             $list_items[] = $item;
-            if ( ! isset($link->tagName) ) continue;
+            if ( ! ($item instanceof \DOMElement) ) continue;
             if ($item->tagName === 'li') {
                 $count += 1;
             }
@@ -328,10 +328,10 @@ if ($nodes->length == 1) {
             $details[] = $child;
         }
     }
-    if ($details[0]->tagName !== 'summary') {
+    if (!($details[0] instanceof \DOMElement) || $details[0]->tagName !== 'summary') {
         print("<span>".htmlentities("\n ***Missing <summary> tag") . "</span>\n");
     }
-    if ($details[1]->tagName !== 'p') {
+    if (!($details[1] instanceof \DOMElement) || $details[1]->tagName !== 'p') {
         print("<span>".htmlentities("\n ***Missing <p> tag in <details>") . "</span>\n");
     }
     elseif (trim(strtolower($details[1]->nodeValue)) == 'i grew up in ashtabula ohio. i lived near
@@ -371,7 +371,7 @@ if ($nodes->length==1){
     }
     $possgrade+=1;
 
-    if ($footer[0]->tagName == 'p') {
+    if ($footer[0] instanceof \DOMElement && $footer[0]->tagName == 'p') {
         $footer_p = array();
         $children = $footer[0]->childNodes;
         foreach ($children as $child) {
@@ -379,12 +379,13 @@ if ($nodes->length==1){
         }
             print("Checking for img tag in paragraph tag in the footer...\n");
 
-        if ($footer_p[1]->tagName == 'img') {
+        $footerImg = $footer_p[1] ?? null;
+        if ($footerImg instanceof \DOMElement && $footerImg->tagName == 'img') {
             print("<span class='correct'>".htmlentities("Found <img> tag in footer <p> tag") . "</span>\n");
-            if ($footer_p[1]->getAttribute('src') !== 'http://www.intro-webdesign.com/images/newlogo.png') {
+            if ($footerImg->getAttribute('src') !== 'http://www.intro-webdesign.com/images/newlogo.png') {
                 print("<span>".htmlentities('***<img> tag  has incorrect src attribute') . "</span>\n");
             }
-            elseif (!$footer_p[1]->getAttribute('alt')) {
+            elseif (!$footerImg->getAttribute('alt')) {
                 print("<span>".htmlentities('<img> tag is missing alt attribute') . "</span>\n");
             }
             else {
@@ -399,8 +400,9 @@ if ($nodes->length==1){
 
         $possgrade+=1;
         print("Checking for a tag the footer...\n");
-        if ($footer_p[2]->wholeText) {
-            $text = explode('by ', $footer_p[2]->wholeText);
+        $footerText = $footer_p[2] ?? null;
+        if ($footerText instanceof \DOMText && $footerText->wholeText) {
+            $text = explode('by ', $footerText->wholeText);
             $text = explode(' ', $text[1]);
             if (strtolower($text[1]) == 'name') {
                 print('***Name in footer not changed from example page' . "</span>\n");
@@ -409,9 +411,10 @@ if ($nodes->length==1){
         else {
             print("<span>".htmlentities('<p> tag text missing from footer')."</span>");
         }
-        if ($footer_p[3]->tagName == 'a') {
+        $footerLink = $footer_p[3] ?? null;
+        if ($footerLink instanceof \DOMElement && $footerLink->tagName == 'a') {
             print(htmlentities('Found <a> tag in footer <p> tag') . "\n");
-            if ($footer_p[3]->getAttribute('href') !== 'http://www.intro-webdesign.com' && $footer_p[3]->getAttribute('href') !== 'http://www.intro-webdesign.com/' ) {
+            if ($footerLink->getAttribute('href') !== 'http://www.intro-webdesign.com' && $footerLink->getAttribute('href') !== 'http://www.intro-webdesign.com/' ) {
                 print("<span>".htmlentities('<span>***Wrong href attribute for <a> tag in the <p> tag of the footer') . "</span>\n");
             }
             else {

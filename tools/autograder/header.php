@@ -1,3 +1,3 @@
 <?php
-require_once "webauto-old.php";
+require_once "webauto.php";
 

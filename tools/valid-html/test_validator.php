@@ -34,4 +34,3 @@ if (!empty($result['warnings'])) {
 if (empty($result['errors']) && empty($result['warnings'])) {
     echo "✅ No errors or warnings found!\n";
 }
-?> 

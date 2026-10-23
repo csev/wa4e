@@ -1,0 +1,71 @@
+# Static analysis for PHP 8.4 and 8.5. No web server is involved.
+# Tsugi is scanned for symbols only; its own code is not reported.
+# Locally, the gitignored tsugi/ checkout must be present.
+# Run: composer phpstan
+includes:
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+
+parameters:
+    level: 3
+    phpVersion:
+        min: 80400   # PHP 8.4
+        max: 80500   # PHP 8.5
+    stubFiles:
+        - phpstan-stubs.php
+    scanFiles:
+        - phpstan-stubs.php
+        - tsugi/lib/include/setup.php
+        - tsugi/lib/include/setup_i18n.php
+        # setup.php loads this through a computed path, so name it directly.
+        - tsugi/lib/include/lms_lib.php
+        # Vendored parser: load the class, do not report its own issues.
+        - md/Parsedown.php
+    scanDirectories:
+        - tsugi/lib/src
+        - tsugi/koseu/src
+    # Classes this site constructs from the Tsugi checkout (Symfony, and so on).
+    bootstrapFiles:
+        - tsugi/vendor/autoload.php
+    paths:
+        - about.php
+        - assn
+        - book.php
+        - buildmenu.php
+        - code
+        - coursesredirect.php
+        - cron
+        - foot.php
+        - header.php
+        - iftest.php
+        - index.php
+        - install.php
+        - launcherror.php
+        - materials.php
+        - md
+        - nav.php
+        - ngrok.php
+        - privacy.php
+        - sanity.php
+        - silex.php
+        - software-mac.php
+        - software-mamp.php
+        - software-win.php
+        - software.php
+        - tools
+        - top.php
+        - tsugi.php
+        - tsugi_settings.php
+    # Not programs to analyse: printouts, a vendored parser, and a
+    # guessing sample whose mistake (brokeset) is the point of the file.
+    excludePaths:
+        - code/print
+        - md/Parsedown.php
+        - assn/guess/broken.php
+    reportUnmatchedIgnoredErrors: true
+    checkMaybeUndefinedVariables: false
+    # Tsugi still ships these APIs. They are deprecated inside Tsugi, not by PHP.
+    ignoreErrors:
+        -
+            message: '#deprecated class (Tsugi\\Core\\Settings|Koseu\\Core\\Application)#'
+        -
+            message: '#deprecated method ltiCustomGet\(\)#'
